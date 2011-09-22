@@ -1,1 +1,2 @@
-Placeholder for the Wheaton College Lexomics research group.
+# This project contains multiple elements that are used throughout
+different facets of Lexomics Research #
