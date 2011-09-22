@@ -1,0 +1,11 @@
+require 'rubygems'
+require 'rake'
+
+task :setup do
+  puts "Downloading the EXT library"
+  exec("curl -L http://extjs.cachefly.net/ext-4.0.2a-gpl.zip --O ext.zip; unzip ext.zip; rm ext.zip; mv ext-4.0.2a/ ext/;")
+end
+
+task :cleanup do
+  exec("rm -rf ext*")
+end
