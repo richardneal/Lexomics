@@ -1,0 +1,41 @@
+#footer
+{
+
+}
+
+.footer-align-left
+{
+    float: left;
+}
+
+.footer-align-right
+{
+    float: right;
+}
+
+.footer-align-right > span, 
+.footer-align-left > span
+{
+    margin: 0 2px 0 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.foot-left,
+.foot-right,
+.foot-mid
+{
+    border-right: 1px solid #99BBE8;
+    border-left: 1px solid #99BBE8;
+}
+
+.text-small
+{
+    font-size: .9em;
+    text-align: center;
+}
+
+.icon-text
+{
+    background-image: url( icons/book.png ) 0 6px no-repeat !important;
+}
