@@ -1,0 +1,11 @@
+<?php
+// /modules/upload.php
+// Upload module
+
+
+
+class Upload
+{
+
+}
+
