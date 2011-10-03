@@ -320,10 +320,10 @@ Scrubber.Toolbar.FileMenu = Ext.extend( Scrubber.Toolbar.DropMenu, {
         items: [    // each item is defaulted to an Ext.Button
             // the open button, the handler opens a dialog box with a
             // file input field
-            { text: "Open...", handler: Scrubber.TextUpload },
+            {text: "Open...", handler: Scrubber.TextUpload},
             // save button, does nothing now, eventually saves contents
             // of textarea to user's hard drive
-            { text: "Save" }
+            {text: "Save"}
             // eventually a save to divitext button too, maybe
         ]
     })
@@ -382,6 +382,27 @@ Scrubber.Toolbar.QuickEditMenu = Ext.extend( Scrubber.Toolbar.DropMenu, {
                     ta.replace( /\s+/g, " " );
                 },
                 scope: that
+						},'-',{
+								// Function that is mapped to strip tags.
+								text: "Strip tags",
+								menu: new Ext.menu.Menu({
+									items: [{
+											text: "XML",
+											handler: function() {
+												Ext.Ajax.request({
+													url: 'scrub.php',
+													params: { string: "test", type: "xml" },
+													method: 'POST',
+													success: function (result, request) {
+														Ext.MessageBox.alert('The scrubbed data was successfully created');
+													},
+													failure: function (result, request) {
+														Ext.MessageBox.alert('Unfortunately, the data you uploaded could not be scrubbed.');
+													}
+												})
+											}
+									}]
+								})
             },'-',{
                 // Trim is a menu within a menu
                 text: "Trim",
