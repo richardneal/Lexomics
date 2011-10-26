@@ -3,11 +3,9 @@
 // Message handling module. Gathers and generates output to browser.
 
 
-class Msg
-{
+class Msg {
     // constructors
-    function __construct()
-    {
+    function __construct() {
         $this->results  = null; 
         $this->errors   = null; 
         $this->warnings = null; 
@@ -19,48 +17,43 @@ class Msg
     // results logger
     // logs a message m in an assoc array with key k if k does not exist, f 
     // overwrite k by force
-    public function rlog( $k, $m, $f = false )
-    {
-        $ex = array_key_exists( "$k", (array)$this->results );
-        if ( $ex )
-        {
-            if ( $f )
-                $this->log_result( $k, $m );
+    public function rlog($k, $m, $f = false) {
+        $ex = array_key_exists("$k", (array)$this->results);
+        if ($ex) {
+            if ($f)
+                $this->log_result($k, $m);
             else
                 return 1;
         }
         else
-            $this->log_result( $k, $m );
+            $this->log_result($k, $m);
 
         return 0;
     }
 
-    private function log_result( $k, $m )
-    {
+    private function log_result($k, $m) {
         $this->results["$k"] = $m;
     }
 
     // logger
     // logs message m of type t and flags success if neccessary
-    public function mlog( $t, $m )
-    {
-        switch ( $t )
-        {
+    public function mlog($t, $m) {
+        switch ($t) {
             case 'error':
             case 'err' :
             case 'e' :
-                $this->log_error( $m );
+                $this->log_error($m);
                 break;
 
             case 'warning' :
             case 'warn' :
             case 'w' :
-                $this->log_warning( $m );
+                $this->log_warning($m);
                 break;
 
             case 'note' :
             case 'n' :
-                $this->log_note( $m );
+                $this->log_note($m);
                 break;
 
             default :
@@ -68,30 +61,26 @@ class Msg
         }
     }
 
-    private function log_error( $m )
-    {
+    private function log_error($m) {
         $this->errors[] = $m;
         $this->status = $this->status | self::ERROR;
         $this->success = false;
     }
 
-    private function log_warning( $m )
-    {
+    private function log_warning($m) {
         $this->warnings[] = $m;
         $s = $this->status;
         $this->status = $this->status | self::WARNING;
     }
     
-    private function log_note( $m )
-    {
+    private function log_note($m) {
         $this->notes[] = $m;
         $s = $this->status;
         $this->status = $this->status | self::NOTICE;
     }
 
     // outputer
-    public function json_output()
-    {
+    public function json_output() {
         echo "{$this->get_json()}";
     }
 
@@ -103,8 +92,7 @@ class Msg
     public function get_status()   { return $this->status; }
     public function get_results()  { return $this->results; }
 
-    public function get_json()
-    {
+    public function get_json() {
         $msg = null;
         $msg['success'] = $this->success;
 
@@ -112,17 +100,17 @@ class Msg
         $e = $this->errors;
         $w = $this->warnings;
         $n = $this->notes;
-        if ( $e || $w || $n )
+        if ($e || $w || $n)
             $msg['log'] = null;
-        if ( $e )
+        if ($e)
             $msg['log']['errors'] = $e;
-        if ( $w )
+        if ($w)
             $msg['log']['warnings'] = $w;
-        if ( $n )
+        if ($n)
             $msg['log']['notes'] = $n;
 
         //$r = $this->get_results();
-        if ( $this->results )
+        if ($this->results)
             $msg['results'] = $this->results;
         /*if ( $this->results )
         {
@@ -146,11 +134,6 @@ class Msg
     const WARNING = 2;
     const NOTICE  = 1;
     const FINE    = 0;
-
 }
-
-
-
-
 
 ?>
