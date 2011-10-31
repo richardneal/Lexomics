@@ -10,10 +10,10 @@
  * requests to be remove from the string. The return from the function
  * will most likely get passed into scrub_text() later in the procedure.
  *
- * @param string $text
+ * @param $text
  *  The text which will have the tags remove from it.
  *
- * @params array $tags
+ * @params $tags
  *  An array of elements which will be scrubbed from the text. Do not include
  *  attributes, they will automatically be removed from the text along with
  *  the elements.
