@@ -3,8 +3,8 @@
 // the single script that all ajax and upload requests are made to
 // info about the request is made via POST['action']
 
-require_once("includes/nav.php");
-require_once("modules/error.php");
+require_once dirname(__FILE__) . '/includes/nav.php';
+require_once dirname(__FILE__) . '/modules/error.php';
 
 $MSG = new Msg();
 $action = $_POST['action'];
