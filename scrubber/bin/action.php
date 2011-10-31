@@ -1,24 +1,24 @@
-<?php 
+<?php
 // /action.php
 // the single script that all ajax and upload requests are made to
 // info about the request is made via POST['action']
 
 require_once("includes/nav.php");
-require_once($MODMSG);
+require_once("modules/error.php");
 
 $MSG = new Msg();
 $action = $_POST['action'];
 if (!$action) {
     $MSG->mlog( 'e', "No action." );
-} 
+}
 else
 {
     switch ($action) {
     case 'uploadtext':
         if ($_FILES['file']) {
             $FH = @fopen( $_FILES['file']['tmp_name'], 'r' );
-            $str = utf8_encode( 
-                @fread($FH, filesize( $_FILES['file']['tmp_name'])) 
+            $str = utf8_encode(
+                @fread($FH, filesize( $_FILES['file']['tmp_name']))
             );
             @fclose($FH );
             if ($str) {
