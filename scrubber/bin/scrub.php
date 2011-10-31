@@ -39,25 +39,37 @@ function remove_elements($text, $tags) {
  * Provides and abstraction to the strip_tags function with some additional
  * case switching for the type of file that is being parsed.
  *
- * @param string $string
+ * @param $string
  *	A string with tags in it (or not) to be parsed and have the tags stripped.
  *
- * @param string $type
+ * @param $tags
+ *	The tags which will be passed into remove_elements().
+ *
+ * @param $type
  *	The type of file from which the tags are being stripped.
  *
  * @return string
  *	A string of scrubbed text. Generally returned via AJAX instead
  *	of a direct call.
+ *
+ * @see remove_elements()
+ *
  */
-function scrub_text($string, $type = 'default') {
+function scrub_text($string, $tags, $type = 'default') {
 	switch ($type) {
 		case 'default':
+			// Make the string variable a string with the requested elements removed.
+			$string = remove_elements($string, $tags);
 			strip_tags($string);
 			break;
 		case 'xml':
+			// Make the string variable a string with the requested elements removed.
+			$string = remove_elements($string, $tags);
 			strip_tags($string);
 			break;
 		case 'sgml':
+			// Make the string variable a string with the requested elements removed.
+			$string = remove_elements($string, $tags);
 			strip_tags($string);
 			break;
 	}
