@@ -636,7 +636,7 @@ Uploader = Ext.extend( Ext.Window, {
     // set some generic information, usually overwitten in call to
     // new Uploader({...})
     id: 'upwin',
-    title: 'upload window', 
+    title: 'Upload', 
     width: 500,
 
     // called after constructor on instantiation
