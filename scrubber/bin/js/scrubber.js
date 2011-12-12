@@ -320,10 +320,10 @@ Scrubber.Toolbar.FileMenu = Ext.extend( Scrubber.Toolbar.DropMenu, {
         items: [    // each item is defaulted to an Ext.Button
             // the open button, the handler opens a dialog box with a
             // file input field
-            {text: "Open...", handler: Scrubber.TextUpload},
+            {text: "Upload", handler: Scrubber.TextUpload},
             // save button, does nothing now, eventually saves contents
             // of textarea to user's hard drive
-            {text: "Save"}
+            {text: "Download"}
             // eventually a save to divitext button too, maybe
         ]
     })
