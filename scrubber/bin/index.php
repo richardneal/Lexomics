@@ -25,11 +25,6 @@
 
 
 <body> 
-<h1>ScrubberPanel</h1> 
-<p>This is an example of a scrubber panel designed to edit the contents of a 
-raw text file manually and automatically. Features include uploading stoplists 
-and lemma lists, regex find-and-replace, and more.</p> 
- 
 <div id="scrubber-panel" class="container"> 
 </div> 
  

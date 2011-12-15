@@ -5,10 +5,9 @@ if ( !isset( $HOME ) )
 
 // dirs
 $INCLUDES = "$HOME/includes";
-$MODULES = "$HOME/modules";
 
-$MODMSG = "$MODULES/error.php";
-$MODUPLOAD = "$MODULES/upload.php";
+$MODMSG = "error.php";
+$MODUPLOAD = "upload.php";
 
 
 

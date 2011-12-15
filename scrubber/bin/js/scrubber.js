@@ -657,7 +657,7 @@ Uploader.Form = Ext.extend( Ext.form.FormPanel, {
 
     // default submit
     method: 'POST',             // send the data via POST
-    url: 'action.php',          // to action.php
+    url: 'includes/action.php',          // to action.php
     action: 'noaction',         // with no action at the switch
     waitMsg: "Please hold...",  // display a generic please wait
 
