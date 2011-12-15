@@ -6,10 +6,10 @@
 require_once dirname(__FILE__) . '/nav.php';
 require_once dirname(__FILE__) . '/error.php';
 
-$MSG = new Msg();
+$msg = new Msg();
 $action = $_POST['action'];
 if (!$action) {
-    $MSG->mlog( 'e', "No action." );
+    $msg->mlog( 'e', "No action." );
 }
 else
 {
@@ -22,22 +22,22 @@ else
             );
             @fclose($FH );
             if ($str) {
-                $MSG->rlog('textname', $_FILES['file']['name']);
-                $MSG->rlog('text', utf8_decode($str));
+                $msg->rlog('textname', $_FILES['file']['name']);
+                $msg->rlog('text', utf8_decode($str));
             }
             else
-                $MSG->mlog('e', "File upload error.");
+                $msg->mlog('e', "File upload error.");
         }
         else
-            $MSG->mlog('e', "Major file upload error.");
+            $msg->mlog('e', "Major file upload error.");
         break;
     default :
-        $MSG->mlog('w', "No action in switch.");
+        $msg->mlog('w', "No action in switch.");
     }
 }
 
 // output
 header("Content-type: application/json");
-$MSG->json_output();
+$msg->json_output();
 
 ?>
