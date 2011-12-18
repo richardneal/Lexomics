@@ -1,1 +1,8 @@
 /* scrubber.css */
+body {
+  padding: 0; 
+}
+
+body .container {
+  padding: 0;
+}

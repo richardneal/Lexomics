@@ -15,10 +15,8 @@ Ext.onReady( function() {
         id: 'sp',                   // Ext's internal id
         title: "ScrubberPanel",     // words to show in header
         renderTo: 'scrubber-panel', // draw the Scrubber to the 
-                                    // scrubber-panel div baked into the
-                                    // index.html page
-        width: 700, // width and height to make the panel fill
-        height: 600
+        autoWidth: true,  // use the full width of the user's browser
+        border: true, // create a border
     });
 
 });
@@ -35,6 +33,14 @@ Ext.ns( 'Scrubber' );
 Scrubber.ErrorHandler = function( a, b ) {
 
 }
+
+  var left = new Ext.BoxComponent({
+    region: 'left',
+    layout: 'border',
+    split: true,
+    minSize: 100,
+    width: 235,
+  })
 
 // the Scrubber itself
 // new Scrubber.Panel({...}); will give all the tools needed to scrub
@@ -83,7 +89,7 @@ Scrubber.Panel = Ext.extend( Ext.Panel, {
         // the Scubber.Panel
         Ext.apply( this, {
             tbar: st,       // the top toolbar
-            items: [ sa ]   // the only item is the textarea
+            items: [ sa, left ]  
         });
         // call Ext.Panel's initComponent function with all the arguments
         // passed to this initComponent function call
