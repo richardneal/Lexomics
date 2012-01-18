@@ -224,7 +224,7 @@ Uploader.Form = Ext.extend( Ext.form.FormPanel, {
     initComponent: function() {
         // download button, item in menu
         var downloadButton = new Ext.menu.Item({
-            text: 'Download Texts',
+            text: 'Download Scrubbed Text',
             icon: 'icons/disk.png',
             handler: function() {
                 form.dom.submit();
