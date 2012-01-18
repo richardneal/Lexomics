@@ -1,4 +1,240 @@
 Ext.onReady(function(){
+
+  Ext.ns( 'Scrubber' );
+
+  // define a function that handles errors
+  // TODO:
+  //  not sure what this should do
+  Scrubber.ErrorHandler = function( a, b ) {}
+
+  // give a new namespace, Uploader
+Ext.ns( "Uploader" );
+
+// Uploader is designed to be a generic window with a form that uploads
+// a file from the user's HD to the server
+// all instances must have an Uploader.Form as the 'form' config option
+// for upload to be handled properly
+Uploader = Ext.extend( Ext.Window, {
+    // set some generic information, usually overwitten in call to
+    // new Uploader({...})
+    id: 'upwin',
+    title: 'Upload', 
+    width: 500,
+
+    // called after constructor on instantiation
+    initComponent: function() {
+        // if a form was passed, like is should, use form
+        // as main object shown within the window
+        if ( this.form )
+            Ext.apply( this, {
+                items: [ this.form ]
+            });
+        Uploader.superclass.initComponent.apply( this, arguments );
+    }
+});
+
+// Uploader.Form is a generic form to use with Uploader when opening
+// a window with a form to upload a file, lemma list, stopword list, ...
+Uploader.Form = Ext.extend( Ext.form.FormPanel, {
+
+    // default submit
+    method: 'POST',             // send the data via POST
+    url: 'includes/action.php',          // to action.php
+    action: 'noaction',         // with no action at the switch
+    waitMsg: "Please hold...",  // display a generic please wait
+
+    // callbacks used on success and failure, not sure if failure 
+    // actually does anything
+    // defaulted to the empty function, ie. do nothing, should
+    // be overwritten in creation of instance
+    successFn: Ext.emptyFn,
+    failureFn: Ext.emptyFn,
+
+    // generic layout
+    // no need to mess with, but can be altered for personal preference
+    border: false,
+    padding: 5,
+    layout: 'form',
+
+    // is a file being uploaded in this FormPanel? yes.
+    // this causes the request to change from Ajax to a standard HTML
+    // form upload,
+    // invisible form objects are added to the DOM
+    fileUpload: true,
+
+    // oops not fucntional now, 
+    // when EnterSubmit object is added, this will be called when the user
+    // hit the RETURN key 
+    enterSubmit: function() {
+        this.upload();
+    },
+
+    // function that will be called when form is submitted via a button
+    // or when called
+    upload: function() {
+        var that = this;
+
+        // if the form is valid, ie. the user defined a validity function
+        // I don't know how, though
+        if ( this.getForm().isValid() )
+        {
+            // make rudimentary "Ajax" request
+            Ext.Ajax.request({
+                url: that.url,          // set the parameters of the
+                method: that.method,    // request to those that are 
+                waitMsg: that.waitMsg,  // default or user-defined
+                success: that.successFn,
+                failure: that.failureFn,
+                params: {
+                    action: that.action // use action as a parameter for
+                                        // action.php's switch
+                },
+                form: that.getForm().getEl(),   // get the HTML form from
+                                                // the background
+                isUpload: true  // it is a file upload
+
+            });
+        }
+    },
+
+    initComponent: function() {
+        // take opportunity to add generic form pieces
+        var fp = this;
+
+        // field for file name
+        var namefield = {
+            fieldLabel: 'Text Name',
+            name: 'textname',
+            allowBlank: false
+        };
+
+        // form for file itself
+        // NOTE: C:\fakepath\... is an HTML5 feature to hide the actual
+        // location of the file from the browser/server/shoulder surfers
+        var filefield = {
+            xtype: 'fileuploadfield',   // define the field to contain a 
+                                        // file, this xtype is defined
+                                        // in FileUploadField.js
+            fieldLabel: 'File',
+            name: 'file'
+        };
+
+        // apply these fields to the form
+        Ext.apply( this, {
+            defaults: {
+                anchor: '100%',     // defults to use 100% width
+                xtype: 'textfield'  // default field to accept text
+            },
+
+            // add the fields
+            items: [ filefield, namefield ],
+
+            // define the upload button
+            buttons: [{
+                text: "Upload",
+                scope: fp,
+                handler: fp.upload  // use the upload function defined
+                                    // just above to submit the form/file
+            }]
+        });
+        Uploader.Form.superclass.initComponent.apply( this, arguments );
+    },
+  });
+  // Toolbar functionality
+  TextManToolbar = Ext.extend( Ext.Toolbar, {
+
+    // dynamically generate the buttons
+    initComponent: function() {
+        // download button, item in menu
+        var downloadButton = new Ext.menu.Item({
+            text: 'Download Texts',
+            icon: 'icons/disk.png',
+            handler: function() {
+                // create a hidden frame
+                var body = Ext.getBody();
+                var frame = body.createChild({
+                    tag:'iframe'
+                    ,cls:'x-hidden'
+                    ,id:'iframe'
+                    ,name:'iframe'
+                });
+                     
+                // create a hidden form to submit the request to download
+                // the texts
+                var form = body.createChild({
+                    tag:'form'
+                    ,cls:'x-hidden'
+                    ,id:'form'
+                    ,action:'download.php'  // url to download texts
+                    ,target:'iframe'
+                });
+
+                form.dom.submit();
+            }
+        });
+
+        // upload button, menu item
+        var uploadButton = new Ext.menu.Item({
+            text: "Upload New Text",
+            handler: Scrubber.TextUpload,          // handler created uploader window
+            icon: 'icons/book_add.png'
+        });
+
+        // create button with menu
+        var udmenu = new Ext.Button({
+            text: "Upload/Download",
+            menu: {
+                items:[ uploadButton, downloadButton ]
+            }
+        });
+
+        Ext.apply( this, {
+            items: [udmenu]
+        });
+        TextManToolbar.superclass.initComponent.apply( this, arguments );
+    }
+  });
+  Scrubber.TextUpload = function() {
+    // defines a 'generic' file upload window
+    // Uploader type defined below as extension of a window with
+    // behavior to act like a window with a submittable form
+    // must have an Uploader.Form as the 'form' config option
+    var upwin = new Uploader({
+        // this form is used to upload the text
+        form: new Uploader.Form({
+            // action defines the 'action' parameter sent to the server 
+            // accessed by $_POST['action'] and acts as the case to
+            // a switch statement in action.php
+            action: 'uploadtext',
+            // success fires on return from the server
+            successFn: function( f,a ) {
+                // catpure the contents on the json return
+                // content-type 'text/javascript' wraps the return
+                // in some tags
+                var str = f.responseXML.firstChild.innerText || // Ch/Saf
+                          f.responseXML.firstChild.textContents;// FF
+                var json = Ext.decode( str );   // decode the json object
+                                                // from the string
+                var results = json.results;     // get the results object
+                                                // from the returned json
+                                                // object
+                var sp = Ext.getCmp( 'sp' );    // get the Scrubber Panel
+                                                // component so we can 
+                                                // update the textarea
+                sp.setValue( results.text );    // use the Panel's
+                                                // setValue method to 
+                                                // completely replace all
+                                                // text in the textarea
+                upwin.close();  // close the uploader window
+            },
+            // failure, not sure if this can fire
+            failureFn: function( f,a ) {
+                var m = 45;
+            }
+        })
+    });
+    upwin.show();   // show the uploader window
+  }
     Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
     
     var viewport = new Ext.Viewport({
@@ -49,10 +285,10 @@ Ext.onReady(function(){
         }, {
             region: 'west',
             id: 'west-panel', // see Ext.getCmp() below
-            title: 'West',
+            title: 'Text Manager',
             split: true,
-            width: 200,
-            minSize: 175,
+            width: 250,
+            minSize: 225,
             maxSize: 400,
             collapsible: true,
             margins: '0 0 0 5',
@@ -60,17 +296,7 @@ Ext.onReady(function(){
                 type: 'accordion',
                 animate: true
             },
-            items: [{
-                contentEl: 'west',
-                title: 'Navigation',
-                border: false,
-                iconCls: 'nav' // see the HEAD section for style used
-            }, {
-                title: 'Settings',
-                html: '<p>Some settings in here.</p>',
-                border: false,
-                iconCls: 'settings'
-            }]
+            fbar: new TextManToolbar({})
         },
         // in this instance the TabPanel is not wrapped by another panel
         // since no title is needed, this Panel is added directly
@@ -81,12 +307,8 @@ Ext.onReady(function(){
             activeTab: 0,     // first tab initially active
             items: [{
                 contentEl: 'center1',
-                title: 'Close Me',
-                closable: true,
-                autoScroll: true
-            }, {
-                contentEl: 'center2',
-                title: 'Center Panel',
+                title: 'Scrubbed Text',
+                closable: false,
                 autoScroll: true
             }]
         })]
@@ -127,15 +349,6 @@ Ext.onReady( function() {
 // without causing errors
 // this is regarded as standard practice to put you app into its own
 // namespace
-Ext.ns( 'Scrubber' );
-
-// define a function that handles errors
-// TODO:
-//  not sure what this should do
-Scrubber.ErrorHandler = function( a, b ) {
-
-}
-
   var left = new Ext.BoxComponent({
     region: 'left',
     layout: 'border',
@@ -377,47 +590,6 @@ Scrubber.Toolbar.DropMenu = Ext.extend( Ext.Button, {
 
 // a function that opens a text upload window and defines a form that
 // uploads the file
-Scrubber.TextUpload = function() {
-    // defines a 'generic' file upload window
-    // Uploader type defined below as extension of a window with
-    // behavior to act like a window with a submittable form
-    // must have an Uploader.Form as the 'form' config option
-    var upwin = new Uploader({
-        // this form is used to upload the text
-        form: new Uploader.Form({
-            // action defines the 'action' parameter sent to the server 
-            // accessed by $_POST['action'] and acts as the case to
-            // a switch statement in action.php
-            action: 'uploadtext',
-            // success fires on return from the server
-            successFn: function( f,a ) {
-                // catpure the contents on the json return
-                // content-type 'text/javascript' wraps the return
-                // in some tags
-                var str = f.responseXML.firstChild.innerText || // Ch/Saf
-                          f.responseXML.firstChild.textContents;// FF
-                var json = Ext.decode( str );   // decode the json object
-                                                // from the string
-                var results = json.results;     // get the results object
-                                                // from the returned json
-                                                // object
-                var sp = Ext.getCmp( 'sp' );    // get the Scrubber Panel
-                                                // component so we can 
-                                                // update the textarea
-                sp.setValue( results.text );    // use the Panel's
-                                                // setValue method to 
-                                                // completely replace all
-                                                // text in the textarea
-                upwin.close();  // close the uploader window
-            },
-            // failure, not sure if this can fire
-            failureFn: function( f,a ) {
-                var m = 45;
-            }
-        })
-    });
-    upwin.show();   // show the uploader window
-}
 
 // the file option menu, contains things like open, save, save to divitext
 Scrubber.Toolbar.FileMenu = Ext.extend( Scrubber.Toolbar.DropMenu, {
@@ -733,138 +905,7 @@ Scrubber.Stopword.QuickList = Ext.extend( Ext.Window, {
 
 
 
-// give a new namespace, Uploader
-Ext.ns( "Uploader" );
 
-// Uploader is designed to be a generic window with a form that uploads
-// a file from the user's HD to the server
-// all instances must have an Uploader.Form as the 'form' config option
-// for upload to be handled properly
-Uploader = Ext.extend( Ext.Window, {
-    // set some generic information, usually overwitten in call to
-    // new Uploader({...})
-    id: 'upwin',
-    title: 'Upload', 
-    width: 500,
-
-    // called after constructor on instantiation
-    initComponent: function() {
-        // if a form was passed, like is should, use form
-        // as main object shown within the window
-        if ( this.form )
-            Ext.apply( this, {
-                items: [ this.form ]
-            });
-        Uploader.superclass.initComponent.apply( this, arguments );
-    }
-});
-
-// Uploader.Form is a generic form to use with Uploader when opening
-// a window with a form to upload a file, lemma list, stopword list, ...
-Uploader.Form = Ext.extend( Ext.form.FormPanel, {
-
-    // default submit
-    method: 'POST',             // send the data via POST
-    url: 'includes/action.php',          // to action.php
-    action: 'noaction',         // with no action at the switch
-    waitMsg: "Please hold...",  // display a generic please wait
-
-    // callbacks used on success and failure, not sure if failure 
-    // actually does anything
-    // defaulted to the empty function, ie. do nothing, should
-    // be overwritten in creation of instance
-    successFn: Ext.emptyFn,
-    failureFn: Ext.emptyFn,
-
-    // generic layout
-    // no need to mess with, but can be altered for personal preference
-    border: false,
-    padding: 5,
-    layout: 'form',
-
-    // is a file being uploaded in this FormPanel? yes.
-    // this causes the request to change from Ajax to a standard HTML
-    // form upload,
-    // invisible form objects are added to the DOM
-    fileUpload: true,
-
-    // oops not fucntional now, 
-    // when EnterSubmit object is added, this will be called when the user
-    // hit the RETURN key 
-    enterSubmit: function() {
-        this.upload();
-    },
-
-    // function that will be called when form is submitted via a button
-    // or when called
-    upload: function() {
-        var that = this;
-
-        // if the form is valid, ie. the user defined a validity function
-        // I don't know how, though
-        if ( this.getForm().isValid() )
-        {
-            // make rudimentary "Ajax" request
-            Ext.Ajax.request({
-                url: that.url,          // set the parameters of the
-                method: that.method,    // request to those that are 
-                waitMsg: that.waitMsg,  // default or user-defined
-                success: that.successFn,
-                failure: that.failureFn,
-                params: {
-                    action: that.action // use action as a parameter for
-                                        // action.php's switch
-                },
-                form: that.getForm().getEl(),   // get the HTML form from
-                                                // the background
-                isUpload: true  // it is a file upload
-
-            });
-        }
-    },
-
-    initComponent: function() {
-        // take opportunity to add generic form pieces
-        var fp = this;
-
-        // field for file name
-        var namefield = {
-            fieldLabel: 'Text Name',
-            name: 'textname',
-            allowBlank: false
-        };
-
-        // form for file itself
-        // NOTE: C:\fakepath\... is an HTML5 feature to hide the actual
-        // location of the file from the browser/server/shoulder surfers
-        var filefield = {
-            xtype: 'fileuploadfield',   // define the field to contain a 
-                                        // file, this xtype is defined
-                                        // in FileUploadField.js
-            fieldLabel: 'File',
-            name: 'file'
-        };
-
-        // apply these fields to the form
-        Ext.apply( this, {
-            defaults: {
-                anchor: '100%',     // defults to use 100% width
-                xtype: 'textfield'  // default field to accept text
-            },
-
-            // add the fields
-            items: [ filefield, namefield ],
-
-            // define the upload button
-            buttons: [{
-                text: "Upload",
-                scope: fp,
-                handler: fp.upload  // use the upload function defined
-                                    // just above to submit the form/file
-            }]
-        });
-        Uploader.Form.superclass.initComponent.apply( this, arguments );
-    }
 });
 **/
 
