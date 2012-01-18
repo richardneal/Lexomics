@@ -33,6 +33,42 @@ Uploader = Ext.extend( Ext.Window, {
     }
 });
 
+/*
+// stopword menu see above for more info about its structure
+Scrubber.Toolbar.StopwordMenu = Ext.extend( Scrubber.Toolbar.DropMenu, {
+    text: "Stopword List",
+
+    initComponent: function() {
+        var that = this;
+        var ta = this.textarea;
+
+        var menu = new Ext.menu.Menu({
+            defaults: {
+                scope: ta
+            },
+
+            items: [{
+                text: "Quick List",
+                handler: function() {
+                    // ql is an extension of a Ext.Window
+                    var ql = new Scrubber.Stopword.QuickList({
+                        textarea: ta    // let the window know what
+                                        // textarea to operate on
+                    });
+                    ql.show();  // show the window
+                },
+                scope: that
+            }]
+        });
+
+        Ext.apply( this, {
+            menu: menu
+        });
+        Scrubber.Toolbar.StopwordMenu.superclass.initComponent.apply( this, arguments );
+    }
+
+});
+*/
 // Uploader.Form is a generic form to use with Uploader when opening
 // a window with a form to upload a file, lemma list, stopword list, ...
 Uploader.Form = Ext.extend( Ext.form.FormPanel, {
@@ -140,61 +176,7 @@ Uploader.Form = Ext.extend( Ext.form.FormPanel, {
         Uploader.Form.superclass.initComponent.apply( this, arguments );
     },
   });
-  // Toolbar functionality
-  TextManToolbar = Ext.extend( Ext.Toolbar, {
-
-    // dynamically generate the buttons
-    initComponent: function() {
-        // download button, item in menu
-        var downloadButton = new Ext.menu.Item({
-            text: 'Download Texts',
-            icon: 'icons/disk.png',
-            handler: function() {
-                // create a hidden frame
-                var body = Ext.getBody();
-                var frame = body.createChild({
-                    tag:'iframe'
-                    ,cls:'x-hidden'
-                    ,id:'iframe'
-                    ,name:'iframe'
-                });
-                     
-                // create a hidden form to submit the request to download
-                // the texts
-                var form = body.createChild({
-                    tag:'form'
-                    ,cls:'x-hidden'
-                    ,id:'form'
-                    ,action:'download.php'  // url to download texts
-                    ,target:'iframe'
-                });
-
-                form.dom.submit();
-            }
-        });
-
-        // upload button, menu item
-        var uploadButton = new Ext.menu.Item({
-            text: "Upload New Text",
-            handler: Scrubber.TextUpload,          // handler created uploader window
-            icon: 'icons/book_add.png'
-        });
-
-        // create button with menu
-        var udmenu = new Ext.Button({
-            text: "Upload/Download",
-            menu: {
-                items:[ uploadButton, downloadButton ]
-            }
-        });
-
-        Ext.apply( this, {
-            items: [udmenu]
-        });
-        TextManToolbar.superclass.initComponent.apply( this, arguments );
-    }
-  });
-  Scrubber.TextUpload = function() {
+    Scrubber.TextUpload = function() {
     // defines a 'generic' file upload window
     // Uploader type defined below as extension of a window with
     // behavior to act like a window with a submittable form
@@ -235,6 +217,41 @@ Uploader.Form = Ext.extend( Ext.form.FormPanel, {
     });
     upwin.show();   // show the uploader window
   }
+  // Toolbar functionality
+  TextManToolbar = Ext.extend( Ext.Toolbar, {
+
+    // dynamically generate the buttons
+    initComponent: function() {
+        // download button, item in menu
+        var downloadButton = new Ext.menu.Item({
+            text: 'Download Texts',
+            icon: 'icons/disk.png',
+            handler: function() {
+                form.dom.submit();
+            }
+        });
+
+        // upload button, menu item
+        var uploadButton = new Ext.menu.Item({
+            text: "Upload New Text",
+            handler: Scrubber.TextUpload,
+            icon: 'icons/book_add.png'
+        });
+
+        // create button with menu
+        var udmenu = new Ext.Button({
+            text: "Upload/Download",
+            menu: {
+                items:[ uploadButton, downloadButton ]
+            }
+        });
+
+        Ext.apply( this, {
+            items: [udmenu]
+        });
+        TextManToolbar.superclass.initComponent.apply( this, arguments );
+    }
+  });
     Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
     
     var viewport = new Ext.Viewport({
@@ -248,7 +265,7 @@ Uploader.Form = Ext.extend( Ext.form.FormPanel, {
                 tag: 'div',
                 html:'<p>north - generally for menus, toolbars and/or advertisements</p>'
             }
-        }), */{
+        }), {
             region: 'east',
             title: 'East Side',
             collapsible: true,
@@ -282,7 +299,7 @@ Uploader.Form = Ext.extend( Ext.form.FormPanel, {
                     }
                 })]
             })
-        }, {
+        }, */{
             region: 'west',
             id: 'west-panel', // see Ext.getCmp() below
             title: 'Text Manager',
@@ -719,44 +736,6 @@ Scrubber.Toolbar.QuickEditMenu = Ext.extend( Scrubber.Toolbar.DropMenu, {
 
 });
 
-// stopword menu see above for more info about its structure
-Scrubber.Toolbar.StopwordMenu = Ext.extend( Scrubber.Toolbar.DropMenu, {
-    text: "Stopword List",
-
-    initComponent: function() {
-        var that = this;
-        var ta = this.textarea;
-
-        var menu = new Ext.menu.Menu({
-            defaults: {
-                scope: ta
-            },
-
-            items: [{
-                text: "Quick List",
-                handler: function() {
-                    // ql is an extension of a Ext.Window
-                    var ql = new Scrubber.Stopword.QuickList({
-                        textarea: ta    // let the window know what
-                                        // textarea to operate on
-                    });
-                    ql.show();  // show the window
-                },
-                scope: that
-            }]
-        });
-
-        Ext.apply( this, {
-            menu: menu
-        });
-        Scrubber.Toolbar.StopwordMenu.superclass.initComponent.apply( this, arguments );
-    }
-
-});
-
-// a Stopword object that contains a list of stopwords, and maybe the 
-// string that built the list
-// stopwords are removed entierly from the text
 Scrubber.Stopword = Ext.extend( Object, {
 
     words: [],          // array of words to remove
