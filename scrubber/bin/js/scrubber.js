@@ -1,444 +1,13 @@
 Ext.onReady(function(){
-
+  
   Ext.ns( 'Scrubber' );
 
-  // define a function that handles errors
-  // TODO:
-  //  not sure what this should do
-  Scrubber.ErrorHandler = function( a, b ) {}
-
-  // give a new namespace, Uploader
-Ext.ns( "Uploader" );
-
-// Uploader is designed to be a generic window with a form that uploads
-// a file from the user's HD to the server
-// all instances must have an Uploader.Form as the 'form' config option
-// for upload to be handled properly
-Uploader = Ext.extend( Ext.Window, {
-    // set some generic information, usually overwitten in call to
-    // new Uploader({...})
-    id: 'upwin',
-    title: 'Upload', 
-    width: 500,
-
-    // called after constructor on instantiation
-    initComponent: function() {
-        // if a form was passed, like is should, use form
-        // as main object shown within the window
-        if ( this.form )
-            Ext.apply( this, {
-                items: [ this.form ]
-            });
-        Uploader.superclass.initComponent.apply( this, arguments );
-    }
-});
-
-/*
-// stopword menu see above for more info about its structure
-Scrubber.Toolbar.StopwordMenu = Ext.extend( Scrubber.Toolbar.DropMenu, {
-    text: "Stopword List",
-
-    initComponent: function() {
-        var that = this;
-        var ta = this.textarea;
-
-        var menu = new Ext.menu.Menu({
-            defaults: {
-                scope: ta
-            },
-
-            items: [{
-                text: "Quick List",
-                handler: function() {
-                    // ql is an extension of a Ext.Window
-                    var ql = new Scrubber.Stopword.QuickList({
-                        textarea: ta    // let the window know what
-                                        // textarea to operate on
-                    });
-                    ql.show();  // show the window
-                },
-                scope: that
-            }]
-        });
-
-        Ext.apply( this, {
-            menu: menu
-        });
-        Scrubber.Toolbar.StopwordMenu.superclass.initComponent.apply( this, arguments );
-    }
-
-});
-*/
-// Uploader.Form is a generic form to use with Uploader when opening
-// a window with a form to upload a file, lemma list, stopword list, ...
-Uploader.Form = Ext.extend( Ext.form.FormPanel, {
-
-    // default submit
-    method: 'POST',             // send the data via POST
-    url: 'includes/action.php',          // to action.php
-    action: 'noaction',         // with no action at the switch
-    waitMsg: "Please hold...",  // display a generic please wait
-
-    // callbacks used on success and failure, not sure if failure 
-    // actually does anything
-    // defaulted to the empty function, ie. do nothing, should
-    // be overwritten in creation of instance
-    successFn: Ext.emptyFn,
-    failureFn: Ext.emptyFn,
-
-    // generic layout
-    // no need to mess with, but can be altered for personal preference
-    border: false,
-    padding: 5,
-    layout: 'form',
-
-    // is a file being uploaded in this FormPanel? yes.
-    // this causes the request to change from Ajax to a standard HTML
-    // form upload,
-    // invisible form objects are added to the DOM
-    fileUpload: true,
-
-    // oops not fucntional now, 
-    // when EnterSubmit object is added, this will be called when the user
-    // hit the RETURN key 
-    enterSubmit: function() {
-        this.upload();
-    },
-
-    // function that will be called when form is submitted via a button
-    // or when called
-    upload: function() {
-        var that = this;
-
-        // if the form is valid, ie. the user defined a validity function
-        // I don't know how, though
-        if ( this.getForm().isValid() )
-        {
-            // make rudimentary "Ajax" request
-            Ext.Ajax.request({
-                url: that.url,          // set the parameters of the
-                method: that.method,    // request to those that are 
-                waitMsg: that.waitMsg,  // default or user-defined
-                success: that.successFn,
-                failure: that.failureFn,
-                params: {
-                    action: that.action // use action as a parameter for
-                                        // action.php's switch
-                },
-                form: that.getForm().getEl(),   // get the HTML form from
-                                                // the background
-                isUpload: true  // it is a file upload
-
-            });
-        }
-    },
-
-    initComponent: function() {
-        // take opportunity to add generic form pieces
-        var fp = this;
-
-        // field for file name
-        var namefield = {
-            fieldLabel: 'Text Name',
-            name: 'textname',
-            allowBlank: false
-        };
-
-        // form for file itself
-        // NOTE: C:\fakepath\... is an HTML5 feature to hide the actual
-        // location of the file from the browser/server/shoulder surfers
-        var filefield = {
-            xtype: 'fileuploadfield',   // define the field to contain a 
-                                        // file, this xtype is defined
-                                        // in FileUploadField.js
-            fieldLabel: 'File',
-            name: 'file'
-        };
-
-        // apply these fields to the form
-        Ext.apply( this, {
-            defaults: {
-                anchor: '100%',     // defults to use 100% width
-                xtype: 'textfield'  // default field to accept text
-            },
-
-            // add the fields
-            items: [ filefield, namefield ],
-
-            // define the upload button
-            buttons: [{
-                text: "Upload",
-                scope: fp,
-                handler: fp.upload  // use the upload function defined
-                                    // just above to submit the form/file
-            }]
-        });
-        Uploader.Form.superclass.initComponent.apply( this, arguments );
-    },
-  });
-    Scrubber.TextUpload = function() {
-    // defines a 'generic' file upload window
-    // Uploader type defined below as extension of a window with
-    // behavior to act like a window with a submittable form
-    // must have an Uploader.Form as the 'form' config option
-    var upwin = new Uploader({
-        // this form is used to upload the text
-        form: new Uploader.Form({
-            // action defines the 'action' parameter sent to the server 
-            // accessed by $_POST['action'] and acts as the case to
-            // a switch statement in action.php
-            action: 'uploadtext',
-            // success fires on return from the server
-            successFn: function( f,a ) {
-                // catpure the contents on the json return
-                // content-type 'text/javascript' wraps the return
-                // in some tags
-                var str = f.responseXML.firstChild.innerText || // Ch/Saf
-                          f.responseXML.firstChild.textContents;// FF
-                var json = Ext.decode( str );   // decode the json object
-                                                // from the string
-                var results = json.results;     // get the results object
-                                                // from the returned json
-                                                // object
-                var sp = Ext.getCmp( 'sp' );    // get the Scrubber Panel
-                                                // component so we can 
-                                                // update the textarea
-                sp.setValue( results.text );    // use the Panel's
-                                                // setValue method to 
-                                                // completely replace all
-                                                // text in the textarea
-                upwin.close();  // close the uploader window
-            },
-            // failure, not sure if this can fire
-            failureFn: function( f,a ) {
-                var m = 45;
-            }
-        })
-    });
-    upwin.show();   // show the uploader window
-  }
-  // Toolbar functionality
-  TextManToolbar = Ext.extend( Ext.Toolbar, {
-
-    // dynamically generate the buttons
-    initComponent: function() {
-        // download button, item in menu
-        var downloadButton = new Ext.menu.Item({
-            text: 'Download Scrubbed Text',
-            icon: 'icons/disk.png',
-            handler: function() {
-                form.dom.submit();
-            }
-        });
-
-        // upload button, menu item
-        var uploadButton = new Ext.menu.Item({
-            text: "Upload New Text",
-            handler: Scrubber.TextUpload,
-            icon: 'icons/book_add.png'
-        });
-
-        // create button with menu
-        var udmenu = new Ext.Button({
-            text: "Upload/Download",
-            menu: {
-                items:[ uploadButton, downloadButton ]
-            }
-        });
-
-        Ext.apply( this, {
-            items: [udmenu]
-        });
-        TextManToolbar.superclass.initComponent.apply( this, arguments );
-    }
-  });
-    Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
-    
-    var viewport = new Ext.Viewport({
-        layout: 'border',
-        items: [
-        // create instance immediately
-        /*new Ext.BoxComponent({
-            region: 'north',
-            height: 32, // give north and south regions a height
-            autoEl: {
-                tag: 'div',
-                html:'<p>north - generally for menus, toolbars and/or advertisements</p>'
-            }
-        }), {
-            region: 'east',
-            title: 'East Side',
-            collapsible: true,
-            split: true,
-            width: 225, // give east and west regions a width
-            minSize: 175,
-            maxSize: 400,
-            margins: '0 5 0 0',
-            layout: 'fit', // specify layout manager for items
-            items:            // this TabPanel is wrapped by another Panel so the title will be applied
-            new Ext.TabPanel({
-                border: false, // already wrapped so don't add another border
-                activeTab: 1, // second tab initially active
-                tabPosition: 'bottom',
-                items: [{
-                    html: '<p>A TabPanel component can be a region.</p>',
-                    title: 'A Tab',
-                    autoScroll: true
-                }, new Ext.grid.PropertyGrid({
-                    title: 'Property Grid',
-                    closable: true,
-                    source: {
-                        "(name)": "Properties Grid",
-                        "grouping": false,
-                        "autoFitColumns": true,
-                        "productionQuality": false,
-                        "created": new Date(Date.parse('10/15/2006')),
-                        "tested": false,
-                        "version": 0.01,
-                        "borderWidth": 1
-                    }
-                })]
-            })
-        }, */{
-            region: 'west',
-            id: 'west-panel', // see Ext.getCmp() below
-            title: 'Text Manager',
-            split: true,
-            width: 250,
-            minSize: 225,
-            maxSize: 400,
-            collapsible: true,
-            margins: '0 0 0 5',
-            layout: {
-                type: 'accordion',
-                animate: true
-            },
-            fbar: new TextManToolbar({})
-        },
-        // in this instance the TabPanel is not wrapped by another panel
-        // since no title is needed, this Panel is added directly
-        // as a Container
-        new Ext.TabPanel({
-            region: 'center', // a center region is ALWAYS required for border layout
-            deferredRender: false,
-            activeTab: 0,     // first tab initially active
-            items: [{
-                contentEl: 'center1',
-                title: 'Scrubbed Text',
-                closable: false,
-                autoScroll: true
-            }]
-        })]
-    });
-    // get a reference to the HTML element with id "hideit" and add a click listener to it 
-    Ext.get("hideit").on('click', function(){
-        // get a reference to the Panel that was created with id = 'west-panel' 
-        var w = Ext.getCmp('west-panel');
-        // expand or collapse that Panel based on its collapsed property state
-        w.collapsed ? w.expand() : w.collapse();
-    });
-});
-/**
-// scrubber.js
-// defines a Scrubber tool and all necessary components needed
-// to make the tool work
-
-// onReady will fire when JavaScript is ready to be run, usually 
-// after all the HTML is loaded and parsed
-Ext.onReady( function() {
-    // setthing this to true is probably for the best
-    //Ext.USE_NATIVE_JSON = true;
-
-    // create a new Scrubber.Panel,
-    // this short code bit creates all the menus, textarea, windows
-    // needed to work
-    sp = new Scrubber.Panel({
-        id: 'sp',                   // Ext's internal id
-        title: "ScrubberPanel",     // words to show in header
-        renderTo: 'scrubber-panel', // draw the Scrubber to the 
-        autoWidth: true,  // use the full width of the user's browser
-        border: true, // create a border
-    });
-
-});
-
-// use namespace "Scrubber" so one can willy-nilly use Scrubber. notation
-// without causing errors
-// this is regarded as standard practice to put you app into its own
-// namespace
-  var left = new Ext.BoxComponent({
-    region: 'left',
-    layout: 'border',
-    split: true,
-    minSize: 100,
-    width: 235,
-  })
-
-// the Scrubber itself
-// new Scrubber.Panel({...}); will give all the tools needed to scrub
-// this extends the Ext.Panel component so it will behave like a Panel
-// unless options are overridden
-Scrubber.Panel = Ext.extend( Ext.Panel, {
-
-    padding: 5, // internal padding, less squish
-
-    layout: 'form', // format it like a 'form' to use relative widths and
-                    // anchor features
-    // defaults are applied to objects added in 'items'
-    defaults: {
-        anchor: '100%', // use all horizontal room
-        border: false,  // don't show border
-        hideLabel: true,// don't show label
-        height: '100%'  // use all vertical room
-    },
-   
-    // fires when the component is initialized after any constructor,
-    // nothing has yet been added to the panel,
-    // 'this' refers to the Scrubber.Panel object
-    initComponent: function() {
-
-        // set this's textarea to a new Scubber.TextArea,
-        // this is the large field the text appears in
-        this.textarea = new Scrubber.TextArea({});
-        var sa = this.textarea; // local variable to aid with less typing
-        // create a new Scrubber.Toolbar, this defines the menu that 
-        // lives at the top of the panel
-        this.xtoolbar = new Scrubber.Toolbar({
-            textarea: sa    // set the textarea so the Toolbar knows what
-                            // TeatArea to operate on
-        });
-        var st = this.xtoolbar;
-
-        //stwd = new Scrubber.Stopword({});
-
-        // function that sets the value of this.textarea to the value
-        // in the first parameter to this function
-        this.setValue = function( val ) {
-            sa.setValue( val );
-        };
-        
-        // call Ext.apply to put config options into this instance of 
-        // the Scubber.Panel
-        Ext.apply( this, {
-            tbar: st,       // the top toolbar
-            items: [ sa, left ]  
-        });
-        // call Ext.Panel's initComponent function with all the arguments
-        // passed to this initComponent function call
-        Scrubber.Panel.superclass.initComponent.apply( this, arguments );
-    }
-
-});
-
-// the textarea where the user types and edits their text,
-// extends the Ext.form.TextArea component which is just an augmented
-// HTML <textarea>
-Scrubber.TextArea = Ext.extend( Ext.form.TextArea, {
+ Scrubber.TextArea = Ext.extend( Ext.form.TextArea, {
 
     initComponent: function() {
         // create a new Stopword applier inside of this TextArea
         // ! probably useless now
-        this.stopword = new Scrubber.Stopword({});
+        //this.stopword = new Scrubber.Stopword({});
     },
 
     listeners: {
@@ -553,6 +122,378 @@ Scrubber.TextArea = Ext.extend( Ext.form.TextArea, {
     }
 });
 
+Scrubber.Panel = Ext.extend( Ext.Panel, {
+
+    padding: 5, // internal padding, less squish
+
+    layout: 'form', // format it like a 'form' to use relative widths and
+                    // anchor features
+    // defaults are applied to objects added in 'items'
+    defaults: {
+        anchor: '100%', // use all horizontal room
+        border: false,  // don't show border
+        hideLabel: true,// don't show label
+        height: '100%'  // use all vertical room
+    },
+   
+    // fires when the component is initialized after any constructor,
+    // nothing has yet been added to the panel,
+    // 'this' refers to the Scrubber.Panel object
+    initComponent: function() {
+
+        // set this's textarea to a new Scubber.TextArea,
+        // this is the large field the text appears in
+        this.textarea = new Scrubber.TextArea({});
+        var sa = this.textarea; // local variable to aid with less typing
+        // create a new Scrubber.Toolbar, this defines the menu that 
+        // lives at the top of the panel
+        /*this.xtoolbar = new Scrubber.Toolbar({
+            textarea: sa    // set the textarea so the Toolbar knows what
+                            // TeatArea to operate on
+        });
+        var st = this.xtoolbar;
+*/
+        //stwd = new Scrubber.Stopword({});
+
+        // function that sets the value of this.textarea to the value
+        // in the first parameter to this function
+        this.setValue = function( val ) {
+            sa.setValue( val );
+        };
+        
+        // call Ext.apply to put config options into this instance of 
+        // the Scubber.Panel
+        Ext.apply( this, {
+            //tbar: st,       // the top toolbar
+            items: [sa]  
+        });
+        // call Ext.Panel's initComponent function with all the arguments
+        // passed to this initComponent function call
+        Scrubber.Panel.superclass.initComponent.apply( this, arguments );
+    }
+
+});
+      var sp = new Scrubber.Panel({
+        id: 'sp',                   // Ext's internal id
+        title: "ScrubberPanel",     // words to show in header
+        //renderTo: 'scrubber-panel', // draw the Scrubber to the 
+        autoWidth: true,  // use the full width of the user's browser
+        border: true, // create a border
+    });
+
+ 
+  // define a function that handles errors
+  // TODO:
+  //  not sure what this should do
+  Scrubber.ErrorHandler = function( a, b ) {}
+
+  // give a new namespace, Uploader
+Ext.ns( "Uploader" );
+
+// Uploader is designed to be a generic window with a form that uploads
+// a file from the user's HD to the server
+// all instances must have an Uploader.Form as the 'form' config option
+// for upload to be handled properly
+Uploader = Ext.extend( Ext.Window, {
+    // set some generic information, usually overwitten in call to
+    // new Uploader({...})
+    id: 'upwin',
+    title: 'Upload', 
+    width: 500,
+
+    // called after constructor on instantiation
+    initComponent: function() {
+        // if a form was passed, like is should, use form
+        // as main object shown within the window
+        if ( this.form )
+            Ext.apply( this, {
+                items: [ this.form ]
+            });
+        Uploader.superclass.initComponent.apply( this, arguments );
+    }
+});
+
+    Scrubber.TextUpload = function() {
+    // defines a 'generic' file upload window
+    // Uploader type defined below as extension of a window with
+    // behavior to act like a window with a submittable form
+    // must have an Uploader.Form as the 'form' config option
+    var upwin = new Uploader({
+        // this form is used to upload the text
+        form: new Uploader.Form({
+            // action defines the 'action' parameter sent to the server 
+            // accessed by $_POST['action'] and acts as the case to
+            // a switch statement in action.php
+            action: 'uploadtext',
+            // success fires on return from the server
+            successFn: function( f,a ) {
+                // catpure the contents on the json return
+                // content-type 'text/javascript' wraps the return
+                // in some tags
+                var str = f.responseXML.firstChild.innerText || // Ch/Saf
+                          f.responseXML.firstChild.textContents;// FF
+                var json = Ext.decode( str );   // decode the json object
+                                                // from the string
+                var results = json.results;     // get the results object
+                                                // from the returned json
+                                                // object
+                var sp = Ext.getCmp( 'sp' );    // get the Scrubber Panel
+                                                // component so we can 
+                                                // update the textarea
+                sp.setValue( results.text );    // use the Panel's
+                                                // setValue method to 
+                                                // completely replace all
+                                                // text in the textarea
+                upwin.close();  // close the uploader window
+            },
+            // failure, not sure if this can fire
+            failureFn: function( f,a ) {
+                var m = 45;
+            }
+        })
+    });
+    upwin.show();   // show the uploader window
+  }
+
+// Uploader.Form is a generic form to use with Uploader when opening
+// a window with a form to upload a file, lemma list, stopword list, ...
+Uploader.Form = Ext.extend( Ext.form.FormPanel, {
+
+    // default submit
+    method: 'POST',             // send the data via POST
+    url: 'includes/action.php',          // to action.php
+    action: 'noaction',         // with no action at the switch
+    waitMsg: "Please hold...",  // display a generic please wait
+
+    // callbacks used on success and failure, not sure if failure 
+    // actually does anything
+    // defaulted to the empty function, ie. do nothing, should
+    // be overwritten in creation of instance
+    successFn: Ext.emptyFn,
+    failureFn: Ext.emptyFn,
+
+    // generic layout
+    // no need to mess with, but can be altered for personal preference
+    border: false,
+    padding: 5,
+    layout: 'form',
+
+    // is a file being uploaded in this FormPanel? yes.
+    // this causes the request to change from Ajax to a standard HTML
+    // form upload,
+    // invisible form objects are added to the DOM
+    fileUpload: true,
+
+    // oops not fucntional now, 
+    // when EnterSubmit object is added, this will be called when the user
+    // hit the RETURN key 
+    enterSubmit: function() {
+        this.upload();
+    },
+
+    // function that will be called when form is submitted via a button
+    // or when called
+    upload: function() {
+        var that = this;
+
+        // if the form is valid, ie. the user defined a validity function
+        // I don't know how, though
+        if ( this.getForm().isValid() )
+        {
+            // make rudimentary "Ajax" request
+            Ext.Ajax.request({
+                url: that.url,          // set the parameters of the
+                method: that.method,    // request to those that are 
+                waitMsg: that.waitMsg,  // default or user-defined
+                success: that.successFn,
+                failure: that.failureFn,
+                params: {
+                    action: that.action // use action as a parameter for
+                                        // action.php's switch
+                },
+                form: that.getForm().getEl(),   // get the HTML form from
+                                                // the background
+                isUpload: true  // it is a file upload
+
+            });
+        }
+    },
+
+    initComponent: function() {
+        // take opportunity to add generic form pieces
+        var fp = this;
+
+        // field for file name
+        var namefield = {
+            fieldLabel: 'Text Name',
+            name: 'textname',
+            allowBlank: false
+        };
+
+        // form for file itself
+        // NOTE: C:\fakepath\... is an HTML5 feature to hide the actual
+        // location of the file from the browser/server/shoulder surfers
+        var filefield = {
+            xtype: 'fileuploadfield',   // define the field to contain a 
+                                        // file, this xtype is defined
+                                        // in FileUploadField.js
+            fieldLabel: 'File',
+            name: 'file'
+        };
+
+        // apply these fields to the form
+        Ext.apply( this, {
+            defaults: {
+                anchor: '100%',     // defults to use 100% width
+                xtype: 'textfield'  // default field to accept text
+            },
+
+            // add the fields
+            items: [ filefield, namefield ],
+
+            // define the upload button
+            buttons: [{
+                text: "Upload",
+                scope: fp,
+                handler: fp.upload  // use the upload function defined
+                                    // just above to submit the form/file
+            }]
+        });
+        //Uploader.Form.superclass.initComponent.apply( this, arguments );
+    },
+  });
+
+
+  // Toolbar functionality
+  TextManToolbar = Ext.extend( Ext.Toolbar, {
+
+    // dynamically generate the buttons
+    initComponent: function() {
+        // download button, item in menu
+        var downloadButton = new Ext.menu.Item({
+            text: 'Download Scrubbed Text',
+            icon: 'icons/disk.png',
+            handler: function() {
+                form.dom.submit();
+            }
+        });
+
+        // upload button, menu item
+        var uploadButton = new Ext.menu.Item({
+            text: "Upload New Text",
+            handler: Scrubber.TextUpload,
+            icon: 'icons/book_add.png'
+        });
+
+        // create button with menu
+        var udmenu = new Ext.Button({
+            text: "Upload/Download",
+            menu: {
+                items:[ uploadButton, downloadButton ]
+            }
+        });
+
+        Ext.apply( this, {
+            items: [udmenu]
+        });
+        TextManToolbar.superclass.initComponent.apply( this, arguments );
+    }
+  });
+    Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
+
+    ScrubberManToolbar = Ext.extend( Ext.Toolbar, {
+      initComponent: function() {
+        var scrubber = new Ext.Button({
+          text: "Scrub Text",
+          handler: Scrubber.ScrubText,
+          icon: 'icons/scrub.png',
+        });
+        Ext.apply (this, {
+          items: [scrubber]
+        });
+        ScrubberManToolbar.superclass.initComponent.apply( this, arguments );
+      }
+    });
+
+    var viewport = new Ext.Viewport({
+        layout: 'border',
+        items: [{
+            region: 'west',
+            id: 'west-panel', // see Ext.getCmp() below
+            title: 'Text Manager',
+            split: true,
+            width: 250,
+            minSize: 225,
+            maxSize: 400,
+            collapsible: true,
+            margins: '0 0 0 5',
+            layout: {
+                type: 'accordion',
+                animate: true
+            },
+            fbar: new TextManToolbar({})
+        },
+        // in this instance the TabPanel is not wrapped by another panel
+        // since no title is needed, this Panel is added directly
+        // as a Container
+        new Ext.TabPanel({
+            region: 'center', // a center region is ALWAYS required for border layout
+            items: [{
+                contentEl: 'center',
+                handler: Scrubber.Textarea,
+                title: 'Scrubbed Text',
+                closable: false,
+                autoScroll: true
+            }],
+            fbar: new ScrubberManToolbar({})
+        })],
+    });
+    // get a reference to the HTML element with id "hideit" and add a click listener to it 
+    Ext.get("hideit").on('click', function(){
+        // get a reference to the Panel that was created with id = 'west-panel' 
+        var w = Ext.getCmp('west-panel');
+        // expand or collapse that Panel based on its collapsed property state
+        w.collapsed ? w.expand() : w.collapse();
+    });
+});
+/**
+// scrubber.js
+// defines a Scrubber tool and all necessary components needed
+// to make the tool work
+
+// onReady will fire when JavaScript is ready to be run, usually 
+// after all the HTML is loaded and parsed
+Ext.onReady( function() {
+    // setthing this to true is probably for the best
+    //Ext.USE_NATIVE_JSON = true;
+
+    // create a new Scrubber.Panel,
+    // this short code bit creates all the menus, textarea, windows
+    // needed to work
+});
+
+// use namespace "Scrubber" so one can willy-nilly use Scrubber. notation
+// without causing errors
+// this is regarded as standard practice to put you app into its own
+// namespace
+  var left = new Ext.BoxComponent({
+    region: 'left',
+    layout: 'border',
+    split: true,
+    minSize: 100,
+    width: 235,
+  })
+
+// the Scrubber itself
+// new Scrubber.Panel({...}); will give all the tools needed to scrub
+// this extends the Ext.Panel component so it will behave like a Panel
+// unless options are overridden
+
+
+// the textarea where the user types and edits their text,
+// extends the Ext.form.TextArea component which is just an augmented
+// HTML <textarea>
+
 // the toolbar, an augmented Ext.Tooblar, that contains all the menus
 // and buttons to automagically editing the TextArea
 // when creating an instance of this, a 'textarea' must be assigned
@@ -561,40 +502,6 @@ Scrubber.Toolbar = Ext.extend( Ext.Toolbar, {
 
     // method fired when instance of Scrubber.Toolbar is created,
     // ie. when new is used
-    initComponent: function() {
-        // assign the textarea to a local var
-        var ta = this.textarea;
-
-        // create menus and propegate 'ta' as a textarea config option
-        // menu with file options: Open, Save..., Save to diviText, ...
-        filemenu = new Scrubber.Toolbar.FileMenu({
-            textarea: ta
-        });
-
-        // quick edits menu
-        quickmenu = new Scrubber.Toolbar.QuickEditMenu({
-            textarea: ta
-        });
-
-        // stopword menu
-        stopwordmenu = new Scrubber.Toolbar.StopwordMenu({
-            textarea: ta
-        });
-
-        Ext.apply( this, {
-            // add these menus as items to the toolbar
-            items: [
-                filemenu,
-                '-',    // a vertical spacer
-                quickmenu,
-                stopwordmenu
-            ]
-        });
-        Scrubber.Toolbar.superclass.initComponent.apply( this, arguments );
-
-    }
-
-});
 
 // a button that defaults to a dropdown menu
 Scrubber.Toolbar.DropMenu = Ext.extend( Ext.Button, {
