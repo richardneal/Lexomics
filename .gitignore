@@ -1,2 +1,6 @@
 scrubber/deploy
 scrubber/deploy/*
+.idea
+.idea/*
+ext
+ext/*
