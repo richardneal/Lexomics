@@ -5,6 +5,8 @@
  * A script that is called by AJAX functionality from within EXT.
  */
 
+require_once(dirname(__FILE__) . '/lemma.php');
+
 /**
  * Prepares a text string for scrubbing by removing words which the end user
  * requests to be remove from the string. The return from the function
@@ -33,6 +35,7 @@ function remove_elements($text, $tags) {
   elseif (empty($text) && empty($tags)) {
     return "You must include both text and tags for this function to work properly.";
   }
+  else {/* Do some fun logic stuff */}
 }
 
 /**
@@ -45,6 +48,9 @@ function remove_elements($text, $tags) {
  * @param $tags
  *	The tags which will be passed into remove_elements().
  *
+ * @param $lemmas
+ *  An array of lemmas with the lexeme as the key and lemma as the value.
+*
  * @param $type
  *	The type of file from which the tags are being stripped.
  *
@@ -55,32 +61,27 @@ function remove_elements($text, $tags) {
  * @see remove_elements()
  *
  */
-function scrub_text($string, $tags, $type = 'default') {
+function scrub_text($string, $tags, $lemmas, $type = 'default') {
 	switch ($type) {
 		case 'default':
 			// Make the string variable a string with the requested elements removed.
-			$string = remove_elements($string, $tags);
-			strip_tags($string);
+      $string = remove_elements($string, $tags);
+      $delemmaed_string = lemma_replace($lemmas, $string);
+			return strip_tags($delammaed_string);
 			break;
 		case 'xml':
 			// Make the string variable a string with the requested elements removed.
-			$string = remove_elements($string, $tags);
-			strip_tags($string);
+      $string = remove_elements($string, $tags);
+      $delemmaed_string = lemma_replace($lemmas, $string);
+			return strip_tags($delemmaed_string);
 			break;
 		case 'sgml':
 			// Make the string variable a string with the requested elements removed.
-			$string = remove_elements($string, $tags);
-			strip_tags($string);
+      $string = remove_elements($string, $tags);
+      $delemmaed_string = lemma_replace($lemmas, $string);
+			return strip_tags($delemmaed_string);
 			break;
 	}
-}
-
-// Define the POST values into regular instance variables.
-$string = $_POST['string'];
-$type = $_POST['type'];
-
-if (isset($string) && isset($type)) {
-	return scrub_text($string, $type);
 }
 
 ?>
