@@ -188,12 +188,32 @@ Scrubber.Panel = Ext.extend( Ext.Panel, {
   Scrubber.ErrorHandler = function( a, b ) {}
 
   // give a new namespace, Uploader
-Ext.ns( "Uploader" );
+Ext.ns("Uploader");
 
 // Uploader is designed to be a generic window with a form that uploads
 // a file from the user's HD to the server
 // all instances must have an Uploader.Form as the 'form' config option
 // for upload to be handled properly
+    var input_type = new Ext.form.CheckboxGroup({
+	    fieldLabel:'Upload Type',
+	    columns:1,
+	    items:[
+		    { 
+          boxLabel: 'XML',
+          name: 'xml',
+          checked: true
+        },
+		    {
+          boxLabel: 'SGML',
+          name: 'sgml'
+        },{
+          boxLabel: 'HTML',
+          name: 'html'
+        }
+	    ]
+    });    
+
+
 Uploader = Ext.extend( Ext.Window, {
     // set some generic information, usually overwitten in call to
     // new Uploader({...})

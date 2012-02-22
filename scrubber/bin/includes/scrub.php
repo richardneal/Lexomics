@@ -84,4 +84,15 @@ function scrub_text($string, $tags, $lemmas, $type = 'default') {
 	}
 }
 
+function receive_text($string) {
+  if (isset($_POST['STRING_TO_PARSE']) && isset($_POST['TYPE'])) {
+    $string = json_decode($_POST['STRING_TO_PARSE']);
+    $complete_string = scrub_text();
+    return json_encode($complete_string);
+  }
+  else {
+    return;
+  }
+}
+
 ?>
