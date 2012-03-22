@@ -2,11 +2,13 @@
 <head>
   <title>Scrubber</title>
     <link rel="stylesheet" type="text/css" href="ext/resources/css/ext-all.css" />
-	<link rel="stylesheet" tyype="text/css" href="css/scrubber.css">
+  <link rel="stylesheet" type="text/css" href="css/scrubber.css">
+    <link rel="stylesheet" type="text/css" href=ext/examples/ux/fileuploadfield/css/fileuploadfield.css">
     <script type="text/javascript" src="ext/adapter/ext/ext-base.js"></script>
     <script type="text/javascript" src="ext/ext-all.js"></script>
     <script type="text/javascript" src="ext/examples/shared/examples.js"></script>
-    <script type="text/javascript" src="js/scrubber.js"></script>	
+    <script type="text/javascript" src="js/scrubber.js"></script>
+    <script type="text/javascript" src="ext/examples/ux/fileuploadfield/FileUploadField.js"></script>
 </head>
 <body>
     <!-- use class="x-hide-display" to prevent a brief flicker of the content -->
