@@ -1,3 +1,4 @@
+
 Ext.onReady(function(){
   
   Ext.ns( 'Scrubber' );
@@ -81,7 +82,7 @@ Scrubber.Panel = Ext.extend(Ext.Panel, {
     Ext.ns("Uploader");
 
 Scrubber.TextUpload = function() {
-    uploadPanel =  {
+    uploadPanel =  new Ext.FormPanel({
       fileUpload: true,
       xtype       : 'form',
       autoScroll  : true,
@@ -124,24 +125,28 @@ Scrubber.TextUpload = function() {
       buttons: [{
         text: 'Upload',
         handler: function(){
-          var form = this.up('form').getForm();
-            if(form.isValid()){
+            var form = uploadPanel.getForm();
+            if (form.isValid()) {
               form.submit({
                 url: 'callbacks/scrub.php',
                 waitMsg: 'Uploading your text...',
                 success: function(fp, o) {
                   msg('Success', 'Successfully scrubbed "' + o.result.file);
-                }
+                },
+                failure: function(fp, o) {
+                    msg('Failure');
+                },
               });
             }
         }
     },{
       text: 'Reset',
       handler: function() {
-        this.up('form').getForm().reset();
+          var form = uploadPanel.getForm();
+          form.reset();
       }
     }]
-  };
+    });
 
     var uploader = new Ext.Window({
         id     : 'uploadwindow',
