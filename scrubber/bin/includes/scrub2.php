@@ -125,7 +125,7 @@ function removePunctuation($text) {
  * @see remove_elements()
  *
  */
-function scrub_text($string, $stopWords = "", $lexemes = "", $lemmas = "", $type = 'default') {
+function scrub_text($string, $stopWords = "", $lemmaKeys = "", $lemmas = "", $type = 'default') {
 	switch ($type) {
 		case 'default':
 			// Make the string variable a string with the requested elements removed.
@@ -137,7 +137,7 @@ function scrub_text($string, $stopWords = "", $lexemes = "", $lemmas = "", $type
       print("\n After remove punctuation, before remove stopwords \n" . $string);
 			$string = remove_stopWords($string, $stopWords);
       print("\n After remove stopwords, before lemmatize \n" . $string);
-      $string = lemmatize($string, $lexemes, $lemmas);
+      $string = lemmatize($string, $lemmaKeys, $lemmas);
       print("\n After lemmatize \n" . $string . "\n\n\n");
 			
 			break;
@@ -157,6 +157,7 @@ function scrub_text($string, $stopWords = "", $lexemes = "", $lemmas = "", $type
 // Define the POST values into regular instance variables.
 //$string = $_POST['string'];
 //$type = $_POST['type'];
+/*
  $string = "<b>Mary</b> had The <em>little</em> Margaret a their lamb They're. %C5%A0";
  $tags = "";
  $stopWords = "a, the";
@@ -165,5 +166,6 @@ function scrub_text($string, $stopWords = "", $lexemes = "", $lemmas = "", $type
 if (isset($string)) {
 	return scrub_text($string, $stopWords, $lemmaKEYS, $lemmas);
 }
+*/
 
 ?>

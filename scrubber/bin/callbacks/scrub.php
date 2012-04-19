@@ -1,34 +1,43 @@
 <?php
 
-require_once("../includes/scrub.php");
+require_once("../includes/scrub2.php");
 
-$_GET['SCRUB'] = "{
-    'glossary': {
-        'title': 'example glossary',
-     }
-";
+//Faking call from JavaScript
 
-/**
- * This function accepts a serialized JSON array
- */
-function scrub_and_return($json) {
-  $unserialized_json = unserialize($json);
-  $decoded_json = json_decode($unserialized_json);
+$a['type'] = 'default';
+$a['text'] = "<b>Mary</b> had The <em>little</em> Margaret a their lamb They're.";
+$a['stopWords'] = "a, the";
+$a['lemmaKeys'] = "Mary,little";
+$a['lemmas'] = "Margaret,tiny";
 
-  $decoded_json['string'];
-  $decoded_json['tags'];
-  $decoded_json['lemmas'];
-  $decoded_json['type'];
+print("Before serialized, type is: " . $a['type'] . "\n");
 
-  foreach ($decoded_json['lemmas'] as $lexome => $lemma) {
-    // bla
-  }
+$encoded = json_encode($a);
 
-  /** Do something here **/
-  $scrubbed = scrub_text($string, $tags, $lemmas, $type);
+print($encoded . "\n\n\n");
 
-  // $return is the result of the scrubbed text
-  return $json;
-}
+$serialized = serialize($encoded);
 
-print scrub_and_return($_GET['SCRUB']);
+print($serialized . "\n\n\n");
+
+
+$_GET['LEXOMICS'] = $serialized;
+
+//Sam calls into here.
+
+$unserialized = unserialize($_GET['LEXOMICS']);
+$decoded = json_decode($unserialized);
+//print_r($decoded);
+$type = $decoded->type;
+$text = $decoded->text;
+$stopWords = $decoded->stopWords;
+$lemmaKeys = $decoded->lemmaKeys;
+$lemmas = $decoded->lemmas;
+
+print("Before scrub_text, type is: " . $type . "\n");
+
+scrub_text($text, $stopWords, $lemmaKeys, $lemmas, $type);
+
+print("After scrub_text.\n");
+
+?>
