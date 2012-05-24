@@ -32,7 +32,7 @@ if ( !isset( $HOME ) )
 // important directories
 $INCLUDES = "$HOME/includes";
 $EXTJS = "$HOME/ext";
-$EXTJSUX = "$EXTJS/ux";
+$EXTJSUX = "$EXTJS/examples/ux";
 
 // modules called by php scripts 
 $MODULES        = "$HOME/modules";
