@@ -1,0 +1,94 @@
+.cp-panel-cursor
+{
+	cursor: default;
+}
+
+.cp-panel-align
+{
+    text-align: justify;
+}
+
+.cp-panel-overflow
+{
+    overflow: hidden;
+}
+
+.cpchunk > span:hover
+{
+	background: #bbbbff ;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.cpchunk > span:first-child
+{
+    border-left: 2px solid blue;
+}
+
+.cp-first-word:hover
+{
+    border-left: none !important;
+    border-top: none !important;
+    background-color: none !important;
+}
+
+.cpchunk > span:first-child:hover
+{
+    background-color: maroon !important;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    border-left: none !important;
+}
+
+.cp-space-expand
+{
+	letter-spacing: .5em;
+}
+
+.cp-space-shrunk
+{
+	letter-spacing: .05em;
+}
+
+.cp-space-selected
+{
+	background: #ff0000;
+	xletter-spacing: 1em;
+}
+
+
+
+/*.cp-space-selected hr
+{
+	display: none !important;
+}
+
+.cp-space-unselected hr
+{
+	display: none;
+}*/
+
+/*.cp-space-unselected
+{
+	background: #ffffff;
+}*
+
+.cp-panel-hl-color-0 * Navajo White /
+{
+	background: #ffdead !important;
+}
+
+.cp-panel-hl-color-1	/* Bisque 2 /
+{
+	background: #eed5b7 !important;
+}
+
+.cp-panel-hl-color-2	/* Lemon Chiffon /
+{
+	background: #fffacd !important;
+}
+
+.cp-panel-hl-color-3	/* Honeydew 2 /
+{
+	background: #e0eee0 !important;
+}*/
