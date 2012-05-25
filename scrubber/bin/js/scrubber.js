@@ -129,6 +129,7 @@ Scrubber.TextUpload = function() {
             if (form.isValid()) {
               form.submit({
                 url: 'callbacks/scrub.php',
+		method: 'POST', // via POST
                 waitMsg: 'Uploading your text...',
                 success: function(fp, o) {
                   msg('Success', 'Successfully scrubbed "' + o.result.file);

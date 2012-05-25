@@ -20,8 +20,8 @@
 //
 //
 
-define( DIVI_DIR, '/tmp/divitext' );
-define( DIVI_DOWNLOAD_DIR, 'sjh' );
+define( "DIVI_DIR", '/tmp/divitext' );
+define( "DIVI_DOWNLOAD_DIR", 'sjh' );
 
 // make sure it exists
 if ( !is_dir( DIVI_DIR ) )
