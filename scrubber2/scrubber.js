@@ -100,7 +100,7 @@ Ext.onReady( function() {
                                                 // that is put on the 
                                                 // bottom of the west cmp
             },
-            {
+           /* {
                 // east region is the split panels that contain the 
                 // chunk viewer and the simple/advance cutter 
                 region: 'east',
@@ -156,7 +156,7 @@ Ext.onReady( function() {
                         ]
                     }
                 ]
-            },
+            },*/
             {
                 // center is the cutter, the #!
                 // stick it in a panel so the top bar can be updated with
@@ -337,7 +337,7 @@ DiviCutter = Ext.extend( CutterPanel, {
             // items are Ext.Buttons by default if an object,
             // strings represent some text to place in the footer
             items: [
-                "Chunkset Name:",   // label for box
+         /*       "Chunkset Name:",   // label for box
                 namefield,          // box for chunkset name
             {
                 // save chunset button
@@ -346,7 +346,13 @@ DiviCutter = Ext.extend( CutterPanel, {
                 handler: enterSubmit,   // handler is enterSubmit just 
                                         // above
                 scope: cp               // make handler have scope of the
-                                        // CutterPanel                       
+                                        // CutterPanel       
+	*/
+	   {
+		text: "Scrub",
+		handler: enterSubmit,
+
+		scope: cp                
             },{
                 // reset all chunks made in CP
                 text: "Reset",
@@ -1047,6 +1053,28 @@ UploaderForm = Ext.extend( Ext.form.FormPanel, {
             allowBlank: false   // do not allow empty
         });
 
+	var checkboxgroup = {
+	    xtype: 'checkboxgroup',
+            title: 'Upload Type',
+            autoHeight: true,
+            defaultType: 'checkbox', 
+            items: [{
+                fieldLabel: '',
+                boxLabel: 'XML',
+                name: 'text-type-xml'
+            }, {
+                fieldLabel: '',
+                labelSeparator: '',
+                boxLabel: 'SGML',
+                name: 'text-type-sgml'
+            }, {
+                fieldLabel: '',
+                labelSeparator: '',
+                boxLabel: 'HTML',
+                name: 'text-type-html'
+            }]
+	};
+
         // field for file
         var filefield = {
             xtype: 'fileuploadfield',   // tell it the type of field,
@@ -1079,7 +1107,7 @@ UploaderForm = Ext.extend( Ext.form.FormPanel, {
             },
 
             // Ext.form.Field or coerced to
-            items: [ filefield, namefield ],
+            items: [ filefield, namefield, checkboxgroup],
 
             // add a button to the form to submit the form
             buttons: [{

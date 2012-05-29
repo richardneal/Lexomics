@@ -40,38 +40,6 @@ require( $HEADER );
 <!-- VISUAL CUTTER PANEL -->
 <div id="cutter-panel"></div>
 
-<!-- HELP/INFO PANELS -->
-<div id="help-simple">
-<h3>Simple Cutter</h3>
-Cut the text into <i>chunks</i> number of chunks. The last chunk will be at 
-least half of the size of all the other chunks. (Note: Depending on 
-<i>chunks</i> and the length of the text, the number of chunks may not be equal 
-to <i>chunks</i>.
-</div>
-
-<div id="help-advanced">
-<h3>Advanced Cutter</h3>
-Cut the text into chunks of fixed <i>size</i>. The last chunk will be at 
-least <i>last proportion</i> times <i>size</i> words in length.
-</div>
-
-<div id="help-visual">
-<h3>Scrubber Info</h3>
-This will describe how to scrub something!
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- END CONTENT -->
 

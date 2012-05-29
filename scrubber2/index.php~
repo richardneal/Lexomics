@@ -41,31 +41,6 @@ require( $HEADER );
 <div id="cutter-panel"></div>
 
 <!-- HELP/INFO PANELS -->
-<div id="help-simple">
-<h3>Simple Cutter</h3>
-Cut the text into <i>chunks</i> number of chunks. The last chunk will be at 
-least half of the size of all the other chunks. (Note: Depending on 
-<i>chunks</i> and the length of the text, the number of chunks may not be equal 
-to <i>chunks</i>.
-</div>
-
-<div id="help-advanced">
-<h3>Advanced Cutter</h3>
-Cut the text into chunks of fixed <i>size</i>. The last chunk will be at 
-least <i>last proportion</i> times <i>size</i> words in length.
-</div>
-
-<div id="help-visual">
-<h3>Visual Cutter -- Info</h3>
-Click on a word to define the start of a new chunk. Click a word at the start 
-of a chunk to remove the chunk break at that location.
-</div>
-
-
-
-
-
-
 
 
 
