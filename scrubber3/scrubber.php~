@@ -1,0 +1,13 @@
+<?php session_start(); ?>
+<html>
+<head>
+<title>Success!</title>
+</head>
+<body>
+<?php 
+$file = file_get_contents($_SESSION["file"]);
+echo htmlspecialchars($file);
+?>
+
+</body>
+</html>
