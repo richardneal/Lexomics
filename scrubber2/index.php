@@ -40,6 +40,34 @@ require( $HEADER );
 <!-- VISUAL CUTTER PANEL -->
 <div id="cutter-panel"></div>
 
+<!-- HELP/INFO PANELS -->
+<div id="lemmas">
+<h3>Lemma Info</h3>
+You'll be able to upload a lemma list here.
+</div>
+
+<div id="orthography">
+<h3>Orthography Info</h3>
+You'll be able to upload a list of orthographical replacements here.
+</div>
+
+<div id="stopwords">
+<h3>Stop Words Info</h3>
+You'll be able to upload a list of stop words here.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- END CONTENT -->
 

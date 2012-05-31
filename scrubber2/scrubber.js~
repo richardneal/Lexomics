@@ -104,7 +104,7 @@ Ext.onReady( function() {
                 // east region is the split panels that contain the 
                 // chunk viewer and the simple/advance cutter 
                 region: 'east',
-                split: true,    // split os east/center is resizable
+                split: true,    // split so east/center is resizable
                 border: false,
 
                 minSize: 100,
@@ -118,11 +118,12 @@ Ext.onReady( function() {
                     {  
                         // first item is the chunk viewer that resides
                         // on top of the east side of the screen
-                        title: 'Chunk Viewer',
                         split: true,        // split so it can be 
                                             // resizable
-                        region: 'center',   // must have center with
+                        region: 'north',   // must have center with
                                             // border layout
+			height: 300,
+
                         layout: 'vbox',     // vbox layout so the CV will
                                             // fill the area on resize
                                             // and use whole area
@@ -136,13 +137,32 @@ Ext.onReady( function() {
                             // to populate this area, must stick a flex 
                             // into the object so it can have highest
                             // priority for vertical fill
-                            Ext.apply( cutter.updater, {flex:1} )
+                            //Ext.apply( cutter.updater, {flex:1} )
+			    new Stopwords({
+                                cutterPanel: cutter
+                            }) 
                         ]
                     }, 
                     {    
                         // bottom half of east is the auto cutters
                         //title: 'How To',
                         height: 400,    // defualt height 
+                        region: 'center',
+                        split: true,    // split so resizable
+                        layout: 'fit',  // use 100% of area for items
+                        items:[ 
+                            // AutoCutter is accordian panel 
+                            // tell it what cutter panel to apply auto
+                            // cutters to
+                            new Lemmas({
+                                cutterPanel: cutter
+                            }) 
+                        ]
+                    },
+		    {    
+                        // bottom half of east is the auto cutters
+                        //title: 'How To',
+                        height: 300,    // defualt height 
                         region: 'south',
                         split: true,    // split so resizable
                         layout: 'fit',  // use 100% of area for items
@@ -150,7 +170,7 @@ Ext.onReady( function() {
                             // AutoCutter is accordian panel 
                             // tell it what cutter panel to apply auto
                             // cutters to
-                            new AutoCutter({
+                            new Orthography({
                                 cutterPanel: cutter
                             }) 
                         ]
@@ -531,10 +551,11 @@ AdvancedCutter = Ext.extend( CutterType, {
     }
 });
 */
+
 // this defines the accoridion in the lower right
 // call to new AutoCutter({...}) must contain cutterPanel config option
 // which get propagated to child CutterTypes
-AutoCutter = Ext.extend( Ext.Container, {
+Stopwords = Ext.extend( Ext.Container, {
     border: false,  // no border
     height: 400,    // default the height
    
@@ -589,13 +610,149 @@ AutoCutter = Ext.extend( Ext.Container, {
                 },*/
 		{
                     // last panel holds help text for Visual Cutter 
-                    title: 'Scrubber Info',
+                    title: 'Stop Words',
                     border: false,
-                    contentEl: 'help-visual'
+                    contentEl: 'stopwords'
                 }
             ]
         });
-        AutoCutter.superclass.initComponent.apply( this, arguments );
+        Stopwords.superclass.initComponent.apply( this, arguments );
+    }
+});
+
+// this defines the accoridion in the lower right
+// call to new AutoCutter({...}) must contain cutterPanel config option
+// which get propagated to child CutterTypes
+Lemmas = Ext.extend( Ext.Container, {
+    border: false,  // no border
+    height: 400,    // default the height
+   
+    // accordion layout does the + button on options and opens/closes
+    // child panel types
+/*
+    layout: 'accordion',
+    layoutConfig: {
+        animate: true   // force animation of panel open/close
+    },
+*/
+    initComponent: function() {
+        // get the cutter panel that the auto cutters operate on
+        var cp = this.cutterPanel;
+
+        // add items and defaults dynamically
+        Ext.apply( this, {
+            defaults: {
+                padding:5   // default so auto cutters have a little room
+            },
+
+            // items are Ext.Panel by default
+            // accordion layout provides nifty open/close layout 
+            items: [
+            /*    {   // Simple CUtter
+                    title: 'Simple (by # of Chunks)',
+                    border: false,
+                    
+                    // items are Ext.Container by default
+                    items: [ new SimpleCutter({ // add a simple cutter 
+                                                // first
+                        cutterPanel: cp         // required to propegate
+                    }),{
+                        // second thing is Container for Simple help text
+                        // that is baked into index.php
+                        contentEl: 'help-simple',   // DIV in index.php
+                                                    // with id 
+                                                    // 'help-simple'
+                        border: false
+                    }]
+                },{ 
+                    // Advanced Cutter
+                    // ditto
+                    title: 'Advanced (by Chunk Size)',
+                    border: false,
+                    items: [ new AdvancedCutter({
+                        cutterPanel: cp
+                    }),{
+                        contentEl: 'help-advanced',
+                        border: false
+                    }]
+                },*/
+		{
+                    // last panel holds help text for Visual Cutter 
+                    title: 'Lemmas',
+                    border: false,
+                    contentEl: 'lemmas'
+                }
+            ]
+        });
+        Lemmas.superclass.initComponent.apply( this, arguments );
+    }
+});
+
+// this defines the accoridion in the lower right
+// call to new AutoCutter({...}) must contain cutterPanel config option
+// which get propagated to child CutterTypes
+Orthography = Ext.extend( Ext.Container, {
+    border: false,  // no border
+    height: 400,    // default the height
+   
+    // accordion layout does the + button on options and opens/closes
+    // child panel types
+/*
+    layout: 'accordion',
+    layoutConfig: {
+        animate: true   // force animation of panel open/close
+    },
+*/
+    initComponent: function() {
+        // get the cutter panel that the auto cutters operate on
+        var cp = this.cutterPanel;
+
+        // add items and defaults dynamically
+        Ext.apply( this, {
+            defaults: {
+                padding:5   // default so auto cutters have a little room
+            },
+
+            // items are Ext.Panel by default
+            // accordion layout provides nifty open/close layout 
+            items: [
+            /*    {   // Simple CUtter
+                    title: 'Simple (by # of Chunks)',
+                    border: false,
+                    
+                    // items are Ext.Container by default
+                    items: [ new SimpleCutter({ // add a simple cutter 
+                                                // first
+                        cutterPanel: cp         // required to propegate
+                    }),{
+                        // second thing is Container for Simple help text
+                        // that is baked into index.php
+                        contentEl: 'help-simple',   // DIV in index.php
+                                                    // with id 
+                                                    // 'help-simple'
+                        border: false
+                    }]
+                },{ 
+                    // Advanced Cutter
+                    // ditto
+                    title: 'Advanced (by Chunk Size)',
+                    border: false,
+                    items: [ new AdvancedCutter({
+                        cutterPanel: cp
+                    }),{
+                        contentEl: 'help-advanced',
+                        border: false
+                    }]
+                },*/
+		{
+                    // last panel holds help text for Visual Cutter 
+                    title: 'Orthography',
+                    border: false,
+                    contentEl: 'orthography'
+                }
+            ]
+        });
+        Orthography.superclass.initComponent.apply( this, arguments );
     }
 });
 
@@ -699,7 +856,7 @@ TextViewer = Ext.extend( Ext.tree.TreePanel, {
 
                     // set the title of the wrapper panel to reflect
                     // the change in text
-                    cpp.setTitle( "Visual Cutter -- " + textname );
+                    cpp.setTitle( "Scrubbing -- " + textname );
 
                     // if chunkset selected, used the passed spaces to 
                     // cut the text
