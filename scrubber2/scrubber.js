@@ -552,9 +552,7 @@ AdvancedCutter = Ext.extend( CutterType, {
 });
 */
 
-// this defines the accoridion in the lower right
-// call to new AutoCutter({...}) must contain cutterPanel config option
-// which get propagated to child CutterTypes
+
 Stopwords = Ext.extend( Ext.Container, {
     border: false,  // no border
     height: 400,    // default the height
@@ -620,9 +618,7 @@ Stopwords = Ext.extend( Ext.Container, {
     }
 });
 
-// this defines the accoridion in the lower right
-// call to new AutoCutter({...}) must contain cutterPanel config option
-// which get propagated to child CutterTypes
+
 Lemmas = Ext.extend( Ext.Container, {
     border: false,  // no border
     height: 400,    // default the height
@@ -688,9 +684,6 @@ Lemmas = Ext.extend( Ext.Container, {
     }
 });
 
-// this defines the accoridion in the lower right
-// call to new AutoCutter({...}) must contain cutterPanel config option
-// which get propagated to child CutterTypes
 Orthography = Ext.extend( Ext.Container, {
     border: false,  // no border
     height: 400,    // default the height
