@@ -6,10 +6,10 @@
 <body>
 <?php 
 $file = file_get_contents($_SESSION["file"]);
-echo "<b>This is your file: </b>" . "<br />" . substr($file, 0, 1000) . "<p>";
+echo "<b>This is the start of your file: </b>" . "<br />" . substr($file, 0, 1000) . "<p>";
 //echo "<b>This is your file without all the formatting: </b>" . "<br />" . substr(htmlspecialchars($file), 0, 1000) . "<p>";
 if(isset($_SESSION["scrubbed"]))
-	echo "<b>This is your file on scrubber: </b>" . "<br />" . substr($_SESSION["scrubbed"], 0, 1000) . "<p>";
+	echo "<b>This is that start of your scrubbed file: </b>" . "<br />" . substr($_SESSION["scrubbed"], 0, 1000) . "<p>";
 if(isset($_SESSION["stopwords"]))
     echo "<b>Your stopwords are: </b>" . "<br />" . file_get_contents($_SESSION["stopwords"]) . "<p>";
 if(isset($_SESSION["lemmas"]))
