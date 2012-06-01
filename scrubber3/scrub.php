@@ -34,7 +34,7 @@ function remove_stopWords($text, $stopWords) {
     return $text;
   }
   else {
-  	$allStopWords = split(",", $stopWords);
+  	$allStopWords = explode(", ", $stopWords);
   	foreach($allStopWords as &$stopword){
   		$stopword = "/\b" . $stopword . "\b/i";
   	}
@@ -139,6 +139,22 @@ function consolidate($text, $consolidations) {
   }
 }
 
+function formatSpecial($text) {
+  if (empty($text)) {
+    print("You must include some text from which to have the text removed.");
+    return $text;
+  }
+  else {
+    $text = str_replace("&ae;", "æ", $text);
+    $text = str_replace("&AE;", "Æ", $text);
+    $text = str_replace("&d;", "ð", $text);
+    $text = str_replace("&D;", "Ð", $text);
+    $text = str_replace("&t;", "þ", $text);
+    $text = str_replace("&T;", "Þ", $text);
+    return $text;
+  }
+}
+
 /**
  * Provides and abstraction to the strip_tags function with some additional
  * case switching for the type of file that is being parsed.
@@ -159,12 +175,16 @@ function consolidate($text, $consolidations) {
  * @see remove_elements()
  *
  */
-function scrub_text($string, $formatting, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $stopWords = "", $lemmas = "", $consolidations = "", $type = 'default') {
+function scrub_text($string, $formatting, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopWords = "", $lemmas = "", $consolidations = "", $type = 'default') {
 	switch ($type) {
 		case 'default':
 			// Make the string variable a string with the requested elements removed.
       utf8_encode($string);
-      print("<br /> Before strip tags <br />" . $string . "<br />");
+      print("<br /> Before special formatting <br />" . $string . "<br />");
+      if ($special == "on") {
+        $string = formatSpecial($string);
+      }
+      print("<br /> After special formatting, before strip tags <br />" . $string . "<br />");
       if ($formatting == "on") {
         $string = strip_tags($string);
       }
@@ -204,19 +224,35 @@ function scrub_text($string, $formatting, $punctuation, $removeStopWords, $lemma
 	}
 }
 
+$formatting = "";
+$punctuation = "";
+$removeStopWords = "";
+$lemmatize = "";
+$consolidate = "";
+$lowercase = "";
+$special = "";
 
 
-$formatting = $_POST["formatting"];
-$punctuation = $_POST["punctuation"];
-$removeStopWords = $_POST["stopwords"];
-$lemmatize = $_POST["lemmas"];
-$consolidate = $_POST["consolidation"];
-$lowercase = $_POST["lowercase"];
+if(isset($_POST["formatting"]))
+  $formatting = $_POST["formatting"];
+if(isset($_POST["punctuation"]))
+  $punctuation = $_POST["punctuation"];
+if(isset($_POST["stopwords"]))
+  $removeStopWords = $_POST["stopwords"];
+if(isset($_POST["lemmas"]))
+  $lemmatize = $_POST["lemmas"];
+if(isset($_POST["consolidation"]))
+  $consolidate = $_POST["consolidation"];
+if(isset($_POST["lowercase"]))
+  $lowercase = $_POST["lowercase"];
+if(isset($_POST["special"]))
+  $special = $_POST["special"];
+
 $file = file_get_contents($_SESSION["file"]);
 $stopwords = file_get_contents($_SESSION["stopwords"]);
 $lemmas = file_get_contents($_SESSION["lemmas"]);
 $consolidations = file_get_contents($_SESSION["consolidations"]);
-$_SESSION["scrubbed"] = scrub_text($file, $formatting, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $stopwords, $lemmas, $consolidations);
+$_SESSION["scrubbed"] = scrub_text($file, $formatting, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopwords, $lemmas, $consolidations);
 header('Location: ' . "display.php");
 die();
 

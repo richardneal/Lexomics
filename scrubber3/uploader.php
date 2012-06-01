@@ -10,7 +10,7 @@ if ( !is_dir( SCRUB_DIR ) )
 if ((($_FILES["file"]["type"] == "text/plain")
 || ($_FILES["file"]["type"] == "text/html")
 || ($_FILES["file"]["type"] == "image/pjpeg"))
-&& ($_FILES["file"]["size"] < 20000))
+&& ($_FILES["file"]["size"] < 200000))
   {
   if ($_FILES["file"]["error"] > 0)
     {
