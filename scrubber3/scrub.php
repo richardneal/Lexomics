@@ -44,8 +44,8 @@ function remove_stopWords($text, $stopWords) {
 
     //}
     $removedString = preg_replace($allStopWords, "", $text);
-    //print("\n". $text);
-    //print("\n After stopwords \n" . $removedString . "\n\n");
+    //print("<br />". $text);
+    //print("<br /> After stopwords <br />" . $removedString . "<br /><br />");
 
     // Removes extra spaces
     $cleanedString = preg_replace("/\s\s+/", " ", $removedString);
@@ -54,7 +54,7 @@ function remove_stopWords($text, $stopWords) {
   }
 }
 
-function lemmatize($text, $lemmaKEYS, $lemmas) {
+function lemmatize($text, $lemmas) {
   if (empty($text)) {
     print("You must include some text from which to have the text lemmatized.");
     return $text;
@@ -93,8 +93,8 @@ function lemmatize($text, $lemmaKEYS, $lemmas) {
     }
     */
     $lemmatizedString = preg_replace($allLemmaKEYS, $allLemmas, $text);
-    //print("\n". $text);
-    //print("\n After lemmatize \n" . $lemmatizedString . "\n\n");
+    //print("<br />". $text);
+    //print("<br /> After lemmatize <br />" . $lemmatizedString . "<br /><br />");
 
     return $lemmatizedString;
   }
@@ -110,6 +110,33 @@ function removePunctuation($text) {
   //$text = preg_replace('/\W/u', " ", $text);
   $text = trim(preg_replace('#[^\p{L}\p{N}]+#u', ' ', $text));
   return $text;
+}
+
+function consolidate($text, $consolidations) {
+  if (empty($text)) {
+    print("You must include some text from which to have the text removed.");
+  	return $text;
+  }
+  elseif ($consolidations == "") {
+    print("Nothing to do, since there are no consolidations.");
+    return $text;
+  }
+  else {
+    $consolidationKeys = array();
+    $consolidationValues = array();
+    foreach(preg_split("/(\r?\n)/", $consolidations) as $line){
+      $consolidationLine = explode(", ", $line);
+      array_push($consolidationKeys, $consolidationLine[0]);
+      array_push($consolidationValues, $consolidationLine[1]);
+    }
+
+    $removedString = str_replace($consolidationKeys, $consolidationValues, $text);
+   
+    // Removes extra spaces
+    $cleanedString = preg_replace("/\s\s+/", " ", $removedString);
+    return $cleanedString;
+
+  }
 }
 
 /**
@@ -132,24 +159,35 @@ function removePunctuation($text) {
  * @see remove_elements()
  *
  */
-function scrub_text($string, $formatting, $punctuation, $stopWords = "", $lemmas = "", $type = 'default') {
+function scrub_text($string, $formatting, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $stopWords = "", $lemmas = "", $consolidations = "", $type = 'default') {
 	switch ($type) {
 		case 'default':
 			// Make the string variable a string with the requested elements removed.
       utf8_encode($string);
-      print("\n\n Before strip tags \n" . $string);
+      print("<br /> Before strip tags <br />" . $string . "<br />");
       if ($formatting == "on") {
         $string = strip_tags($string);
       }
-      print("\n After strip tags, before remove punctuation \n" . $string);
+      print("<br /> After strip tags, before remove punctuation <br />" . $string . "<br />");
       if ($punctuation == "on") {
            $string = removePunctuation($string);
       }   
-      print("\n After remove punctuation, before remove stopwords \n" . $string);
-      $string = remove_stopWords($string, $stopWords);
-      print("\n After remove stopwords, before lemmatize \n" . $string);
-      $string = lemmatize($string, $lemmaKeys, $lemmas);
-      print("\n After lemmatize \n" . $string . "\n\n\n");
+      print("<br /> After remove punctuation, before remove stopwords <br />" . $string . "<br />");
+      if ($removeStopWords == "on") {
+	  $string = remove_stopWords($string, $stopWords);
+      }
+      print("<br /> After remove stopwords, before lemmatize <br />" . $string . "<br />");
+      if ($lemmatize == "on") {
+          $string = lemmatize($string, $lemmas);
+      }
+      print("<br /> After lemmatize, before consolidation <br />" . $string . "<br />");
+      if ($consolidate == "on") {
+          $string = consolidate($string, $consolidations);
+      }
+      print("<br /> After consolidation, before lowercase <br />" . $string . "<br />");
+      if($lowercase == "on") {
+          $string = strtolower($string);
+      }
       return $string;
 			
 			break;
@@ -166,25 +204,19 @@ function scrub_text($string, $formatting, $punctuation, $stopWords = "", $lemmas
 	}
 }
 
-// Define the POST values into regular instance variables.
-//$string = $_POST['string'];
-//$type = $_POST['type'];
-/*
- $string = "<b>Mary</b> had The <em>little</em> Margaret a their lamb They're. %C5%A0";
- $tags = "";
- $stopWords = "a, the";
- $lemmaKEYS = "Mary,little";
- $lemmas = "Margaret,tiny";
-if (isset($string)) {
-	return scrub_text($string, $stopWords, $lemmaKEYS, $lemmas);
-}
-*/
+
+
 $formatting = $_POST["formatting"];
 $punctuation = $_POST["punctuation"];
+$removeStopWords = $_POST["stopwords"];
+$lemmatize = $_POST["lemmas"];
+$consolidate = $_POST["consolidation"];
+$lowercase = $_POST["lowercase"];
 $file = file_get_contents($_SESSION["file"]);
 $stopwords = file_get_contents($_SESSION["stopwords"]);
 $lemmas = file_get_contents($_SESSION["lemmas"]);
-$_SESSION["scrubbed"] = scrub_text($file, $formatting, $punctuation, $stopwords, $lemmas);
+$consolidations = file_get_contents($_SESSION["consolidations"]);
+$_SESSION["scrubbed"] = scrub_text($file, $formatting, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $stopwords, $lemmas, $consolidations);
 header('Location: ' . "display.php");
 die();
 
