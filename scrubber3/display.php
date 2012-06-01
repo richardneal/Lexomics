@@ -23,7 +23,7 @@ if(isset($_SESSION["consolidations"]))
 <legend><b>Scrubbing Options </b></font></legend>
 <table width="50%" cellpadding="10" cellspacing="0" border="0">
 <tr><td width="40%">
-Remove Punctuation: <input type="checkbox" name="punctuation" checked="checked"/>
+Strip Tags: <input type="checkbox" name="punctuation" checked="checked"/>
 <br />Remove Formatting: <input type="checkbox" name="formatting" checked="checked"/>
 <br />Make Lowercase: <input type="checkbox" name="lowercase" checked="checked"/>
 <?php if(strpos($file, "&ae;")) : ?>
