@@ -17,7 +17,7 @@ echo $_SESSION["scrubbed"];
 <form action="uploader.php" method="post"
 enctype="multipart/form-data">
 <input type="hidden" name="type" value="stopwords" /> 
-<label for="file">Filename:</label>
+<label for="file">Stop Words:</label>
 <input type="file" name="file" id="file" /> 
 <br />
 <input type="submit" name="stopwords" value="Upload Stop Words" />
@@ -26,7 +26,7 @@ enctype="multipart/form-data">
 <form action="uploader.php" method="post"
 enctype="multipart/form-data">
 <input type="hidden" name="type" value="lemmas" /> 
-<label for="file">Filename:</label>
+<label for="file">Lemmas:</label>
 <input type="file" name="file" id="file" /> 
 <br />
 <input type="submit" name="stopwords" value="Upload Lemmas" />

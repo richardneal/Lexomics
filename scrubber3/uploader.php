@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 session_start();
 
 define( "SCRUB_DIR", '/tmp/scrubber/' );
@@ -35,4 +35,5 @@ else
   {
   echo "Invalid filetype " . $_FILES["file"]["type"];
   }
+ob_flush();
 ?>

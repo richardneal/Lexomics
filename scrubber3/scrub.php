@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 session_start();
 /**
  * @file
@@ -63,15 +63,21 @@ function lemmatize($text, $lemmaKEYS, $lemmas) {
     print("Nothing to do, since there are no lemmas.");
     return $text;
   }
-  elseif ($lemmaKEYS == "") {
-    print("Nothing to do, since there are no lexemes.");
-    return $text;
-  }
   else {
     /** There's probably a better way to do this **/
 
-    $allLemmas = split(",", $lemmas);
-    $allLemmaKEYS = split(",", $lemmaKEYS);
+    //$allLemmas = split(",", $lemmas);
+    //$allLemmaKEYS = split(",", $lemmaKEYS);
+
+    $allLemmas = array();
+    $allLemmaKEYS = array();
+
+    foreach(preg_split("/(\r?\n)/", $lemmas) as $line){
+      $lemmaLine = explode(", ", $line);
+      array_push($allLemmaKEYS, $lemmaLine[0]);
+      array_push($allLemmas, $lemmaLine[1]);
+    }
+
     if (count($allLemmas) != count($allLemmaKEYS)) {
       print("The lemma list and lexeme list need the same number of elements.");
       return $text;
@@ -126,7 +132,7 @@ function removePunctuation($text) {
  * @see remove_elements()
  *
  */
-function scrub_text($string, $stopWords = "", $lemmaKeys = "", $lemmas = "", $type = 'default') {
+function scrub_text($string, $stopWords = "", $lemmas = "", $type = 'default') {
 	switch ($type) {
 		case 'default':
 			// Make the string variable a string with the requested elements removed.
@@ -136,7 +142,7 @@ function scrub_text($string, $stopWords = "", $lemmaKeys = "", $lemmas = "", $ty
       print("\n After strip tags, before remove punctuation \n" . $string);   
       $string = removePunctuation($string);
       print("\n After remove punctuation, before remove stopwords \n" . $string);
-	$string = remove_stopWords($string, $stopWords);
+      $string = remove_stopWords($string, $stopWords);
       print("\n After remove stopwords, before lemmatize \n" . $string);
       $string = lemmatize($string, $lemmaKeys, $lemmas);
       print("\n After lemmatize \n" . $string . "\n\n\n");
@@ -172,9 +178,10 @@ if (isset($string)) {
 
 $file = file_get_contents($_SESSION["file"]);
 $stopwords = file_get_contents($_SESSION["stopwords"]);
-$lemmas = file_get_contents($_SESSION["stopwords"]);
-$_SESSION["scrubbed"] = scrub_text($file, $stopwords);
+$lemmas = file_get_contents($_SESSION["lemmas"]);
+$_SESSION["scrubbed"] = scrub_text($file, $stopwords, $lemmas);
 header('Location: ' . "display.php");
 die();
 
+ob_flush();
 ?>
