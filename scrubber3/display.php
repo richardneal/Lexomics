@@ -89,9 +89,11 @@ enctype="multipart/form-data">
 </fieldset><br>
 </form>
 
-<form action='downloader.php' method="post">
-<input type="submit" name="submit" value="Download">
-</form>
+<?php if(isset($_SESSION["scrubbed"])) : ?>
+    <form action='downloader.php' method="post">
+	<input type="submit" name="submit" value="Download">
+	</form>
+<?php endif; ?>
 
 <form action='clear.php' method="post">
 <input type="submit" name="submit" value="Clear">
