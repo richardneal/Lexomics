@@ -6,11 +6,14 @@
 <body>
 <?php 
 $file = file_get_contents($_SESSION["file"]);
-echo htmlspecialchars($file) . "<p></p>";
-echo $_SESSION["scrubbed"];
+echo "<b>This is your file: </b>" . "<br>" . $file . "<p>";
+echo "<b>This is your file without all the formatting: </b>" . "<br>" . htmlspecialchars($file) . "<p>";
+echo "<b>This is your file on scrubber: </b>" . "<br>" . $_SESSION["scrubbed"] . "<p>";
 ?>
 
 <form action='scrub.php' method="post">
+Remove Punctuation: <input type="checkbox" name="punctuation" checked="checked"/>
+Remove Formatting: <input type="checkbox" name="formatting" checked="checked"/>
 <input type="submit" name="submit" value="Scrub">
 </form>
 

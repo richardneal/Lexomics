@@ -132,15 +132,19 @@ function removePunctuation($text) {
  * @see remove_elements()
  *
  */
-function scrub_text($string, $stopWords = "", $lemmas = "", $type = 'default') {
+function scrub_text($string, $formatting, $punctuation, $stopWords = "", $lemmas = "", $type = 'default') {
 	switch ($type) {
 		case 'default':
 			// Make the string variable a string with the requested elements removed.
       utf8_encode($string);
       print("\n\n Before strip tags \n" . $string);
-      $string = strip_tags($string);
-      print("\n After strip tags, before remove punctuation \n" . $string);   
-      $string = removePunctuation($string);
+      if ($formatting == "on") {
+        $string = strip_tags($string);
+      }
+      print("\n After strip tags, before remove punctuation \n" . $string);
+      if ($punctuation == "on") {
+           $string = removePunctuation($string);
+      }   
       print("\n After remove punctuation, before remove stopwords \n" . $string);
       $string = remove_stopWords($string, $stopWords);
       print("\n After remove stopwords, before lemmatize \n" . $string);
@@ -175,11 +179,12 @@ if (isset($string)) {
 	return scrub_text($string, $stopWords, $lemmaKEYS, $lemmas);
 }
 */
-
+$formatting = $_POST["formatting"];
+$punctuation = $_POST["punctuation"];
 $file = file_get_contents($_SESSION["file"]);
 $stopwords = file_get_contents($_SESSION["stopwords"]);
 $lemmas = file_get_contents($_SESSION["lemmas"]);
-$_SESSION["scrubbed"] = scrub_text($file, $stopwords, $lemmas);
+$_SESSION["scrubbed"] = scrub_text($file, $formatting, $punctuation, $stopwords, $lemmas);
 header('Location: ' . "display.php");
 die();
 
