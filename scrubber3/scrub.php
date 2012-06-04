@@ -140,11 +140,16 @@ function formatSpecial($text) {
 	else {
 		$text = str_replace("&ae;", "æ", $text);
 		$text = str_replace("&AE;", "Æ", $text);
+
+		// eth
 		$text = str_replace("&d;", "ð", $text);
 		$text = str_replace("&D;", "Ð", $text);
+		// thorn
 		$text = str_replace("&t;", "þ", $text);
 		$text = str_replace("&T;", "Þ", $text);
+
 		$text = str_replace("&e;", "e", $text);
+		$text = str_replace("&amp;", "&", $text);
 		return $text;
 	}
 }
@@ -169,39 +174,46 @@ function formatSpecial($text) {
  * @see remove_elements()
  *
  */
-function scrub_text($string, $formatting, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopWords = "", $lemmas = "", $consolidations = "", $type = 'default') {
+function scrub_text($string, $formatting, $tags, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopWords = "", $lemmas = "", $consolidations = "", $type = 'default') {
 	switch ($type) {
 		case 'default':
 			// Make the string variable a string with the requested elements removed.
 			utf8_encode($string);
-			print("<br /> Before special formatting <br />" . $string . "<br />");
+			print("<br /> Before special characters <br />" . substr($string, 0, 1000) . "<br />");
 			if ($special == "on") {
 				$string = formatSpecial($string);
 			}
-			print("<br /> After special formatting, before strip tags <br />" . $string . "<br />");
+			print("<br /> After special characters, before strip tags <br />" . substr($string, 0, 1000) . "<br />");
 			if ($formatting == "on") {
-				$string = strip_tags($string);
+				print($tags);
+				if($tags=="keep"){
+					$string = strip_tags($string);
+				}
+				else {
+					$string = preg_replace ( "'<[^>]+>'U", "", $string);
+				}
 			}
-			print("<br /> After strip tags, before remove punctuation <br />" . $string . "<br />");
+			print("<br /> After strip tags, before remove punctuation <br />" . substr($string, 0, 1000) . "<br />");
 			if ($punctuation == "on") {
 				$string = removePunctuation($string);
 			} 
-			print("<br /> After remove punctuation, before remove stopwords <br />" . $string . "<br />");
+			print("<br /> After remove punctuation, before remove stopwords <br />" . substr($string, 0, 1000) . "<br />");
 			if ($removeStopWords == "on") {
 				$string = remove_stopWords($string, $stopWords);
 			}
-			print("<br /> After remove stopwords, before lemmatize <br />" . $string . "<br />");
+			print("<br /> After remove stopwords, before lemmatize <br />" . substr($string, 0, 1000) . "<br />");
 			if ($lemmatize == "on") {
 				$string = lemmatize($string, $lemmas);
 			}
-			print("<br /> After lemmatize, before consolidation <br />" . $string . "<br />");
+			print("<br /> After lemmatize, before consolidation <br />" . substr($string, 0, 1000) . "<br />");
 			if ($consolidate == "on") {
 				$string = consolidate($string, $consolidations);
 			}
-			print("<br /> After consolidation, before lowercase <br />" . $string . "<br />");
+			print("<br /> After consolidation, before lowercase <br />" . substr($string, 0, 1000) . "<br />");
 			if($lowercase == "on") {
 				$string = strtolower($string);
 			}
+			// Clean extra spaces
 			$string = preg_replace("/\s\s+/", " ", $string);
 			return $string;
 			
@@ -230,6 +242,7 @@ $special = "";
 
 if(isset($_POST["formatting"]))
 	$formatting = $_POST["formatting"];
+	$tags = $_POST["tags"];
 if(isset($_POST["punctuation"]))
 	$punctuation = $_POST["punctuation"];
 if(isset($_POST["stopwords"]))
@@ -247,9 +260,9 @@ $file = file_get_contents($_SESSION["file"]);
 $stopwords = file_get_contents($_SESSION["stopwords"]);
 $lemmas = file_get_contents($_SESSION["lemmas"]);
 $consolidations = file_get_contents($_SESSION["consolidations"]);
-$_SESSION["scrubbed"] = scrub_text($file, $formatting, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopwords, $lemmas, $consolidations);
-header('Location: ' . "display.php");
-die();
+$_SESSION["scrubbed"] = scrub_text($file, $formatting, $tags, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopwords, $lemmas, $consolidations);
+//header('Location: ' . "display.php");
+//die();
 
 ob_flush();
 ?>

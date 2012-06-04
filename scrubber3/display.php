@@ -20,6 +20,17 @@ $file = file_get_contents($_SESSION["file"]);
 #clear { float: left; margin:0 10px; }
 #buttonnav #submit { left: 0px; width:55px; }
 </style>
+<script type="text/javascript">
+        <!--
+            function tagSelect() {
+                var tags = document.getElementById("tagBox");
+                if(tags.style.visibility == 'visible') 
+                    tags.style.visibility = 'hidden'; 
+                else 
+                    tags.style.visibility = 'visible';
+            }
+        //-->
+    </script>
 </head>
 <div id="sidebar">
     <fieldset>
@@ -45,8 +56,12 @@ $file = file_get_contents($_SESSION["file"]);
         <fieldset>
             <legend><b>Scrubbing Options </b></font></legend>
             <input type="checkbox" name="punctuation" checked="checked"/> Remove Punctuation
-            <br /><input type="checkbox" name="formatting" checked="checked"/> Strip Tags
-            <br /><input type="checkbox" name="lowercase" checked="checked"/> Make Lowercase
+            <br /><input type="checkbox" name="formatting" checked="checked" onClick="tagSelect()"/> Strip Tags
+            <div id="tagBox" style="visibility: visible;">
+                <input type="radio" name="tags" value="keep" checked/> Keep Words in Tags<br />
+                <input type="radio" name="tags" value="discard" /> Discard Words in Tags
+            </div>
+            <input type="checkbox" name="lowercase" checked="checked"/> Make Lowercase
             <?php if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;")) : ?>
                 <br /><input type="checkbox" name="special" checked="checked"/> Format Special Characters
             <?php endif; ?>
