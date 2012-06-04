@@ -10,7 +10,7 @@ $file = file_get_contents($_SESSION["file"]);
     border-top: 1px solid #000000;
     border-left: 1px solid #000000;
     height: 100%;
-    width: 25%;
+    width: 275px;
     float: right;
     margin: 0px 0px 0px 10px;
     padding: 5px 0 0 5px;
@@ -44,20 +44,20 @@ $file = file_get_contents($_SESSION["file"]);
         <br />
         <fieldset>
             <legend><b>Scrubbing Options </b></font></legend>
-            Remove Punctuation: <input type="checkbox" name="punctuation" checked="checked"/>
-            <br />Strip Tags: <input type="checkbox" name="formatting" checked="checked"/>
-            <br />Make Lowercase: <input type="checkbox" name="lowercase" checked="checked"/>
-            <?php if(strpos($file, "&ae;")) : ?>
-                <br />Format Special Characters: <input type="checkbox" name="special" checked="checked"/>
+            <input type="checkbox" name="punctuation" checked="checked"/> Remove Punctuation
+            <br /><input type="checkbox" name="formatting" checked="checked"/> Strip Tags
+            <br /><input type="checkbox" name="lowercase" checked="checked"/> Make Lowercase
+            <?php if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;")) : ?>
+                <br /><input type="checkbox" name="special" checked="checked"/> Format Special Characters
             <?php endif; ?>
             <?php if(isset($_SESSION["stopwords"])) : ?>
-                <br />Remove Stopwords: <input type="checkbox" name="stopwords" checked="checked"/>
+                <br /><input type="checkbox" name="stopwords" checked="checked"/> Remove Stopwords
             <?php endif; ?>
             <?php if(isset($_SESSION["lemmas"])) : ?>
-                <br />Lemmatize: <input type="checkbox" name="lemmas" checked="checked"/>
+                <br /><input type="checkbox" name="lemmas" checked="checked"/> Lemmatize
             <?php endif; ?>
             <?php if(isset($_SESSION["consolidations"])) : ?>
-                <br />Consolidate: <input type="checkbox" name="consolidation" checked="checked"/>
+                <br /><input type="checkbox" name="consolidations" checked="checked"/> Consolidate
             <?php endif; ?>
             <br />
             
@@ -69,24 +69,24 @@ $file = file_get_contents($_SESSION["file"]);
         <legend><b>Upload </b></font></legend>
         <form action="uploader.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="type" value="stopwords" /> 
-            <label for="file">Stop Words:</label>
+            <label for="file">Stop Words:</label><br />
             <input type="file" name="file" id="file" /> 
             <br />
             <input type="submit" name="stopwords" value="Upload Stop Words" />
         </form>
         <form action="uploader.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="type" value="lemmas" /> 
-            <label for="file">Lemmas:</label>
+            <label for="file">Lemmas:</label><br />
             <input type="file" name="file" id="file" /> 
             <br />
-            <input type="submit" name="stopwords" value="Upload Lemmas" />
+            <input type="submit" name="lemmas" value="Upload Lemmas" />
         </form>
         <form action="uploader.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="type" value="consolidations" /> 
-            <label for="file">Consolidations:</label>
+            <label for="file">Consolidations:</label><br />
             <input type="file" name="file" id="file" /> 
             <br />
-            <input type="submit" name="stopwords" value="Upload Consolidations" />
+            <input type="submit" name="consolidations" value="Upload Consolidations" />
         </form>
     </fieldset><br>
 </div>
