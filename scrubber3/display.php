@@ -1,7 +1,7 @@
 <?php 
 session_start(); 
 $file = file_get_contents($_SESSION["file"]);
-if (!isset($_SESSION["POST"])) {
+if (is_null($_SESSION["POST"])) {
     $_SESSION["POST"]["punctuation"] = "on";
     $_SESSION["POST"]["formatting"] = "on";
     $_SESSION["POST"]["lowercase"] = "on";
@@ -29,10 +29,27 @@ if (!isset($_SESSION["POST"])) {
     margin: 0px 0px 0px 10px;
     padding: 5px 0 0 5px;
 }
-#scrub { float: left; margin:0 10px;}
-#download { float: left; margin:0 10;}
-#clear { float: left; margin:0 10px; }
-#buttonnav #submit { left: 0px; width:55px; }
+#buttons {
+    position: relative;
+}
+#scrub { 
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 30px;
+}
+#clear { 
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    width: 30px;
+}
+#download { 
+    position: absolute;
+    top: 25px;
+    left: 148px;
+    width: 30px;
+}
 #unscrubbedtext { 
     height: 35%;
     overflow-y: auto;
@@ -46,7 +63,7 @@ if (!isset($_SESSION["POST"])) {
     margin-bottom: 3%;
 }
 #stopwordtext {
-    height: 20%;
+    height: 15%;
     overflow-y: auto;
     overflow-x: hidden;
     float: left;
@@ -54,14 +71,13 @@ if (!isset($_SESSION["POST"])) {
     margin-right: 10%;
 }
 #lemmatext {
-    height: 20%;
+    height: 15%;
     overflow-y: auto;
     overflow-x: hidden;
     float: left;
-    
 }
 #consolidationtext {
-    height: 20%;
+    height: 15%;
     overflow-y: auto;
     overflow-x: hidden;
     float: left;
@@ -86,6 +102,7 @@ if (!isset($_SESSION["POST"])) {
     <div id="container">
 <div id="sidebar">
     <fieldset>
+        <div id="buttons">
         <legend><b>Tools </b></font></legend>
         <div id="download">
             <?php if(isset($_SESSION["scrubbed"])) : ?>
@@ -103,6 +120,8 @@ if (!isset($_SESSION["POST"])) {
             <div id="scrub">
                 <input type="submit" name="submit" value="Scrub">
             </div>
+            <br />
+        </div>
         </fieldset>
         <br />
         <fieldset>
@@ -158,40 +177,42 @@ if (!isset($_SESSION["POST"])) {
     </fieldset><br>
 </div>
 
-
+<b>Unscrubbed: </b>
 <div id="unscrubbedtext">
 <?php 
-echo "<b>This is your unscrubbed file: </b>" . "<br />" . htmlspecialchars($file) . "<p>";
+    echo htmlspecialchars($file);
 ?>
-
 </div>
+
+<?php if(isset($_SESSION["scrubbed"])) : ?>
+<b>Scrubbed: </b>
 <div id="scrubbedtext">
 <?php 
-if(isset($_SESSION["scrubbed"]))
-	echo "<b>This is your scrubbed file: </b>" . "<br />" . $_SESSION["scrubbed"] . "<p>";
+	echo $_SESSION["scrubbed"];
 ?>
 </div>
+<?php endif; ?>
 
 <div id="stopwordtext">
 <?php 
 if(isset($_SESSION["stopwords"]))
-    echo "<b>Your stopwords are: </b>" . "<br />" . file_get_contents($_SESSION["stopwords"]) . "<p>";
+    echo "<b>Stopwords: </b>" . "<br />" . file_get_contents($_SESSION["stopwords"]) . "<p>";
 ?>
 </div>
 
 <div id="lemmatext">
 <?php 
 if(isset($_SESSION["lemmas"]))
-    echo "<b>Your lemmas are: </b>" . "<br />" . preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["lemmas"]))) . "<p>";
+    echo "<b>Lemmas: </b>" . "<br />" . preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["lemmas"]))) . "<p>";
 ?>
 </div>
 
 <div id="consolidationtext">
 <?php 
 if(isset($_SESSION["consolidations"]))
-    echo "<b>Your consolidations are: </b>" . "<br />" . preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["consolidations"]))) . "<p>";
+    echo "<b>Consolidations: </b>" . "<br />" . preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["consolidations"]))) . "<p>";
 if(is_null($_SESSION["POST"]["formatting"])){
-    echo "check";
+    //this doesn't work yet
     $tagBox = "invisible";
 }
 ?>
