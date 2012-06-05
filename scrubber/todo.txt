@@ -1,2 +1,6 @@
-reorder bottom items
-keep tag selection
+Display:
+	General:
+		Reorganize bottom items to fit smaller displays
+	Options:
+		Keep tag keep/discard selection
+		Get tag keep/discard visibility working (Potentially use animations)

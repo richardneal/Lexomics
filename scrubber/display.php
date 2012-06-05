@@ -3,9 +3,11 @@ session_start();
 $file = file_get_contents($_SESSION["file"]);
 if (is_null($_SESSION["POST"])) {
     $_SESSION["POST"]["punctuationbox"] = "on";
-    $_SESSION["POST"]["formattingbox"] = "on";
+    if(preg_match("'<[^>]+>'U", $file) > 0)
+        $_SESSION["POST"]["formattingbox"] = "on";
     $_SESSION["POST"]["lowercasebox"] = "on";
-    $_SESSION["POST"]["specialbox"] = "on";
+    if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;"))
+        $_SESSION["POST"]["specialbox"] = "on";
     $_SESSION["POST"]["stopwordbox"] = "on";
     $_SESSION["POST"]["lemmabox"] = "on";
     $_SESSION["POST"]["consolidationbox"] = "on";
@@ -57,11 +59,15 @@ if (is_null($_SESSION["POST"])) {
         <fieldset>
             <legend><b>Scrubbing Options </b></font></legend>
             <input type="checkbox" name="punctuationbox" <?php if(isset($_SESSION["POST"]["punctuationbox"])) echo "checked" ?>/> Remove Punctuation
-            <br /><input type="checkbox" name="formattingbox" <?php if(isset($_SESSION["POST"]["formattingbox"])) echo "checked" ?> onClick="tagSelect(formatting)"/> Strip Tags
+            <?php if(preg_match("'<[^>]+>'U", $file) > 0): ?>
+            <br /><input type="checkbox" name="formattingbox" <?php if(isset($_SESSION["POST"]["formattingbox"])) echo "checked" ?> onClick="tagSelect(formattingbox)"/> Strip Tags
             <div id="tagBox" style=<?php if(is_null($_SESSION["POST"]["formattingbox"])) echo "visibility: invisible;" ?>>
                 <input type="radio" name="tags" value="keep" checked/> Keep Words Inside Tags<br />
                 <input type="radio" name="tags" value="discard" /> Discard Words Inside Tags
             </div>
+            <?php else : ?>
+            <br />
+            <?php endif; ?>
             <input type="checkbox" name="lowercasebox" <?php if(isset($_SESSION["POST"]["lowercasebox"])) echo "checked" ?>/> Make Lowercase
             <?php if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;")) : ?>
                 <br /><input type="checkbox" name="specialbox" <?php if(isset($_SESSION["POST"]["specialbox"])) echo "checked" ?>/> Format Special Characters
@@ -156,8 +162,8 @@ if(is_null($_SESSION["POST"]["formatting"])){
     $tagBox = "invisible";
 }
 ?>
-
 </div>
+
 </div>
 </body>
 </html>
