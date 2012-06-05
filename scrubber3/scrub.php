@@ -1,6 +1,10 @@
 <?php
 ob_start();
 session_start();
+if(isset($_POST)){
+	// save the posted data in the session
+	$_SESSION["POST"] = $_POST;
+}
 /**
  * @file
  * A script that is called by AJAX functionality from within EXT.
@@ -185,12 +189,11 @@ function scrub_text($string, $formatting, $tags, $punctuation, $removeStopWords,
 			}
 			print("<br /> After special characters, before strip tags <br />" . substr($string, 0, 1000) . "<br />");
 			if ($formatting == "on") {
-				print($tags);
 				if($tags=="keep"){
 					$string = strip_tags($string);
 				}
 				else {
-					$string = preg_replace ( "'<[^>]+>'U", "", $string);
+					$string = preg_replace ( "'<(.*?)>(.*?)</(.*?)>'U", "", $string);
 				}
 			}
 			print("<br /> After strip tags, before remove punctuation <br />" . substr($string, 0, 1000) . "<br />");
@@ -261,8 +264,8 @@ $stopwords = file_get_contents($_SESSION["stopwords"]);
 $lemmas = file_get_contents($_SESSION["lemmas"]);
 $consolidations = file_get_contents($_SESSION["consolidations"]);
 $_SESSION["scrubbed"] = scrub_text($file, $formatting, $tags, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopwords, $lemmas, $consolidations);
-//header('Location: ' . "display.php");
-//die();
+header('Location: ' . "display.php");
+die();
 
 ob_flush();
 ?>
