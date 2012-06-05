@@ -2,13 +2,13 @@
 session_start(); 
 $file = file_get_contents($_SESSION["file"]);
 if (is_null($_SESSION["POST"])) {
-    $_SESSION["POST"]["punctuation"] = "on";
-    $_SESSION["POST"]["formatting"] = "on";
-    $_SESSION["POST"]["lowercase"] = "on";
-    $_SESSION["POST"]["special"] = "on";
-    $_SESSION["POST"]["stopwords"] = "on";
-    $_SESSION["POST"]["lemmas"] = "on";
-    $_SESSION["POST"]["consolidations"] = "on";
+    $_SESSION["POST"]["punctuationbox"] = "on";
+    $_SESSION["POST"]["formattingbox"] = "on";
+    $_SESSION["POST"]["lowercasebox"] = "on";
+    $_SESSION["POST"]["specialbox"] = "on";
+    $_SESSION["POST"]["stopwordbox"] = "on";
+    $_SESSION["POST"]["lemmabox"] = "on";
+    $_SESSION["POST"]["consolidationbox"] = "on";
 }
 ?>
 <html>
@@ -56,24 +56,24 @@ if (is_null($_SESSION["POST"])) {
         <br />
         <fieldset>
             <legend><b>Scrubbing Options </b></font></legend>
-            <input type="checkbox" name="punctuation" <?php if(isset($_SESSION["POST"]["punctuation"])) echo "checked" ?>/> Remove Punctuation
-            <br /><input type="checkbox" name="formatting" <?php if(isset($_SESSION["POST"]["formatting"])) echo "checked" ?> onClick="tagSelect(formatting)"/> Strip Tags
-            <div id="tagBox" style=<?php if(is_null($_SESSION["POST"]["formatting"])) echo "visibility: invisible;" ?>>
+            <input type="checkbox" name="punctuationbox" <?php if(isset($_SESSION["POST"]["punctuationbox"])) echo "checked" ?>/> Remove Punctuation
+            <br /><input type="checkbox" name="formattingbox" <?php if(isset($_SESSION["POST"]["formattingbox"])) echo "checked" ?> onClick="tagSelect(formatting)"/> Strip Tags
+            <div id="tagBox" style=<?php if(is_null($_SESSION["POST"]["formattingbox"])) echo "visibility: invisible;" ?>>
                 <input type="radio" name="tags" value="keep" checked/> Keep Words Inside Tags<br />
                 <input type="radio" name="tags" value="discard" /> Discard Words Inside Tags
             </div>
-            <input type="checkbox" name="lowercase" <?php if(isset($_SESSION["POST"]["lowercase"])) echo "checked" ?>/> Make Lowercase
+            <input type="checkbox" name="lowercasebox" <?php if(isset($_SESSION["POST"]["lowercasebox"])) echo "checked" ?>/> Make Lowercase
             <?php if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;")) : ?>
-                <br /><input type="checkbox" name="special" <?php if(isset($_SESSION["POST"]["special"])) echo "checked" ?>/> Format Special Characters
+                <br /><input type="checkbox" name="specialbox" <?php if(isset($_SESSION["POST"]["specialbox"])) echo "checked" ?>/> Format Special Characters
             <?php endif; ?>
             <?php if(isset($_SESSION["stopwords"])) : ?>
-                <br /><input type="checkbox" name="stopwords" <?php if(isset($_SESSION["POST"]["stopwords"])) echo "checked" ?>/> Remove Stopwords
+                <br /><input type="checkbox" name="stopwordbox" <?php if(isset($_SESSION["POST"]["stopwordbox"])) echo "checked" ?>/> Remove Stopwords
             <?php endif; ?>
             <?php if(isset($_SESSION["lemmas"])) : ?>
-                <br /><input type="checkbox" name="lemmas" <?php if(isset($_SESSION["POST"]["lemmas"])) echo "checked" ?>/> Lemmatize
+                <br /><input type="checkbox" name="lemmabox" <?php if(isset($_SESSION["POST"]["lemmabox"])) echo "checked" ?>/> Lemmatize
             <?php endif; ?>
             <?php if(isset($_SESSION["consolidations"])) : ?>
-                <br /><input type="checkbox" name="consolidations" <?php if(isset($_SESSION["POST"]["consolidations"])) echo "checked" ?>/> Consolidate
+                <br /><input type="checkbox" name="consolidationbox" <?php if(isset($_SESSION["POST"]["consolidationbox"])) echo "checked" ?>/> Consolidate
             <?php endif; ?>
             <br />
             
@@ -107,7 +107,7 @@ if (is_null($_SESSION["POST"])) {
     </fieldset><br>
     <div id="info">
         Richard Neal <br />
-        Lexomics @ Wheaton College
+        <a href="http://wheatoncollege.edu/lexomics/"> Lexomics @ Wheaton College</a>
     </div>
 </div>
 
@@ -129,8 +129,14 @@ if (is_null($_SESSION["POST"])) {
 
 <div id="stopwordtext">
 <?php 
-if(isset($_SESSION["stopwords"]))
-    echo "<b>Stopwords: </b>" . "<br />" . file_get_contents($_SESSION["stopwords"]) . "<p>";
+if(isset($_SESSION["stopwords"])) {
+    $explodedsw = explode(", ", file_get_contents($_SESSION["stopwords"]));
+    sort($explodedsw);
+    echo "<b>Stop Words: </b>" . "<br />";
+    foreach(array_values($explodedsw) as $swvalue)
+        echo $swvalue . ", ";
+    echo "<p>";
+}
 ?>
 </div>
 

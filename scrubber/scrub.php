@@ -243,21 +243,21 @@ $lowercase = "";
 $special = "";
 
 
-if(isset($_POST["formatting"]))
-	$formatting = $_POST["formatting"];
+if(isset($_POST["formattingbox"]))
+	$formatting = $_POST["formattingbox"];
 	$tags = $_POST["tags"];
-if(isset($_POST["punctuation"]))
-	$punctuation = $_POST["punctuation"];
-if(isset($_POST["stopwords"]))
-	$removeStopWords = $_POST["stopwords"];
-if(isset($_POST["lemmas"]))
-	$lemmatize = $_POST["lemmas"];
-if(isset($_POST["consolidations"]))
-	$consolidate = $_POST["consolidations"];
-if(isset($_POST["lowercase"]))
-	$lowercase = $_POST["lowercase"];
-if(isset($_POST["special"]))
-	$special = $_POST["special"];
+if(isset($_POST["punctuationbox"]))
+	$punctuation = $_POST["punctuationbox"];
+if(isset($_POST["stopwordbox"]))
+	$removeStopWords = $_POST["stopwordbox"];
+if(isset($_POST["lemmabox"]))
+	$lemmatize = $_POST["lemmabox"];
+if(isset($_POST["consolidationbox"]))
+	$consolidate = $_POST["consolidationbox"];
+if(isset($_POST["lowercasebox"]))
+	$lowercase = $_POST["lowercasebox"];
+if(isset($_POST["specialbox"]))
+	$special = $_POST["specialbox"];
 
 $file = file_get_contents($_SESSION["file"]);
 $stopwords = file_get_contents($_SESSION["stopwords"]);

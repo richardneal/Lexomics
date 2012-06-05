@@ -47,6 +47,7 @@
 }
 #stopwordtext {
     height: 15%;
+    width: 25%;
     overflow-y: auto;
     overflow-x: hidden;
     float: left;
@@ -55,12 +56,14 @@
 }
 #lemmatext {
     height: 15%;
+    width: 25%;
     overflow-y: auto;
     overflow-x: hidden;
     float: left;
 }
 #consolidationtext {
     height: 15%;
+    width: 5%;
     overflow-y: auto;
     overflow-x: hidden;
     float: left;
