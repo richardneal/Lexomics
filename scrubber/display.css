@@ -1,0 +1,73 @@
+#container
+{
+    min-width: 1024px;
+    width:expression(document.body.clientWidth < 1024? "1024px": "auto" );
+}
+#sidebar {
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    height: 100%;
+    width: 275px;
+    float: right;
+    margin: 0px 0px 0px 10px;
+    padding: 5px 0 0 5px;
+}
+#buttons {
+    position: relative;
+}
+#scrub { 
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 30px;
+}
+#clear { 
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    width: 30px;
+}
+#download { 
+    position: absolute;
+    top: 25px;
+    left: 148px;
+    width: 30px;
+}
+#unscrubbedtext { 
+    height: 35%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 2%;
+}
+#scrubbedtext { 
+    height: 35%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 3%;
+}
+#stopwordtext {
+    height: 15%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    float: left;
+    margin-left: 30px;
+    margin-right: 10%;
+}
+#lemmatext {
+    height: 15%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    float: left;
+}
+#consolidationtext {
+    height: 15%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    float: left;
+    margin-left: 10%;
+    margin-right: 30px;
+}
+#info {
+    position: absolute;
+    bottom: 0;
+}
