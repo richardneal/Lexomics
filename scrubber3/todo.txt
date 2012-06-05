@@ -1,2 +1,0 @@
-reorder bottom items
-keep tag selection
