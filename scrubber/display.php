@@ -1,6 +1,10 @@
 <?php 
 session_start(); 
 $file = file_get_contents($_SESSION["file"]);
+if(is_null($file)) {
+    header('Location: ' . "index.html");
+    die();
+}
 if (is_null($_SESSION["POST"])) {
     $_SESSION["POST"]["punctuationbox"] = "on";
     if(preg_match("'<[^>]+>'U", $file) > 0)
@@ -11,6 +15,7 @@ if (is_null($_SESSION["POST"])) {
     $_SESSION["POST"]["stopwordbox"] = "on";
     $_SESSION["POST"]["lemmabox"] = "on";
     $_SESSION["POST"]["consolidationbox"] = "on";
+    $_SESSION["POST"]["tags"] = "keep";
 }
 ?>
 <html>
@@ -19,16 +24,17 @@ if (is_null($_SESSION["POST"])) {
 <title>Scrubber</title>
 <link rel="stylesheet" type="text/css" href="display.css"/>
 <script type="text/javascript">
-        <!--
-            function tagSelect(formatting) {
-                var tags = document.getElementById("tagBox");
-                if(formatting.checked == 1) 
-                    tags.style.visibility = 'visible'; 
-                else 
-                    tags.style.visibility = 'hidden';
-            }
-        //-->
-    </script>
+    <!--
+        function tagSelect() {
+            var formatting = document.getElementById("formattingbox");
+            var tags = document.getElementById("tagBox");
+            if(formatting.checked == 1) 
+               tags.style.display = 'inline'; 
+            else
+                tags.style.display = 'none';
+        }
+    //-->
+</script>
 </head>
 <body>
     <div id="container">
@@ -60,15 +66,13 @@ if (is_null($_SESSION["POST"])) {
             <legend><b>Scrubbing Options </b></font></legend>
             <input type="checkbox" name="punctuationbox" <?php if(isset($_SESSION["POST"]["punctuationbox"])) echo "checked" ?>/> Remove Punctuation
             <?php if(preg_match("'<[^>]+>'U", $file) > 0): ?>
-            <br /><input type="checkbox" name="formattingbox" <?php if(isset($_SESSION["POST"]["formattingbox"])) echo "checked" ?> onClick="tagSelect(formattingbox)"/> Strip Tags
-            <div id="tagBox" style=<?php if(is_null($_SESSION["POST"]["formattingbox"])) echo "visibility: invisible;" ?>>
-                <input type="radio" name="tags" value="keep" checked/> Keep Words Inside Tags<br />
-                <input type="radio" name="tags" value="discard" /> Discard Words Inside Tags
+            <br /><input type="checkbox" name="formattingbox" id="formattingbox" <?php if(isset($_SESSION["POST"]["formattingbox"])) echo "checked" ?> onClick="tagSelect()"/> Strip Tags
+            <div id="tagBox" style=<?php if(is_null($_SESSION["POST"]["formattingbox"])) echo "display: none;" ?>/>
+                <br /><input type="radio" name="tags" value="keep" <?php if($_SESSION["POST"]["tags"] == "keep") echo "checked" ?> /> Keep Words Inside Tags<br />
+                <input type="radio" name="tags" value="discard" <?php if($_SESSION["POST"]["tags"] == "discard") echo "checked" ?> /> Discard Words Inside Tags
             </div>
-            <?php else : ?>
-            <br />
             <?php endif; ?>
-            <input type="checkbox" name="lowercasebox" <?php if(isset($_SESSION["POST"]["lowercasebox"])) echo "checked" ?>/> Make Lowercase
+            <br /><input type="checkbox" name="lowercasebox" <?php if(isset($_SESSION["POST"]["lowercasebox"])) echo "checked" ?>/> Make Lowercase
             <?php if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;")) : ?>
                 <br /><input type="checkbox" name="specialbox" <?php if(isset($_SESSION["POST"]["specialbox"])) echo "checked" ?>/> Format Special Characters
             <?php endif; ?>
@@ -138,10 +142,12 @@ if (is_null($_SESSION["POST"])) {
 if(isset($_SESSION["stopwords"])) {
     $explodedsw = explode(", ", file_get_contents($_SESSION["stopwords"]));
     sort($explodedsw);
+    $resultarr = array();
     echo "<b>Stop Words: </b>" . "<br />";
     foreach(array_values($explodedsw) as $swvalue)
-        echo $swvalue . ", ";
-    echo "<p>";
+        $resultarr[] = $swvalue;
+    $result = implode(", ",$resultarr);
+    echo $result;
 }
 ?>
 </div>
@@ -166,4 +172,8 @@ if(is_null($_SESSION["POST"]["formatting"])){
 
 </div>
 </body>
+
+<script type="text/javascript">
+    tagSelect(document.getElementById());
+</script>
 </html>

@@ -1,6 +1,7 @@
 Display:
 	General:
-		Reorganize bottom items to fit smaller displays
+		Remove last comma from stopwords
+	Bottom Items (Stopwords, Lemmas, Consolidations):
+		Put header above scrolling text
 	Options:
-		Keep tag keep/discard selection
-		Get tag keep/discard visibility working (Potentially use animations)
+		Check stopwords, lemmas, consololidations after upload

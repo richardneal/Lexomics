@@ -1,7 +1,9 @@
 #container
 {
-    min-width: 1024px;
-    width:expression(document.body.clientWidth < 1024? "1024px": "auto" );
+    min-width: 1000px;
+    width:expression(document.body.clientWidth < 1000? "1000px": "auto" );
+    min-height: 650px;
+    height:expression(document.body.clientHeight < 650? "650px": "auto" );
 }
 #sidebar {
     border-top: 1px solid #000000;
@@ -34,41 +36,44 @@
     width: 30px;
 }
 #unscrubbedtext { 
-    height: 35%;
+    height: 30%;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 #scrubbedtext { 
-    height: 35%;
+    height: 30%;
     overflow-y: auto;
     overflow-x: hidden;
     margin-bottom: 3%;
 }
 #stopwordtext {
-    height: 15%;
-    width: 25%;
+    height: 20%;
+    width: 15%;
     overflow-y: auto;
     overflow-x: hidden;
     float: left;
     margin-left: 30px;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 #lemmatext {
-    height: 15%;
-    width: 25%;
+    height: 20%;
+    width: 15%;
     overflow-y: auto;
     overflow-x: hidden;
     float: left;
+    margin-right: 5%;
 }
 #consolidationtext {
-    height: 15%;
-    width: 5%;
+    height: 20%;
+    width: 15%;
     overflow-y: auto;
     overflow-x: hidden;
     float: left;
-    margin-left: 10%;
-    margin-right: 30px;
+    margin-right: 5%;
+}
+#tagbox {
+    display: inline;
 }
 #info {
     position: absolute;

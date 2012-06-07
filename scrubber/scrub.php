@@ -264,6 +264,7 @@ $stopwords = file_get_contents($_SESSION["stopwords"]);
 $lemmas = file_get_contents($_SESSION["lemmas"]);
 $consolidations = file_get_contents($_SESSION["consolidations"]);
 $_SESSION["scrubbed"] = scrub_text($file, $formatting, $tags, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopwords, $lemmas, $consolidations);
+
 header('Location: ' . "display.php");
 die();
 
