@@ -1,4 +1,5 @@
 <?php 
+error_reporting (E_ALL ^ E_NOTICE);
 session_start(); 
 $file = file_get_contents($_SESSION["file"]);
 if(is_null($file)) {

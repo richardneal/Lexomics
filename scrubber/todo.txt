@@ -1,6 +1,5 @@
 Display:
 	General:
-		Remove last comma from stopwords
 	Bottom Items (Stopwords, Lemmas, Consolidations):
 		Put header above scrolling text
 	Options:
