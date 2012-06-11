@@ -39,8 +39,8 @@ function remove_stopWords($text, $stopWords) {
 	else {
 		$allStopWords = explode(", ", $stopWords);
 		foreach($allStopWords as &$stopword){
-		$stopword = "/\b" . $stopword . "\b/i";
-	}
+			$stopword = "/\b" . $stopword . "\b/iu";
+		}
 
 	$removedString = preg_replace($allStopWords, "", $text);
 
@@ -119,25 +119,28 @@ function consolidate($text, $consolidations) {
 
 }
 
-function formatSpecial($text) {
+function formatSpecial($text, $lowercase) {
 	if (empty($text)) {
 		print("You must include some text from which to have the text removed.");
 		return $text;
 	}
 	else {
 		$text = str_replace("&ae;", "æ", $text);
-		$text = str_replace("&AE;", "Æ", $text);
-
-		// eth
 		$text = str_replace("&d;", "ð", $text);
-		$text = str_replace("&D;", "Ð", $text);
-		// thorn
 		$text = str_replace("&t;", "þ", $text);
-		$text = str_replace("&T;", "Þ", $text);
-
 		$text = str_replace("&e;", "e", $text);
-		
 		$text = str_replace("&amp;", "&", $text);
+
+		if ($lowercase == "on") {
+			$text = str_replace("&AE;", "æ", $text);
+			$text = str_replace("&D;", "ð", $text);
+			$text = str_replace("&T;", "þ", $text);
+		}
+		else {
+			$text = str_replace("&AE;", "Æ", $text);
+			$text = str_replace("&D;", "Ð", $text);
+			$text = str_replace("&T;", "Þ", $text);
+		}
 		return $text;
 	}
 }
@@ -169,9 +172,13 @@ function scrub_text($string, $formatting, $tags, $punctuation, $removeStopWords,
 			utf8_encode($string);
 			print("<br /> Before special characters <br />" . substr($string, 0, 1000) . "<br />");
 			if ($special == "on") {
-				$string = formatSpecial($string);
+				$string = formatSpecial($string, $lowercase);
 			}
-			print("<br /> After special characters, before strip tags <br />" . substr($string, 0, 1000) . "<br />");
+			print("<br /> After special characters, before lowercase <br />" . substr($string, 0, 1000) . "<br />");
+			if($lowercase == "on") {
+				$string = strtolower($string);
+			}
+			print("<br /> After lowercase, before strip tags <br />" . substr($string, 0, 1000) . "<br />");
 			if ($formatting == "on") {
 				if($tags=="keep"){
 					$string = strip_tags($string);
@@ -184,11 +191,11 @@ function scrub_text($string, $formatting, $tags, $punctuation, $removeStopWords,
 			if ($punctuation == "on") {
 				$string = removePunctuation($string);
 			} 
-			print("<br /> After remove punctuation, before remove stopwords <br />" . substr($string, 0, 1000) . "<br />");
+			print("<br /> After remove punctuation, before remove stopwords <br />" . substr($string, 0, 10000) . "<br />");
 			if ($removeStopWords == "on") {
 				$string = remove_stopWords($string, $stopWords);
 			}
-			print("<br /> After remove stopwords, before lemmatize <br />" . substr($string, 0, 1000) . "<br />");
+			print("<br /> After remove stopwords, before lemmatize <br />" . substr($string, 0, 10000) . "<br />");
 			if ($lemmatize == "on") {
 				$string = lemmatize($string, $lemmas);
 			}
@@ -196,10 +203,8 @@ function scrub_text($string, $formatting, $tags, $punctuation, $removeStopWords,
 			if ($consolidate == "on") {
 				$string = consolidate($string, $consolidations);
 			}
-			print("<br /> After consolidation, before lowercase <br />" . substr($string, 0, 1000) . "<br />");
-			if($lowercase == "on") {
-				$string = strtolower($string);
-			}
+			print("<br /> After consolidation <br />" . substr($string, 0, 1000) . "<br />");
+
 			// Clean extra spaces
 			$string = preg_replace("/\s\s+/", " ", $string);
 			return $string;
