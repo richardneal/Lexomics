@@ -1,14 +1,4 @@
 <?php
-ob_start();
-session_start();
-if(isset($_POST)){
-	// save the posted data in the session
-	$_SESSION["POST"] = $_POST;
-}
-/**
- * @file
- * A script that is called by AJAX functionality from within EXT.
- */
 
 /**
  * Prepares a text string for scrubbing by removing words which the end user
@@ -28,6 +18,15 @@ if(isset($_POST)){
  *
  * @see scrub_test()
  */
+
+
+ob_start();
+session_start();
+if(isset($_POST)){
+	// save the posted data in the session
+	$_SESSION["POST"] = $_POST;
+}
+
 function remove_stopWords($text, $stopWords) {
 	if (empty($text)) {
 		print("You must include some text from which to have the text removed.");
@@ -42,11 +41,7 @@ function remove_stopWords($text, $stopWords) {
 		foreach($allStopWords as &$stopword){
 		$stopword = "/\b" . $stopword . "\b/i";
 	}
-	//$allTextWords = preg_split("/\s/", $text);
-	//$newText = "";
-	//foreach($allTextWords as $word){
 
-	//}
 	$removedString = preg_replace($allStopWords, "", $text);
 
 	return $removedString;
@@ -64,10 +59,6 @@ function lemmatize($text, $lemmas) {
 		return $text;
 	}
 	else {
-	/** There's probably a better way to do this **/
-
-	//$allLemmas = split(",", $lemmas);
-	//$allLemmaKEYS = split(",", $lemmaKEYS);
 
 	$allLemmas = array();
 	$allLemmaKEYS = array();
@@ -86,15 +77,8 @@ function lemmatize($text, $lemmas) {
 	foreach($allLemmaKEYS as &$nextKEY){
 		$nextKEY = "/\b" . $nextKEY . "\b/i";
 	}
-	/*
-	foreach($allLemmaKEYS as $index => $lemmaKEY){
-		// Setup key-value pair in lemmaDict
-		$lemmaDict[$lemmaKEY] = $allLemmas[$index]
-	}
-	*/
+
 	$lemmatizedString = preg_replace($allLemmaKEYS, $allLemmas, $text);
-	//print("<br />". $text);
-	//print("<br /> After lemmatize <br />" . $lemmatizedString . "<br /><br />");
 
 	return $lemmatizedString;
 	}
@@ -105,8 +89,7 @@ function removePunctuation($text) {
 		print("You must include some text from which to have the punctuation removed.");
 		return $text;
 	}
-	//$text = preg_replace("/[!-/|:-@|[-`|{-~]/", "", $text);
-	//$text = preg_replace('/\W/u', " ", $text);
+
 	$text = trim(preg_replace('#[^\p{L}\p{N}]+#u', ' ', $text));
 	return $text;
 }
@@ -153,6 +136,7 @@ function formatSpecial($text) {
 		$text = str_replace("&T;", "Þ", $text);
 
 		$text = str_replace("&e;", "e", $text);
+		
 		$text = str_replace("&amp;", "&", $text);
 		return $text;
 	}
