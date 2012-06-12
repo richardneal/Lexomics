@@ -97,21 +97,21 @@ if (is_null($_SESSION["POST"])) {
         <form action="uploader.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="type" value="stopwords" /> 
             <label for="file">Stop Words:</label><br />
-            <input type="file" name="file" id="file" /> 
+            <input type="file" name="file" id="file" required="required"/> 
             <br />
             <input type="submit" name="stopwords" value="Upload Stop Words" />
         </form>
         <form action="uploader.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="type" value="lemmas" /> 
             <label for="file">Lemmas:</label><br />
-            <input type="file" name="file" id="file" /> 
+            <input type="file" name="file" id="file" required="required"/> 
             <br />
             <input type="submit" name="lemmas" value="Upload Lemmas" />
         </form>
         <form action="uploader.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="type" value="consolidations" /> 
             <label for="file">Consolidations:</label><br />
-            <input type="file" name="file" id="file" /> 
+            <input type="file" name="file" id="file" required="required"/> 
             <br />
             <input type="submit" name="consolidations" value="Upload Consolidations" />
         </form>
@@ -164,10 +164,6 @@ if(isset($_SESSION["lemmas"]))
 <?php 
 if(isset($_SESSION["consolidations"]))
     echo "<b>Consolidations: </b>" . "<br />" . preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["consolidations"]))) . "<p>";
-if(is_null($_SESSION["POST"]["formatting"])){
-    //this doesn't work yet
-    $tagBox = "invisible";
-}
 ?>
 </div>
 
