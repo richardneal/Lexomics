@@ -32,7 +32,8 @@ if ((($_FILES["file"]["type"] == "text/plain")
   }
 else
   {
-  echo "Invalid filetype " . $_FILES["file"]["type"];
+  header('Location: ' . $_SERVER['HTTP_REFERER']);
+  die();
   }
 ob_flush();
 ?>
