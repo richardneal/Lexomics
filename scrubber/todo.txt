@@ -1,6 +1,23 @@
 Display:
 	General:
+		Radio buttons for filetype
 	Bottom Items (Stopwords, Lemmas, Consolidations):
 		Put header above scrolling text
 	Options:
 		Check stopwords, lemmas, consololidations after upload
+SGML/XML
+	Serach for tei file (.xml)
+
+Open Source License
+	CC vs. GPL
+
+Sitewide:
+	Icon and .ico
+	Theme like divitext
+
+Other:
+	root for cs
+	Talk to Tom about Ra
+	Look at meandre
+
+Delta
