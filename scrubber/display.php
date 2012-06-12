@@ -138,34 +138,33 @@ if (is_null($_SESSION["POST"])) {
 </div>
 <?php endif; ?>
 
-<div id="stopwordtext">
+<div id="buffer">
+
+</div>
+
 <?php 
 if(isset($_SESSION["stopwords"])) {
     $explodedsw = explode(", ", file_get_contents($_SESSION["stopwords"]));
     sort($explodedsw);
     $resultarr = array();
-    echo "<b>Stop Words: </b>" . "<br />";
+    echo "<div id='stopwordtext'><b>Stop Words: </b>" . "<br />";
     foreach(array_values($explodedsw) as $swvalue)
         $resultarr[] = $swvalue;
     $result = implode(", ",$resultarr);
-    echo $result;
+    echo $result . "</div>";
 }
 ?>
-</div>
 
-<div id="lemmatext">
 <?php 
 if(isset($_SESSION["lemmas"]))
-    echo "<b>Lemmas: </b>" . "<br />" . preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["lemmas"]))) . "<p>";
+    echo "<div id='lemmatext'><b>Lemmas: </b>" . "<br />" . preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["lemmas"]))) . "<p></div>";
 ?>
-</div>
 
-<div id="consolidationtext">
 <?php 
 if(isset($_SESSION["consolidations"]))
-    echo "<b>Consolidations: </b>" . "<br />" . preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["consolidations"]))) . "<p>";
+    echo "<div id='consolidationtext'> <b>Consolidations: </b>" . "<br />" . preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["consolidations"]))) . "<p> </div>";
 ?>
-</div>
+
 
 </div>
 </body>

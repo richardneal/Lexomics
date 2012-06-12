@@ -1,7 +1,7 @@
 #container
 {
-    min-width: 1000px;
-    width:expression(document.body.clientWidth < 1000? "1000px": "auto" );
+    min-width: 810px;
+    width:expression(document.body.clientWidth < 810? "810px": "auto" );
     min-height: 650px;
     height:expression(document.body.clientHeight < 650? "650px": "auto" );
 }
@@ -47,13 +47,17 @@
     overflow-x: hidden;
     margin-bottom: 3%;
 }
+#buffer {
+    height: 20%;
+    float: left;
+    margin-left: 30px;
+}
 #stopwordtext {
     height: 20%;
     width: 15%;
     overflow-y: auto;
     overflow-x: hidden;
     float: left;
-    margin-left: 30px;
     margin-right: 5%;
 }
 #lemmatext {
@@ -76,6 +80,6 @@
     display: inline;
 }
 #info {
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
