@@ -5,6 +5,7 @@ Display:
 		Put header above scrolling text
 	Options:
 		Check stopwords, lemmas, consololidations after upload
+		Add option for remove numbers
 SGML/XML
 	Serach for tei file (.xml)
 

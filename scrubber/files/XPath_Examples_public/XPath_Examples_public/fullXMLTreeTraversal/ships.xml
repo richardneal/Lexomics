@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- From Python and XML, Jones & Drake, O'Reilly, 2002, p112 -->
+<shiptypes
+ name="United Federation of Planets">
+  <ship name="USS Enterprise">
+    <class>Sovereign</class>
+    <captain>Jean-Luc Picard</captain>
+    <registry-code>NCC-1701-E</registry-code>
+  </ship>
+  <ship name="USS Voyager">
+    <class>Intrepid</class>
+    <captain>Kathryn Janeway</captain>
+    <registry-code>NCC-74656</registry-code>
+  </ship>
+  <ship name="USS Enterprise">
+    <class>Galaxy</class>
+    <captain>Jean-Luc Picard</captain>
+    <registry-code>NCC-1701-D</registry-code>
+  </ship>
+  <ship name="USS Enterprise">
+    <class>Constitution</class>
+    <captain>James T. Kirk</captain>
+    <registry-code>NCC-1701</registry-code>
+  </ship> 
+  <ship name="USS Sao Paulo">
+    <class>Defiant</class>
+    <captain>Benjamin L. Sisko</captain>
+    <registry-code>NCC-75633</registry-code>
+  </ship>
+</shiptypes>

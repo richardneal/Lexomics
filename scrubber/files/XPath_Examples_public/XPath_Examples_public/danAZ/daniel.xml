@@ -1,0 +1,4520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE page [
+<!ENTITY eth "&#xf0;">
+<!ENTITY ETH "&#xd0;">
+<!ENTITY thorn "&#xfe;">
+<!ENTITY THORN "&#xde;">
+<!ENTITY aelig "&#xe6;">
+<!ENTITY AElig "&#xc6;">
+<!ENTITY thorn-bar "&#xa765;"> ]>
+<TEI>
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>A Lemmatized Edition of Daniel</title>
+<respStmt>
+<resp>coded by Jane Minogue</resp>
+<resp>proofed by Scott Kleinman 6 November 2009</resp>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Lexomics Group</publisher>
+</publicationStmt>
+<sourceDesc>
+<biblFull>
+<titleStmt>
+<title>Dictionary of Old English Corpus</title>
+</titleStmt>
+<editionStmt>
+<edition>2009</edition>
+</editionStmt>
+<fileDesc>T00130
+</fileDesc>
+</biblFull>
+</sourceDesc>
+</fileDesc>
+<!-- This file was last modified on November 1, 2009 by Scott Kleinman. -->
+</teiHeader>
+<text>
+<body>
+<w lemma="gefr&aelig;gen">Gefr&aelig;gn</w>
+<w lemma="ic">ic</w>
+<w lemma="ebrea">Hebreos</w>
+<w lemma="eadig">eadge</w>
+<w lemma="lifian">lifgean</w>
+<w lemma="in">in</w>
+<w lemma="ierusalem">Hierusalem</w>,
+<w lemma="goldhord">goldhord</w>
+<w lemma="d&aelig;lan">d&aelig;lan</w>,
+<w lemma="cyningdom">cyningdom</w>
+<w lemma="habban">habban</w>,
+<w lemma="swa">swa</w>
+<w lemma="hi">him</w>
+<w lemma="gecynd">gecynde</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>,
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="meotod">metodes</w>
+<w lemma="m&aelig;gen">m&aelig;gen</w>
+<w lemma="on">on</w>
+<w lemma="moyses">Moyses</w>
+<w lemma="hand">hand</w>
+<w lemma="weor&thorn;an">wear&eth;</w>
+<w lemma="wig">wig</w>
+<w lemma="gifan">gifen</w>,
+<w lemma="wiga">wigena</w>
+<w lemma="manig">m&aelig;nieo</w>,
+<w lemma="and">and</w>
+<w lemma="hi">hie</w>
+<w lemma="of">of</w>
+<w lemma="egipte">Egyptum</w>
+<w lemma="ut">ut</w>
+<w lemma="afaran">aforon</w>,
+<w lemma="m&aelig;gen">m&aelig;gene</w>
+<w lemma="micel">micle</w>.
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="modig">modig</w>
+<w lemma="cynn">cyn</w>!
+<w lemma="&thorn;enden">&thorn;enden</w>
+<w lemma="hi">hie</w>
+<w lemma="se" function="demonstrative">&thorn;y</w>
+<w lemma="rice">rice</w>
+<w lemma="r&aelig;dan">r&aelig;dan</w>
+<w lemma="motan">moston</w>,
+<w lemma="burh">burgum</w>
+<w lemma="wealdan" dipl="weoldon" resp="Scott Kleinman">wealdan</w>,
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="hi">him</w>
+<w lemma="beorht">beorht</w>
+<w lemma="wela">wela</w>.
+<w lemma="&thorn;enden">&thorn;enden</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="folc">folc</w>
+<w lemma="mid">mid</w>
+<w lemma="hi">him</w>
+<w lemma="hi">hiera</w>
+<w lemma="f&aelig;der">f&aelig;der</w>
+<w lemma="beon" suppl="wesan">w&aelig;re</w>
+<w lemma="healdan">healdan</w>
+<w lemma="willan">woldon</w>,
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="hi">him</w>
+<w lemma="hyrde">hyrde</w>
+<w lemma="god" function="adjective">god</w>,
+<w lemma="heofonrice">heofonrices</w>
+<w lemma="weard">weard</w>,
+<w lemma="halig">halig</w>
+<w lemma="drihten">drihten</w>,
+<w lemma="wuldor">wuldres</w>
+<w lemma="wealdend">waldend</w>.
+<w lemma="se" function="conjunctive">se</w>
+<w lemma="se" function="demonstrative">&eth;am</w>
+<w lemma="weorod">werude</w>
+<w lemma="gifan">geaf</w>
+<w lemma="mod">mod</w>
+<w lemma="and">and</w>
+<w lemma="meaht">mihte</w>,
+<w lemma="meotod">metod</w>
+<w lemma="eallwihta">alwihta</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="oft">oft</w>
+<w lemma="fela">fela</w>
+<w lemma="folc">folca</w>
+<w lemma="feorh">feore</w>
+<w lemma="gesceadan">gesceodon</w>,
+<w lemma="here">heriges</w>
+<w lemma="helm">helmum</w>,
+<w lemma="&thorn;a" function="demonstrative">&thorn;ara</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">him</w>
+<w lemma="hold">hold</w>
+<w lemma="ne">ne</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="wlencu">wlenco</w>
+<w lemma="anwadan">anwod</w>
+<w lemma="&aelig;t">&aelig;t</w>
+<w lemma="win&thorn;egu">win&thorn;ege</w>
+<w lemma="deofold&aelig;d">deofold&aelig;dum</w>,
+<w lemma="drincan">druncne</w>
+<w lemma="ge&thorn;encean">ge&eth;ohtas</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="hi">hie</w>
+<w lemma="&aelig;cr&aelig;ft">&aelig;cr&aelig;ftas</w>
+<w lemma="an" dipl="ana" resp="Scott Kleinman">ane</w>
+<w lemma="forl&aelig;tan">forleton</w>,
+<w lemma="meotod">metodes</w>
+<w lemma="m&aelig;genscipe">m&aelig;genscipe</w>,
+<w lemma="swa">swa</w>
+<w lemma="na">no</w>
+<w lemma="mann">man</w>
+<w lemma="sculan">scyle</w>
+<w lemma="he">his</w>
+<w lemma="g&aelig;st">gastes</w>
+<w lemma="lufu">lufan</w>
+<w lemma="wi&thorn;">wi&eth;</w>
+<w lemma="god" function="noun">gode</w>
+<w lemma="d&aelig;lan">d&aelig;lan</w>.
+<w lemma="&thorn;a" function="adverb" dipl="&thorn;e" resp="Scott Kleinman">&thorn;a</w>
+<w lemma="geseon">geseah</w>
+<w lemma="ic">ic</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="gedriht">gedriht</w>
+<w lemma="in">in</w>
+<w lemma="gedwola">gedwolan</w>
+<w lemma="hweorfan">hweorfan</w>,
+<w lemma="israhel">Israhela</w>
+<w lemma="cynn">cyn</w>
+<w lemma="unriht">unriht</w>
+<w lemma="don">don</w>,
+<w lemma="wamm" function="noun">wommas</w>
+<w lemma="wyrcan">wyrcean</w>.
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="weorc">weorc</w>
+<w lemma="god" function="adjective">gode</w>!
+<w lemma="oft">oft</w>
+<w lemma="he">he</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;am</w>
+<w lemma="leod">leodum</w>
+<w lemma="to" function="preposition" dipl="" resp="Scott Kleinman">to</w>
+<w lemma="lar">lare</w>
+<w lemma="sendan">sende</w>,
+<w lemma="heofonrice">heofonrices</w>
+<w lemma="weard">weard</w>,
+<w lemma="halig">halige</w>
+<w lemma="g&aelig;st">gastas</w>,
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="weorod">werude</w>
+<w lemma="wisdom">wisdom</w>
+<w lemma="beodan">budon</w>.
+<w lemma="hi">hie</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;re</w>
+<w lemma="snotor">snytro</w>
+<w lemma="so&thorn;" function="noun">so&eth;</w>
+<w lemma="gelyfan">gelyfdon</w>
+<w lemma="lytel">lytle</w>
+<w lemma="hwil">hwile</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="hi" dipl="me" resp="Scott Kleinman">hie</w>
+<w lemma="langung">langung</w>
+<w lemma="beswican">beswac</w>
+<w lemma="eor&thorn;">eor&eth;an</w>
+<w lemma="dream">dreamas</w>
+<w lemma="ece">eces</w>
+<w lemma="r&aelig;d">r&aelig;des</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="&aelig;t">&aelig;t</w>
+<w lemma="si&thorn;" function="adjective">si&eth;estan</w>
+<!-- Is this better classed as a noun? -->
+<w lemma="self">sylfe</w>
+<w lemma="forl&aelig;tan">forleton</w>
+<w lemma="drihten">drihtnes</w>
+<w lemma="dom">domas</w>,
+<w lemma="ceosan">curon</w>
+<w lemma="deofol">deofles</w>
+<w lemma="cr&aelig;ft">cr&aelig;ft</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="weor&thorn;an">wear&eth;</w>
+<w lemma="re&thorn;emod">re&eth;emod</w>
+<w lemma="rice">rices</w>
+<w lemma="&thorn;eoden">&eth;eoden</w>,
+<w lemma="unhold">unhold</w>
+<w lemma="&thorn;eod" dipl="&thorn;eoden" resp="Scott Kleinman">&thorn;eodum</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;am</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="&aelig;ht">&aelig;hte</w>
+<w lemma="gifan">geaf</w>.
+<w lemma="witan" dipl="wis&eth;e" resp="Scott Kleinman">Wisde</w>
+<w lemma="he">him</w>
+<w lemma="&aelig;t">&aelig;t</w>
+<w lemma="frym&thorn;">frym&eth;e</w>,
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="on">on</w>
+<w lemma="fruma">fruman</w>
+<w lemma="&aelig;r">&aelig;r</w>
+<w lemma="se" function="demonstrative">&eth;on</w>
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>
+<w lemma="mancynn">mancynnes</w>
+<w lemma="meotod">metode</w>
+<w lemma="deor" function="adjective">dyrust</w>,
+<w lemma="dugu&thorn;">dugo&eth;a</w>
+<w lemma="deor" function="adjective">dyrust</w>,
+<w lemma="drihten">drihtne</w>
+<w lemma="leof">leofost</w>;
+<w lemma="herpa&thorn;" dipl="herpo&thorn;" resp="Scot Kleinman">herepa&eth;</w>
+<w lemma="t&aelig;can" dipl="" resp="Scott Kleinman">t&aelig;hte</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;re</w>
+<w lemma="heah">hean</w>
+<w lemma="burh">byrig</w>,
+<w lemma="eorl">eorlum</w>
+<w lemma="el&thorn;eodig">el&eth;eodigum</w>,
+<w lemma="on">on</w>
+<w lemma="e&thorn;elland">e&eth;elland</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="salem">Salem</w>
+<w lemma="standan">stod</w>
+<w lemma="searu">searwum</w>
+<w lemma="af&aelig;stnes">af&aelig;stnod</w>,
+<w lemma="weall">weallum</w>
+<w lemma="geweor&thorn;ian">geweor&eth;od</w>.
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="witega">witgan</w>
+<w lemma="faran">foron</w>,
+<w lemma="caldea">Caldea</w>
+<w lemma="cynn">cyn</w>,
+<w lemma="to" function="preposition">to</w>
+<w lemma="ceaster">ceastre</w>
+<w lemma="for&thorn;">for&eth;</w>,
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="israhel">Israela</w>
+<w lemma="&aelig;ht">&aelig;hta</w>
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>,
+<w lemma="bewrihan">bewrigene</w>
+<w lemma="mid">mid</w>
+<w lemma="weorc">weorcum</w>;
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="weorod">werod</w>
+<w lemma="gefaran">gefor</w>,
+<w lemma="m&aelig;gen&thorn;reat">m&aelig;gen&thorn;reat</w>
+<w lemma="m&aelig;re">m&aelig;re</w>,
+<w lemma="manbealu">manbealwes</w>
+<w lemma="georn">georn</w>.
+<w lemma="aweccan">Awehte</w>
+<w lemma="se" function="demonstrative">&thorn;one</w>
+<w lemma="w&aelig;lni&thorn;">w&aelig;lni&eth;</w>
+<w lemma="wer">wera</w>
+<w lemma="ealdorfrea">aldorfrea</w>,
+<w lemma="babilon">Babilones</w>
+<w lemma="brego">brego</w>,
+<w lemma="on">on</w>
+<w lemma="he">his</w>
+<w lemma="burhstede">burhstede</w>,
+<w lemma="nebuchadnezzar">Nabochodonossor</w>,
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="ni&thorn;hete">ni&eth;hete</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">he</w>
+<w lemma="secan">secan</w>
+<w lemma="onginnan">ongan</w>
+<w lemma="sefa">sefan</w>
+<w lemma="gehygdig">gehygdum</w>
+<w lemma="hu">hu</w>
+<w lemma="he">he</w>
+<w lemma="israhel">Israelum</w>
+<w lemma="ea&thorn;e">ea&eth;ost</w>
+<w lemma="meaht">meahte</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="gram">gromra</w>
+<w lemma="gang">gang</w>
+<w lemma="guma">guman</w>
+<w lemma="o&thorn;&thorn;ringan">o&eth;&thorn;ringan</w>.
+<w lemma="gesamnian">Gesamnode</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="su&thorn;">su&eth;an</w>
+<w lemma="and">and</w>
+<w lemma="nor&thorn;">nor&eth;an</w>
+<w lemma="w&aelig;lhreow">w&aelig;lhreow</w>
+<w lemma="weorod">werod</w>,
+<w lemma="and">and</w>
+<w lemma="west">west</w>
+<w lemma="foran" dipl="faran" resp="Scott Kleinman">foran</w>
+<w lemma="herig">herige</w>
+<w lemma="h&aelig;&thorn;encyning">h&aelig;&eth;encyninga</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;re</w>
+<w lemma="heah">hean</w>
+<w lemma="burh">byrig</w>.
+<w lemma="israhel">Israela</w>
+<w lemma="e&thorn;elweard">e&eth;elweardas</w>
+<w lemma="habban" dipl="" resp="Scott Kleinman">h&aelig;fdon</w>
+<w lemma="lufu">lufan</w>,
+<w lemma="lifwela">lifwelan</w>,
+<w lemma="&thorn;enden">&thorn;enden</w>
+<w lemma="hi">hie</w>
+<w lemma="latan">let</w>
+<w lemma="meotod">metod</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="ic" dipl="eac" resp="Scott Kleinman">ic</w>
+<w lemma="e&thorn;an">e&eth;an</w>
+<w lemma="gefr&aelig;gen">gefr&aelig;gn</w>
+<w lemma="ealdfeond">ealdfeonda</w>
+<w lemma="cynn">cyn</w>
+<w lemma="winburh">winburh</w>
+<w lemma="wer">wera</w>.
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="wiga">wigan</w>
+<w lemma="ne">ne</w>
+<w lemma="gelyfan">gelyfdon</w>,
+<w lemma="bereafian">bereafodon</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="r&aelig;ced">receda</w>
+<w lemma="wuldor">wuldor</w>
+<w lemma="read">readan</w>
+<w lemma="gold">golde</w>,
+<w lemma="sinc">since</w>
+<w lemma="and">and</w>
+<w lemma="seolfor">seolfre</w>,
+<w lemma="salomon">Salomones</w>
+<w lemma="templ">templ</w>.
+<w lemma="gestrudan">Gestrudan</w>
+<w lemma="gestreon">gestreona</w>
+<w lemma="under">under</w>
+<w lemma="stanhli&thorn;">stanhli&eth;um</w>,
+<w lemma="swilc">swilc</w>
+<w lemma="eall">eall</w>
+<w lemma="swa">swa</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="eorl">eorlas</w>
+<w lemma="agan">agan</w>
+<w lemma="sculan">sceoldon</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="burh">burga</w>
+<w lemma="gehwa">gehwone</w>
+<w lemma="abrecan">abrocen</w>
+<w lemma="habban">h&aelig;fdon</w>,
+<w lemma="&thorn;a" function="demonstrative">&thorn;ara</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="folc">folce</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="fri&thorn;">fri&eth;e</w>
+<w lemma="standan">stodon</w>.
+<w lemma="gehladan">Gehlodon</w>
+<w lemma="hi">him</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="hu&thorn;e">hu&eth;e</w>
+<w lemma="hordweard">hordwearda</w>
+<w lemma="gestreon">gestreon</w>,
+<w lemma="feoh" dipl="fea" resp="Scott Kleinman">feoh</w>
+<w lemma="and">and</w>
+<w lemma="fr&aelig;twe" dipl="freos" resp="Scott Kleinman">fr&aelig;twa</w>,
+<w lemma="swilc">swilc</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="findan">funden</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>,
+<w lemma="and">and</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="mid">mid</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;am</w>
+<w lemma="aht">&aelig;htum</w>
+<w lemma="eft">eft</w>
+<w lemma="si&thorn;ian">si&eth;edon</w>,
+<w lemma="and">and</w>
+<w lemma="gel&aelig;dan">gel&aelig;ddon</w>
+<w lemma="eac">eac</w>
+<w lemma="on">on</w>
+<w lemma="lang">langne</w>
+<w lemma="si&thorn;" function="noun">si&eth;</w>
+<w lemma="israhel">Israela</w>
+<w lemma="cynn">cyn</w>,
+<w lemma="on">on</w>
+<w lemma="eastweg">eastwegas</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="babilonia">Babilonia</w>,
+<w lemma="beorn">beorna</w>
+<w lemma="unrim">unrim</w>,
+<w lemma="under">under</w>
+<w lemma="hand">hand</w>
+<w lemma="h&aelig;le&thorn;">h&aelig;le&eth;</w>
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;enum</w>
+<w lemma="deman">deman</w>.
+<w lemma="nebuchadnezzar">Nabochodonossor</w>
+<w lemma="hi">him</w>
+<w lemma="on">on</w>
+<w lemma="nid">nyd</w>
+<w lemma="don">dyde</w>
+<w lemma="israhel">Israela</w>
+<w lemma="bearn">bearn</w>
+<w lemma="ofer" dipl="otor" resp="Scott Kleinman">ofer</w>
+<w lemma="eall">ealle</w>
+<w lemma="lufu">lufen</w>,
+<w lemma="w&aelig;pen">w&aelig;pna</w>
+<w lemma="laf">lafe</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="weorc&thorn;eow">weorc&thorn;eowum</w>.
+<w lemma="onsendan">Onsende</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="sin">sinra</w>
+<w lemma="&thorn;egn">&thorn;egna</w>
+<w lemma="worn">worn</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="weorod">werudes</w>
+<w lemma="west" dipl="wes" resp="Scott Kleinman">west</w>
+<w lemma="toferan">toferan</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">him</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;ara</w>
+<w lemma="leod" dipl="leode" resp="Scott Kleinman">leoda</w>
+<w lemma="land">land</w>
+<w lemma="gehealdan">geheolde</w>,
+<w lemma="e&thorn;e" function="adjective">e&eth;ne</w>
+<w lemma="e&thorn;el">e&eth;el</w>,
+<w lemma="&aelig;fter">&aelig;fter</w>
+<w lemma="ebreas">Ebreum</w>.
+<w lemma="hatan">het</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="secan">secan</w>
+<w lemma="sin">sine</w>
+<w lemma="gerefa">gerefan</w>
+<w lemma="geond">geond</w>
+<w lemma="israhel">Israela</w>
+<w lemma="earm">earme</w>
+<w lemma="laf">lafe</w>,
+<w lemma="hwilc">hwilc</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;re</w>
+<w lemma="geogu&thorn;">geogo&eth;e</w>
+<w lemma="gleaw">gleawost</w>
+<w lemma="beon" suppl="wesan">w&aelig;re</w>
+<w lemma="boc">boca</w>
+<w lemma="bebod">bebodes</w>,
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="bringan">brungen</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>.
+<w lemma="willan">Wolde</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="cniht">cnihtas</w>
+<w lemma="cr&aelig;ft">cr&aelig;ft</w>
+<w lemma="leornian">leornedon</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">him</w>
+<w lemma="snotor">snytro</w>
+<w lemma="on">on</w>
+<w lemma="sefa">sefan</w>
+<w lemma="secgan">secgan</w>
+<w lemma="magan">mihte</w>,
+<w lemma="nealles" type="negative-contraction" units="ne+ealles">nales</w>
+<w lemma="se" function="demonstrative">&eth;y</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">he</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="motan">moste</w>
+<w lemma="o&thorn;&thorn;e">o&eth;&eth;e</w>
+<w lemma="gemunan">gemunan</w>
+<w lemma="willan">wolde</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">he</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;ara</w>
+<w lemma="gifu">gifena</w>
+<w lemma="god" function="noun">gode</w>
+<w lemma="&thorn;ancian">&thorn;ancode</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">him</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="dugu&thorn;">dugu&eth;e</w>
+<w lemma="drihten">drihten</w>
+<w lemma="sceran">scyrede</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="hi">hie</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="findan">fundon</w>
+<w lemma="&thorn;ry" dipl="to" resp="Scott Kleinman">&thorn;ry</w>
+<w lemma="freagleaw">freagleawe</w>
+<w lemma="&aelig;&thorn;el" function="adjective">&aelig;&eth;ele</w>
+<w lemma="cniht">cnihtas</w>
+<w lemma="and">and</w>
+<w lemma="&aelig;f&aelig;st">&aelig;f&aelig;ste</w>,
+<w lemma="geong">ginge</w>
+<w lemma="and">and</w>
+<w lemma="god" function="adjective">gode</w>
+<w lemma="in">in</w>
+<w lemma="gods&aelig;d">gods&aelig;de</w>;
+<w lemma="an">an</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="annanias">Annanias</w>,
+<w lemma="o&thorn;er">o&eth;er</w>
+<w lemma="azarias">Azarias</w>,
+<w lemma="&thorn;ridda">&thorn;ridda</w>
+<w lemma="mishael">Misael</w>,
+<w lemma="meotod">metode</w>
+<w lemma="geceosan">gecorene</w>.
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="&thorn;ry">&thorn;ry</w>
+<w lemma="cuman">comon</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="&thorn;eoden">&thorn;eodne</w>
+<w lemma="foran">foran</w>,
+<w lemma="heard">hearde</w>
+<w lemma="and">and</w>
+<w lemma="hyge&thorn;ancol">hige&thorn;ancle</w>,
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;ena</w>
+<w lemma="sittan">s&aelig;t</w>,
+<w lemma="cyning">cyning</w>
+<w lemma="cor&thorn;er">cor&eth;res</w>
+<w lemma="georn">georn</w>,
+<w lemma="in">in</w>
+<w lemma="caldea">Caldea</w>
+<w lemma="burh">byrig</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="hi">hie</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="wlanc">wlancan</w>
+<w lemma="wisdom">wisdom</w>
+<w lemma="sculan">sceoldon</w>,
+<w lemma="wer">weras</w>
+<w lemma="ebrea">Ebrea</w>,
+<w lemma="word">wordum</w>
+<w lemma="cy&thorn;an" dipl="cy&eth;don" resp="Scott Kleinman">cy&eth;an</w>,
+<w lemma="hygecr&aelig;ft">higecr&aelig;ft</w>
+<w lemma="heah">heane</w>,
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="halig">halig</w>
+<w lemma="mod">mod</w>,
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="beorn">beorn</w>
+<w lemma="bebeodan">bebead</w>,
+<w lemma="babilon">Babilone</w>
+<w lemma="weard">weard</w>,
+<w lemma="swi&thorn;mod">swi&eth;mod</w>
+<w lemma="cyning">cyning</w>,
+<w lemma="sin">sinum</w>
+<w lemma="&thorn;egn">&thorn;egnum</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="frumgar">frumgaras</w>
+<w lemma="be">be</w>
+<w lemma="feorh">feore</w>
+<w lemma="d&aelig;d">d&aelig;de</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;am</w>
+<w lemma="geong">gengum</w>
+<w lemma="&thorn;ry">&thorn;rym</w>
+<w lemma="gad">gad</w>
+<w lemma="ne">ne</w>
+<w lemma="beon" suppl="wesan">w&aelig;re</w>
+<w lemma="witan">wiste</w>
+<w lemma="ne">ne</w>
+<w lemma="w&aelig;d">w&aelig;de</w>
+<w lemma="in">in</w>
+<w lemma="weoroldlif">woruldlife</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="breme">breme</w>
+<w lemma="babilon">Babilone</w>
+<w lemma="weard">weard</w>,
+<w lemma="m&aelig;re">m&aelig;re</w>
+<w lemma="and">and</w>
+<w lemma="modig">modig</w>
+<w lemma="ofer">ofer</w>
+<w lemma="middangeard">middangeard</w>,
+<w lemma="egesful">egesful</w>
+<w lemma="eald">ylda</w>
+<w lemma="bearn">bearnum</w>.
+<w lemma="na">No</w>
+<w lemma="he">he</w>
+<w lemma="&aelig;">&aelig;</w>
+<w lemma="fremman">fremede</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="in">in</w>
+<w lemma="oferhygd">oferhygde</w>
+<w lemma="&aelig;ghwa">&aelig;ghw&aelig;s</w>
+<w lemma="lifian">lifde</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="folctoga">folctogan</w>
+<w lemma="on">on</w>
+<w lemma="frumsl&aelig;p">frumsl&aelig;pe</w>,
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="rest">reste</w>
+<w lemma="gehweorfan">gehwearf</w>
+<w lemma="rice" function="adjective">rice</w>
+<w lemma="&thorn;eoden">&thorn;eoden</w>,
+<w lemma="cuman">com</w>
+<w lemma="on">on</w>
+<w lemma="sefa">sefan</w>
+<w lemma="hweorfan">hwurfan</w>
+<w lemma="swefen">swefnes</w>
+<w lemma="woma">woma</w>,
+<w lemma="hu">hu</w>
+<w lemma="weorold">woruld</w>
+<w lemma="beon" suppl="wesan">w&aelig;re</w>
+<w lemma="wundor">wundrum</w>
+<w lemma="geteodan">geteod</w>,
+<w lemma="ungelic">ungelic</w>
+<w lemma="eald">yldum</w>
+<w lemma="o&thorn;">o&eth;</w>
+<w lemma="edsceaft">edsceafte</w>.
+<w lemma="weor&thorn;an">Wear&eth;</w>
+<w lemma="he">him</w>
+<w lemma="on">on</w>
+<w lemma="sl&aelig;p">sl&aelig;pe</w>
+<w lemma="so&thorn;" function="noun">so&eth;</w>
+<w lemma="gecy&thorn;an">gecy&eth;ed</w>,
+<w lemma="&thorn;&aelig;tte">&thorn;&aelig;tte</w>
+<w lemma="rice">rices</w>
+<w lemma="gehwa">gehw&aelig;s</w>
+<w lemma="re&thorn;e">re&eth;e</w>
+<w lemma="sculan">sceolde</w>
+<w lemma="gelimpan">gelimpan</w>,
+<w lemma="eor&thorn;">eor&eth;an</w>
+<w lemma="dream">dreamas</w>,
+<w lemma="ende">ende</w>
+<w lemma="weor&thorn;">wur&eth;an</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="onwacan">onwoc</w>
+<w lemma="wulfheort">wulfheort</w>,
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="&aelig;r">&aelig;r</w>
+<w lemma="wingal">wingal</w>
+<w lemma="swefan">sw&aelig;f</w>,
+<w lemma="babilon">Babilone</w>
+<w lemma="weard">weard</w>.
+<w lemma="beon" suppl="wesan" type="negative-contraction" units="ne+w&aelig;s">N&aelig;s</w>
+<w lemma="he">him</w>
+<w lemma="bli&thorn;e" dipl="bili&eth;e" resp="Scott Kleinman">bli&eth;e</w>
+<w lemma="hyge">hige</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="he">him</w>
+<w lemma="sorh">sorh</w>
+<w lemma="astigan">astah</w>,
+<w lemma="swefen">swefnes</w>
+<w lemma="woma">woma</w>.
+<w lemma="na">No</w>
+<w lemma="he">he</w>
+<w lemma="gemunan">gemunde</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">him</w>
+<w lemma="meotod" dipl="metod" resp="Scott Kleinman">meted</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>.
+<w lemma="hatan">het</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="tosamne">tosomne</w>
+<w lemma="sin">sinra</w>
+<w lemma="leod">leoda</w>
+<w lemma="&thorn;e" function="conjunctive">&thorn;a</w>
+<!-- Note lemma changed based on my analysis - No ASPR emendation -->
+<w lemma="wiccungdom">wiccungdom</w>
+<w lemma="wid">widost</w>
+<w lemma="beran">b&aelig;ron</w>,
+<w lemma="frignan">fr&aelig;gn</w>
+<w lemma="&thorn;a" function="conjunctive">&thorn;a</w>
+<w lemma="&thorn;a" function="demonstrative">&eth;a</w>
+<w lemma="manig">m&aelig;nigeo</w>
+<w lemma="hwa">hw&aelig;t</w>
+<w lemma="he">hine</w>
+<w lemma="gem&aelig;tan">gem&aelig;tte</w>,
+<w lemma="&thorn;enden">&thorn;enden</w>
+<w lemma="reordberend">reordberend</w>
+<w lemma="rest">reste</w>
+<w lemma="wunian">wunode</w>.
+<w lemma="weor&thorn;an">Wear&eth;</w>
+<w lemma="he">he</w>
+<w lemma="on">on</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="egesa">egesan</w>
+<w lemma="acol">acol</w>
+<w lemma="weor&thorn;an">worden</w>,
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="he">he</w>
+<w lemma="ne">ne</w>
+<w lemma="witan">wisse</w>
+<w lemma="word">word</w>
+<w lemma="ne">ne</w>
+<w lemma="angin">angin</w>
+<w lemma="swefen">swefnes</w>
+<w lemma="sin">sines</w>;
+<w lemma="hatan">het</w>
+<w lemma="hi">him</w>
+<w lemma="secgan">secgan</w>
+<w lemma="&thorn;eah">&thorn;eah</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="he">him</w>
+<w lemma="unbli&thorn;e">unbli&eth;e</w>
+<w lemma="andswarian">andswaredon</w>
+<w lemma="deofolwitig">deofolwitgan</w> (
+<w lemma="beon" suppl="wesan" type="negative-contraction" units="ne+w&aelig;s">n&aelig;s</w>
+<w lemma="he">him</w>
+<w lemma="dom">dom</w>
+<w lemma="gearo">gearu</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="asecgan">asecganne</w>
+<w lemma="swefen">swefen</w>
+<w lemma="cyning">cyninge</w>): "
+<w lemma="hu">Hu</w>
+<w lemma="magan">magon</w>
+<w lemma="we">we</w>
+<w lemma="swa">swa</w>
+<w lemma="digol">dygle</w>,
+<w lemma="drihten">drihten</w>,
+<w lemma="ahicgan">ahicgan</w>
+<w lemma="on">on</w>
+<w lemma="sefa">sefan</w>
+<w lemma="&thorn;u">&thorn;inne</w>,
+<w lemma="hu">hu</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="swefan">swefnede</w>,
+<w lemma="o&thorn;&thorn;e">o&eth;&eth;e</w>
+<w lemma="wyrd">wyrda</w>
+<w lemma="gesceaft">gesceaft</w>
+<w lemma="wisdom">wisdom</w>
+<w lemma="buan">bude</w>,
+<w lemma="gif">gif</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="he">his</w>
+<w lemma="&aelig;rest">&aelig;rest</w>
+<w lemma="ne">ne</w>
+<w lemma="magan">meaht</w>
+<w lemma="or">or</w>
+<w lemma="areccan">areccan</w>?"
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="he">him</w>
+<w lemma="unbli&thorn;e">unbli&eth;e</w>
+<w lemma="andswarian">andswarode</w>
+<w lemma="wulfheort">wulfheort</w>
+<w lemma="cyning">cyning</w>,
+<w lemma="witig">witgum</w>
+<w lemma="sin">sinum</w>: "
+<w lemma="beon" suppl="wesan" type="negative-contraction" units="ne+w&aelig;ron">N&aelig;ron</w>
+<w lemma="ge" function="pronoun">ge</w>
+<w lemma="swa">swa</w>
+<w lemma="eac">eacne</w>
+<w lemma="ofer">ofer</w>
+<w lemma="eall">ealle</w>
+<w lemma="mann">men</w>
+<w lemma="modge&thorn;anc">modge&thorn;ances</w>
+<w lemma="swa">swa</w>
+<w lemma="ge" function="pronoun">ge</w>
+<w lemma="ic">me</w>
+<w lemma="secgan">s&aelig;gdon</w>,
+<w lemma="and">and</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="gecwe&thorn;an" dipl="gcw&aelig;don" resp="Scott Kleinman">gecw&aelig;don</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="ge" function="pronoun">ge</w>
+<w lemma="cunnan">cu&eth;on</w>
+<w lemma="ic">mine</w>
+<w lemma="ealdorleg">aldorlege</w>,
+<w lemma="swa">swa</w>
+<w lemma="ic">me</w>
+<w lemma="&aelig;fter">&aelig;fter</w>
+<w lemma="weor&thorn;an">wear&eth;</w>,
+<w lemma="o&thorn;&thorn;e">o&eth;&eth;e</w>
+<w lemma="ic">ic</w>
+<w lemma="fur&thorn;or">fur&eth;or</w>
+<w lemma="findan">findan</w>
+<w lemma="sculan">sceolde</w>.
+<w lemma="nu" dipl="ne" resp="Scott Kleinman">nu</w>
+<w lemma="ge" function="pronoun">ge</w>
+<w lemma="m&aelig;ting">m&aelig;tinge</w>
+<w lemma="ic">mine</w>
+<w lemma="ne">ne</w>
+<w lemma="cunnan">cunnon</w>,
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="ic">me</w>
+<w lemma="for">for</w>
+<w lemma="weorod">werode</w>
+<w lemma="wisdom">wisdom</w>
+<w lemma="beran" dipl="bere&eth;" resp="Scott Kleinman">bera&eth;</w>.
+<w lemma="ge" function="pronoun">ge</w>
+<w lemma="sweltan">swelta&eth;</w>
+<w lemma="dea&thorn;">dea&eth;e</w>,
+<w lemma="nim&thorn;e">nym&thorn;e</w>
+<w lemma="ic">ic</w>
+<w lemma="dom">dom</w>
+<w lemma="witan">wite</w>
+<w lemma="so&thorn;" function="adjective">so&eth;an</w>
+<w lemma="swefen">swefnes</w>,
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="ic">min</w>
+<w lemma="sefa">sefa</w>
+<w lemma="myndgian">myndga&eth;</w>."
+<w lemma="ne">ne</w>
+<w lemma="magan">meahte</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="se" function="demonstrative">seo</w>
+<w lemma="manig">m&aelig;nigeo</w>
+<w lemma="on">on</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="m&aelig;&thorn;elstede">me&eth;elstede</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="witigdom">witigdom</w>
+<w lemma="wiht">wihte</w>
+<w lemma="a&thorn;encan">a&thorn;encean</w>
+<w lemma="ne">ne</w>
+<w lemma="ahicgan">ahicgan</w>,
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="hit">hit</w>
+<w lemma="forhabban">forh&aelig;fed</w>
+<w lemma="geweor&thorn;an">gewear&eth;</w>
+<w lemma="&thorn;&aelig;tte">&thorn;&aelig;tte</w>
+<w lemma="hi">hie</w>
+<w lemma="secgan">s&aelig;don</w>
+<w lemma="swefen">swefn</w>
+<w lemma="cyning">cyninge</w>,
+<w lemma="wyrd">wyrda</w>
+<w lemma="gerynu">gerynu</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="witig">witga</w>
+<w lemma="cuman">cwom</w>,
+<w lemma="daniel">Daniel</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="dom">dome</w>,
+<w lemma="se" function="conjunctive">se</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="drihten">drihtne</w>
+<w lemma="geceosan">gecoren</w>,
+<w lemma="snotor">snotor</w>
+<w lemma="and">and</w>
+<w lemma="so&thorn;f&aelig;st">so&eth;f&aelig;st</w>,
+<w lemma="in">in</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="seld">seld</w>
+<w lemma="gangan">gangan</w>.
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="beon" suppl="wesan" dipl="&thorn;&aelig;s" resp="Scott Kleinman">w&aelig;s</w>
+<w lemma="orfruma">ordfruma</w>
+<w lemma="earm">earmre</w>
+<w lemma="laf">lafe</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;&aelig;re</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;enan</w>
+<w lemma="hyran">hyran</w>
+<w lemma="sculan">sceolde</w>.
+<w lemma="he">Him</w>
+<w lemma="god" function="noun">god</w>
+<w lemma="sellan">sealde</w>
+<w lemma="gifu">gife</w>
+<w lemma="of">of</w>
+<w lemma="heofon">heofnum</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="hleo&thorn;orcwide">hleo&eth;orcwyde</w>
+<w lemma="halig">haliges</w>
+<w lemma="g&aelig;st">gastes</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">him</w>
+<w lemma="engel">engel</w>
+<w lemma="god" function="noun">godes</w>
+<w lemma="eall">eall</w>
+<w lemma="asecgan">as&aelig;gde</w>
+<w lemma="swa">swa</w>
+<w lemma="he">his</w>
+<w lemma="mandrihten">mandrihten</w>
+<w lemma="gem&aelig;tan">gem&aelig;ted</w>
+<w lemma="weor&thorn;an">wear&eth;</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="gan">eode</w>
+<w lemma="daniel">Daniel</w>,
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="d&aelig;g">d&aelig;g</w>
+<w lemma="lihtan">lyhte</w>,
+<w lemma="swefen">swefen</w>
+<w lemma="reccan">reccan</w>
+<w lemma="sin">sinum</w>
+<w lemma="frea">frean</w>,
+<w lemma="secgan">s&aelig;gde</w>
+<w lemma="he">him</w>
+<w lemma="wislice">wislice</w>
+<w lemma="weorod">wereda</w>
+<w lemma="gesceaft">gesceafte</w>,
+<w lemma="&thorn;&aelig;tte">&thorn;&aelig;tte</w>
+<w lemma="sona">sona</w>
+<w lemma="ongytan">ongeat</w>
+<w lemma="swi&thorn;mod">swi&eth;mod</w>
+<w lemma="cyning">cyning</w>
+<w lemma="ord">ord</w>
+<w lemma="and">and</w>
+<w lemma="ende">ende</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">him</w>
+<w lemma="iwan">ywed</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="habban">h&aelig;fde</w>
+<w lemma="daniel">Daniel</w>
+<w lemma="dom">dom</w>
+<w lemma="micel">micelne</w>,
+<w lemma="bl&aelig;d" function="noun-masculine">bl&aelig;d</w>
+<w lemma="in">in</w>
+<w lemma="babilonia">Babilonia</w>
+<w lemma="mid">mid</w>
+<w lemma="bocere">bocerum</w>,
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="he">he</w>
+<w lemma="gesecgan">ges&aelig;de</w>
+<w lemma="swefen">swefen</w>
+<w lemma="cyning">cyninge</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">he</w>
+<w lemma="&aelig;r">&aelig;r</w>
+<w lemma="for">for</w>
+<w lemma="fyren">fyrenum</w>
+<w lemma="onfon">onfon</w>
+<w lemma="ne">ne</w>
+<w lemma="magan">meahte</w>,
+<w lemma="babilonia">Babilonie</w>
+<w lemma="weard">weard</w>,
+<w lemma="in">in</w>
+<w lemma="he">his</w>
+<w lemma="breostloca">breostlocan</w>.
+<w lemma="na">No</w>
+<w lemma="hw&aelig;&thorn;ere">hw&aelig;&eth;ere</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="daniel">Daniel</w>
+<w lemma="gedon">gedon</w>
+<w lemma="magan">mihte</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">he</w>
+<w lemma="willan">wolde</w>
+<w lemma="meotod">metodes</w>
+<w lemma="magan">mihte</w>
+<w lemma="gelyfan">gelyfan</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="he">he</w>
+<w lemma="wyrcan">wyrcan</w>
+<w lemma="onginnan">ongan</w>
+<w lemma="weoh">weoh</w>
+<w lemma="on">on</w>
+<w lemma="feld">felda</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="deormod">deormode</w>
+<w lemma="dira">Diran</w>
+<w lemma="hatan">heton</w>,
+<w lemma="se" function="conjunctive">se</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="on">on</w>
+<w lemma="se" function="demonstrative">&eth;&aelig;re</w>
+<w lemma="&thorn;eod">&eth;eode</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="swa">swa</w>
+<w lemma="hatan">hatte</w>,
+<w lemma="br&aelig;sen">bresne</w>
+<w lemma="babilonia">Babilonige</w>.
+<w lemma="se" function="demonstrative">&thorn;&aelig;re</w>
+<w lemma="burh">burge</w>
+<w lemma="weard">weard</w>
+<w lemma="an">anne</w>
+<w lemma="mannlica">manlican</w>
+<w lemma="ofer">ofer</w>
+<w lemma="meotod">metodes</w>
+<w lemma="est">est</w>,
+<w lemma="gild">gyld</w>
+<w lemma="of">of</w>
+<w lemma="gold">golde</w>,
+<w lemma="guma">gumum</w>
+<w lemma="ar&aelig;ran">ar&aelig;rde</w>,
+<w lemma="for">for</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="gleaw">gleaw</w>
+<w lemma="ne">ne</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>,
+<w lemma="gumrice">gumrices</w>
+<w lemma="weard">weard</w>,
+<w lemma="re&thorn;e">re&eth;e</w>
+<w lemma="and">and</w>
+<w lemma="r&aelig;dleas">r&aelig;dleas</w>,
+<w lemma="riht">riht</w>......
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="weor&thorn;an">wear&eth;</w>
+<w lemma="h&aelig;le&thorn;">h&aelig;le&eth;a</w>
+<w lemma="hlyst">hlyst</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="hleo&thorn;or">hleo&eth;or</w>
+<w lemma="cuman">cwom</w>
+<w lemma="byme">byman</w>
+<w lemma="stefn">stefne</w>
+<w lemma="ofer">ofer</w>
+<w lemma="burhware">burhware</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="hi">hie</w>
+<w lemma="for">for</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="cumbol">cumble</w>
+<w lemma="on">on</w>
+<w lemma="cneo">cneowum</w>
+<w lemma="sittan">s&aelig;ton</w>,
+<w lemma="onhnigan">onhnigon</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="herian">herige</w>
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;ne</w>
+<w lemma="&thorn;eod">&thorn;eode</w>,
+<w lemma="weor&thorn;ian">wur&eth;edon</w>
+<w lemma="wihgild">wihgyld</w>,
+<w lemma="ne">ne</w>
+<w lemma="witan">wiston</w>
+<w lemma="wr&aelig;st">wr&aelig;stran</w>
+<w lemma="r&aelig;d">r&aelig;d</w>,
+<w lemma="efnan">efndon</w>
+<w lemma="unrihtdom">unrihtdom</w>,
+<w lemma="swa">swa</w>
+<w lemma="hi">hyra</w>
+<w lemma="ealdor" function="noun-masculine">aldor</w>
+<w lemma="don">dyde</w>,
+<w lemma="man" type="noun">mane</w>
+<w lemma="gemengan">gemenged</w>,
+<w lemma="mod">mode</w>
+<w lemma="gefrecnod">gefrecnod</w>.
+<w lemma="fremman">Fremde</w>
+<w lemma="folcm&aelig;gen">folcm&aelig;gen</w>,
+<w lemma="swa">swa</w>
+<w lemma="hi">hyra</w>
+<w lemma="frea">frea</w>
+<w lemma="&aelig;rest">&aelig;rest</w>,
+<w lemma="unr&aelig;d">unr&aelig;d</w>
+<w lemma="efnan">efnde</w>, (
+<w lemma="hi">him</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="&aelig;fter">&aelig;fter</w>
+<w lemma="becuman">becwom</w>
+<w lemma="yfel">yfel</w>
+<w lemma="endelean">endelean</w>),
+<w lemma="unriht">unriht</w>
+<w lemma="don">dyde</w>.
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="&thorn;ry">&thorn;ry</w>
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>
+<w lemma="on">on</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="&thorn;eoden">&thorn;eodnes</w>
+<w lemma="burh">byrig</w>,
+<w lemma="eorl">eorlas</w>
+<w lemma="israhel">Israela</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="a">a</w>
+<w lemma="willan" type="negative-contraction" units="ne+woldon">noldon</w>
+<w lemma="hi">hyra</w>
+<w lemma="&thorn;eoden">&thorn;eodnes</w>
+<w lemma="dom">dom</w>
+<w lemma="&thorn;afian">&thorn;afigan</w>
+<w lemma="onginnan">onginnan</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="beacen">beacne</w>
+<w lemma="gebed">gebedu</w>
+<w lemma="r&aelig;ran">r&aelig;rde</w>,
+<w lemma="&thorn;eah">&eth;eah</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="&thorn;&aelig;r">&eth;&aelig;r</w>
+<w lemma="on">on</w>
+<w lemma="herian">herige</w>
+<w lemma="byme">byman</w>
+<w lemma="singan">sungon</w>.
+<w lemma="&thorn;a" function="conjunctive">&eth;a</w>
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>
+<w lemma="&aelig;&thorn;elo">&aelig;&eth;elum</w>
+<w lemma="god" function="noun" dipl="" resp="Scott Kleinman">god</w>
+<w lemma="abraham">Abrahames</w>
+<w lemma="bearn">bearn</w>,
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>
+<w lemma="w&aelig;rf&aelig;st">w&aelig;rf&aelig;ste</w>,
+<w lemma="witan">wiston</w>
+<w lemma="drihten">drihten</w>
+<w lemma="ece">ecne</w>
+<w lemma="uppe">uppe</w>,
+<w lemma="&aelig;lmihtig" dipl="&aelig;lmihtne" resp="Scott Kleinman">&aelig;lmihtigne</w>.
+<w lemma="cniht">Cnihtas</w>
+<w lemma="cynegod">cynegode</w>
+<w lemma="cu&thorn;" function="adjective">cu&eth;</w>
+<w lemma="gedon">gedydon</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="hi">him</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="gold">gold</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="god" function="noun">gode</w>
+<w lemma="willan" type="negative-contraction" units="ne+woldon">noldon</w>
+<w lemma="habban">habban</w>
+<w lemma="ne">ne</w>
+<w lemma="healdan">healdan</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="se" function="demonstrative">&thorn;one</w>
+<w lemma="heah">hean</w>
+<w lemma="cyning">cyning</w>,
+<w lemma="g&aelig;st">gasta</w>
+<w lemma="hyrde">hyrde</w>,
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="hi">him</w>
+<w lemma="gifu">gife</w>
+<w lemma="sellan">sealde</w>.
+<w lemma="oft">oft</w>
+<w lemma="hi">hie</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="bot" dipl="" resp="Scott Kleinman">bote</w>
+<w lemma="bealde">balde</w>
+<w lemma="gecwe&thorn;an">gecw&aelig;don</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="wig">wiges</w>
+<w lemma="wiht">wihte</w>
+<w lemma="ne">ne</w>
+<w lemma="recan">rohton</w>,
+<w lemma="ne">ne</w>
+<w lemma="hi">hie</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="gebed">gebede</w>
+<w lemma="magan">mihte</w>
+<w lemma="gebiddan">geb&aelig;don</w>
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;en</w>
+<w lemma="here">heriges</w>
+<w lemma="wisa">wisa</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="&thorn;ider">&thorn;ider</w>
+<w lemma="hweorfan">hweorfan</w>
+<w lemma="willan">wolden</w>,
+<w lemma="guma">guman</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="gylden">gyldnan</w>
+<w lemma="gild">gylde</w>,
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">he</w>
+<w lemma="he">him</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="god" function="noun">gode</w>
+<w lemma="geteodan">geteode</w>.
+<w lemma="&thorn;egn">&thorn;egnas</w>
+<w lemma="&thorn;eoden">&thorn;eodne</w>
+<w lemma="secgan">s&aelig;gdon</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;re</w>
+<w lemma="ge&thorn;eaht">ge&thorn;eahte</w>
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>,
+<w lemma="h&aelig;ft" function="noun-masculine">h&aelig;ftas</w>
+<w lemma="heah" function="noun">hearan</w>,
+<w lemma="in">in</w>
+<w lemma="&thorn;es">&thorn;isse</w>
+<w lemma="heah">hean</w>
+<w lemma="burh">byrig</w>,
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="&thorn;es">&thorn;is</w>
+<w lemma="hagian">hegan</w>
+<w lemma="ne">ne</w>
+<w lemma="willan">willa&eth;</w>,
+<w lemma="ne">ne</w>
+<w lemma="&thorn;es">&thorn;ysne</w>
+<w lemma="wig">wig</w>
+<w lemma="weor&thorn;ian">wur&eth;igean</w>,
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="&thorn;u">&eth;u</w>
+<w lemma="&thorn;u">&thorn;e</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="wuldor" dipl="" resp="Scott Kleinman">wuldre</w>
+<w lemma="wundor">wundrum</w>
+<w lemma="teon">teodest</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="hi">him</w>
+<w lemma="bolgenmod">bolgenmod</w>
+<w lemma="babilon">Babilone</w>
+<w lemma="weard">weard</w>
+<w lemma="irre">yrre</w>
+<w lemma="andswarian">andswarode</w>,
+<w lemma="eorl">eorlum</w>
+<w lemma="onm&aelig;lan">onm&aelig;lde</w>
+<w lemma="grim">grimme</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;am</w>
+<w lemma="geong">gingum</w>,
+<w lemma="and">and</w>
+<w lemma="geoc">geocre</w>
+<w lemma="oncwe&thorn;an">oncw&aelig;&eth;</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="gegninga">gegnunga</w>
+<w lemma="gildan">gyldan</w>
+<w lemma="sculan">sceolde</w>
+<w lemma="o&thorn;&thorn;e">o&eth;&eth;e</w>
+<w lemma="&thorn;rowian">&thorn;rowigean</w>
+<w lemma="&thorn;reanyd">&thorn;reanied</w>
+<w lemma="micel">micel</w>,
+<w lemma="frecne">frecne</w>
+<w lemma="fyr">fyres</w>
+<w lemma="wilm">wylm</w>,
+<w lemma="nim&thorn;e">nym&eth;e</w>
+<w lemma="hi">hie</w>
+<w lemma="fri&thorn;">fri&eth;es</w>
+<w lemma="willan">wolde</w>
+<w lemma="wilnian">wilnian</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="wyrresta">wyrrestan</w>,
+<w lemma="wer">weras</w>
+<w lemma="ebrea">Ebrea</w>,
+<w lemma="guma">guman</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="gold">golde</w>,
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">he</w>
+<w lemma="he">him</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="god" function="noun">gode</w>
+<w lemma="teon">teode</w>.
+<w lemma="willan" type="negative-contraction" units="ne+woldon">Noldon</w>
+<w lemma="&thorn;eah">&thorn;eah</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="hyse">hyssas</w>
+<w lemma="hyran">hyran</w>
+<w lemma="lar">larum</w>
+<w lemma="in">in</w>
+<w lemma="hyge">hige</w>
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;num</w>.
+<w lemma="hogian">Hogedon</w>
+<w lemma="georn">georne</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="&aelig;">&aelig;</w>
+<w lemma="god" function="noun">godes</w>
+<w lemma="eall">ealle</w>
+<w lemma="gel&aelig;stan">gel&aelig;ste</w>,
+<w lemma="and">and</w>
+<w lemma="ne">ne</w>
+<w lemma="awacian">awacodon</w>
+<w lemma="weorod">wereda</w>
+<w lemma="drihten">drihtne</w>,
+<w lemma="ne">ne</w>
+<w lemma="se" function="demonstrative">&thorn;an</w>
+<w lemma="ma">m&aelig;</w>
+<w lemma="gehweorfan" dipl="gen hwyrfe" resp="Scott Kleinman">gehwurfe</w>
+<w lemma="in">in</w>
+<w lemma="h&aelig;&thorn;endom">h&aelig;&eth;endom</w>,
+<w lemma="ne">ne</w>
+<w lemma="hi">hie</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="facen">facne</w>
+<w lemma="freo&thorn;o">freo&eth;o</w>
+<w lemma="wilnian">wilnedan</w>,
+<w lemma="&thorn;eah">&thorn;eah</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="hi">him</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="biter">bitera</w>
+<w lemma="dea&thorn;">dea&eth;</w>
+<w lemma="gebeodan">geboden</w>
+<w lemma="beon" suppl="wesan">w&aelig;re</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="weor&thorn;an">wear&eth;</w>
+<w lemma="irre">yrre</w>
+<w lemma="anmod">anmod</w>
+<w lemma="cyning">cyning</w>,
+<w lemma="hatan">het</w>
+<w lemma="he">he</w>
+<w lemma="ofen">ofn</w>
+<w lemma="onh&aelig;tan">onh&aelig;tan</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="cwalu">cwale</w>
+<w lemma="cniht">cnihta</w>
+<w lemma="feorh">feorum</w>
+<w lemma="for&thorn;am">for&eth;am</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="hi">hie</w>
+<w lemma="he">his</w>
+<w lemma="cr&aelig;ft">cr&aelig;ftas</w>
+<w lemma="onsecan">onsocon</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="he">he</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="gegleded" dipl="gel&aelig;ded" resp="Scott Kleinman">gegleded</w>,
+<w lemma="swa">swa</w>
+<w lemma="he">he</w>
+<w lemma="grim">grimmost</w>
+<w lemma="magan">mihte</w>,
+<w lemma="frecne">frecne</w>
+<w lemma="fyr">fyres</w>
+<w lemma="lig">lige</w>,
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="he">he</w>
+<w lemma="&thorn;ider">&thorn;yder</w>
+<w lemma="folc">folc</w>
+<w lemma="samnian">samnode</w>,
+<w lemma="and">and</w>
+<w lemma="gebindan">gebindan</w>
+<w lemma="hatan">het</w>,
+<w lemma="babilon">Babilone</w>
+<w lemma="weard">weard</w>,
+<w lemma="grim">grim</w>
+<w lemma="and">and</w>
+<w lemma="gealhmod">gealhmod</w>,
+<w lemma="god" function="noun">godes</w>
+<w lemma="spellboda">spelbodan</w>.
+<w lemma="hatan">het</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="he">his</w>
+<w lemma="scealc">scealcas</w>
+<w lemma="scufan">scufan</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="hyse">hyssas</w>
+<w lemma="in">in</w>
+<w lemma="b&aelig;lblys">b&aelig;lblyse</w>,
+<w lemma="beorn">beornas</w>
+<w lemma="geong">geonge</w>.
+<w lemma="gearo">Gearo</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="se" function="conjunctive">se</w>
+<w lemma="hi">him</w>
+<w lemma="geoc" function="noun-feminine">geoce</w>
+<w lemma="gefremman">gefremede</w>;
+<w lemma="&thorn;eah">&thorn;eah</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="hi">hie</w>
+<w lemma="swa">swa</w>
+<w lemma="gram">grome</w>
+<w lemma="nidan">nydde</w>
+<w lemma="in">in</w>
+<w lemma="f&aelig;&thorn;m">f&aelig;&eth;m</w>
+<w lemma="fyr">fyres</w>
+<w lemma="lig">lige</w>,
+<w lemma="hw&aelig;&thorn;ere">hw&aelig;&eth;ere</w>
+<w lemma="hi">heora</w>
+<w lemma="feorh">feorh</w>
+<w lemma="generian">generede</w>
+<w lemma="mihtig">mihtig</w>
+<w lemma="meotod">metodes</w>
+<w lemma="weard">weard</w>.
+<w lemma="swa">swa</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="manig">m&aelig;nige</w>
+<w lemma="gefrignan">gefrunon</w>,
+<w lemma="halig">halige</w>
+<w lemma="hi">him</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="help">help</w>
+<w lemma="geteodan">geteode</w>,
+<w lemma="sendan">sende</w>
+<w lemma="hi">him</w>
+<w lemma="of">of</w>
+<w lemma="heah">hean</w>
+<w lemma="rodor">rodore</w>
+<w lemma="god" function="noun">god</w>,
+<w lemma="guma">gumena</w>
+<w lemma="weard">weard</w>,
+<w lemma="g&aelig;st">gast</w>
+<w lemma="se" function="demosntrative">&thorn;one</w>
+<w lemma="halig">halgan</w>.
+<w lemma="engel">engel</w>
+<w lemma="in">in</w>
+<w lemma="se" function="demonstrative">&thorn;one</w>
+<w lemma="ofen">ofn</w>
+<w lemma="innan">innan</w>
+<w lemma="becuman">becwom</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="hi">hie</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="aglac">aglac</w>
+<w lemma="dreogan">drugon</w>,
+<w lemma="freobearn">freobearn</w>
+<w lemma="f&aelig;&thorn;m">f&aelig;&eth;mum</w>
+<w lemma="be&thorn;eccan">be&thorn;eahte</w>
+<w lemma="under">under</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="fyren">fyrenan</w>
+<w lemma="hrof">hrofe</w>.
+<w lemma="ne">ne</w>
+<w lemma="magan">mihte</w>
+<w lemma="&thorn;eah">&thorn;eah</w>
+<w lemma="hi">heora</w>
+<w lemma="wlite">wlite</w>
+<w lemma="gewemman">gewemman</w>
+<w lemma="awiht" dipl="" resp="Scott Kleinman">owiht</w>
+<w lemma="wilm">wylm</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="w&aelig;fre">w&aelig;fran</w>
+<w lemma="lig">liges</w>,
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="hi">hie</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="wealdend">waldend</w>
+<w lemma="nerian">nerede</w>.
+<w lemma="hreohmod">Hreohmod</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;ena</w>
+<w lemma="&thorn;eoden">&thorn;eoden</w>,
+<w lemma="hatan">het</w>
+<w lemma="hi">hie</w>
+<w lemma="hra&thorn;e">hra&eth;e</w>
+<w lemma="b&aelig;rnan">b&aelig;rnan</w>.
+<w lemma="&aelig;led">&aelig;led</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="ungescead">ungescead</w>
+<w lemma="micel">micel</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="ofen">ofen</w>
+<w lemma="onh&aelig;tan">onh&aelig;ted</w>,
+<w lemma="isen">isen</w>
+<w lemma="eall">eall</w>
+<w lemma="&thorn;urhgleded">&eth;urhgleded</w>.
+<w lemma="he">hine</w>
+<w lemma="&thorn;&aelig;r">&eth;&aelig;r</w>
+<w lemma="esne">esnas</w>
+<w lemma="manig">m&aelig;nige</w>
+<w lemma="weorpan">wurpon</w>
+<w lemma="wudu">wudu</w>
+<w lemma="on">on</w>
+<w lemma="innan">innan</w>,
+<w lemma="swa">swa</w>
+<w lemma="hi">him</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="on">on</w>
+<w lemma="word">wordum</w>
+<w lemma="gedeman">gedemed</w>;
+<w lemma="beran">b&aelig;ron</w>
+<w lemma="brand">brandas</w>
+<w lemma="on">on</w>
+<w lemma="bryne">bryne</w>
+<w lemma="blac">blacan</w>
+<w lemma="fyr">fyres</w>, (
+<w lemma="willan">wolde</w>
+<w lemma="wulfheort">wulfheort</w>
+<w lemma="cyning">cyning</w>
+<w lemma="weall">wall</w>
+<w lemma="onstellan" dipl="onstealle" resp="Scott Kleinman">onsteallan</w>,
+<w lemma="isern">iserne</w>
+<w lemma="ymb">ymb</w>
+<w lemma="&aelig;f&aelig;st">&aelig;f&aelig;ste</w>),
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="up">up</w>
+<w lemma="gewitan">gewat</w>
+<w lemma="lig">lig</w>
+<w lemma="ofer">ofer</w>
+<w lemma="leof">leofum</w>
+<w lemma="and">and</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="lust">lust</w>
+<w lemma="geslean">gesloh</w>
+<w lemma="micel">micle</w>
+<w lemma="mara">mare</w>
+<w lemma="&thorn;onne" function="comparative">&thorn;onne</w>
+<w lemma="gemet">gemet</w>
+<w lemma="beon" suppl="wesan">w&aelig;re</w>.
+<w lemma="&thorn;a" function="conjunctive">&eth;a</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="lig">lig</w>
+<w lemma="gwindan">gewand</w>
+<w lemma="on">on</w>
+<w lemma="la&thorn;">la&eth;e</w>
+<w lemma="mann">men</w>,
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;ne</w>
+<w lemma="of">of</w>
+<w lemma="halig">halgum</w>.
+<w lemma="hyse">Hyssas</w>
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>
+<w lemma="bli&thorn;emod">bli&eth;emode</w>,
+<w lemma="beornan">burnon</w>
+<w lemma="scealc">scealcas</w>
+<w lemma="ymb">ymb</w>
+<w lemma="ofen">ofn</w>
+<w lemma="utan">utan</w>,
+<w lemma="al&aelig;tan">alet</w>
+<w lemma="gehweorfan">gehwearf</w>
+<w lemma="teonfull">teonfullum</w>
+<w lemma="on">on</w>
+<w lemma="teosu">teso</w>.
+<w lemma="&thorn;&aelig;r">&eth;&aelig;r</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="geseon">geseah</w>
+<w lemma="babilon">Babilone</w>
+<w lemma="brego">brego</w>.
+<w lemma="bli&thorn;e">Bli&eth;e</w>
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>
+<w lemma="eorl">eorlas</w>
+<w lemma="ebrea">Ebrea</w>,
+<w lemma="ofost">ofestum</w>
+<w lemma="herian">heredon</w>
+<w lemma="drihten">drihten</w>
+<w lemma="on">on</w>
+<w lemma="dream">dreame</w>,
+<w lemma="don">dydon</w>
+<w lemma="swa">swa</w>
+<w lemma="hi">hie</w>
+<w lemma="cunnan">cu&eth;on</w>
+<w lemma="ofen">ofne</w>
+<w lemma="on">on</w>
+<w lemma="innan">innan</w>,
+<w lemma="ealdor" function="noun-feminine">aldre</w>
+<w lemma="generian">generede</w>.
+<w lemma="guma">guman</w>
+<w lemma="gl&aelig;dmod">gl&aelig;dmode</w>
+<w lemma="god" function="noun">god</w>
+<w lemma="weor&thorn;ian">wur&eth;edon</w>,
+<w lemma="under">under</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="f&aelig;&thorn;m">f&aelig;&eth;me</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="geflyman">geflymed</w>
+<w lemma="weor&thorn;an">wear&eth;</w>
+<w lemma="frecne">frecne</w>
+<w lemma="fyr">fyres</w>
+<w lemma="h&aelig;te">h&aelig;to</w>.
+<w lemma="freobearn">Freobearn</w>
+<w lemma="weor&thorn;an">wurdon</w>
+<w lemma="al&aelig;tan">al&aelig;ten</w>
+<w lemma="lig">liges</w>
+<w lemma="gang">gange</w>,
+<w lemma="ne">ne</w>
+<w lemma="hi">hie</w>
+<w lemma="hi">him</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="la&thorn;">la&eth;</w>
+<w lemma="gedon">gedydon</w>.
+<w lemma="beon" suppl="wesan" type="negative-contraction" units="ne+w&aelig;s">N&aelig;s</w>
+<w lemma="hi">him</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="sweg">sweg</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="sorh">sorge</w>
+<w lemma="se" function="demonstrative">&eth;on</w>
+<w lemma="ma">ma</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="sunne">sunnan</w>
+<w lemma="scima">scima</w>,
+<w lemma="ne">ne</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="bryne">bryne</w>
+<w lemma="beatan">beot</w>
+<w lemma="m&aelig;cg">m&aelig;cgum</w>
+<w lemma="&thorn;e" dipl="&thorn;en" resp="Scott Kleinman">&thorn;e</w>
+<w lemma="in">in</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="beot">beote</w>
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="fyr">fyr</w>
+<w lemma="fyr">fyr</w>
+<w lemma="scyan">scyde</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="&thorn;a" function="demonstrative">&eth;am</w>
+<w lemma="&thorn;e" dipl="we" resp="Scott Kleinman">&thorn;e</w>
+<w lemma="&thorn;a" function="demonstrative">&eth;a</w>
+<w lemma="scylde">scylde</w>
+<w lemma="wyrcan">worhton</w>,
+<w lemma="hweorfan" dipl="hweorfon" resp="Scott Kleinman">hwearf</w>
+<w lemma="on" dipl="" resp="Scott Kleinman">on</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;enan</w>
+<w lemma="h&aelig;ft" function="noun-masculine">h&aelig;ftas</w>
+<w lemma="fram">fram</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;am</w>
+<w lemma="halig">halgan</w>
+<w lemma="cniht">cnihton</w>,
+<w lemma="werig">werigra</w>
+<w lemma="wlite">wlite</w>
+<w lemma="minsian">minsode</w>,
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="se" function="demonstrative">&eth;y</w>
+<w lemma="weorc">worce</w>
+<w lemma="gefeon">gef&aelig;gon</w>.
+<w lemma="geseon">Geseah</w>
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="swi&thorn;mod">swi&eth;mod</w>
+<w lemma="cyning" dipl="cynig" resp="Scott Kleinman">cyning</w>,
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="he">he</w>
+<w lemma="he">his</w>
+<w lemma="sefa">sefan</w>
+<w lemma="ontreowian">ontreowde</w>,
+<w lemma="wundor">wundor</w>
+<w lemma="on">on</w>
+<w lemma="wite">wite</w>
+<w lemma="agangan">agangen</w>;
+<w lemma="he">him</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="wr&aelig;clic">wr&aelig;clic</w>
+<w lemma="&thorn;yncan">&thorn;uhte</w>.
+<w lemma="hyse">Hyssas</w>
+<w lemma="hal">hale</w>
+<w lemma="hweorfan">hwurfon</w>
+<w lemma="in">in</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="hat">hatan</w>
+<w lemma="ofen">ofne</w>,
+<w lemma="eall">ealle</w>
+<w lemma="&aelig;f&aelig;st">&aelig;f&aelig;ste</w>
+<w lemma="&thorn;ry">&eth;ry</w>;
+<w lemma="hi">him</w>
+<w lemma="eac">eac</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="an">an</w>
+<w lemma="on">on</w>
+<w lemma="gesiht">gesyh&eth;e</w>,
+<w lemma="engel">engel</w>
+<w lemma="&aelig;lmihtig">&aelig;lmihtiges</w>.
+<w lemma="he">Him</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="on" dipl="" resp="Scott Kleinman">on</w>
+<w lemma="ofen" dipl="" resp="Scott Kleinman">ofne</w>
+<w lemma="awiht">owiht</w>
+<w lemma="ne">ne</w>
+<w lemma="derian">derede</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="inne">inne</w>
+<w lemma="eall">ealles</w>
+<w lemma="gelic">gelicost</w>
+<w lemma="efne">efne</w>
+<w lemma="&thorn;onne" function="adverb">&thorn;onne</w>
+<w lemma="on">on</w>
+<w lemma="sumor">sumera</w>
+<w lemma="sunne">sunne</w>
+<w lemma="scinan">scine&eth;</w>,
+<w lemma="and">and</w>
+<w lemma="deaw">deaw</w>
+<w lemma="drige" dipl="" resp="Scott Kleinman">dryge</w>
+<w lemma="on">on</w>
+<w lemma="d&aelig;g">d&aelig;ge</w>
+<w lemma="weor&thorn;an">weor&eth;e&eth;</w>,
+<w lemma="wind">winde</w>
+<w lemma="geondsawan">geondsawen</w>.
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="wuldor">wuldres</w>
+<w lemma="god" function="noun">god</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="hi">hie</w>
+<w lemma="generian">generede</w>
+<w lemma="wi&thorn;">wi&eth;</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="ni&thorn;hete">ni&eth;hete</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="azarias">Azarias</w>
+<w lemma="inge&thorn;anc">inge&thorn;ancum</w>
+<w lemma="hleo&thorn;rian">hleo&eth;rade</w>
+<w lemma="halig">halig</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="hat">hatne</w>
+<w lemma="lig">lig</w>,
+<w lemma="dreogan" dipl="" resp="Scott Kleinman">dreag</w>
+<w lemma="d&aelig;d">d&aelig;da</w>
+<w lemma="georn">georn</w>,
+<w lemma="drihten">drihten</w>
+<w lemma="herian">herede</w>,
+<w lemma="wer">wer</w>
+<w lemma="wamm" function="noun">womma</w>
+<w lemma="leas">leas</w>,
+<w lemma="and">and</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="word">word</w>
+<w lemma="acwe&thorn;an">acw&aelig;&eth;</w>:
+<w lemma="meotod">Metod</w>
+<w lemma="eallwiht">alwihta</w>,
+<w lemma="hwa">hw&aelig;t</w>!
+<w lemma=" &thorn;u ">&thorn;u</w>
+<w lemma="beon" suppl="es">eart</w>
+<w lemma="meaht">mihtum</w>
+<w lemma="swi&thorn;">swi&eth;</w>
+<w lemma="ni&thorn;" function="noun-masculine">ni&eth;as</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="nerian">nergenne</w>.
+<w lemma="beon" suppl="es">is</w>
+<w lemma="&thorn;u">&thorn;in</w>
+<w lemma="nama">nama</w>
+<w lemma="m&aelig;re">m&aelig;re</w>,
+<w lemma="wlitig">wlitig</w>
+<w lemma="and">and</w>
+<w lemma="wuldorf&aelig;st">wuldorf&aelig;st</w>
+<w lemma="ofer">ofer</w>
+<w lemma="we&thorn;eod">wer&eth;eode</w>.
+<w lemma="beon" suppl="es">Siendon</w>
+<w lemma="&thorn;u">&thorn;ine</w>
+<w lemma="dom">domas</w>
+<w lemma="in">in</w>
+<w lemma="d&aelig;g">daga</w>
+<w lemma="gehwa">gehwam</w>
+<w lemma="so&thorn;" function="adjective">so&eth;e</w>
+<w lemma="and">and</w>
+<w lemma="geswi&thorn;an">geswi&eth;de</w>
+<w lemma="and">and</w>
+<w lemma="gesigef&aelig;stan">gesigef&aelig;ste</w>,
+<w lemma="swa">swa</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="eac">eac</w>
+<w lemma="sylf">sylfa</w>
+<w lemma="beon" suppl="es">eart</w>.
+<w lemma="beon" suppl="es">Syndon</w>
+<w lemma="&thorn;u">&thorn;ine</w>
+<w lemma="willa">willan</w>
+<w lemma="on">on</w>
+<w lemma="weoroldsped">woruldspedum</w>
+<w lemma="riht">rihte</w>
+<w lemma="and">and</w>
+<w lemma="gerume">gerume</w>,
+<w lemma="rodor">rodora</w>
+<w lemma="wealdend">waldend</w>.
+<w lemma="geocian">Geoca</w>
+<w lemma="we">user</w>
+<w lemma="georn">georne</w>
+<w lemma="nu">nu</w>,
+<w lemma="g&aelig;st">gasta</w>
+<w lemma="scyppend">scyppend</w>,
+<w lemma="and">and</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="hyldu" dipl="" resp="Scott Kleinman">hyldo</w>
+<w lemma="help">help</w>,
+<w lemma="halig">halig</w>
+<w lemma="drihten">drihten</w>,
+<w lemma="nu">nu</w>
+<w lemma="we">we</w>
+<w lemma="&thorn;u">&thorn;ec</w>
+<w lemma="for">for</w>
+<w lemma="&thorn;rea">&thorn;reaum</w>
+<w lemma="and">and</w>
+<w lemma="for">for</w>
+<w lemma="&thorn;eownid">&eth;eonydum</w>
+<w lemma="and">and</w>
+<w lemma="for">for</w>
+<w lemma="eadmed">ea&eth;medum</w>
+<w lemma="ar" function="noun-feminine">arna</w>
+<w lemma="biddan">bidda&eth;</w>,
+<w lemma="lig">lige</w>
+<w lemma="belecgan">belegde</w>.
+<w lemma="we">We</w>
+<w lemma="se" function="demonstrative">&eth;&aelig;s</w>
+<w lemma="lifian">lifgende</w>
+<w lemma="wyrcan">worhton</w>
+<w lemma="on">on</w>
+<w lemma="weorold">worulde</w>,
+<w lemma="eac">eac</w>
+<w lemma="se" function="demonstrative">&eth;on</w>
+<w lemma="wamm" function="noun">wom</w>
+<w lemma="don">dyde</w>
+<w lemma="we">user</w>
+<w lemma="ealdor" function="noun-masculine">yldran</w>;
+<w lemma="for">for</w>
+<w lemma="oferhygd">oferhygdum</w>
+<w lemma="brecan">br&aelig;con</w>
+<w lemma="bebod">bebodo</w>
+<w lemma="burhsittend" dipl="burhsittendum" resp="Scott Kleinman">burhsittende</w>,
+<w lemma="had">had</w>
+<w lemma="oferhogian">oferhogedon</w>
+<w lemma="halig">halgan</w>
+<w lemma="lif">lifes</w>.
+<w lemma="beon" suppl="es">Siendon</w>
+<w lemma="we">we</w>
+<w lemma="towrecan">towrecene</w>
+<w lemma="geond">geond</w>
+<w lemma="wid">widne</w>
+<w lemma="grund">grund</w>,
+<w lemma="heap">heapum</w>
+<w lemma="tohweorfan">tohworfene</w>,
+<w lemma="hyldeleas">hyldelease</w>;
+<w lemma="beon" suppl="es">is</w>
+<w lemma="we">user</w>
+<w lemma="lif">lif</w>
+<w lemma="geond">geond</w>
+<w lemma="land">landa</w>
+<w lemma="fela">fela</w>
+<w lemma="fraco&thorn;">fraco&eth;</w>
+<w lemma="and">and</w>
+<w lemma="gefragian">gefr&aelig;ge</w>
+<w lemma="folc">folca</w>
+<w lemma="manig">manegum</w>,
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="we" dipl="us ec" resp="Scott Kleinman">usic</w>
+<w lemma="bewrecan">bewr&aelig;con</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="wyrresta">wyrrestan</w>
+<w lemma="eor&thorn;cyning">eor&eth;cyninga</w>
+<w lemma="&aelig;ht">&aelig;hta</w>
+<w lemma="geweald">gewealde</w>,
+<w lemma="on">on</w>
+<w lemma="h&aelig;ft" function="noun-masculine">h&aelig;ft</w>
+<w lemma="heorugrim">heorugrimra</w>,
+<w lemma="and">and</w>
+<w lemma="we">we</w>
+<w lemma="nu">nu</w>
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;enra</w>
+<w lemma="&thorn;eownid">&thorn;eowned</w>
+<w lemma="&thorn;olian">&thorn;olia&eth;</w>.
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="&thorn;anc">&thorn;anc</w>
+<w lemma="beon" suppl="es">sie</w>,
+<w lemma="weorod">wereda</w>
+<w lemma="wuldorcyning">wuldorcyning</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="we">us</w>
+<w lemma="&thorn;as">&thorn;as</w>
+<w lemma="wracu">wrace</w>
+<w lemma="teon">teodest</w>.
+<w lemma="ne">ne</w>
+<w lemma="forl&aelig;tan">forlet</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="we">usic</w>
+<w lemma="an">ane</w>,
+<w lemma="ece">ece</w>
+<w lemma="drihten">drihten</w>,
+<w lemma="for">for</w>
+<w lemma="&thorn;a" function="demonstrative" >&eth;am</w>
+<w lemma="milts">miltsum</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="&thorn;u">&eth;ec</w>
+<w lemma="mann">men</w>
+<w lemma="hligan">hliga&eth;</w>,
+<w lemma="and">and</w>
+<w lemma="for">for</w>
+<w lemma="&thorn;a" function="demonstrative">&eth;am</w>
+<w lemma="treow">treowum</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="&thorn;u">&thorn;u</w>,
+<w lemma="tir">tirum</w>
+<w lemma="f&aelig;st">f&aelig;st</w>,
+<w lemma="ni&thorn;" function="noun-masculine">ni&eth;a</w>
+<w lemma="nerian">nergend</w>,
+<w lemma="geniman">genumen</w>
+<w lemma="habban">h&aelig;fdest</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="abraham">Abrahame</w>
+<w lemma="and">and</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="isaac">Isaace</w>
+<w lemma="and">and</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="iacob">Iacobe</w>,
+<w lemma="g&aelig;st">gasta</w>
+<w lemma="scyppend">scyppend</w>.
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="hi">him</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="gehatan">gehete</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="hleo&thorn;orcwide">hleo&eth;orcwyde</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="hi">hyra</w>
+<w lemma="frumcynn">frumcyn</w>
+<w lemma="in">in</w>
+<w lemma="fyrnd&aelig;">fyrndagum</w>
+<w lemma="ican">ican</w>
+<w lemma="willan">wolde</w>,
+<w lemma="&thorn;&aelig;tte">&thorn;&aelig;tte</w>
+<w lemma="&aelig;fter">&aelig;fter</w>
+<w lemma="hi">him</w>
+<w lemma="on">on</w>
+<w lemma="cneores">cneorissum</w>
+<w lemma="cennan">cenned</w>
+<w lemma="weor&thorn;an">wurde</w>,
+<w lemma="and">and</w>
+<w lemma="se" function="demonstrative">seo</w>
+<w lemma="manig">m&aelig;nigeo</w>
+<w lemma="m&aelig;re">m&aelig;re</w>
+<w lemma="beon" suppl="wesan">w&aelig;re</w>,
+<w lemma="had" dipl="hat" resp="Scott Kleinman">had</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="hebban">hebbanne</w>
+<w lemma="swa">swa</w>
+<w lemma="heofonsteorra">heofonsteorran</w>
+<w lemma="bebugan">bebuga&eth;</w>
+<w lemma="brad">bradne</w>
+<w lemma="hwyrft">hwyrft</w>,
+<w lemma="o&thorn;&thorn;e">o&eth;&eth;e</w>
+<w lemma="brimfaro&thorn;" dipl="brim faro . &thorn;&aelig;s" resp="Scott Kleinman">brimfaro&thorn;es</w>
+<w lemma="se" dipl="&thorn;aelig;s" resp="Scott Kleinman"></w>,
+<w lemma="s&aelig;faro&thorn;">s&aelig;faro&eth;a</w>
+<w lemma="sand">sand</w>,
+<w lemma="geond">geond</w>
+<w lemma="sealt">sealtne</w>
+<w lemma="w&aelig;g" function="noun-masculine">w&aelig;g</w>
+<w lemma="in" dipl="me" resp="Scott Kleinman">in</w>
+<w lemma="eare" dipl="are" resp="Scott Kleinman">eare</w>
+<w lemma="gryndan">grynde&eth;</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">his</w>
+<w lemma="unrim" dipl="unrima" resp="Scott Kleinman">unrim</w>
+<w lemma="a" dipl="" resp="Scott Kleinman">a</w>
+<w lemma="in">in</w>
+<w lemma="winter">wintra</w>
+<w lemma="worn">worn</w>
+<w lemma="weor&thorn;">wur&eth;an</w>
+<w lemma="sculan">sceolde</w>.
+<w lemma="fyllan">Fyl</w>
+<w lemma="nu">nu</w>
+<w lemma="frumspr&aelig;c">frumspr&aelig;ce</w>,
+<w lemma="&thorn;eah">&eth;eah</w>
+<w lemma="hi">heora</w>
+<w lemma="feawa">fea</w>
+<w lemma="lifian">lifigen</w>!
+<w lemma="wlitig">Wlitiga</w>
+<w lemma="&thorn;u">&thorn;inne</w>
+<w lemma="wordcwide">wordcwyde</w>
+<w lemma="and">and</w>
+<w lemma="&thorn;u">&thorn;in</w>
+<w lemma="wuldor">wuldor</w>
+<w lemma="on">on</w>
+<w lemma="we">us</w>!
+<w lemma="gecy&thorn;an">Gecy&eth;</w>
+<w lemma="cr&aelig;ft">cr&aelig;ft</w>
+<w lemma="and">and</w>
+<w lemma="meaht">miht</w>
+<w lemma="se" function="conjunctive" dipl="&thorn-bar;" resp="Scott Kleinman">&thorn;&aelig;t</w>
+<w lemma="&thorn;a" function="demonstrative" dipl="&thorn-bar;" resp="Scott Kleinman">&thorn;a</w>
+<w lemma="caldea">Caldeas</w>
+<w lemma="and">and</w>
+<w lemma="folc">folca</w>
+<w lemma="fela">fela</w>
+<w lemma="gefrignan">gefrigen</w>
+<w lemma="habban">habba&eth;</w>,
+<w lemma="&thorn;a" function="demonstrative">&eth;a</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="under">under</w>
+<w lemma="heofon">heofenum</w>
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;ene</w>
+<w lemma="lifian">lifigea&eth;</w>,
+<w lemma="and">and</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="an">ana</w>
+<w lemma="beon" suppl="es">eart</w>
+<w lemma="ece">ece</w>
+<w lemma="drihten">drihten</w>,
+<w lemma="weorod">weroda</w>
+<w lemma="wealdend">waldend</w>,
+<w lemma="weoroldgesceaft">woruldgesceafta</w>,
+<w lemma="sigor">sigora</w>
+<w lemma="settan">settend</w>,
+<w lemma="so&thorn;f&aelig;st">so&eth;f&aelig;st</w>
+<w lemma="meotod">metod</w>!"
+<w lemma="swa">swa</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="halig">halga</w>
+<w lemma="wer">wer</w>
+<w lemma="herian">hergende</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="meotod">metodes</w>
+<w lemma="milts">miltse</w>
+<w lemma="and">and</w>
+<w lemma="he">his</w>
+<w lemma="meaht">mihta</w>
+<w lemma="sped">sped</w>
+<w lemma="rihte">rehte</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="reord">reorde</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="of">of</w>
+<w lemma="rodor">roderum</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="engel">engel</w>
+<w lemma="&aelig;lbeorht">&aelig;lbeorht</w>
+<w lemma="ufon">ufan</w>
+<w lemma="onsendan">onsended</w>,
+<w lemma="wlitescine">wlitescyne</w>
+<w lemma="wer">wer</w>
+<w lemma="on">on</w>
+<w lemma="he">his</w>
+<w lemma="wuldorhama">wuldorhaman</w>,
+<w lemma="se" function="conjunctive">se</w>
+<w lemma="hi">him</w>
+<w lemma="cuman">cwom</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="frofor">frofre</w>
+<w lemma="and">and</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="feorhner">feorhnere</w>
+<w lemma="mid">mid</w>
+<w lemma="lufu">lufan</w>
+<w lemma="and">and</w>
+<w lemma="mid">mid</w>
+<w lemma="liss">lisse</w>.
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="se" function="demonstrative">&eth;one</w>
+<w lemma="lig">lig</w>
+<w lemma="tosceafan">tosceaf</w>,
+<w lemma="halig">halig</w>
+<w lemma="and">and</w>
+<w lemma="heofonbeorht">heofonbeorht</w>,
+<w lemma="hat">hatan</w>
+<w lemma="fyr">fyres</w>,
+<w lemma="tosweopan">tosweop</w>
+<w lemma="he">hine</w>
+<w lemma="and">and</w>
+<w lemma="toswengan">toswende</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="swi&thorn;an">swi&eth;an</w>
+<w lemma="meaht">miht</w>,
+<w lemma="lig">ligges</w>
+<w lemma="leoma" dipl="leoma" resp="Scott Kleinman">leoman</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi" dipl="hyre" resp="Scott Kleinman">hyra</w>
+<w lemma="lic">lice</w>
+<w lemma="ne">ne</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="awiht">owiht</w>
+<w lemma="geeglan">geegled</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="he">he</w>
+<w lemma="on">on</w>
+<w lemma="anda">andan</w>
+<w lemma="slean">sloh</w>
+<w lemma="fyr">fyr</w>
+<w lemma="on">on</w>
+<w lemma="feond">feondas</w>
+<w lemma="for">for</w>
+<w lemma="fyrend&aelig;d">fyrend&aelig;dum</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="on">on</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="ofen">ofne</w>,
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="engel">engel</w>
+<w lemma="becuman">becwom</w>,
+<w lemma="windig">windig</w>
+<w lemma="and">and</w>
+<w lemma="wynsum">wynsum</w>,
+<w lemma="weder">wedere</w>
+<w lemma="gelic">gelicost</w>
+<w lemma="&thorn;onne" function="adverb">&thorn;onne</w>
+<w lemma="hit">hit</w>
+<w lemma="on">on</w>
+<w lemma="sumor">sumeres</w>
+<w lemma="tid">tid</w>
+<w lemma="sendan">sended</w>
+<w lemma="weor&thorn;an">weor&eth;e&eth;</w>
+<w lemma="dropa">dropena</w>
+<w lemma="dreorung">drearung</w>
+<w lemma="on">on</w>
+<w lemma="d&aelig;g">d&aelig;ges</w>
+<w lemma="hwil">hwile</w>,
+<w lemma="wearmlic">wearmlic</w>
+<w lemma="wolcen">wolcna</w>
+<w lemma="scur">scur</w>.
+<w lemma="swilc">Swylc</w>
+<w lemma="beon">bi&eth;</w>
+<w lemma="weder">wedera</w>
+<w lemma="cyst">cyst</w>,
+<w lemma="swilc">swylc</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="on">on</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="fyr">fyre</w>
+<w lemma="frea">frean</w>
+<w lemma="meaht">mihtum</w>
+<w lemma="halig">halgum</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="help">helpe</w>.
+<w lemma="weor&thorn;an">Wear&eth;</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="hat">hata</w>
+<w lemma="lig">lig</w>
+<w lemma="todrifan">todrifen</w>
+<w lemma="and">and</w>
+<w lemma="todw&aelig;scan">todw&aelig;sced</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="d&aelig;dhw&aelig;t">d&aelig;dhwatan</w>
+<w lemma="geond">geond</w>
+<w lemma="se" function="demonstrative">&thorn;one</w>
+<w lemma="ofen">ofen</w>
+<w lemma="gan">eodon</w>,
+<w lemma="and">and</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="engel">engel</w>
+<w lemma="mid">mid</w>,
+<w lemma="feorh">feorh</w>
+<w lemma="nerian">nerigende</w>,
+<w lemma="se" function="conjunctive">se</w>
+<w lemma="&thorn;&aelig;r">&eth;&aelig;r</w>
+<w lemma="feor&thorn;a">feor&eth;a</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>,
+<w lemma="annanias">Annanias</w>
+<w lemma="and">and</w>
+<w lemma="azarias">Azarias</w>
+<w lemma="and">and</w>
+<w lemma="mishael">Misael</w>.
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="modhw&aelig;t">modhwatan</w>
+<w lemma="&thorn;ry">&thorn;ry</w>
+<w lemma="on">on</w>
+<w lemma="ge&thorn;anc">ge&eth;ancum</w>
+<w lemma="&thorn;eoden">&eth;eoden</w>
+<w lemma="herian">heredon</w>,
+<w lemma="biddan">b&aelig;don</w>
+<w lemma="bletsian">bletsian</w>
+<w lemma="bearn">bearn</w>
+<w lemma="israhel">Israela</w>
+<w lemma="eall">eall</w>
+<w lemma="landgesceaft">landgesceaft</w>
+<w lemma="ece">ecne</w>
+<w lemma="drihten">drihten</w>,
+<w lemma="&thorn;eod">&eth;eoda</w>
+<w lemma="wealdend">waldend</w>.
+<w lemma="swa">swa</w>
+<w lemma="hi">hie</w>
+<w lemma="&thorn;ry">&thorn;ry</w>
+<w lemma="cwe&thorn;an">cw&aelig;don</w>,
+<w lemma="mod">modum</w>
+<w lemma="horsc">horsce</w>,
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="gem&aelig;ne">gem&aelig;ne</w>
+<w lemma="word">word</w>: "
+<w lemma="&thorn;u">&eth;e</w>
+<w lemma="gebletsian">gebletsige</w>,
+<w lemma="bilwit">bylywit</w>
+<w lemma="f&aelig;der">f&aelig;der</w>,
+<w lemma="weoroldcr&aelig;ft">woruldcr&aelig;fta</w>
+<w lemma="wlite">wlite</w>
+<w lemma="and">and</w>
+<w lemma="weorc">weorca</w>
+<w lemma="gehwylc">gehwilc</w>!
+<w lemma="heofon">heofonas</w>
+<w lemma="and">and</w>
+<w lemma="engel">englas</w>,
+<w lemma="and">and</w>
+<w lemma="hlutor">hluttor</w>
+<w lemma="w&aelig;ter">w&aelig;ter</w>,
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="ofer" dipl="of" resp="Scott Kleinman">ofer</w>
+<w lemma="rodor">roderum</w>
+<w lemma="on">on</w>
+<w lemma="riht">rihtne</w>
+<w lemma="gesceaft">gesceaft</w>
+<w lemma="wunian">wunia&eth;</w>
+<w lemma="in">in</w>
+<w lemma="wuldor">wuldre</w>,
+<w lemma="&thorn;a" function="conjunctive">&eth;a</w>
+<w lemma="&thorn;u">&thorn;ec</w>
+<w lemma="weor&thorn;ian">wur&eth;ia&eth;</w>!
+<w lemma="and">and</w>
+<w lemma="&thorn;u">&thorn;ec</w>,
+<w lemma="&aelig;lmihtig">&aelig;lmihtig</w>,
+<w lemma="eall">ealle</w>
+<w lemma="gesceaft">gesceafte</w>,
+<w lemma="rodorbeorht">rodorbeorhtan</w>
+<w lemma="tungol">tunglu</w>,
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="ryne">ryne</w>
+<w lemma="healdan">healda&eth;</w>,
+<w lemma="sunne">sunna</w>
+<w lemma="and">and</w>
+<w lemma="mona">mona</w>,
+<w lemma="sundor">sundor</w>
+<w lemma="an">anra</w>
+<w lemma="gehwylc">gehwilc</w>
+<w lemma="herian">herige</w>
+<w lemma="in">in</w>
+<w lemma="had">hade</w>!
+<w lemma="and">and</w>
+<w lemma="heofon">heofonsteorran</w>,
+<w lemma="deaw">deaw</w>
+<w lemma="and">and</w>
+<w lemma="deor" function="adjective">deor</w>
+<w lemma="scur">scur</w>,
+<w lemma="&thorn;a" function="conjunctive">&eth;a</w>
+<w lemma="&thorn;u">&eth;ec</w>
+<w lemma="domian">domige</w>!
+<w lemma="and">and</w>
+<w lemma="&thorn;u">&thorn;ec</w>,
+<w lemma="mihtig">mihtig</w>
+<w lemma="god" function="noun">god</w>,
+<w lemma="g&aelig;st">gastas</w>
+<w lemma="lofian">lofige</w>!
+<w lemma="byrnan">Byrnende</w>
+<w lemma="fyr">fyr</w>
+<w lemma="and">and</w>
+<w lemma="beorht">beorht</w>
+<w lemma="sumer">sumor</w>
+<w lemma="nerian">nergend</w>
+<w lemma="herian">herga&eth;</w>!
+<w lemma="niht">Niht</w>
+<w lemma="samod">somod</w>
+<w lemma="and">and</w>
+<w lemma="d&aelig;g">d&aelig;g</w>,
+<w lemma="and">and</w>
+<w lemma="&thorn;u">&thorn;ec</w>
+<w lemma="land">landa</w>
+<w lemma="gehwylc">gehwilc</w>,
+<w lemma="leoht">leoht</w>
+<w lemma="and">and</w>
+<w lemma="&thorn;eostru">&thorn;eostro</w>,
+<w lemma="herian">herige</w>
+<w lemma="on">on</w>
+<w lemma="had">hade</w>,
+<w lemma="samod">somod</w>
+<w lemma="hat">hat</w>
+<w lemma="and">and</w>
+<w lemma="ceald">ceald</w>!
+<w lemma="and">and</w>
+<w lemma="&thorn;u">&thorn;ec</w>,
+<w lemma="frea">frea</w>
+<w lemma="mihtig">mihtig</w>,
+<w lemma="forst">forstas</w>
+<w lemma="and">and</w>
+<w lemma="snaw">snawas</w>,
+<w lemma="winterbiter">winterbiter</w>
+<w lemma="weder">weder</w>
+<w lemma="and">and</w>
+<w lemma="wolcenfaru">wolcenfaru</w>,
+<w lemma="lofian">lofige</w>
+<w lemma="on">on</w>
+<w lemma="lyft">lyfte</w>!
+<w lemma="and">and</w>
+<w lemma="&thorn;u">&thorn;ec</w>
+<w lemma="liget">ligetu</w>,
+<w lemma="blac">blace</w>,
+<w lemma="berhtmhw&aelig;t">berhtmhwate</w>,
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="&thorn;u">&thorn;ec</w>
+<w lemma="bletsian">bletsige</w>!
+<w lemma="eall">eall</w>
+<w lemma="eor&thorn;">eor&eth;an</w>
+<w lemma="grund">grund</w>,
+<w lemma="ece">ece</w>
+<w lemma="drihten">drihten</w>,
+<w lemma="hyll">hyllas</w>
+<w lemma="and">and</w>
+<w lemma="hruse">hrusan</w>
+<w lemma="and">and</w>
+<w lemma="heah">hea</w>
+<w lemma="beorg">beorgas</w>,
+<w lemma="sealt">sealte</w>
+<w lemma="s&aelig;w&aelig;g">s&aelig;w&aelig;gas</w>,
+<w lemma="so&thorn;f&aelig;st">so&eth;f&aelig;st</w>
+<w lemma="meotod">metod</w>,
+<w lemma="eastream">eastream</w>
+<w lemma="y&thorn;e">y&eth;a</w>
+<w lemma="and">and</w>
+<w lemma="upcyme">upcyme</w>,
+<w lemma="w&aelig;terspring">w&aelig;tersprync</w>
+<w lemma="wille">wylla</w>,
+<w lemma="&thorn;a" function="conjunctive">&eth;a</w>
+<w lemma="&thorn;u">&eth;ec</w>
+<w lemma="weor&thorn;ian">wur&eth;ia&eth;</w>!
+<w lemma="hw&aelig;l">Hwalas</w>
+<w lemma="&thorn;u">&eth;ec</w>
+<w lemma="herian">heriga&eth;</w>,
+<w lemma="and">and</w>
+<w lemma="heofonfugel">hefonfugolas</w>,
+<w lemma="lyftlacende">lyftlacende</w>,
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="lagostream">lagostreamas</w>,
+<w lemma="w&aelig;terscipe">w&aelig;terscipe</w>
+<w lemma="wecgan">wecga&eth;</w>!
+<w lemma="and">and</w>
+<w lemma="wild">wildu</w>
+<w lemma="deor" function="noun">deor</w>
+<w lemma="and">and</w>
+<w lemma="neat">neata</w>
+<w lemma="gehwylc">gehwilc</w>
+<w lemma="nama">naman</w>
+<w lemma="bletsian">bletsie</w>!
+<w lemma="and">and</w>
+<w lemma="mann">manna</w>
+<w lemma="bearn">bearn</w>
+<w lemma="mod">modum</w>
+<w lemma="lufian">lufia&eth;</w>,
+<w lemma="and">and</w>
+<w lemma="&thorn;u">&thorn;ec</w>
+<w lemma="israhel">Israela</w>,
+<w lemma="&aelig;ht">&aelig;hta</w>
+<w lemma="scyppend">scyppend</w>,
+<w lemma="herian">heriga&eth;</w>
+<w lemma="in">in</w>
+<w lemma="had">hade</w>,
+<w lemma="heah">herran</w>
+<w lemma="sin" dipl="&thorn;inne" resp="Scott Kleinman">sinne</w>!
+<w lemma="and">and</w>
+<w lemma="&thorn;u">&thorn;ec</w>
+<w lemma="halig">haligra</w>
+<w lemma="heorte">heortan</w>
+<w lemma="cr&aelig;ft">cr&aelig;ftas</w>,
+<w lemma="so&thorn;f&aelig;st">so&eth;f&aelig;stra</w>
+<w lemma="gehwa">gehw&aelig;s</w>
+<w lemma="sawol">sawle</w>
+<w lemma="and">and</w>
+<w lemma="g&aelig;st">gastas</w>,
+<w lemma="lofian">lofia&eth;</w>
+<w lemma="liffrea">liffrean</w>,
+<w lemma="lean">lean</w>
+<w lemma="sellan">sellende</w>
+<w lemma="eall">eallum</w>
+<w lemma="eadmod" dipl="" resp="Scott Kleinman">eadmodum</w>,
+<w lemma="ece">ece</w>
+<w lemma="drihten">drihten</w>!
+<w lemma="annanias">Annanias</w>
+<w lemma="&thorn;u">&eth;ec</w>
+<w lemma="and">and</w>
+<w lemma="azarias">Adzarias</w>
+<w lemma="and">and</w>
+<w lemma="mishael">Misael</w>
+<w lemma="meotod">metod</w>
+<w lemma="domian">domige</w>
+<w lemma="breostge&thorn;anc">breostge&eth;ancum</w>!
+<w lemma="we">We</w>
+<w lemma="&thorn;u">&thorn;ec</w>
+<w lemma="bletsian">bletsia&eth;</w>,
+<w lemma="frea">frea</w>
+<w lemma="folc">folca</w>
+<w lemma="gehwa">gehw&aelig;s</w>,
+<w lemma="f&aelig;der">f&aelig;der</w>
+<w lemma="&aelig;lmihtig">&aelig;lmihtig</w>,
+<w lemma="so&thorn;" function="adjective">so&eth;</w>
+<w lemma="sunu">sunu</w>
+<w lemma="meotod">metodes</w>,
+<w lemma="sawol">sawla</w>
+<w lemma="nerian">nergend</w>,
+<w lemma="h&aelig;le&thorn;">h&aelig;le&eth;a</w>
+<w lemma="helpan">helpend</w>,
+<w lemma="and">and</w>
+<w lemma="&thorn;u">&thorn;ec</w>,
+<w lemma="halig">halig</w>
+<w lemma="g&aelig;st">gast</w>,
+<w lemma="weor&thorn;ian" dipl="wur&eth;a&eth;" resp="Scott Kleinman">wur&eth;ia&eth;</w>
+<w lemma="in">in</w>
+<w lemma="wuldor">wuldre</w>,
+<w lemma="witig">witig</w>
+<w lemma="drihten">drihten</w>!
+<w lemma="we">We</w>
+<w lemma="&thorn;u">&eth;ec</w>
+<w lemma="herian">heriga&eth;</w>,
+<w lemma="halig">halig</w>
+<w lemma="drihten">drihten</w>,
+<w lemma="and">and</w>
+<w lemma="gebed">gebedum</w>
+<w lemma="breman">brema&eth;</w>!
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="gebletsian">gebletsad</w>
+<w lemma="beon" suppl="es">eart</w>,
+<w lemma="gewur&thorn;ian">gewur&eth;ad</w>
+<w lemma="wideferh&thorn;" dipl="ferh&eth;" resp="Scott Kleinman">wideferh&eth;</w>
+<w lemma="ofer">ofer</w>
+<w lemma="weorold">worulde</w>
+<w lemma="hrof">hrof</w>,
+<w lemma="heahcyning">heahcyning</w>
+<w lemma="heofon">heofones</w>,
+<w lemma="halig">halgum</w>
+<w lemma="meaht">mihtum</w>,
+<w lemma="lif">lifes</w>
+<w lemma="leohtfruma">leohtfruma</w>,
+<w lemma="ofer">ofer</w>
+<w lemma="land">landa</w>
+<w lemma="gehwylc">gehwilc</w>!"
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="eahtian">ehtode</w>
+<w lemma="ealdor" function="noun-masculine" dipl="ealde" resp="Scott Kleinman">ealdor</w>
+<w lemma="&thorn;eod">&thorn;eode</w>,
+<w lemma="nebuchadnezzar">Nabochodonossor</w>,
+<w lemma="wi&thorn;">wi&eth;</w>
+<w lemma="&thorn;a" function="demostrative">&thorn;am</w>
+<w lemma="neah" dipl="nehstam" resp="Scott Kleinman">nehstum</w>
+<w lemma="folcgesi&thorn;">folcgesi&eth;um</w>:
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="ge" function="pronoun">eower</w>
+<w lemma="fela">fela</w>
+<w lemma="geseon">geseah</w>,
+<w lemma="&thorn;eod" dipl="&thorn;eoden" resp="Scott Kleinman">&thorn;eode</w>
+<w lemma="ic">mine</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="we">we</w>
+<w lemma="&thorn;ry">&thorn;ry</w>
+<w lemma="sendan" dipl="syndon" resp="Scott Kleinman">sendon</w>,
+<w lemma="gebeodan">geboden</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="b&aelig;l">b&aelig;le</w>
+<w lemma="in">in</w>
+<w lemma="beornan">byrnende</w>
+<w lemma="fyr">fyres</w>
+<w lemma="leoma">leoman</w>.
+<w lemma="nu">nu</w>
+<w lemma="ic">ic</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="feower">feower</w>
+<w lemma="mann">men</w>
+<w lemma="geseon">geseo</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="so&thorn;" function="noun">so&eth;e</w>,
+<w lemma="neales" type="negative-contraction" units="ne+ealles">nales</w>
+<w lemma="ic">me</w>
+<w lemma="sefa" dipl="selfa" resp="Scott Kleinman">sefa</w>
+<w lemma="leogan">leoge&eth;</w>."
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="cwe&thorn;an">cw&aelig;&eth;</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="cyning">cyninges</w>
+<w lemma="r&aelig;swa">r&aelig;swa</w>,
+<w lemma="wis">wis</w>
+<w lemma="and">and</w>
+<w lemma="wordgleaw">wordgleaw:</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="beon" suppl="es">is</w>
+<w lemma="wundor">wundra</w>
+<w lemma="sum">sum</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="we">we</w>
+<w lemma="&thorn;&aelig;r">&eth;&aelig;r</w>
+<w lemma="eage">eagum</w>
+<w lemma="on">on</w>
+<w lemma="locian">locia&eth;</w>.
+<w lemma="ge&thorn;encan">Ge&eth;enc</w>,
+<w lemma="&thorn;eoden">&eth;eoden</w>
+<w lemma="ic">min</w>,
+<w lemma="&thorn;u">&thorn;ine</w>
+<w lemma="gerisene">gerysna</w>!
+<w lemma="ongytan">Ongyt</w>
+<w lemma="georn">georne</w>
+<w lemma="hwa">hwa</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="gifu">gyfe</w>
+<w lemma="sellan">sealde</w>
+<w lemma="geong">gingum</w>
+<w lemma="g&aelig;deling" dipl="g&aelig;delinge" resp="Scott Kleinman">g&aelig;delingum</w>!
+<w lemma="hi">hie</w>
+<w lemma="god" function="noun">god</w>
+<w lemma="herian">heriga&eth;</w>,
+<w lemma="an">anne</w>
+<w lemma="ece">ecne</w>,
+<w lemma="and">and</w>
+<w lemma="eall">ealles</w>
+<w lemma="he">him</w>
+<w lemma="be">be</w>
+<w lemma="nama">naman</w>
+<w lemma="gehwa">gehwam</w>
+<w lemma="on">on</w>
+<w lemma="neod">neod</w>
+<w lemma="sprecan">spreca&eth;</w>,
+<w lemma="&thorn;ancian">&thorn;ancia&eth;</w>
+<w lemma="&thorn;rymm">&thorn;rymmes</w>
+<w lemma="&thorn;riste">&thorn;ristum</w>
+<w lemma="word">wordum</w>,
+<w lemma="cwe&thorn;an">cwe&eth;a&eth;</w>
+<w lemma="he">he</w>
+<w lemma="beon" suppl="es">sie</w>
+<w lemma="an">ana</w>
+<w lemma="&aelig;lmihtig">&aelig;lmihtig</w>
+<w lemma="god" function="noun">god</w>,
+<w lemma="witig">witig</w>
+<w lemma="wuldorcyning">wuldorcyning</w>,
+<w lemma="weorold">worlde</w>
+<w lemma="and">and</w>
+<w lemma="heofon">heofona</w>.
+<w lemma="abannan">Aban</w>
+<w lemma="&thorn;u ">&thorn;u</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="beorn">beornas</w>,
+<w lemma="brego">brego</w>
+<w lemma="caldea">Caldea</w>,
+<w lemma="ut">ut</w>
+<w lemma="of">of</w>
+<w lemma="ofen">ofne</w>.
+<w lemma="beon" suppl="es" type="negative-contraction" units="ne+is">Nis</w>
+<w lemma="hit">hit</w>
+<w lemma="awiht">owihtes</w>
+<w lemma="god" function="adjective">god</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="beon" suppl="es">sien</w>
+<w lemma="on">on</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="la&thorn;">la&eth;e</w>
+<w lemma="leng">leng</w>
+<w lemma="&thorn;onne" function="comparative">&thorn;onne</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="&thorn;urfan">&thorn;urfe</w>."
+<w lemma="hatan">het</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="cyning">cyning</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="he">him</w>
+<w lemma="cniht">cnihtas</w>
+<w lemma="gangan">gangan</w>.
+<w lemma="hyse">Hyssas</w>
+<w lemma="heard">hearde</w>
+<w lemma="hyran">hyrdon</w>
+<w lemma="lar">lare</w>,
+<w lemma="cyrran">cyrdon</w>
+<w lemma="cynegod">cynegode</w>
+<w lemma="swa">swa</w>
+<w lemma="hi">hie</w>
+<w lemma="gecy&thorn;an">gecy&eth;de</w>
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>,
+<w lemma="hweorfan">hwurfon</w>
+<w lemma="h&aelig;le&thorn;">h&aelig;le&eth;</w>
+<w lemma="geong">geonge</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;enan</w>
+<w lemma="foran">foran</w>.
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="bend" dipl="benne" resp="Scott Kleinman">bende</w>
+<w lemma="forbeornan">forburnene</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="hi">him</w>
+<w lemma="on">on</w>
+<w lemma="ban">banum</w>
+<w lemma="licgan">lagon</w>,
+<w lemma="la&thorn;searu">la&eth;searo</w>
+<w lemma="leod">leoda</w>
+<w lemma="cyning">cyninges</w>,
+<w lemma="and">and</w>
+<w lemma="hi">hyra</w>
+<w lemma="lic">lice</w>
+<w lemma="gebeorgan">geborgen</w>.
+<w lemma="beon" suppl="wesan" type="negative-contraction" units="ne+w&aelig;s">N&aelig;s</w>
+<w lemma="hi">hyra</w>
+<w lemma="wlite">wlite</w>
+<w lemma="gewemman">gewemmed</w>,
+<w lemma="ne">ne</w>
+<w lemma="n&aelig;nig">n&aelig;nig</w>
+<w lemma="wroht">wroht</w>
+<w lemma="on">on</w>
+<w lemma="hr&aelig;gel">hr&aelig;gle</w>,
+<w lemma="ne">ne</w>
+<w lemma="feax">feax</w>
+<w lemma="fyr">fyre</w>
+<w lemma="besw&aelig;lan">besw&aelig;led</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="hi">hie</w>
+<w lemma="on">on</w>
+<w lemma="fri&thorn;">fri&eth;e</w>
+<w lemma="drihten">drihtnes</w>
+<w lemma="of">of</w>
+<w lemma="se" function="demonstrative">&eth;am</w>
+<w lemma="grim">grimman</w>
+<w lemma="gryre">gryre</w>
+<w lemma="gl&aelig;d" function="adjective">glade</w>
+<w lemma="treddan">treddedon</w>,
+<w lemma="gleawmod">gleawmode</w>
+<w lemma="guma">guman</w>,
+<w lemma="on">on</w>
+<w lemma="g&aelig;st">gastes</w>
+<w lemma="hyld">hyld</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="gewitan">gewat</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="engel">engel</w>
+<w lemma="up">up</w>
+<w lemma="secan">secan</w>
+<w lemma="he">him</w>
+<w lemma="ece">ece</w>
+<w lemma="dream">dreamas</w>
+<w lemma="on">on</w>
+<w lemma="heah">heanne</w>
+<w lemma="hrof">hrof</w>
+<w lemma="heofon">heofona</w>
+<w lemma="rice">rices</w>,
+<w lemma="heah">heh</w>
+<w lemma="&thorn;egn">&thorn;egn</w>
+<w lemma="and">and</w>
+<w lemma="hold">hold</w>
+<w lemma="halig">halgum</w>
+<w lemma="meotod">metode</w>.
+<w lemma="habban">H&aelig;fde</w>
+<w lemma="on">on</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="wundor">wundre</w>
+<w lemma="gewur&thorn;ian">gewur&eth;od</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="gewyrhta">gewyrhto</w>
+<w lemma="agan">ahton</w>.
+<w lemma="hyse">Hyssas</w>
+<w lemma="herian" dipl="heredo" resp="Scott Kleinman">heredon</w>
+<w lemma="drihten">drihten</w>
+<w lemma="for">for</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;enan</w>
+<w lemma="folc">folce</w>,
+<w lemma="sepan" dipl="stepton" resp="Scott Kleinman">septon</w>
+<w lemma="hi">hie</w>
+<w lemma="so&thorn;cwide">so&eth;cwidum</w>
+<w lemma="and">and</w>
+<w lemma="hi">him</w>
+<w lemma="secgan">s&aelig;don</w>
+<w lemma="fela">fela</w>
+<w lemma="so&thorn;" function="adjective">so&eth;ra</w>
+<w lemma="tacn">tacna</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="he">he</w>
+<w lemma="sylf">sylfa</w>
+<w lemma="gelyfan">gelyfde</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="beon" suppl="wesan">w&aelig;re</w>
+<w lemma="meaht">mihta</w>
+<w lemma="wealdend">waldend</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="hi">hie</w>
+<w lemma="of">of</w>
+<w lemma="se" function="demonstrative">&eth;am</w>
+<w lemma="mirce" function="adjective">mirce</w>
+<w lemma="generian">generede</w>.
+<w lemma="gebeodan">Gebead</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="br&aelig;sen">br&aelig;sna</w>
+<w lemma="babilon">Babilone</w>
+<w lemma="weard">weard</w>
+<w lemma="swi&thorn;mod">swi&eth;mod</w>
+<w lemma="sin">sinum</w>
+<w lemma="leod">leodum</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="beon" suppl="wesan">w&aelig;re</w>
+<w lemma="he">his</w>
+<w lemma="ealdor" function="noun-feminine">aldre</w>
+<w lemma="scyldig">scyldig</w>,
+<w lemma="se" function="conjunctive">se</w>
+<w lemma="se" function="demonstrative">&eth;&aelig;s</w>
+<w lemma="onsecan">onsoce</w>
+<w lemma="&thorn;&aelig;tte">&thorn;&aelig;tte</w>
+<w lemma="so&thorn;" function="noun">so&eth;</w>
+<w lemma="beon" suppl="wesan">w&aelig;re</w>
+<w lemma="m&aelig;re">m&aelig;re</w>
+<w lemma="meaht">mihta</w>
+<w lemma="wealdend">waldend</w>,
+<w lemma="se" function="conjunctive">se</w>
+<w lemma="he">hie</w>
+<w lemma="of">of</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="mor&thorn;or">mor&eth;re</w>
+<w lemma="alysan">alysde</w>.
+<w lemma="agifan">Ag&aelig;f</w>
+<w lemma="hi">him</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="he">his</w>
+<w lemma="leod">leoda</w>
+<w lemma="laf">lafe</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="gel&aelig;dan">gel&aelig;dde</w>
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>
+<w lemma="on" dipl="&amp;" resp="Scott Kleinman">on</w>
+<w lemma="&aelig;ht" dipl="nahte" resp="Scott Kleinman">&aelig;ht</w>
+<w lemma="ealdfeond">ealdfeondum</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="ar" function="noun-feminine">are</w>
+<w lemma="habban">h&aelig;fdon</w>.
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="hi">heora</w>
+<w lemma="bl&aelig;d" function="noun-masculine">bl&aelig;d</w>
+<w lemma="in">in</w>
+<w lemma="babilon">Babilone</w>,
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="hi">hie</w>
+<w lemma="se" function="demonstrative">&thorn;one</w>
+<w lemma="bryne">bryne</w>
+<w lemma="fandian">fandedon</w>,
+<w lemma="dom">dom</w>
+<w lemma="weor&thorn;an">wear&eth;</w>
+<w lemma="&aelig;fter">&aelig;fter</w>
+<w lemma="dugu&thorn;">dugu&eth;e</w>
+<w lemma="gecy&thorn;an">gecy&eth;ed</w>,
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="hi">hie</w>
+<w lemma="drihten">drihtne</w>
+<w lemma="gehyran">gehyrdon</w>.
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>
+<w lemma="hi">hyra</w>
+<w lemma="r&aelig;d">r&aelig;das</w>
+<w lemma="rice" function="adjective">rice</w>,
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="hi">hie</w>
+<w lemma="rodor">rodera</w>
+<w lemma="wealdend">waldend</w>,
+<w lemma="halig">halig</w>
+<w lemma="heofon">heofonrices</w>
+<w lemma="weard">weard</w>,
+<w lemma="wi&thorn;">wi&eth;</w>
+<w lemma="se" function="demonstrative">&thorn;one</w>
+<w lemma="hearm">hearm</w>
+<w lemma="gescildan">gescylde</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="ic">ic</w>
+<w lemma="secan">secan</w>
+<w lemma="gefragian">gefr&aelig;gn</w>
+<w lemma="so&thorn;" function="adjective">so&eth;um</w>
+<w lemma="word">wordum</w>,
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="he">he</w>
+<w lemma="wundor">wundor</w>
+<w lemma="ongytan">onget</w>,
+<w lemma="babilon">Babilone</w>
+<w lemma="weard">weard</w>,
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="fyr">fyres</w>
+<w lemma="bryne">bryne</w>,
+<w lemma="hu">hu</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="hyse">hyssas</w>
+<w lemma="&thorn;ry">&thorn;ry</w>
+<w lemma="hat">hatan</w>
+<w lemma="ofen">ofnes</w>,
+<w lemma="f&aelig;rgryre">f&aelig;rgryre</w>
+<w lemma="fyr">fyres</w>,
+<w lemma="oferfaran">oferfaren</w>
+<w lemma="habban">h&aelig;fdon</w>.
+<w lemma="wilm">Wylm</w>
+<w lemma="&thorn;urhwadan">&thorn;urhwodon</w>,
+<w lemma="swa">swa</w>
+<w lemma="hi">him</w>
+<w lemma="wiht">wiht</w>
+<w lemma="ne">ne</w>
+<w lemma="scea&thorn;an">sceod</w>
+<w lemma="grim">grim</w>
+<w lemma="gled">gleda</w>
+<w lemma="ni&thorn;" function="noun-masculine">ni&eth;</w>,
+<w lemma="god" function="noun" dipl="ac godes" resp="Scot Kleinman">godes</w>
+<w lemma="spellboda">spelbodan</w>,
+<w lemma="frecne">frecnan</w>
+<w lemma="fyr">fyres</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="hi">him</w>
+<w lemma="fri&thorn;">fri&eth;</w>
+<w lemma="drihten">drihtnes</w>
+<w lemma="wi&thorn;">wi&eth;</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="egesa">egesan</w>
+<w lemma="gryre">gryre</w>
+<w lemma="ealdor" function="noun-feminine">aldor</w>
+<w lemma="gescildan">gescylde</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="&thorn;eoden">&eth;eoden</w>
+<w lemma="onginnan">ongan</w>
+<w lemma="ge&thorn;ing">ge&eth;inges</w>
+<w lemma="wyrcan">wyrcan</w>;
+<w lemma="hatan">het</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="tosamne">tosomne</w>
+<w lemma="sin">sine</w>
+<w lemma="leod">leode</w>,
+<w lemma="and">and</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="on">on</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="m&aelig;&thorn;el">me&eth;le</w>
+<w lemma="ofer">ofer</w>
+<w lemma="manig">menigo</w>
+<w lemma="bebeodan">bebead</w>
+<w lemma="wyrd">wyrd</w>
+<w lemma="geweor&thorn;an">gewordene</w>
+<w lemma="and">and</w>
+<w lemma="wundor">wundor</w>
+<w lemma="god" function="noun">godes</w>,
+<w lemma="&thorn;&aelig;tte">&thorn;&aelig;tte</w>
+<w lemma="on">on</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;am</w>
+<w lemma="cniht">cnihtum</w>
+<w lemma="gecy&thorn;an">gecy&eth;ed</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>: "
+<w lemma="onhycgan">Onhicga&eth;</w>
+<w lemma="nu">nu</w>
+<w lemma="halig">halige</w>
+<w lemma="meaht">mihte</w>,
+<w lemma="wis">wise</w>
+<w lemma="wundor">wundor</w>
+<w lemma="god" function="noun">godes</w>!
+<w lemma="we">We</w>
+<w lemma="gesawan">gesawon</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">he</w>
+<w lemma="wi&thorn;">wi&eth;</w>
+<w lemma="cwealm">cwealme</w>
+<w lemma="gebeorgan">gebearh</w>
+<w lemma="cniht">cnihtum</w>
+<w lemma="on">on</w>
+<w lemma="ofen">ofne</w>,
+<w lemma="lacan">lacende</w>
+<w lemma="lig">lig</w>,
+<w lemma="&thorn;a" function="demonstrative">&thorn;am</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">his</w>
+<w lemma="lof">lof</w>
+<w lemma="beran">b&aelig;ron</w>;
+<w lemma="for&thorn;am">for&thorn;am</w>
+<w lemma="he">he</w>
+<w lemma="beon" suppl="es">is</w>
+<w lemma="an">ana</w>
+<w lemma="ece">ece</w>
+<w lemma="drihten">drihten</w>,
+<w lemma="dema" dipl="" resp="Scott Kleinman">dema</w>
+<w lemma="&aelig;lmihtig">&aelig;lmihtig</w>,
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="hi">him</w>
+<w lemma="dom">dom</w>
+<w lemma="forgifan">forgeaf</w>,
+<w lemma="spowan">spowende</w>
+<w lemma="sped">sped</w>,
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">his</w>
+<w lemma="spell">spel</w>
+<w lemma="beran">bera&eth;</w>.
+<w lemma="for&thorn;am">For&eth;on</w>
+<w lemma="witegian">witiga&eth;</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="wundor">wundor</w>
+<w lemma="manig">monig</w>
+<w lemma="halig">halgum</w>
+<w lemma="g&aelig;st">gastum</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">his</w>
+<w lemma="hyld">hyld</w>
+<w lemma="ceosan">curon</w>.
+<w lemma="cu&thorn;" function="adjective">Cu&eth;</w>
+<w lemma="beon" suppl="es">is</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="ic">me</w>
+<w lemma="daniel">Daniel</w>
+<w lemma="digol">dyglan</w>
+<w lemma="swefen">swefnes</w>
+<w lemma="so&thorn;" function="noun">so&eth;</w>
+<w lemma="gesecgan">ges&aelig;de</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="&aelig;r">&aelig;r</w>
+<w lemma="swi&thorn;">swi&eth;e</w>
+<w lemma="o&thorn;standan">o&eth;stod</w>
+<w lemma="manig">manegum</w>
+<w lemma="on">on</w>
+<w lemma="mod">mode</w>
+<w lemma="ic">minra</w>
+<w lemma="leod">leoda</w>,
+<w lemma="for&thorn;am">for&thorn;am</w>
+<w lemma="&aelig;lmihtig">&aelig;lmihtig</w>
+<w lemma="eacan">eacenne</w>
+<w lemma="g&aelig;st">gast</w>
+<w lemma="in">in</w>
+<w lemma="sefa">sefan</w>
+<w lemma="sendan">sende</w>,
+<w lemma="snotor">snyttro</w>
+<w lemma="cr&aelig;ft">cr&aelig;ftas</w>."
+<w lemma="swa">swa</w>
+<w lemma="word">wordum</w>
+<w lemma="sprecan">spr&aelig;c</w>
+<w lemma="weorod">werodes</w>
+<w lemma="r&aelig;swa">r&aelig;swa</w>,
+<w lemma="babilon">Babilone</w>
+<w lemma="weard">weard</w>,
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="he">he</w>
+<w lemma="beacen">beacen</w>
+<w lemma="ongytan">onget</w>,
+<w lemma="sweotol">swutol</w>
+<w lemma="tacn">tacen</w>
+<w lemma="god" function="noun">godes</w>.
+<w lemma="na">No</w>
+<w lemma="se" function="demonstrative">&thorn;y</w>
+<w lemma="sel">sel</w>
+<w lemma="don">dyde</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="&aelig;&thorn;eling">&aelig;&eth;elinge</w>
+<w lemma="oferhygd">oferhygd</w>
+<w lemma="gesceadan">gesceod</w>,
+<w lemma="weor&thorn;an">wear&eth;</w>
+<w lemma="he">him</w>
+<w lemma="hi">hyrra</w>
+<w lemma="hyge">hyge</w>
+<w lemma="and">and</w>
+<w lemma="on">on</w>
+<w lemma="heorte">heortan</w>
+<w lemma="ge&thorn;anc">ge&eth;anc</w>
+<w lemma="mara" dipl="maran" resp="Scott Kleinman">mara</w>
+<w lemma="on" dipl="" resp="Scott Kleinman">on</w>
+<w lemma="modsefa">modsefan</w>
+<w lemma="&thorn;onne" function="comparative">&thorn;onne</w>
+<w lemma="gemet">gemet</w>
+<w lemma="beon" suppl="wesan">w&aelig;re</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="he">hine</w>
+<w lemma="mid">mid</w>
+<w lemma="nid">nyde</w>
+<w lemma="ni&thorn;er">ny&eth;or</w>
+<w lemma="asettan">asette</w>
+<w lemma="meotod">metod</w>
+<w lemma="&aelig;lmihtig">&aelig;lmihtig</w>,
+<w lemma="swa">swa</w>
+<w lemma="he">he</w>
+<w lemma="manig">manegum</w>
+<w lemma="don">de&eth;</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;ara</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="oferhygd">oferhyd</w>
+<w lemma="up">up</w>
+<w lemma="astigan">astige&eth;</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="he">him</w>
+<w lemma="weor&thorn;an">wear&eth;</w>
+<w lemma="on">on</w>
+<w lemma="sl&aelig;p">sl&aelig;pe</w>
+<w lemma="swefen">swefen</w>
+<w lemma="&aelig;tywan">&aelig;tywed</w>,
+<w lemma="nebuchadnezzar">Nabochodonossor</w>;
+<w lemma="he">him</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="neah">neh</w>
+<w lemma="geweor&thorn;an">gewear&eth;</w>.
+<w lemma="&thorn;yncan">&thorn;uhte</w>
+<w lemma="he">him</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="on">on</w>
+<w lemma="folde">foldan</w>
+<w lemma="f&aelig;ger">f&aelig;gre</w>
+<w lemma="standan">stode</w>
+<w lemma="wudubeam">wudubeam</w>
+<w lemma="wlitig">wlitig</w>,
+<w lemma="se" function="conjunctive">se</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="wyrt">wyrtum</w>
+<w lemma="f&aelig;st">f&aelig;st</w>,
+<w lemma="beorht">beorht</w>
+<w lemma="on">on</w>
+<w lemma="bl&aelig;d" function="noun-feminine">bl&aelig;dum</w>.
+<w lemma="beon" suppl="wesan" type="negative-contraction" units="ne+w&aelig;s">N&aelig;s</w>
+<w lemma="he">he</w>
+<w lemma="bearo">bearwe</w>
+<w lemma="gelic">gelic</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="he">he</w>
+<w lemma="hlifian" dipl="hlfode" resp="Scott Kleinman">hlifode</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="heofontungol">heofontunglum</w>,
+<w lemma="swilc">swilce</w>
+<w lemma="he">he</w>
+<w lemma="oferf&aelig;&thorn;man">oferf&aelig;&eth;mde</w>
+<w lemma="folde">foldan</w>
+<w lemma="sceat">sceatas</w>,
+<w lemma="eall">ealne</w>
+<w lemma="middangeard">middangeard</w>,
+<w lemma="o&thorn;">o&eth;</w>
+<w lemma="merestream">merestreamas</w>,
+<w lemma="twig">twigum</w>
+<w lemma="and">and</w>
+<w lemma="telga">telgum</w>.
+<w lemma="&thorn;&aelig;r">&eth;&aelig;r</w>
+<w lemma="he">he</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="geseon">geseah</w>,
+<w lemma="&thorn;yncan">&thorn;uhte</w>
+<w lemma="he">him</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="wudubeam">wudubeam</w>
+<w lemma="wilddeor">wilddeor</w>
+<w lemma="scildan">scylde</w>,
+<w lemma="an">ane</w>
+<w lemma="&aelig;t">&aelig;te</w>
+<w lemma="eall">eallum</w>
+<w lemma="healdan">heolde</w>,
+<w lemma="swilc">swylce</w>
+<w lemma="fugel">fuglas</w>
+<w lemma="eac">eac</w>
+<w lemma="hi">heora</w>
+<w lemma="feorhner">feorhnere</w>
+<w lemma="on">on</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="beam">beames</w>
+<w lemma="bl&aelig;d" function="noun-feminine">bledum</w>
+<w lemma="niman">name</w>.
+<w lemma="&thorn;encan">&eth;uhte</w>
+<w lemma="he">him</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="engel">engel</w>
+<w lemma="ufon">ufan</w>
+<w lemma="of">of</w>
+<w lemma="rodor">roderum</w>
+<w lemma="stigan">stigan</w>
+<w lemma="cuman">cwome</w>
+<w lemma="and">and</w>
+<w lemma="stefn">stefne</w>
+<w lemma="ab&aelig;dan">abead</w>,
+<w lemma="torht">torhtan</w>
+<w lemma="reord">reorde</w>.
+<w lemma="hatan">het</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="treow">treow</w>
+<w lemma="ceorfan">ceorfan</w>
+<w lemma="and">and</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="wild" dipl="wildeor" resp="Scott Kleinman">wildan</w>
+<w lemma="deor" function="noun" dipl="" resp="Scott Kleinman">deor</w>
+<w lemma="on">on</w>
+<w lemma="weg">weg</w>
+<w lemma="fleon">fleon</w>,
+<w lemma="swilc">swylce</w>
+<w lemma="eac">eac</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="fugel">fugolas</w>,
+<w lemma="&thorn;onne" function="adverb">&thorn;onne</w>
+<w lemma="he">his</w>
+<w lemma="fyll">fyll</w>
+<w lemma="cuman">come</w>.
+<w lemma="hatan">het</w>
+<w lemma="&thorn;onne" function="adverb">&thorn;onne</w>
+<w lemma="besn&aelig;dan">besn&aelig;dan</w>
+<w lemma="sylf">seolfes</w>
+<w lemma="bl&aelig;d" function="noun-feminine">bl&aelig;dum</w>,
+<w lemma="twig">twigum</w>
+<w lemma="and">and</w>
+<w lemma="telga">telgum</w>,
+<w lemma="and">and</w>
+<w lemma="&thorn;eah">&thorn;eh</w>
+<w lemma="tacn">tacen</w>
+<w lemma="wesan">wesan</w>,
+<!-- This could be lemmatised as beon with @suppl="wesan". SK -->
+<w lemma="wunian">wunian</w>
+<w lemma="wyrttruma" dipl="wyr trymam" resp="Scott Kleinman">wyrtruman</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="wudubeam">wudubeames</w>
+<w lemma="eor&thorn;">eor&eth;an</w>
+<w lemma="f&aelig;st">f&aelig;stne</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="eft">eft</w>
+<w lemma="cuman">cyme</w>
+<w lemma="grene">grene</w>
+<w lemma="bl&aelig;d" function="noun-feminine">bleda</w>,
+<w lemma="&thorn;onne" function="adverb">&thorn;onne</w>
+<w lemma="god" function="noun">god</w>
+<w lemma="sellan">sylle</w>.
+<w lemma="hatan">het</w>
+<w lemma="eac">eac</w>
+<w lemma="gebindan">gebindan</w>
+<w lemma="beam">beam</w>
+<w lemma="se" function="demonstrative">&thorn;one</w>
+<w lemma="micel">miclan</w>
+<w lemma="&aelig;ren">&aelig;renum</w>
+<w lemma="clam">clammum</w>
+<w lemma="and">and</w>
+<w lemma="isern">isernum</w>,
+<w lemma="and">and</w>
+<w lemma="ges&aelig;lan">ges&aelig;ledne</w>
+<w lemma="in">in</w>
+<w lemma="susl">susl</w>
+<w lemma="don">don</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">his</w>
+<w lemma="mod">mod</w>
+<w lemma="witan">wite</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="mihtig">migtigra</w>
+<w lemma="wite">wite</w>
+<w lemma="wealdan">wealde&eth;</w>
+<w lemma="&thorn;onne" function="comparative">&thorn;onne</w>
+<w lemma="he">he</w>
+<w lemma="he">him</w>
+<w lemma="wi&thorn;">wi&eth;</w>
+<w lemma="magan">m&aelig;ge</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="of">of</w>
+<w lemma="sl&aelig;p">sl&aelig;pe</w>
+<w lemma="onwacan">onwoc</w>, (
+<w lemma="swefen">swefn</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="&aelig;t">&aelig;t</w>
+<w lemma="ende">ende</w>),
+<w lemma="eor&thorn;lic">eor&eth;lic</w>
+<w lemma="&aelig;&thorn;eling">&aelig;&eth;eling</w>,
+<w lemma="he">him</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="egesa">egesa</w>
+<w lemma="standan">stod</w>,
+<w lemma="gryre">gryre</w>
+<w lemma="fram">fram</w>
+<w lemma="se" function="demonstrative">&eth;am</w>
+<w lemma="g&aelig;st">gaste</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="&thorn;ider">&thorn;yder</w>
+<w lemma="god" function="noun">god</w>
+<w lemma="sendan">sende</w>.
+<w lemma="hatan">het</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="tosamne">tosomne</w>
+<w lemma="sin">sine</w>
+<w lemma="leod">leode</w>,
+<w lemma="folctoga">folctogan</w>
+<w lemma="feran" dipl="" resp="Scott Kleinman">feran</w>,
+<w lemma="frigan">fr&aelig;gn</w>
+<w lemma="ofer">ofer</w>
+<w lemma="eall">ealle</w>
+<w lemma="swi&thorn;mod">swi&eth;mod</w>
+<w lemma="cyning">cyning</w>
+<w lemma="hwa">hw&aelig;t</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="swefen">swefen</w>
+<w lemma="buan">bude</w>,
+<w lemma="nealles" type="negative-contraction" units="ne+ealles" >nalles</w>
+<w lemma="se" function="demonstrative">&thorn;y</w>
+<w lemma="he">he</w>
+<w lemma="wendan">wende</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="hit">hit</w>
+<w lemma="witan">wiston</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="he">he</w>
+<w lemma="cunnian">cunnode</w>
+<w lemma="hu">hu</w>
+<w lemma="hi">hie</w>
+<w lemma="cwe&thorn;an">cwe&eth;an</w>
+<w lemma="willan">woldon</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&eth;am</w>
+<w lemma="dom">dome</w>
+<w lemma="daniel">Daniel</w>
+<w lemma="hatan">haten</w>,
+<w lemma="god" function="noun">godes</w>
+<w lemma="spellboda">spelboda</w>.
+<w lemma="he">Him</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="g&aelig;st">g&aelig;st</w>
+<w lemma="gesellan">geseald</w>,
+<w lemma="halig">halig</w>
+<w lemma="of">of</w>
+<w lemma="heofon">heofonum</w>,
+<w lemma="se" function="conjunctive">se</w>
+<w lemma="he">his</w>
+<w lemma="hyge">hyge</w>
+<w lemma="trymman">trymede</w>.
+<w lemma="on">on</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="drihtenweard">drihtenweard</w>
+<w lemma="deop">deopne</w>
+<w lemma="witan">wisse</w>
+<w lemma="sefa">sefan</w>
+<w lemma="sid">sidne</w>
+<w lemma="ge&thorn;anc">ge&thorn;anc</w>
+<w lemma="and">and</w>
+<w lemma="snotor">snytro</w>
+<w lemma="cr&aelig;ft">cr&aelig;ft</w>,
+<w lemma="wis">wisne</w>
+<w lemma="wordcwide">wordcwide</w>.
+<w lemma="oft" dipl="eft" resp="Scott Kleinman">oft</w>
+<w lemma="he">he</w>
+<w lemma="wundor">wundor</w>
+<w lemma="manig">manig</w>,
+<w lemma="meotod">metodes</w>
+<w lemma="meaht">mihta</w>,
+<w lemma="for">for</w>
+<w lemma="mann">men</w>
+<w lemma="&aelig;tberan">&aelig;tb&aelig;r</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="he">he</w>
+<w lemma="secgan">secgan</w>
+<w lemma="onginnan">ongan</w>
+<w lemma="swefen">swefnes</w>
+<w lemma="woma">woman</w>,
+<w lemma="heahheort">heahheort</w>
+<w lemma="and">and</w>
+<w lemma="h&aelig;&thorn;en">h&aelig;&eth;en</w>
+<w lemma="here">heriges</w>
+<w lemma="wisa">wisa</w>,
+<w lemma="eall">ealne</w>
+<w lemma="se" function="demonstrative">&thorn;one</w>
+<w lemma="egesa">egesan</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">him</w>
+<w lemma="iwan">eowed</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>.
+<w lemma="biddan">B&aelig;d</w>
+<w lemma="he">hine</w>
+<w lemma="areccan">areccan</w>
+<w lemma="hwa">hw&aelig;t</w>
+<w lemma="se" function="demonstrative">seo</w>
+<w lemma="run">run</w>
+<w lemma="buan">bude</w>,
+<w lemma="hof">hofe</w>
+<w lemma="halig">haligu</w>
+<w lemma="word">word</w>
+<w lemma="and">and</w>
+<w lemma="in">in</w>
+<w lemma="hyge">hige</w>
+<w lemma="findan">funde</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="gesecgan">gesecganne</w>
+<w lemma="so&thorn;" function="adjective">so&eth;um</w>
+<w lemma="word">wordum</w>
+<w lemma="hwa">hw&aelig;t</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="beam">beam</w>
+<w lemma="buan">bude</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">he</w>
+<w lemma="blican">blican</w>
+<w lemma="geseon">geseah</w>,
+<w lemma="and">and</w>
+<w lemma="he">him</w>
+<w lemma="witegian">witgode</w>
+<w lemma="wyrd">wyrda</w>
+<w lemma="ge&thorn;ing">ge&thorn;ingu</w>.
+<w lemma="he">he</w>
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="swigan">swigode</w>,
+<w lemma="hw&aelig;&thorn;ere">hw&aelig;&eth;ere</w>
+<w lemma="so&thorn;" function="noun">so&eth;</w>
+<w lemma="ongytan">ongeat</w>,
+<w lemma="daniel">Daniel</w>
+<w lemma="&aelig;t">&aelig;t</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="dom">dome</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">his</w>
+<w lemma="drihten">drihten</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>,
+<w lemma="guma">gumena</w>
+<w lemma="ealdor" function="noun-masculine">aldor</w>,
+<w lemma="wi&thorn;">wi&eth;</w>
+<w lemma="god" function="noun">god</w>
+<w lemma="scyldig">scyldig</w>.
+<w lemma="wandian">Wandode</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="wisa">wisa</w>,
+<w lemma="hw&aelig;&thorn;ere">hw&aelig;&eth;re</w>
+<w lemma="he">he</w>
+<w lemma="word">worde</w>
+<w lemma="cwe&thorn;an">cw&aelig;&eth;</w>,
+<w lemma="&aelig;cr&aelig;ftig" dipl="ar cr&aelig;ftig" resp="Scott Kleinman">&aelig;cr&aelig;ftig</w>
+<w lemma="ar" function="noun-feminine">ar</w>,
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="&aelig;&thorn;eling">&aelig;&eth;elinge</w>:
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="beon" suppl="es">is</w>,
+<w lemma="weorod">weredes</w>
+<w lemma="weard">weard</w>,
+<w lemma="wundor">wundor</w>
+<w lemma="unlytel">unlytel</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="gesawan">gesawe</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="swefen">swefen</w>
+<w lemma="cuman">cuman</w>,
+<w lemma="heofonheah">heofonheane</w>
+<w lemma="beam">beam</w>
+<w lemma="and">and</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="halig">halgan</w>
+<w lemma="word">word</w>,
+<w lemma="irre">yrre</w>
+<w lemma="and">and</w>
+<w lemma="egeslic">egeslicu</w>,
+<w lemma="&thorn;a" function="conjunctive">&thorn;a</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="engel">engel</w>
+<w lemma="cwe&thorn;an">cw&aelig;&eth;</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="treow">treow</w>
+<w lemma="sculan">sceolde</w>,
+<w lemma="telga">telgum</w>
+<w lemma="besn&aelig;dan">besn&aelig;ded</w>,
+<w lemma="foran">foran</w>
+<w lemma="afeallan">afeallan</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="&aelig;r">&aelig;r</w>
+<w lemma="f&aelig;st">f&aelig;ste</w>
+<w lemma="standan">stod</w>,
+<w lemma="and">and</w>
+<w lemma="&thorn;onne" function="adverb">&thorn;onne</w>
+<w lemma="mid">mid</w>
+<w lemma="deor" function="noun">deorum</w>
+<w lemma="dreamleas">dreamleas</w>
+<w lemma="beon">beon</w>,
+<w lemma="westen">westen</w>
+<w lemma="wunian">wunian</w>,
+<w lemma="and">and</w>
+<w lemma="he">his</w>
+<w lemma="wyrttruma">wyrtruman</w>
+<w lemma="folde">foldan</w>
+<w lemma="befelan">befolen</w>,
+<w lemma="fyrstmearc">fyrstmearc</w>
+<w lemma="beon">wesan</w>
+<!-- This could be lemmatised as beon with @suppl="wesan". SK -->
+<w lemma="stille">stille</w>
+<w lemma="on">on</w>
+<w lemma="sta&thorn;ol">sta&eth;ole</w>,
+<w lemma="swa">swa</w>
+<w lemma="se" function="demonstrative">seo</w>
+<w lemma="stefn">stefn</w>
+<w lemma="gecwe&thorn;an">gecw&aelig;&eth;</w>,
+<w lemma="ymb">ymb</w>
+<w lemma="seofon">seofon</w>
+<w lemma="tid">tida</w>
+<w lemma="secgan">s&aelig;de</w>
+<w lemma="eft">eft</w>
+<w lemma="onfon">onfon</w>.
+<w lemma="swa">swa</w>
+<w lemma="&thorn;u">&thorn;in</w>
+<w lemma="bl&aelig;d" function="noun-masculine">bl&aelig;d</w>
+<w lemma="licgan">li&eth;</w>.
+<w lemma="swa">swa</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="beam">beam</w>
+<w lemma="geweaxan">geweox</w>,
+<w lemma="heah">heah</w>
+<w lemma="to" function="&thorn;reposition">to</w>
+<w lemma="heofon">heofonum</w>,
+<w lemma="swa">swa</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="h&aelig;le&thorn;">h&aelig;le&eth;um</w>
+<w lemma="beon" suppl="es">eart</w>
+<w lemma="an">ana</w>
+<w lemma="eall">eallum</w>
+<w lemma="eor&thorn;buend">eor&eth;buendum</w>
+<w lemma="weard">weard</w>
+<w lemma="and">and</w>
+<w lemma="wisa">wisa</w>.
+<w lemma="beon" suppl="es" type="negative-contraction" units="ne+is">Nis</w>
+<w lemma="&thorn;u">&thorn;e</w>
+<w lemma="wi&thorn;erbreca">wi&eth;erbreca</w>,
+<w lemma="mann">man</w>
+<w lemma="on">on</w>
+<w lemma="molde">moldan</w>,
+<w lemma="nim&thorn;e">nym&eth;e</w>
+<w lemma="meotod">metod</w>
+<w lemma="an">ana</w>.
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="&thorn;u">&eth;ec</w>
+<w lemma="aceorfan">aceorfe&eth;</w>
+<w lemma="of">of</w>
+<w lemma="cyningdom">cyningdome</w>,
+<w lemma="and">and</w>
+<w lemma="&thorn;u">&eth;ec</w>
+<w lemma="wineleas">wineleasne</w>
+<w lemma="on">on</w>
+<w lemma="wr&aelig;c" function="noun-neuter">wr&aelig;c</w>
+<w lemma="sendan">sende&eth;</w>,
+<w lemma="and">and</w>
+<w lemma="&thorn;onne" function="adverb">&thorn;onne</w>
+<w lemma="onhweorfan">onhweorfe&eth;</w>
+<w lemma="heorte">heortan</w>
+<w lemma="&thorn;u">&thorn;ine</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="ne">ne</w>
+<w lemma="gemyndg&aelig;st" dipl="gemydgast" resp="Scott Kleinman">gemyndgast</w>
+<w lemma="&aelig;fter">&aelig;fter</w>
+<w lemma="mandream">mandreame</w>,
+<w lemma="ne">ne</w>
+<w lemma="gewit">gewittes</w>
+<w lemma="beon" suppl="wesan">wast</w>
+<w lemma="butan">butan</w>
+<w lemma="wilddeor">wildeora</w>
+<w lemma="&thorn;eaw">&thorn;eaw</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="lifian">lifgende</w>
+<w lemma="lang">lange</w>
+<w lemma="&thorn;rag">&thorn;rage</w>
+<w lemma="heorte">heorta</w>
+<w lemma="hlyp">hlypum</w>
+<w lemma="geond">geond</w>
+<w lemma="holt">holt</w>
+<w lemma="wunian">wunast</w>.
+<w lemma="ne">ne</w>
+<w lemma="beon">bi&eth;</w>
+<w lemma="&thorn;u">&thorn;ec</w>
+<w lemma="m&aelig;lmete">m&aelig;lmete</w>
+<w lemma="nim&thorn;e">nym&thorn;e</w>
+<w lemma="mor">mores</w>
+<w lemma="gr&aelig;s">gr&aelig;s</w>,
+<w lemma="ne">ne</w>
+<w lemma="rest">rest</w>
+<w lemma="witod">witod</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="&thorn;u">&thorn;ec</w>
+<w lemma="regn">regna</w>
+<w lemma="scur">scur</w>
+<w lemma="weccan">wece&eth;</w>
+<w lemma="and">and</w>
+<w lemma="wreccan">wrece&eth;</w>
+<w lemma="swa">swa</w>
+<w lemma="wild">wildu</w>
+<w lemma="deor" function="noun">deor</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="ymb">ymb</w>
+<w lemma="seofon">seofon</w>
+<w lemma="winter">winter</w>
+<w lemma="so&thorn;" function="noun">so&eth;</w>
+<w lemma="gelyfan">gelyfest</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="beon" suppl="es">sie</w>
+<w lemma="an">an</w>
+<w lemma="meotod">metod</w>
+<w lemma="eall">eallum</w>
+<w lemma="mann">mannum</w>,
+<w lemma="reccan">reccend</w>
+<w lemma="and">and</w>
+<w lemma="rice" function="adjective">rice</w>,
+<w lemma="se" function="conjunctive">se</w>
+<w lemma="on">on</w>
+<w lemma="rodor">roderum</w>
+<w lemma="beon" suppl="es">is</w>.
+<w lemma="beon" suppl="es">is</w>
+<w lemma="ic">me</w>
+<w lemma="swa">swa</w>
+<w lemma="&thorn;eah">&thorn;eah</w>
+<w lemma="willa">willa</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="wyrttruma">wyrtruma</w>
+<w lemma="stille">stille</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="on">on</w>
+<w lemma="sta&thorn;ol">sta&eth;ole</w>,
+<w lemma="swa">swa</w>
+<w lemma="se" function="demonstrative">seo</w>
+<w lemma="stefn">stefn</w>
+<w lemma="gecwe&thorn;an">gecw&aelig;&eth;</w>,
+<w lemma="and">and</w>
+<w lemma="ymb">ymbe</w>
+<w lemma="seofon">seofan</w>
+<w lemma="tid">tide</w>
+<w lemma="s&aelig;d">s&aelig;de</w>
+<w lemma="onfon">onfenge</w>.
+<w lemma="swa">swa</w>
+<w lemma="&thorn;u">&thorn;in</w>
+<w lemma="rice">rice</w>
+<w lemma="restan">restende</w>
+<w lemma="beon">bi&eth;</w>,
+<w lemma="anwealh" dipl="anwloh" resp="Scott Kleinman">anwalh</w>
+<w lemma="for">for</w>
+<w lemma="eorl">eorlum</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="eft">eft</w>
+<w lemma="cuman">cymst</w>.
+<w lemma="gehycgean">Gehyge</w>
+<w lemma="&thorn;u">&thorn;u</w>,
+<w lemma="frea">frea</w>
+<w lemma="ic">min</w>,
+<w lemma="f&aelig;stlic">f&aelig;stlicne</w>
+<w lemma="r&aelig;d">r&aelig;d</w>.
+<w lemma="sellan">Syle</w>
+<w lemma="&aelig;lmysse">&aelig;lmyssan</w>,
+<w lemma="beon" suppl="wesan">wes</w>
+<w lemma="earm">earmra</w>
+<w lemma="hleow">hleo</w>,
+<w lemma="&thorn;ing">&thorn;inga</w>
+<w lemma="for">for</w>
+<w lemma="&thorn;eoden">&eth;eodne</w>,
+<w lemma="&aelig;r">&aelig;r</w>
+<w lemma="se" function="demonstrative">&eth;am</w>
+<w lemma="se" function="demonstrative">seo</w>
+<w lemma="&thorn;rag">&thorn;rah</w>
+<w lemma="cuman">cyme</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">he</w>
+<w lemma="&thorn;u">&thorn;ec</w>
+<w lemma="aweorpan">aworpe</w>
+<w lemma="of">of</w>
+<w lemma="weoroldrice">woruldrice</w>.
+<w lemma="oft">oft</w>
+<w lemma="meotod">metod</w>
+<w lemma="al&aelig;tan">al&aelig;t</w>
+<w lemma="manig">monige</w>
+<w lemma="&thorn;eod">&eth;eode</w>
+<w lemma="wyrcan">wyrcan</w>
+<w lemma="bot">bote</w>,
+<w lemma="&thorn;onne" function="adverb">&thorn;onne</w>
+<w lemma="hi">hie</w>
+<w lemma="willan">woldon</w>
+<w lemma="sylf">sylfe</w>,
+<w lemma="fyren">fyrene</w>
+<w lemma="f&aelig;stan">f&aelig;stan</w>,
+<w lemma="&aelig;r">&aelig;r</w>
+<w lemma="hi">him</w>
+<w lemma="f&aelig;r">f&aelig;r</w>
+<w lemma="god" function="noun">godes</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="egesa">egesan</w>
+<w lemma="gryre">gryre</w>
+<w lemma="ealdor" function="noun-feminine">aldre</w>
+<w lemma="gesceadan">gesceode</w>."
+<w lemma="na">No</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="fela">fela</w>
+<w lemma="daniel">Daniel</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="he">his</w>
+<w lemma="drihten">drihtne</w>
+<w lemma="gesprecan">gespr&aelig;c</w>
+<w lemma="so&thorn;" function="adjective">so&eth;ra</w>
+<w lemma="word">worda</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="snotor">snytro</w>
+<w lemma="cr&aelig;ft">cr&aelig;ft</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="a">a</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="rice">rica</w>
+<w lemma="reccan">reccan</w>
+<w lemma="willan">wolde</w>,
+<w lemma="middangeard">middangeardes</w>
+<w lemma="weard">weard</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="he">his</w>
+<w lemma="mod">mod</w>
+<w lemma="astigan">astah</w>,
+<w lemma="heah">heah</w>
+<w lemma="fram">fram</w>
+<w lemma="heorte">heortan</w>;
+<w lemma="he">he</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;s</w>
+<w lemma="heard">hearde</w>
+<w lemma="ongildan">ongeald</w>.
+<w lemma="onginnan">ongan</w>
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="gyddian">gyddigan</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="gilp">gylp</w>
+<w lemma="micel">micel</w>
+<w lemma="caldea">Caldea</w>
+<w lemma="cyning">cyning</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="he">he</w>
+<w lemma="ceastergeweorc" dipl="ceastre weold" resp="Scott Kleinman">ceastergeweorc</w>,
+<w lemma="babilon">Babilone</w>
+<w lemma="burh">burh</w>,
+<w lemma="on">on</w>
+<w lemma="he">his</w>
+<w lemma="bl&aelig;d" function="noun-masculine">bl&aelig;de</w>
+<w lemma="geseon">geseah</w>,
+<w lemma="shinarite">Sennera</w>
+<w lemma="feld">feld</w>
+<w lemma="sid">sidne</w>
+<w lemma="bewindan">bewindan</w>,
+<w lemma="heah">heah</w>
+<w lemma="hlifian">hlifigan</w>;
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="heretema">heretyma</w>
+<w lemma="weorod">werede</w>
+<w lemma="geweorcan">geworhte</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="wundor">wundor</w>
+<w lemma="micel">micel</w>,
+<w lemma="weor&thorn;an">wear&eth;</w>
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="anhydig">anhydig</w>
+<w lemma="ofer">ofer</w>
+<w lemma="eall">ealle</w>
+<w lemma="mann">men</w>,
+<w lemma="swi&thorn;mod">swi&eth;mod</w>
+<w lemma="in">in</w>
+<w lemma="sefa">sefan</w>,
+<w lemma="for">for</w>
+<w lemma="se" function="demonstrative">&eth;&aelig;re</w>
+<w lemma="sundorgifu">sundorgife</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">him</w>
+<w lemma="god" function="noun">god</w>
+<w lemma="sellan">sealde</w>,
+<w lemma="guma">gumena</w>
+<w lemma="rice">rice</w>,
+<w lemma="weorold">world</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="geweald">gewealde</w>
+<w lemma="in">in</w>
+<w lemma="wer">wera</w>
+<w lemma="lif">life</w>: "
+<w lemma="&thorn;u">&eth;u</w>
+<w lemma="beon" suppl="es">eart</w>
+<w lemma="se" function="demonstrative">seo</w>
+<w lemma="micel">micle</w>
+<w lemma="and">and</w>
+<w lemma="ic">min</w>
+<w lemma="se" function="demonstrative">seo</w>
+<w lemma="m&aelig;re">m&aelig;re</w>
+<w lemma="burh">burh</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="ic">ic</w>
+<w lemma="geweorcan">geworhte</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="weor&thorn;mynd">wur&eth;myndum</w>,
+<w lemma="rume">rume</w>
+<w lemma="rice">rice</w>.
+<w lemma="ic">ic</w>
+<w lemma="restan">reste</w>
+<w lemma="on">on</w>
+<w lemma="&thorn;u">&thorn;e</w>,
+<w lemma="eard">eard</w>
+<w lemma="and">and</w>
+<w lemma="e&thorn;el">e&eth;el</w>,
+<w lemma="agan">agan</w>
+<w lemma="willan">wille</w>."
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="for">for</w>
+<w lemma="se" function="demonstrative">&eth;am</w>
+<w lemma="gilp">gylpe</w>
+<w lemma="guma">gumena</w>
+<w lemma="drihten">drihten</w>
+<w lemma="forfon">forfangen</w>
+<w lemma="weor&thorn;an">wear&eth;</w>
+<w lemma="and">and</w>
+<w lemma="on">on</w>
+<w lemma="fleam">fleam</w>
+<w lemma="gewitan">gewat</w>,
+<w lemma="an">ana</w>
+<w lemma="on">on</w>
+<w lemma="oferhygd">oferhyd</w>
+<w lemma="ofer">ofer</w>
+<w lemma="eall">ealle</w>
+<w lemma="mann">men</w>.
+<w lemma="swa">swa</w>
+<w lemma="wadan" dipl="wo&eth;" resp="Scott Kleinman">wod</w>
+<w lemma="wer">wera</w>
+<w lemma="on">on</w>
+<w lemma="gewind&aelig;g">gewindagum</w>
+<w lemma="geocor">geocrostne</w>
+<w lemma="si&thorn;" function="noun">si&eth;</w>
+<w lemma="in">in</w>
+<w lemma="god" function="noun">godes</w>
+<w lemma="witan">wite</w>,
+<w lemma="&thorn;a" function="demonstrative">&eth;ara</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="eft">eft</w>
+<w lemma="lifian">lifigende</w>
+<w lemma="leod">leode</w>
+<w lemma="begitan">begete</w>,
+<w lemma="nebuchadnezzar">Nabochodonossor</w>,
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="he">him</w>
+<w lemma="ni&thorn;" function="noun-masculine">ni&eth;</w>
+<w lemma="god" function="noun">godes</w>,
+<w lemma="hre&thorn;">hre&eth;</w>
+<w lemma="of">of</w>
+<w lemma="heofon">heofonum</w>,
+<w lemma="hatan">hete</w>
+<w lemma="gesceadan">gesceode</w>.
+<w lemma="seofon">Seofon</w>
+<w lemma="winter">winter</w>
+<w lemma="samod">samod</w>
+<w lemma="susl">susl</w>
+<w lemma="&thorn;rowian">&thorn;rowode</w>,
+<w lemma="wilddeor">wildeora</w>
+<w lemma="westen">westen</w>,
+<w lemma="winburh">winburge</w>
+<w lemma="cyning">cyning</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="earfo&thorn;m&aelig;cg">earfo&eth;m&aelig;cg</w>
+<w lemma="up">up</w>
+<w lemma="locian">locode</w>,
+<w lemma="wilddeor">wilddeora</w>
+<w lemma="gewita">gewita</w>,
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="wolcen">wolcna</w>
+<w lemma="gang">gang</w>.
+<w lemma="gemunan">Gemunde</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="on">on</w>
+<w lemma="mod">mode</w>
+<w lemma="se" function="conjunctive" >&thorn;&aelig;t</w>
+<w lemma="meotod">metod</w>
+<w lemma="beon" suppl="wesan">w&aelig;re</w>,
+<w lemma="heofon">heofona</w>
+<w lemma="heahcyning">heahcyning</w>,
+<w lemma="h&aelig;le&thorn;">h&aelig;le&eth;a</w>
+<w lemma="bearn">bearnum</w>
+<w lemma="an">ana</w>
+<w lemma="ece">ece</w>
+<w lemma="g&aelig;st">gast</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="he">he</w>
+<w lemma="eft">eft</w>
+<w lemma="onhweorfan">onhwearf</w>
+<w lemma="woda">wodan</w>
+<w lemma="gewit">gewittes</w>,
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">he</w>
+<w lemma="&aelig;r">&aelig;r</w>
+<w lemma="wid">wide</w>
+<w lemma="beran">b&aelig;r</w>
+<w lemma="herewosa">herewosan</w>
+<w lemma="hyge">hige</w>,
+<w lemma="heorte">heortan</w>
+<w lemma="getenge">getenge</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="he">his</w>
+<w lemma="g&aelig;st">gast</w>
+<w lemma="ahweorfan">ahwearf</w>
+<w lemma="in">in</w>
+<w lemma="god" function="noun">godes</w>
+<w lemma="gemynd">gemynd</w>,
+<w lemma="mod">mod</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="mann">mannum</w>,
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="he">he</w>
+<w lemma="meotod">metod</w>
+<w lemma="ongytan">onget</w>.
+<w lemma="gewitan">Gewat</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="earmsceapen">earmsceapen</w>
+<w lemma="eft">eft</w>
+<w lemma="si&thorn;ian">si&eth;ian</w>,
+<w lemma="nacod">nacod</w>
+<w lemma="nidgenga">nydgenga</w>,
+<w lemma="ni&thorn;" function="noun-masculine">ni&eth;</w>
+<w lemma="ge&thorn;afian">ge&eth;afian</w>,
+<w lemma="wundorlic">wundorlic</w>
+<w lemma="wrecca">wr&aelig;cca</w>
+<w lemma="and">and</w>
+<w lemma="w&aelig;d">w&aelig;da</w>
+<w lemma="leas">leas</w>,
+<w lemma="m&aelig;te">m&aelig;tra</w>
+<w lemma="on">on</w>
+<w lemma="modge&thorn;anc">modge&eth;anc</w>,
+<w lemma="to" function="preposition">to</w>
+<w lemma="mancynn">mancynne</w>,
+<w lemma="&thorn;onne" function="comparative">&eth;onne</w>
+<w lemma="guma">gumena</w>
+<w lemma="weard">weard</w>
+<w lemma="in">in</w>
+<w lemma="gilp">gylpe</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>.
+<w lemma="standan">Stod</w>
+<w lemma="middangeard">middangeard</w>
+<w lemma="&aelig;fter">&aelig;fter</w>
+<w lemma="mandrihten">mandrihtne</w>,
+<w lemma="eard">eard</w>
+<w lemma="and">and</w>
+<w lemma="e&thorn;el">e&eth;el</w>
+<w lemma="&aelig;fter">&aelig;fter</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="&aelig;&thorn;eling">&aelig;&eth;elinge</w>,
+<w lemma="seofon">seofon</w>
+<w lemma="winter">winter</w>
+<w lemma="samod">samod</w>,
+<w lemma="swa">swa</w>
+<w lemma="na">no</w>
+<w lemma="swi&thorn;rian">swi&eth;rode</w>
+<w lemma="rice">rice</w>
+<w lemma="under">under</w>
+<w lemma="rodor">roderum</w>
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="r&aelig;swa">r&aelig;swa</w>
+<w lemma="cuman">com</w>.
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="eft">eft</w>
+<w lemma="gesettan">geseted</w>
+<w lemma="in">in</w>
+<w lemma="ealdordom">aldordom</w>
+<w lemma="babilon">Babilone</w>
+<w lemma="weard">weard</w>,
+<w lemma="habban">h&aelig;fde</w>
+<w lemma="bet">beteran</w>
+<w lemma="&thorn;eaw">&eth;eaw</w>,
+<w lemma="leoht" function="adjective">leohtran</w>
+<w lemma="geleafa">geleafan</w>
+<w lemma="in">in</w>
+<w lemma="liffruma">liffruman</w>,
+<w lemma="&thorn;&aelig;tte">&thorn;&aelig;tte</w>
+<w lemma="god" function="noun">god</w>
+<w lemma="sellan">sealde</w>
+<w lemma="guma">gumena</w>
+<w lemma="gehwylc">gehwilcum</w>
+<w lemma="wela">welan</w>
+<w lemma="swa">swa</w>
+<w lemma="wite">wite</w>,
+<w lemma="swa">swa</w>
+<w lemma="he">he</w>
+<w lemma="willan">wolde</w>
+<w lemma="sylf">sylf</w>.
+<w lemma="ne">ne</w>
+<w lemma="lengan">lengde</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="leod">leoda</w>
+<w lemma="ealdor" function="noun-masculine">aldor</w>
+<w lemma="witig">witegena</w>
+<w lemma="wordcwide">wordcwyde</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="he">he</w>
+<w lemma="wid">wide</w>
+<w lemma="beodan">bead</w>
+<w lemma="meotod">metodes</w>
+<w lemma="meaht">mihte</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="he">he</w>
+<w lemma="meld">meld</w>
+<w lemma="agan">ahte</w>,
+<w lemma="si&thorn;f&aelig;t">si&eth;f&aelig;t</w>
+<w lemma="secgan">s&aelig;gde</w>
+<w lemma="sin">sinum</w>
+<w lemma="leod">leodum</w>,
+<w lemma="wid">wide</w>
+<w lemma="wa&thorn;">wa&eth;e</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="he">he</w>
+<w lemma="mid">mid</w>
+<w lemma="wilddeor">wilddeorum</w>
+<w lemma="ateon">ateah</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="he">him</w>
+<w lemma="frea">frean</w>
+<w lemma="god" function="noun">godes</w>
+<w lemma="in">in</w>
+<w lemma="g&aelig;st">gast</w>
+<w lemma="becuman">becwom</w>
+<w lemma="r&aelig;df&aelig;st">r&aelig;df&aelig;st</w>
+<w lemma="sefa">sefa</w>,
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="he">he</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="rodor">roderum</w>
+<w lemma="beseon">beseah</w>.
+<w lemma="wyrd">Wyrd</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="geweor&thorn;an">geworden</w>,
+<w lemma="wundor">wundor</w>
+<w lemma="gecy&thorn;an">gecy&eth;ed</w>,
+<w lemma="swefen">swefn</w>
+<w lemma="gese&thorn;an">gese&eth;ed</w>,
+<w lemma="susl">susl</w>
+<w lemma="awinnan">awunnen</w>,
+<w lemma="dom">dom</w>
+<w lemma="gedeman">gedemed</w>,
+<w lemma="swa">swa</w>
+<w lemma="&aelig;r">&aelig;r</w>
+<w lemma="daniel">Daniel</w>
+<w lemma="cwe&thorn;an">cw&aelig;&eth;</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="folctoga">folctoga</w>
+<w lemma="findan">findan</w>
+<w lemma="sculan">sceolde</w>
+<w lemma="earfo&thorn;si&thorn;">earfo&eth;si&eth;as</w>
+<w lemma="for">for</w>
+<w lemma="he">his</w>
+<w lemma="ofermedla">ofermedlan</w>.
+<w lemma="swa">swa</w>
+<w lemma="he">he</w>
+<w lemma="ofostlice">ofstlice</w>
+<w lemma="godspellian">godspellode</w>
+<w lemma="meotod">metodes</w>
+<w lemma="meaht">mihtum</w>
+<w lemma="for">for</w>
+<w lemma="mancynn">mancynne</w>,
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="in">in</w>
+<w lemma="babilon">Babilone</w>
+<w lemma="burhsittend">burhsittendum</w>
+<w lemma="lang">lange</w>
+<w lemma="hwil">hwile</w>
+<w lemma="lar">lare</w>
+<w lemma="secgan">s&aelig;gde</w>,
+<w lemma="daniel">Daniel</w>
+<w lemma="dom">domas</w>.
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="deor" function="noun">deora</w>
+<w lemma="gesi&thorn;" function="noun-masculine">gesi&eth;</w>,
+<w lemma="wild">wildra</w>
+<w lemma="wergenga">w&aelig;rgenga</w>,
+<w lemma="of">of</w>
+<w lemma="wa&thorn;">wa&eth;e</w>
+<w lemma="cuman">cwom</w>,
+<w lemma="nebuchadnezzar">Nabochodonossor</w>
+<w lemma="of">of</w>
+<w lemma="ni&thorn;wracu">ni&eth;wracum</w>,
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="weardian">weardode</w>
+<w lemma="wid">wide</w>
+<w lemma="rice">rice</w>,
+<w lemma="healdan">heold</w>
+<w lemma="h&aelig;le&thorn;">h&aelig;le&eth;a</w>
+<w lemma="gestreon">gestreon</w>
+<w lemma="and">and</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="heah">hean</w>
+<w lemma="burh">burh</w>,
+<w lemma="frod">frod</w>,
+<w lemma="foremihtig">foremihtig</w>
+<w lemma="folc">folca</w>
+<w lemma="r&aelig;swa">r&aelig;swa</w>,
+<w lemma="caldea">Caldea</w>
+<w lemma="cyning">cyning</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="he">him</w>
+<w lemma="cwealm">cwelm</w>
+<w lemma="gesceadan">gesceod</w>,
+<w lemma="swa">swa</w>
+<w lemma="he">him</w>
+<w lemma="ofer">ofer</w>
+<w lemma="eor&thorn;">eor&eth;an</w>
+<w lemma="andsaca">andsaca</w>
+<w lemma="ne">ne</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="guma">gumena</w>
+<w lemma="&aelig;nig">&aelig;nig</w>
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="he">him</w>
+<w lemma="god" function="noun">god</w>
+<w lemma="willan">wolde</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="hryre">hryre</w>
+<w lemma="hreddan">hreddan</w>
+<w lemma="heah">hea</w>
+<w lemma="rice">rice</w>.
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="he">his</w>
+<w lemma="aferan">aferan</w>
+<w lemma="ead">ead</w>
+<w lemma="bryttian">bryttedon</w>,
+<w lemma="wela">welan</w>,
+<w lemma="windan">wunden</w>
+<w lemma="gold">gold</w>,
+<w lemma="in">in</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;re</w>
+<w lemma="wid">widan</w>
+<w lemma="burh">byrig</w>,
+<w lemma="ealhstede">ealhstede</w>
+<w lemma="eorl">eorla</w>,
+<w lemma="unwaclic">unwaclice</w>,
+<w lemma="heah">heah</w>
+<w lemma="hordm&aelig;gen">hordm&aelig;gen</w>,
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="hi">hyra</w>
+<w lemma="hlaford">hlaford</w>
+<w lemma="licgan">l&aelig;g</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="in">in</w>
+<w lemma="se" function="demonstrative">&eth;&aelig;re</w>
+<w lemma="&thorn;eod">&eth;eode</w>
+<w lemma="awacan">awoc</w>
+<w lemma="he">his</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="&thorn;ridda">&thorn;ridde</w>
+<w lemma="cneo">cneow</w>.
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="baldazar">Baldazar</w>
+<w lemma="burh">burga</w>
+<w lemma="ealdor" function="noun-masculine">aldor</w>,
+<w lemma="wealdan">weold</w>
+<w lemma="wer">wera</w>
+<w lemma="rice">rices</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="he">him</w>
+<w lemma="wlencu">wlenco</w>
+<w lemma="gesceadan">gesceod</w>,
+<w lemma="oferhygd">oferhyd</w>
+<w lemma="egle">egle</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="ended&aelig;g">ended&aelig;g</w>
+<w lemma="se" function="demonstrative">&eth;&aelig;s</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="caldea">Caldeas</w>
+<w lemma="cyningdom">cyningdom</w>
+<w lemma="agan">ahton</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="meotod">metod</w>
+<w lemma="onleon">onlah</w>
+<w lemma="m&aelig;&thorn;as">Medum</w>
+<w lemma="and">and</w>
+<w lemma="persa">Persum</w>
+<w lemma="ealdordom">aldordomes</w>
+<w lemma="ymb" dipl="ym" resp="Scott Kleinman">ymb</w>
+<w lemma="lytel">lytel</w>
+<w lemma="f&aelig;c">f&aelig;c</w>,
+<w lemma="l&aelig;tan">let</w>
+<w lemma="babilon">Babilone</w>
+<w lemma="bl&aelig;d" function="noun-masculine">bl&aelig;d</w>
+<w lemma="swi&thorn;rian">swi&eth;rian</w>,
+<w lemma="se" function="demonstrative">&thorn;one</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;a</w>
+<w lemma="h&aelig;le&thorn;">h&aelig;le&eth;</w>
+<w lemma="healdan">healdan</w>
+<w lemma="sculan">sceoldon</w>.
+<w lemma="witan">Wiste</w>
+<w lemma="he">he</w>
+<w lemma="ealdormann">ealdormen</w>
+<w lemma="in">in</w>
+<w lemma="unriht">unrihtum</w>,
+<w lemma="&thorn;a" function="demonstrative">&eth;a</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="se" function="demonstrative">&eth;y</w>
+<w lemma="rice">rice</w>
+<w lemma="r&aelig;dan">r&aelig;dan</w>
+<w lemma="sculan">sceoldon</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="gehycgan">gehogode</w>
+<w lemma="hamsittende">hamsittende</w>,
+<w lemma="m&aelig;&thorn;as">Meda</w>
+<w lemma="ealdor" function="noun-masculine">aldor</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="&aelig;r">&aelig;r</w>
+<w lemma="man" type="pronoun">man</w>
+<w lemma="ne">ne</w>
+<w lemma="onginnan">ongan</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">he</w>
+<w lemma="babilon">Babilone</w>
+<w lemma="abrecan">abrecan</w>
+<w lemma="willan">wolde</w>,
+<w lemma="ealhstede">alhstede</w>
+<w lemma="eorl">eorla</w>,
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="&aelig;&thorn;eling">&aelig;&eth;elingas</w>
+<w lemma="under">under</w>
+<w lemma="weall">wealla</w>
+<w lemma="hleow">hleo</w>
+<w lemma="wela">welan</w>
+<w lemma="brytnian">brytnedon</w>.
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;ara</w>
+<w lemma="f&aelig;st">f&aelig;stna</w>
+<w lemma="folc">folcum</w>
+<w lemma="cu&thorn;" function="adjective">cu&eth;ost</w>,
+<w lemma="m&aelig;st">m&aelig;st</w>
+<w lemma="and">and</w>
+<w lemma="m&aelig;re">m&aelig;rost</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;ara</w>
+<w lemma="&thorn;e">&thorn;e</w>
+<w lemma="mann">men</w>
+<w lemma="buan">bun</w>,
+<w lemma="babilon">Babilon</w>
+<w lemma="burh">burga</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="baldazar">Baldazar</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="gilp">gylp</w>
+<w lemma="gram">grome</w>
+<w lemma="god" function="noun">godes</w>
+<w lemma="frasian" dipl="frea s&aelig;de" resp="Scott Kleinman">frasade</w>.
+<w lemma="sittan">S&aelig;ton</w>
+<w lemma="hi">him</w>
+<w lemma="&aelig;t">&aelig;t</w>
+<w lemma="wine">wine</w>
+<w lemma="weall">wealle</w>
+<w lemma="belucan">belocene</w>,
+<w lemma="ne">ne</w>
+<w lemma="onegan">onegdon</w>
+<w lemma="na">na</w>
+<w lemma="orl&aelig;g">orlegra</w>
+<w lemma="ni&thorn;" function="noun-masculine">ni&eth;</w>,
+<w lemma="&thorn;eah">&thorn;eah</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="feond">feonda</w>
+<w lemma="folc">folc</w>
+<w lemma="feran">feran</w>
+<w lemma="cuman">cwome</w>
+<w lemma="here">herega</w>
+<w lemma="ger&aelig;d">ger&aelig;dum</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;re</w>
+<w lemma="heahburh">heahbyrig</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="babilon">Babilone</w>
+<w lemma="abrecan">abrecan</w>
+<w lemma="magan">mihton</w>.
+<w lemma="gesittan">Ges&aelig;t</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="symbel">symble</w>
+<w lemma="si&thorn;" function="adjective">si&eth;estan</w>
+<w lemma="d&aelig;g">d&aelig;ge</w>
+<w lemma="caldea">Caldea</w>
+<w lemma="cyning">cyning</w>
+<w lemma="mid">mid</w>
+<w lemma="cneom&aelig;gas">cneomagum</w>,
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="medugal">medugal</w>
+<w lemma="weor&thorn;an">wear&eth;</w>
+<w lemma="m&aelig;gen">m&aelig;genes</w>
+<w lemma="wisa">wisa</w>.
+<w lemma="hatan">het</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;am</w>
+<w lemma="&aelig;&thorn;el" function="noun" dipl="" resp="Scott Kleinman">&aelig;&eth;elum</w>
+<w lemma="beran">beran</w>
+<w lemma="israhel">Israela</w>
+<w lemma="gestreon">gestreon</w>,
+<w lemma="huself&aelig;t">huslfatu</w>
+<w lemma="halig">halegu</w>,
+<w lemma="on">on</w>
+<w lemma="hand">hand</w>
+<w lemma="wer">werum</w>,
+<w lemma="&thorn;a" function="conjunctive">&thorn;a</w>
+<w lemma="&aelig;r">&aelig;r</w>
+<w lemma="caldea">Caldeas</w>
+<w lemma="mid">mid</w>
+<w lemma="cyne&thorn;rym">cyne&eth;rymme</w>,
+<w lemma="cempa">cempan</w>
+<w lemma="in">in</w>
+<w lemma="ceaster">ceastre</w>,
+<w lemma="cl&aelig;ne">cl&aelig;ne</w>
+<w lemma="geniman">genamon</w>,
+<w lemma="gold">gold</w>
+<w lemma="in">in</w>
+<w lemma="ierusalem">Gerusalem</w>,
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="hi">hie</w>
+<w lemma="iudea">Iudea</w>
+<w lemma="bl&aelig;d" function="noun-masculine">bl&aelig;d</w>
+<w lemma="forbrecan">forbr&aelig;con</w>
+<w lemma="bill">billa</w>
+<w lemma="ecg">ecgum</w>,
+<w lemma="and">and</w>
+<w lemma="&thorn;urh">&thorn;urh</w>
+<w lemma="hleo&thorn;orcyme">hleo&eth;orcyme</w>,
+<w lemma="herian">herige</w>
+<w lemma="geniman">genamon</w>
+<w lemma="beorht">beorhte</w>
+<w lemma="fr&aelig;twe">fr&aelig;twe</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="hi">hie</w>
+<w lemma="templ">tempel</w>
+<w lemma="strudan">strudon</w>,
+<w lemma="salomon">Salomanes</w>
+<w lemma="seld">seld</w>,
+<w lemma="swi&thorn;">swi&eth;e</w>
+<w lemma="gilpan">gulpon</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="weor&thorn;an">wear&eth;</w>
+<w lemma="bli&thorn;emod">bli&eth;emod</w>
+<w lemma="burh">burga</w>
+<w lemma="ealdor" function="noun-masculine">aldor</w>,
+<w lemma="gilpan">gealp</w>
+<w lemma="gramlic">gramlice</w>
+<w lemma="god" function="noun">gode</w>
+<w lemma="on">on</w>
+<w lemma="anda">andan</w>,
+<w lemma="cwe&thorn;an">cw&aelig;&eth;</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">his</w>
+<w lemma="here">hergas</w>
+<w lemma="heah">hyrran</w>
+<w lemma="beon" suppl="wesan">w&aelig;ron</w>
+<w lemma="and">and</w>
+<w lemma="mihtig">mihtigran</w>
+<w lemma="mann">mannum</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="fri&thorn;">fri&eth;e</w>
+<w lemma="&thorn;onne" function="comparative">&thorn;onne</w>
+<w lemma="israhel">Israela</w>
+<w lemma="ece">ece</w>
+<w lemma="drihten">drihten</w>.
+<w lemma="he">Him</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="tacn">tacen</w>
+<w lemma="weor&thorn;an">wear&eth;</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="he">he</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="starian">starude</w>,
+<w lemma="egeslic">egeslic</w>
+<w lemma="for">for</w>
+<w lemma="eorl">eorlum</w>
+<w lemma="innan">innan</w>
+<w lemma="heall">healle</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">he</w>
+<w lemma="for">for</w>
+<w lemma="leod">leodum</w>
+<w lemma="lygeword">ligeword</w>
+<w lemma="gecwe&thorn;an">gecw&aelig;&eth;</w>,
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="&thorn;&aelig;r">&thorn;&aelig;r</w>
+<w lemma="in">in</w>
+<w lemma="egesa">egesan</w>
+<w lemma="engel">engel</w>
+<w lemma="drihten">drihtnes</w>
+<w lemma="l&aelig;tan">let</w>
+<w lemma="he">his</w>
+<w lemma="hand">hand</w>
+<w lemma="cuman">cuman</w>
+<w lemma="in">in</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="heah">hea</w>
+<w lemma="seld">seld</w>,
+<w lemma="writan">wrat</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="in">in</w>
+<w lemma="wage">wage</w>
+<w lemma="word">worda</w>
+<w lemma="gerynu">gerynu</w>,
+<w lemma="basu">baswe</w>
+<w lemma="bocst&aelig;f">bocstafas</w>,
+<w lemma="burhsittend">burhsittendum</w>.
+<w lemma="&thorn;a" function="adverb">&eth;a</w>
+<w lemma="weo&thorn;an">wear&eth;</w>
+<w lemma="folctoga">folctoga</w>
+<w lemma="forht">forht</w>
+<w lemma="on">on</w>
+<w lemma="mod">mode</w>,
+<w lemma="acol">acul</w>
+<w lemma="for">for</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="egesa">egesan</w>.
+<w lemma="geseon">Geseah</w>
+<w lemma="he">he</w>
+<w lemma="engel">engles</w>
+<w lemma="hand">hand</w>
+<w lemma="in">in</w>
+<w lemma="sele">sele</w>
+<w lemma="writan">writan</w>
+<w lemma="senner">Sennera</w>
+<w lemma="wita">wite</w>.
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="gyddian">gyddedon</w>
+<w lemma="guma">gumena</w>
+<w lemma="manig">m&aelig;nigeo</w>,
+<w lemma="h&aelig;le&thorn;">h&aelig;le&eth;</w>
+<w lemma="in">in</w>
+<w lemma="heall">healle</w>,
+<w lemma="hwa">hw&aelig;t</w>
+<w lemma="se" function="demonstrative">seo</w>
+<w lemma="hand">hand</w>
+<w lemma="writan">write</w>
+<w lemma="to" function="preposition">to</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;am</w>
+<w lemma="beacen">beacne</w>
+<w lemma="burhsittend">burhsittendum</w>.
+<w lemma="weorod">Werede</w>
+<w lemma="cuman">comon</w>
+<w lemma="on">on</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="wundor">wundor</w>
+<w lemma="seon">seon</w>.
+<w lemma="secan">Sohton</w>
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="swi&thorn;">swi&eth;e</w>
+<w lemma="in">in</w>
+<w lemma="sefa">sefan</w>
+<w lemma="gehyd">gehydum</w>,
+<w lemma="hwa">hw&aelig;t</w>
+<w lemma="se" function="demonstrative">seo</w>
+<w lemma="hand">hand</w>
+<w lemma="writan">write</w>
+<w lemma="halig">haliges</w>
+<w lemma="g&aelig;st">gastes</w>.
+<w lemma="ne">ne</w>
+<w lemma="magan">mihton</w>
+<w lemma="ar&aelig;dan">ar&aelig;dan</w>
+<w lemma="runcr&aelig;ftig">runcr&aelig;ftige</w>
+<w lemma="mann">men</w>
+<w lemma="engel">engles</w>
+<w lemma="&aelig;rendboc">&aelig;rendbec</w>,
+<w lemma="&aelig;&thorn;eling">&aelig;&eth;elinga</w>
+<w lemma="cynn">cyn</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="daniel">Daniel</w>
+<w lemma="cuman">com</w>,
+<w lemma="drihten">drihtne</w>
+<w lemma="geceosan">gecoren</w>,
+<w lemma="snotor">snotor</w>
+<w lemma="and">and</w>
+<w lemma="so&thorn;f&aelig;st">so&eth;f&aelig;st</w>,
+<w lemma="in">in</w>
+<w lemma="se" function="demonstrative">&thorn;&aelig;t</w>
+<w lemma="seld">seld</w>
+<w lemma="gangan">gangan</w>.
+<w lemma="se" function="demonstrative">&eth;am</w>
+<w lemma="beon" suppl="wesan">w&aelig;s</w>
+<w lemma="on">on</w>
+<w lemma="g&aelig;st">gaste</w>
+<w lemma="god" function="noun">godes</w>
+<w lemma="cr&aelig;ft">cr&aelig;ft</w>
+<w lemma="micel">micel</w>,
+<w lemma="to" function="preposition">to</w>
+<w lemma="se" function="demonstrative">&thorn;am</w>
+<w lemma="ic">ic</w>
+<w lemma="georn">georne</w>
+<w lemma="gefr&aelig;gen">gefr&aelig;gn</w>
+<w lemma="gifu">gyfum</w>
+<w lemma="ceapian">ceapian</w>
+<w lemma="burh" dipl="burh" resp="Scott Kleinman">burhge</w>
+<w lemma="weard" dipl="geweardas" resp="Scott Kleinman">weardas</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">he</w>
+<w lemma="hi">him</w>
+<w lemma="bocst&aelig;f">bocstafas</w>
+<w lemma="ar&aelig;dan">ar&aelig;dde</w>
+<w lemma="and">and</w>
+<w lemma="areccan">arehte</w>,
+<w lemma="hwa">hw&aelig;t</w>
+<w lemma="se" function="demonstrative">seo</w>
+<w lemma="run">run</w>
+<w lemma="buan">bude</w>.
+<w lemma="hi">Him</w>
+<w lemma="&aelig;cr&aelig;ftig">&aelig;cr&aelig;ftig</w>
+<w lemma="andswarian">andswarode</w>,
+<w lemma="god" function="noun">godes</w>
+<w lemma="spellboda">spelboda</w>,
+<w lemma="gleaw">gleaw</w>
+<w lemma="ge&thorn;anc">ge&eth;ances</w>:
+<w lemma="na">No</w>
+<w lemma="ic">ic</w>
+<w lemma="wi&thorn;">wi&eth;</w>
+<w lemma="feohsceat">feohsceattum</w>
+<w lemma="ofer">ofer</w>
+<w lemma="folc">folc</w>
+<w lemma="beran">bere</w>
+<w lemma="drihten">drihtnes</w>
+<w lemma="dom">domas</w>,
+<w lemma="ne">ne</w>
+<w lemma="&thorn;u">&eth;e</w>
+<w lemma="dugu&thorn;">duge&eth;e</w>
+<w lemma="cunnan">can</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="&thorn;u">&thorn;e</w>
+<w lemma="unceapunga">unceapunga</w>
+<w lemma="orl&aelig;g">orl&aelig;g</w>
+<w lemma="secgan">secge</w>,
+<w lemma="word">worda</w>
+<w lemma="gerynu">gerynu</w>,
+<w lemma="&thorn;a" function="adverb">&thorn;a</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="wendan">wendan</w>
+<w lemma="ne">ne</w>
+<w lemma="meaht">miht</w>.
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="for">for</w>
+<w lemma="anmedla">anmedlan</w>
+<w lemma="in">in</w>
+<w lemma="&aelig;ht">&aelig;ht</w>
+<w lemma="beran">bere</w>
+<w lemma="huself&aelig;t">huslfatu</w>
+<w lemma="halig">halegu</w>,
+<w lemma="on">on</w>
+<w lemma="hand">hand</w>
+<w lemma="wer">werum</w>.
+<w lemma="on">on</w>
+<w lemma="&thorn;a" function="demonstrative">&thorn;am</w>
+<w lemma="ge" function="pronoun">ge</w>
+<w lemma="deofol">deoflu</w>
+<w lemma="drincan">drincan</w>
+<w lemma="onginnan">ongunnon</w>,
+<w lemma="&thorn;a" function="conjunctive">&eth;a</w>
+<w lemma="&aelig;r">&aelig;r</w>
+<w lemma="israhel">Israela</w>
+<w lemma="in">in</w>
+<w lemma="&aelig;">&aelig;</w>
+<w lemma="habban">h&aelig;fdon</w>
+<w lemma="&aelig;t">&aelig;t</w>
+<w lemma="god" function="noun">godes</w>
+<w lemma="earc">earce</w>,
+<w lemma="o&thorn;&thorn;&aelig;t">o&eth;&thorn;&aelig;t</w>
+<w lemma="hi">hie</w>
+<w lemma="gilp">gylp</w>
+<w lemma="beswican">beswac</w>,
+<w lemma="windruncen">windruncen</w>
+<w lemma="gewit">gewit</w>,
+<w lemma="swa">swa</w>
+<w lemma="&thorn;u">&thorn;e</w>
+<w lemma="weor&thorn;">wur&eth;an</w>
+<w lemma="sculan">sceal</w>.
+<w lemma="na">No</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="&thorn;u">&thorn;in</w>
+<w lemma="ealdor" function="noun-masculine">aldor</w>
+<w lemma="&aelig;fre">&aelig;fre</w>
+<w lemma="willan">wolde</w>
+<w lemma="god" function="noun">godes</w>
+<w lemma="goldf&aelig;t">goldfatu</w>
+<w lemma="in">in</w>
+<w lemma="gilp">gylp</w>
+<w lemma="beran">beran</w>,
+<w lemma="ne">ne</w>
+<w lemma="se" function="demonstrative">&eth;y</w>
+<w lemma="hra&thorn;e">hra&eth;or</w>
+<w lemma="hryman">hremde</w>,
+<w lemma="&thorn;eah">&eth;eah</w>
+<w lemma="&thorn;e">&eth;e</w>
+<w lemma="here">here</w>
+<w lemma="bringan">brohte</w>
+<w lemma="israhel">Israela</w>
+<w lemma="gestreon">gestreon</w>
+<w lemma="in">in</w>
+<w lemma="he">his</w>
+<w lemma="&aelig;ht">&aelig;hte</w>
+<w lemma="geweald">geweald</w>,
+<w lemma="ac" function="conjunctive">ac</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="oft">oftor</w>
+<w lemma="gecwe&thorn;an">gecw&aelig;&eth;</w>
+<w lemma="ealdor" function="noun-masculine">aldor</w>
+<w lemma="&thorn;eod">&eth;eoda</w>
+<w lemma="so&thorn;" function="adjective">so&eth;um</w>
+<w lemma="word">wordum</w>
+<w lemma="ofer">ofer</w>
+<w lemma="sin">sin</w>
+<w lemma="m&aelig;gen">m&aelig;gen</w>,
+<w lemma="si&thorn;&thorn;an">si&eth;&eth;an</w>
+<w lemma="he">him</w>
+<w lemma="wuldor">wuldres</w>
+<w lemma="weard">weard</w>
+<w lemma="wundor">wundor</w>
+<w lemma="gecy&thorn;an">gecy&eth;de</w>,
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="he">he</w>
+<w lemma="beon" suppl="wesan">w&aelig;re</w>
+<w lemma="an">ana</w>
+<w lemma="eall">ealra</w>
+<w lemma="gesceaft">gesceafta</w>
+<w lemma="drihten">drihten</w>
+<w lemma="and">and</w>
+<w lemma="wealdend">waldend</w>,
+<w lemma="se" function="conjunctive">se</w>
+<w lemma="he">him</w>
+<w lemma="dom">dom</w>
+<w lemma="forgifan">forgeaf</w>,
+<w lemma="unscende">unscyndne</w>
+<w lemma="bl&aelig;d" function="noun-masculine">bl&aelig;d</w>
+<w lemma="eor&thorn;">eor&eth;an</w>
+<w lemma="rice">rices</w>,
+<w lemma="and">and</w>
+<w lemma="&thorn;u">&thorn;u</w>
+<w lemma="lignian">lignest</w>
+<w lemma="nu">nu</w>
+<w lemma="se" function="conjunctive">&thorn;&aelig;t</w>
+<w lemma="beon" suppl="es">sie</w>
+<w lemma="lifian">lifgende</w>,
+<w lemma="se" function="demonstrative">se</w>
+<w lemma="ofer">ofer</w>
+<w lemma="deofol">deoflum</w>
+<w lemma="dugu&thorn;">duge&thorn;um</w>
+<w lemma="wealdan">wealde&eth;</w>."
+</body>
+</text>
+</TEI> 

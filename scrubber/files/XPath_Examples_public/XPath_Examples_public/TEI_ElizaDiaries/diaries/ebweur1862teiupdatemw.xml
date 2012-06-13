@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.wheatoncollege.edu/KACC/tei/schemas/wheatondiaries.rnc" type="compact"?>
+<!DOCTYPE TEI [
+<!ENTITY % ebwdiaent SYSTEM "http://www.wheatoncollege.edu/KACC/tei/entities/ebwdiaent.ent"> %ebwdiaent;
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>1862 Diary</title>
+                <author>Eliza Baylies Wheaton</author>
+                <respStmt>
+                    <resp> TEI-compatible XML markup by <name type="person">NAME</name> with corrections by <name type="person"
+                            >Scott Hamlin</name>, <name type="person">Zephorene Stickney</name>, and <name type="person">Kathryn
+                            Tomasek</name>. </resp>
+                    <name type="person">Kathryn Tomasek</name>
+                    <name type="person">Ashley Kuhn</name>
+                    <name type="person">Scott Hamlin</name>
+                    <name type="person">Zephorene Stickney</name>
+                    <name type="person">Molly White</name>
+                    <name type="person">Lauren Kraus</name>
+                </respStmt>
+            </titleStmt> &ebwdiapubStmt; <sourceDesc>
+                <p> From the Marion B. Gebbie Archives and Special Collections at the Madeleine Clark Wallace Library, Wheaton
+                    College </p>
+            </sourceDesc>
+        </fileDesc> &ebwdiaencodingDesc; &ebwdiaprofileDesc;
+        <revisionDesc>
+            <change>
+                <date>2006-06-21</date>
+                <name>Ashley Kuhn</name> All encoding up until diary entry dated 1862-09-02 has been done by Ashley Kuhn with
+                corrections to the code by Scott Hamlin. </change> 
+            <change>
+            <date>2007-07-06</date>
+            <name>Molly White</name> Changed 36 spelling errors, underlined 3 words, added 12 dashes, removed 8 words, added 1 squiggle, added 8 words, removed 1 set of brackets, added 1 missing sentence, raised 3 items, added 2 spaces, fixed 2 headers, added 6 punctuations, added 3 not equals, and added 1 gap</change>
+            <change>
+                <date>2008-04-06</date>
+                <name>Scott Hamlin</name> Changed the date and handshift elements to conform with TEI P5 standards.
+                </change>
+            &ebwdiabackrevisions; </revisionDesc>
+    </teiHeader>
+    <text xml:id="ebwdiaDATE">
+        <!-- Scott will complete this part -->
+        <front>
+            <div type="flyleaf">
+                <pb n="frontFlyleaf"/>
+                <bibl>
+                    <title>INSERT</title>
+                    <date>INSERT</date>
+                    <lb/>
+                    <author>INSERT</author>
+                    <lb/>
+                    <name key="INSERT" type="place">INSERT</name>
+                </bibl>
+            </div>
+        </front>
+        <!--End of material Scott will complete-->
+        <body>
+            <div type="entry">
+                <pb n="1" rend="1rs page"/>
+                <opener>. <dateline>
+                        <date cert="high" when="1862-04-15">1862. April 15&th; Tuesday Morng.</date>
+                    </dateline>
+                </opener>
+                <p> We rose early and made our toilet preparatory to leaving home for <name type="place">Europe</name> &mdash; After looking at drawers,
+                    closets, &plus; memorandums to see all was safe we made our way to our Pastor's for breakfast where we had
+                    been invited. My appetite was nearly gone &wavlin; The preceding 4 or 5 wks. had been full of care, and
+                    toil to me &plus; I know not wht. I shd. have done had not my precious sister been with me during this
+                    time, relieving me in various ways &wavlin;. She was with us to the last and left with us for <name type="place">Boston</name> this
+                    morng. after saying good bye to dear ones. Our devotions at <name type="person" key="ebwdiaEKB">Mrs
+                    Beane's</name> were very touching &wavlin; The 91.st. pslm was read and there was a sacred nearness in the
+                    promises I never felt before. The prayer was earnest and touching for our safety &plus; protection
+                    &wavlin;.</p>
+                <p>On reaching <name type="place">Boston</name> we met <name type="person">Bro. Willard</name> at the depot whom I was very glad to see. We took rooms at the <name type="orgBusiness">American
+                    Hotel.</name> M. &plus; W. came &plus; called on us for an hour or so when the good bye kiss was given &plus;
+                    they left for home.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-16">Wednesday 16&th; </date>
+                    </dateline>Drizzly morng. </opener>
+                <p> at 9, o'clk. we left in carriage for <name type="place">East Boston</name> where we found the <name type="orgTransport">Steam Ship Niagara</name> laying at her wharf
+                    taking in freight &plus;c. Soon friends met us on board &mdash;<pb n="2" rend="2 supralinear D"/>among
+                    whom was <name type="person">Cousin Wm. Chapin</name> &plus; <name type="person">Saml.</name> also <name type="person" key="ebwdiaJC">Bro Judson Chapin</name>, <name type="person">Missy Mitchell King</name>, <name type="person">Carpenter</name>, <name type="person">Church</name>, <name type="person" key="ebwdiaGW">Gorge Wild</name>, Con. and <name type="person" key="ebwdiaEKB"> <!--need to tag Mr. Beane-->Mr and Mrs Beane</name> &ndash; The last two had but a few moments before the Bell called all to leave the ship who were not outward bound passengers
+                    &wavlin; The last farewells had to be given &mdash; These last expressions of friendship touched my
+                    heart and with deep emotion I parted with them &mdash; God only knows whether ever to look on their faces
+                    again or no on<!--meant to be "me on"--> Earth.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-16">
+                            <time when="11:00:00">At 11, o clk,</time>
+                        </date>
+                    </dateline>
+                </opener>
+                <p>The Ship was loosed from her moorings and gracefully mooved fr <del rend="overstrike">om</del> down the bay
+                    &ndash; but when a little distance out, she discharged two guns &wavlin; Friends on shore and on ship
+                    were waving hankerchiefs &mdash; Our <name type="place">Norton</name> friends we cld. discern in one group, and other friends a
+                    distance from them straining their eyes to catch the last look of recognition &wavlin;. Soon it was lost
+                    to each, and I went below to put on sea dress and prepare for that unwelcome Visitor Seasickness tho. I had
+                    hoped to keep him at bay by the use of Homeopathy &mdash; I hastened up to see the <name type="place">Harbor islands</name>
+                    &plus;c. At 12 we lunched then to upper deck to enjoy fresh air &ndash; About [Noon or Night?] N<gap
+                        reason="hole in the paper"/> time we dropped our Harbor Pilot &ndash; and the<pb n="3" rend="3
+                        supralinear D"/>Halifax Pilot took command &mdash; During the P.M. we saw 3 whales sporting on <del rend="overstrike">Top</del>
+                    <add place="supralinear">surface</add> of the water not far from our ship &wavlin; The P.M. was drizzly
+                    &mdash; then were introduced to a <name type="person">Mr Spaulding of <name type="place">Jamaica Plains</name></name> a gent. of great worth and pleasing
+                    address &wavlin; also to a <name type="person">Mr Burr</name> &ndash; both <name type="place">Boston</name> merchants going out to buy goods &ndash;
+                    most of the passengers were English residents from <name type="place">Canada</name> &wavlin; Many of them Eng. Officers of the Army
+                    &mdash;. A <name type="person">Mr Huddy, wife &plus; daughter</name> were on board from <name type="place">Phil</name><add place="supralinear">d</add>
+                    &ndash; to make a tour to <name type="place">Italy</name> &wavlin; </p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-16">
+                            <time when="16:00:00">Dinner at 4,'O,clk &wavlin;</time>
+                        </date>
+                    </dateline>
+                </opener>
+                <p> a dangerous attempt for many a poor body &ndash; so it was for me &ndash; I had eaten but little when
+                    I ordered a cup of tea wh. proved one of the most disturbing things I cld. call for &wavlin; I was obliged
+                    to have the table and no more return to it for some 11 days &mdash; I took my lounge in Stateroom thus had lower birth &ndash; &plus;
+                    the upper one we made a depot for clothing, outer garments &plus;c. I vomited some but by laying still and
+                    using Homeo. I did not vomit severely &mdash; Next morng. the wind was "rather stiff north
+                    western" and the ship rolled so much as to lead the Stewards to advise my keeping in bed wh. I did
+                        &ndash;<pb n="4" rend="4&th;"/>I have failed to mention the deep repulsion I felt on going <add
+                        place="supralinear">first</add> into my stateroom &ndash; It seemed more like going into my tomb
+                    &ndash; But I soon lost that sepulchred feeling &mdash; Our Stateroom was one of <add
+                        place="supralinear">the</add> best in the Ship &mdash; Servants very kind, and every <add
+                        place="supralinear">thing</add> furnished we could expect but my appetite craved little &wavlin; I had
+                    seasons of vomiting several times a day &ndash;</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-18">18&th; Friday 3 <add place="supralinear"
+                        >d</add> day &ndash;</date>
+                    </dateline>
+                </opener>
+                <p>I was dressed and reached upper deck where the fresh air greatly revived me. I was there several hours
+                    &mdash; but on returning to cabin became sick again. While on deck saw a school of Porpoise &ndash;
+                    also Sea Gull followed our Ship &wavlin; At 2 this morng. we reached <name type="place">Halifax</name> where we stopped two hours to
+                    coal &plus;c. Here we put off some 17 passengers and took on about the same &ndash;<name type="person"
+                        key="ebwdiaLMW"> Hus.</name> &plus; <name type="person">Major Holman</name> went ashore &mdash;</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-19">19&th; Saturday &ndash;</date>
+                    </dateline>
+                </opener>
+                <p>More weak but made desperate effort to get on deck &wavlin; where I spent much of the day. <name
+                        type="person" key="ebwdiaLMW">Hus.</name> has been obliged to succumb and come on to the diet list with me
+                    &ndash; <name type="person">David</name> not sick at all &ndash;. </p>
+                <p> P.M. An <emph rend="squiggle underline">Iceberg</emph> was discerned &ndash; at first like a faint cloud but as we
+                    passed on it became perfectly apparent to the naked Eye &wavlin; It was supposed to be 60 ft high and
+                        <unclear>about</unclear> 6 mls. distant &ndash; It looked to me about 20 ft. high<pb n="5"
+                        rend="underline 5&th;"/>We <del rend="overstrike">re</del> were approaching the <name type="place">great Banks</name>
+                    &ndash; It was early to see icebergs &ndash; but <emph rend="underline">field ice</emph> from the <name type="place">St.
+                    Laurence</name> is oftened encountered but this we escaped &wavlin; Sat. night was one of wakefulness to some who
+                    better knew our danger than I &ndash; <name type="person">Mr Spaulding</name> told me days after that it was the only wakeful night
+                    to him &ndash; Fortunately the <emph rend="underline">fog</emph> was not thick on the <name type="place">Banks</name> &ndash;</p>
+                <p>The <!--need a tag for air current-->Gulf Stream of wh. I have heard so much we passed North of as I understood &ndash;</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-20">20&th; Sab.</date>
+                    </dateline>
+                </opener>
+                <p>was clear but wind stronger &ndash; <name type="person" key="ebwdiaLMW">Hus. </name>&plus; I reached
+                    up. Deck for the day &mdash; had the little refreshment <add place="supralinear">we took</add> brot. to us
+                    there at mid day &ndash;. Religious exercises in Ding. Saloon, but we cld. not endure a closed room
+                    &mdash;. The Episcopal Service read by the Physician of the Ship &mdash;</p>
+                <p>There were several Eng. people from <name type="place">St. Louis</name> going out to visit kindred and native land &ndash; Among them
+                    a <name type="person">Mr Daniel &plus; Son &plus; his two young Daughters</name> &mdash; I think the name of the latter was
+                    <name type="person">Bette</name> &ndash; One of the daughters had been a pupil of <name type="person">Miss Cragin</name> in <name type="place">St. Louis</name> &ndash; also a <name type="person">Mr Hoyt of <name type="place">Wisconsin</name></name> &ndash; Com's to the <name type="event">Inter&ndash;Exhibition at <name type="place">London</name></name> &ndash; Also a <name type="person">Mr Hunz T.
+                    Ropes of <name type="place">Liverpool</name></name> &ndash; a resident there for 15 yrs &ndash; but <pb n="6" rend="6&th;"/>
+                    a native of <name type="place">Salem Mass.</name> a pleasant man &ndash;</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-21"><emph rend="underline">21</emph>
+                            <add place="supralinear">st</add> Monday &ndash;</date>
+                    </dateline>
+                </opener>
+                <p>wind strong &ndash; ship rolling so much as to make me sick to rise &ndash; <name type="person"
+                        key="ebwdiaLMW">Hus.</name> also quite sick but I think reached the up. Deck &mdash; The guards were
+                    put on the tables &wavlin; <name type="person">David </name>said a goose was sliding here and a leg of mutton there &ndash; then
+                    a cup of coffee upset in his lap &mdash; But with all this there is a great amt. of eating done
+                    &ndash; and guzzling of wine, Brandy, &plus; ale that would astonish temperance folks &ndash;</p>
+                <p>Breakfast at from 8 1/2 to 10 &ndash; Lunch at 12 at wh. hot soup, cold Meats bread &plus; cheese
+                    &plus;c are furnished &plus; <emph rend="double underline">"Bottles"</emph> in abundance &mdash; At 4 Dinner
+                    &ndash; Soups first then fish &ndash; then all the variety of a River Bill of Fare &wavlin; taking
+                    an hour and a half &wavlin; Seats at table are secured by your cards being pinned on to the cloth as soon
+                    as you go on board the Ship &wavlin; &plus; those seats are yours all the times of day &mdash; But
+                    of all the labor to get to them! I never experienced the like &ndash; They pinch as much as possible to
+                    get room. The Servants surpass any I remember to have seen in their gentle polite <add place="supralinear"
+                        > &plus; respectful</add> manners &ndash; Every one on ship seems to know his place &plus; keep it.
+                    <name type="person">Capt. Cook</name> from <name type="place">Halifax</name> to <name type="place">Queenstown</name> landing commands his ship &ndash; and all is so quiet! &ndash; .
+                    &plus; supper &plus; Tea at 7 1/2 &ndash; supper at 9 on to 10 or 11 perhaps <pb n="7"
+                        rend="underline 7&th;"/>at wh. time I was told hot hearty dishes were often ordered and Eaten
+                    &mdash; It was amazing to me to know of the excessive Eating &plus; drinking.</p>
+                <p> In the morng. porridge (as they call it) I shd. say oat meal mush is served to those who desire it &ndash;
+                    Eaten with sugar, syrup or more commonly with <del rend="overstrike">the</del><add place="supralinear">those
+                        who are</add> sick &ndash; milk &ndash; at noon gruel &plus; leaf tea &wavlin; Supper the
+                    oat meal mush again but I was so sick that a bowl of arrow root with a little <del rend="overwritten">drink</del><add place="overwritten">milk</add> in it was my breakfast &ndash; a bowl of leaf tea my dinner &plus; Arrow for supper
+                    &ndash; This was my nutriment for much of the passage with occasional at baked greenings warm wh. were
+                    delicious I lost quite an amt. of flesh &mdash;.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-22">22<add place="supralinear">d</add><emph rend="underline"
+                            >Tuesday</emph> &ndash;</date>
+                    </dateline>
+                </opener>
+                <p>Still growing rough &ndash; but as I was in State room all day <add place="supralinear">yesterday</add> I
+                    made great effort to get on Deck in the P.M. &ndash; <name type="person" key="ebwdiaLMW">Hus.</name> got
+                    out before me &plus; reached upper deck &ndash; by <name type="person">David's</name> aid &wavlin; when he came for me and
+                    helped me to lower deck where by holding on &plus; by his help I staied half hour or so when I returned
+                        <emph rend="underline">sick</emph> to my bed. Scarcily any one could walk straight but plunged from side
+                    to side &wavlin;</p>
+                <p>At Eve. The Wind rose to a gale and the night was fearful &ndash; Ship rolling so bad that my feet were
+                    often some inches higher than my head.<pb n="8" rend="underline 8&th;"/></p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-23">23 <add place="supralinear">d</add> Wednesday &ndash;</date>
+                    </dateline>
+                </opener>
+                <p>scarcely any abatement in the wind &wavlin; waves very high, but all hurrying us on to our destined Port
+                    from 230 <add place="supralinear">mls</add>to 266 per 24 hours &mdash;. very many sick &ndash; <name type="person">David</name>
+                    still well &ndash; <name type="person" key="ebwdiaLMW">Hus.</name> I think didn't go out of his room this
+                    day &ndash;. This &longequal; all written from recollection days after the passage &ndash; Sunset
+                    &plus; Sunrising I would look for a change but none came &ndash; about night the wind would seem to
+                    increase in fury &ndash; and so thro. the night &ndash;, waves several times striking over the sides of the Ship
+                    &wavlin; and a constant creaking of the joints &ndash; It seemed to me the ship must come to pieces
+                    &mdash; but I was told there was no <emph rend="underline">apparent</emph> concern by the officers or
+                    crew, and the creaking was the inside work[k crossed out] not the frame of the ship &wavlin;.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-24">24 &th; Thursday &longequal; </date>
+                    </dateline>
+                </opener>
+                <p>Still the storm of wind raging &wavlin; <name type="person" key="ebwdiaLMW">Hus.</name> succeeded in
+                    getting on to first Deck a few hours but I still in bed &ndash;. A <name type="person">Mr Kennedy</name> from <name type="place">Glasgow Scotland</name> broke
+                    his knee pan when on the upper deck, and was brot down helpless to his room &ndash; Fortunately he is
+                    going home &mdash;. At Eve. the winds seems higher than before &mdash;</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-25">25 &th; Friday &mdash; </date>
+                    </dateline>
+                </opener>
+                <p>Last night was the most fearful of the 3 stormy nights &wavlin; The seas that broke on to the ship were
+                    heavier &mdash;<pb n="9" rend="9&th;"/>On this morng. about 2,O'clk. came with a fearful power on to
+                    the upper Deck over the wheel house &wavlin; The smoke stack was marked with the salt water some 20 or 25
+                    ft above upper deck &mdash; at the shipping* of this sea one of the sail burst from the strength of the
+                    wind and all together the sound was like that of a cannon on board ship &mdash; she tumbled a moment then
+                    mounted the waves and went on her way &mdash;.</p>
+                <p>When morng. came or rather in the forenoon the wind began to abate&ndash; and I am sure there was one
+                    grateful heart &wavlin; P.M. I reached the upper Deck where I had not been since Sab. day &ndash;.</p>
+                <p>I could find none who sympathized with me in apprehending danger to the ship &wavlin; The English have a
+                    confidence in one of <name type="orgTransport">Cunard's Steamers</name><!--ship--> that seems to set aside the superintending providence of God
+                    &ndash; An English Lady from Toronto told me she did'nt think one <add place="of">up</add> <name type="orgTransport">Cunards steamers</name><!--ship--> could be wrecked at
+                    sea. She had'nt the slightest fear &mdash; The last officer in asking me of my health &ndash; replied
+                    to my inquiry if he did'nt call it a rough passage &ndash; said, "not so very rough but it was a <pb
+                        n="10" rend="10&th;"/>a <emph rend="underline">nasty</emph> ugly sea rolling the ship making all
+                    uncomfortable."</p>
+                <p>But during the Storm I had a good degree of quiet trust, and yet I longed for a more sensible nearness to
+                    Christ &wavlin; for that perfect love that casts out fear.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-26">26 &th; Saturday &wavlin; </date>
+                    </dateline>
+                </opener>
+                <p>more quiet &ndash; we both on deck &ndash; P.M. I had some Ginger tea that revived me greatly and
+                    enabled me to go to tea from which I had been absent from 1st. day &ndash;</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-27">27 &th; Sab.</date>
+                    </dateline>
+                </opener>
+                <p>more quiet, and mild &ndash; At Break&ndash;fast "Land in Sight" was the joyful news &wavlin; It
+                    was the coast of Ireland. I sat in my room after attending religious exercises in the Cabin which I enjoyed
+                    very much &wavlin; reading my bible &plus; Swain Sermon on the ocean when the Major called for me to
+                    go on Deck &ndash; I did so and the view of the Irish coast was <add place="overwritten">n</add>ovel<del rend="overwritten">m</del> and
+                    grand &ndash; a rockbound Coast surely &mdash;. Our ship was followed by seagulls soon after leaving
+                    <name type="place">Boston</name> &ndash; To day the numbers had greatly increased and their calls for food were loud. We soon were
+                    able to see Huts and discern cultivated patches &ndash; During the day saw a Church very like our
+                    N.Eng. Churches. About 6,O'clk. We entered <name type="touristSite">Queenstown Harbor Bay</name> &plus; even met by a little Steam Tug on
+                    wh. all the mails (except for Liverpool) were placed &ndash; also some 15 of our passengers &plus;
+                    luggage &ndash; Some were <pb n="11" rend="11&th;"/><emph rend="underline">hasting</emph> on to <name type="place">London</name>
+                    &plus; were to go to <name type="place">Cork</name> then by Rail to <name type="place">Dublin</name> &ndash; then cross over to <name type="place">Holy head</name> and <name type="place">England</name>
+                    &plus; then by Rail to <name type="place">London</name> getting in perhaps a day before us even had we hastened on &ndash;. This
+                    transfer of Mails &plus;c. was very <emph rend=" squiggle underline">exciting</emph> &ndash; After it
+                    was over we went on deck to see a phosphorescent display in the water &ndash; the first we had seen
+                    &wavlin; It was not very brilliant &wavlin; after wh. went to the smoke stack and dried ourselves
+                    being wet from the hitting off steam in the Harbor &mdash; The chimney seemed <emph rend="underline">very
+                        hot</emph> &mdash; and I felt sure they had put on all the steam they safely cld. to land before dark
+                    &mdash; I grew quite nervous &mdash; and going back to my room I examined the ship's Life Preservers
+                    to see wht. I cld. do with it in case of an emergency &ndash; It seemed <del rend="overstrike">to me</del>
+                    of little use to me, it was so large &mdash; However I rummaged up some strong <!--she erases a carrot ^--> twine<add place="supralinear"
+                        >with wh. to tie it on</add>  &plus; inflated my own Life Preserver for the first time
+                    &mdash; and laid down and had considerable sleep &ndash;.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-04-28"> In the morng. <add place="supralinear">28&th;</add></date>
+                    </dateline>
+                </opener>
+                <p>We found we had been carried safely along, and had approached the coast of <name type="place">Wales</name>. It was mild and the water
+                    still &mdash; A fog settled down wh. detained us very much &ndash; At <name type="place">Queenstown</name> we took on an Irish
+                    Pilot &ndash; who with Capt Cook piloted the ship along &ndash; They sounded <pb n="12"
+                        rend="12&th;)"/>
+                    <fw type="header" place="top"><date cert="medium" when="1862-04-28"><sic>28th of May</sic></date></fw>
+                       often and blew the whistle &plus; rang the Bell so not to run against any vessel &ndash; There is much
+                    danger in the fog of striking shipping or something else worse &mdash;.</p>
+                <p>After some hours the fog lifted and we were able to increase our speed &ndash; On the coast of <name type="place">Wales</name> we
+                    took on a Welch Pilot into whose hands Capt. Cook resigned the ship &wavlin; and if lost he would not be
+                    responsible &wavlin;. After approaching within 12 mls. of Liverpool we came to the bar and the tide being
+                    out we could not pass &plus; had to wait 2 or 3 hours &ndash; before we could go over the bar. About 7
+                    we reached the Harbor of Liverpool when were boarded by Custom H. Officers from a little Steam Tug
+                    &wavlin; 3 of them &ndash; One with a plate of flour wh. he was stirring with water for pasta
+                    &ndash;. Another taking down the name of passenger &plus; No. of parcels or trunks &mdash;
+                    while the 3<add place="supralinear">d</add> was looking into the trunks &plus;c. Unless there was reason
+                    to suppose there was something wrong the examination was slight &mdash;. Reprints of English works,
+                    &plus; sugars &plus; tobacco calls for their greatest vigilance. This exammination wh. shd. have taken
+                    place at the bar while we were detained took two hours or more.</p>
+                <p>While this was going on I went down into the Cabin and watched our hand luggage.</p>
+                <pb n="13" rend="13&th;"/>
+                <fw type="header" place="top"> <date cert="medium" when="1862-04-28">Ard. at <name type="place">Liverpool</name></date></fw>
+                   <p>While then our unfortunate fellow passsenger was brot. out of his room by 3 men &plus; laid on a lounge
+                    &wavlin; when they prepared him for leaving the ship &mdash; Last Eve. at <name type="place">Quenstown</name> his family were
+                    telegraphed at <name type="place">Glasgow</name> 500 miles &ndash; They recv. it in the morng. and a son started by Rail immediately
+                    for Liverpool and reached there before we did &plus; came at once on board to his venerable father's
+                    relief &mdash;. He was conveyed across the city on a litter &ndash; after being put in to the little
+                    Steam Tug with the rest of us &plus; our luggage to go ashore &mdash; On landing we hurrided off for a
+                    carriage and after little delay took Cab (a 4 wheel carriage with one horse) for <name type="orgLodging">Angel's Hotel</name> &wavlin;,
+                    having previously ordered our trunks &plus;c to go there by Luggage Porter.</p>
+                <p>On entering the house we found it <emph rend="underline">manned</emph> by women &wavlin; tastefully
+                    dressed, modest in demeanor &plus; intelligent &wavlin; They assign the rooms, attend the bar, and in
+                    fact do all men do in our Hotels &mdash; The porters are men&ndash; so in the Coffee rooms there are
+                    only male attendants &wavlin; who after breakfast are in full dress for dinner &plus; Tea &mdash;
+                    Dress Coat &ndash; suit Black with white cravat &mdash;. The Lodging rooms are furnished
+                    with a cabinet for sickness &ndash; a luggage chain and curtains for the bed &wavlin;</p>
+                <pb n="14" rend="14&th;"/>
+                <fw type="header" place="top"> <date cert="medium" when="1862-04-29"><sic>29 &th; May</sic> at <name type="place">Liverpool</name></date></fw>
+                <p>At Eve. a servant comes in, draws the curtains around the bed so you may <add place="supralinear">be</add>.
+                    thoroughly poisoned by your own breathing &wavlin; Of course, I undid what they did &ndash;.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date when="1862-04-29">Tuesday Morng.</date>
+                    </dateline>
+                </opener>
+                <p> tho. our feet were again on terra firma yet our heads were tossing and we felt any thing but bright
+                    &wavlin; After breakfast we sallied out to see the objects of interest &ndash; <name type="touristSite">St. Georges Hall</name> was
+                    pointed out as one and the free museum as another. We directed our steps toward them, and after walking some
+                    distance we engnired <!--engineered-->our way and an Eng. Man says I recognize you as Americans &mdash; Allow me to show
+                    you <name type="touristSite">St. George's Hall</name> &wavlin;. We did so, and he added very much to the interest of the visit <del
+                        rend="overwritten">a</del><add place="overwritten">and</add> importing valuable information &wavlin; The building is massive, <add place="overwritten">g</add>rand <del
+                        rend="overwritten"></del> &plus; beautiful in its construction Before it lay 4 <emph rend="underline"
+                        >huge</emph> Lions &wavlin; made of stone &plus; rusting in their proud defiant posture on huge
+                    blocks of stone of same material.</p>
+                <p>Within are court rooms where some of their higher courts are held, also large and small concert rooms
+                    &mdash; The height &plus; proportions are exceedingly magnificent &wavlin; floors tessellated with
+                    marble &mdash; Massive pillars of Aberdeeshire Marble highly polished within the building &wavlin;.
+                    After gazing with admiration here we proceed <del rend="overwritten">ing</del><add place="overwritten">ed</add> <pb n="15"
+                        rend="15&th;"/>to the Free Museum &plus; Library &wavlin; having parted with our Eng. Stranger
+                    &wavlin; with many thanks for his courtesy &wavlin;. </p>
+                <p>On reaching the Museum we found it was not the day for the museum to be opened &mdash; The reading rooms
+                    were open and there we found many persons of both sexes pouring over the books they had taken from the library
+                    &wavlin;.</p>
+                <p>On ascertaining the fact of the rooms being closed we expressed regret, as we were Americans just ard.
+                    &plus; wld. leave the next morng. On saying this &ndash; the attendant requested we shd. wait where we
+                    were &ndash; when he went to an officer &plus; returned with the assurance that the rooms would be
+                    opened for us &ndash; After looking at the Library a youth was directed to take the Keys and pass on with
+                    us &mdash;</p>
+                <p>We were surprised to find a very extensive collection of natural curiosities of every description, <add
+                        place="supralinear">including</add>
+                    <del rend="overstrike">of the</del> smaller animaly &ndash; Birds, fish &plus;c &plus;c
+                    &mdash; Then most beautiful coral &ndash; specimens &ndash; also beautiful aquarians &wavlin;.</p>
+                <p>P.M. We took carriage &plus; with the Maj. rode some 8 or 10 mls. in pursuit of my lost Bag wh. was finally
+                    found and brot. to me.</p>
+                <pb n="16" rend="16&th;)"/>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="medium" when="1862-04-30">
+                            <sic>30 &th; May &mdash; From <name type="place">Liverpool</name> to <name type="place">London</name>.</sic>
+                        </date>
+                    </dateline>
+                </opener>
+                <p>About 10 A.M. we took seats in 1rst class cars for 35/ <add place="supralinear">each&wavlin;</add> and after
+                    locking us in the train set off &ndash; In a few moments we entered a tunnel 3 mls. long. the sensation in
+                    passing thro. it is very unpleasant &mdash;. But we soon opened on a beautiful country wh. quite charmed us
+                    &mdash; Our own country we left with the Storility of Winter upon it, and after crossing the cold,
+                    pitiless ocean to have such a landscape of verdun spread put before us, with beautiful herds of horned cattle
+                    and great numbers of sheep was truly delightful to us not yet fully recovered from Seasickness &wavlin;.</p>
+                <p>we passed thro. <name type="place">Stafford</name>, <name type="place">Wolverhampton</name> &plus; <name type="place">Birmingham</name> &wavlin; on the <name type="orgTransport">Great North Western R</name>.
+                    &wavlin; The iron districts about <name type="place">Birmingham</name> looked very desolate &plus; smoky &mdash; We had 2
+                    Ladies in the apartment with us. One nearly from <name type="place">Livrp.</name> the other came in at <name type="place">Wolverhampton</name>.</p>
+                <p>Ard. at <name type="orgTransport">Euston Station London</name> about 6, o'clk. after <name type="person">David</name> saw his Machine safely deposited we took Cab (4
+                    wheels) for <name type="orgBusiness">Wovets Hotel</name> &ndash; Holborn &ndash;On arg. there found rooms all engaged save one for
+                    unoccupied for 2 nights &ndash;. This we took for more leisure to look up other quarters &ndash; <name type="person">David</name>
+                    took room at <name type="orgLodging">Old Furnivals Inn</name> <add place="supralinear">alias</add>
+                    <del rend="overstrike">on</del> <name type="orgLodging">Bretts Hotel</name> 139 Holborn &mdash; A few steps from our Hotel &ndash; We
+                    were pleased with the appearance of <pb n="17" rend="(17"/> <fw type="header" place="top"><name type="place">London&wavlin;</name></fw>the attendants <emph rend="underline"
+                    >waiting</emph> Maids have a little cap on the back of their heads &mdash; Those females at the Office or
+                    Bar, are dressed like ladies &wavlin; refined and apparently virtuous. The male waiters dressed as
+                    described on pag. 13 &th;. I was at once presented with two letters from <name type="person">Lydia Fowler</name> wh. had been
+                    awaiting my arrival &wavlin;</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-01">May 1.</date>
+                    </dateline>
+                </opener>
+                <p>So warm Ladies were dressed in light silks with lace capes and dress hats for the opening of the <name type="event">International
+                    Exibition at the West End of London</name> called <name type="place">Kensington</name> &ndash; Some 4 miles out &mdash; The first was
+                    held in 1851. <name type="person">Prince Albert</name> (who had from the first felt great interest in establishing International
+                    Exhibitions) is greatly missed on this occasion &wavlin; The <name type="person">Queen</name> is at <name type="place">Balmoral Scotland</name> with part of
+                    her family &wavlin;. During the day we (3) took <emph rend="underline">"Bus"</emph> &plus; rode down
+                    near Exhibition Rooms &ndash; We went into <name type="touristSite">Kensington Museum</name>, and look <add place="supralinear">d</add>
+                    about, and then returned, and looked for new rooms &ndash; which we took at <name type="orgLodging">Old Furnivals Inn</name> &plus;
+                    removed there that Eve.</p>
+                <p>Lydia <del rend="overstrike">&plus; <name type="person">Mr Spaulding</name></del> &plus; <name type="person">Mr Huddy</name> fr. <name type="place">Phil.</name> called     &mdash;.<name type="person">David</name> went to <name type="place">Exeter Hall</name> with <name type="person">Lydia</name> &plus; heard her Husband lecture.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-02">2 <add place="supralinear">d</add> Friday</date>
+                    </dateline>
+                </opener>
+                <p><name type="person" key="ebwdiaLMW">Hus.</name> &plus; I both unwell &ndash; Took little walks but not
+                    worth much.<pb n="18" rend="18&th;[arrow]1862&ndash;"/></p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-03"><name type="touristSite">London &mdash; National Gallery</name> &plus;c.
+                        </date>
+                    </dateline>
+                </opener>
+                <p>May 3 <add
+                    place="supralinear">d</add>&wavlin; American News this Morng. we have fire in our parlor for it is cold &mdash; <name type="person"
+                        key="ebwdiaLMW">Hus.</name> called on <name type="orgBusiness">Barning Brothers &plus; Co.</name> (his bankers) &mdash; in
+                    forenoon &plus; <name type="person">David</name> went to <name type="orgBusiness">Vyse's</name> to set up his Patent &ndash;. P.M. <name type="person"
+                        key="ebwdiaLMW">Hus.</name> felt so unwell that he laid down &ndash; while <name type="person"> D. </name>&plus; I went to <name type="touristSite">National
+                    Gallery</name> &ndash; to see the Paintings where we passed some 2 hours &ndash; Among the great number we
+                    find <bibl> <author>Correggio's</author><title> Ecce Homo</title></bibl> &ndash; cost &pound; 10,000 &ndash; <bibl><author>Francia's</author><title> Dead Christ</title></bibl>, <bibl><author>P. Perugino's</author>
+                    <title>Virgin &plus; infant Christ </title></bibl>&mdash; cost &pound; 4,000. &plus; <bibl><author>Paul Veronese's</author><title> Magnificent,
+                    "Family of Darius at the feet of Alexander"</title></bibl> &wavlin; cost &pound; 14,000. </p>
+                <p>One room is devoted to "Turner the greatest Master of Lanscape Art" &ndash; It is surprising that he
+                    accomplished so much as was there Exhibited &ndash; &plus; yet that did <add place="supralinear"
+                        >not</add> begin to be <add place="supralinear">the</add> sum of his work &ndash; He was an English
+                    Artist &plus; his remains are deposited in the crypt of <name type="touristSite">St. Pauls</name> &wavlin;. So are those of <name type="author">Benj West</name>
+                    &plus; other distinguished artists and many monuments to Naval &plus; Military Heroes &ndash; <del
+                        rend="overstrike">I was glad to</del> After seeing the paintings &plus; returning to the St. we saw
+                    one of the Royal Carriages with rich bands of gold and the harnesses richly plated with gold &wavlin; the
+                    coachman &plus; the two footman on back seat were in black &ndash; Breeches&plus; Blk. stockings
+                    &plus; gloves &mdash; with cocked hats &plus; straight Blk. feathers &plus; grey hair wigs
+                    &mdash; The <name type="person">Crown Prince of Prussia</name> had just alighted <pb n="19&th;"/>
+                    <fw type="header" place="top"><date cert="medium" when="1862-05-03">
+                        <sic>4 May &mdash; Sabbath day &wavlin;</sic></date></fw>
+                    and passed up to the <name type="orgSchool">Royal Academy</name> where he had been invited to dine. We stood a few moments to see the
+                        nobility arrive &plus; pass up the stairs &ndash; Their servants in Livery &mdash; some in
+                        scarlet breeches &plus; white stockings. &mdash;</p>
+            </div>
+                <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-04">4 &th; Sab. </date>
+                    </dateline>
+                </opener>
+                <p>We <emph rend="underline">3</emph> went to hear <name type="person">Rev. Mr Spurgeon</name> His text was Ep.3.10. I was much interest in
+                    his simple but powerful presentation of truth &wavlin; to an audienc of 6000 persons &mdash; and when
+                    the all sang it was a sound unlike what I ever before heard &ndash; No Organ &ndash; <del
+                        rend="overwrite">P.M.</del> Evg. we went to hear <name type="person">Rev Dr Cumin</name> in <name type="place">Crown Court</name>. His lecture was a review of
+                    the last eleven years showing the fulfilment of prophecy &wavlin;.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-06">6 &th; Tuesday</date>
+                    </dateline>
+                </opener>
+                <p>we <emph rend="underline">3</emph> went to <name type="place">Luton</name> &plus; back at Eve &ndash; 32 mls. out &ndash;
+                    where a pop. of some 20,000 are mostly employed in one way or another in Straw&draise; braid
+                    &mdash; At this place we found chalk formations 2 or 3 feet be &ndash; neath the surface of the earth.
+                    When they dug into an embankment it gave us a free view of it. By great <name type="orgTransport">Northern R.R. Station at Kings
+                Cross</name>.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-07">7 &th; </date>
+                    </dateline>
+                </opener>
+                <p>We set off early for <name type="orgTransport">Shorediditch station</name> to go by rail to <name type="place">Woolwitch</name> where an arsenal and Manufactory of
+                    Arms War Vessels &plus;c. We passed thro. <name type="touristSite">Spittalfields</name> where there are many weavers of beautiful silks
+                    &plus; velvets.<pb n="20)"/>
+                    <fw type="header" place="top"><date cert="high" when="1862-05-07">1862 &ndash; <name type="place">Woolwich</name> &mdash; May 7 &th;
+                    </date></fw>
+                    On reaching the Terminus of the R.R. we cross&draise; the <name type="place">Thames River</name> in a little Steam Tug. Just as we
+                    reached Woolwich it began to rain and we went to the <name type="orgBusiness"><emph rend="underline">"Royal Mortur Tavern"</emph></name> when
+                    my <name type="person" key="ebwdiaLMW">Hus.</name> called for a parlor &ndash; They replied, do you wish
+                    to dine &ndash; He said to them wanted a parlor &ndash; It was 10, O'clk. perhaps <add
+                        place="supralinear"> here </add> &ndash; They said they had no parlors but had dining rooms &plus;
+                    aided us into one where I sat till toward one P.M. My gent. being out to see the soldiers and Japanese
+                    Ambassadors &mdash;</p>
+                <p>At this time the rain <emph rend="underline">poured</emph> down and the Land<emph rend="underline">lady</emph>
+                    came and said to <emph rend="underline">me</emph> She shd. like to have me leave &ndash; She wanted her
+                    room for persons to eat in &ndash; &plus; she cld. not afford to have persons sitting round. I told
+                    her we wished to pay her for the use of her room &wavlin; That my gent. were then out &plus; I
+                    hope&draise; wld. come soon &ndash; She waited a few moments &plus; then came again and aided me
+                    into another eating room &ndash; I had sat there but a few minutes when she came with a man to eat there,
+                    bring a trumble of Ale along to drink &ndash; She repeated the request I shd. leave the room and aided me
+                    to a little back bedroom where she said I cld. be undisturbed. My heart was quite <emph rend="underline"
+                        >chickinesh </emph> &plus; full but I kept apparently quiet and before long <name type="person" key="ebwdiaLMW">Mr. W.</name> came and went to
+                    the Hostiss to pay her for her room but she <pb n="(21"/>
+                    <fw type="header" place="top"><date cert="high" when="1862-05-07"><sic>8 &th; Thursday &mdash; <name type="touristSite">St. Paul</name> &mdash;</sic>
+                    </date></fw>
+                    declined taking anything and we left in the rain falling most profusely &mdash; We could not get a carriage
+                    &wavlin; after taking shelter awhile we reached the Ferry Boat &plus; thence to Cars &ndash;
+                    &plus; finally home to our joy having learned some new lessons &mdash; As we were at dinner <name type="person"> Mr
+                    Spaulding</name> called previously to leaving for <name type="place">France</name>.</p>
+                    </div>
+                  <div type="entry">
+                    <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-08">8&th; Thursday P.M. </date>
+                    </dateline>
+                </opener><p> We went to <name type="orgChurch">St. Paul's</name>. The Choral Service was then being performed as we entered, and
+                    the sound as it reverberated from its high arches seemed as I have imagined the Heavenly strains might, to a
+                    soul just released from its clay tenenment &mdash; It sounded distant &plus; ethereal &ndash; But
+                    as we approached the choir, the sound was more distinct &ndash; In the form of A Latin Cross &wavlin;
+                    <figure><graphic xml:id="ebwdiaeur_fig1"/><figDesc>A sketch of St. Paul, the diagram is in the shape of a Latin cross. To the east she uses parallel lines of black dots encompassing the choir, and to the West the end of the cross is significantly longer; the parallel lines are solid with Nave written in between. The "south" part of the transept is towards the top of the page, and the "north" transept is directly opposite.</figDesc></figure>The cathedral from east to west is 500 ft long                         &ndash; Length of choir 165 ft. Breadth of
+                    Transept 250 ft. Height from 1rst floors to top of cross on Dome 352 [1/12] ft. As we stand in the Transept
+                    and look up to the Dome (inside) 340 ft, it i grand beyond the power of language to describe &wavlin;. If
+                    this is the work of man what is God! the great architect of the world &plus; of man who is crushed before
+                    him like a moth &ndash; After religious exercises we went into the crypt &wavlin; (the basement) and
+                    this was wonderful as <del rend="overwritten">is</del><add place="overwritten">was</add> the superstructure&wavlin; It is beside the light of some low
+                    windows, lighted <pb n="22" rend="22 supralinear D"/>
+                    <fw type="header" place="top"><date cert="high" when="1862-05-08"><name type="touristSite">St. Pauls Cathedral</name> &mdash; May 8 &th;
+                    </date></fw>
+               with gas &wavlin; and divided off by iron fences &plus; guarded by locks .The objects of special
+                    interest were the <add place="supralinear">mortal</add> remains of Lord Nelson &plus; the Duke of
+                    Wellington &ndash; &wavlin;. Lord Nelson is in a black marble sarcophagus. <del rend="overstrike">of
+                        black marble</del> He died in battle at <name type="event">Trafalgar</name>&wavlin; &plus; his memory appears to be warmly
+                    cherished by the many statues erected to him &wavlin; The Duke of <emph rend="underline">Wellington's
+                    </emph> remains are in a Cornish Porphyry &wavlin; Sarcophagus &wavlin; They were first laid in a pine
+                    coffin made by his own carpenter at Wulmar his Marin residence &ndash; (I think)&ndash; then placed in
+                    a lead coffin of twice the usual thickness &plus; this in a coffin of English Oak handsomely finished. The
+                    outer coffin or case was of solid Spanish Mahogany, covered with the richest crimson Genoa velvet. This case
+                    was elaborately panneled &plus; wrought out emblematical of his achievements &plus; honors
+                    &wavlin;. The central inscription plate is gilt and bears the following! "The Most High, Mighty, and Most
+                    Noble Prince Arthur, Duke &plus; Marquis of Wellington, Marquis of Douro, Earl of Wellington, Viscount
+                    Wellington of Talavara and of Wellington, and Baron Douro of Wellesly, Knight of the Most Noble Order of the
+                    Garter, Knight Grand Cross of the Most Honorable Order of the Bathe one of the Majesty's Most Honorable Privy
+                    Council, and Field &ndash; Marshall and Commander&ndash;in &ndash;Chief of Her Majesty's forces.
+                    Born 1rst May 1769: Died 14&th; September 1852." copied from guide book, and a Most Extraordinary
+                    inscription for mortal man it is.</p>
+                <p>As I stood <emph rend="underline">beside him</emph> I could but think what <pb n="23" rend="23 supralinear D"/>
+                    a <emph rend="underline">leveller</emph> death is &wavlin; There <emph rend="underline">I</emph> stood
+                    beside the Great Hero &wavlin; &plus; the worms no doubt have presumed to feed on his flesh
+                    &ndash; In his heart he may have been simple and childlike &ndash; but he was <add place="supralinear"
+                        >one</add> Providence chose to workout for <add place="supralinear">the</add> kingdom great deliverance
+                    and thro. him to crush Napoleon &wavlin; But a Biographer of him says that thro. him Europe enjoyed nearly
+                    40, forty years of peace &wavlin;.</p>
+                <p>In this crypt are deposited many other distinguished persons &mdash; Among them are the remains of Sir
+                    <name type="author">Christopher Wren</name> the <add place="supralinear">&plus; builder</add> Archtect of St Paul &wavlin; The
+                    first stone was laid June 21. 1675 service was first performed in it Dec.2.1697 &wavlin; and the last
+                    stone on the summit of the lantern, was laid by the architect's son in 1710. The Edifice was thus finished in
+                    35 years &wavlin; standing on <add place="supralinear">the</add> spot where was a cathedral of the same
+                    name founded in the 7&th; Century &ndash; which was even longer than the present Edifice &wavlin;
+                    690 ft. In those ages it was used by Roman&ndash;Catholics &wavlin; But in 1552 Nov. 1. the
+                    Reformation had penetrated England so far as at this time to have every vestige of Romanism put
+                    aside and the Book of Common Prayer used &ndash; Bishop Ridley preaching on the occasion: This old Edifice
+                    was destroyed in the Great fire of 1666. &wavlin; The total cost of the present <name type="touristSite">St. Paul's</name> was &pound;
+                    747, 954 &wavlin; 2s-g<hi rend="superlinear">d</hi>. But doubtless thousands of pounds more have since been expended
+                        &wavlin;<pb n="24" rend="24)"/></p>
+                      <fw type="header" place="top"><date cert="high" when="1862-05-08"><name type="place">St. Pauls</name> &mdash; May 8 &th; &ndash; 1862 &mdash;
+                      </date></fw>
+                   <p>In the crypt are the remains of <name type="author">Turner </name>&plus; <name type="author">Benj West</name> that I have before mentioned &wavlin;
+                    &mdash; and in the walls of the Cathedral, in the choir aisles Transepts &plus;c are numerous
+                    monuments &plus; tablets to the Memory of English Heroes and one to the Philanthropist John Howard
+                    &plus; to Bishop Hebar.</p>
+                <p>After looking at the monuments we ascended to the <name type="place">Whispering Gallery</name> <pb n="25" rend="(25"/></p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-11">Sunday May 11&th;</date>
+                    </dateline>
+                </opener>
+                <p>Morng. we went to hear <name type="person"> Rev. Baptist Noel</name> &wavlin; Who is a Bapist in sect but one w Chh. of Eng. Minister
+                    &plus; of high birth &wavlin; But he ignored all the <unclear>honors</unclear> of the world and followed
+                    the teachings of God &plus; of conscienc &wavlin; His Chh. is small tho. well filled and very attentive
+                    listeners save the <emph rend="underline">coughing</emph> that is very common in assemblies. Text
+                    Matt. 7 &ndash; 24 &plus; after &mdash; I think I never heard so simple a Gospel sermon
+                    &wavlin; yet well expressed.</p>
+                <p>P.M. We went to <name type="orgChurch">
+                    West Minister Abbi</name> where <name type="person">"Rev. Lord John Thyme</name> preached but we could hear but little
+                    &wavlin; Will speak of the <name type="orgChurch">Abbie</name> at my future visit.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-12">12 &th; Monday Eve.</date>
+                    </dateline>
+                </opener>
+                <p>Removed from <name type="orgLodging">"Old Furnivals"</name> to 72 Sloane St. op. <name type="touristSite">Cadogan Gardens</name> where we had engaged "apartments" for <emph
+                        rend="underline">us 3</emph> &wavlin; A. parlor Bedroom &plus; dressing room on one floor for
+                        <name type="person" key="ebwdiaLMW">Hus.</name> &plus; self &plus; Bedroom on upper floor for
+                    <name type="person">David</name>.</p>
+                <p><name type="person">Miss E. Symons</name> is at the head of the establishment They have 5 families I am told &ndash; but I have not
+                    seen them &ndash; We eat in our parlor &ndash; order such food as we please &plus; pay the bills
+                    with room rent &wavlin; or if we choose to buy ourselves we do:</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-13">13 Tuesday &ndash;</date>
+                    </dateline>
+                </opener>
+                <p>I wrote 3 or 4 hours to <name type="person">Martha</name> &plus; left it on table with other letters <name type="person"
+                        key="ebwdiaLMW">Hus.</name> &plus; I had written &wavlin; When we went down Town He picked them up
+                    to put them in the office &ndash; But on getting there he found he was minus the American letters
+                    &ndash; Search was made at home but no trace of it &wavlin;.<pb n="26" rend="26)"/></p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-14">Wednesday 14 &th; &mdash; May &mdash;</date>
+                    </dateline>
+                </opener>
+                <p>I have not felt so sad since leaving America. My heart was much stirred by writing home yesterday. My body is
+                    weak and I feel down spirited &ndash; I would love to bow with some of those dear sisters that I have been
+                    want to meet at a throne of grace. But I have bowed with no one since leaving Boston only in the public
+                    assembly &wavlin; And O, what occasion for thanks&ndash;giving &plus; praise for God's goodness
+                    and long. suffering, have we had to us as individuals!</p>
+                <p>Towards night <name type="person">Lydia</name> called &ndash; <name type="person" key="ebwdiaLMW">Hus.</name> &plus; <name type="person">David</name> out
+                    nearly all day &wavlin; Eve. <name type="person">Mr &plus; Mrs Muntz</name> &plus; <name type="person">Miss Parker</name> called &plus; spent the
+                    Eve. </p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-16">16&th; Friday &ndash;</date>
+                    </dateline>
+                </opener>
+                <p><name type="person" key="ebwdiaLMW">Hus.</name> &plus; I visited the <name type="touristSite">Tower</name> &wavlin; <name type="person">David</name>                                                                                                                                                                                                                                                                         was engaged
+                    &plus; cld. not go with us &ndash;A warden in the Costume of Henri VIII&th;s guard conducts
+                    visitors about &ndash; It is one of the most interesting of Old London relics, and dates back at least to
+                    the Eleventh Century &wavlin; The <name type="touristSite"><emph rend="underline">White</emph> Tower</name> is in the centre of the
+                    enclosure &ndash; It measures 116 ft from North to So. 96 ft from East to West &ndash; Height 92 ft.
+                    external walls 15ft. in thickness &ndash; 4 towers on this &ndash; one at each corn [trails off]
+                    Beside the <name type="place"><emph rend="underline">White</emph> T</name>. there are 12 smaller Towers They were originally intended as
+                    a place of defence in times of attack by foreign foes &ndash; The <name type="place">White T.</name> was fitted for a <del
+                        rend="overstrike">residence</del> &wavlin; religious and governmental purposes but was converted with
+                    the other towers into prisons for offending subjuicts &wavlin; <del rend="overstrike">The</del>
+                    most dreadful scenes have been enacted here.<pb n="27"/>
+                    <fw type="header" place="top"><date cert="high" when="1862-05-16"><emph rend="underline">Tower</emph> &mdash; 16 &th;
+                    May.
+                    </date></fw>
+                   The party in power seemed filled with Hellish rage, and for the slightest suspicions would arrest, condemn
+                    &plus; execute Kings &plus; Quens and Nobles in these Towers &plus; Tower <emph rend="underline"
+                        >gards</emph> &wavlin; In of them is supposed to have taken place the murder of the two Royal children
+                    of Edward 4 &ndash; by their Uncle Richard 3 <hi rend="supralinear"><emph rend="underline">d</emph></hi>. There also Lady Jane Grey
+                    &plus; her Husband suffered imprisonment &plus; death &mdash; also Queen Anne Bol<add
+                        place="supralinear">e</add>ynn Wife of Henry 8&th; who had her beheaded &plus; the following day
+                    took another Wife &mdash; Jane Seymore &ndash; He was a wretch of deepest dye &mdash;.</p>
+                <p>I saw the very block on which many of these victims rested their <emph rend="underline">necks</emph> for
+                    decapitation and the very ax that did the work &mdash;. The <bibl><title>Guide Book</title></bibl> will give farther particulars
+                    &wavlin; These Towers are now used as depositories of arms and ancient armour. The <bibl><title>Steel Clad Kings</title></bibl> in
+                    full size are mounted on their <bibl><title>Steel Clad Horses</title></bibl> &mdash; and all the variety of weapons used in
+                    ancient war&ndash;fare are found here &ndash;. It is strongly garrisoned
+                    &mdash; One of the Towers is used for the <bibl><title>Crown Jewels</title></bibl> &ndash;"The Collection is surmounted by the
+                    crown of the present beloved <name type="person">Queen Victoria</name> The cap of purple velvet is enclosed in hoops of silver surmounted
+                    by a ball &plus; cross all of which <pb n="28" rend="28)"/>
+                    <fw type="header" place="top"><date cert="high" when="1862-05-16"><emph rend="underline">Tower &ndash; May 16&th; 1862 &mdash;
+                    </emph></date></fw>
+                  are resplendent with diamonds. In the center of the cross is the <emph rend="underline">"inestimable
+                    sapphire"</emph> &plus; in front of the crown is the heart shaped ruby said to have been worn by the Black
+                    Prince." 2 &draise; Is <bibl><title>St. Edward's crown</title></bibl> made of Gold &plus; Embellished with diamonds, rubies,
+                    emeralds and sapphires. 3&draise; Is the <bibl><title>Prince of Wales Crown</title></bibl> formed of pure gold &plus; unadorned
+                    &mdash; The present <name type="person">Prince of Wales</name> has not yet had it placed on his head &ndash;</p>
+                <p>4&th; The ancient <bibl><title>Queen's Crown</title></bibl> is used at Coronations for Queen Consort &wavlin; which is rich</p>
+                <p>5&th; Is the <bibl><title>Queen's Diadem</title></bibl>. which was made for the Consort of James 2 <hi rend="supralinear">d</hi> Marie
+                    D'Este. It is richly adorned with large diamonds &plus; pearls. Beside these are several sceptres of
+                    beaten gold adorned with jewels. There too is <bibl><title>St. Edward's staff</title></bibl> of beaten gold 4 ft 7 inches long. It is
+                    carried before the King or Queen at coronation. There is also the <emph rend="underline">pointless</emph>
+                    sword, <bibl><title>Sword of Mercy</title></bibl> &ndash; &plus; the swords of Justice civil &plus; Ecclesiastical &ndash;
+                    which are <unclear>borne</unclear> before the Sovereign at Coronation &ndash; There too were Coronation
+                    bracelets &ndash; the annoiting vessel &plus; spoon all used at Coronation then beneath these crowns
+                    &plus; sceptres is a Baptismal fount used at the Christening of the Royal children and a Massive
+                    Sacremental service all of solid gold used at the same August ceremony &mdash; beside several pieces I
+                    have not named"<pb n="29" rend="(29"/></p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-17">17&th; May &wavlin; <name type="touristSite">Crystal Palace at Sydenham</name></date>
+                    </dateline>
+                </opener>
+                <p>On saturday we visited, with <name type="person">Mr &plus; Mrs Muntz</name>, <name type="person">Miss Parker</name> &plus; <name type="person">Mr &plus; Mrs Henderson</name>. Some 7 miles out of London &ndash; by Rail &wavlin;. The Palace so magnificent &ndash; filled with
+                    evrything that is beautiful in the fine arts Paintings, Music, Flowers, &plus; Plants from evry part under
+                    Heaven (almost &ndash; and the spacious grounds ornamented with shrub &plus; trees in bloom
+                    &ndash; and fount Sending up its pearly jets of water all combine to make it one of the most fairy like
+                    places I had ever <emph rend="underline">conceived</emph> &mdash; It seemed <emph rend="underline"
+                        >paradisaical</emph> &wavlin;.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-18">18&th; Sunday &ndash;</date>
+                    </dateline>
+                </opener>
+                <p>18&th; Sunday &ndash; we <emph rend="underline">3</emph> went to <name type="touristSite">St. Giles</name>&ndash; cripple gate to
+                    worship &wavlin; on our way there passing thro. <name type="place">Smithfield</name> where John Rogers was burned at the stake
+                    &wavlin; John Milton's remains rest under this Church. A few minintz walk from there brot. us to the
+                    <name type="touristSite">Wesleyan Chapel</name> where John Wesley preached &ndash; I sat in the chair he used in his study and went into
+                    the Pulpit where he preached with such power. Just back of the Chapel rest his remains under a Neat Monument
+                    &ndash;</p>
+                <p>Beside him lay the remains of Adam Clarke</p>
+                <p>and a few steps around the corner we<pb n="30" rend="30)"/>
+                    found <name type="touristSite">Whitfield's Chapel</name> into which we went &plus; into the Pulpit &wavlin;. In the corridor we found a
+                    fine original portrait of Whitfield [Whitefield]&ndash; He died in <name type="place">Newbury port &ndash;Mass</name> &plus;
+                    his remains rest in a vault under (Mr Stearns)<del rend="overwritten">(that was)</del><add place="overwritten">a Church</add> wh. has a
+                    Whis&ndash;pering Gallery in it. I saw them many years ago and took the skull in my hands &ndash; a liberty that
+                    should never be allowed with the sainted dead &ndash;. Opposite the <name type="touristSite">Wesleyan Chapel</name> is <name type="touristSite">Bunhill field's
+                    Cemetery</name> &ndash; Where rest the remains of John Bunyan Isaac Watts Mrs Wesley, (Mother of John &plus;
+                    Charles) and <name type="author">Defoe. author of Robinson Crusoe &ndash; sometimes called <del rend="strike">Alexander
+                        Selkirk &wavlin; </del></name></p>
+                <p>On the following Wednesday we attended the consecration of a new monument to John Bunyan at <name type="touristSite">Bunhill Fields</name>
+                    &ndash; where Lord Thaftsbury presided &plus; made an interesting speech &wavlin; also <name type="person">Rev. Mr
+                    Spurgeon</name> whom I like exceedingly &wavlin;.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-19">19&th; Monday</date>
+                    </dateline>
+                </opener>
+                <p><name type="person" key="ebwdiaLMW">Hus.</name> &plus; I visited <name type="touristSite">Regents park</name> &wavlin; we were both
+                    very tired when we reached there and did not enjoy the <name type="touristSite">Zoological Gardens</name> as we should under other
+                    circumstances &ndash; &plus; as we shd. had we not just been to <name type="touristSite">Crystal Palace</name> &mdash;.<pb n="31"
+                        rend="(31"/></p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-20">20&th; Tuesday &ndash; <emph rend="underline"
+                                ><name type="touristSite">Westminster Abbie</name></emph>&mdash; </date>
+                    </dateline>
+                </opener>
+                <p>We visited this ancient structure entering at <name type="place">"Poet's Corner"</name>. Two weeks before this, we had entered it an
+                    opposite part while Divine Worship was being held, and the effect on my mind I can never tell &wavlin; It
+                    is unlike <name type="touristSite">St. Paul's</name> &ndash; not less grand perhaps, but more of the beautiful and the awe inspiring, as
+                    the light dimly falls on you, from the stained glass windows, and you looked on the worshipping assembly, and
+                    hear the chanting of the choir with the heavy notes of the organs &ndash; and then cast your eye around
+                    the walls and notice the marble forms erect &ndash; as monuments to the departed but more especially as
+                    you gaze on numerous <emph rend="underline">Effigies</emph> (forms of the dead full length, laid horizontally
+                    on tombs that contain the original) are you impressed with un utterable feelings those never experienced
+                    before &mdash; Man's genius has indeed made it wonderful &wavlin; wonderful in its architecture
+                    &mdash; wonderful in its finish. The <emph rend="underline">touch</emph> of <emph rend="wavlin underline"
+                        >time</emph> on the Edifice enters your soul &wavlin;and Death's trophies gathered from crowned heads,
+                    and the Kingdom's Nobility <unclear>liing</unclear> buried about you, all conspire to fill the mind with new
+                    emotions &wavlin;.</p>
+                <p>On this morng. we entered at the <name type="place">Poet's corner</name> and comd. looking for familiar names. There we found tablets on
+                    monuments to <name type="author">Ben. Johnson</name> &ndash; <name type="author">Milton</name> &ndash; <name type="author">Shakespare</name>, <name type="author">Goldsmith</name>, <name type="author">T. Cambell</name>, <name type="author">R. Southy</name>, <name type="person">E.
+                    Spencer</name> &ndash; [ink blot] <name type="author">Ge Draiton</name> &ndash; <name type="author">Chauncer</name> &mdash; &plus; many other Poets
+                    &ndash; also of <name type="author">Lord Macauley the Historian</name> &wavlin;. <pb n="32" rend="(32"/></p>
+                <fw type="header" place="top"><date cert="high" when="1862-05-20"><emph rend="underline">Westminister Abbie &ndash; May 20&th;
+                </emph></date></fw>
+             
+         <p>The <name type="place">Abbie</name> is nearly opposite the <name type="place">Houses of Parliament</name> &ndash; which stand on the banks of <name type="place">Thames River</name>
+                    &ndash; The old Abbie is said to have been built in 604 by Sibert &ndash; king of the East Saxons
+                    &ndash; It appears this Abbie was nearly destroyed when Edward the Confessor visited Rome and was induced
+                    to build a Monastery in honor of St. Petre &ndash; which he did on the spot of the old one or perhaps
+                    connecting it with the old one &plus; dedicated it in 1065 &wavlin; on which day he was taken sick
+                    which, illness terminated his life &plus; in a few days his remains were deposited in the Chapel with
+                    great pomp. There were seasons after this that it was suffered to go to partial ruin, and then sovereigns would
+                    arise that would repair and add to its former beauty &wavlin;. There are some 9 or 10 Chapels &wavlin;
+                    where repose &mdash; the dead from Edward the Confessor down for centuries &wavlin; In the Chapel of
+                    Henry 7&th; I found a monument to "Mary <add place="supralinear">Stuart</add> Queen of Scotts," erected by
+                    her son James I. when he came to the Throne &ndash; He succeedid Queen Elizabeth who imprisoned "Mary Stuart
+                    Queen of Scotts for some 17 years &plus; finally had her beheaded &wavlin; in the <name type="place">Northhamptonshire</name>
+                        <add place="supralinear">Feb. 8&ndash; 1587</add> from which James I. <del rend="overstrike"
+                    >brot.</del> had the remains privately brot. to the Abbie under the superintendance of the Dean of
+                    Westminister. In the same Chapel <del rend="overstrike">the</del> Royal Vault where are the remains of Charles
+                    II. died 1685 &ndash; William III. Died 1702 &plus; Mary his Consort who died 1694 &ndash;
+                    &plus; Queen Anne 1714 &ndash; In the nave of the same chapel is another Royal Vault where this
+                    Majestis George II. &plus; Queen Caroline &plus; several of the Royal family.<pb n="33" rend="(33"
+                /></p>
+                <fw type="header" place="top"><date cert="high" when="1862-05-20"><name type="touristSite">Westminister Abbie</name>
+                </date></fw>
+                
+                 <p>Here too is the magnificent tomb of Henry 7&th; &plus; Elizabeth his Queen &ndash; the last of the
+                    House of York who wore the English Crown &mdash; Near these is a monument to the Duke De Montpensier whose
+                    remains are beneath &ndash; descended from the Kings of France 2 <hi rend="supralinear">d</hi> son of the
+                    Duke of Orleans &plus; Brother to Louis Phillip by whom the monument was erected &ndash; Died
+                    18&th; May &ndash;1807&ndash; aged 31. An Exile from his country but recd. with Hospitality by the
+                    Eng. Nation" and allowed to rest in this asylum for Kings." In the North Aisle of the same Chapel is a
+                    monument to Queen [s over a line] Elizabeth erected by James I. her succesor &ndash; who died 1602 aged 70
+                    &ndash; and who reigned 45 years &mdash; Queen Mary whose reign proceded that of Quen Elizabeth is
+                    interred under the Same Monument &ndash; At the farther End of this is a vault containing the remains of
+                    James I. &plus; his Queen Anne (Daug. of Fredk. II. of Denmark. James reigned over <name type="place">Scotland</name> <del
+                        rend="overstrike">59</del> many years &plus; our Eng.22 as says the guide&ndash; near hers is a
+                    vault containing what is supposed to be the bodies of the Princes Henry V &plus; Richard Duke of York
+                    (children smothered in the Tower by their Uncle Richard III. After being hidden 19. yrs in the rubbish of the
+                    tower stairs then recovered by Charles II. &plus; deposited away the relics of their predesessors
+                        &mdash;.<pb n="34" rend="34)"/></p>
+                <fw type="header" place="top"><date cert="high" when="1862-05-20"><name type="touristSite">Abbie</name> Continued
+                </date></fw>
+              
+          <p><name type="touristSite">Chapel of St. Edward</name> is another of great interest the shrine of St. Ed. stands in the centre of the Chapel
+                    &plus; was erected by Henry III. in 1269 &ndash; St. Ed. died 1065. Pope Alexander III. caused his
+                    name to be placed in the catalogue of Saints. In this chapel are more Kings &plus; Queens restings then in
+                    any other &ndash; Here too are the <!--artwork--><bibl><title><emph rend="underline">Coronation Chairs</emph></title></bibl>. The most ancient of
+                    them is made to enclose the stone <bibl><title>(<emph rend="underline">which is reported to be <!--monument-->Jacob's Pillar</emph>)</title></bibl> brot.
+                    with regalia from <name type="place">Scotland</name> by Edward I. offerid <emph rend="underline">St.</emph> Edward's shrine after he had
+                    been successful in several battles in <name type="place">Scotland</name> &ndash; In this chair all the reigning sovereigns have been
+                    crowned since Edward I. The other chair was made for Queen Mary II. <emph rend="underline">The</emph> Chair is
+                    taken out and placed before the Altar behind which they now stand &plus; covered with gold tissue when the
+                    coronation takes place &mdash; After looking at these <emph rend="underline">famous</emph> chairs the
+                    party with the <unclear>verger</unclear> passed the other side of the shrine when all of a sudden the
+                        <unclear>verger</unclear> turned back &plus; exclaimed "I shd'nt have thot.&wavlin; you wld. have done that
+                    the moment my eye was off from you"&ndash; <emph rend="underline">I</emph> looked back &plus; lo!!!
+                    there was <emph rend="underline">
+                        <name type="person" key="ebwdiaLMW"><emph rend="underline">my Husband</emph></name>
+                    </emph> just looking up the railing that enclosed the <bibl><title>coronation chair</title></bibl>&ndash;He had been &plus; taken
+                    a seat <add place="supralinear">in it</add> tho. I imagine it was a <emph rend="underline">short sitting</emph>
+                    &wavlin; When we told our guide outside of the <name type="touristSite">Abbie</name> he exclaimed almost with horror that he did'nt suppose
+                    one in 10,000 did it.<pb n="35" rend="(35"/></p>
+                <fw type="header" place="top"><date cert="high" when="1862-05-20">Continued
+                </date></fw>
+               
+               <p>In the North Aisle of the church are deposited the remains of Thomas F Buxton &plus; William Wilberforce
+                    &longequal; colaborors for the overthrow of slavery in the British Dominians and they both lived to see it
+                    accomplished &mdash; To each are seperate Monuments &mdash; That of Wilberforce is a <emph
+                        rend="underline">statue</emph> of him on a pedas&ndash;tal &ndash; expression of great peace
+                        &ndash;.<pb n="36" rend="36)"/></p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-22">May 22 <add place="supralinear">d</add> <name type="place">Tunnel</name></date>
+                    </dateline>
+                </opener>
+                <p>A clear cool morng. after going to <name type="orgBusiness">Holborn</name> about clothes for <name type="person" key="ebwdiaLMW">Hus.</name> we
+                    took cab for <name type="touristSite">London Bridge</name> where we went on little Steamer which soon put us down in the vicinity of <name type="place"><emph
+                        rend="underline">Thames Tunnel</emph></name> &wavlin; Soon we were making our descent by winding stairs
+                    &ndash; The opening or circle for the stairs is quite roomy and light. There was some one below playing a
+                    French Horn that dissipated what un pleasant feeling hung about the descent. The pictures I have seen of it
+                    are very correct. <del rend="overwritten">in</del><del rend="overstrike">the</del> The <name type="place">Tunnel</name> is lighted with
+                    gas. There are two tunnels, but only one of them open &plus; lighted. They unite <emph rend="underline"
+                        >wrapping</emph> on the north &plus; <name type="place">Rotherhithe</name> on the <name type="place">South of the Thames</name> &wavlin;. It is only
+                    for foot passengers &ndash; Toll 1 penny. It was comd. on the so. side in June 24&th;. 1824 under Sir
+                    J. Burnst Engineer &wavlin; It was a work of great magnitude as well as danger. The work was effected by
+                    means of a powerful apparatus of iron designated a "Shield" wh. consisted of 12 great frames, lying close to
+                    each other; each frame 22 ft. high <hi rend="superlinear"><emph rend="underline">&plus;</emph></hi> 3 ft. wide; each frame had 3 divisions, thus presenting 36
+                    chambers or cells for the workmen. Powerful as this was great danger attended the excavation from the effect
+                    of the tides on some portion of the strata in the bed of the river &ndash; By Apr. 30&th; 1827 the
+                    tunnel had advanced 400 ft. and with the double archways was substantially completed in brickwork in 10
+                    months. On May 18&th;/27 &plus; in <unclear>Jay</unclear>
+                    <del rend="overstrike">28</del> 1828 the River broke in &plus; filled the tunnel in less than 10 minutes,
+                    &plus; the rush the water made caused so great a current of air as to put out the lights &plus;<pb
+                        n="37" rend="(37"/>
+                    <fw type="header" place="top"><date cert="high" when="1862-05-22"><name type="place"><unclear>Hampton</unclear> Court<hi rend="supralinear">d</hi>
+                    Tunnel</name>
+                    </date></fw>
+              
+                  when 6 of the workmen were unable to extricate themselves &plus; were drowned &ndash; For some distance
+                    Mr Brummel (Jr.) struggled in total darkness &plus; the rush of the water carried him up the shaft this
+                    break occurred 600 ft from the shaft, within 25ft. of the channel of the river &ndash; leaving 700ft still
+                    to be executed &mdash; No less <add place="supralinear">than</add> 4000 tons of soil, principally clay in
+                    bags, were required to fill the chasam. When the tunnel was cleared of the <add place="supralinear"
+                    >water</add> then the structure was found in a sound state. From this time the work was suspended 7 years when
+                    it was again<del rend="overstrike">st</del> comd. &plus; continued till completed and opened for foot
+                    passengers on March 25&th; 1843.</p>
+                <p>Length of Tunnel 1200ft. &ndash; width 38 ft. 22ft. 6 inches in height &wavlin; Total cost &pound;
+                    468,000 or $2340,000</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-24">24&th; May. </date>
+                    </dateline>
+                </opener>
+                <p>Saturday we took <name type="person">guide (John Wittle)</name>and went by <name type="orgTransport"><del rend="strike">Great South Rail</del></name> into <name type="touristSite"><!-- is it a tourist site-->Houses of
+                    Parliament</name>. It was open for the inspection of visitors and went thro. the open rooms &wavlin; I will only
+                    briefly notice them, and refer to the <bibl><title>guide book</title></bibl> &mdash; The Building is magnificent <add
+                        place="supralinear">in its</add> external<del rend="overstrike">ly</del> &plus; internal structure
+                    &plus; finish becoming the reason for which it is founded. The Royal Gallery leading from the Queen's
+                        <emph rend="underline">Robing Room</emph> to the House of Lords is 110ft long, 45 ft wide &plus; 45ft
+                    high. On the opining of Parliment seats are raised on either side of this room for <del rend="overstrike"
+                        >ladies</del> the Public enter and see the Queen as she passes thro. on to the Princes Chamber or as it
+                    is otherwise called <pb n="38" rend="38)"/>
+                    <fw type="header" place="top"><date cert="high" when="1862-05-24"><name type="touristSite">Parliment Houses</name>. May 24 &ndash; 1862
+                    </date></fw>
+        
+            <name type="place">Victoria Hall</name> where some of the Lords are in waiting to receive Her Majesty and aid her into the House of
+                    Lords&mdash; a is the Robing Room B. is the <figure><graphic xml:id="ebwdiaeur_fig2"/><figDesc>This drawing is rectangular and is about half the width of the page. It is a diagram showing the royal gallery and how it connects the Queen's Robing Room with the House of Lords. Eliza Wheaton writes the letter "a" inside of a square room to the left of the Royal Gallery representing the Robing Room. The letter "B" is written in a square room to the right of the Royal Gallery representing the waiting hall or Prince's chamber. The letter "C" is written upon a sky-view version drawing of a half-moon representing the Throne which is right next to the square room of "B". The letter "i" is written upon a drawing of the "woolsack" which is the seat of the Lord High Chancellor, who presides over the House of Lords marked "D". Also in the drawing are benches drawn by small, short lines suggesting that the Lords sit in front of and to the left of the Lord High Chancellor.</figDesc></figure> waiting hall or Princes Chamber &ndash;<emph
+                        rend="underline">C.</emph> is the <del rend="overstrike">the</del> Throne &wavlin; which is
+                    elevated by three steps covered with carpet of richest velvet&ndash; of bright scarlet &plus; the
+                    pattern composed of roses &plus; lions alternately &wavlin; A gold cold. fringe borders the carpet.
+                    The canopy to the Throne is divided into three compartments. The central one is much higher than the others,
+                    for Her Majesty. That on her right hand is for the Prince of Wales and that on the left is for the Prince
+                    Consort &ndash; Now forever vacated by him&mdash;The panneling <del rend="overstrike">pa</del> back of
+                    this compartment is most exquisite executed so is the state chair or throne for description see <bibl><title>guide Bk.</title></bibl>
+                        <emph rend="underline">i</emph> Is the woolsack &ndash; a seat for the Lord High Chancellor who
+                    presides over the House of Lords (marked <emph rend="underline">"D"</emph> &mdash;.) Why it ever had that
+                    name I have not able to learn &mdash; It is a seat <emph rend="underline">perhaps 16 in.</emph> high
+                    &ndash; 5ft long and 22 inches wide &ndash;stuffed &plus; covered with <del rend="overstrike"
+                        >crimson</del> scarlet cloth &mdash; and in midway of the seat in length &plus; breadth is a
+                    little back elevated about 6 or 8 inches high &plus; 12 long &mdash;.</p>
+                <p>Some of the Frescoing in the different rooms interested me very much &wavlin; among wh. were <!--artwork--><bibl><title><name type="event">the Meeting of
+                    Wellington </name></title></bibl>&plus; <bibl><title><name type="event">Blucher at the battle of Waterloo</name></title></bibl> &mdash; &plus; the <bibl><title><name type="event">embarkation of <emph
+                        rend="underline">our</emph> Pilgrim fathers on board the <name type="orgTransport">May Flower</name></name></title></bibl> &mdash; <pb n="39" rend="(39"
+                /></p>
+                <fw type="header" place="top"><date cert="high" when="1862-05-24">Hampton Court &mdash; 
+                </date></fw>
+           
+       <p> 24 &th; After a hasty look at the <name type="touristSite">Parliment Houses</name> <name type="person">John W<del rend="overstrike">h</del>ittle</name> guided us to <name type="touristSite">Hampton Court
+                    Palace</name> &ndash; on the northern bank of the <name type="place">Thames</name> &ndash; 12 miles west from <name type="place">Hyde Park</name> &mdash;</p>
+                <p>Cardinal Wolsey at the summit of his power conceived the idea of building this palace which when completed he
+                    did not long enjoy, before he gave it to Henry 8" <add place="supralinear">to save his head</add> who had
+                    become jealous of such magnificence that surpassed Royalty &mdash; This <name type="touristSite">Palace</name> was erected in the
+                    15&th; century &ndash;</p>
+                <p>Henry 8&th; took posession of it &ndash;&plus; here began the weal &plus; <unclear>war</unclear> of
+                    Royalty in this Palace &wavlin; the amount of the latter we cannot well estimate &wavlin; the guide
+                    speaks of Edward 6&th; being born here 12&th; Oct 1537 and his Mother Jane Seymore (wife of Henry
+                    8&th;) only survived his birth but a few days &ndash;. On the day of the marriage Henry 8&th; to
+                    Jane Seymore, Anne Bolynn His <add place="supralinear">2d</add> Queen was executed at the Tower &mdash;
+                    Two other Queens at least Anne of Cleaves 4&th; wife &plus; Catherine Howard 5&th; wife shared the
+                    same fate of Anne Bolynn &wavlin; He was a monster of cruelty &wavlin; Edward 6&th; his son became
+                    to the throne at the age of 9 &plus; died at 16 &ndash; a youth of piety &plus; amiability
+                    &wavlin; His cousin Jane Grey succeeded him &plus; reigned 10 days &plus; there deposed and subsequently
+                    beheaded &mdash;<pb n="40" rend="40)"/>
+                    <fw type="header" place="top"><date cert="high" when="1862-05-24"><name type="touristSite">Hampton Court Palace</name> 24&th; May
+                    </date></fw>
+               
+                    Elizabeth being Queen this Palace was occupied by her and exhibited scenes of great festivity as in the days of
+                    Henry 8&th; &ndash; James I. and on to George 2 <add place="supralinear">d</add> the reigning
+                    Sovereigns resided here &ndash; more or less &ndash; but George <add place="supralinear">2d</add> was
+                    the last to occupy it &ndash; It is now occupied by a "decayed gentry" to some extent &ndash; about
+                    500 persons here. But the state apartments are as they formerly were for Exhibition, and I gained an idea of
+                    Royalty that I had not, when entering the Palace. After ascending the stair case and noticing the frescoing we
+                    entered the King's guard chamber 60 by 37 ft &plus; 30 ft. in height&ndash; the walls of wh. had some
+                    paintings and portions of them covd by arms of various sorts arranged in figures &ndash; On leaving wh. we
+                    entered "the Kings first Pres&ndash;&ne; ence Chamber then to "the Audience Chamber"
+                    &ne; there to the King's Drawing Room &ndash; then to King Wm. 3<hi rend="supralinear">d</hi> Bed
+                    Room &ndash; in wh. last is placed the state bed &ndash; of Queen Charlotte <add place="supralinear"
+                        >ceiling in fresco represent night &plus; morng.> </add> &wavlin; <del rend="overstrike">and</del>
+                    <add place="supralinear">There are</add> various articles of furniture suitable for such a room beside being
+                    hung with Portraits of Charles II<hi rend="supralinear">d</hi> court and other paintings &mdash;.
+                    &plus; &ne; where is a canopy <del rend="overstrike">represent one</del> which covered the
+                    throne &wavlin; There were in this &plus; the other rooms massive Chandeliers made of solid silver
+                    &ndash; which with the beautiful cut glass presented great richness &mdash;. The furniture to
+                    considerable extent was left in the rooms &ndash; all the walls coverd with paintings many <pb n="41"
+                        rend="(41)"/>
+                    <fw type="header" place="top"><date cert="high" when="1862-05-24"><name type="touristSite">Hampton Court</name> &mdash;
+                    </date></fw>
+                 
+                  of which were from celebrated ancient Painters &wavlin;. <unclear>&plus; or cross</unclear> From the
+                    King's Bed Room we entered the Kings Dressing Room the ceiling of which as are all the others painted in
+                    fresco by <name type="author">Verrio</name> &mdash; From this we enter the Kings waiting closet &ndash; then to Queen Mary's
+                    closet from which we enter her Majesty's Gallery &ndash; a room of large extent and containing some fine
+                    &plus; very old portraits &ndash;. From this we enter the Queen's Drawing Room &ndash; the walls
+                    of which were hung with Paintings by <name type="author">West </name>. From Each of these Rooms are most enchanting views of the grounds
+                    &wavlin;</p>
+                <p>From the Queens Drawing Room we enter the Queens Audience Chamber &mdash; in which Queen Mary's State
+                    Canopy of rich damask silk still remains &mdash;. The walls covered with paintings &plus; ceiling
+                    frescoed &wavlin; From this we enter the "Public dining Hall", where doubtless have been
+                     seated of greatest festivities &wavlin;. The paintings here as I remember them
+                    were of less interest than in the preceding rooms &mdash; From this "Ding. Hall we passed on to "the <emph
+                        rend="underline">Prince</emph> of <emph rend="underline">Whales</emph> Presence Chamber" "to the Prince of
+                    Wales Drawing Room" to the "Prince of Wales Bed room " &ndash; into the "Ante Room" to "the Queen's
+                    Private Chapel" &ndash; then into the "Closet near the Chapel" opening into "the Private Dining Room" in"
+                    wh. are now placed, the state Beds of King Wm. 3<hi rend="supralinear">d</hi> &plus; his Queen Mary: also
+                    the Bed used by King George 2<hi rend="supralinear">d</hi> where he resided in this Palace".<pb n="42"
+                        rend="42)"/></p>
+                <fw type="header" place="top"><date cert="high" when="1862-05-24"> 24 &th; May &ndash; <name type="touristSite">Hampton Court Palace</name> &mdash;
+                </date></fw>
+         
+           <p>From the Private Ding. Room we pass into a closet opening into the <emph rend="underline">Queens Private
+                        Chamber</emph> &ndash; then to the <emph rend="underline">King's Private Dressing Room</emph>, which
+                    was hung with tapestry, representing the <name type="event">Battle of Solebay</name>. Here also were fine Old Dlf Vases brot. to Eng. by
+                    Wm 3<hi rend="supralinear">d</hi> In the centre of the room is a very fine Marble Bust of a Negro, supposed to
+                    be a favorite servant of his Majesty <add place="supralinear">the</add> walls covered with paintings as
+                        <emph rend="underline">are all the</emph> rooms "thro. wh. we have passed &mdash; From this we enter
+                        <emph rend="underline"> George 2 <hi rend="supralinear">d's</hi> private chamber</emph>&ndash; from which passing
+                    thro. a closet we enter a large room containing <bibl><title>"Cartoons by <name type="author">Raphel</name>"</title></bibl> designed about the year 1520 according to
+                    the Orders of Pope Leo.X. and are a sires of subjects taken from the life of our Savior &plus; the Acts of
+                    the apostles &mdash; They were sent to the famous Manufactory Arras (Flanders to be copied into Tapestry
+                    in her <unclear>sets</unclear> &ndash; one to decorate the Vatican &plus; the other a present to Henry
+                    8&th;. "They cost between 60 &plus; 70 thousand crowns of gold." They are very large &mdash; The
+                    1rst represents <bibl><title>Death of <unclear>Amania*</unclear></title></bibl> 2<hi rend="supralinear">d</hi> <bibl><title>"Elymas the Sorcerer"</title></bibl>. 3
+                        <hi rend="supralinear">d</hi><bibl><title> "<unclear>Petre</unclear> </title></bibl>&plus; <bibl><title>John at the Beautiful Gate</title></bibl>." 4&th;
+                   <bibl><title> "Miraculous Draft of fishes</title></bibl>." 5&th; <bibl><title>"Paul &plus; Barnabas at Lystra"</title></bibl> 6&th; <bibl><title>Paul preaching at
+                    Athens </title></bibl>&ndash; 7&th; <bibl><title>"Christ's Charge to Peter."</title></bibl> The seven cover the Walls of large Room &plus;
+                    are gazed upon with intense interest by Artists &mdash; They <add place="supralinear">are</add> painted
+                    on sheets of paper presenting the appearance of one large sheet &ndash;.</p>
+                <p>From this we pass into an "Ante Room" to "the Portrait Gallery" on to "the Queen's Stair Case" thro. <pb n="43"
+                        rend="(43"/>
+                    <fw type="header" place="top"><date cert="high" when="1862-05-24"> &ndash; Continued
+                    </date></fw>
+                   
+                    to the Queen's Guard Chamber &ndash; thro. an Ante&longequal; Room to "the Queen's Presence Chamber" to
+                    the "Great Hall" a splendid gothic Hall, designed by Wolsey &plus; finished by Henry 8&th; &ndash;
+                    It is 106ft. long &ndash; 40 ft. wide &plus; sixty feet high &ndash;. The roof is very elaborately
+                    carved &plus; <del rend="overstrike">hung</del> richly decorated with arms &plus; badges of Henry
+                    8&th; &ndash;. This was finished when Ann Boleyn was in the height of favor &wavlin; It was used
+                    as a Theatre during the reigns of Elizabeth &plus; James I. also by Georg <hi rend="supralinear"
+                        >&ndash;d</hi> it was filled up and used as a Theatre &plus; <unclear>hw were</unclear>
+                    <add place="supralinear">first</add> acted some of <name type="author">Shakespeare's</name> plays &mdash; During the reign of George
+                    4&th; the Parish of Hampton obtained per&ndash;mission to fit it up for divine Service during the
+                    rebuilding of their church &ndash;</p>
+                <p>These <emph rend="underline">high</emph> walls are covered with fine specimen of Arras tapestry in 8
+                    compartments The 1.<add place="supralinear">st</add> represents<bibl><title> "God appearing to Abraham,"</title></bibl> 2<hi
+                        rend="supralinear">d</hi><bibl><title>"Birth of Isaac."</title></bibl> 3<hi rend="supralinear">d</hi> <bibl><title>Abraham sending his servant to
+                            seek a wife for Isaac&ndash;"</title></bibl> 4&th; <bibl><title>Egyptians sending away Abram. &plus; Sar. with Gifts
+                            </title></bibl> &ndash; 5&th; <bibl><title>Abram. entertaining three Angels</title></bibl> &ndash; 6&th; <bibl><title>Abram. purchasing the care of
+                    Mac&ndash;pelah</title></bibl> &ndash; 7&th; <bibl><title>Abram. &plus; Lot parting </title></bibl>&mdash; 8&th; <bibl><title>Abram. offe. up
+                    Isaac</title></bibl>. At the End of this Hall is the "With Drawing Room" which is also hung with tapestry &plus; pictures
+                    making it a place of interest &mdash; This closes the tour of apartments open to the Public &plus; we
+                    return &plus; descend to the court from which opens the Gardens &ndash; which with the
+                    wil&ndash;derness and Palace are 3 mls. in extent &ndash; The Palace covers 8 acres &wavlin;. The
+                    grounds are very <emph rend="underline">beautiful</emph> &mdash;<pb n="44" rend="44)"/></p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="medium" when="1862-05-24"><name type="touristSite">Kew Gardens</name> &plus;c. </date>
+                    </dateline>
+                </opener>
+                <p>We saw the the famous <!--I feel this needs to be tagged but I don't know as what-->Blk. Hamburgh grape vine that last season bore 1400 lbs grapes &plus; some seasons has
+                    borne 2500 bunches &mdash; After strolling about the grounds we past out to <name type="touristSite">Bushy Park</name> opposite &plus;
+                    took omnibus for <name type="touristSite">Kew Gardens</name> in <name type="place">Richmond</name> &ndash; which we found very interesting &ndash; but we had
+                    attempted too much for one day and the green Houses were closed before we entered them. Near one of them we
+                    saw <name type="person">"Mary Princess of Cambridge"</name> walking &ndash; She is about 30 yrs of age I shd. think &ndash; a
+                    fleshy wholesome looking lady &mdash; She is sister to the <name type="person">Duke of Cambridge</name> who resides in London
+                    &ndash; She &plus; her Mother <del rend="overwritten">we</del> <add place="overwritten">the</add> <name type="person">Duchess of Cambridge</name> reside near
+                    the Gardens &wavlin; Shis is cousin to the <name type="person">Queen, Victoria</name>. &wavlin; This was saturday Eve. and we
+                    returned by R.R. a thoroughly tired party. </p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-25">25&th;</date>
+                    </dateline>
+                </opener>
+                <p> we went to hear <name type="person">Mr. Spurgeon</name> &ndash; It is a rich priviledge to hear him &ndash; Text Deut.
+                    32&ndash;9&ndash;Lam. 3&draise; &ndash;24. Eve. we went to Trevor Chapel to hear <name type="person">Mr Staturn
+                    (Epis)</name> a handsome and apparently a vain man. </p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-27">27&th;</date>
+                    </dateline>
+                </opener>
+                <p>arrived letters from <name type="person">Martha</name> &plus; <name type="person">George</name> &ndash; bringing joyful news of Victories &wavlin; but of
+                    her health &plus; that of some of the neighbors it is sad &ndash; she has raised blood &plus; <name type="person">Mr
+                    West</name> &plus; <name type="person">Mr Hunt</name> are quite low &ndash;. Poor <name type="person">Mrs Story</name> too, is even a greater sufferer then when we
+                    left home.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-28">28&th;</date>
+                    </dateline>
+                </opener>
+                <p> We went to <name type="touristSite">Madam Tussaud's Rooms</name>&ndash; filled with life like wax figures &mdash; <title>The Guide Bk.</title><pb
+                        n="45" rend="(45"/>
+                    <fw type="header" place="top"><date cert="high" when="1862-05-28"><name type="touristSite">Mad. Tussaud's Rooms.</name>
+                    </date></fw>
+                  
+                    will do more justice to them then I possibly can &mdash; I enjoyed them exceedingly &mdash; Saw many
+                    pieces of furniture, articles of toilet &plus; of Dress, Carriages &plus;c. that were Napoleon 1rst
+                    &ndash; There was his war coach in which he went to <name type="place">Russia</name>, and to the <name type="event">Battle of Waterloo</name> when it was
+                    taken by Wellington &ndash; It had every imaginable convenience &mdash; A place for Sleeping on small
+                    cot&ndash; for eating &plus; writing &ndash; It was <add place="supralinear">no</add> larger then
+                    many of English Nobility use &ndash; There too was the coach he used at the time of his coronation, both
+                    of which I took seats in &wavlin; There was another he used at <name type="place">St. Helena</name>&plus; which was the last
+                    one he ever rode in &wavlin;.</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="high" when="1862-05-29">29&th; Thursday </date>
+                    </dateline>
+                </opener>
+                <p>we went out by <name type="orgTransport">Great West. R.</name> to <name type="place">Windsor Castle</name> &wavlin; 22 mls. from <name type="place">London</name> &plus; 14 miles from
+                    <name type="touristSite">Hampton Court Palace</name>. It was an unforable* day for us &ndash; notice having appeared in the papers that it
+                    would be the last day for the Palace to be opened, as Her Majesty was expected to return from <name type="place">Balmoral</name> on the
+                    following day &mdash; Consequently, multitudes of strangers in London like ourselves, were intent on
+                    improving this opportunity for visiting it <del rend="overstrike">the Palace</del>, it being the home of the
+                    <name type="person">Queen</name>, usually from Oct. to February. I am fully unprepared to give a <emph rend="underline">just</emph>
+                    account or description of the Castle for two reasons &mdash; one <add place="supralinear">reason,</add>
+                    there was such a croud that<pb n="46" rend="46)"/>
+                    <fw type="header" place="top"><date cert="high" when="1862-05-29"><name type="place">Windsor Castle</name> &ndash; May 29<emph rend="underline">&th;</emph>
+                    </date></fw>
+                      
+                    we could not get a good view of the rooms and the Guide seemed in a hurry somewhat, to take us from our room to
+                    another, tho. he was exceedingly courteous, and ready to answer questions &ndash; but with these
+                    disadvantages I did not take time to look at the different views from <del rend="overstrike">the</del> several
+                    rooms as I now wish I had &mdash; But from those I did look from, they opened into the court &plus;
+                    presented nothing but stow <del rend="overstrike">for</del><unclear reason="overwritten"><add place="overwritten">traverse</add></unclear>
+                    and battlements &wavlin;</p>
+                <p>The second reason why I cannot do justice to the description is that I saw it under great dissappointment
+                    &wavlin; I had no thot. of seeing <emph rend="underline">a Castle</emph> &ndash; True it was called
+                    so, but then I supposed it was not &ndash; but a Palace of great beauty with extensive Parks &plus;
+                    lawns with flocks resting upon them, as about <name type="touristSite">Buckingham Palace</name> &ndash; all bespeaking repose and beauty
+                    &mdash; But instead of that, the gray towers with its strong battlements loomed up before me bespeaking
+                    any thing but peace in its erection &wavlin; or even in its present posession, as two Regiments of
+                    soldiers are stationed about the Castle, tho. only a small portion are visible (from any one point) to act as
+                    Sentinels &wavlin;. But as I entered the enclosure I could not divest myself of the <pb n="47" rend="(47"
+                    />
+                    feeling that we were in <add place="supralinear">a</add> Fortress, and tha<del rend="overstrike">t</del> the
+                    Queen might live there it seemed more like a <emph rend="underline">prisoner</emph> than a Queen &ndash;
+                    who was thus guarded &wavlin;. There was the mounted cannon &ndash; and the embrazures &plus; <del
+                        rend="overstrike">under</del>
+                    <add place="supralinear">over</add> George 4&th;'s Gateway were apertures for pouring down melted lead on
+                    the besieging enemy.</p>
+                <p>The fortress <add place="supralinear">or castle</add> was commenced by William the Conqueror soon after he
+                    usurped the throne, he regarding it us a favorable position for military defence &wavlin; subsequent Kings
+                    enlarged, strengthened &plus; beautified it till it has become the massive pile it is &wavlin;. Our
+                    guide tell <handShift rend="pencil"/>s<handShift rend="regular"/> us that it has been a favorite residence with
+                    the sovereigns.</p>
+                <p>We approached the door that led to the state apartments when our gent &ndash;deliverd up the Ticket of
+                    Admission &plus; recording his name we passed on to "Queen's Audience Chamber" where a gentlemenly guide
+                    was awaiting us &plus; explained the pictures &mdash; The ceiling was in fresco by <name type="author">Verrio</name> and the
+                    walls were decorated with the finest specimens of Goblin <handShift rend="pencil"/><add place="supralinear"
+                        >Holbein?</add><handShift rend="regular"/> Tapestry <del rend="double strike">up</del>&mdash;. Queen Esther
+                    &plus; Mordecai &longequal; also several Portraits. From this room we passed into the vandyck Room,
+                    formerly called the Ball Room &ndash; The room is embellished by paintings from this artist &ndash;
+                    Van dyck&mdash; From this we passed on to the <del rend="overstrike">State ante Room</del> &ndash;
+                    Queen's Drawing Room where are Paintings by <name type="author">Luccareli</name>&ndash; the finest specimens of this great master
+                        &mdash;<pb n="48" rend="48)"/>
+                    <fw type="header" place="top"><date cert="high" when="1862-05-29"><name type="place">Windsor Castle</name> &mdash; 
+                    </date></fw>
+                  
+                The hangings <add place="supralinear">are</add> of crimson silk damask upon wh. are displayed the Royal Arms of
+                        <emph rend="underline">Wm</emph>. 4&th; &plus; Queen Adelaide &ndash; From this we entered the
+                    State Ante Room. Ceiling frescoed by <name type="author">Verrio</name>&ndash; several pieces of Tapestry on the Walls&ndash;
+                    &plus; carvings in wood by <name type="author">Grimling Gibbons</name> of Fish,game, Flowers, fruit &plus;c In the Recess over
+                    the chimney piece is a painting on Glass of George III. in his coronation robes. by <add place="supralinear"
+                        >Josh</add>Reynolds&ndash;</p>
+                <p>Thence to the Grand Stair Case &ndash; on to the Grand vestibule 47 ft.long 28 ft. wide &plus; 45 ft.
+                        <del rend="overstrike">wide</del> high &ndash; in wh. were suits of armour and various military
+                    articles &ndash; also a curiously trained root or vine supposed to be rosetree from China &wavlin;
+                    From this we passed to the Waterloo Chamber or Grand Dining room &ndash; 98 ft. long 45 ft. high
+                    &plus; 47 ft. broad &ndash; which is the Depository for the portraits of eminent men&ndash;
+                    soveriegns, military commanders who were connected with <name type="event">Battle of Waterloo</name> &mdash; In this room King Wm.
+                    4&th; gave dinners in honor of the <name type="event">Waterloo Victory</name> &ndash; &plus; here too he was laid in State
+                    &ndash; The Paintings are nearly all by <name type="author">Sir Thomas Laurence</name> &ndash;</p>
+                <p>From this we passed to the "<emph rend="underline">Presence Chamber</emph>" or Grand Reception Room &mdash;
+                    wh. is 90 ft. long 33 ft. high 34 ft. broad &ndash; A Magnificent Gothic window, filled with plate glass,
+                    forms almost the entire north end &ndash; of the room opening on the park &plus; adjacent county (as
+                    the guide says) &ndash; but wh. I did not look at &ndash; from the crowd &plus; hurry
+                    &wavlin; &plus; desire to see what was within &ndash; The furniture is splendid &ndash;
+                    solidly <del rend="overstrike">grandt</del><add place="supralinear">gilt</add> &plus; covered with crimson
+                    damask &ndash; 4 exceedingly rich chandeliers are suspended &ndash; composed <unclear>or&ndash;
+                        molic</unclear> &ndash; interspersed with cutglass, branches &plus; pendants &mdash; The walls
+                    are hung &ndash; with fine specimens of <bibl><title>Gobelin Tapestry </title></bibl>&mdash; <bibl><title>The history of Jason &plus; the
+                    ["Golden"inserted b/c of hole] fleece </title></bibl>&mdash; <pb n="49" rend="49"/>
+                    <emph rend="underline">&th;</emph>"/></p>
+                <fw type="header" place="top"><date cert="high" when="1862-05-29"><handShift new="#ebwdiaMC_hand"/>s
+                    <handShift rend="pencil"/>Here &ndash; Tufle<handShift
+                        rend="regular"/> <handShift new="#ebwdiaMC_hand"/>s
+                    <name type="place">Windsor Castle</name> &ndash; 
+                </date></fw>
+             
+                   <p>From the Presence Chamber &ndash; we came to <name type="touristSite">St. George's</name>, The <emph rend="underline">Grand Banqueting
+                    Hall</emph>, 200 ft. long, 34 ft. broad &plus; 32 ft. high &wavlin; Its dimensions are princely and
+                    the doors, windows &plus;c are finished in oak &ndash; There are 13 windows interspersed between wh.
+                        <add place="supralinear">on the walls</add> are armorial bearings of all the Knight of the Garter from the
+                    institution of the Order down to the present time &ndash; an elapse of 500 years &ndash; On the
+                    opposite side from the windows are Portraits of the <del rend="overstrike">last</del> eleven soveriegns of
+                    England beginning at James I. &plus; extending to George 4&th; &mdash;At the Eastern end of the
+                    Hall is the Music Gallery &ndash; beneath which is the soveriegns throne the ascent to wh. is by Oak steps
+                    &ndash; The furniture is of oak covered with scarlet plush &ndash; The chair of State is also of oak
+                    richly carved, in style similar to the coronation chair at <name type="touristSite">Westminster Abbie</name>.</p>
+                <p>The <emph rend="underline">Guard Chamber</emph> is 78 ft. long 21 feet wide, <add place="supralinear">. at 1
+                        front end to the other</add>
+                    <del rend="overstrike">one</del> end, 26 ft. <del rend="overstrike">at the other</del> &plus; 31 ft. high.
+                    This room was filled <add place="supralinear">with</add> the usual weapons of war, armours &plus;c
+                    &plus;c &mdash; Also several busts &ndash; among wh. was one of the Duke of Wellington &ndash;
+                    one of Lord Nelson. The beautiful silver shield inlaid with gold presented by Francis of France to Henry
+                    8&th; wh. revolves on a pivot over the chimney piece &ndash; is now exhibition at the <name type="touristSite">World's Fair</name>
+                    here in the City &wavlin;.</p>
+                <p>From there we went to <add place="supralinear">the "</add> Queen's Presence Chamber &wavlin; The Frescoing
+                    is beautiful and the walls are hung with 4 splendid specimens of <bibl><title>Gobelin Tapestry</title></bibl>. being a continuation of the
+                    History of Queen Esther &plus; Mordecai &mdash;</p>
+                <pb n="50"/>
+                <fw type="header" place="top"><date cert="high" when="1862-05-29"> <name type="place">Windsor Castle</name> &mdash; 
+                </date></fw>
+               
+          <p>It would seem the room was filled up in the reign of Charles II &ndash; &plus; for his Queen Catherine
+                    &wavlin; There are several portraits &ndash; some of them full length.</p>
+                <p>From these state apartments we descended to the yard, and then ascended the Round Tower &ndash; from the
+                    summit of wh. you can overlook the surrounding country &wavlin;. It is very fine &wavlin; <name type="orgSchool">Eton College</name>
+                    is but a little way off &ndash; less than a mile I shd. think from the Castle &ndash;. Here the
+                    nobility have educated their sons &ndash;.</p>
+                <p>Our guide pointed out to us a little house wh. he said was the birth place of Wm. Penn founder of <name type="place">Pensylvania
+                    U.S.A.</name> &wavlin;. How correct he was I cannot say. &ndash; From this survey we went to <name type="touristSite">St. Georges
+                    Chapel</name> where in our part we found the remains of the lamented Princess Charlotte &ndash; A beautiful
+                    monument was there over her remains <pb n="51"/></p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline>
+                        <date cert="medium" when="1862-06-18">1862 &ndash; Continent &mdash; July 18&th;
+                            [vertical mark] Friday Morng.</date>
+                    </dateline>
+                </opener>
+                <p><name type="person">David E. Holman</name> with <name type="person" key="ebwdiaLMW">Hus.</name> and myself left our rooms 72 Sloan St.
+                    <name type="place">London</name> for <name type="orgTransport">London Bridge Station</name> &plus; took Tickets for Paris &ndash; There was a great rush of
+                    people, but we succeeded in getting into 1rst Class Car for <name type="place">Folkstown</name> <handShift rend="pencil"/><del
+                        rend="overstrike">. &plus; <name type="place">Bologne</name></del>
+                    <handShift rend="regular"/> &ndash; at F. some 83 mls. fr. <name type="place">Lon.</name> took steamer to cross straits of Dover to
+                    Bologne &ndash; wh. took 2 hours <handShift rend="pencil"/><del rend="overstrike">in crossing</del>
+                    <handShift rend="regular"/> &ndash; I prepared myself on the floor of cabin before the steamer left her
+                    moorings &ndash; as the sight of piles of white basons admonished me wht. I might expect &ndash; As
+                    soon as we steamed off the stomachs of those who were up&ndash; began in great numbers to show them
+                    disgust at Neptune's mode of procedure. One after another was led to Cabin and prostrated on the floor and
+                    were very sick &ndash; But I lay quiet and when the boat ard. at B. I was well as tho. I had been resting
+                    on <handShift rend="pencil"/><add place="supralinear">a</add><handShift rend="regular"/> lounge at home. Not so
+                    with <name type="person" key="ebwdiaLMW">Hus.</name> He took lunch, and kept on deck but was very sick
+                    &plus; had to lay down with great numbers there &plus; given his lunch to the fishes &mdash; at B.
+                    took <emph rend="underline">Bus</emph> for station &ndash; passing thro. streets of <emph rend="underline"
+                        >France</emph> Here Napoleon 1. <add place="overwritten">attempted</add> <add place="supralinear">the invasion of</add>England with an army of
+                    180,000 <emph rend="underline">soldiers</emph> &ndash; <del rend="overstrike"> Here too</del> to combine with fleets he had  <del rend="overwritten">built</del><add place="overwritten">constructed</add>
+                    &plus; unite with Holland &plus; spo <gap reason="tornpages"/> but Lord Nelson with Lord Keith &plus; Sir
+                    Robt Calden presented the junction of Nap's fleets and Ld. Nelson defeated them at <name type="event">Trafalgar</name>&ndash; a mile
+                    from the town is a Colonial to Nap commenting <del rend="overwritten">this</del><add place="supralinear"><del rend="overstrike">of the</del></add> Event &ndash; began by his soldi in 1804 the first stone being laind by
+                    Marshal soult &ndash; but <add place="supralinear">but</add> was discontinued by the withdrawal of the
+                    troops &ndash; &plus; Under Louis 18&th; it was resumed to Commemorate the restoration of the
+                    <emph rend="underline">Bourbons</emph> &ndash; but rising <hi rend="supralinear">to</hi> the <name type="event">Revolution of <emph rend="underline"
+                    >July</emph> <add place="superlinears">1830</add></name> it was determined to make it the monument first designed &ndash; &plus; 1841 was
+                    dedicated as a monument to Nap. &plus; a bronze statue of him surmounts it &ndash; I think Nap. <emph
+                        rend="underline">3</emph> was imprisoned here for his premature attempt to take the throne in 1840.
+                    &ndash; </p>
+                <p> our luggage was registerd &plus; went thro. <add place="supralinear">to</add> P. before Cus. House
+                    Officers examined it &ndash; we resumed our seats in the cars &plus; as I had prayed for traveling
+                    companins that cld. speak our language as well as the French so <del rend="overstrike"> it they</del> came
+                    &ndash; a very pleasant gent &plus; lady &ndash; (Eng) &ndash; who went thro. to <name type="orgTransport">P. A Paris
+                    Station</name> where we ard. at 8 1/2 Eve. we found the superintendant spoke Eng. &plus; helped us thro. the
+                    ordeal of getting luggage thro. Custom H. Off. &plus; put us into cab for the <name type="orgBusiness">Hotel d'Lille
+                    &plus; d Albion</name> &ndash; It was a long drive &plus; showed us something of <name type="place">Paris</name> in the Eve. On
+                    arg. at our Hotel we found a waiter that spoke <pb n="52"/>
+                    <!--<opener><emph rend="underline">Paris</emph></opener>--> good old Saxon to our joy
+                    &ndash; we soon were hous keeping in <emph rend="underline"> our own room</emph> and at rest for the night
+                    &mdash; 19&th; Sat. morng. found <name type="person" key="ebwdiaLMW">Hus.</name> feeble so we did but
+                    little &ndash; but look out <name type="touristSite">Tuiliries &plus; Grounds</name> &ndash; &plus; <name type="touristSite">Place <add
+                        place="supralinear">de. la</add>Concorde</name> wh. unites the <name type="touristSite">Tuilires</name> with <name type="touristSite">Champ Elysees</name> the grounds are
+                    exceedingly beautiful &ndash; gardens of flowers&ndash; open promenades bordered with orange
+                    &plus; other shrubs by alternating with the fully shaded groves tht. wld. seat thousands &ndash; in
+                    comfortable chairs that. are bt for 2 or 3 sons &ndash; In <name type="touristSite">Place de la Concorde</name> <add place="supralinear"
+                            ><handShift rend="pencil"/>de</add> is the <emph rend="underline">Obelisk</emph> of <emph
+                        rend="underline">Luxor</emph> from <name type="place">Egypt</name> wh. is one of two Obelisks tht. stood before the <name type="place">Temple of Thebes</name>
+                    when they were erected 1550 <add place="supralinear">yrs</add> before Christ by Rhames III known in history as
+                    the great Sesostris &ndash; These two monoliths were given by Mohamed Ali; viceroy of <name type="place">Egypt</name>, to the French
+                    govt. in consideration of <del rend="overstrike"> crn.</del> favor shown to Egpt. Gov in forming Arsenal
+                    &plus; Naval Establishment in <name type="place">Alexandria</name> &ndash; but only one was removed &ndash; This Obelisk is
+                    formed of the finest red syenite, &plus; coved on each side with hieroglyphics making 1600 characters
+                    &ndash; Height 72 ft &ndash; 3 in &ndash; bottom of base 7ft 6 in &ndash; at top 5 ft. 4 in
+                    &ndash; wght. 500,000 pounds &plus; <add place="supralinear"> took</add> 3 years to transport it to
+                    <name type="place">France</name> &ndash; It stands on a single block of gray granite with 5 block, of the same <del
+                        rend="overstrike"> for the</del> of wh. the plynth is formed &ndash; 2 <emph rend="squiggle
+                        underline">beautiful</emph> fountain are this obelisk &mdash; In the distanc we saw the <!--artwork?--><name type="touristSite">Triumphal Arch</name>
+                    Comd. by Nap.1. &plus; finishd by Louis Phil. Perhaps there is nothing <add place="supralinear">to</add>
+                    equal <del rend="overstrike">to it</del> in the world the views from this place &ndash; I never in any
+                    City &ndash; </p>
+                <p> Returg we went to <name type="orgLodging">Maurice Hotel</name> to look for American Names,, but found none we knew &ndash; since learned
+                    tht other <name type="person">Carpenters</name> family left this morng. for <name type="place">Geneva</name> &ndash;. We were soon overtaken by a <name type="person">Mr Smith</name> of
+                    <name type="place">U.S.A.</name> but now a resident of <name type="place">Paris</name>, &plus; Sexton to <name type="orgChurch">American Chapel</name> &ndash; He accompanied us to
+                    <name type="touristSite">Monroe's</name> where Americans record their names &ndash;</p>
+                <p> P.M. <name type="person" key="ebwdiaLMW">Hus.</name> &plus; I went to</p>
+            </div>
+        </body>
+        <back> &ebwdiaback; </back>
+    </text>
+</TEI>

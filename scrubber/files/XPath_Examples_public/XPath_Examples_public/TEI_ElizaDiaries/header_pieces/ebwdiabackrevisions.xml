@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <change>
+     <date>2005-08-09</date> 
+<name>Scott Hamlin</name> 
+inserted Adolphus Chapin into the back material as an example.
+ </change>
+ <change>
+     <date>2005-08-09</date>
+<name>Scott Hamlin</name>
+Added the n attribute to the div1 element to indicate the version of the back material. For now, the version will be indicated with a small "v" followed by the date in this format: YYYY-MM-DD. For example, a version created today would be v2005-08-09.
+ </change>
+ <change>
+  <date>2006-07-05</date>
+  <name>Scott Hamlin</name>
+  Changed persName xml:id="MrsMB" to persName xml:id="ebwdiaMrsMB" so that it would comply with the id scheme that we are following (line 325 of ebwdiaback.xml).
+ </change>
+<change>
+ <date>2008-04-10</date>
+ <name>Scott Hamlin</name>
+ Changed handList in profileDesc to handNotes. Changed hand to handNote. Changed the scribe attribute to a corresp attribute in hand/handNote. Added some text within handNote to describe the person writing.
+ </change>

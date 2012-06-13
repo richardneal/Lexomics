@@ -1,0 +1,72 @@
+<!ENTITY ebwdiapubStmt SYSTEM "http://www.wheatoncollege.edu/KACC/tei/ebwdia/ebwdiapublicationStmt.xml">
+<!ENTITY ebwdiaencodingDesc SYSTEM "http://www.wheatoncollege.edu/KACC/tei/ebwdia/ebwdiaencodingDesc.xml">
+<!ENTITY ebwdiaback SYSTEM "http://www.wheatoncollege.edu/KACC/tei/ebwdia/ebwdiaback.xml">
+<!ENTITY ebwdiabackrevisions SYSTEM "http://www.wheatoncollege.edu/KACC/tei/ebwdia/ebwdiabackrevisions.xml">
+<!ENTITY  ebwdiaprofileDesc SYSTEM "http://www.wheatoncollege.edu/KACC/tei/ebwdia/ebwdiaprofileDesc.xml" >
+
+<!-- a low straight line -->
+<!ENTITY lowbar  "&#x005F;" >
+
+<!--a wavy line-->
+<!ENTITY wavlin "&#xfe4f;" >
+
+<!--standard enties-->
+<!ENTITY mdash  "&#8212;" >
+<!ENTITY ndash "&#8211;">
+<!ENTITY deg "&#176;">
+<!ENTITY ccedil "&#231;">
+
+<!--Letters with degree signs under them-->
+
+
+<!--a symbol for th-->
+<!ENTITY th "&#34;">
+<!ENTITY thx "&#34;" >
+
+<!--raised underlined letters-->
+<!ENTITY draise "d&#817;">
+<!ENTITY traise "t&#817;">
+<!ENTITY sraise "s&#817;">
+<!ENTITY vraise "v&#817;">
+<!ENTITY nraise "n&#817;">
+<!ENTITY Rraise "R&#817;">
+
+<!-- raised underlined letters with two slashes underneath -->
+<!ENTITY rd "d&#x0348;" >
+<!ENTITY ne "ne&#x0348;" >
+<!--<!ENTITY rd "<sup><u>d&#x0348;</u></sup>" >--> <!-- as in 3rd... but representent as 3<sup><u>d&#x0348;</u></sup>-->
+<!ENTITY nd "nd&#x0348;" >
+<!ENTITY st "st&#x0348;" >
+<!ENTITY th "th&#x0348;" >
+
+<!--a line with a degree sign above it-->
+<!ENTITY linedeg "&deg;&#821;">
+
+<!-- a/c-->
+<!ENTITY account "&#8448;"> 
+<!--plus-->
+<!ENTITY plus "&#43;">
+<!--a long equal sign-->
+<!ENTITY longequal "&#9552;">
+
+<!--pound sign-->
+<!ENTITY  pound "&#163;">
+
+<!ENTITY sdotlow  "s&#803;">
+<!ENTITY adotlow "a&#803;">
+<!ENTITY cdotlow  "c&#803;">
+<!ENTITY ddotlow "d&#803;">
+<!ENTITY tdotlow  "t&#803;">
+<!ENTITY gdotlow  "g&#803;">
+<!ENTITY ldotlow "l&#803;">
+<!ENTITY ndotlow "n&#803;">
+<!ENTITY rdotlow "r&#803;">
+<!ENTITY zdotlow "z&#803;">
+<!ENTITY degdotlow "&#176;&#803;">
+
+<!--
+-degree deg (I don't know what it would be for this one, but she put a degree sign over a period)
+an extra long dash, like 2 &mdash;es combined to finish a line
+Ashley has the sign for pounds when she is in
+I have found the # sign in a few entries, i'm not sure what she means, perhaps we can talk with Zeph about it at the next meeting
+ -->

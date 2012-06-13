@@ -1,0 +1,14 @@
+<fleets>
+  <fleet name="Pacific">
+    <ship id="id1"/>
+    <lifeboat id="id2"/>
+  </fleet>
+  <fleet name="Pacific">
+    <lifeboat id="id3"/>
+    <ship id="id4"/>
+    <armada>
+      <ship id="id5"><captain>somebody</captain></ship>
+    </armada>
+    <ship id="id6"><captain>somebody else</captain></ship>
+  </fleet>
+</fleets>

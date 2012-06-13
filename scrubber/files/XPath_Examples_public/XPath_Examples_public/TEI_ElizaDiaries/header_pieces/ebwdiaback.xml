@@ -1,0 +1,465 @@
+<!--NOTE: The contents of this file are automatically imported into the back matter of any ebwdia xml file through an entity reference (&ebwdiaback;). The only way to validate this file is to validate one of the ebwdia xml files that this material is imported into.-->
+
+<div type="namesglossary" n="v2006-07-05">
+    <list>
+<!-- template for entries: -->        
+        <item>
+            <persName xml:id="ID">
+                <roleName>INSERT HERE</roleName>
+                <forename>INSERT HERE</forename>
+                <surname>INSERT HERE</surname>,
+            </persName>
+            INSERT INFORMATION ABOUT THE PERSON HERE. 
+        </item>
+<!-- end of template. -->
+        <item>
+            <persName xml:id="ebwdiaAC">
+                <forename>Adolphus</forename>
+                <surname>Chapin</surname>,
+            </persName>
+(1797-1875) Brother of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>, moved with parents and brothers (including <name type="person">Samuel Austin</name>) to <name type="place">White Pigeon, Michigan</name>, cared for parents until father <name type="person">Henry Chapin's</name> death.  Active participant in Black Hawk War (1832); later returned to <name type="place">Uxbridge</name> and married <name type="person">Cynthia</name>; lived in <name type="place">Uxbridge</name>; father of <name type="person" key="ebwdiaMCS">Mary Abbie Chapin Smith</name> W1873; gave Power of Attorney to <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> before death.  Referred to in diaries as "Adol."
+        </item>
+        <item>
+            <persName xml:id="ebwdiaAE">
+                <roleName>Reverend</roleName>
+                <forename>Alfred</forename>
+                <surname>Emerson</surname>,
+            </persName>
+            (ca. 1813-1896) Son of <name type="person">Rev. Joseph Emerson</name> (1777-1833), early advocate of higher education for women and teacher of <name type="person">Mary Lyon</name>; entered <name type="place">Yale</name> 1830, graduated. <name type="place"> Wheaton Female Seminary </name> Trustee 1872-1893 and Treasurer 1880-1891, one of <name type="place"> Wheaton Female Seminary's </name> most influential trustees, <name type="person" key="ebwdiaAE"> Alfred Emerson </name> provided fundamental leadership during the later part of the 19th Century; supervised major construction projects such as the 1874 observatory and 1878/9 additions to Seminary Hall, assists with Winter St. property lease, and safeguarded <name type="place"> Wheaton Female Seminary </name> finances.  Married <name type="person" key="ebwdiaMVE">Martha Vose</name> (<name type="place"> Wheaton Female Seminary </name> Principal 1840-42); father of <name type="person">Annie Austin Emerson</name> W1871 (<name type="place"> Wheaton Female Seminary </name> teacher of Mathematics and English Branches 1872-76) and <name type="person">Frances Vose Emerson</name> W1872 (<name type="place"> Wheaton Female Seminary </name> teacher of Rhetoric, Literature and History 1881-86, Trustee 1922-42); the main dining hall was named for the Emerson family, 1908. Friend and confidante of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>, frequent visitor for consultations on <name type="place"> Wheaton Female Seminary </name> affairs, always stayed with <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>when attending Trustees' meetings.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaAEC">            
+                <forename>Ann Eliza</forename>
+                <surname>Carter</surname>,
+            </persName>
+            (1833-1882) Daughter of, and educated by, <name type="person">James G. Carter</name>, called the "Father of Normal Schools;" <name type="place">Wheaton Female Seminary </name> Teacher of History of Civilization; General Literature; Latin, Mental Philosophy; English Grammar, Analysis and Composition; Moral Science; Butler's Analogy 1862-65, 1866-81; carried on work in literature begun by <name type="person">Lucy Larcom</name>. In 1871 purchased little house next to <name type="place"> Holmes Cottage </name> (second house west of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name>) as home for herself and <name type="person" key="ebwdiaMLM">Maria L. Mellus</name>, becoming the first unmarried women teachers allowed to live outside the <name type="place"> Wheaton Female Seminary</name> Boarding House, called "Cottagers" by <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>; described as the delicate vine to Mellus' oak, frequently referred to as "Annie." Frequently visited <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> and traveled with her.  House willed to <name type="place"> Wheaton Female Seminary </name>, later sold and proceeds used for scholarships; memorial lecture series established after her death. 
+        </item>
+        <item>
+            <persName xml:id="ebwdiaAES">
+                <forename>A. Ellen</forename>
+                <surname> Stanton </surname>,
+            </persName>
+            (1834-1924) Elegant woman who had lived in <name type="place">Europe</name> for several years, published My Life in Paris Fifty Years Ago (1922). <name type="place"> Wheaton Female Seminary </name> Teacher of French, Mental and Moral Science, Butler's Analogy 1871-97; recommended by <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> as Principal 1880-1897; introduced limited student self-government; <name type="place"> Wheaton Female Seminary </name> enrollment declined because of development of public high school system and growing number of colleges granting degrees to women. Friend of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>, visiting her almost every day during her principalship, instituted celebration of Founders Day on <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> birthday in 1889; frequently joined <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> on her vacations at the <name type="place">Isles of Shoals</name>. A dormitory was named in her honor, 1921.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaBB">
+              <forename>Benjamin</forename>
+                <surname>Briggs</surname>,
+            </persName>
+            <name type="place">Norton</name> local; possibly Benjamin J. Briggs, b. 1833.  He and his wife performed heavy cleaning in <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> house. 
+        </item>
+        <item>
+            <persName xml:id="ebwdiaCC">
+               <forename>Cynthia</forename>
+                <surname>Chapin</surname>,
+            </persName>
+            Wife of <name type="person" key="ebwdiaAC">Adolphus Chapin</name>.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaCCM">
+                
+                <forename>Caroline Cutler</forename>
+                <surname>Plimpton Mrs. (Albert) Metcalf</surname>,
+            </persName>
+            (1809-1888)  Began teaching at aged 16, married in 1835 but widowed in 1837; taught in <name type="place">Mendon MA</name>, <name type="place">Auburn NY</name>, <name type="place">Machias ME</name>, <name type="place">Smithfield RI</name>, and <name type="place">East Boston, MA</name> before coming to <name type="place"> Wheaton Female Seminary </name>.  <name type="place"> Wheaton Female Seminary </name> Teacher of Moral Science, Butler's Analogy 1874-76; Principal 1850-1876. <name type="place"> Wheaton Female Seminary's </name> strongest Principal, her attention to detail and strong executive powers brought stability to <name type="place"> Wheaton Female Seminary </name> by improving physical conditions and curriculum, attracting creative teachers, and increasing enrollment; hired first full-time physical education instructor (her niece <name type="person">Ellen Plimpton</name>); experimented with correspondence and teacher-training courses, and co-education; not above threatening resignation to coerce trustees to comply with her wishes. Friend and frequent visitor of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>, even after retirement.  Original boarding house, demolished in 1932-33, and dormitory replacing it in 1933, named in her memory.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaCMP">
+              
+                <forename>Clara M.</forename>
+                <surname>Pike</surname>,
+            </persName>
+            (?-1933) W1866; <name type="place"> Wheaton Female Seminary </name> Teacher of English Branches 1869-71, Natural Sciences 1871-1901.  First met <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> as a homesick young student.  A strong advocate for the teaching of sciences and improvements in science facilities, organized lecture series by faculty from <name type="place">Harvard</name> and <name type="place">M.I.T.</name>; one of the most beloved 19th Century teachers.  In later years a daily visitor of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>; often joined <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> on her vacations at the <name type="place">Isles of Shoals</name>.  A bird feeder and bench designed in her memory by <name type="person">Ralph Adams Cram</name> is placed by <name type="place"> Madeleine Wallace Clark Libray</name>.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaDA">
+               
+                <forename>David</forename>
+                <surname>Arnold</surname>,
+            </persName>
+            <name type="place">Norton</name> local; frequent destination of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> rides.
+            
+        </item>
+        <item>
+            <persName xml:id="ebwdiaDrB">
+                <roleName>Doctor</roleName>
+                
+                <surname>Blodgett</surname>,
+            </persName>
+            Frequently made house calls to <name type="person" key="ebwdiaEBW">Eilza B. Wheaton</name>.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaDrC">
+                <roleName>Doctor </roleName>
+                
+                <surname>Clark</surname>,
+            </persName>
+           NO INFORMATION LISTED.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaDW">
+               
+                <forename>Daniel</forename>
+                <surname>Wheaton</surname>,
+            </persName>
+            Cousin of <name type="person"> Laban Morey Wheaton </name>; <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> loans money to his son <name type="person">Fred</name>, but puts <name type="person" key="ebwdiaDW">Daniel Wheaton's</name> name on note.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaDrG">
+                <roleName>Doctor</roleName>
+                
+                <surname>Garrett</surname>,
+            </persName>
+            <name type="place">Boston</name> Doctor who treated <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> with Electrical Treatments.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaDrAR">
+                <roleName>Doctor</roleName>
+                <forename>Arthur M.</forename>
+                <surname>Round</surname>,
+            </persName>
+            (1852-?) Frequently made house calls to <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> and <name type="person">Dr. Benjamin M. Round</name> (1816-?) who opened homeopathic practice in 1844, had 5 children, and had treated <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> and <name type="person"> Laban Morey Wheaton </name>; still in Norton in 1927.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaDrTS">
+                <roleName>Reverend</roleName>
+                <forename>Thomas</forename>
+                <surname>Shephard D.D.</surname>,
+            </persName>
+            (1792-?) Graduated <name type="place">Boston University</name> in 1813, <name type="place">Andover Theological Seminary</name> in 1816.  Pastor of <name type="place">Bristol R.I.</name> Congregational Church 1835-?, sometimes supplied pulpit of <name type="place">West Taunton Congregational Church</name>  (Image in Clark's History of Norton, p. 495).
+        </item>
+        <item>
+            <persName xml:id="ebwdiaEB">
+               
+                <forename>Ellen</forename>
+                <surname>Beane</surname>,
+            </persName>
+            W1863; <name type="place"> Wheaton Female Seminary </name> Teacher of German 1872-73, 1882-83; daughter of <name type="person" key="ebwdiaEKB"> Eliza Knight Beane </name>, frequent visitor at <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> house, and frequently joined <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> and <name type="person" key="ebwdiaEKB"> Eliza Knight Beane </name> on vacation travels; given <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> Power of Attorney in 1874. Referred to in diaries as "Nellie."
+        </item>
+        <item>
+            <persName xml:id="ebwdiaEBW">
+                
+                <forename>Eliza Baylies Chapin</forename>
+                <surname>Wheaton</surname>,
+            </persName>
+            (1809-1905) Born in <name type="place">Northbridge, MA</name>, the seventh of ten children, family moved to <name type="place">Uxbridge</name> in 1823, educated at <name type="place">Uxbridge Academy</name> and <name type="place">Ebenezer Bailey's Young Ladies High School</name> in <name type="place">Boston</name>. Wife of <name type="person">Laban Morey Wheaton</name>, daughter in-law of <name type="person">Judge Laban Wheaton</name>; persuaded the Judge to found <name type="place">Wheaton Female Seminary</name> in 1834.  After her husband's death in 1865, she assumed control of his business interests and indirect control of <name type="place"> Wheaton Female Seminary </name>, but held no official position there.  Attended Female Prayer Meetings at Boarding House, sometimes ate in dining hall, frequently visited teachers in Boarding House, hosted June tea party for <name type="place"> Wheaton Female Seminary </name> graduates until 1898, and gave each senior a bouquet for graduation until her death. A deeply religious woman, dignified and reserved, greatly attached to friends and family, hospitable, charitable to friends and strangers, benefactor of town of <name type="place">Norton</name> (Public Library, 1888), <name type="place">Trinitarian Congregational Church</name> (founder 1832, renovations 1882), clever businesswoman.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaEC">
+                
+                <forename>Ellen</forename>
+                <surname>Carpenter</surname>,
+            </persName>
+            Possibly Ellen F. Carpenter W1855-58 OR daughter of <name type="place">Norton</name> local <name type="person">Daniel Carpenter</name>, b. 1843 OR <name type="person">Mrs. Carpenter</name> (1800-1900) a <name type="place">Norton</name> neighbor. 
+        </item>
+        <item>
+            <persName xml:id="ebwdiaEKB">
+                
+                <forename>Eliza R. Knight (Mrs. Rev. Samuel) </forename>
+                <surname>Beane</surname>,
+            </persName>
+            (1813-1899) Teacher at <name type="place">Ipswich Seminary</name> before becoming <name type="place"> Wheaton Female Seminary </name> Principal 1838-1840; arranged <name type="place"> WFS </name>' first regular course of study, devised <name type="place"> Wheaton Female Seminary </name> seal and motto "Who drinks will thirst for more," first senior class graduated during her term. After the 1865 death of <name type="person">Rev. Beane</name> (who was a <name type="place"> Wheaton Female Seminary </name> Trustee and pastor of <name type="place">Norton's</name> <name type="place">Trinitarian Congregational Church</name> [<name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name>church] (1860-65) <name type="person" key="ebwdiaEKB"> Eliza Knight Beane </name> kept house for daughter <name type="person" key="ebwdiaFVB">Florence Vose Beane</name> in <name type="place">Worcester</name>, until a fall broke both her arms; she joined <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> in <name type="place">Norton</name>, sold her furniture in 1869 and became the live-in companion of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> until her own death; although frequently ill, she seems to have maintained some independence of action; had household "duties" and frequently did errands for <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>; sat opposite <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> at table to serve. <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> refers to as <name type="person" key="ebwdiaEKB">Mrs. B"</name> or <name type="person" key="ebwdiaEKB">"Mrs. Beane"</name> in diaries. Her daughters <name type="person" key="ebwdiaEB">Ellen Beane</name> and <name type="person" key="ebwdiaFVB">Florence Vose Beane</name> were also frequent visitors and traveling companions of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>. 
+        </item>
+        <item>
+            <persName xml:id="ebwdiaEMH">
+                
+                <forename>Ellen M.</forename>
+                <surname>Haskell</surname>,
+            </persName>
+            (1835-1934) <name type="place"> Wheaton Female Seminary </name> principal 1876-1879, had the misfortune to succeed the extremely popular <name type="person" key="ebwdiaCCM">Caroline Cutler Metcalf</name>, and to endure the disruptive expansion of Seminary Hall; abolished or modified many of the rules developed by <name type="person" key="ebwdiaCCM">Caroline Cutler Metcalf</name>; perceived by Trustees and <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> as lacking commitment to the religious education of the students.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaFA">
+                
+                <forename>Fannie</forename>
+                <surname>Allen</surname>,
+            </persName>
+            <name type="place">Norton</name> Local.  Possibly Fannie Florence Allen (Mrs. John Franklin) Simmons (ca. 1853-1928) W1873.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaFH">
+                <roleName>Reverend</roleName>
+                <forename>Franklin</forename>
+                <surname>Holmes</surname>,
+            </persName>
+            (1823-?) Graduated <name type="place">Yale</name> 1846 and <name type="place">Andover Theological Seminary</name> 1852; married <name type="person" key="ebwdiaMSH">Martha Sawyer Holmes</name> 1855, had two children.  Pastor of <name type="place">Norton's Trinitarian Congregational Church</name> [<name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> church] 1852-59, lived in "<name type="place"> Holmes Cottage </name>" first house west of <name type="person" key="ebwdiaEBW"> Eliza B. Wheaton's</name>; <name type="place"> Wheaton Female Seminary </name> Trustee 1853-59, drafted 1858 resolutions establishing permanent Trustee committees.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaFVB">
+                
+                <forename>Florence Vose</forename>
+                <surname>Beane</surname>,
+            </persName>
+            (ca. 1841-1882) Daughter of <name type="person" key="ebwdiaEKB"> Eliza Knight Beane </name>; W1862; <name type="place"> Wheaton Female Seminary </name> Teacher 1864-65. taught in <name type="place">Worcester High School</name> 1865-?.  After the <name type="person">Rev. Beane's</name> death in 1865, <name type="person" key="ebwdiaEKB"> Eliza Knight Beane </name> kept house for <name type="person" key="ebwdiaFVB"> Florence Vose Beane</name> in <name type="place">Worcester</name> for some time, until <name type="person" key="ebwdiaEKB"> Eliza Knight Beane </name> fell and broke both arms, when she moved into <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name>house (1869). Vacationed with <name type="person" key="ebwdiaEKB"> Eliza Knight Beane </name> and <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>. Referred to in diaries as "Flo." 
+        </item>
+        <item>
+            <persName xml:id="ebwdiaGW">
+                <roleName>Senior </roleName>
+                <forename>George W. </forename>
+                <surname>Wild </surname>,
+            </persName>
+            (1828-?) Cousin, business agent and secretary of <name type="person">Laban Morey Wheaton</name>, he and later his son <name type="person">Alfred</name> continued this activity for <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> after <name type="person"> Laban Morey Wheaton's </name> death; a man of energy and generosity.  <name type="person" key="ebwdiaMrsEW">Mrs. Elizabeth Wild</name> became close friend of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>, who lavished affection on their children, especially <name type="person" key="ebwdiaMW">Mary Wild</name>, and her brothers <name type="person">Laban E. Wild</name> and <name type="person">Georgy</name>. Lived in first house east of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name>, still called <name type="place">"Wild House"</name> and used for faculty housing. Referred to in diaries as "Mr. Wild" or "George" or "Geo."
+        </item>  
+        <item>
+            <persName xml:id="ebwdiaHH">
+               
+                <forename>Henry</forename>
+                <surname>Hunt</surname>,
+            </persName>
+            Did work on <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> house.  Possibly Henry Hunt b. 1815 OR his son <name type="person">Henry L. Hunt</name> b. 1844.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaHP">
+                
+                <forename>Harriet E.</forename>
+                <surname>Paine</surname>,
+            </persName>
+            W1862. Author, historian, friend and biographer of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>; published The Life of <name type="person" key="ebwdiaEBW">Eliza Baylies Wheaton</name>: A Chapter in the History of the Higher Education of Women (Cambridge: The Riverside Press, 1907).
+        </item>
+        <item>
+            <persName xml:id="ebwdiaJC">
+                
+                <forename>Judson</forename>
+                <surname>Chapin</surname>,
+            </persName>
+            (ca. 1798-1887) Brother of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>, liked to give her advice; lived in <name type="place">West Roxbury</name>; daughter <name type="person">Anna G. (Mrs. Frank A.) Hewins</name> W187?.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaJHY">
+                
+                <forename>James Harvey</forename>
+                <surname>Young</surname>,
+            </persName>
+            (1830-1918) Born in <name type="place">Salem, MA</name>; studied with <name type="person">John Pope</name>; traveled as primitive portraitist; rented studios in <name type="place">Boston</name> on <name type="place">Tremont Street</name> and later in the <name type="place">Mercantile Library Building</name>; friend of <name type="person">William Morris Hunt</name>; Director of fine arts exhibitions at <name type="place">Boston Atheneum</name> (1861); lost all his works in the Great Fire of Boston (1872) and set up studio at <name type="place">West St.</name>; avoided publicity and seldom exhibited; a founder of Boston Art Club.  Painted a posthumous portrait of <name type="person"> Laban Morey Wheaton </name> in 1865/6, and a companion portrait of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> in 1872.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaJRR">
+              
+                <forename>John R.</forename>
+                <surname>Rogerson</surname>,
+            </persName>
+            (?-1880) Owner of <name type="place">Rogerson's Store</name> on <name type="place">Main Street</name> between <name type="place">Mansion House</name> and <name type="place">Howard Street</name>.  <name type="place"> Wheaton Female Seminary </name> Trustee 1857-63, 1864-1880; Treasurer 1858-61, 1864-80.  d. 30 Apr. 1880.  <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> frequently visits him to discuss <name type="place"> Wheaton Female Seminary </name> business.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaKW">
+                
+                <forename>Kate</forename>
+                <surname>Wood</surname>,
+            </persName>
+            Possibly <name type="place">Norton</name> local Catherine L. Wood b. 1832, daughter of <name type="person">Elkanah</name> and <name type="person">Lemira Wood Jr.</name> OR <name>Kate B. Pond (Mrs. Eugene S.) Wood</name> W1865-67 of <name type="place">Pawtucket, RI.</name>
+        </item>
+        <item>
+            <persName xml:id="ebwdiaLW">
+              
+                <forename>Lucy</forename>
+                <surname>Wild</surname>,
+            </persName>
+            Daughter of <name type="person" key="ebwdiaGW">George Wild</name> and <name type="person" key="ebwdiaMrsEW"> Mrs. Elizabether Wild </name> and frequent caller on <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>.
+            
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMA">
+                
+                <forename>Mary</forename>
+                <surname>Atkinson</surname>,
+            </persName>
+            Daughter of <name type="person" key="ebwdiaTA">Timothy Atkinson</name>.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMBL">
+                
+                <forename>Mary Johnson Bailey (Mrs. David A.) </forename>
+                <surname>Lincoln</surname>,
+            </persName>
+            (1844-1921) Born in <name type="place">South Attleboro, MA</name>; began work at age four, daughter of <name type="person" key="ebwdiaMrsSB">>Mrs. Bailey</name>, lived in <name type="place">So. Attleboro</name> until father's death, then moved to <name type="place">Norton</name> where <name type="person" key="ebwdiaMrsSB">>Mrs. Bailey</name> kept boarding house for <name type="person"> Laban Morey Wheaton's </name> straw workers and boarding house carpenters; W1864.  In 1865 married <name type="person">David A. Lincoln</name>, manufacturer of stoves at <name type="place">Norton Furnaces</name>.  Following financial reverses in 1870s, moved to <name type="place">Boston</name>, took in sewing, etc., working for $.12 per hour.  One of first teachers (1879-85) at <name type="place">Boston Cooking School</name>, which she made nationally famous; author of Mrs. Lincoln's Boston Cook Book (1884), Boston School Kitchen Text-book (1887) and many other articles and cookbooks; <name type="place"> Wheaton Female Seminary's</name> most widely known alumna, described as "<name type="person">Judge Wheaton's</name> ideal of the Wheaton graduate." 
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMCJ">
+                
+                <forename>Mary Chapin (Mrs. Willard)</forename>
+                <surname>Judson</surname>,
+            </persName>
+            (1803-1876) Favorite sister of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>; in 1829 married <name type="person">Willard Judson</name>, son of <name type="person">Rev. Samuel Judson</name> of <name type="place">Uxbridge</name>; lived in <name type="place">Uxbridge</name>; cared for mother <name type="person">Abigail Chapin</name> for three years after death of father; adopted <name type="person">Mary Anna Fox (Mrs. Lawson A.) Seagrave</name> W1865-67. 
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMCS">
+                
+                <forename>Mary Abbie Chapin (Mrs. John Jay)</forename>
+                <surname>Smith</surname>,
+            </persName>
+            (ca. 1852-1940) Daughter of <name type="person" key="ebwdiaAC">Adolphus Chapin</name>, niece of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> and lived with her in 1872-1873, W1873; frequently visited <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> and vacationed and traveled with her; frequent recipient of gifts from <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>; later married and moved to <name type="place">Highlands, NC</name>, where they ran hotel and sawmill purchased for them by <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>.  Inherited <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> personal papers including her diaries (1850-1905), offered to sell them to the College in 1930s but offer declined; wrote portions of, and made <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> diaries available for use in <name type="person" key="ebwdiaHP">Harriet E. Paine's</name> biography of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> (1907).  Referred to in diaries as "Mary," "Mary Abbie" or "Abbie."
+        </item>
+        <item>
+            <persName xml:id="ebwdiaML">
+               
+                <forename>Mary</forename>
+                <surname>Lynch</surname>,
+            </persName>
+            <name type="place">Norton</name> local.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMLM">
+                
+                <forename>Maria L.</forename>
+                <surname>Mellus</surname>,
+            </persName>
+            <name type="place"> Wheaton Female Seminary </name> Teacher of all forms of studio art including oil painting, crayon, pencil, drawing and penmanship 1854-1878.  In 1871 moved into little house next to <name type="place"> Holmes Cottage </name> (second house west of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name>) with <name type="person" key="ebwdiaAEC">Ann E. Carter</name>, becoming the first unmarried women teachers allowed to live outside the <name type="place"> Wheaton Female Seminary </name> Boarding House, called "Cottagers" by <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>.  Described as the oak to <name type="person">Carter's</name> delicate vine.  Frequently visited <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> and traveled with her.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMM">
+                
+                <forename>Margaret</forename>
+                <surname>Magner</surname>,
+            </persName>
+            Servant and cook of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> (1872-?), from <name type="place">Webster MA</name>; related to <name type="person">James Magner</name>. Referred to in diaries as "Maggie." Catholic, probably Irish.  Usually takes vacation during <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> vacations.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMrC">
+                <roleName>Mr.</roleName>
+               
+                <surname>Crane</surname>,
+            </persName>
+            <name type="person">Norton</name> local; worked on <name type="person" key="ebwdiaEBW"> Eliza B. Wheaton's </name> house.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMrsMB">
+                <roleName>Mrs.</roleName>
+                <forename>Mabel</forename>
+                <surname>Babbitt</surname>,
+            </persName>
+            <name type="person">Norton</name> local; seamstress for <name type="person" key="ebwdiaEBW"> Eliza B. Wheaton</name> in 1872, coming to house almost daily; later member of <name type="person" key="ebwdiaEBW"> Eliza B. Wheaton's</name> social group.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMrsSB">
+                
+                <forename>Mrs. Sarah Morgan Johnson (Mrs. Rev. John Milton Burnham)</forename>
+                <surname>Bailey</surname>,
+            </persName>
+            Mother of <name type="person" key="ebwdiaMBL"> Mary Bailey Lincoln</name>. Widow of pastor of <name type="place">South Attleboro, MA, First Congregational Church</name> (1850), with three young children when asked by <name type="person"> Laban Morey Wheaton </name> to run the boarding house connected with his straw manufactory, later boarded the men building the new <name type="place"> Wheaton Female Seminary </name> boarding house (1857).  <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> advised "re" (?) children's companions and offered aid during death of son.  In 1870s, frequently visited <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> and sewed for her.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMrsBB">
+                <roleName>Mrs.</roleName>
+                <forename>Benjamin</forename>
+                <surname>Briggs</surname>,
+            </persName>
+            <name type="place">Norton</name> local; does heavy cleaning in <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> house, sometimes with assistance of husband; later brings child <name type="person">"Issy."</name> 
+            
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMrsT">
+                <roleName>Mrs.</roleName>
+              
+                <surname>Tripp</surname>,
+            </persName>
+            <name type="place">Norton</name> local.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMrsTA">
+                <roleName>Mrs. </roleName>
+                <forename>Timothy</forename>
+                <surname>Atkinson</surname>,
+            </persName>
+            Wife of <name type="person" key="ebwdiaTA">Timothy Atkinson </name>, mother of <name type="person" key="ebwdiaMA">Mary Atkinson</name>.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMrsEW">
+                <roleName>Mrs.</roleName>
+                <forename>Elizabeth B. </forename>
+                <surname>Wild</surname>,
+            </persName>
+            (1828-?) Born in <name type="place">NJ</name>; married to <name type="person" key="ebwdiaGW">George Wild</name>; close friend of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>, who lavished affection on the Wild children, especially <name type="person">Alfred</name>, <name type="person" key="ebwdiaMW"> Mary Wild</name>, <name type="person">Laban E. Wild</name> and <name type="person">Georgy</name>; lived in next house east of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name>; when older, committed to <name type="place">Taunton Asylum</name>.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMrH">
+                <roleName>Mr.</roleName>
+                
+                <surname>Haggerty</surname>,
+            </persName>
+            Worked on the home of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>; possibly Charles Hagerty (1821-?).
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMSH">
+                
+                <forename>Martha Sawyer</forename>
+                <surname>Holmes</surname>,
+            </persName>
+            (1822-1912) W1839 first graduating class. <name type="place">Wheaton Female Seminary</name> Teacher 1841, followed by a period of ill health when she lived with the Wheatons; Principal 1842-1846, during her tenure students experienced religious revival and <name type="person"> Laban Morey Wheaton </name> built a Gymnasium but enrollment declined.  Married <name type="person" key="ebwdiaFH">Rev. Franklin Holmes</name> 1846; friendship with <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> further developed when <name type="person" key="ebwdiaFH">Rev. Holmes</name> was called as pastor to <name type="place">Norton's Trinitarian Congregational Church</name> [<name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> church] 1846-?, lived in "<name type="place"> Holmes Cottage </name>," first house west of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name>.  Called "Sister Mattie" by <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>, she traveled with <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> and <name type="person"> Laban Morey Wheaton </name> to <name type="place">New York City</name> in 1850 when <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> underwent surgery, and looked after the Wheaton house when <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> and <name type="person"> Laban Morey Wheaton </name> traveled to <name type="place">Europe</name> in 1862.  Lived in <name type="place">Brooklyn, NY</name> in 1870s, where <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> visited her.  <name type="place"> Holmes Cottage </name>, originally built by <name type="person">Laban Morey Wheaton</name> for his mother, was raised in 1965 to make room for the <name type="place">Elisabeth Amen Nursery School</name>.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMVE">
+                
+                <forename>Martha E. Vose</forename>
+                <surname>Emerson</surname>,
+            </persName>
+            (1816-?) Educated by <name type="person"> Mary Lyon</name> at <name type="place">Ipswich Academy</name> and brought to <name type="place"> Wheaton Female Seminary </name> as Teacher (1837-40) by <name type="person" key="ebwdiaEKB">Eliza Knight</name>; <name type="place"> Wheaton Female Seminary</name> Principal 1840-1842, during her tenure students experienced religious revival but <name type="place">Wheaton Female Seminary</name> still suffering aftershocks of Principal <name type="person">Eunice Caldwell's</name> departure (1837).  Associate Principal of <name type="place">Bradford Academy</name> (1842-1847). In 1847 married <name type="person" key="ebwdiaAE">Rev. Alfred Emerson</name>, one of most influential <name type="place">Wheaton Female Seminary</name> Trustees 1872-1893;  mother of <name type="person">Annie Austin Emerson</name> W1871 (<name type="place">Wheaton Female Seminary</name> teacher of Mathematics and English Branches 1872-76) and <name type="person">Frances Vose Emerson</name> W1872 (<name type="place">Wheaton Female Seminary</name> teacher of Rhetoric, Literature and History 1881-86, Trustee 1922-42); the college's main dining hall was named for the Emerson family.  Life-long friend and confidante of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>, frequent visitor, and occasionally traveled with <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaMW">
+                
+                <forename>Mary Elizabeth Wild (Mrs. Herbert Custis)</forename>
+                <surname>Joyner</surname>,
+            </persName>
+            (ca. 1854-1938) W1875. Daughter of GW and frequent caller of EBW.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaRMC">
+                
+                <forename>Rosy McCabe (Mrs. Patrick)</forename>
+                <surname>Cronan</surname>,
+            </persName>
+            (?-1874) Faithful and favorite servant of <name type="person" key="ebwdiaEBW"> Eliza B. Wheaton</name> for 9 years (1863-1872); married <name type="person">Patrick Cronan</name> 1872, moved to <name type="place">North Dighton</name>; first child born and died 1873, daughter born Jan. 1874.  Rosy McCabe Cronan died Feb. 1874; probably Irish Catholic, as <name type="person" key="ebwdiaMM"> Margaret Magner</name> attended her funeral while <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> sent flowers.  <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> gave <name type="person">Patrick</name> financial assistance after Rosy McCabe Cronan's death and paid for her grave stone; <name type="person">Patrick</name> visited <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> with baby.  Referred to in diaries as "Rosy" or "Rosie."
+        </item>
+        <item>
+            <persName xml:id="ebwdiaSAC">
+                
+                <forename>Samuel Austin</forename>
+                <surname>Chapin</surname>,
+            </persName>
+            (1811-1890) Favorite Brother of <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name>, often called "Austin;" moved with parents and brothers (including <name type="person" key="ebwdiaAC">Adolphus</name>) to <name type="place">White Pigeon, Michigan</name>; given title Brigadier-General for his action in the Black Hawk War (1832).  Joined the Gold Rush to <name type="place">California</name> 1849-1884, died there in 1890; his wife and children lived near <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> during some of his sojourn in <name type="place">California</name>. He and wife <name type="person">Maria</name> lived with <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> 1884-1890; <name type="person" key="ebwdiaSAC">Samuel Austin Chapin</name> often commissioned by <name type="person" key="ebwdiaEBW">Eliza B. Wheaton</name> to assist other members of their family; active in local politics, <name type="person" key="ebwdiaSAC">Samuel Austin Chapin</name> largely responsible for the enclosing of <name type="place">Norton Green</name>.  <name type="place">Wheaton Female Seminary</name> Trustee 1890 (but died before could attend first meeting); <name type="person">Maria</name> paralyzed soon after their arrival in <name type="place">Norton</name>.  <name type="place">Wheaton Female Seminary</name> first brick dormitory named for <name type="person" key="ebwdiaSAC">Samuel Austin Chapin</name>, 1901. 
+        </item>
+        <item>
+            <persName xml:id="ebwdiaSWG">
+                
+                <forename>Samuel W.</forename>
+                <surname>Gusher</surname>,
+            </persName>
+            Hired to work <name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> farm (1872-1874); occasionally helped work on house; hired his brother <name type="person">Thomas Jefferson Gusher</name> to work farm 1874.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaTA">
+                <roleName>Reverend</roleName>
+                <forename>Timothy</forename>
+                <surname>Atkinson</surname>,
+            </persName>
+            Minister at <name type="place">Norton's Trinitarian Congregational Church</name> [<name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> church] 1872-75; father of <name type="person" key="ebwdiaMA">Mary Atkinson</name>.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaWA">
+                
+                <forename>Wheaton</forename>
+                <surname>Allen</surname>,
+            </persName>
+            Cousin of <name type="person">Laban Morey Wheaton's</name>?  Possibly <name type="person">Dr. Allen</name> who visited in June.
+        </item>
+        <item>
+            <persName xml:id="ebwdiaWD">
+                <roleName>Reverend</roleName>
+                <forename>William N.T.</forename>
+                <surname>Dean</surname>,
+            </persName>
+            Minister at <name type="place">Norton's Trinitarian Congregational Church</name> [<name type="person" key="ebwdiaEBW">Eliza B. Wheaton's</name> church] 1876-81.
+        </item>
+       <!-- <item>
+            <persName xml:id="ID">
+                <roleName>INSERT HERE</roleName>
+                <forename>INSERT HERE</forename>
+                <surname>INSERT HERE</surname>,
+            </persName>
+            OTHERS: Mr + Mrs. Freeman, Miss Macomber, Mr McCabe, Mr Richardson, Mr Rogerson, Mr McCabe, Miss Stickman
+        </item>-->
+        
+        
+        
+    </list>
+</div>

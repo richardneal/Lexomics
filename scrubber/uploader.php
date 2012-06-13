@@ -32,8 +32,9 @@ if ((($_FILES["file"]["type"] == "text/plain")
   }
 else
   {
-  header('Location: ' . $_SERVER['HTTP_REFERER']);
-  die();
+    echo $_FILES["file"]["type"];
+  //header('Location: ' . $_SERVER['HTTP_REFERER']);
+  //die();
   }
 ob_flush();
 ?>

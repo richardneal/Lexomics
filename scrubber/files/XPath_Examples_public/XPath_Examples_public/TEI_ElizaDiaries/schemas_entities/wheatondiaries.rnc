@@ -1,0 +1,4682 @@
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace rng = "http://relaxng.org/ns/structure/1.0"
+namespace s = "http://www.ascc.net/xml/schematron"
+default namespace tei = "http://www.tei-c.org/ns/1.0"
+namespace teix = "http://www.tei-c.org/ns/Examples"
+namespace xlink = "http://www.w3.org/1999/xlink"
+namespace xsi = "http://www.w3.org/2001/XMLSchema-instance"
+
+# Schema generated from ODD source 2008-04-09T15:10:41Z. 
+
+#
+macro.paraContent =
+  (text | model.gLike | model.phrase | model.inter | model.global)*
+macro.limitedContent = (text | model.limitedPhrase | model.inter)*
+macro.phraseSeq = (text | model.gLike | model.phrase | model.global)*
+macro.phraseSeq.limited = (text | model.limitedPhrase | model.global)*
+macro.specialPara =
+  (text
+   | model.gLike
+   | model.phrase
+   | model.inter
+   | model.divPart
+   | model.global)*
+macro.xtext = (text | model.gLike)*
+att.ascribed.attributes = att.ascribed.attribute.who, empty
+att.ascribed.attribute.who =
+  
+  ## indicates the person, or group of
+  ##	people, to whom the element content is ascribed.
+  attribute who {
+    list { xsd:anyURI+ }
+  }?
+att.damaged.attributes =
+  att.damaged.attribute.extent,
+  att.damaged.attribute.hand,
+  att.damaged.attribute.agent,
+  att.damaged.attribute.degree,
+  att.damaged.attribute.group,
+  empty
+att.damaged.attribute.extent =
+  
+  ## indicates approximately how much text is in the damaged area,
+  ## in letters, minims, inches, or any appropriate unit, where this
+  ## cannot be deduced from the contents of the tag.
+  attribute extent {
+    list {
+      xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }+
+    }
+  }?
+att.damaged.attribute.hand =
+  
+  ## In the case of damage (deliberate defacement, inking out,
+  ##       etc.) assignable to a distinct hand, signifies the hand
+  ##       responsible for the damage.
+  attribute hand { xsd:anyURI }?
+att.damaged.attribute.agent =
+  
+  ## categorizes the cause of the damage, if it can be identified.
+  ## Sample values include: 1] rubbing; 2] mildew; 3] smoke
+  attribute agent { xsd:Name }?
+att.damaged.attribute.degree =
+  
+  ## Signifies the degree of damage according to a convenient scale.
+  ## The damage tag with the degree attribute should
+  ## only be used where the text may be read with some confidence; text
+  ## supplied from other sources should be tagged as supplied.
+  attribute degree { text }?
+att.damaged.attribute.group =
+  
+  ## assigns an arbitrary number to each stretch of damage
+  ##       regarded as forming part of the same physical phenomenon.
+  attribute group { xsd:nonNegativeInteger }?
+att.datable.w3c.attributes =
+  att.datable.w3c.attribute.period,
+  att.datable.w3c.attribute.when,
+  att.datable.w3c.attribute.notBefore,
+  att.datable.w3c.attribute.notAfter,
+  att.datable.w3c.attribute.from,
+  att.datable.w3c.attribute.to,
+  empty
+att.datable.w3c.attribute.period =
+  
+  ## supplies a pointer to some location defining a named
+  ##       period of time within which the datable item is understood to
+  ##       have occurred.
+  attribute period { xsd:anyURI }?
+att.datable.w3c.attribute.when =
+  
+  ## supplies the value of a date or time in a standard form,
+  ##       e.g. yyyy-mm-dd.
+  attribute when {
+    xsd:date
+    | xsd:gYear
+    | xsd:gMonth
+    | xsd:gDay
+    | xsd:gYearMonth
+    | xsd:gMonthDay
+    | xsd:time
+    | xsd:dateTime
+  }?
+att.datable.w3c.attribute.notBefore =
+  
+  ## specifies the earliest possible date for the event in
+  ##	  standard form, e.g. yyyy-mm-dd.
+  attribute notBefore {
+    xsd:date
+    | xsd:gYear
+    | xsd:gMonth
+    | xsd:gDay
+    | xsd:gYearMonth
+    | xsd:gMonthDay
+    | xsd:time
+    | xsd:dateTime
+  }?
+att.datable.w3c.attribute.notAfter =
+  
+  ## specifies the latest possible date for the event in
+  ##	  standard form, e.g. yyyy-mm-dd.
+  attribute notAfter {
+    xsd:date
+    | xsd:gYear
+    | xsd:gMonth
+    | xsd:gDay
+    | xsd:gYearMonth
+    | xsd:gMonthDay
+    | xsd:time
+    | xsd:dateTime
+  }?
+att.datable.w3c.attribute.from =
+  
+  ## indicates the starting point of the period in standard form, e.g. yyyy-mm-dd.
+  attribute from {
+    xsd:date
+    | xsd:gYear
+    | xsd:gMonth
+    | xsd:gDay
+    | xsd:gYearMonth
+    | xsd:gMonthDay
+    | xsd:time
+    | xsd:dateTime
+  }?
+att.datable.w3c.attribute.to =
+  
+  ## indicates the ending point of the period in standard
+  ##	  form, e.g. yyyy-mm-dd.
+  attribute to {
+    xsd:date
+    | xsd:gYear
+    | xsd:gMonth
+    | xsd:gDay
+    | xsd:gYearMonth
+    | xsd:gMonthDay
+    | xsd:time
+    | xsd:dateTime
+  }?
+att.datable.attributes = empty
+att.declarable.attributes = att.declarable.attribute.default, empty
+att.declarable.attribute.default =
+  
+  ## indicates whether or not this element is selected by default when
+  ## its parent is selected.
+  [ a:defaultValue = "false" ]
+  attribute default {
+    
+    ## This element is selected if its parent is selected
+    "true"
+    | 
+      ## This element can only be selected explicitly, unless it is the
+      ## only one of its kind, in which case it is selected if its parent is selected.
+      "false"
+  }?
+att.declaring.attributes = att.declaring.attribute.decls, empty
+att.declaring.attribute.decls =
+  
+  ## identifies one or more declarable elements within the
+  ## header, which are understood to apply to the element bearing this
+  ## attribute and its content.
+  attribute decls {
+    list { xsd:anyURI+ }
+  }?
+att.divLike.attributes = att.divLike.attribute.part, empty
+att.divLike.attribute.part =
+  
+  ## specifies whether or not the division is fragmented by
+  ##		some other structural element, for example a speech which is
+  ##		divided between two or more verse stanzas.
+  [ a:defaultValue = "N" ]
+  attribute part {
+    
+    ## (yes) the division is incomplete in some respect
+    "Y"
+    | 
+      ## (no) either the division is complete, or no claim is made as to its completeness.
+      "N"
+    | 
+      ## (initial) the initial part of an incomplete division
+      "I"
+    | 
+      ## (medial) a medial part of an incomplete division
+      "M"
+    | 
+      ## (final) the final part of an incomplete division
+      "F"
+  }?
+att.duration.w3c.attributes = att.duration.w3c.attribute.dur, empty
+att.duration.w3c.attribute.dur =
+  
+  ## (duration) indicates the length of this element in time.
+  attribute dur { xsd:duration }?
+att.editLike.attributes =
+  att.editLike.attribute.cert,
+  att.editLike.attribute.resp,
+  att.editLike.attribute.evidence,
+  att.editLike.attribute.source,
+  empty
+att.editLike.attribute.cert =
+  
+  ## (certainty) signifies the degree of certainty associated with the
+  ##	intervention or interpretation.
+  attribute cert { "high" | "medium" | "low" | "unknown" }?
+att.editLike.attribute.resp =
+  
+  ## (responsible party) indicates the agency responsible for the
+  ##	intervention or interpretation, for example an editor or transcriber.
+  attribute resp {
+    list { xsd:anyURI+ }
+  }?
+att.editLike.attribute.evidence =
+  
+  ## indicates the nature of the evidence supporting the reliability or
+  ##   accuracy of the intervention or interpretation.
+  ## Suggested values include: 1] internal; 2] external; 3] conjecture
+  attribute evidence {
+    
+    ## there is internal evidence to support the intervention.
+    "internal"
+    | 
+      ## there is external evidence to support the intervention.
+      "external"
+    | 
+      ## the intervention or interpretation has been made by
+      ##	    the editor, cataloguer, or scholar on the basis of their
+      ##	    expertise.
+      "conjecture"
+    | xsd:Name
+  }?
+att.editLike.attribute.source =
+  
+  ## contains a list of one or more pointers indicating the
+  ##       sources which support the given reading.
+  attribute source {
+    list { xsd:anyURI+ }
+  }?
+att.global.attributes =
+  att.global.attribute.xmlid,
+  att.global.attribute.n,
+  att.global.attribute.xmllang,
+  att.global.attribute.rend,
+  att.global.attribute.rendition,
+  att.global.attribute.xmlbase,
+  empty
+att.global.attribute.xmlid =
+  
+  ## (identifier) provides a unique identifier for the element bearing the
+  ##       attribute.
+  attribute xml:id { xsd:ID }?
+att.global.attribute.n =
+  
+  ## (number) gives a number (or other label) for an element, which is
+  ##       not necessarily unique within the document.
+  attribute n {
+    list {
+      xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }+
+    }
+  }?
+att.global.attribute.xmllang =
+  
+  ## (language) indicates the language of the element content using a
+  ##       tag generated according to BCP 47
+  attribute xml:lang { xsd:language }?
+att.global.attribute.rend =
+  
+  ## (rendition) indicates how the element in question was rendered or
+  ##	presented in the source text.
+  attribute rend {
+    list {
+      xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }+
+    }
+  }?
+att.global.attribute.rendition =
+  
+  ## points to a description of the rendering  or
+  ##	presentation used for this element in the source text.
+  attribute rendition {
+    list { xsd:anyURI+ }
+  }?
+att.global.attribute.xmlbase =
+  
+  ## provides a base URI reference with which applications can
+  ##       resolve relative URI references into absolute URI
+  ##       references.
+  attribute xml:base { xsd:anyURI }?
+att.handFeatures.attributes =
+  att.handFeatures.attribute.scribe,
+  att.handFeatures.attribute.script,
+  att.handFeatures.attribute.medium,
+  att.handFeatures.attribute.scope,
+  empty
+att.handFeatures.attribute.scribe =
+  
+  ## gives a standard name or other identifier for the scribe
+  ## believed to be responsible for this hand.
+  attribute scribe { xsd:Name }?
+att.handFeatures.attribute.script =
+  
+  ## characterizes the particular script or writing style used by
+  ## this hand, for example secretary, copperplate, Chancery, Italian, etc.
+  attribute script {
+    list { xsd:Name+ }
+  }?
+att.handFeatures.attribute.medium =
+  
+  ## describes the tint or type of ink, e.g. brown, or other
+  ## writing medium, e.g. pencil
+  attribute medium { xsd:Name }?
+att.handFeatures.attribute.scope =
+  
+  ## specifies how widely this  hand is used in the manuscript.
+  attribute scope {
+    
+    ## only this hand is used throughout the manuscript
+    "sole"
+    | 
+      ## this hand is used through most of the manuscript
+      "major"
+    | 
+      ## this hand is used occasionally in the manuscript
+      "minor"
+  }?
+att.internetMedia.attributes =
+  att.internetMedia.attribute.mimeType, empty
+att.internetMedia.attribute.mimeType =
+  
+  ## (MIME media type) specifies the applicable multimedia internet mail extension (MIME) media type
+  attribute mimeType {
+    xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }
+  }?
+att.measurement.attributes =
+  att.measurement.attribute.unit,
+  att.measurement.attribute.quantity,
+  att.measurement.attribute.commodity,
+  empty
+att.measurement.attribute.unit =
+  
+  ## indicates the units used for the measurement, usually
+  ##       using the standard symbol for the desired units.
+  ## Suggested values include: 1] m (metre); 2] kg (kilogram); 3] s (second); 4] Hz (hertz); 5] Pa (pascal); 6] Ω (ohm); 7] L (litre); 8] t (tonne); 9] ha (hectare); 10] Å (ångström); 11] mL (millilitre); 12] cm (centimetre); 13] dB (decibel); 14] kbit (kilobit); 15] Kibit (kibibit); 16] kB (kilobyte); 17] KiB (kibibyte); 18] MB (megabyte); 19] MiB (mebibyte)
+  attribute unit {
+    
+    ## (metre) SI base unit of length
+    "m"
+    | 
+      ## (kilogram) SI base unit of mass
+      "kg"
+    | 
+      ## (second) SI base unit of time
+      "s"
+    | 
+      ## (hertz) SI unit of frequency
+      "Hz"
+    | 
+      ##  (pascal) SI unit of pressure or stress
+      "Pa"
+    | 
+      ##  (ohm) SI unit of electric resistance
+      "Ω"
+    | 
+      ## (litre) 1 dm³
+      "L"
+    | 
+      ## (tonne) 10³ kg
+      "t"
+    | 
+      ## (hectare) 1 hm²
+      "ha"
+    | 
+      ## (ångström) 10⁻¹⁰ m
+      "Å"
+    | 
+      ## (millilitre) 
+      "mL"
+    | 
+      ## (centimetre) 
+      "cm"
+    | 
+      ## (decibel) see remarks, below
+      "dB"
+    | 
+      ##  (kilobit) 10³ or 1000 bits
+      "kbit"
+    | 
+      ##  (kibibit) 2¹⁰ or 1024 bits
+      "Kibit"
+    | 
+      ##  (kilobyte) 10³ or 1000 bytes
+      "kB"
+    | 
+      ##  (kibibyte) 2¹⁰ or 1024 bytes
+      "KiB"
+    | 
+      ##  (megabyte) 10⁶ or 1 000 000 bytes
+      "MB"
+    | 
+      ##  (mebibyte) 2²⁰ or 1 048 576 bytes
+      "MiB"
+    | xsd:Name
+  }?
+att.measurement.attribute.quantity =
+  
+  ## specifies the number of the specified units that
+  ##       comprise the measurement
+  attribute quantity { xsd:double | xsd:decimal }?
+att.measurement.attribute.commodity =
+  
+  ## indicates the substance that is being measured
+  attribute commodity {
+    list {
+      xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }+
+    }
+  }?
+att.naming.attributes =
+  att.naming.attribute.key,
+  att.naming.attribute.ref,
+  att.naming.attribute.nymRef,
+  empty
+att.naming.attribute.key =
+  
+  ## provides an external means
+  ##  of locating a full definition for the entity (or entities) being named, such as a database record key
+  ##       or other token.
+  attribute key { xsd:string }?
+att.naming.attribute.ref =
+  
+  ## (reference) provides an explicit means
+  ##  of locating a full definition for the entity being named by means of
+  ##  a URI.
+  attribute ref {
+    list { xsd:anyURI+ }
+  }?
+att.naming.attribute.nymRef =
+  
+  ## (reference to the canonical name) provides a means of locating the canonical form
+  ##       (nym) of the names associated with the object
+  ##        named by
+  ##       the element bearing it.
+  attribute nymRef {
+    list { xsd:anyURI+ }
+  }?
+att.placement.attributes = att.placement.attribute.place, empty
+att.placement.attribute.place =
+  
+  ## 
+  ## Suggested values include: 1] infralinear; 2] margin-bot (bottom margin); 3] margin-left (left margin); 4] margin-right (right margin); 5] margin-top (top margin); 6] opposite; 7] overleaf; 8] supralinear; 9] verso; 10] app (apparatus); 11] end; 12] foot; 13] inline; 14] interlinear; 15] inline; 16] mixed
+  attribute place {
+    
+    ## below the line
+    "infralinear"
+    | 
+      ## (bottom margin) in the bottom margin
+      "margin-bot"
+    | 
+      ## (left margin) in the left margin
+      "margin-left"
+    | 
+      ## (right margin) in the right margin
+      "margin-right"
+    | 
+      ## (top margin) in the top margin
+      "margin-top"
+    | 
+      ## on the opposite, i.e. facing, page
+      "opposite"
+    | 
+      ## on the other side of the leaf
+      "overleaf"
+    | 
+      ## above the line
+      "supralinear"
+    | 
+      ## on verso of the sheet or page
+      "verso"
+    | 
+      ## (apparatus) note appears in the apparatus at the foot of the page.
+      "app"
+    | 
+      ## note appears at end of chapter or volume.
+      "end"
+    | 
+      ## note appears at foot of page.
+      "foot"
+    | 
+      ## note appears as a marked paragraph in the body of the text.
+      "inline"
+    | 
+      ## note appears between lines of the text; a less precise form of either infralinear or supralinear.
+      "interlinear"
+    | 
+      ## addition is made in a space left in the witness by an earlier scribe.
+      "inline"
+    | 
+      ## one or more of the other values
+      "mixed"
+    | xsd:Name
+  }?
+att.segLike.attributes =
+  att.segLike.attribute.type, att.segLike.attribute.function, empty
+att.segLike.attribute.type =
+  
+  ## characterizes the type of segment.
+  attribute type { xsd:Name }?
+att.segLike.attribute.function =
+  
+  ## characterizes the function of the segment.
+  attribute function { xsd:Name }?
+att.spanning.attributes = att.spanning.attribute.spanTo, empty
+att.spanning.attribute.spanTo =
+  
+  ## indicates the end of a span initiated by the element
+  ##	bearing this attribute.
+  attribute spanTo { xsd:anyURI }?
+att.transcriptional.attributes =
+  att.transcriptional.attribute.hand,
+  att.transcriptional.attribute.status,
+  att.transcriptional.attribute.seq,
+  empty
+att.transcriptional.attribute.hand =
+  
+  ## signifies the hand of the agent which made the intervention.
+  attribute hand { xsd:anyURI }?
+att.transcriptional.attribute.status =
+  
+  ## indicates the effect of the intervention, for example in
+  ##       the case of a deletion, strikeouts
+  ##       which include too much or too little text, or in the case of an
+  ##       addition, an insertion which duplicates some of the text
+  ##       already present.
+  ## Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] excessEnd; 5] shortStart; 6] shortEnd; 7] partial; 8] unremarkable
+  [ a:defaultValue = "unremarkable" ] attribute status { xsd:Name }?
+att.transcriptional.attribute.seq =
+  
+  ## (sequence) assigns a sequence number related to the order in which
+  ##       the encoded features carrying this attribute are believed to have occurred.
+  attribute seq { xsd:nonNegativeInteger }?
+att.translatable.attributes = att.translatable.attribute.version, empty
+att.translatable.attribute.version =
+  
+  ## specifies the version name or number of the source from
+  ##	which the translated version was derived
+  attribute version {
+    xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }
+  }?
+att.typed.attributes =
+  att.typed.attribute.type, att.typed.attribute.subtype, empty
+att.typed.attribute.type =
+  
+  ## characterizes the element in some sense, using any convenient
+  ##  classification scheme or typology.
+  attribute type { xsd:Name }?
+att.typed.attribute.subtype =
+  
+  ## provides a sub-categorization of the element, if needed
+  attribute subtype { xsd:Name }?
+model.nameLike.agent = name | persName
+model.segLike = seg
+model.hiLike = hi
+model.emphLike = emph | gloss | title
+model.highlighted = model.hiLike | model.emphLike
+model.dateLike = date | time
+model.measureLike = measureGrp | geo
+model.egLike = notAllowed
+model.graphicLike = graphic
+model.offsetLike = geogFeat
+model.pPart.msdesc = handShift
+model.pPart.editorial = choice | abbr | expan | ex | am | subst
+model.pPart.transcriptional =
+  sic | corr | orig | add | del | unclear | damage
+model.pPart.edit = model.pPart.editorial | model.pPart.transcriptional
+model.ptrLike = notAllowed
+model.milestoneLike = pb | lb | fw
+model.gLike = notAllowed
+model.biblLike = bibl
+model.headLike = head
+model.labelLike = label
+model.listLike = \list | listOrg | listPerson | listPlace | listNym
+model.noteLike = notAllowed
+model.lLike = l
+model.pLike = p
+model.entryPart = notAllowed
+model.global.edit = gap | damageSpan | space
+model.divPart = model.lLike | model.pLike | lg | floatingText
+model.persTraitLike =
+  age | faith | langKnowledge | nationality | sex | socecStatus | trait
+model.persStateLike =
+  persName | affiliation | education | floruit | occupation | residence
+model.persEventLike = birth | death | event
+model.personLike = org | person | personGrp
+model.personPart =
+  model.persTraitLike | model.persStateLike | model.persEventLike | bibl
+model.placeTraitLike = climate | location | population | terrain | trait
+model.placeNamePart = placeName | region | geogName
+model.placeStateLike = model.placeNamePart
+model.placeEventLike = event
+model.publicationStmtPart = date | authority | availability
+model.glossLike = gloss
+model.quoteLike = quote
+model.qLike = model.quoteLike | said | q
+model.respLike = author | respStmt
+model.divWrapper = byline | dateline | epigraph | docAuthor | docDate
+model.divTopPart = model.headLike | opener | salute
+model.divTop = model.divWrapper | model.divTopPart
+model.pLike.front =
+  head
+  | byline
+  | epigraph
+  | docTitle
+  | titlePart
+  | docAuthor
+  | docEdition
+  | docImprint
+  | docDate
+model.divBottomPart = signed | postscript
+model.divBottom = model.divWrapper | model.divBottomPart
+model.titlepagePart =
+  graphic
+  | byline
+  | epigraph
+  | docTitle
+  | titlePart
+  | docAuthor
+  | docEdition
+  | docImprint
+  | docDate
+  | figure
+model.choicePart =
+  sic | corr | orig | unclear | abbr | expan | seg | ex | am
+model.addressLike = email | affiliation
+model.nameLike =
+  model.nameLike.agent
+  | model.offsetLike
+  | model.placeStateLike
+  | model.persNamePart
+model.global = model.milestoneLike | model.noteLike | model.global.edit
+model.biblPart = model.respLike | relatedItem
+model.frontPart = titlePage
+model.pPart.data =
+  model.dateLike
+  | model.measureLike
+  | model.addressLike
+  | model.nameLike
+model.inter =
+  model.egLike
+  | model.biblLike
+  | model.labelLike
+  | model.listLike
+  | model.qLike
+  | figure
+model.common = model.divPart | model.inter
+model.phrase =
+  model.segLike
+  | model.highlighted
+  | model.graphicLike
+  | model.pPart.msdesc
+  | model.pPart.edit
+  | model.ptrLike
+  | model.pPart.data
+model.limitedPhrase =
+  model.emphLike
+  | model.pPart.msdesc
+  | model.pPart.editorial
+  | model.ptrLike
+  | model.pPart.data
+model.divLike = \div
+model.divGenLike = notAllowed
+model.div1Like = notAllowed
+att.dimensions.attributes =
+  att.dimensions.attribute.unit,
+  att.dimensions.attribute.quantity,
+  att.dimensions.attribute.scope,
+  empty
+att.dimensions.attribute.unit =
+  
+  ## names the unit used for the measurement
+  ## Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inches); 4] lines; 5] chars (characters)
+  attribute unit {
+    
+    ## (centimetres) 
+    "cm"
+    | 
+      ## (millimetres) 
+      "mm"
+    | 
+      ## (inches) 
+      "in"
+    | 
+      ## lines of text
+      "lines"
+    | 
+      ## (characters) characters of text
+      "chars"
+    | xsd:Name
+  }?
+att.dimensions.attribute.quantity =
+  
+  ## specifies the length in the units specified
+  attribute quantity { xsd:double | xsd:decimal }?
+att.dimensions.attribute.scope =
+  
+  ## specifies the applicability of this measurement, where
+  ##       more than one object is being measured.
+  ## Sample values include: 1] all; 2] most; 3] range
+  attribute scope { xsd:Name }?
+model.resourceLike = facsimile
+att.personal.attributes = att.personal.attribute.full, empty
+att.personal.attribute.full =
+  
+  ## indicates whether the name component is given in full, as an
+  ## abbreviation or simply as an initial.
+  [ a:defaultValue = "yes" ]
+  attribute full {
+    
+    ## the name component is spelled out in full.
+    "yes"
+    | 
+      ## (abbreviated) the name component is given in an
+      ## abbreviated form.
+      "abb"
+    | 
+      ## (initial letter) the name component is indicated only by
+      ## one initial.
+      "init"
+  }?
+model.placeLike = place
+p =
+  
+  ## (paragraph) marks paragraphs in prose.
+  element p {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+emph =
+  
+  ## (emphasized) marks words or phrases which are stressed or emphasized for
+  ## linguistic or rhetorical effect.
+  element emph {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+hi =
+  
+  ## (highlighted) marks a word or phrase as graphically distinct from the
+  ## surrounding text, for reasons concerning which no claim is
+  ## made.
+  element hi {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+said =
+  
+  ## (speech or thought) indicates passages thought or spoken aloud, whether
+  ##   explicitly indicated in the source or not, whether directly
+  ##   or indirectly reported, whether by real people or
+  ##   fictional characters.
+  element said {
+    macro.specialPara,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.ascribed.attribute.who,
+    
+    ## may be used to indicate whether the quoted matter
+    ##       is regarded as having been vocalized or signed.
+    [ a:defaultValue = "unknown" ]
+    attribute aloud { xsd:boolean | "unknown" | "inapplicable" }?,
+    
+    ## may be used to indicate whether the quoted matter is regarded
+    ##       as direct or indirect speech.
+    [ a:defaultValue = "true" ]
+    attribute direct { xsd:boolean | "unknown" | "inapplicable" }?,
+    empty
+  }
+quote =
+  
+  ## (quotation) contains a phrase or passage attributed by the narrator or
+  ##   author to some agency external to the text.
+  element quote {
+    macro.specialPara,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+q =
+  
+  ## (separated from the surrounding text with quotation
+  ##   marks) contains material which is marked as (ostensibly)
+  ##   being somehow different than the surrounding text, for any
+  ##   one of a variety of reasons including, but not limited to:
+  ##   direct speech or thought, technical terms or jargon,
+  ##   authorial distance, quotations from elsewhere, and passages
+  ##   that are mentioned but not used.
+  element q {
+    macro.specialPara,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.ascribed.attribute.who,
+    
+    ## may be used to indicate whether the offset passage is spoken
+    ##       or thought, or to characterize it more finely.
+    ## Suggested values include: 1] spoken; 2] thought; 3] written; 4] soCalled; 5] foreign (foreign words); 6] distinct (linguistically distinct); 7] term (technical term); 8] emph (rhetorically emphasized); 9] mentioned
+    attribute type {
+      
+      ## representation of speech
+      "spoken"
+      | 
+        ## representation of thought, e.g. internal monologue
+        "thought"
+      | 
+        ## quotation from a written source
+        "written"
+      | 
+        ## authorial distance
+        "soCalled"
+      | 
+        ## (foreign words) 
+        "foreign"
+      | 
+        ## (linguistically distinct) 
+        "distinct"
+      | 
+        ## (technical term) 
+        "term"
+      | 
+        ## (rhetorically emphasized) 
+        "emph"
+      | 
+        ## refering to itself, not its normal
+        ##	  referant
+        "mentioned"
+      | xsd:Name
+    }?,
+    empty
+  }
+gloss =
+  
+  ## identifies a phrase or word used to provide a gloss or
+  ##   definition for some other word or phrase.
+  element gloss {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.declaring.attribute.decls,
+    att.translatable.attribute.version,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    (
+     ## identifies the associated term element by an
+     ##       absolute or relative URI reference
+     attribute target { xsd:anyURI }?
+     | 
+       ## (canonical reference) identifies the associated term element using a canonical
+       ##       reference from a scheme defined in a refsDecl element
+       ##       in the TEI header
+       attribute cRef { xsd:anyURI }?),
+    empty
+  }
+sic =
+  
+  ## (latin for thus or so) contains text reproduced although apparently incorrect or inaccurate.
+  element sic {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+corr =
+  
+  ## (correction) contains the correct form of a passage apparently erroneous in the copy text.
+  element corr {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+choice =
+  
+  ## groups a number of alternative encodings for the same point in
+  ##   a text.
+  element choice {
+    (model.choicePart | choice)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+orig =
+  
+  ## (original form) contains  a reading which is marked as following  the original,
+  ## rather than being normalized or corrected.
+  element orig {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+gap =
+  
+  ## indicates a point where material has been omitted in a
+  ## transcription, whether for editorial reasons described in the TEI
+  ## header, as part of sampling practice, or because the material is
+  ## illegible, invisible, or inaudible.
+  element gap {
+    model.glossLike*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    
+    ## gives the reason for omission. Sample values include
+    ##       sampling, illegible, inaudible,
+    ##       irrelevant, cancelled, illegible.
+    attribute reason {
+      list {
+        xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }+
+      }
+    }?,
+    
+    ## in the case of text omitted from the transcription because of
+    ## deliberate deletion by an identifiable hand, signifies the hand which
+    ## made the deletion.
+    attribute hand { xsd:anyURI }?,
+    
+    ## In the case of text omitted because of damage, categorizes the cause of the damage, if it can be identified.
+    ## Sample values include: 1] rubbing; 2] mildew; 3] smoke
+    attribute agent { xsd:Name }?,
+    
+    ## indicates approximately how much text has been omitted
+    ##       from the transcription (using the unit specified on the
+    ##       unit attribute), either because of editorial policy
+    ##       or because a deletion, damage, or other cause has rendered
+    ##       transcription impossible.
+    attribute extent { xsd:double | xsd:decimal }?,
+    
+    ## names the unit used for describing the extent of the gap
+    ## Suggested values include: 1] lines; 2] chars (characters); 3] pages; 4] cm (centimetres); 5] mm (millimetres); 6] in (inches)
+    attribute unit {
+      
+      ## lines of text
+      "lines"
+      | 
+        ## (characters) characters of text
+        "chars"
+      | 
+        ## pages, i.e. one side of a leaf
+        "pages"
+      | 
+        ## (centimetres) 
+        "cm"
+      | 
+        ## (millimetres) 
+        "mm"
+      | 
+        ## (inches) 
+        "in"
+      | xsd:Name
+    }?,
+    empty
+  }
+add =
+  
+  ## (addition) contains letters, words, or phrases inserted in the text by an
+  ## author, scribe, annotator, or corrector.
+  element add {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.transcriptional.attribute.hand,
+    att.transcriptional.attribute.status,
+    att.transcriptional.attribute.seq,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.placement.attribute.place,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+del =
+  
+  ## (deletion) contains a letter, word, or passage deleted, marked as deleted,
+  ## or otherwise indicated as superfluous or spurious in the copy text by an
+  ## author, scribe, annotator, or corrector.
+  element del {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.transcriptional.attribute.hand,
+    att.transcriptional.attribute.status,
+    att.transcriptional.attribute.seq,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+unclear =
+  
+  ## contains a word, phrase, or passage which cannot be transcribed
+  ## with certainty because it is illegible or inaudible in the source.
+  element unclear {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    
+    ## indicates why the material is hard to transcribe.
+    attribute reason {
+      list {
+        xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }+
+      }
+    }?,
+    
+    ## Where the difficulty in transcription arises from action
+    ## (partial deletion, etc.) assignable to an identifiable hand, signifies
+    ## the hand responsible for the action.
+    attribute hand { xsd:anyURI }?,
+    
+    ## Where the difficulty in transcription arises from
+    ##  damage, categorizes the cause of the damage, if it can be identified.
+    ## Sample values include: 1] rubbing; 2] mildew; 3] smoke
+    attribute agent { xsd:Name }?,
+    empty
+  }
+name =
+  
+  ## (name, proper noun) contains a proper noun or noun phrase.
+  element name {
+    macro.phraseSeq,
+    
+    ## indicates the type of the object which is being named by the\x{d}
+    ##  phrase.
+    attribute type {
+      
+      ##
+      "event"
+      | 
+        ##
+        " person"
+      | 
+        ##
+        " place"
+      | 
+        ##
+        " pet"
+      | 
+        ##
+        " orgBusiness"
+      | 
+        ##
+        " orgChurch"
+      | 
+        ##
+        " orgLodging"
+      | 
+        ##
+        " orgSchool"
+      | 
+        ##
+        " orgTransport"
+      | 
+        ##
+        "orgEnterntainment"
+      | 
+        ##
+        "orgWheaton"
+      | 
+        ##
+        " touristSite"
+      | 
+        ##
+        " author"
+    }?,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    empty
+  }
+email =
+  
+  ## (electronic mail address) contains an e-mail address identifying a location to which
+  ## e-mail messages can be delivered.
+  element email {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+measureGrp =
+  
+  ## (measure group) contains a group of dimensional specifications which relate to
+  ##   the same object, for example the height and width of a manuscript page.
+  element measureGrp {
+    (text | model.gLike | model.measureLike)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.measurement.attribute.unit,
+    att.measurement.attribute.quantity,
+    att.measurement.attribute.commodity,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+date =
+  
+  ## contains a date in any format.
+  element date {
+    (text | model.gLike | model.phrase | model.global)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    
+    ## indicates the system or calendar to which the date belongs.
+    ## Suggested values include: 1] Gregorian; 2] Julian; 3] Islamic; 4] Hebrew; 5] Revolutionary; 6] Iranian; 7] Coptic; 8] Chinese
+    attribute calendar {
+      
+      ## Gregorian calendar
+      "Gregorian"
+      | 
+        ## Julian calendar
+        "Julian"
+      | 
+        ## Islamic or Muslim (hijri) lunar calendar
+        "Islamic"
+      | 
+        ## Hebrew or Jewish lunisolar calendar
+        "Hebrew"
+      | 
+        ## French Revolutionary calendar
+        "Revolutionary"
+      | 
+        ## Iranian or Persian (Jalaali) solar calendar
+        "Iranian"
+      | 
+        ## Coptic or Alexandrian calendar
+        "Coptic"
+      | 
+        ## Chinese lunisolar calendar
+        "Chinese"
+      | xsd:Name
+    }?,
+    empty
+  }
+time =
+  
+  ## contains a phrase defining a time of day in any format.
+  element time {
+    (text | model.gLike | model.phrase | model.global)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+abbr =
+  
+  ## (abbreviation) contains an abbreviation of any sort.
+  element abbr {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## allows the encoder to classify the abbreviation according to
+    ## some convenient typology.
+    ## Sample values include: 1] suspension; 2] contraction; 3] brevigraph; 4] superscription; 5] acronym; 6] title; 7] organization; 8] geographic
+    attribute type { xsd:Name }?,
+    empty
+  }
+expan =
+  
+  ## (expansion) contains the expansion of an abbreviation.
+  element expan {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    empty
+  }
+\list =
+  
+  ## contains any sequence of items organized as a list.
+  element list {
+    ((model.divTop | model.global)*,
+     ((item, model.global*)+
+      | (headLabel?,
+         headItem?,
+         (label, model.global*, item, model.global*)+)),
+     (model.divBottom, model.global*)*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## describes the form of the list.
+    ## Suggested values include: 1] ordered; 2] bulleted; 3] simple; 4] gloss
+    [ a:defaultValue = "simple" ]
+    attribute type {
+      
+      ## list items are numbered or lettered.
+      "ordered"
+      | 
+        ## list items are marked with a
+        ## bullet or other typographic device.
+        "bulleted"
+      | 
+        ## list items are not numbered or bulleted.
+        "simple"
+      | 
+        ## each list item glosses some term or
+        ## concept, which is given by a label element preceding
+        ## the list item.
+        "gloss"
+      | xsd:Name
+    }?,
+    empty
+  }
+item =
+  
+  ## contains one
+  ## component of a list.
+  element item {
+    macro.specialPara,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+label =
+  
+  ## contains the label associated with an item in a list; in
+  ## glossaries, marks the term being defined.
+  element label {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+head =
+  
+  ## (heading) contains any type of heading, for example the title of a section,
+  ## or the heading of a list, glossary, manuscript description, etc.
+  element head {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+headLabel =
+  
+  ## (heading for list labels) contains the heading for the label or term column in a
+  ## glossary list or similar structured list.
+  element headLabel {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+headItem =
+  
+  ## (heading for list items) contains the heading for the item or gloss column in a
+  ## glossary list or similar structured list.
+  element headItem {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+graphic =
+  
+  ## indicates the location of an inline graphic, illustration, or figure.
+  element graphic {
+    empty,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.internetMedia.attribute.mimeType,
+    
+    ## The display width of the image
+    attribute width {
+      xsd:token {
+        pattern =
+          "[\-+]?\d+(\.\d+)?(%|cm|mm|in|pt|pc|px|em|ex|gd|rem|vw|vh|vm)"
+      }
+    }?,
+    
+    ## The display height of the image
+    attribute height {
+      xsd:token {
+        pattern =
+          "[\-+]?\d+(\.\d+)?(%|cm|mm|in|pt|pc|px|em|ex|gd|rem|vw|vh|vm)"
+      }
+    }?,
+    
+    ## A scale factor to be applied to the image to make it the desired display size
+    attribute scale { xsd:double | xsd:decimal }?,
+    
+    ## (uniform resource locator) A URL which refers to the image itself.
+    attribute url { xsd:anyURI }?,
+    empty
+  }
+pb =
+  
+  ## (page break) marks the boundary between one page of a text and the next
+  ## in a standard reference system.
+  element pb {
+    empty,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## (edition) indicates the edition or version in which the page break is located
+    ## at this point
+    attribute ed { xsd:anyURI }?,
+    empty
+  }
+lb =
+  
+  ## (line break) marks the start of a new (typographic) line in some
+  ## edition or version of a text.
+  element lb {
+    empty,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## (edition) indicates the edition or version in which the line break is located
+    ## at this point
+    attribute ed { xsd:anyURI }?,
+    empty
+  }
+author =
+  
+  ## in a bibliographic reference, contains the name of the author(s),
+  ## personal or corporate,
+  ## of a work; the primary statement of responsibility for any
+  ## bibliographic item.
+  element author {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+respStmt =
+  
+  ## (statement of responsibility) supplies a statement of responsibility for the intellectual content of a text, edition, recording, or
+  ##   series, where the specialized elements for authors, editors, etc. do
+  ##   not suffice or do not apply.
+  element respStmt {
+    ((resp+, model.nameLike.agent+) | (model.nameLike.agent+, resp+)),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+resp =
+  
+  ## (responsibility) contains a phrase describing the nature of a person's
+  ##   intellectual responsibility.
+  element resp {
+    macro.phraseSeq.limited,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+title =
+  
+  ## contains the full title of a work of any kind.
+  element title {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## indicates the bibliographic level for a title, that is,
+    ##	whether it identifies  an article, book, journal,
+    ## series, or unpublished material.
+    attribute level {
+      
+      ## (analytic) analytic title (article, poem, or other item published as
+      ##           part of a larger item)
+      "a"
+      | 
+        ## (monographic) monographic title (book, collection, or other item published
+        ##           as a distinct item, including single volumes of multi-volume
+        ##           works)
+        "m"
+      | 
+        ## (journal) journal title
+        "j"
+      | 
+        ## (series) series title
+        "s"
+      | 
+        ## (unpublished) title of unpublished material (including theses and
+        ##           dissertations unless published by a commercial press)
+        "u"
+    }?,
+    
+    ## classifies the title according to some convenient typology.
+    ## Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] short; 5] desc (descriptive)
+    attribute type { xsd:Name }?,
+    empty
+  }
+bibl =
+  
+  ## (bibliographic citation) contains a loosely-structured bibliographic citation of which
+  ## the sub-components may or may not be explicitly tagged.
+  element bibl {
+    (text
+     | model.gLike
+     | model.highlighted
+     | model.pPart.data
+     | model.pPart.edit
+     | model.segLike
+     | model.ptrLike
+     | model.biblPart
+     | model.global)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.declarable.attribute.default,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+relatedItem =
+  
+  ## contains or references some other bibliographic item which is
+  ## related to the present one in some specified manner, for example as a
+  ## constituent or alternative version of it.
+  element relatedItem {
+    (model.biblLike | model.ptrLike),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+l =
+  
+  ## (verse line) contains a single, possibly incomplete, line of verse.
+  element l {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## specifies whether or not the line is metrically complete.
+    [ a:defaultValue = "N" ]
+    attribute part {
+      
+      ## (yes) the line is metrically incomplete
+      "Y"
+      | 
+        ## (no) either the line is complete, or no claim is made as to its
+        ## completeness
+        "N"
+      | 
+        ## (initial) the initial part of an incomplete line
+        "I"
+      | 
+        ## (medial) a medial part of an incomplete line
+        "M"
+      | 
+        ## (final) the final part of an incomplete line
+        "F"
+    }?,
+    empty
+  }
+lg =
+  
+  ## (line group) contains a group of verse lines functioning as a formal unit,
+  ## e.g. a stanza, refrain, verse paragraph, etc.
+  element lg {
+    ((model.divTop | model.global)*,
+     (model.lLike | lg),
+     (model.lLike | lg | model.global)*,
+     (model.divBottom, model.global*)*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.divLike.attribute.part,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+model.headerPart = encodingDesc | profileDesc
+teiHeader =
+  
+  ## (TEI Header) supplies the descriptive and declarative information making
+  ##	up an electronic title page prefixed to every TEI-conformant
+  ##	text.
+  element teiHeader {
+    (fileDesc, model.headerPart*, revisionDesc?),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## specifies the kind of document to which the header is
+    ##       attached, for example whether it is a corpus or individual text.
+    ## Sample values include: 1] text; 2] corpus
+    [ a:defaultValue = "text" ] attribute type { xsd:Name }?,
+    empty
+  }
+fileDesc =
+  
+  ## (file description) contains a full bibliographic description of an electronic
+  ## file.
+  element fileDesc {
+    ((titleStmt, publicationStmt), sourceDesc+),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+titleStmt =
+  
+  ## (title statement) groups information about the title of a work and those
+  ## responsible for its intellectual content.
+  element titleStmt {
+    (title+, (author | respStmt)*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+publicationStmt =
+  
+  ## (publication statement) groups information concerning the publication or distribution
+  ## of an electronic or other text.
+  element publicationStmt {
+    (model.pLike+ | model.publicationStmtPart+),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+authority =
+  
+  ## (release authority) supplies the name of a person or other agency responsible for
+  ##   making an electronic file available, other than a publisher or
+  ##   distributor.
+  element authority {
+    macro.phraseSeq.limited,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+availability =
+  
+  ## supplies information about the availability of a text, for
+  ##   example any restrictions on its use or distribution, its copyright
+  ##   status, etc.
+  element availability {
+    model.pLike+,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## supplies a code identifying the current availability of the
+    ## text.
+    [ a:defaultValue = "unknown" ]
+    attribute status {
+      
+      ## the text is freely available.
+      "free"
+      | 
+        ## the status of the text is unknown.
+        "unknown"
+      | 
+        ## the text is not freely available.
+        "restricted"
+    }?,
+    empty
+  }
+model.sourceDescPart = notAllowed
+sourceDesc =
+  
+  ## (source description) supplies a description of the source text(s) from
+  ## which an electronic text was derived or generated.
+  element sourceDesc {
+    (model.pLike+
+     | (model.biblLike | model.sourceDescPart | model.listLike)+),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.declarable.attribute.default,
+    empty
+  }
+model.encodingPart = editorialDecl | tagsDecl | appInfo | geoDecl
+encodingDesc =
+  
+  ## (encoding description) documents the relationship between an electronic text and the
+  ## source or sources from which it was derived.
+  element encodingDesc {
+    (model.encodingPart | model.pLike)+,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+model.editorialDeclPart = correction
+editorialDecl =
+  
+  ## (editorial practice declaration) provides details of editorial principles and practices applied
+  ## during the encoding of a text.
+  element editorialDecl {
+    (model.pLike+ | model.editorialDeclPart+),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.declarable.attribute.default,
+    empty
+  }
+correction =
+  
+  ## (correction principles) states how and under what circumstances corrections have been
+  ## made in the text.
+  element correction {
+    model.pLike+,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.declarable.attribute.default,
+    
+    ## indicates the degree of correction applied to the text.
+    [ a:defaultValue = "unknown" ]
+    attribute status {
+      
+      ## the text has been thoroughly checked and
+      ##                        proofread.
+      "high"
+      | 
+        ## the text has been checked at least once.
+        "medium"
+      | 
+        ## the text has not been checked.
+        "low"
+      | 
+        ## the correction status of the text is unknown.
+        "unknown"
+    }?,
+    
+    ## indicates the method adopted to indicate corrections within the
+    ##          text.
+    [ a:defaultValue = "silent" ]
+    attribute method {
+      
+      ## corrections have been made silently
+      "silent"
+      | 
+        ## corrections have been represented using markup
+        "markup"
+    }?,
+    empty
+  }
+tagsDecl =
+  
+  ## (tagging declaration) provides detailed information about the tagging applied to a document.
+  element tagsDecl {
+    (rendition*, \namespace*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+tagUsage =
+  
+  ## supplies information about the usage of a specific element
+  ## within a text.
+  element tagUsage {
+    macro.limitedContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## (element name) the name (generic identifier) of the element indicated by
+    ##       the tag.
+    attribute gi { xsd:Name },
+    
+    ## specifies the number of occurrences of this element within the text.
+    attribute occurs { xsd:nonNegativeInteger }?,
+    
+    ## (with unique identifier) specifies the number of occurrences of this element within
+    ##       the text which bear a distinct value for the global
+    ##       xml:id attribute. 
+    attribute withId { xsd:nonNegativeInteger }?,
+    
+    ## specifies the identifier of a rendition element
+    ##       which defines how this element is to be rendered.
+    attribute render { xsd:anyURI }?,
+    empty
+  }
+\namespace =
+  
+  ## supplies the formal name of the namespace to which the elements
+  ## documented by its children belong.
+  element namespace {
+    tagUsage+,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## the full formal name of the namespace concerned.
+    attribute name { xsd:anyURI },
+    empty
+  }
+rendition =
+  
+  ## supplies information about the rendition or appearance of one or more
+  ## elements in the source text.
+  element rendition {
+    macro.limitedContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## identifies the language used to describe the rendition.
+    attribute scheme {
+      
+      ## Cascading Stylesheet Language
+      "css"
+      | 
+        ## Extensible  Stylesheet Language
+        ## Formatting Objects
+        "xslfo"
+      | 
+        ## Informal free text description
+        "free"
+      | 
+        ## A user-defined rendition description language
+        "other"
+    }?,
+    empty
+  }
+refState =
+  
+  ## (reference state) specifies one component of a canonical reference defined by
+  ## the milestone method.
+  element refState {
+    empty,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## (edition) indicates which edition or version the milestone applies to.
+    attribute ed { xsd:anyURI }?,
+    
+    ## indicates what kind of state is changing at this milestone.
+    ## Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] canto; 7] stanza; 8] act; 9] scene; 10] section; 11] absent
+    attribute unit {
+      
+      ## page breaks in the reference edition.
+      "page"
+      | 
+        ## column breaks.
+        "column"
+      | 
+        ## line breaks.
+        "line"
+      | 
+        ## any units termed book, liber, etc.
+        "book"
+      | 
+        ## individual poems in a collection.
+        "poem"
+      | 
+        ## cantos or other major sections of a poem.
+        "canto"
+      | 
+        ## stanzas within a poem, book, or canto.
+        "stanza"
+      | 
+        ## acts within a play.
+        "act"
+      | 
+        ## scenes within a play or act.
+        "scene"
+      | 
+        ## sections of any kind.
+        "section"
+      | 
+        ## passages not present in the reference edition.
+        "absent"
+      | xsd:Name
+    },
+    
+    ## specifies the fixed length of the reference component.
+    attribute length { xsd:nonNegativeInteger }?,
+    
+    ## (delimiter) supplies a delimiting string following the reference
+    ##           component.
+    attribute delim { text }?,
+    empty
+  }
+taxonomy =
+  
+  ## defines a typology used to classify texts either implicitly, by
+  ## means of a bibliographic citation, or explicitly by a structured
+  ## taxonomy.
+  element taxonomy {
+    (model.glossLike* | model.biblLike),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+appInfo =
+  
+  ## (application information) records information about an application which has
+  ##   edited the TEI file.
+  element appInfo {
+    model.applicationLike+,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+application =
+  
+  ## provides information about an application which has acted
+  ##   upon the document.
+  element application {
+    (model.labelLike+, (model.ptrLike* | model.pLike*)),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    
+    ## Supplies an identifier for the application, independent of
+    ##       its version number or display name.
+    attribute ident { xsd:Name },
+    
+    ## Supplies a version number for the application, independent of
+    ##       its identifier or display name.
+    attribute version {
+      xsd:token {
+        pattern = "[\d]+[a-z]*[\d]*(\.[\d]+[a-z]*[\d]*){0,3}"
+      }
+    },
+    empty
+  }
+model.applicationLike = application
+model.profileDescPart = handNotes
+profileDesc =
+  
+  ## (text-profile description) provides a detailed description of non-bibliographic aspects of a
+  ## text, specifically the languages and sublanguages used, the situation in
+  ## which it was produced, the participants and their setting.
+  element profileDesc {
+    (creation?, model.profileDescPart*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+handNote =
+  
+  ## (note on hand) describes a particular style
+  ## or hand distinguished within a manuscript.
+  element handNote {
+    macro.specialPara,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.handFeatures.attribute.scribe,
+    att.handFeatures.attribute.script,
+    att.handFeatures.attribute.medium,
+    att.handFeatures.attribute.scope,
+    empty
+  }
+creation =
+  
+  ## contains information about the creation of a text.
+  element creation {
+    macro.phraseSeq.limited,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+revisionDesc =
+  
+  ## (revision description) summarizes the revision history for a file.
+  element revisionDesc {
+    (\list | change+),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+change =
+  
+  ## summarizes a particular change or correction made
+  ## to a particular version of an electronic text which is
+  ## shared between several researchers.
+  element change {
+    (text | model.limitedPhrase | model.inter | model.global)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.ascribed.attribute.who,
+    
+    ## supplies the date of the change in standard form, i.e. YYYY-MM-DD.
+    attribute when {
+      xsd:date
+      | xsd:gYear
+      | xsd:gMonth
+      | xsd:gDay
+      | xsd:gYearMonth
+      | xsd:gMonthDay
+      | xsd:time
+      | xsd:dateTime
+    }?,
+    empty
+  }
+geoDecl =
+  
+  ## (geographic coordinates declaration) documents the notation and the datum used for geographic
+  ##   coordinates expressed as content of the geo element
+  ##   elsewhere within the document.
+  element geoDecl {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.declarable.attribute.default,
+    
+    ## supplies a commonly used code name for the datum employed.
+    ## Suggested values include: 1] WGS84 (World Geodetic System); 2] MGRS (Military Grid Reference System); 3] OSGB36 (ordnance survey great britain); 4] ED50 (European Datum coordinate system)
+    [ a:defaultValue = "WGS84" ]
+    attribute datum {
+      
+      ## (World Geodetic System) a pair of numbers to be interpreted as latitude followed by longitude
+      ##	  according to the World Geodetic System.
+      "WGS84"
+      | 
+        ## (Military Grid Reference System) the values supplied are geospatial entity object codes,
+        ##	based on  Universal Transverse Mercator coordinates
+        "MGRS"
+      | 
+        ## (ordnance survey great britain) the value supplied is to be interpreted as a British National Grid
+        ##	  Reference.
+        "OSGB36"
+      | 
+        ## (European Datum coordinate system) the value supplied is to be interpreted as latitude followed by
+        ##	  longitude according to the European Datum coordinate system.
+        "ED50"
+      | xsd:Name
+    }?,
+    empty
+  }
+TEI =
+  
+  ## (TEI document) contains a single TEI-conformant document,
+  ## comprising a TEI header and a text, either in isolation or as part of a
+  ## teiCorpus element.
+  element TEI {
+    (teiHeader,
+     ((model.resourceLike+, \text?) | \text))
+    >> s:ns [ prefix = "tei" uri = "http://www.tei-c.org/ns/1.0" ]
+    >> s:ns [
+         prefix = "rng"
+         uri = "http://relaxng.org/ns/structure/1.0"
+       ],
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## The version of the TEI scheme
+    [ a:defaultValue = "5.0" ] attribute version { xsd:decimal }?,
+    empty
+  }
+\text =
+  
+  ## contains a single text of any kind, whether unitary or
+  ## composite, for example a poem or drama, a collection of essays, a novel,
+  ## a dictionary, or a corpus sample.
+  element text {
+    (model.global*,
+     (front, model.global*)?,
+     body,
+     model.global*,
+     (back, model.global*)?),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.declaring.attribute.decls,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+body =
+  
+  ## (text body) contains the whole body of a single unitary text, excluding any front or back matter.
+  element body {
+    (model.global*,
+     (model.divTop, (model.global | model.divTop)*)?,
+     (model.divGenLike, (model.global | model.divGenLike)*)?,
+     ((model.divLike, (model.global | model.divGenLike)*)+
+      | (model.div1Like, (model.global | model.divGenLike)*)+
+      | ((model.common, model.global*)+,
+         ((model.divLike, (model.global | model.divGenLike)*)+
+          | (model.div1Like, (model.global | model.divGenLike)*)+)?)),
+     (model.divBottom, model.global*)*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.declaring.attribute.decls,
+    empty
+  }
+floatingText =
+  
+  ## contains a single text of any kind, whether unitary or
+  ## composite, which interrupts the
+  ## text containing it at any point and after which the surrounding text
+  ## resumes.
+  element floatingText {
+    (model.global*,
+     (front, model.global*)?,
+     body,
+     model.global*,
+     (back, model.global*)?),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.declaring.attribute.decls,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+\div =
+  
+  ## (text division) contains a subdivision of the front, body, or back of a
+  ## text.
+  element div {
+    ((model.divTop | model.global)*,
+     ((((model.divLike | model.divGenLike), model.global*)+
+       | ((model.common, model.global*)+,
+          ((model.divLike | model.divGenLike), model.global*)*)),
+      (model.divBottom, model.global*)*)?),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.divLike.attribute.part,
+    
+    ## specifies a name conventionally used for this level of subdivision, e.g. act, volume, book,
+    ##                                 section, canto, etc.
+    [ a:defaultValue = "" ]
+    attribute type {
+      
+      ##
+      "entry"
+      | 
+        ##
+        " flyleaf"
+      | 
+        ##
+        " diarymemoranda"
+      | 
+        ##
+        " namesglossary"
+    }?,
+    att.typed.attribute.subtype,
+    att.declaring.attribute.decls,
+    empty
+  }
+byline =
+  
+  ## contains the primary statement of responsibility given for a work
+  ## on its title page or at the head or end of the work.
+  element byline {
+    (text | model.gLike | model.phrase | docAuthor | model.global)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+dateline =
+  
+  ## contains a brief description of the place, date, time, etc. of
+  ##	production of a letter, newspaper story, or other work, prefixed or
+  ##	suffixed to it as a kind of heading or trailer.
+  element dateline {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+epigraph =
+  
+  ## contains a quotation, anonymous or attributed, appearing at
+  ## the start of a section or chapter, or on a title page.
+  element epigraph {
+    (model.common | model.global)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+opener =
+  
+  ## groups together dateline, byline, salutation, and similar
+  ## phrases appearing as a preliminary group at the start of a
+  ## division, especially of a letter.
+  element opener {
+    (text
+     | model.gLike
+     | model.phrase
+     | byline
+     | dateline
+     | epigraph
+     | salute
+     | signed
+     | model.global)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+salute =
+  
+  ## (salutation) contains a salutation or greeting prefixed to a foreword,
+  ## dedicatory epistle, or other division of a text, or the
+  ## salutation in the closing of a letter, preface, etc.
+  element salute {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+signed =
+  
+  ## (signature) contains the closing salutation, etc., appended to a foreword,
+  ## dedicatory epistle, or other division of a text.
+  element signed {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+postscript =
+  
+  ## contains a postscript, e.g. to a letter.
+  element postscript {
+    (model.common | model.global)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+titlePage =
+  
+  ## (title page) contains the title page of a text, appearing within the front
+  ## or back matter.
+  element titlePage {
+    (model.global*,
+     model.titlepagePart,
+     (model.titlepagePart | model.global)*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## classifies the title page according to any convenient typology.
+    attribute type { xsd:Name }?,
+    empty
+  }
+docTitle =
+  
+  ## (document title) contains the title of a document, including all its
+  ## constituents, as given on a title page.
+  element docTitle {
+    (model.global*, (titlePart, model.global*)+),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+titlePart =
+  
+  ## contains a subsection or division of the title of a work, as
+  ## indicated on a title page.
+  element titlePart {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## specifies the role of this subdivision of the title.
+    ## Suggested values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] short; 5] desc (descriptive)
+    [ a:defaultValue = "main" ]
+    attribute type {
+      
+      ## main title of the work
+      "main"
+      | 
+        ## (subordinate) subtitle  of the work
+        "sub"
+      | 
+        ## (alternate) alternative title  of the work
+        "alt"
+      | 
+        ## abbreviated form of title
+        "short"
+      | 
+        ## (descriptive) descriptive paraphrase of the work
+        "desc"
+      | xsd:Name
+    }?,
+    empty
+  }
+docAuthor =
+  
+  ## (document author) contains the name of the author of the document, as given on the
+  ## title page (often but not always contained in a byline).
+  element docAuthor {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+docEdition =
+  
+  ## (document edition) contains an edition statement as presented on a title page of a
+  ## document.
+  element docEdition {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+docImprint =
+  
+  ## (document imprint) contains the imprint statement (place and date of publication,
+  ## publisher name), as given
+  ## (usually) at the foot of a title page.
+  element docImprint {
+    (text | model.gLike | model.phrase | docDate | model.global)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+docDate =
+  
+  ## (document date) contains the date of a document, as given
+  ## (usually) on a title page.
+  element docDate {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## gives the value of the date in standard form, i.e. YYYY-MM-DD.
+    attribute when {
+      xsd:date
+      | xsd:gYear
+      | xsd:gMonth
+      | xsd:gDay
+      | xsd:gYearMonth
+      | xsd:gMonthDay
+      | xsd:time
+      | xsd:dateTime
+    }?,
+    empty
+  }
+front =
+  
+  ## (front matter) contains any prefatory matter (headers,
+  ## title page, prefaces, dedications, etc.)
+  ## found  at the start of a document, before the main body.
+  element front {
+    ((model.frontPart | model.pLike.front | model.global)*,
+     ((model.div1Like,
+       (model.frontPart | model.div1Like | model.global)*)
+      | (model.divLike,
+         (model.frontPart | model.divLike | model.global)*))?,
+     (model.divBottomPart, (model.divBottomPart | model.global)*)?),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.declaring.attribute.decls,
+    empty
+  }
+back =
+  
+  ## (back matter) contains any appendixes, etc. following the main part of a
+  ##     text.
+  element back {
+    ((model.frontPart | model.pLike.front | model.global)*,
+     ((model.div1Like,
+       (model.frontPart | model.div1Like | model.global)*)
+      | (model.divLike,
+         (model.frontPart | model.divLike | model.global)*))?,
+     (model.divBottomPart, (model.divBottomPart | model.global)*)?),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.declaring.attribute.decls,
+    empty
+  }
+seg =
+  
+  ## (arbitrary segment) represents any  segmentation of text below the
+  ##   chunk level.
+  element seg {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.segLike.attribute.type,
+    att.segLike.attribute.function,
+    
+    ## provides a sub-categorization of the segment marked.
+    attribute subtype {
+      xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }
+    }?,
+    empty
+  }
+att.global.linking.attributes =
+  att.global.linking.attribute.corresp, empty
+att.global.linking.attribute.corresp =
+  
+  ## (corresponds) points to elements that correspond to the current
+  ##       element in some way.
+  attribute corresp {
+    list { xsd:anyURI+ }
+  }?
+att.pointing.attributes =
+  att.pointing.attribute.type, att.pointing.attribute.evaluate, empty
+att.pointing.attribute.type =
+  
+  ## categorizes the pointer in some respect, using any
+  ##       convenient set of categories.
+  attribute type { xsd:Name }?
+att.pointing.attribute.evaluate =
+  
+  ## specifies the intended meaning when the target of a
+  ##       pointer is itself a pointer.
+  attribute evaluate {
+    
+    ## if the element pointed to is itself a pointer, then
+    ##	  the target of that pointer will be taken, and so on, until
+    ##	  an element is found which is not a pointer.
+    "all"
+    | 
+      ## if the element pointed to is itself a pointer, then
+      ##	  its target (whether a pointer or not) is taken as the target
+      ##	  of this pointer.
+      "one"
+    | 
+      ## no further evaluation of targets is carried out
+      ##	  beyond that needed to find the element specified in the
+      ##	  pointer's target.
+      "none"
+  }?
+persName =
+  
+  ## (personal name) contains a proper noun or proper-noun phrase referring to a
+  ##   person, possibly including any or all of the person's forenames,
+  ##   surnames, honorifics, added names, etc.
+  element persName {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.personal.attribute.full,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+surname =
+  
+  ## contains a family (inherited) name, as opposed to a given,
+  ## baptismal, or nick name.
+  element surname {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.personal.attribute.full,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+forename =
+  
+  ## contains a forename, given or baptismal name.
+  element forename {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.personal.attribute.full,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+genName =
+  
+  ## (generational name component) contains a name component used to distinguish otherwise similar
+  ## names on the basis of the relative ages or generations of the persons named.
+  element genName {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.personal.attribute.full,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+addName =
+  
+  ## (additional name) contains an additional name component, such as a nickname, 
+  ## epithet, or alias, or any other descriptive phrase used within a
+  ## personal name.
+  element addName {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.personal.attribute.full,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+roleName =
+  
+  ## contains a name component which indicates that the referent has a
+  ## particular role or position in society, such as an official title or
+  ## rank.
+  element roleName {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.personal.attribute.full,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+placeName =
+  
+  ## contains an absolute or relative place name.
+  element placeName {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    empty
+  }
+region =
+  
+  ## contains the name of an administrative unit such as a state,
+  ## province, or county, larger than a settlement, but smaller than a country.
+  element region {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    empty
+  }
+geogName =
+  
+  ## (geographical name) a name associated with some geographical feature such as
+  ##   Windrush Valley or Mount Sinai.
+  element geogName {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    
+    ## provides more culture- linguistic- or application-
+    ##       specific information used to categorize this name
+    ##       component.
+    attribute type { xsd:Name }?,
+    empty
+  }
+geogFeat =
+  
+  ## (geographical feature name) contains a common noun identifying some geographical feature 
+  ## contained within a geographic name, such as valley,
+  ## mount, etc.
+  element geogFeat {
+    macro.xtext,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    empty
+  }
+affiliation =
+  
+  ## contains an informal description of a person's present
+  ## or past affiliation with some
+  ## organization, for example an employer or sponsor.
+  element affiliation {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    empty
+  }
+age =
+  
+  ## specifies the age of a person.
+  element age {
+    macro.phraseSeq.limited,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    
+    ## supplies a numeric code representing the age or age group
+    attribute value { xsd:nonNegativeInteger }?,
+    empty
+  }
+birth =
+  
+  ## contains information about a person's birth, such as its date
+  ## and place.
+  element birth {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    empty
+  }
+climate =
+  
+  ## contains information about the physical climate of a place.
+  element climate {
+    (model.headLike*,
+     (model.pLike+ | model.labelLike+),
+     (model.noteLike | model.biblLike)*,
+     climate*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+death =
+  
+  ## contains information about a person's death, such as its date
+  ## and place.
+  element death {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    empty
+  }
+education =
+  
+  ## contains a description of the
+  ## educational experience of a person.
+  element education {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    empty
+  }
+event =
+  
+  ## contains data relating to any kind of significant event
+  ##   associated with a person, place, or organization.
+  element event {
+    (model.headLike*,
+     (model.pLike+ | model.labelLike+),
+     (model.noteLike | model.biblLike)*,
+     event*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    
+    ## indicates the location of an event by pointing to a place element
+    attribute where { xsd:anyURI }?,
+    empty
+  }
+faith =
+  
+  ## specifies the faith,  religion, or belief set of a person.
+  element faith {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    empty
+  }
+floruit =
+  
+  ## contains information about a person's period of activity.
+  element floruit {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    empty
+  }
+geo =
+  
+  ## (geographical coordinates) contains any expression of a set of geographic coordinates,
+  ##   representing a point, line, or area on the surface of the earth in
+  ##   some notation.
+  element geo {
+    text,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+langKnowledge =
+  
+  ## (language knowledge) summarizes the state of a person's linguistic knowledge, either
+  ## as prose or by a list of langKnown elements.
+  element langKnowledge {
+    (model.pLike | langKnown+),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    
+    ## supplies one or more valid language tags for the languages
+    ##       specified
+    attribute tags {
+      list { xsd:language+ }
+    }?,
+    empty
+  }
+langKnown =
+  
+  ## (language known) summarizes the state of a person's linguistic competence,
+  ##   i.e., knowledge of a single language.
+  element langKnown {
+    macro.phraseSeq.limited,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    
+    ## supplies a  valid language tag for the language concerned.
+    attribute tag { xsd:language },
+    
+    ## a code indicating the person's level of knowledge for this language
+    attribute level {
+      xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }
+    }?,
+    empty
+  }
+listOrg =
+  
+  ## (list of organizations) contains a list of descriptions, each of which provides
+  ## information about an identifiable organization.
+  element listOrg {
+    (model.headLike*, (org | listOrg)+, (relationGrp | relation)*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.declarable.attribute.default,
+    empty
+  }
+listPerson =
+  
+  ## (list of persons) contains a list of descriptions, each of which provides
+  ## information about an identifiable person or a group of people, for
+  ## example the participants in a language interaction, or the people referred
+  ## to in a historical source.
+  element listPerson {
+    (model.headLike*,
+     (model.personLike | listPerson)+,
+     (relation | relationGrp)*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.declarable.attribute.default,
+    empty
+  }
+listPlace =
+  
+  ## (list of places) contains a list of places, optionally followed by a list
+  ##       of relationships (other than containment) defined amongst
+  ##       them.
+  element listPlace {
+    (model.headLike*,
+     (model.placeLike | listPlace)+,
+     (relationGrp | relation)*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.declarable.attribute.default,
+    empty
+  }
+location =
+  
+  ## defines the location of a place as a set of geographical
+  ##   coordinates, in terms of a other named geo-political entities,
+  ##   or as an address.
+  element location {
+    (model.labelLike
+     | model.placeNamePart
+     | model.offsetLike
+     | model.measureLike
+     | model.addressLike
+     | model.noteLike
+     | model.biblLike)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    empty
+  }
+nationality =
+  
+  ## contains an informal description of a person's present
+  ## or past nationality or citizenship.
+  element nationality {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    empty
+  }
+occupation =
+  
+  ## contains an informal description of a person's trade,
+  ## profession or occupation.
+  element occupation {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    
+    ## identifies the classification system or taxonomy in use by supplying
+    ## the identifier of a taxonomy element elsewhere in the header.
+    attribute scheme { xsd:anyURI }?,
+    
+    ## identifies an occupation code defined within the
+    ## classification system or taxonomy defined by the scheme
+    ## attribute.
+    attribute code { xsd:anyURI }?,
+    empty
+  }
+org =
+  
+  ## (organization) provides information about an identifiable organization such
+  ##   as a business, a tribe, or any other grouping of people.
+  element org {
+    (model.headLike*,
+     (model.pLike*
+      | (model.labelLike | model.nameLike | model.placeLike)*),
+     (model.noteLike | model.biblLike)*,
+     model.personLike*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    
+    ## specifies a primary role or classification for the organization.
+    attribute role {
+      list {
+        xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }+
+      }
+    }?,
+    empty
+  }
+relationGrp =
+  
+  ## (relation group) provides information about relationships identified amongst people,
+  ##   places, and organizations, either informally as prose or as formally
+  ##   expressed relation links.
+  element relationGrp {
+    (model.pLike+ | relation+),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+person =
+  
+  ## provides information about an identifiable individual, for
+  ## example a participant in a language interaction, or a person referred
+  ## to in a historical source.
+  element person {
+    (model.pLike+ | (model.personPart | model.global)*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    
+    ## specifies a primary role or classification for the person.
+    attribute role {
+      list { xsd:Name+ }
+    }?,
+    
+    ## specifies the sex of the person.
+    attribute sex { "0" | "1" | "2" | "9" }?,
+    
+    ## specifies an age group for the person.
+    attribute age { xsd:Name }?,
+    empty
+  }
+personGrp =
+  
+  ## (personal group) describes a group of individuals treated as a single person for
+  ##   analytic purposes.
+  element personGrp {
+    (model.pLike+ | model.personPart*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    
+    ## specifies the role of this group of participants in the
+    ##         interaction.
+    attribute role { xsd:Name }?,
+    
+    ## specifies the sex of the participant group.
+    attribute sex { ("0" | "1" | "2" | "9") | "mixed" }?,
+    
+    ## specifies the age group of the participants.
+    attribute age { xsd:Name }?,
+    
+    ## specifies the size or approximate size of the group.
+    attribute size {
+      list {
+        xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }+
+      }
+    }?,
+    empty
+  }
+place =
+  
+  ## contains data about a geographic location
+  element place {
+    (model.headLike*,
+     (model.pLike*
+      | (model.labelLike
+         | model.placeStateLike
+         | model.placeTraitLike
+         | model.placeEventLike)*),
+     (model.noteLike | model.biblLike)*,
+     (model.placeLike | listPlace)*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    empty
+  }
+population =
+  
+  ## contains information about the population of a place.
+  element population {
+    (model.headLike*,
+     ((model.pLike+ | model.labelLike+),
+      (model.noteLike | model.biblLike)*)?,
+     population*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+relation =
+  
+  ## (relationship) describes any kind of relationship or linkage amongst a specified
+  ## group of participants.
+  element relation {
+    empty,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    
+    ## categorizes the relationship in some respect, e.g.
+    ## as social, personal or other.
+    ## Suggested values include: 1] social; 2] personal; 3] other
+    [ a:defaultValue = "personal" ]
+    attribute type {
+      
+      ## relationship concerned with social roles
+      "social"
+      | 
+        ## relationship concerned with personal roles, e.g.
+        ## kinship, marriage, etc.
+        "personal"
+      | 
+        ## other kinds of relationship
+        "other"
+      | xsd:Name
+    }?,
+    
+    ## supplies a name for the kind of  relationship of which
+    ##	this is an instance.
+    attribute name { xsd:Name },
+    
+    ## identifies the passive participants in a non-mutual
+    ## relationship.
+    attribute passive {
+      list { xsd:anyURI+ }
+    }?,
+    (
+     ## identifies the active participants in a non-mutual
+     ## relationship, or all the participants in a mutual one.
+     attribute active {
+       list { xsd:anyURI+ }
+     }?
+     | 
+       ## supplies a list of participants amongst all of whom the relationship holds equally.
+       attribute mutual {
+         list { xsd:anyURI+ }
+       }?),
+    empty
+  }
+residence =
+  
+  ## (residence) describes a person's present or past places of residence.
+  element residence {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    empty
+  }
+sex =
+  
+  ## specifies the sex of a person.
+  element sex {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    
+    ##
+    attribute value { "0" | "1" | "2" | "9" }?,
+    empty
+  }
+socecStatus =
+  
+  ## (socio-economic status) contains an informal description of a person's perceived social or
+  ## economic status.
+  element socecStatus {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    
+    ## identifies the classification system or taxonomy in use.
+    attribute scheme { xsd:anyURI }?,
+    
+    ## identifies a status code defined within the
+    ## classification system or taxonomy defined by the source
+    ## attribute.
+    attribute code { xsd:anyURI }?,
+    empty
+  }
+terrain =
+  
+  ## contains information about the physical terrain of a place.
+  element terrain {
+    (model.headLike*,
+     (model.pLike+ | model.labelLike+),
+     (model.noteLike | model.biblLike)*,
+     terrain*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+trait =
+  
+  ## contains a description of some culturally-determined and in
+  ##   principle unchanging characteristic attributed to a person or place .
+  element trait {
+    (trait+
+     | (model.headLike*,
+        model.pLike+,
+        (model.noteLike | model.biblLike)*)
+     | (model.labelLike | model.noteLike | model.biblLike)*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.datable.w3c.attribute.period,
+    att.datable.w3c.attribute.when,
+    att.datable.w3c.attribute.notBefore,
+    att.datable.w3c.attribute.notAfter,
+    att.datable.w3c.attribute.from,
+    att.datable.w3c.attribute.to,
+    att.datable.iso.attribute.when-iso,
+    att.datable.iso.attribute.notBefore-iso,
+    att.datable.iso.attribute.notAfter-iso,
+    att.datable.iso.attribute.from-iso,
+    att.datable.iso.attribute.to-iso,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    att.naming.attribute.key,
+    att.naming.attribute.ref,
+    att.naming.attribute.nymRef,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    empty
+  }
+nym =
+  
+  ## (canonical name) contains the definition for a canonical  name or namepart of
+  ##   any kind.
+  element nym {
+    (model.entryPart*, model.pLike*, nym*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    
+    ## points to constituent nyms
+    
+    ## Sorry, unable to create schema that uses actual counts minOccurs=1 and maxOccurs=100; approximating to minOccurs=1 and maxOccurs=unbounded.
+    attribute parts {
+      list { xsd:anyURI, xsd:anyURI* }
+    }?,
+    empty
+  }
+listNym =
+  
+  ## (list of canonical names) contains a list of nyms, that is, standardized names for any
+  ##	thing.
+  element listNym {
+    (model.headLike*, (nym | listNym)+, (relationGrp | relation)*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.declarable.attribute.default,
+    empty
+  }
+model.persNamePart = surname | forename | genName | addName | roleName
+att.datable.iso.attributes =
+  att.datable.iso.attribute.when-iso,
+  att.datable.iso.attribute.notBefore-iso,
+  att.datable.iso.attribute.notAfter-iso,
+  att.datable.iso.attribute.from-iso,
+  att.datable.iso.attribute.to-iso,
+  empty
+att.datable.iso.attribute.when-iso =
+  
+  ## supplies the value of a date or time in a standard form.
+  attribute when-iso {
+    xsd:date
+    | xsd:gYear
+    | xsd:gMonth
+    | xsd:gDay
+    | xsd:gYearMonth
+    | xsd:gMonthDay
+    | xsd:time
+    | xsd:dateTime
+    | xsd:token { pattern = "[0-9.,DHMPRSTWYZ/:+\-]+" }
+  }?
+att.datable.iso.attribute.notBefore-iso =
+  
+  ## specifies the earliest possible date for the event in
+  ##	standard form, e.g. yyyy-mm-dd.
+  attribute notBefore-iso {
+    xsd:date
+    | xsd:gYear
+    | xsd:gMonth
+    | xsd:gDay
+    | xsd:gYearMonth
+    | xsd:gMonthDay
+    | xsd:time
+    | xsd:dateTime
+    | xsd:token { pattern = "[0-9.,DHMPRSTWYZ/:+\-]+" }
+  }?
+att.datable.iso.attribute.notAfter-iso =
+  
+  ## specifies the latest possible date for the event in
+  ##	standard form, e.g. yyyy-mm-dd.
+  attribute notAfter-iso {
+    xsd:date
+    | xsd:gYear
+    | xsd:gMonth
+    | xsd:gDay
+    | xsd:gYearMonth
+    | xsd:gMonthDay
+    | xsd:time
+    | xsd:dateTime
+    | xsd:token { pattern = "[0-9.,DHMPRSTWYZ/:+\-]+" }
+  }?
+att.datable.iso.attribute.from-iso =
+  
+  ## indicates the starting point of the period in standard form.
+  attribute from-iso {
+    xsd:date
+    | xsd:gYear
+    | xsd:gMonth
+    | xsd:gDay
+    | xsd:gYearMonth
+    | xsd:gMonthDay
+    | xsd:time
+    | xsd:dateTime
+    | xsd:token { pattern = "[0-9.,DHMPRSTWYZ/:+\-]+" }
+  }?
+att.datable.iso.attribute.to-iso =
+  
+  ## indicates the ending point of the period in standard form.
+  attribute to-iso {
+    xsd:date
+    | xsd:gYear
+    | xsd:gMonth
+    | xsd:gDay
+    | xsd:gYearMonth
+    | xsd:gMonthDay
+    | xsd:time
+    | xsd:dateTime
+    | xsd:token { pattern = "[0-9.,DHMPRSTWYZ/:+\-]+" }
+  }?
+facsimile =
+  
+  ## contains a representation of some written source in the form of
+  ## a set of images rather than as transcribed or encoded text.
+  element facsimile {
+    (front?, (model.graphicLike | surface)+, back?),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+att.global.facs.attributes = att.global.facs.attribute.facs, empty
+att.global.facs.attribute.facs =
+  
+  ## (facsimile) points directly to an image, or to a part of a
+  ##       facsimile element which corresponds with this
+  ##       element.
+  attribute facs {
+    list { xsd:anyURI+ }
+  }?
+surface =
+  
+  ## defines a written surface in terms of a rectangular
+  ## coordinate space, optionally  grouping one or more graphic representations of
+  ## that space, and rectangular zones of interest
+  ## within it.
+  element surface {
+    (model.glossLike*, model.graphicLike*, zone*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.coordinated.attribute.ulx,
+    att.coordinated.attribute.uly,
+    att.coordinated.attribute.lrx,
+    att.coordinated.attribute.lry,
+    
+    ## points to an element which encodes the starting position of the text corresponding to the
+    ## inscribed part of the surface.
+    attribute start { xsd:anyURI }?,
+    empty
+  }
+att.coordinated.attributes =
+  att.coordinated.attribute.ulx,
+  att.coordinated.attribute.uly,
+  att.coordinated.attribute.lrx,
+  att.coordinated.attribute.lry,
+  empty
+att.coordinated.attribute.ulx =
+  
+  ## gives the x coordinate value for the upper left corner of a
+  ## rectangular space.
+  attribute ulx { xsd:double | xsd:decimal }?
+att.coordinated.attribute.uly =
+  
+  ## gives the y coordinate value for the upper left corner of a
+  ## rectangular space.
+  attribute uly { xsd:double | xsd:decimal }?
+att.coordinated.attribute.lrx =
+  
+  ## gives the x coordinate value for the lower right corner of a
+  ## rectangular space.
+  attribute lrx { xsd:double | xsd:decimal }?
+att.coordinated.attribute.lry =
+  
+  ## gives the y coordinate value for the lower right corner of a
+  ## rectangular space.
+  attribute lry { xsd:double | xsd:decimal }?
+zone =
+  
+  ## defines a rectangular area contained within a surface
+  ## element. 
+  element zone {
+    (model.glossLike*, model.graphicLike*),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.coordinated.attribute.ulx,
+    att.coordinated.attribute.uly,
+    att.coordinated.attribute.lrx,
+    att.coordinated.attribute.lry,
+    empty
+  }
+damage =
+  
+  ## contains an area of damage to the text witness.
+  element damage {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.damaged.attribute.extent,
+    att.damaged.attribute.hand,
+    att.damaged.attribute.agent,
+    att.damaged.attribute.degree,
+    att.damaged.attribute.group,
+    empty
+  }
+damageSpan =
+  
+  ## (damaged span of text) marks the beginning of a longer sequence of text which is
+  ##   damaged in some way but still legible.
+  element damageSpan {
+    empty
+    >> s:pattern [
+         name = "spanTo_required_for_damageSpan"
+         s:rule [
+           context = "tei:damageSpan"
+           s:assert [
+             test = "@spanTo"
+             "The spanTo= attribute of "
+             s:name [ ]
+             " is required."
+           ]
+         ]
+       ],
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.damaged.attribute.extent,
+    att.damaged.attribute.hand,
+    att.damaged.attribute.agent,
+    att.damaged.attribute.degree,
+    att.damaged.attribute.group,
+    att.typed.attribute.type,
+    att.typed.attribute.subtype,
+    att.spanning.attribute.spanTo,
+    empty
+  }
+ex =
+  
+  ## (editorial expansion) contains a sequence of letters added by an editor or
+  ##   transcriber when expanding an abbreviation.
+  element ex {
+    macro.xtext,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    empty
+  }
+fw =
+  
+  ## (forme work) contains a running head (e.g. a header, footer), catchword, or
+  ##   similar material appearing on the current page.
+  element fw {
+    macro.phraseSeq,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.placement.attribute.place,
+    
+    ## classifies the material encoded according to some useful typology.
+    ## Sample values include: 1] header; 2] footer; 3] pageNum (page number); 4] lineNum (line number); 5] sig (signature); 6] catch (catchword)
+    attribute type { xsd:Name }?,
+    empty
+  }
+handNotes =
+  
+  ## contains one or more handNote elements documenting the
+  ## different hands identified within the source texts.
+  element handNotes {
+    handNote+,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+handShift =
+  
+  ## marks the beginning of a sequence of text written in a new
+  ## hand, or the beginning of a scribal stint.
+  element handShift {
+    empty,
+    
+    ## identifies the new hand.
+    [ a:defaultValue = "#EBWhand" ] attribute new { text }?,
+    
+    ## signifies the editor or transcriber responsible for identifying
+    ## the change of hand.
+    attribute resp { xsd:anyURI }?,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.handFeatures.attribute.scribe,
+    att.handFeatures.attribute.script,
+    att.handFeatures.attribute.medium,
+    att.handFeatures.attribute.scope,
+    empty
+  }
+am =
+  
+  ## (abbreviation marker) contains a sequence of letters or signs present in an
+  ##   abbreviation which are omitted or replaced in the expanded form of
+  ##   the abbreviation.
+  element am {
+    macro.xtext,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    empty
+  }
+space =
+  
+  ## indicates the location of a significant space in the copy text.
+  element space {
+    empty,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.dimensions.attribute.unit,
+    att.dimensions.attribute.quantity,
+    att.dimensions.attribute.scope,
+    
+    ## (dimension) indicates whether the space is horizontal or vertical.
+    attribute dim {
+      
+      ## the space is horizontal.
+      "horizontal"
+      | 
+        ## the space is vertical.
+        "vertical"
+    }?,
+    
+    ## (responsible party) indicates the individual responsible for identifying and measuring
+    ## the space.
+    attribute resp { xsd:anyURI }?,
+    empty
+  }
+subst =
+  
+  ## (substitution) groups one or more deletions with one or more additions when
+  ##   the combination is to be regarded as a single intervention in the text.
+  element subst {
+    (model.pPart.transcriptional, model.pPart.transcriptional+),
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.transcriptional.attribute.hand,
+    att.transcriptional.attribute.status,
+    att.transcriptional.attribute.seq,
+    att.editLike.attribute.cert,
+    att.editLike.attribute.resp,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.source,
+    empty
+  }
+figure =
+  
+  ## groups elements representing or containing graphic information
+  ##   such as an illustration or figure.
+  element figure {
+    (model.headLike
+     | model.pLike
+     | figDesc
+     | model.graphicLike
+     | model.egLike
+     | floatingText
+     | figure
+     | model.global)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    att.placement.attribute.place,
+    empty
+  }
+figDesc =
+  
+  ## (description of figure) contains a brief prose description of the appearance or content
+  ## of a graphic figure, for use when documenting an image without
+  ## displaying it.
+  element figDesc {
+    macro.limitedContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.rend,
+    att.global.attribute.rendition,
+    att.global.attribute.xmlbase,
+    att.global.linking.attribute.corresp,
+    att.global.facs.attribute.facs,
+    empty
+  }
+start = TEI

@@ -1,0 +1,16 @@
+        <encodingDesc>
+            <tagsDecl>
+                <rendition xml:id="preprinted">Text that has been printed by the publisher of the diary, e.g.
+                    the dateline in the opener of each entry</rendition>
+                <rendition xml:id="handwritten">Text that has been written by hand by the author.</rendition>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="dateline" render="preprinted">All datelines in the text are preprinted unless
+                        otherwise indicated using the rend attribute</tagUsage>
+                    <tagUsage gi="add" render="handwritten">All additions have been done by hand by the author
+                        unless otherwise indicated using the rend attribute.</tagUsage>
+                    <tagUsage gi="del" render="handwritten">All deletions have been done by hand by the author
+                        unless otherwise indicated using the rend attribute.</tagUsage>
+                    <tagUsage gi="div">The first division in the back of type names glossary uses the n attribute to indicate the version of the backmatter.</tagUsage>
+                </namespace>
+            </tagsDecl>
+        </encodingDesc>

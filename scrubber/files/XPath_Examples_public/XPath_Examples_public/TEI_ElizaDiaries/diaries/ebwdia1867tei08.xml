@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.wheatoncollege.edu/KACC/tei/schemas/wheatondiaries.rnc" type="compact"?>
+<!DOCTYPE TEI [
+<!ENTITY % ebwdiaent SYSTEM "http://www.wheatoncollege.edu/KACC/tei/entities/ebwdiaent.ent"> %ebwdiaent;
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>1872 Diary</title>
+                <author>Eliza Baylies Wheaton</author>
+                <respStmt>
+                    <resp> TEI-compatible XML markup by <name type="person">Molly White</name> with corrections by <name type="person">Scott Hamlin</name>, <name type="person">Zephorene Stickney</name>, and <name type="person">Kathryn Tomasek</name>.
+                    </resp>
+                    <name type="person">Kathryn Tomasek</name>
+                    <name type="person">Molly White</name>
+                    <name type="person">Scott Hamlin</name>
+                    <name type="person">Zephorene Stickney</name>
+                </respStmt>
+            </titleStmt>
+            &ebwdiapubStmt;
+            <sourceDesc>
+                <p> From the Marion B. Gebbie Archives and Special Collections at the 
+                    Madeleine Clark Wallace Library, Wheaton College </p>
+            </sourceDesc>
+        </fileDesc>
+        &ebwdiaencodingDesc;
+        <revisionDesc>
+            <change>
+                <date>2007-07-31</date>
+                <name>Molly White</name>
+                All encoding of 1867 diary has been done by Molly White with corrections to the code by Scott Hamlin.
+            </change>
+            &ebwdiabackrevisions; 
+        </revisionDesc>
+    </teiHeader>
+    <text xml:id="ebwdiaDATE">
+        <!-- Scott will complete this part -->
+        <front>
+            <div type="flyleaf">
+                <pb n="frontFlyleaf"/>
+                <bibl>
+                    <title>INSERT</title>
+                    <date>INSERT</date>
+                    <lb/>
+                    <author>INSERT</author>
+                    <lb/>
+                    <name key="INSERT" type="place">INSERT</name>
+                </bibl>
+            </div>
+        </front>
+        <!--End of material Scott will complete-->
+        <body>
+            <div type="entry">
+                <opener>
+                    <dateline rend="preprinted">
+                        <date when="1867-06-27" cert="high">Thursday, June 27 1867 <add rend="written"> 04&ndash;50.1</add></date>
+                    </dateline>
+                </opener>
+                <p>Drizzly&ndash; went to Depot for <name type="person" key="#ebwdiaCCM">Mrs Metcalf</name> but faild to find her.    I wrote To <name type="person" key="#ebwdiaSAC">S.A. Chapin</name> <name type="person">Susie Pratt</name> &plus; <name type="person">Lizzie</name>
+                    <space quantity="2" unit="lines"/></p>
+                <p>P.M. We sat down &plus; sewed&ndash;</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline rend="preprinted">
+                        <date when="1867-06-28" cert="high">Friday 28</date>
+                    </dateline>
+                </opener>
+                <p><emph rend="underline">Very</emph> <emph rend="underline">warm</emph>&plus; sultry shelled peas&ndash; P.M. <name type="person">Mrs Pearce</name> &plus; <name type="person">Miss Jay</name> calld also <name type="person">Mrs Tolman</name>&ndash; After Tea we went to ride to the <name type="place">Mottey Hermittage</name>&ndash;</p>
+            </div>
+            <div type="entry">
+                <opener>
+                    <dateline rend="preprinted">
+                        <date when="1867-06-29" cert="high">Saturday 29</date>
+                    </dateline>
+                </opener>
+                <p>Pleasant&ndash; <name type="person">Seneca Sanford</name> came in the morng&ndash; &plus; recd. 57.37 for a demand he made of borrowed money <del rend="overwritten">from</del><add place="overwritten"><unclear>lent</unclear></add> my Husband day before his last sickache At 10 Went to <name type="place">Bos.</name> Had watch fixed &plus; did errands&ndash; On Slo'ats Machine <unclear>hurred</unclear> <unclear>H/E fs</unclear>&ndash; came out 3 1/4 Train vry tired&ndash; &ndash; </p>
+            </div>
+            
+            
+        </body>
+        <back>
+            &ebwdiaback; </back>
+    </text>
+</TEI>
+
+

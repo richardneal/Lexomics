@@ -89,7 +89,7 @@ function removePunctuation($text) {
 		print("You must include some text from which to have the punctuation removed.");
 		return $text;
 	}
-
+	$text = str_replace("-", "", $text);
 	$text = trim(preg_replace('#[^\p{L}\p{N}]+#u', ' ', $text));
 	return $text;
 }
@@ -125,22 +125,19 @@ function formatSpecial($text, $lowercase) {
 		return $text;
 	}
 	else {
+		$chararray = array("&ae;", "&d;", "&t;", "&e;", "&amp;", "&AE;", "&D;", "&T;");
+		$uniarray = array("æ", "ð", "þ", "e", "&", "Æ", "Ð", "Þ");
+		$text = str_replace($chararray, $uniarray, $text);
+		/*
 		$text = str_replace("&ae;", "æ", $text);
 		$text = str_replace("&d;", "ð", $text);
 		$text = str_replace("&t;", "þ", $text);
 		$text = str_replace("&e;", "e", $text);
 		$text = str_replace("&amp;", "&", $text);
-
-		if ($lowercase == "on") {
-			$text = str_replace("&AE;", "æ", $text);
-			$text = str_replace("&D;", "ð", $text);
-			$text = str_replace("&T;", "þ", $text);
-		}
-		else {
-			$text = str_replace("&AE;", "Æ", $text);
-			$text = str_replace("&D;", "Ð", $text);
-			$text = str_replace("&T;", "Þ", $text);
-		}
+		$text = str_replace("&AE;", "Æ", $text);
+		$text = str_replace("&D;", "Ð", $text);
+		$text = str_replace("&T;", "Þ", $text);
+		*/
 		return $text;
 	}
 }
@@ -170,15 +167,19 @@ function scrub_text($string, $formatting, $tags, $punctuation, $removeStopWords,
 		case 'default':
 			// Make the string variable a string with the requested elements removed.
 			utf8_encode($string);
-			print("<br /> Before special characters <br />" . substr($string, 0, 1000) . "<br />");
+			$string = html_entity_decode($string, ENT_QUOTES, 'UTF-8');
+			print("<br /> Before lowercase <br />" . substr($string, 0, 1000) . "<br />");
+			if($lowercase == "on") {
+				$string = strtolower($string);
+				$caparray = array("Æ", "Ð", "Þ");
+				$lowarray = array("æ", "ð", "þ");
+				$string = str_replace($caparray, $lowarray, $string);
+			}
+			print("<br /> After lowercase, before special characters <br />" . substr($string, 0, 1000) . "<br />");
 			if ($special == "on") {
 				$string = formatSpecial($string, $lowercase);
 			}
-			print("<br /> After special characters, before lowercase <br />" . substr($string, 0, 1000) . "<br />");
-			if($lowercase == "on") {
-				$string = strtolower($string);
-			}
-			print("<br /> After lowercase, before strip tags <br />" . substr($string, 0, 1000) . "<br />");
+			print("<br /> After special characters, before strip tags <br />" . substr($string, 0, 1000) . "<br />");
 			if ($formatting == "on") {
 				if($tags=="keep"){
 					$string = strip_tags($string);

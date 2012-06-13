@@ -1,0 +1,14 @@
+<profileDesc>
+    <handNotes>
+        <handNote xml:id="ebwdiaEBW_hand" corresp="#ebwdiaEBW"><p>Eliza Wheaton's handwriting.</p></handNote>
+        <handNote xml:id="ebwdiaMC_hand"><p>Handwriting of Mary Chapin.</p></handNote>
+    </handNotes>
+</profileDesc>       
+
+<!-- Old:
+    <profileDesc>
+    <handList>
+    <hand xml:id="ebwdiaEBW_hand" scribe="#ebwdiaEBW" first="true"/>
+    <hand xml:id="ebwdiaMC_hand"/>
+    </handList>
+    </profileDesc>-->
