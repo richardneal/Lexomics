@@ -8,6 +8,7 @@ if(is_null($_SESSION["file"])) {
 }
 if (is_null($_SESSION["POST"])) {
     $_SESSION["POST"]["punctuationbox"] = "on";
+    $_SESSION["POST"]["digitsbox"] = "on";
     if(preg_match("'<[^>]+>'U", $file) > 0)
         $_SESSION["POST"]["formattingbox"] = "on";
     $_SESSION["POST"]["lowercasebox"] = "on";
@@ -66,6 +67,7 @@ if (is_null($_SESSION["POST"])) {
         <fieldset>
             <legend><b>Scrubbing Options </b></font></legend>
             <input type="checkbox" name="punctuationbox" <?php if(isset($_SESSION["POST"]["punctuationbox"])) echo "checked" ?>/> Remove Punctuation
+            <br /><input type="checkbox" name="digitsbox" <?php if(isset($_SESSION["POST"]["digitsbox"])) echo "checked" ?>/> Remove Digits
             <?php if(preg_match("'<[^>]+>'U", $file) > 0): ?>
             <br /><input type="checkbox" name="formattingbox" id="formattingbox" <?php if(isset($_SESSION["POST"]["formattingbox"])) echo "checked" ?> onClick="tagSelect()"/> Strip Tags
             <div id="tagBox" style=<?php if(is_null($_SESSION["POST"]["formattingbox"])) echo "display: none;" ?>/>
@@ -117,7 +119,6 @@ if (is_null($_SESSION["POST"])) {
         </form>
     </fieldset><br>
     <div id="info">
-        Richard Neal <br />
         <a href="http://wheatoncollege.edu/lexomics/"> Lexomics @ Wheaton College</a>
     </div>
 </div>

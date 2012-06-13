@@ -128,16 +128,6 @@ function formatSpecial($text, $lowercase) {
 		$chararray = array("&ae;", "&d;", "&t;", "&e;", "&amp;", "&AE;", "&D;", "&T;");
 		$uniarray = array("æ", "ð", "þ", "e", "&", "Æ", "Ð", "Þ");
 		$text = str_replace($chararray, $uniarray, $text);
-		/*
-		$text = str_replace("&ae;", "æ", $text);
-		$text = str_replace("&d;", "ð", $text);
-		$text = str_replace("&t;", "þ", $text);
-		$text = str_replace("&e;", "e", $text);
-		$text = str_replace("&amp;", "&", $text);
-		$text = str_replace("&AE;", "Æ", $text);
-		$text = str_replace("&D;", "Ð", $text);
-		$text = str_replace("&T;", "Þ", $text);
-		*/
 		return $text;
 	}
 }
@@ -162,7 +152,7 @@ function formatSpecial($text, $lowercase) {
  * @see remove_elements()
  *
  */
-function scrub_text($string, $formatting, $tags, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopWords = "", $lemmas = "", $consolidations = "", $type = 'default') {
+function scrub_text($string, $formatting, $tags, $punctuation, $digits, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopWords = "", $lemmas = "", $consolidations = "", $type = 'default') {
 	switch ($type) {
 		case 'default':
 			// Make the string variable a string with the requested elements removed.
@@ -192,7 +182,11 @@ function scrub_text($string, $formatting, $tags, $punctuation, $removeStopWords,
 			if ($punctuation == "on") {
 				$string = removePunctuation($string);
 			} 
-			print("<br /> After remove punctuation, before remove stopwords <br />" . substr($string, 0, 10000) . "<br />");
+			print("<br /> After remove punctuation, before remove digits <br />" . substr($string, 0, 1000) . "<br />");
+			if ($digits == "on") {
+				$string = str_replace(range(0, 9), '', $string);
+			} 
+			print("<br /> After remove digits, before remove stopwords <br />" . substr($string, 0, 10000) . "<br />");
 			if ($removeStopWords == "on") {
 				$string = remove_stopWords($string, $stopWords);
 			}
@@ -226,6 +220,7 @@ function scrub_text($string, $formatting, $tags, $punctuation, $removeStopWords,
 
 $formatting = "";
 $punctuation = "";
+$digits = "";
 $removeStopWords = "";
 $lemmatize = "";
 $consolidate = "";
@@ -238,6 +233,8 @@ if(isset($_POST["formattingbox"]))
 	$tags = $_POST["tags"];
 if(isset($_POST["punctuationbox"]))
 	$punctuation = $_POST["punctuationbox"];
+if(isset($_POST["digitsbox"]))
+	$digits = $_POST["digitsbox"];
 if(isset($_POST["stopwordbox"]))
 	$removeStopWords = $_POST["stopwordbox"];
 if(isset($_POST["lemmabox"]))
@@ -253,7 +250,7 @@ $file = file_get_contents($_SESSION["file"]);
 $stopwords = file_get_contents($_SESSION["stopwords"]);
 $lemmas = file_get_contents($_SESSION["lemmas"]);
 $consolidations = file_get_contents($_SESSION["consolidations"]);
-$_SESSION["scrubbed"] = scrub_text($file, $formatting, $tags, $punctuation, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopwords, $lemmas, $consolidations);
+$_SESSION["scrubbed"] = scrub_text($file, $formatting, $tags, $punctuation, $digits, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopwords, $lemmas, $consolidations);
 
 header('Location: ' . "display.php");
 die();

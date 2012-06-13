@@ -22,8 +22,7 @@ if ((($_FILES["file"]["type"] == "text/plain")
     echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
     echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br />";
 
-    move_uploaded_file($_FILES["file"]["tmp_name"],
-    SCRUB_DIR . $_FILES["file"]["name"]);
+    move_uploaded_file($_FILES["file"]["tmp_name"], SCRUB_DIR . $_FILES["file"]["name"]);
     echo "Stored in: " . SCRUB_DIR . $_FILES["file"]["name"];
     $_SESSION[$_POST['type']] = SCRUB_DIR . $_FILES["file"]["name"];
     header('Location: ' . "display.php");
