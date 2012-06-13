@@ -5,9 +5,8 @@ Display:
 		Put header above scrolling text
 	Options:
 		Check stopwords, lemmas, consololidations after upload
-		Add option for remove numbers
 SGML/XML
-	Serach for tei file (.xml)
+	Search for tei file (.xml)
 
 Open Source License
 	CC vs. GPL
@@ -17,7 +16,6 @@ Sitewide:
 	Theme like divitext
 
 Other:
-	root for cs
 	Talk to Tom about Ra
 	Look at meandre
 
