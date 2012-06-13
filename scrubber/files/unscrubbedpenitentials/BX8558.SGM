@@ -1,0 +1,2835 @@
+<!DOCTYPE tei.2 PUBLIC "-//SEENET//DTD seenet.dtd//EN" 
+"seenet.dtd"
+
+[
+<?STYLESPEC "Frantz1" "frantz1.ssh">
+<!ENTITY header SYSTEM "header.sgm" >
+<!ENTITY  Doc185  SYSTEM  "manuscrp.sgm"  NDATA  SGML  >
+
+]>
+<?ATTLINK XREF DOC "TEI-P3">
+<tei.2 id="Shell">
+     &header;
+<text>
+     <body>
+<div1 type="section" n="Back">
+<p><XREF DOC="Doc185"><hi rend="red">BACK</hi></XREF></p></div1>
+<div1 type="ch" n="B50.00.00"><milestone unit="B" n="50.00.00"><milestone unit="fol"
+n="132a">
+<p><add place="center" hand="hand4" resp="ajf">v. fo. 40a del' ed. angl.</add>
+</p></div1>
+<div1 type="ch" n="B51.01.00" id="oehstart"><milestone unit="B" n="51.01.00">
+<p><handshift
+new="hand1" old="hand8"
+resp="ajf"><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">I</hi></hi></hi>NCIPIT ORDO CONFESSIONIS
+S<expan>AN</expan>C<expan>T</expan>I HIERONIMI<lb>
+qualit<expan>er</expan> confiteri debeat
+Cr<expan>ist</expan>ian<expan>us</expan>
+peccata sua. </p><lb>
+<div2 type="sen" n="B51.01.01"> <p><hi rend="redfilled">Q</hi>uando aliquis uolue<damage
+type="stain" extent="22">rit
+confessione<expan>m</expan>
+facere</damage><lb>
+peccatoru<expan>m</expan> suoru<expan>m</expan> uiril<damage type="stain"
+extent="24">it<expan>er</expan>
+agat .&amp; non erubescat</damage><lb>
+confiteri scelera <damage type="stain" extent="26">&amp; facinora se accusando 
+q<expan>ui</expan>a</damage><lb>
+inde uenit <damage type="stain" extent="3">ind</damage>ulge<damage type="stain"
+extent="24">ntia &amp; quia sin&aelig; confes</damage><lb>sione nulla <damage
+type="stain"
+extent="31">est uenia.  <hi rend="redfilled">C</hi>onfessio eni<expan>m</expan>
+sanat.</damage><lb>confessio ius<damage type="stain" extent="30">tificat. confessio
+uenia<expan>m</expan>
+pecca</damage><lb>
+tis donat;<lb></p></div2>
+<div2 type="sen" n="B51.02.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">I</hi></hi></hi>Nprimus igit<expan>ur</expan> p<expan>ro</expan>sternat
+se humilit<expan>er</expan> in conspec<lb>tu d<expan>e</expan>i sup<expan>er</expan>
+terra<expan>m</expan> adoratione<expan>m.</expan> &amp; lacrimas fun<lb>
+dens. roget beata<expan>m</expan> maria<expan>m</expan>
+cu<expan>m</expan>
+s<expan>an</expan>c<expan>t</expan>is angelis .&amp;<lb>
+s<expan>an</expan>c<expan>t</expan>is ap<expan>osto</expan>lis .&amp;
+martyrib<expan>us</expan> &amp; confessoribus &amp; uir<lb>ginibus &amp;
+om<expan>n</expan>ibus el&aelig;ctis d<expan>ei.</expan> ut ipsi inter<lb>
+cedant p<expan>ro</expan> se ad d<expan>omin</expan>um. ut d<expan>eus</expan>
+om<expan>nip</expan>otens dignetur ei<lb>
+dare sapientia<expan>m</expan>
+p<expan>er</expan>fecta<expan>m</expan> &amp; uera<expan>m</expan>
+intellegentiam.<lb>
+ad confitendu<expan>m</expan> peccata
+sua. </p></div2> 
+<div2 type="sen" n="B51.02.02"> <p><hi rend="red">Cr</hi><del type="erasure"
+hand="hand1">&nbsp;</del><expan>ist</expan>e audi
+nos.<lb>
+<hi rend="od"><hi rend="red">S</hi></hi><expan>an</expan>c<expan>t</expan>a maria.
+<hi rend="red">O</hi>m<expan>ne</expan>s
+s<expan>an</expan>c<expan>t</expan>i orate .&amp;
+r<expan>e</expan>l<expan>iquum</expan>. </p></div2>
+<div2 type="sen" n="B51.02.03"> <p><hi rend="red">P</hi><del type="erasure"
+hand="hand1">&nbsp;</del>ost h(e,)c
+aut<expan>em</expan><lb>
+cu<expan>m</expan> fiducia surgens confiteat<expan>ur</expan> poenitens creduli<lb>
+tatem sua<expan>m</expan> dicens. </p></div2>
+<div2 type="sen" n="B51.02.04"> <p>Credo in unum d<expan>eu</expan>m .&amp;
+r<expan>e</expan>l<expan>iquum</expan>. <lb></p></div2>
+<div2 type="sen" n="B51.02.05"> <p><hi rend="red"><hi rend="e2">e</hi>t post hec
+incipiat
+confessionem sua<expan>m</expan> cora<expan>m</expan>
+d<expan>e</expan>o
+&amp; cora<expan>m</expan><lb>
+sacerdote confitens peccata sua. Sequit<expan>ur</expan>. oratio
+ore<expan>mus</expan></hi><lb></p></div2>
+<milestone unit="fol" n="132b">
+<div2 type="sen" n="B51.02.06"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">P</hi></hi></hi>reueniat hunc famulu<expan>m</expan>
+tuu<expan>m</expan> q<expan>uae</expan>s<expan>o</expan>
+d<expan>omi</expan>ne
+mis<expan>eri</expan>c<expan>or</expan>dia<lb>
+tua. ut om<expan>nes</expan> <damage type="stain"
+extent="2">in</damage>iq<expan>ui</expan>tates eius
+c(e,)leri
+indulgentia<lb>
+deleantur. p<expan>er Iesum Cristum</expan>. </p></div2></div1><lb><div1 type="ch"
+n="B53.01.00"><milestone unit="B" n="53.01.00"> <div2 type="sen"
+n="B53.01.01"> <p><lb><hi rend="od"><add
+place="marginLeft" hand="hand3" resp="ajf">1</add><hi rend="red"><hi
+rend="orncap2">&ETH;</hi></hi></hi><del type="erasure"
+hand="hand1">_</del> <damage type="stain"
+extent="4">&aelig;t s</damage>ceal <damage type="stain"
+extent="8">ge&thorn;encea</damage>n se &thorn;e
+b&yacute;&eth; monna saula<lb>
+<damage type="stain" extent="22">l&aelig;&acute;ce .&amp; heora d&aelig;da
+gewi</damage>ta. &thorn;<expan>&aelig;t</expan> gedal &amp; <add place="interlinear"
+hand="hand2" resp="ajf">&thorn;<expan>&aelig;t</expan></add> gescead.<lb><damage
+type="stain"
+extent="20">hu he mannu<expan>m</expan> heora d&aelig;</damage>da gescrife .&amp; he
+hw&aelig;<lb>
+<damage type="stain" extent="21">&eth;ere ne ford&eacute;me . ne h</damage>&yacute;
+ormode ne ged&oacute;. <lb></p></div2>
+<div2 type="sen" n="B53.02.01"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">2</add></hi> <damage type="stain"
+extent="22">&thorn;on<expan>ne</expan> se
+mon him his mis</damage>d&aelig;&acute;da andettan w&yacute;lle.<lb>
+geh&yacute;re <damage type="stain" extent="17">him &aelig;rest
+ge&thorn;&yacute;lde</damage>lice hu his wisa ge<lb>
+r&aacute;d s&yacute;. </p></div2> 
+<div2 type="sen" n="B53.03.01"> <p><hi rend="redfilled">G</hi>&yacute;f he w&yacute;lle
+&amp; cunne ea&eth;modlice
+his<lb>
+d&aelig;da andettan .&amp; &thorn;u ong&yacute;te
+&thorn;<expan>&aelig;t</expan>
+him
+his s&yacute;nna<lb>
+hreowen. l&aelig;r hine luflice &amp; mildheortlice. <lb></p></div2><div2 type="sen"
+n="B53.04.01"> <p><lb><hi rend="od"><add place="marginLeft" hand="hand3"
+resp="ajf">3</add></hi> <hi
+rend="redfilled">G</hi>&yacute;f he ne cunne his d&aelig;&acute;da
+andettan
+&amp; his<lb>
+g&yacute;ltas gesmeagean. acsa hine his w&yacute;sena .&amp;<lb>atred him &thorn;a
+g&yacute;ltas ut .&amp; &aacute;sec his d&aelig;da .&amp; ge<lb>
+&thorn;enc &thorn;u &thorn;<expan>&aelig;t</expan> &eth;u ne scealt n&aelig;&acute;fre
+gel&iacute;ce d&eacute;man.<lb>
+&thorn;am r&iacute;can &amp; &eth;am h&eacute;anan. &thorn;am freon &amp;
+&thorn;a<expan>m</expan><lb>
+&thorn;eowan. &thorn;am ealdan .&amp; &thorn;a<expan>m</expan>m geongan.
+&thorn;a<expan>m</expan> halan<lb>
+&amp; &thorn;a<expan>m</expan> &uacute;nhalan. &thorn;a<expan>m</expan>
+ea&eth;modan .&amp; &eth;am ofermo<lb>
+dan. &thorn;a<expan>m</expan> strangan .&amp; &thorn;a<expan>m</expan> unmagan.
+&thorn;a<expan>m</expan> gehade<lb>
+<hi rend="od"><add place="marginLeft" hand="hand3" resp="ajf">4</add></hi> don &amp;
+&thorn;a<expan>m</expan>
+l&aelig;wedu<expan>m.</expan></p></div2>
+<div2 type="sen" n="B53.05.01"> <p>[<hi rend="redfilled"><hi
+rend="&AElig;2">&AElig;</hi></hi>lce
+d<damage type="stain" extent="2">&aelig;d</damage>e sceal gescead<lb>wis dema wislice
+tosceadan. hu heo ged&oacute;n s&yacute;.<lb>&amp; hwar. o&eth;&eth;e
+hwenne. </p></div2> 
+<div2 type="sen" n="B53.06.01"> <p><hi rend="redfilled">N</hi>is on
+&aelig;nigne timan<lb>
+<milestone unit="fol" n="133a">
+unriht al&yacute;fed .&amp; &thorn;eh mon sceal freolst&iacute;dan.<lb>&amp;
+f&aelig;stentidan .&amp; on freolstowan eac swa georn<lb>licost bergan. </p></div2> 
+<div2 type="sen" n="B53.07.01"> <p>&amp; a swa man b&yacute;&eth; mihtigra
+o&eth;&eth;e<lb>
+maran hades swa sceal he d<damage type="stain" extent="6">eoppor</damage> for gode
+&amp;<lb>
+for worolde. unriht gebeta<damage type="stain" extent="8">n.
+for&thorn;a<expan>m</expan></damage> se<del type="erasure"
+hand="hand1">&nbsp; &nbsp;</del> maga<lb>
+&amp; se unmaga. ne magan n&aacute; <damage type="stain" extent="11">gelice
+b&yacute;r&eth;</damage>ene a<lb>
+hebban. ne se unh&aacute;la &thorn;a<expan>m</expan> ha<damage type="stain"
+extent="5">lum g</damage>el&iacute;<damage type="stain"
+extent="7">ce.</damage></p></div2> 
+<div2 type="sen" n="B53.08.01"> <p><damage type="stain"
+extent="4">&amp; &thorn;&yacute;</damage> man<lb>sceal medmian .&amp;
+gesceadlic<damage type="stain" extent="2">e to</damage>sca<damage type="stain"
+extent="3">dan</damage> &yacute;ldo &amp;<lb>
+geogo&eth;e. welan &amp; w&aelig;&acute;dle. h&aelig;le <damage type="stain"
+extent="4">&amp;
+u</damage>nh&aelig;&acute;le .&amp; hada<lb>
+gehw&yacute;lcne .&amp; g&yacute;f hwa hw&aelig;t ungewealdes misde&eth;.<lb>ne
+b&yacute;&eth; &thorn;<expan>&aelig;t</expan> na gelic
+&thorn;a<expan>m</expan>
+&eth;e willes &amp; gewealdes s&yacute;lfwilles<lb>
+misde&eth; .&amp; eac se &eth;e n&yacute;dw&yacute;rhta b&yacute;&eth; &thorn;&aelig;s
+&thorn;e he mis<lb>
+de&eth;. se b&yacute;&eth; gebeorges &amp; &thorn;e beteran domes s&yacute;mle<lb>
+w&yacute;r&eth;e. &thorn;e he n&yacute;dw&yacute;rhta w&aelig;s. &thorn;&aelig;s
+&thorn;e
+h&eacute; worhte. <lb></p></div2>
+<div2 type="sen" n="B53.09.01"> <p><hi rend="redfilled">&AElig;</hi>lce
+d&aelig;&acute;de toscade man w&aelig;rlice for gode &amp; for<lb>worolde:,<Note
+type="codicological">Colon followed by large comma.</note> <add
+place="marginLeft" hand="hand3" resp="ajf">Modus ... imponendi paenitentiam--<lb>
+Thorpe 405 ... </add></p></div2></div1> 
+<div1 type="ch" n="B54.01.00"><milestone unit="B" n="54.01.00"> <div2 type="sen"
+n="B54.01.01"> <p><lb><hi rend="od"><add place="marginLeft" hand="hand3"
+resp="ajf">1</add><hi
+rend="od"><hi rend="red"><hi
+rend="orncap2">&ETH;</hi></hi></hi></hi>as
+&thorn;eawas man healde&thorn; begeondan s&aelig;&acute;.
+&thorn;<expan>&aelig;t</expan> is &thorn;&aelig;t<lb>
+ealc bisceop b&yacute;&eth; &aelig;t his bisceopst&oacute;le on &thorn;one wod<lb>
+nesd&aelig;g &thorn;e we cwe&eth;a&eth; caput ieiunii. </p></div2>  <div2 type="sen"
+n="B54.01.02"> <p>&thorn;onne elc<lb>
+&thorn;&aelig;ra manna &thorn;e mi&eth; heafodleahtre
+besm&yacute;<lb>ten b&yacute;&eth;
+on &thorn;<damage type="stain" extent="2">&aelig;</damage>re sc&iacute;re. sceal
+&thorn;onne on d&aelig;g hi<expan>m</expan><lb>
+to cuman .&amp; his s&yacute;nna him gecy&eth;an. </p></div2>  <div2 type="sen"
+n="B54.02.01"> <p>&amp; he
+&thorn;on<expan>ne</expan><lb>
+heo<expan>m</expan> <del type="erasure" hand="hand1">&nbsp;</del>t&aelig;c<del
+type="erasure"
+hand="hand1">&nbsp;</del>&eth; d&aelig;&acute;dbote. &aelig;lcum be
+g&yacute;ltes m&aelig;&eth;e. <lb></p></div2>
+<milestone unit="fol" n="133b">
+<div2 type="sen" n="B54.02.02"> <p>&thorn;a &thorn;e &eth;&aelig;s w&yacute;r&eth;e
+beo&eth;. he as&yacute;ndre&eth; of c&yacute;ric<lb>
+lican gemanan .&amp; hi &thorn;eh to heora agenre &thorn;ear<lb>fe h&yacute;rte&eth;
+&amp;
+t&yacute;hte&eth;. </p></div2> 
+<div2 type="sen" n="B54.02.03"> <p>&amp; hi swa
+&thorn;on<expan>ne</expan>
+be his
+leafe<lb>
+<hi rend="od"><add place="marginLeft" hand="hand3" resp="ajf">2</add></hi> h&aacute;m
+hw&yacute;<damage
+type="stain" extent="5">rfa&eth;.</damage></p></div2>  <div2 type="sen"
+n="B54.03.01"> <p><note type="textual">Paragraph sign here corresponds to numeral 2 in
+margin.</note>&amp; eft on &thorn;one
+&thorn;unresd&aelig;g
+&aelig;r<lb>
+eastran <damage type="stain" extent="8">to &thorn;&aelig;re</damage> &yacute;lcan
+stowe
+ealle gesomnia&eth;.<lb>
+&amp; him &thorn;<damage type="stain" extent="7">onne se</damage> bisceop ofer
+singe&eth; .&amp; absolu<lb>
+<damage type="stain" extent="5">tionem</damage> de<damage type="stain"
+extent="6">&thorn;.
+&amp; hi</damage> swa h&aacute;m hw&yacute;rfa&eth; mid
+&thorn;&aelig;s<lb>
+bisceope<damage type="stain" extent="1">s</damage> blet<damage type="stain"
+extent="3">sun</damage>ge
+s&yacute;&eth;&eth;an. </p></div2> 
+<div2 type="sen" n="B54.03.02"> <p><hi rend="redfilled">&ETH;</hi>is is to
+heald&aelig;n<lb>
+<hi rend="od"><add place="marginLeft" hand="hand3" resp="ajf">3</add></hi> ne
+eallu<expan>m</expan>
+cris<damage type="stain" extent="3">ten</damage>num folce. </p></div2>  <div2 type="sen"
+n="B54.04.01"> <p>&amp; &thorn;eh hwe&thorn;ere sceal<lb>se sacerd geornlice smegean
+mid
+hw&yacute;lcre<lb>
+abr&yacute;rdnesse .&amp; mid hw&yacute;lcre fulfremednesse<lb>se d&aelig;&acute;dbota
+gebet h&aelig;bbe. &thorn;<expan>&aelig;t</expan> him get&aelig;ht w&aelig;s.<lb>
+&amp; swa him be &thorn;a<expan>m</expan> forg&yacute;fenesse d&oacute;n. </p></div2>
+<div2 type="sen"
+n="B54.05.01"> <p><lb><hi rend="od"><add place="marginLeft" hand="hand3"
+resp="ajf">IV</add> <hi rend="red">G</hi></hi>&yacute;f
+l&aelig;wede man o&eth;erne sl&yacute;h&eth; butan
+g&yacute;lte.<lb>
+f&aelig;ste .vii. gear .iii. on hlafe &amp; on w&aelig;tere .&amp; &thorn;a<lb>iiii. swa his
+scrift
+t&aelig;ce .&amp; &aelig;ft<expan>er</expan> &thorn;ara .vii. geara<lb>
+bote &aelig;fre he geornlice hreowsige his mis<lb>
+d&aelig;&acute;da. be &thorn;am d&aelig;le &thorn;e he m&aelig;ge. for&eth;on
+hi<expan>m</expan><lb>
+is uncu&eth; hu andfenge his b&oacute;t w&aelig;re mid<lb>gode:,<Note
+type="codicological">Colon followed by large comma; represent with
+graphic.</note><lb></p></div2>
+<div2 type="sen" n="B54.06.01"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand3"
+resp="ajf">V</add> <hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e
+&thorn;e
+o&eth;erne ofslean w&yacute;lle .&amp; ne m&aelig;g his<lb>w&yacute;llan fullice
+&thorn;urhteon. f&aelig;ste .iii. ge&aacute;r<lb>an hlafe &amp; on w&aelig;tere .&amp; .ii.
+swa
+his scrift him<lb><milestone unit="fol" n="134a">
+<hi rend="od"><add place="marginLeft" hand="hand3"
+resp="ajf">6</add></hi> t&aelig;&acute;ce. </p></div2>
+<div2 type="sen" n="B54.07.01"> <p><hi rend="redfilled">G</hi>&yacute;f
+l&aelig;wede man neadinga man<lb>
+sl&yacute;h&eth;. f&aelig;ste .iii. gear .i. on hlafe .&amp; on
+w&aelig;t<expan>er</expan>e.<lb>
+&amp; ii. Swa his scrift him t&aelig;ce .&amp; behreowsige<lb><hi rend="od"><add
+place="marginLeft"
+hand="hand3" resp="ajf">7/</add></hi> his misd&aelig;da &aelig;fre. <add hand="hand3"
+resp="ajf">/</add><hi rend="redfilled">G</hi>&yacute;f hit
+b&yacute;&eth; subdiacon.<lb>
+f&aelig;ste .vi. ger. <hi rend="redfilled">G</hi>if hit beo diacon. f&aelig;ste
+.vii. <lb>
+ger. Gif hit beo m&aelig;ssepreost f&aelig;ste .x. gear.<lb>&amp; bisceop .xii .&amp;
+hreowsige
+&aelig;fre. </p></div2> <div2 type="sen" n="B54.08.01"> <p><add place="marginLeft"
+hand="hand3" resp="ajf">/</add><hi rend="redfilled">G</hi>&yacute;f <damage
+type="stain" extent="5">hwa
+h</damage>is <add place="marginRight" hand="hand3" resp="ajf">8 /</add><Note
+type="codicological">Pencil additions in margins switch from left to right margin at this point
+and from arabic to roman numerals. See fol. 135a, line 9.</note><lb>c&yacute;ld
+sl&yacute;h&eth; to dea&thorn;e ungewealdes. f&aelig;ste .v. ger.<lb>iii. on hlafe &amp; on
+w&aelig;tere. ut sup<expan>ra</expan>. </p></div2> <div2 type="sen" n="B54.09.01">
+<p><add
+place="marginLeft" hand="hand3" resp="ajf">/</add> <hi rend="redfilled">G</hi>yf
+bisceop o&eth;&eth;e <add place="marginRight" hand="hand3" resp="ajf">9</add><lb>
+m&aelig;ssepreost mon slea &thorn;olige his hades .&amp; bete<lb>georne
+&aelig;fre. </p></div2>
+<div2 type="sen" n="B54.10.01"> <p><add place="marginLeft" hand="hand3"
+resp="ajf">/</add><hi rend="redfilled">G</hi>if wif hire c&yacute;ld
+form&yacute;r&eth;rige <add place="marginRight" hand="hand3" resp="ajf">10</add><lb>
+innan hire. o&eth;&eth;e si&thorn;&thorn;an hit for&eth; cume mid<lb>drence. o&eth;&eth;e
+mid mislicu<expan>m</expan> &thorn;ingum f&aelig;ste .x. g&eacute;r.<lb>
+iii. on hlafe &amp; on w&aelig;tere .&amp; vii. <hi rend="redfilled">S</hi>wa hire
+scrift<lb>
+hire mildheortlice t&aelig;ce .&amp; &aelig;fre hit behreow<lb>sige. </p></div2>
+<div2 type="sen" n="B54.11.01"> <p><add place="marginLeft" hand="hand3"
+resp="ajf">/</add><hi rend="redfilled">G</hi>&yacute;f hwa his &aelig;ht
+ofsl&yacute;h&eth; buton
+g&yacute;lte <add place="marginRight" hand="hand3" resp="ajf">XI</add><lb>for his
+hatheortn&yacute;sse f&aelig;ste .iii. ger. </p></div2> <div2 type="sen"
+n="B54.12.01"> <p><add place="marginLeft" hand="hand3" resp="ajf">/</add><hi
+rend="redfilled">G</hi>if wif <add place="marginRight" hand="hand3"
+resp="ajf">XII</add><lb>
+hire wifman swing&eth; for hwilcum l&yacute;&eth;rum<lb>
+&aacute;ndan &amp; heo on &thorn;a<expan>m</expan> b&yacute;&eth; dead &amp; heo
+beo unsc&yacute;l<lb>
+dig. f&aelig;ste seo hl&aelig;fdige .vii. g&eacute;r .&amp; g&yacute;f heo beo<lb>
+sc&yacute;ldige. f&aelig;ste &thorn;eh .iii. g&eacute;r .&amp; hreowsige hire mis<lb><hi
+rend="od"><add
+place="marginLeft" hand="hand3" resp="ajf">XIII /</add></hi> d&aelig;da
+&aelig;fre. </p></div2>
+<div2 type="sen" n="B54.13.01"> <p><hi rend="red">G</hi>&yacute;f man hine s&yacute;lfne
+gewealdes<lb>
+ofsl&yacute;h&eth; mid w&aelig;pne o&eth;&eth;e mid hwilcon deofles<lb><milestone
+unit="fol" n="134b">
+onbringe. nis hit n&aacute; al&yacute;fed &thorn;<expan>&aelig;t</expan> man for
+sw&yacute;l<lb>
+cne man m&aelig;ssan singe. ne mid n&aelig;ngum <lb>
+sealmsange &thorn;<expan>&aelig;t</expan> l&iacute;c eor&eth;an bef&aelig;ste ne on
+cl&aelig;<lb>
+nan b&yacute;rge. </p></div2>
+<div2 type="sen" n="B54.13.02"> <p><hi rend="redfilled">&ETH;</hi>one &yacute;lcan
+d&oacute;m man
+sceal don &thorn;a<expan>m</expan><lb>
+&thorn;e for his g&yacute;lta pinunge his l&iacute;f al&eacute;t. &thorn;eof.<lb><hi
+rend="od"><add
+place="marginLeft" hand="hand3"
+resp="ajf">XIV</add></hi> mor&eth;w&yacute;rhta.
+<expan>o&eth;&eth;e</expan> hlafordswica. </p></div2>
+<div2 type="sen" n="B54.14.01"> <p><add place="marginLeft" hand="hand3"
+resp="ajf">/</add><hi rend="redfilled">G</hi>&yacute;f hwa hine<lb>wi&eth;
+n&yacute;tenu besmite&eth;. o&eth;&eth;e w&aelig;pnedmon wi&eth;<lb>o&thorn;erne.
+g&yacute;f he b&yacute;&eth; .xx. wintre. f&aelig;ste .xv. wint<expan>er</expan>.<lb>
+&amp; g&yacute;f se man his gem&aelig;ccan h&aelig;bbe &amp; he beo .xl.<lb>wintre
+.&amp;
+<hi rend="redfilled">S</hi>wilce &thorn;ing beg&aelig;&eth;. geswice &amp;
+f&aelig;ste &thorn;a<lb>
+hwile &thorn;e his lif beo .&amp; ne ge&thorn;ristl&aelig;ce &thorn;<expan>&aelig;t</expan>
+he drih<expan>tenes</expan><lb>lichaman underf&oacute;. &aelig;r his ende timan. <hi
+rend="redfilled">G</hi>eo<lb>
+nge men &amp; andg&yacute;tlease man sceal &thorn;earle swin<lb><hi rend="od"><add
+place="marginLeft"
+hand="hand3" resp="ajf">XV</add></hi> gan. &thorn;e swilce &thorn;ing
+bega&eth;. </p></div2>
+<div2 type="sen" n="B54.15.01"> <p><add place="marginLeft" hand="hand3"
+resp="ajf">/</add><hi rend="redfilled">S</hi>e man &thorn;e &aelig;we
+br&yacute;c&eth;.<lb>
+f&aelig;ste .vii. gear .iii. dagas on wucan. on hlafe &amp; on<lb><hi rend="od"><add
+place="marginLeft"
+hand="hand3" resp="ajf">XVI</add></hi> w&aelig;tere. s&yacute;
+hit wif
+s&yacute; hit
+w&aelig;r. </p></div2>
+<div2 type="sen" n="B54.16.01"> <p><add place="marginLeft" hand="hand3"
+resp="ajf">/</add><hi rend="redfilled">S</hi>e &thorn;e his &aelig;we for<lb>
+l&aelig;t .&amp; nime&eth; o&eth;er wif. he b&yacute;&eth; &aelig;wbreca ne
+s&yacute;lle<lb>
+him man &thorn;&aelig;ra gerihta &thorn;e cristenu<expan>m</expan>
+mannu<expan>m</expan><lb>
+to geb&yacute;re&eth; ne for life. ne for dea&eth;e ne hine<lb>man ne lecge mid
+cristennu<expan>m</expan> mannu<expan>m</expan> .&amp;
+be
+wife<lb>
+ealswa .&amp; &thorn;a magas &thorn;e &aelig;t &thorn;am dihte w&aelig;ron &thorn;o<lb>
+lian &thorn;one &yacute;lcan d&oacute;m buton h&iacute; &aelig;r gec&yacute;rran<lb>
+w&yacute;llan &amp; georne gebetan. </p></div2>
+<div2 type="sen" n="B54.17.01"> <p><hi rend="redfilled">S</hi>e &thorn;e
+h&aelig;f&eth; &aelig;we &amp; eac<lb>
+<milestone unit="fol" n="135a">
+c&yacute;fese. ne do him nan preost nane gerihto mid<lb>
+cristenum mannum. butan he to bote gec&yacute;rre.<lb>
+beo him on anre gehealden beo hit &aelig;we beo hit<lb>
+<hi rend="od"><add place="marginLeft" hand="hand3" resp="ajf">18 |</add></hi><Note
+type="codicological">Pencil additions in margins switch back from roman to arabic numerals.
+See
+note to 134a, line 7.</note> c&yacute;fes. </p></div2>
+<div2 type="sen" n="B54.17.02"> <p><hi rend="redfilled">G</hi>&yacute;f
+ceorl wi&eth; o&thorn;res riht&aelig;we h&aelig;m&eth;. o&thorn;&thorn;e <lb>wif wi&eth;
+o&eth;res wifes rihtgem&aelig;ccan. f&aelig;ste .vii. g&eacute;r. &thorn;a<lb>
+&thorn;reo on hlafe &amp; on w&aelig;tere .&amp; &thorn;a .iiii. swa him his<lb>scrift
+t&aelig;&acute;ce .&amp; hreowsige, <add place="interlinear" hand="hand2"
+resp="ajf">&thorn;a</add> misd&aelig;da &aelig;fre. </p></div2>
+<div2 type="sen" n="B54.18.01"> <p><hi rend="redfilled">G</hi>&yacute;f<lb>
+hw&yacute;lc wif twoegen gebro&eth;ra nim&eth; hire to ge<lb>m&aelig;ccan o&eth;erne
+&aelig;ft<expan>er</expan> o&eth;rum. todo man h&iacute;.
+&amp;<lb>
+beon hi on d&aelig;dbote &thorn;a hwile &thorn;e hi libben swa hira<lb>scrift him t&aelig;ce.
+&amp; &aelig;t heora for&eth;si&eth;e do se sacerd<lb>him &thorn;a gerihto swa man
+cristenum mannum<lb>
+de&thorn;. g&yacute;f hi &thorn;<expan>&aelig;t</expan> gehata&eth;
+&thorn;<expan>&aelig;t</expan> hi leng betan woldan g&yacute;f<lb>hi leng libban mostan.
+</p></div2>
+<div2 type="sen" n="B54.19.01"> <p><add place="marginLeft" hand="hand3"
+resp="ajf">|</add> <add hand="hand3"
+resp="ajf">|</add><hi rend="redfilled">G</hi>&yacute;f hwa on swilcon <space
+dim="horizontal" extent="2">&nbsp;&nbsp;<add place="marginLeft" hand="hand3"
+resp="ajf">20</add><lb>
+manfullum s&yacute;nscipe &thorn;urhwuna&eth; o&eth; his lifes<lb>ende butan &aelig;lcre
+geswicenesse ne cunne we him<lb>
+nenne r&aelig;d ge&thorn;encean. butan hit is &aelig;t godes<lb>dome gelang. ne he to
+cl&aelig;nan ne mot. </p></div2>
+<div2 type="sen" n="B54.20.01"> <p><add place="marginLeft" hand="hand3"
+resp="ajf">|</add> <hi rend="redfilled">G</hi>&yacute;f <space dim="horizontal"
+extent="2">&nbsp;&nbsp;
+<add place="marginRight" hand="hand3" resp="ajf">21</add><lb>hw&yacute;lc wif beweddod
+beo. nis hit na al&yacute;fed &thorn;&aelig;t<lb>hw&yacute;lc o&eth;er man hine
+&thorn;&aelig;s bereafige. g&yacute;f hwa<lb>d&oacute; beo he
+&aacute;mansumad. </p></div2>
+<div2 type="sen" n="B54.21.01"> <p><hi rend="redfilled">G</hi>&yacute;f hwa
+mid his of<expan>er</expan><lb>
+cr&aelig;fte wif o&eth;&eth;e m&aelig;den n&yacute;dinga nim&eth; to un<lb>
+rihth&aelig;mede. hire unw&yacute;lles. beo he aman<lb>
+<milestone unit="fol" n="135b">
+<hi rend="od"><add place="marginLeft" hand="hand3"
+resp="ajf">23</add></hi> sumad. </p></div2>
+<div2 type="sen" n="B54.22.01"> <p><add hand="hand3"
+resp="ajf">|</add> <hi rend="redfilled">G</hi>&yacute;f
+hwa mid his lotwrencum o&eth;res<lb>
+mannes folgere fro<expan>m</expan> him ap&aelig;&acute;ce. for h&aelig;med<lb>
+&thorn;ingc .&amp; hire unwilles wi&eth; hi h&aelig;&acute;me g&yacute;f he bi&eth;<lb>
+gehadod man &thorn;olige his hades. gi<add place="inline" hand="hand2" resp="ajf">f</add>
+he
+beo
+l&aelig;we<lb>
+<hi rend="od"><add place="marginLeft" hand="hand3" resp="ajf">24</add></hi> de man. beo
+h&eacute;
+amansumad. </p></div2>
+<div2 type="sen" n="B54.23.01"> <p><add hand="hand3"
+resp="ajf">|</add><hi rend="redfilled">G</hi>&yacute;f hw&yacute;lc m&aelig;<lb>
+den beweddod b&yacute;&eth; &amp; under &thorn;a<expan>m</expan> bi&eth; gehergod
+<expan>o&eth;&eth;e</expan><lb>
+mid sumu<expan>m</expan> intingan af&yacute;rred w&yacute;r&eth; from
+&thorn;a<expan>m</expan><lb>
+&thorn;e heo beweddod w&aelig;s .&amp; hit eft gelimpe &thorn;&aelig;t h&iacute;<lb>
+on neaweste becumen be leafe hi moton tog&aelig;<lb>
+dere. for&eth;on heo w&aelig;s hire unwilles from him. <lb></p></div2><div2 type="sen"
+n="B54.24.01"> <p><lb><hi rend="od"><add place="marginLeft" hand="hand3"
+resp="ajf">25</add></hi> <hi
+rend="redfilled">G</hi>&yacute;f wifman gehadod
+b&yacute;&eth;
+&amp; heo
+s&yacute;&eth;&eth;an to woru<lb>
+ldlicre idelnesse gec&yacute;r&eth; .&amp; hiwr&aelig;dene underfeh&eth;.<lb>&amp;
+&thorn;eng&eth; &thorn;<expan>&aelig;t</expan> heo mid hire &aelig;hton
+geb&eacute;te &thorn;<expan>&aelig;t</expan> heo gode<lb>
+abealh. nis &thorn;<expan>&aelig;t</expan> naht. ac forl&aelig;te &thorn;one synscipe.<lb>
+&amp; gec&yacute;rre to cr<expan>ist</expan>e .&amp; libbe hire lif Swa hire scrift<lb>
+t&aelig;ce .&amp; beta &thorn;a misd&aelig;da &aelig;fre sw&yacute;&eth;
+georne. </p></div2> 
+<div2 type="sen" n="B54.25.01"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">26/</add></hi> <hi rend="redfilled">
+G</hi>&yacute;f m&aelig;ssepreost
+o&thorn;&thorn;e mununc man slea &thorn;olige<lb>
+his hades .&amp; f&aelig;ste .x. g&eacute;r .v. on hlafe .&amp; on
+w&aelig;t<expan>er</expan>e.<lb>
+&amp; v. &thorn;r&yacute; dagas on wucan .&amp; &thorn;a o&eth;re bruce his metes.<lb>
+&amp; hreowsige his misd&aelig;da &aelig;fre. <hi rend="redfilled">D</hi>iacon .vii.
+ger.<lb>
+<hi rend="od"><add place="marginLeft" hand="hand2" resp="ajf">27</add></hi> iiii. on hlafe
+&amp; on
+w&aelig;t<expan>er</expan>e. ut sup<expan>ra</expan>. </p></div2> <div2 type="sen"
+n="B54.26.01"> <p><add hand="hand3"
+resp="ajf">/</add><hi rend="redfilled">G</hi>&yacute;f hwa gehadodne<lb>
+man slea o&eth;&eth;e his neahstan m&aelig;g. forl&aelig;te<lb>his eard &amp; his
+&aelig;hta.
+&amp; do swa him se papa wisige<lb><milestone unit="fol" n="136a">
+<add place="inline" hand="hand3"
+resp="ajf">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; 28</add><lb>
+&amp; hreowsige &aelig;fre. </p></div2>
+<div2 type="sen" n="B54.27.01"> <p><add hand="hand3"
+resp="ajf">|</add> <hi rend="redfilled">G</hi>&yacute;f m&aelig;ssepreost
+o&eth;&eth;e mu<lb>
+nuc h&aelig;med&thorn;ing dr&yacute;h&eth; o&eth;&eth;e &aelig;we br&yacute;c&eth;.
+f&aelig;ste <lb>
+x. ger .&amp; hreowsige &aelig;fre. diacon .vii. <hi rend="redfilled">c</hi>leric
+.vi.<lb>
+L&aelig;wede man .v. swa be mansl&yacute;hte. </p></div2>
+<div2 type="sen" n="B54.28.01"> <p><add hand="hand3"
+resp="ajf">|</add><hi rend="redfilled">G</hi>&yacute;f m&aelig;sse<space
+dim="horizontal" extent="2">&nbsp; &nbsp; &nbsp;<add place="marginLeft" hand="hand2"
+resp="ajf">29</add><lb>
+preost o&eth;&eth;e munuc o&thorn;&thorn;e diacon rihtwif h&aelig;fde<lb>&aelig;r he
+gehadod w&aelig;re &amp; hi forl&aelig;te .&amp; to hade fenge.<lb>&amp;
+s&yacute;&eth;&eth;an &thorn;urh h&aelig;med&thorn;ing hi eft underfenge.<lb>
+f&aelig;ste heora &aelig;lc swa be mansl&yacute;hte .&amp; hreow<Note
+type="codicological">A hole approximately the width of 2 characters begins to the right of
+"hreow."</Note><lb>sian
+sw&yacute;&eth;e. </p></div2>
+<div2 type="sen" n="B54.28.02"> <p><add hand="hand3" resp="ajf">/</add><hi
+rend="redfilled">G</hi>&yacute;f
+m&aelig;ssepreost o&eth;&eth;e munuc <space
+dim="horizontal" extent="2">&nbsp; &nbsp; <add place="marginLeft" hand="hand3"
+resp="ajf">30</add>
+<lb>
+o&eth;&eth;e diacon. o&thorn;&thorn;e cleric o&eth;&eth;e l&aelig;wede man.
+w&yacute;&eth;<lb>
+m&yacute;necene h&aelig;me f&aelig;ste &aelig;lc swa his hade to ge<lb>b&yacute;rige. swa
+be
+mansl&yacute;hte .&amp; &aelig;fre he sceal fl&aelig;sc<lb>forgan .&amp; seo
+m&yacute;nec&yacute;nu .x. g&eacute;r. swa swa m&aelig;sse<lb>preost .&amp; hreowsian
+&aelig;fre. </p></div2>
+<div2 type="sen" n="B54.29.01"> <p><add hand="hand3"
+resp="ajf">|</add><hi rend="redfilled">G</hi>&yacute;f hwa wolde h&aelig;man <space
+dim="horizontal" extent="2">&nbsp; &nbsp; &nbsp;<add
+place="marginRight" hand="hand3" resp="ajf">31</add><lb>wi&eth; m&yacute;necene
+&amp;
+heo nalde f&aelig;ste .i. ger. for&thorn;am<lb>unrihtan willan on hlafe &amp; on
+w&aelig;tere. </p></div2> <div2 type="sen" n="B54.30.01"> <p><add hand="hand3"
+resp="ajf">|</add><hi rend="redfilled">G</hi>&yacute;f hwa <space
+dim="horizontal" extent="2">&nbsp; &nbsp; &nbsp;<add
+place="marginLeft" hand="hand3" resp="ajf">32</add><lb>
+wolde h&aelig;man w&yacute;&eth; o&eth;res riht&aelig;we .&amp; heo
+nolde.<lb>f&aelig;ste
+&thorn;reo lenctenu on hlafe &amp; on w&aelig;tere. an<lb>on sumera. o&eth;er on
+h&aelig;rfeste. &thorn;ridde on win<lb>tra. </p></div2>
+<div2 type="sen" n="B54.31.01"> <p><add hand="hand3"
+resp="ajf">|</add><hi rend="red">G</hi>&yacute;f hwa wille wi&eth; wifman
+unrihtlice <space dim="horizontal" extent="2">&nbsp; &nbsp; <add place="marginLeft"
+hand="hand3"
+resp="ajf">33</add><lb>
+h&aelig;man. f&aelig;ste .xl. daga on hlafe &amp; on
+w&aelig;tere. <lb></p></div2>
+<div2 type="sen" n="B54.32.01"> <p><hi rend="redfilled">G</hi>&yacute;f
+hwa o&eth;erne &aelig;t his dehter reafa&eth;. bete wi&eth;<lb>&thorn;a fr&yacute;nd .&amp;
+f&aelig;ste heora &aelig;g&eth;er .i. ger on wod<lb><milestone unit="fol" n="136b">
+<damage type="stain" extent="3">nes</damage> d&aelig;ge .&amp; on friged&aelig;g.
+&amp;
+o&eth;ran dagan brucan<lb>
+<damage type="stain" extent="5">heora</damage> metes butan fl&aelig;sce .&amp;
+nime
+hi<expan>m</expan> to riht<lb>
+<damage type="stain" extent="3">&aelig;we.</damage></p></div2><div2 type="sen"
+n="B54.33.01"> <p><hi rend="redfilled">G</hi>&yacute;f
+hwa wi&eth; n&yacute;tenu h&aelig;me. f&aelig;ste .xv. g&eacute;r.<lb>viii. on hlafe .&amp;
+on w&aelig;t<expan>er</expan>e .&amp; &thorn;a .vii. &aelig;lce
+gere .iii. xl.<lb>
+&amp; on wodnesd&aelig;g .&amp; on friged&aelig;g &thorn;a hwile &eth;e he libbe.<lb>
+&amp; hreowsige &aelig;fre &thorn;a misd&aelig;da. </p></div2> <div2 type="sen"
+n="B54.34.01"> <p><hi rend="redfilled">G</hi>&yacute;f
+hwa hine s&yacute;l<lb>
+fne besmite his agenes willes. f&aelig;ste .iii. ger. on<lb><damage type="hole"
+extent="2"></damage> &nbsp; &nbsp; &aelig;lcon .iii .xl. on hlafe &amp; on
+w&aelig;t<expan>er</expan>e .&amp; forga fl&aelig;sc <space
+dim="horizontal" extent="2">&nbsp; &nbsp; &nbsp;<add place="marginLeft" hand="hand3"
+resp="ajf">37</add><lb>&aelig;lce d&aelig;g buton
+sunnand&aelig;ge. </p></div2>
+<div2 type="sen" n="B54.35.01"> <p><add hand="hand3"
+resp="ajf">/</add><hi rend="redfilled">G</hi>&yacute;f
+hwa o&eth;erne<lb>
+mid wiccec&aelig;fte ford&oacute;. f&aelig;ste .vii. ger .iii. oN2<lb>hlafe &amp; on
+w&aelig;t<expan>er</expan>e .&amp; hreowsige &aelig;fre. </p></div2>
+<div2 type="sen" n="B54.36.01"> <p><hi rend="redfilled">G</hi>&yacute;f
+hwa drife<lb>
+stacan on man. f&aelig;ste .iii. ger an on hlafe &amp; on<lb>w&aelig;t<expan>er</expan>e.
+&amp; &thorn;a .ii. &thorn;r&yacute; dagas on wucan on
+hlafe &amp; w&aelig;t<expan>er</expan>e.<lb>
+&amp; g&yacute;f se man for &eth;&aelig;re stacunge dead b&yacute;&eth;.
+&thorn;on<expan>ne</expan> f&aelig;ste<lb>
+he .vii. ger. swa hit &aelig;r awriten is .&amp; hreowsige <add hand="hand1"
+resp="ajf">&thorn;a</add><lb>
+<hi rend="od"><add place="marginLeft" hand="hand3" resp="ajf">39</add></hi>
+misd&aelig;da
+&aelig;fre. </p></div2>
+<div2 type="sen" n="B54.37.01"> <p> <add hand="hand3"
+resp="ajf">/</add> <hi rend="redfilled">G</hi>&yacute;f hwa wiccie &yacute;mbe
+o&thorn;res
+lufu<lb>
+&amp; him s&yacute;lle on &aelig;te o&eth;&eth;e on drence. o&thorn;&thorn;e on
+gealdor<lb>
+cr&aelig;ftu<expan>m</expan>. g&yacute;f hit beo l&aelig;wede man. f&aelig;ste healf
+ger<lb>
+wodnesdagu<expan>m.</expan> &amp; frigedagu<expan>m</expan> on hlafe
+&amp; on w&aelig;tere.<lb>
+&amp; &thorn;a o&eth;re dagas bruce his metes butan fl&aelig;sce. <lb><hi
+rend="redfilled">C</hi>leric .i. gear. ut sup<expan>ra</expan> .iii. dagas on wucan on
+hlafe<lb>
+&amp; on w&aelig;t<expan>er</expan>e. <hi rend="redfilled">D</hi>iacon .iii. gear. ut
+sup<expan>ra</expan>. <hi rend="redfilled">M</hi>&aelig;sse .v<lb>gear.
+&thorn;<expan>&aelig;t</expan> an on hlafe &amp; on
+w&aelig;t<expan>er</expan>e .&amp; &thorn;a .iiii. &aelig;lce frige<lb><milestone unit="fol"
+n="137a">
+d&aelig;g on hlafe &amp; on w&aelig;t<expan>er</expan>e .&amp; &eth;a o&thorn;re
+dagas fo<damage type="stain" extent="3">rga</damage> <lb>
+<hi rend="od"><add place="marginLeft" hand="hand3" resp="ajf">40</add></hi>
+fl&aelig;sc. </p></div2>
+<div2 type="sen" n="B54.38.01"> <p><add hand="hand3"
+resp="ajf">|</add><hi rend="redfilled">G</hi>&yacute;f hwa f&uacute;llice on
+ungec&yacute;ndeli<damage type="stain" extent="7">cu<expan>m</expan>
+&thorn;ing</damage>u<expan>m</expan><lb>
+ongean godes gesceafte &thorn;urh &aelig;nig &thorn;ing <damage type="stain"
+extent="4">hine</damage><lb>
+s&yacute;lfne besmite. behreowsige &thorn;<expan>&aelig;t</expan> &aelig;fre &thorn;a
+hwile &eth;e <lb>
+he l&yacute;bbe. be &eth;am &thorn;e seo d&aelig;d s&yacute;. </p></div2> <div2 type="sen"
+n="B54.39.01"> <p><hi rend="redfilled">G</hi>&yacute;f
+hwa on slepe<lb>
+his bearn oflicge &thorn;<expan>&aelig;t</expan> hit dead weor&eth;e. f&aelig;ste .iii.<lb>
+g&eacute;r. an on hlafe .&amp; on w&aelig;t<expan>er</expan>e .&amp; &thorn;a twa
+ger
+&thorn;r&yacute; dagas <lb>
+on wucan .&amp; g&yacute;f hit &thorn;urh druncen geweor&eth;e.<lb>bete &thorn;e deoppor
+swa his scrift t&aelig;ce .&amp; behreow<lb>sige hit &aelig;fre. </p></div2>
+<div2 type="sen" n="B54.40.01"> <p><hi rend="redfilled">G</hi>&yacute;f
+untrum cild h&aelig;&eth;en gewite.<lb>
+&amp; hit on preoste gelang s&yacute; &thorn;olige his hades .&amp; bete <lb>hit georne.
+&amp; g&yacute;f hit &thorn;urh freonda g&yacute;mel&yacute;ste<lb>weor&eth;e.
+f&aelig;stan .iii. gear. an on hlafe &amp; on
+w&aelig;t<expan>er</expan>e.<lb>
+&amp; &thorn;a .ii. gear .iii. dagas on wucan .&amp; behreowsian <lb>hit
+&aelig;fre. </p></div2>
+<div2 type="sen" n="B54.41.01"> <p><add hand="hand3"
+resp="ajf">|</add><hi rend="redfilled">G</hi>&yacute;f hwa cristenne man on
+h&aelig;&eth;en <add place="marginLeft" hand="hand3" resp="ajf">43</add><lb>
+dom s&yacute;lle. se ne b&yacute;&eth; w&yacute;r&eth;e &aelig;nigre r&aelig;ste mid<lb>
+cristenum folce butan he gebicge<corr><add place="interlinear" hand="hand2" resp="ajf">,
+hine</add></corr>
+eft
+ha<expan>m</expan> on<lb>
+gean &thorn;<expan>&aelig;t</expan> he ut s<del type="erasure"
+hand="hand1">&nbsp;</del>ealde.
+&amp;
+g&yacute;f he &thorn;<expan>&aelig;t</expan>
+d&oacute;n ne m&aelig;ge<lb>
+ged&aelig;le &thorn;<expan>&aelig;t</expan> w&yacute;r&eth; eall godes &thorn;ances.
+&amp; o&eth;ern<corr><add place="interlinear" hand="hand2" resp="ajf">,e</add></corr>
+al&yacute;se<lb>
+mid o&thorn;erum weor&eth;e .&amp; &thorn;ane &thorn;on<expan>ne</expan> gefreoge.
+&amp; &thorn;er<lb>
+toeacan bete .iii. ger fulle swa swa scrift t&aelig;ce.<lb>&amp; g&yacute;f he feoh n&aelig;bbe
+&thorn;<expan>&aelig;t</expan> he man al&yacute;san m&aelig;ge. he<lb>
+bete &thorn;e deoppor. &thorn;<expan>&aelig;t</expan> is .vii. ger fulle .&amp;
+behreowsige
+<milestone unit="fol" n="137b"> 
+<lb><hi rend="od"><add place="marginLeft" hand="hand3"
+resp="ajf">44</add></hi> &aelig;fre. </p></div2>
+<div2 type="sen" n="B54.42.01"> <p><add hand="hand3"
+resp="ajf">|</add><hi rend="redfilled">G</hi>&yacute;f,<corr><add place="interlinear"
+hand="hand1" resp="ajf">hwa</add></corr> hine s&yacute;lfne swi&eth;e
+forw&yacute;rce<note
+type="codicological">The last two letters of forwyrce are written over an erasure.</note> on
+m&aelig;<lb>
+nigfealdan s&yacute;nnan &amp; he &aelig;fter &thorn;am w&yacute;lle geswican.<lb>&amp;
+geornlice betan. gebuge to m&yacute;nstre .&amp; &thorn;eowige<lb>&thorn;&aelig;r
+&aelig;fre gode &amp; mannu<expan>m</expan> <hi rend="redfilled">S</hi>wa swa
+hi<expan>m</expan> man t&aelig;ce.<lb>
+o&thorn;&thorn;e of earde weallige wide .&amp; d&aelig;dbete &aelig;fre &thorn;a h<add
+place="interlinear" hand="hand2" resp="ajf">w</add>ile<lb>&thorn;e he libbe .&amp; helpe
+his
+sawle. o&eth;&eth;e huru on earde<lb>be &thorn;a<expan>m</expan> deopstan b&eacute;te
+&thorn;e he &aelig;fre acuman m&aelig;ge.<lb>
+<hi rend="od"><add place="marginLeft" hand="hand3" resp="ajf">p. 410</add></hi> <hi
+rend="redfilled">S</hi>wa swa him man
+t&aelig;&acute;ce. </p></div2></div1>
+<div1 type="sen" n="B55.01.00"><milestone unit="B" n="55.01.00"> <p><hi rend="red">BE
+SCRIFTUM.</hi></p><lb>
+<div2 type="sen" n="B55.01.01"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand3"
+resp="ajf">1</add></hi> <hi rend="od"><hi rend="red"><hi
+rend="orncap2">O</hi></hi></hi>N
+wisu<expan>m</expan> scrifte <add hand="hand2" place="inline"
+resp="ajf">^.</add>swi&eth;e <add hand="hand2" place="inline"
+resp="ajf">^.</add>b&yacute;&eth;<note type="textual">The
+scribal marks indicate an inversion: "by&eth; swi&eth;e" is the correct reading.</note>
+for&eth;gelang fors&yacute;ngodes<lb>
+mannes n&yacute;dhelp. ealswa on godan l&aelig;can b&yacute;&eth;<lb>
+<hi rend="od"><add
+place="marginLeft" hand="hand3" resp="ajf">2</add></hi> seoces mannes lacnung.
+</p></div2>
+<div2 type="sen" n="B55.02.01"> <p><add hand="hand3"
+resp="ajf">/</add> <hi rend="redfilled">M</hi>istlice men ag&yacute;l<lb>
+ta&eth;. oft &amp; unseldan. &thorn;uruh deofles sc&yacute;fe .&amp;
+&thorn;<expan>&aelig;t</expan> b&yacute;&eth;<lb>
+egeslic &thorn;<expan>&aelig;t</expan> gehadode men swa swi&eth;e wi&eth; god
+ag&yacute;ltan.<lb>
+<hi rend="od"><add place="marginLeft" hand="hand3"
+resp="ajf">3</add></hi> &thorn;<expan>&aelig;t</expan> hi
+had
+forw&yacute;rcean</p></div2>
+<div2 type="sen" n="B55.03.01"> <p><add hand="hand3"
+resp="ajf">|</add> .&amp;<hi rend="redfilled">&ETH;</hi>&aelig;r mot
+to bote sti&eth;lic<lb>
+d&aelig;dbot. &aacute; &thorn;eh be hades &amp; be g&yacute;ltes m&aelig;&eth;e.
+&aelig;fter<lb>
+canon dome .&amp; eac hit man mot secean be &thorn;&aelig;s<lb>mannes m&aelig;htum.
+&amp; be his s&yacute;lfes heartan hreo<lb>sunge. <hi rend="redfilled">S</hi>umum
+gearbote.
+sumu<expan>m</expan> ma geara .&amp;<lb>
+eft be g&yacute;ltes m&aelig;&eth;e. Sumu<expan>m</expan> mon&eth;bote.
+sumu<expan>m</expan> ma<lb>
+mon&eth;a. <hi rend="redfilled">S</hi>umu<expan>m</expan> wucbote.
+Sumu<expan>m</expan> ma wucena. Sumu<expan>m</expan><lb>
+d&aelig;gbote .&amp; <hi rend="redfilled">S</hi>umu<expan>m</expan> ma daga .&amp;
+sumu<expan>m</expan> ealle lifdagas. <lb></p></div2>
+<div2 type="sen" n="B55.04.01"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">IV</add> <hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e l&aelig;ce &thorn;e sceal sare wunda </p></div2> <div2
+type="sen" n="B55.04.00"> <p><hi rend="red">Be s&yacute;nna lacnunge.</hi><lb>
+wel geh&aelig;lan. he mot habban gode sealfe to.<lb>
+<milestone unit="fol" n="138a">
+<hi rend="redfilled">N</hi>e s&yacute;ndan nane swa &yacute;fele wvnda. swa
+s&yacute;ndan<lb>
+s&yacute;nwunda. for&eth;am &thorn;urh &thorn;a forw&yacute;r&eth; mann ece<lb>an
+dea&eth;e. butan he &thorn;urh andetnesse .&amp; &thorn;urh ge<lb>swicenesse .&amp;
+&thorn;urh d&aelig;dbote geh&aelig;led
+w&yacute;r&eth;e. </p></div2>
+<div2 type="sen" n="B55.05.01"> <p><add hand="hand3"
+resp="ajf">|</add> <hi rend="redfilled">&thorn;</hi>onne <add place="marginRight"
+hand="hand3" resp="ajf">V</add> <lb>
+mot se l&aelig;ce beon wis .&amp; w&aelig;rr &eth;e &thorn;a wunda geh&aelig;lan<lb>
+sceal. <hi rend="redfilled">&ETH;</hi>urh gode lare man sceal &aelig;rest hi  lacnian<lb>
+&amp; mid &thorn;a<expan>m</expan> gedon.
+&thorn;<expan>&aelig;t</expan> man aspiwe &thorn;<expan>&aelig;t</expan> atter
+&thorn;<expan>&aelig;t</expan> him innan<lb>
+on b&yacute;&eth;. &thorn;<expan>&aelig;t</expan> is
+&thorn;<expan>&aelig;t</expan>
+he gecl&aelig;nsige hine s&yacute;lfne &aelig;rost<lb>
+&thorn;urh andetn&yacute;sse. </p></div2>
+<div2 type="sen" n="B55.06.01"> <p><add hand="hand3"
+resp="ajf">|</add> <hi rend="redfilled"><hi rend="e2">e</hi></hi>al man scea,<add
+place="interlinear" hand="hand2" resp="ajf">l</add>
+aspiwan
+s&yacute;nna. <add place="marginRight" hand="hand3" resp="ajf">VI</add><lb>&thorn;urh
+gode lare. mid andetnesse ealswa man un<lb>
+libban de&thorn; &thorn;urh godne drenc. </p></div2>
+<div2 type="sen" n="B55.07.01"> <p><add hand="hand3"
+resp="ajf">|</add><hi rend="redfilled">N</hi>e m&aelig;g &aelig;nig
+l&aelig;&acute;ce <add place="marginRight" hand="hand3"
+resp="ajf">VII</add><lb>
+wel lacnian &aelig;r &thorn;<expan>&aelig;t</expan> attor ute s&yacute;. ne m&aelig;g
+&aelig;nig man<lb>
+eac d&aelig;dbote wel t&aelig;can &thorn;a<expan>m</expan> &eth;e andettan nele.
+<hi rend="redfilled">N</hi>e<lb>
+&aelig;nig man ne m&aelig;g s&yacute;nna butan andetnesse<lb>wel gebetan. &thorn;e ma
+&eth;e se m&aelig;g wel hal weor&eth;an.<lb>&thorn;e unlibban gedruncen h&aelig;f&eth;.
+butan he
+&thorn;<expan>&aelig;t</expan>
+attor<lb>
+aspiwe. </p></div2>
+<div2 type="sen" n="B55.08.01"> <p><add hand="hand3"
+resp="ajf">|</add><hi rend="redfilled">&AElig;</hi>fter
+andetnesse man m&aelig;g mid d&aelig;d <add place="marginLeft" hand="hand3" resp="ajf"> /
+8
+</add><lb>
+bote. godes mildheotn&yacute;sse hra&eth;e geearnian.<lb>
+g&yacute;f he mid inwerdre heortan heofe &thorn;<expan>&aelig;t</expan> behreow<lb>
+sa&eth;. &thorn;<expan>&aelig;t</expan> he &thorn;urh deofles sc&yacute;fe &aelig;r
+gefremede to<lb>
+unrihte. </p></div2>
+<div2 type="sen" n="B55.09.01"> <p><add hand="hand3"
+resp="ajf">&brvbar;</add> <hi rend="redfilled">O</hi>n wisum scrifte b&yacute;&eth;
+sw&yacute;&eth;e
+for&eth; ge<lb>
+lang wislic d&aelig;dbot. ealswa on godu<expan>m</expan> l&aelig;ce b&yacute;&eth;<lb>
+&thorn;earlic broces bot .&amp; Be mannes ,<corr><add place="interlinear"
+hand="hand1">ge</add></corr>w&yacute;rhtu<expan>m</expan><del type="erasure"
+hand="hand1"> &nbsp; &nbsp; </del>hit<lb>
+<milestone unit="fol" n="138b">
+mon mot secan &aelig;ft<expan>er</expan> canon d&oacute;me &amp; eac medmian<lb>
+be mihtum .&amp; be m&aelig;&eth;e .&amp; be &thorn;am &thorn;e man ong&yacute;t<lb>
+his heortan hreowsunge .&amp; his s&yacute;lfes geornful<lb>
+<hi rend="od"><add place="marginLeft" hand="hand3" resp="ajf"><hi
+rend="strikethrough">XIV</hi></add></hi> nesse.<Note type="codicological">The line
+through
+XIV is double.</note></p></div2>
+<div2 type="sen" n="B55.10.00"> <p><hi rend="red">Be l&aelig;wedra manna
+d&aelig;dbota.</hi><lb></p></div2>
+<div2 type="sen" n="B55.10.01"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">X</add> <hi rend="red"><hi
+rend="orncap2">D</hi></hi></hi>eoplic
+d&aelig;dbot b&yacute;&eth;<add place="interlinear" hand="hand2" resp="ajf">,
+&thorn;</add><expan>&aelig;t</expan> l&aelig;wede man his w&aelig;pna<lb>lecge .&amp;
+weallige b&aelig;rfot wide .&amp; ne beo niht &thorn;&aelig;r<lb>o&eth;re .&amp;
+f&aelig;ste
+sw&yacute;&eth;e &amp; wacige .&amp; gebidde georne d&aelig;ges<lb>
+&amp; nihtes .&amp; w&yacute;llen werige .&amp; swa &aelig;sc&eacute;re<Note
+type="codicological">Below the accented e is a cedilla.</note>s&yacute;.
+&thorn;<expan>&aelig;t</expan> iren ne<lb>
+<hi rend="od"><add place="marginLeft" hand="hand3" resp="ajf">XI</add></hi> cume on
+h&aelig;&acute;re. ne on
+n&aelig;gle. <add hand="hand3" resp="ajf">/</add> ne
+&thorn;<expan>&aelig;t</expan> he ne
+cume<lb>
+on wearmu<expan>m</expan> b&aelig;&eth;e. ne on seftu<expan>m</expan> bedde. ne
+fl&aelig;sces<lb>
+ne abite. ne &aelig;niges &thorn;inges &thorn;e druncen of cume.<lb>ne he innan
+c&yacute;ricean cume. </p></div2>
+<div2 type="sen" n="B55.11.01"> <p>ac &thorn;eh halige stowa<lb>geornlice sece .&amp; his
+g&yacute;ltas c&yacute;&eth;e .&amp; him &thorn;ing r&aelig;<lb>
+dene bidde .&amp; he &aelig;nigne man ne c&yacute;sse. ac s&yacute;mle<lb>
+<hi rend="od"><add
+place="marginLeft" hand="hand3" resp="ajf">XII</add></hi> s&yacute; his s&yacute;nna
+hreowsigende
+sw&yacute;&eth;e. </p></div2>
+<div2 type="sen" n="B55.12.01"> <p><add hand="hand3"
+resp="ajf">||</add> <hi rend="redfilled">h</hi>reow,<add place="interlinear"
+hand="hand2" resp="ajf">lice</add>
+gef&aelig;r&eth;<lb>
+se &eth;e hine s&yacute;lfne. &thorn;us for&eth; forsc&yacute;ldiga&eth; .&amp; ge<lb>
+s&aelig;lig b&yacute;&eth; h&eacute; &thorn;eh g&yacute;f he na ne awaca&eth;
+&thorn;<expan>&aelig;t</expan> he ful<lb>
+b&eacute;te. for&eth;am ne w&yacute;r&eth; &aelig;nig mon on worulde.<lb>swa
+sw&yacute;&eth;e. fors&yacute;ngod<note type="codicological">The scribe has erased the fine
+e of forsynode."</note> &thorn;<expan>&aelig;t</expan> he wi&eth; god gebetan ne<lb>
+m&aelig;ge. aginne he hit georne. </p></div2> 
+<div2 type="sen" n="B55.13.00"> <p><hi rend="red">Be
+d&aelig;dbotum.</hi><lb></p></div2>
+<div2 type="sen" n="B55.13.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="d2">d</hi></hi></hi>&aelig;dbota s&yacute;n gedihte. on mistlice wisan.
+<hi rend="redfilled">M</hi>&yacute;cel<lb>
+<hi rend="od"><add place="marginLeft" hand="hand3" resp="ajf">XIII</add></hi> man
+m&aelig;g eac mid &aelig;lmessan
+al&yacute;san. <hi rend="redfilled">S</hi>e &thorn;e <add place="marginRight"
+hand="hand3" resp="ajf">XIII</add><lb>
+&eth;&aelig;ra mihta h&aelig;bbe r&aelig;re c&yacute;ricean gode to <add
+place="marginRight"
+hand="hand3" resp="ajf">XIV</add><lb>
+<milestone unit="fol" n="139a">
+lofe .&amp; <hi rend="redfilled">G</hi>&yacute;f hine to onhagie s&yacute;lle
+&thorn;&aelig;r land to.<lb>
+&amp; l&aelig;te &thorn;ar te,<add place="interlinear" hand="hand2">&oacute;</add>n
+geonge men to &thorn;&aelig;t for hine ma<lb>
+gon &thorn;eowian .&amp; &thorn;&aelig;r d&aelig;ghwamlice gode magon<lb>&thorn;enian.
+&amp; godie eac godes c&yacute;rcean gehwar be<lb>&thorn;am &thorn;e hine onhagie
+.&amp;
+godige folcas f&aelig;r mid<lb>bricgum ofer deope w&aelig;teru .&amp; ofer fula wegas.<lb>
+&amp; d&aelig;le godes &thorn;ances georne &thorn;<expan>&aelig;t</expan> h&aelig;bbe.
+<hi
+rend="redfilled">S</hi>wa for&eth;<lb>swa hine f&yacute;rmest onhagie .&amp;
+helpe earmra <lb>
+manna georna. w&yacute;dewena .&amp; steopc&yacute;lde .&amp; &aelig;l&thorn;eo<lb>
+digra manna. </p></div2>
+<div2 type="sen" n="B55.14.01"> <p><hi rend="redfilled">F</hi>reoge
+his
+agene &thorn;eowan .&amp; al&yacute;se<lb>
+&aelig;t o&thorn;ru<expan>m</expan> mannum heora &thorn;eowan to freote.<lb>
+&amp; huru earme gehergode menn .&amp; fede &thorn;ear<lb>fan .&amp; <hi
+rend="redfilled">s</hi>cr&yacute;de. husige &amp; f&yacute;rige. ba&eth;ige .&amp;
+beddige.<lb>
+&amp; him s&yacute;lfum to &thorn;earfe &aelig;ghwar georne. ge<lb>bedr&aelig;dene
+beg&yacute;te. on m&aelig;sse sangu<expan>m.</expan> &amp; on sealm<lb>
+sangum .&amp; hine s&yacute;lfne gelome on his drihtnes<lb>est &thorn;reage
+sw&yacute;&eth;e &thorn;earle. mid forh&aelig;fednesse.<lb>&aelig;tes &amp; w&aelig;tes.
+&amp; gewelhw&yacute;lces lichamlices lustes.<lb><lb></p></div2>
+<div2 type="sen" n="B55.15.01"> <p><lb><hi rend="od"><hi rend="redfilled">&amp;
+S</hi>e</hi> &eth;e &thorn;onne g&yacute;t l&aelig;ssan speda h&aelig;bbe. d&oacute; be
+his<lb>
+m&aelig;&eth;e georne &thorn;<expan>&aelig;t</expan> he d&oacute;n m&aelig;ge.
+<hi rend="redfilled">T</hi>eo&eth;ige on godes<lb>est eal
+&thorn;<expan>&aelig;t</expan> he age .&amp; wege hine s&yacute;lfne swa hine
+oftost<lb>
+onhagige .&amp; sece mid his &aelig;lmessan c&yacute;<damage type="stain"
+extent="4">rice</damage>an<lb>
+gelome .&amp; halige stowa mid his leohte gegrete.<lb>
+<milestone unit="fol" n="139b"> 
+&amp; g&yacute;fe his hushleow .&amp; mete .&amp; munde. &thorn;am &thorn;e<lb>
+&thorn;&aelig;s be&thorn;&yacute;rfte .&amp; f(&yacute;')r &amp; fodder &amp; bed &amp;
+b&aelig;&acute;&eth; .&amp; to scrude<lb>
+<hi rend="od"><add place="marginLeft" hand="hand3" resp="ajf">16</add></hi>
+f&yacute;lste earmum g&yacute;f he hw&aelig;t m&aelig;g. </p></div2>
+<div2 type="sen" n="B55.15.02"> <p> geneosige<lb>
+mid gode sarimode .&amp; seoce &amp; deade beb&yacute;rige <lb>
+on godes est &middot;&amp; <hi
+rend="redfilled">S</hi>&yacute;lf he on dihlum cneowige gel&oacute;me.<lb>
+&amp; hine on eor&eth;an sw&yacute;&eth;e a&thorn;enie. f&aelig;ste &amp; wacige .&amp;
+ge<lb>
+bidde hine georne oft &amp; gelome:,<lb></p></div2>
+<div2 type="sen" n="B55.16.01"> <p><lb><hi rend="od"><hi
+rend="redfilled">&amp;</hi></hi>
+Se
+&eth;e g&yacute;t l&aelig;ssan mihta h&aelig;bbe. do
+be
+his m&aelig;&eth;e<lb>
+georne &thorn;&aelig;t he don m&aelig;ge. <hi rend="redfilled">h</hi>uru
+swence his lic<lb>
+haman ongean lust g&yacute;f he &aelig;&acute;r &thorn;urh l&yacute;&eth;erne<lb>lust
+deofle
+gecwemde. f&aelig;ste nu ongean &thorn;<damage type="stain"
+extent="3">&aelig;t</damage>.<lb>
+&thorn;e he &aelig;&acute;r &thorn;uruh
+f&yacute;lle. unriht gefremede.<damage type="stain" extent="2"><hi
+rend="redfilled">W</hi>a</damage><lb>
+cige &amp; swince ongean &thorn;<expan>&aelig;t</expan> he oft &aelig;r slep &amp;
+slawo<damage type="stain" extent="3">de.</damage><lb>
+&thorn;onne h&eacute; nane scealde o&eth;&eth;on unn&yacute;t wacode to<lb>
+sw&yacute;&eth;e. <hi rend="redfilled">&ETH;</hi>olige c&yacute;le &amp;
+ceald b&aelig;&eth;. ongean &thorn;a hl&yacute;w&eth;e<lb>&thorn;e he &thorn;urh
+s&yacute;nlust ahwar gefremede .&amp; gif h&eacute;<lb>ab&yacute;lg&eth;e ahwam on
+unriht
+ahwar geweolde. ge<lb>
+bete hit georne .&amp; <hi rend="redfilled">G</hi>&yacute;f him abulge &aelig;nig
+man<lb>
+sw&yacute;&eth;e. forg&yacute;fe &thorn;<expan>&aelig;t</expan> on godes est .&amp; aa
+&thorn;&aelig;s &thorn;e he<lb>
+m&aelig;ge &thorn;ence sw&yacute;&eth;e georne. hw&aelig;t to bote m&aelig;ge<lb>
+ongean &aelig;lcne s&yacute;nr&aelig;s. &thorn;e &eth;urh deofles s&aelig;d.<lb>
+<damage type="stain" extent="5">&aelig;&acute;</damage>r <damage type="stain"
+extent="2">we</damage>ar&eth; aw&aelig;xen.
+&amp;
+g&yacute;f he of w<damage type="stain" extent="3">ege</damage> toeacan<lb>him
+s&yacute;lfu<expan>m</expan>. &aelig;nigne brohte. gebringe hine<note type="textual">Text
+ends incompletely here; the Handbook in Laud 482 continues for two more
+chapters.</note><lb>
+<milestone unit="fol" n="140a"></p></div2></div1>
+<div1 type="sen" n="B92.01.00"><milestone unit="B" n="92.01.00"> <div2 type="sen"
+n="B92.01.01"> <p><lb><handshift old="hand1" new="hand7" resp="ajf"><hi rend="od"><hi
+rend="red"><hi
+rend="orncap2">G</hi></hi></hi>yf
+m&aelig;sseprest his agen l&iacute;f rihtlice fadie &eth;onne is<lb>riht
+&thorn;<expan>&aelig;t</expan> his wur&eth;scipe wexe. </p></div2> <div2 type="sen"
+n="B92.02.01"> <p>&amp; Gyf he elles d&oacute; gebete &thorn;<expan>&aelig;t</expan>
+georne<lb>
+swa swa hit her &aelig;ft<expan>er</expan> t&aelig;c&eth;. &thorn;<expan>&aelig;t</expan>
+is
+&aelig;&acute;rest. Gyf he his c&iacute;rice<lb>miswur&eth;ige &eth;e eal his wur<add
+place="marginLeft"
+hand="hand1">&eth;</add>.scipe
+is on belang. gebete &thorn;<expan>&aelig;t</expan><lb>
+beo b<expan>isceopes</expan> dome. </p></div2>
+<div2 type="sen" n="B92.03.01"> <p>o&eth;&eth;e he cilde fulwihtes forwerne.
+o&eth;&eth;e<lb>
+scrifte &eth;a<expan>m</expan> &eth;e neod beo. &amp; he on &eth;a<expan>m</expan>
+ge&aelig;ndie &eth;onne beo&eth;
+&thorn;<expan>&aelig;t</expan><lb>
+micel pliht. &eth;a<expan>m</expan> &eth;e hit ongelang beo&eth;.
+for&eth;a<expan>m</expan> se &aelig;nde hit eal<lb>
+beluca&eth;. </p></div2>
+<div2 type="sen" n="B92.04.01"> <p> For&eth;a<expan>m</expan> ic bidde on godes
+namen &aelig;lc &eth;are manne<lb>
+swi&eth;e georne &thorn;e &eth;onne had habbe &amp; hi<expan>m</expan> &eth;&aelig;s
+togeberige. &thorn;<expan>&aelig;t</expan><lb>he &eth;as b&oacute;c. gelome on hande
+habbe hi<expan>m</expan> selfen to helpe.
+&amp;<lb>
+eallen &eth;a<expan>m</expan> &eth;e he wissien sceal. </p></div2>  <div2 type="sen"
+n="B92.04.02"> <p>&amp; Ic bidde on drihtenes nam<expan>e</expan>.<lb>
+ealle &eth;a &eth;e p<expan>reost</expan>had habbe&eth;
+&thorn;<expan>&aelig;t</expan> &aelig;lc o&eth;erne lufige mid rihte<lb>&amp;
+heren&eth;a
+gingren georne here eldren. &amp; l&aelig;&acute;ren &eth;a<lb>eldren georne here
+gingren. </p></div2>
+<div2 type="sen" n="B92.05.01"> <p>&amp; Ec we l&aelig;re&eth; p<expan>reost</expan>
+ge<lb>
+hwilcne. &eth;eh he gehitte o&thorn;erne &eth;e swa wel ne cunn<damage type="hole"
+extent="2">&nbsp; &nbsp; </damage>e<note type="codicological">Hole 1/2" x 1/4" above
+"cunne."</note> swa he<lb>
+scolde &thorn;<expan>&aelig;t</expan> he nenne ne sc&aelig;nde. ac
+gebete hine
+luflice<lb>
+Gyf he bec cunne. </p></div2>
+<div2 type="sen" n="B92.06.01"> <p>&amp; we bidde&eth; eac
+&thorn;<expan>&aelig;t</expan> nan for&eth;boren
+p<expan>reost</expan><lb>
+ne for s&eacute;o &eth;one l&aelig;s borenen. for&eth;a<expan>m</expan> geof hit
+men
+on<lb>
+riht gesmea&eth; &eth;onne beo we ealle anre ge<damage type="stain"
+extent="5">ber&eth;e.</damage></p></div2>
+<div2 type="sen" n="B92.07.01"> <p>&amp; we l&aelig;re&eth;<lb>preste gehwilcne.
+&thorn;<expan>&aelig;t</expan> he ealle cristemen sw&eacute;tte
+&amp; sw&aacute;nne<lb>
+&amp; ealle m<expan>en.</expan> hit eac. georne understanden
+&thorn;<expan>&aelig;t</expan> n&aelig;f<add place="interlinear" hand="hand7"
+resp="ajf">r</add>e
+nan<lb>
+cristen man ne l&aelig;te unandetnan &eth;are &eth;inge &eth;e he &aelig;fre<lb>geodede
+&eth;as &eth;e he ge&thorn;encen m&aelig;g.
+&thorn;<expan>&aelig;t</expan>
+he don ne scollde. </p></div2>
+<div2 type="sen" n="B92.07.02"> <p> &amp;<lb>&aelig;fre &aelig;lc p<expan>reost</expan>
+berege. &amp; to gode gebidde &thorn;<expan>&aelig;t</expan> he n&aelig;fre on<lb>
+wimmannes bedde for&eth; ne gewite <space dim="horizontal"
+extent="2">&nbsp;&nbsp;<lb>
+<milestone unit="fol" n="140b"></p></div2></div1>
+<div1 type="sen" n="B44.00.01"><milestone unit="B" n="44.00.01"> <p><handshift
+old="hand7" new="hand5"
+resp="ajf"><add place="marginLeft" hand="hand3" resp="ajf">(v.p. 377 del edit. anglaise
+1840</add></p><lb>
+<div2 type="sen" n="B44.01.01" id="oepstart"> <p><lb><hi rend="od"><add
+place="marginLeft"
+hand="hand3" resp="ajf">1</add><hi rend="orncap3"><hi rend="red">h</hi></hi></hi>IT IS
+&ETH;EAH TO
+WITANNE HWI &ETH;EOS FEOR-<lb>
+&ETH;E BOC S&Yacute; UNCAPITULOD. &thorn;<expan>&aelig;t</expan> is for&thorn;on
+&eth;eos feor&eth;e<lb>
+boc is genumen of&thorn;am &thorn;r&yacute;m bocu<expan>m</expan>. &amp;
+&thorn;<expan>&aelig;t</expan> man on &eth;a<expan>m</expan><lb>&thorn;r&yacute;m
+ra&eth;e f&yacute;ndan ne m&aelig;g hit man fint ra&eth;e<lb>on &thorn;issere feor&eth;an.
+&aelig;g&eth;er ge be maran &thorn;ingum<lb>ge be l&aelig;ssum openlicor. &amp;
+r&aelig;dlicor.<space dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp;<hi
+rend="brown">ALIA.</hi><lb></p></div2><div2 type="sen" n="B44.01.01"><lb> <p><hi
+rend="od"><add
+place="marginLeft" hand="hand3" resp="ajf"><hi rend="strikethrough">407</hi> 2
+</add> <hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f
+hw&yacute;lc bisceop man ofslea.
+&thorn;olige his hades. &amp; <lb>
+f&aelig;ste .xii. gear. &thorn;a .vi. on hlafe. &amp; on w&aelig;tere. &amp; &thorn;a .vi.
+f&aelig;ste<lb>
+iii. dagas on wucan. &amp; &thorn;a o&eth;re bruce<add place="interlinear" hand="hand5">,
+his metes buta fl&aelig;sce.</add>. <hi rend="brown">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B44.01.02"> <lb><p><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">3</add></hi> <hi rend="red"><hi
+rend="orncap2">G</hi></hi>&yacute;f
+m&aelig;ssepreost o&eth;&eth;e munuc man ofslea &thorn;olige his<lb>hades. &amp;
+f&aelig;ste .x. gear .v. on hlafe &amp; on w&aelig;tere. &amp; &thorn;a
+.v.<lb>
+f&aelig;ste .iii. dagas on wucan. &amp; &thorn;a o&eth;re bruce his metes.<lb><damage
+type="hole" extent="3">&nbsp;&nbsp;&nbsp;</damage><note type="codicological">Hole 1/2"
+x
+1/4" before "& reowsige."</note>&amp; reowsige his misd&aelig;da &aelig;fre.
+<space dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp;<hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B44.01.03"> <lb><p><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">4</add></hi> <hi rend="orange"><hi
+rend="orncap2">G</hi></hi>&yacute;f <note type="codicological">Hole between Gyf and
+diacon.</note>diacon man ofslea
+&thorn;olige his
+hades. &amp; f&aelig;ste .vii<lb>
+gear. &thorn;a .iiii. on hlafe. &amp; on w&aelig;tere. &amp; &thorn;a .iii. f&aelig;ste
+&thorn;r&yacute; da<lb>
+gas on wucan. &amp; &eth;a o&thorn;re bruce his metes.<space dim="horizontal"
+extent="2">&nbsp;&nbsp;<hi rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B44.01.04"> <lb><p><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">5</add></hi> <hi rend="red"><hi rend="orncap2">G</hi></hi>
+&yacute;f hw&yacute;lc cleric man ofslea f&aelig;ste .vi. gear. &thorn;a .iiii.<lb>on hlafe
+&amp;
+on w&aelig;tere. &amp; &thorn;a .ii. f&aelig;ste .&eth;ri. dagas on wucan.<lb>
+&amp; &thorn;a o&eth;re bruce his metes.<space dim="horizontal"
+extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B44.01.05"> <lb><p><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">VI 6 v. 408 [400?]</add></hi> <hi rend="orange"><hi
+rend="orncap2">G</hi></hi>&yacute;f
+leaweda man man ofslea. f&aelig;ste .v.
+gear. &thorn;a .iii.<lb>
+on hlafe &amp; on w&aelig;tere. &amp; &thorn;a .ii. f&aelig;ste .iii. dagas on wucan.<lb>
+&amp; &thorn;a o&eth;re bruce his metes.<space dim="horizontal"
+extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B44.02.01"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand2" resp="ajf">7</add><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f
+hwa gehadodne man ofslea o&eth;&eth;e his nehstan m&aelig;g<lb>forl&aelig;te his eard
+&amp;
+his &aelig;hta eall. &amp; fare to r&oacute;me to &eth;a<expan>m</expan><lb>
+<milestone unit="fol" n="141a">
+papan. &amp; s&yacute;&eth;&eth;an do swa se papa him wissige. &amp;
+hreowsige<lb></p></div2>
+<div2 type="sen" n="B44.03.01"> <lb><p><hi rend="od"><add place="marginLeft"
+hand="hand3"
+resp="ajf">8</add> <hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc bisceop h&aelig;med&thorn;ing
+gedrih&eth;. <hi rend="orange">A L I A</hi> <hi rend="halfboxedLeftBottom"><hi
+rend="orangefilled">[</hi>hit </hi>
+&aelig;fre<note type="codicological">The angle-bracket is black lined with orange.</note>
+<lb>o&eth;&eth;e &aelig;we brec&eth;. f&aelig;ste .xii.
+gear. &amp; m&aelig;ssepr<expan>eost</expan>. <add hand="hand3" resp="ajf">7</add>
+&amp; munuc<lb>
+x. gear. diacon .vii. gear. &amp; cleric .vi. &amp; leaweda man .v.<lb>gear. f&aelig;ste
+&aelig;lc be his endeb&yacute;rdn&yacute;ssse. eall swa her<lb>bufan awriten is be
+manslihte.<space dim="horizontal" extent="2">&nbsp;&nbsp; <hi rend="orange">A L
+I A</hi> <space dim="horizontal" extent="2">&nbsp;&nbsp;<add hand="hand3"
+resp="ajf">8</add><lb></p></div2>
+<div2 type="sen" n="B44.05.01"> <lb><p><hi rend="od"><add place="marginLeft"
+hand="hand3"
+resp="ajf">9</add> <hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f
+hwa h&aelig;me wi&eth; m&yacute;necenu &thorn;e gode s&yacute;lfum to br&yacute;de<lb>
+bi&eth; gehalgod. &amp; geweddod. gif hit bisceop de&eth; f&aelig;ste .xii.<lb>gear. &thorn;a
+.vii. on hlafe &amp; on w&aelig;tere. &amp; &thorn;a .v. f&aelig;ste .iii.
+dagas<lb>
+on wucan on hlafe &amp; on w&aelig;tere. &amp; &thorn;a o&eth;re bruce his
+metes. <lb></p></div2>
+<div2 type="sen" n="B44.05.02"><lb> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hit bi&eth;
+m&aelig;ssepr<expan>eost</expan> o&eth;&eth;e munuc. f&aelig;ste .x. gear. <hi
+rend="orange">A L I A.</hi><lb>
+&thorn;a .v. on hlafe. &amp; on w&aelig;tere. &amp; &thorn;a o&eth;re .v. f&aelig;ste .iii.
+dagas<lb>
+on wucan on hlafe. &amp; on w&aelig;tere &amp; &thorn;a o&thorn;re bruce his<lb>
+metes butan fl&aelig;sce anum.<space dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp;<hi
+rend="brown">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B44.05.03"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hit bi&eth; diacon f&aelig;ste .vii. &thorn;a
+.&eth;reo. on hlafe &amp; on w&aelig;tere.<lb>
+&amp; &thorn;a .iiii. f&aelig;ste .iii. dagas on wucan on hlafe &amp; on w&aelig;tere.<lb>
+&amp; &thorn;a o&eth;re bruce his m&aelig;tes butan fl&aelig;sce anum. <hi rend="orange">A
+L
+I A.</hi> <lb></p></div2>
+<div2 type="sen" n="B44.05.04"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hit bi&eth; cleric o&eth;&eth;e leaweda
+man. f&aelig;ste .vi. gear.<lb>
+&thorn;a .iii. on hlafe &amp; on w&aelig;tere. &amp; &thorn;a .iii. f&aelig;ste .iii. dagas
+on<lb>
+hlafe &amp; on w&aelig;tere. &amp; &eth;a &thorn;r&yacute; bruce his metes butan<lb>
+fl&aelig;sce anum. &amp; se m&yacute;necenu f&aelig;ste heo .x. gear. eall<lb>swa her bufan
+awriten is be &thorn;a<expan>m</expan>
+m&aelig;ssepr<expan>eost</expan>. <space dim="horizontal" extent="2"> <hi
+rend="orange">A
+L I A.</hi><lb></p></div2>
+<div2 type="sen" n="B44.04.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc gehadod man. bisceop
+<expan>o&eth;&eth;e</expan> m&aelig;ssepr<expan>eost</expan> o&eth;&eth;e
+munuc<lb>
+o&eth;&eth;e diacon his gem&aelig;ccean h&aelig;fde. &aelig;r <add place="interlinear"
+hand="hand5">(,</add> ge <add place="interlinear" hand="hand5">(,</add> he
+hadod<lb>
+w&aelig;re. &amp; &thorn;a for godes lufan h&yacute; forl&aelig;t. &amp; to hade feng.
+&amp; h&yacute;<lb>
+<milestone unit="fol" n="141b">
+&eth;onne eft s&yacute;&eth;&eth;an tog&aelig;dere gehw&yacute;rf,<add place="interlinear"
+hand="hand5" resp="ajf">d</add>on.
+&thorn;urh h&aelig;med<lb>
+&thorn;ing. f&aelig;ste &aelig;lc be his endeb&yacute;rdn&yacute;sse. swa hit bufan<lb>
+awriten is be manslihte.<space dim="horizontal" extent="2">&nbsp;&nbsp;<hi
+rend="orange">A
+L I A .</hi> <add hand="hand3"
+resp="ajf">13</add><lb></p></div2><div2 type="sen"
+n="B44.06.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwilc man wolde h&aelig;man wi&eth;
+m&yacute;necenu. &amp; heo ge<lb>
+&thorn;afian nolde. f&aelig;ste .i. gear on hlafe. &amp; on w&aelig;tere. <hi
+rend="brown">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B44.07.01"> <lb><p><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">14</add> <hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f
+hwa wolde h&aelig;man wi&eth; o&eth;res mannes riht&aelig;we. &amp;<lb>heo
+ge&eth;afian
+nolde. f&aelig;ste he for his unriht willan.<lb>iii. lencgten. an to foran sumera. and o&eth;er to
+herfestes<lb>emnihte. &amp; &thorn;riddan to foran middanwintra. <hi rend="brown">ALIA.
+</hi><lb></p></div2>
+<div2 type="sen" n="B44.08.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwa wille wifman unrihtlice h&aelig;man.
+&amp; heo ge&thorn;afi-<lb>
+gean nelle. f&aelig;ste he .xl. daga &amp; .xl. nihta. on hlafe. &amp; on
+w&aelig;t<expan>er</expan>e. <lb></p></div2>
+<div2 type="sen" n="B44.09.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwilc man reafa&eth; o&eth;&aelig;rne
+&aelig;t his dehter. bete_ <hi rend="orange">ALIA.</hi><lb>wi&eth; &thorn;a freond.
+&amp; f&aelig;ste h&yacute;ra eg&thorn;er an gear wodnesdagum<lb>
+&amp; frigedagum on hlafe. &amp; on w&aelig;tere. &amp; &thorn;a o&eth;re dagas<lb>
+brucon heora metes butan fl&aelig;sce anum. &amp; nime
+h&yacute;<lb>s&yacute;&eth;&eth;an
+to riht&aelig;we g&yacute;f &thorn;a freond &thorn;<expan>&aelig;t</expan>
+willa&eth;.<space
+dim="horizontal" extent="1"><hi rend="orange">ALIA.</hi><lb></p></div2><div2
+type="sen" n="B44.10.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwilcne man deofol to &thorn;an
+sw&yacute;&thorn;e undergan h&aelig;bbe.<lb>
+&thorn;<expan>&aelig;t</expan> he wi&eth; dumbe n&yacute;tenu h&aelig;me. andette
+his
+scrifte.<lb>
+&amp; f&aelig;ste .xv. gear. &thorn;a eahta on hlafe. &amp; on w&aelig;tere. &amp; &thorn;a
+.vii.<lb>
+f&aelig;ste &aelig;lce geare &thorn;reo lencgten on hlafe. &amp; on w&aelig;tere.<lb>
+an &aelig;r eastrum. o&eth;er ofer pentecosten. &thorn;ridda &aelig;r<lb>middanwintra.
+&amp;
+&aelig;fre f&aelig;ste wodnesdagum. &amp; frige<lb>dagum &thorn;a hwile he libbe. <space
+dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">ALIA</hi><lb></p></div2>
+<div2 type="sen" n="B44.11.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwa on gewunan h&aelig;bbe
+&thorn;<expan>&aelig;t</expan> he h&yacute;ne s&yacute;lfne besmite<lb>his agenes willes.
+f&aelig;ste .iii. gear. on &aelig;lcon &thorn;ara geara<lb><milestone unit="fol" n="142a">
+&thorn;reo lencgtenu on hlafe. &amp; on w&aelig;teru. &amp; &thorn;a o&eth;re<lb>
+<hi rend="od"><add place="marginLeft" hand="hand3" resp="ajf">208</add></hi> dagas
+forga
+&aelig;lce d&aelig;g fl&aelig;sc butan sunnand&aelig;ge anu<expan>m</expan>. <lb>
+</p></div2>
+<div2 type="sen" n="B44.12.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f &aelig;nig man o&eth;erne mid wiccecr&aelig;fte
+ford&oacute;. <hi rend="orange">ALIA.</hi> <add place="marginRight"
+hand="hand4">19</add> 
+<add place="marginRight" hand="hand5">39</add><lb>
+f&aelig;ste .vii. gear. &thorn;reo on hlafe. &amp; on w&aelig;tere. &amp; &thorn;a .iii<add
+hand="hand4" place="inline" resp="ajf">i.
+&eth;reo</add><lb>
+dagas on wucan on hlafe. &amp; on w&aelig;<add hand="hand6" place="inline"
+resp="ajf">,te</add>re. <space dim="horizontal" extent="2">&nbsp;&nbsp;<hi
+rend="orange">A L I A.</hi><lb></p></div2>
+<div2 type="sen" n="B44.13.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwa drife stacan on &aelig;nigne man. f&aelig;ste
+.iii. gear <add hand="hand6" place="inline" resp="ajf">.i.</add> <add place="marginRight"
+hand="hand5">40</add><lb>
+on hlafe &amp; on w&aelig;tere. &amp; &thorn;a .ii. f&aelig;ste .iii. dagas on wucan.<lb>
+on hlafe &amp; on w&aelig;tere. &amp; gif se man dead b&yacute;&eth; for &thorn;&aelig;re
+<lb>
+stacunge. &thorn;onne f&aelig;ste he .vii. gear eallswa her bu<lb>fan awriten is.<space
+dim="horizontal" extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B44.14.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwa wiccige &yacute;mbe &aelig;niges mannes
+lufe.
+&amp; him<add hand="hand1" place="inline" resp="ajf">, on</add> &aelig;te <add
+place="marginRight" hand="hand4">m41</add><lb>s&yacute;lle o&eth;&eth;e on
+dr&yacute;nce. o&eth;&eth;e on &aelig;niges c&yacute;nnes
+galdor<lb>
+creafte. &thorn;<expan>&aelig;t</expan> heora lufu for&eth;am &thorn;e maran sc&yacute;le
+beon<lb>
+g&yacute;f hit leaweda man d&oacute;. f&aelig;ste healf gear. wodnes<lb>dagum. &amp;
+frigedagum on hlafe. &amp; on w&aelig;tere. &amp; &thorn;a &eth;reo<lb>
+dagas bruce his metes butan fl&aelig;sce anum. <hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B44.14.02"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hit bi&eth; cleric. f&aelig;ste .i. gear. twegen das
+on
+wucan.<lb>
+on hlafe &amp; on w&aelig;tere. &amp; &thorn;a o&eth;re dagas bruce his metes<lb>
+butan fl&aelig;sce anum.<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A
+L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B44.14.03"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he bi&eth; diacon f&aelig;ste .iii. gear. twegen
+dagas on wucan<lb>
+on hlafe &amp; on w&aelig;tere. &amp; &thorn;a o&eth;re dagas forgange
+fl&aelig;sc. <lb></p></div2>
+<div2 type="sen" n="B44.14.04"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hit
+m&aelig;ssepr<expan>eost</expan>
+seo. f&aelig;ste .v. gear. &thorn;<expan>&aelig;t</expan> an on hlafe.<hi
+rend="orange">ALIA.</hi><lb>
+&amp; on w&aelig;tere. &amp; &thorn;a .iiii. &aelig;lce friged&aelig;g on hlafe. &amp; on
+w&aelig;tere.<lb>
+&amp; &aelig;lc &thorn;ara o&eth;ra daga forgange fl&aelig;sc.<space dim="horizontal"
+extent="2">&nbsp;&nbsp;<hi rend="orange">ALIA.</hi><space dim="horizontal"
+extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<lb></p></div2>
+<div2 type="sen" n="B44.15.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwa hl&yacute;tas o&eth;&eth;e hwatunga
+bega o&eth;&eth;e his w&aelig;ccean<lb>
+<milestone unit="fol" n="142b">
+&aelig;t &aelig;nigum w&yacute;lle h&aelig;bbe. o&eth;&eth;e &aelig;t &aelig;nigre
+o&thorn;re
+ge<lb>
+sceafte butan &aelig;t godes c&yacute;ricean. f&aelig;ste he .iii. gear.
+&thorn;<expan>&aelig;t</expan><lb>
+an on hlafe. &amp; on w&aelig;tere. &amp; &thorn;a twa on wodnesdagum. &amp;<lb>
+frigedagum on hlafe. &amp; on w&aelig;tere. &amp; &thorn;a o&eth;re dagas bruce <lb>
+his metes. butan fl&aelig;sce anum.<space dim="horizontal"
+extent="3">&nbsp;&nbsp;&nbsp;<hi
+rend="brown">A L I A .</hi><space dim="horizontal" extent="2">&nbsp; &nbsp; <add
+place="marginRight" hand="hand3" resp="ajf">26</add> <lb></p></div2>
+<div2 type="sen" n="B44.16.01"> <p><lb><hi rend="od"><add
+place="marginLeft" hand="hand3" resp="ajf">27</add></hi>  <hi rend="red"><hi
+rend="orncap2">W</hi></hi>ifman beo &eth;&aelig;s &yacute;lcan
+w&yacute;r&eth;e. g&yacute;f heo teola&eth; hire cilde<lb>mid &aelig;nigum
+wiccecr&aelig;fte.
+<expan>o&eth;&eth;e</expan> &aelig;t wega gel&aelig;tum &thorn;urh<lb>
+&eth;a eor&thorn;an tih&eth;. for&eth;on &thorn;<expan>&aelig;t</expan> his m&yacute;cel
+h&aelig;&eth;enscipe. <hi rend="brown">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B44.17.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc wif h&yacute;ra bea<add
+hand="hand6" place="inline" resp="ajf">rn</add> mid drence on hire s&yacute;lfre
+ford&oacute;<lb>
+hire agenes w&yacute;lles. o&eth;&eth;e mid &aelig;nigum &thorn;ingum hit a-<lb>
+m&yacute;rre. f&aelig;ste heo .vii. gear. &thorn;a .iii. on hlafe. &amp; on w&aelig;tere. <lb>
+&amp; &thorn;a .iiii. &thorn;r&yacute; dagas on wucan on hlafe. &amp; on w&aelig;tere.
+&amp; &thorn;a<lb>
+o&eth;re bruce hire metes butan fl&aelig;sce anum. <hi rend="orange">A L I
+A.</hi><lb></p></div2>
+<div2 type="sen" n="B44.18.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc leaweda man o&eth;erne wundige.
+gebete &thorn;a<lb>
+wundlac. wi&eth; hine. &amp; beg&yacute;te hine &thorn;a lacnunge. &amp; f&aelig;ste<lb>
+.i. lencgten toforan middanwintra on hlafe. &amp; on
+w&aelig;tere. <lb></p></div2>
+<div2 type="sen" n="B44.18.02"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc cleric man wundige. f&aelig;ste .ii.
+lencgtenu. <hi rend="orange">ALIA.</hi><lb>
+an toforan middansumera. &amp; o&eth;er to foran<note type="codicological">"to foran"
+written over an erasure.</note> middan<lb>
+wintra. a o&eth;erne d&aelig;g on hlafe. &amp; on w&aelig;tere. <hi rend="orange">A L I
+A.</hi> <lb></p></div2>
+<div2 type="sen" n="B44.19.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwa godes circean brece forstale. ag&yacute;fe
+&thorn;a stale. &amp; <lb>
+f&aelig;ste .vii. gear. swa hit her bufan awriten is be manslihte. <lb></p></div2><div2
+type="sen"
+n="B44.20.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc man stele mete
+<expan>o&eth;&eth;e</expan> cla&eth;as. &amp; hine hungor <hi
+rend="orange">ALIA.</hi><lb>
+to drif&eth; o&eth;&eth;e n&aelig;ced f&aelig;ste .iii. wucan on hlafe. &amp; on
+w&aelig;-<lb>
+tere. gif he &thorn;onne &thorn;a stale ag&yacute;fan mage. ne neadige<lb>man hine to
+f&aelig;stene. ac do man him forgifennesse<lb><milestone unit="fol" n="143a">
+for godes lufon. <space dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B44.21.01"><lb>
+<p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc cristen man his agen bearn
+o&eth;&eth;e his neh<space dim="horizontal" extent="2">&nbsp;&nbsp;<add
+place="marginRight"
+hand="hand3" resp="ajf">33</add><lb>
+stan m&aelig;g wi&eth; &aelig;nigum wur&eth;e s&yacute;lle. n&aelig;bbe n&aelig;nne<lb>
+gem&aacute;nan mid cristenum mannu<expan>m</expan> &aelig;r he hine al&yacute;sed<lb>
+h&aelig;bbe of &thorn;am &thorn;eowdome. gif he &thorn;onne beg&yacute;tan ne <lb>
+mage. d&aelig;le swa m&yacute;cel feoh for hine swa he <corr sic="er"><add
+place="interlinear"
+hand="hand6" resp="ajf">&aelig;&acute;r</add></corr> mid<lb>
+him nam. &amp; al&yacute;se o&eth;erne of &thorn;eowdome. &amp; gefreo,<add
+hand="hand6"
+place="inline" resp="ajf">ge</add>
+&thorn;on<add hand="hand6" place="inline" resp="ajf">e</add><lb>&amp; f&aelig;ste .vii.
+wucan on hlafe. &amp; on w&aelig;tere. &amp; gif he &eth;&aelig;s
+g<expan>e</expan><lb>
+streones n&aelig;bbe. &thorn;<expan>&aelig;t</expan> he hine al&yacute;san ne mage
+f&aelig;ste &thorn;on<expan>ne.</expan><lb>
+.xxviii. wucena on hlafe &amp; on w&aelig;tere.<space dim="horizontal"
+extent="3">&nbsp;&nbsp;&nbsp;<hi
+rend="brown">A L I A .</hi><lb></p></div2><div2 type="sen" n="B44.22.01"> <p><lb><hi
+rend="od"><hi rend="orange"><hi rend="orncap2">G</hi></hi></hi>&yacute;f hwa brod ete
+o&eth;&eth;e st&yacute;rfig
+fl&aelig;sc. &amp; he hit for neo<add hand="hand6" resp="ajf">de</add><note
+type="codicological">"de" is written over an erasure.</note><lb>
+ne d&oacute;. f&aelig;ste .xii. wucan
+on hlafe. &amp; on w&aelig;tere. &amp; gif<lb>he hit for neode d&oacute;. f&aelig;ste .iii.
+dagas. <space dim="horizontal" extent="2">&nbsp;&nbsp;<hi rend="brown">A L I A
+.</hi><lb></p></div2><div2 type="sen" n="B44.23.01"> <p><lb><hi rend="od"><hi
+rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwilc man mid arwan deor ofsceote. &amp; hit
+&thorn;eah<lb>
+ofberste. &amp; hit man &thorn;onne &yacute;mb &eth;r&yacute; niht dead finde.<lb>
+&amp;
+&thorn;&aelig;r hund o&eth;&eth;e wulf o&eth;&eth;e bera o&eth;&eth;e fox on
+befan-<lb>
+gen h&aelig;bbe o&eth;&eth;e &aelig;nig o&thorn;er deorc&yacute;nn ne abite his na,<add
+hand="hand5" place="inline" resp="ajf">n</add> man. <lb></p></div2>
+<div2 type="sen" n="B44.24.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f wulf &aelig;niges k&yacute;nnes orf
+tosl&iacute;te.
+&amp; hit for&thorn;on <hi rend="orange">ALIA. </hi><lb>
+dead beo ne abite his nan cristen man. &amp; gif hit hwa do&eth;<lb>f&aelig;ste he .iiii. wucan
+on hlafe. &amp; on w&aelig;tere. &amp; g&yacute;f hit al&iacute;fa&eth;.<lb>
+&amp; hit s&yacute;&eth;&eth;an ofsl<corr sic="i"><add place="interlinear" hand="hand6"
+resp="ajf">&yacute;</add></corr>h&eth; bruce his man
+beleafe. <hi rend="red">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B44.25.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f wilde deor bi&eth; on n&aelig;tte
+aw&yacute;rged.
+nis hit nanum<lb>
+men al&yacute;fed to brucanne. gif his hwa bruce. f&aelig;ste.<lb>.iiii. wucan a o&eth;erne
+d&aelig;g on hlafe &amp; on w&aelig;tere. <hi rend="red">ALIA.
+</hi><lb></p></div2>
+<div2 type="sen" n="B44.26.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwa finde deadne fisc on fiscpole. &amp;
+he his bruce<lb>
+<milestone unit="fol" n="143b">
+f&aelig;ste .iiii. wucan wodnesdagum. &amp; frigedagum on hlafe<lb>&amp; on w&aelig;tere.
+&amp; &thorn;a o&eth;re bruce his metes butan flaesc.<lb>&amp; gif man on ea deadne fisc
+finde bruce his man beleafe. <lb></p></div2>
+<div2 type="sen" n="B44.27.01"> <p><lb><hi rend="od"><add
+place="marginLeft" hand="hand3" resp="ajf">39</add> <hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc gehadod man on hunta&eth;
+fare. gif hit bi&eth; <hi rend="orange">AL<expan>IA</expan>.</hi> <lb>
+cleric forga fl&aelig;sc .xii. mona&eth;. Diacon .ii. gear.<lb>M&aelig;ssepreost .iii. gear.
+bisceop
+.vii. gear. <hi rend="red">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B44.28.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc bisceop. o&eth;&eth;e &aelig;nig
+gehadod man hine <add hand="hand6" place="inline" resp="ajf">gewunelice</add><lb>
+of&aelig;rdr&yacute;nce. o&eth;&eth;e he &eth;&aelig;s gesw&yacute;ce. o&eth;&eth;e his
+hades &thorn;olige. <lb></p></div2>
+<div2 type="sen" n="B44.29.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f munuc for oferdruncennesse spiwe. f&aelig;ste
+.xxx
+daga. <lb></p></div2>
+<div2 type="sen" n="B44.29.02"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f m&aelig;ssepr<expan>eost</expan> for
+oferdruncennesse spiwe. f&aelig;ste .xl. daga. <lb></p></div2><div2 type="sen"
+n="B44.29.03"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f leaweda man riht gel&yacute;f&aelig;d man.
+for ofer <hi rend="orange">ALIA.</hi><lb>
+druncennesse spiwe. f&aelig;ste .xl. daga.<space dim="horizontal"
+extent="2">&nbsp;&nbsp;<hi
+rend="orange">ALIA.</hi> <lb></p></div2>
+<div2 type="sen" n="B44.30.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e &thorn;urh facen o&eth;erne oferdrence&eth;.
+f&aelig;ste .xl. daga. <lb></p></div2>
+<div2 type="sen" n="B44.31.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">B</hi></hi></hi>e&oacute;n gif hi man acwella&eth; cwelle h&yacute; man
+hra&eth;e. <hi rend="orange">ALIA.</hi><lb>&amp; ete man
+&thorn;<expan>&aelig;t</expan> hunig
+&thorn;<expan>&aelig;t</expan> h&yacute; &aelig;r worhton.<space dim="horizontal"
+extent="2">&nbsp;&nbsp; <hi rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B44.32.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f mus on w&aelig;tan befealle. do h&yacute; man
+aweg. &amp; astregde<lb>
+&thorn;o,<add hand="hand2" place="inline" resp="ajf">ne w&aelig;tan</add> mid
+halige w&aelig;tere. &amp; gif heo cwicce s&yacute;. &eth;icge man<lb>
+&thorn;one w&aelig;ton. gif heo &thorn;onne dead s&yacute;. geote man hit ut .<lb>&amp;
+&thorn;wea &thorn;<expan>&aelig;t</expan> f&aelig;t. </p></div2>
+<div2 type="sen" n="B44.32.02"> <p><hi rend="redfilled">E</hi>ft gecwi&eth;
+on o&eth;re stowe gif &thorn;&aelig;s<lb>
+metes m&yacute;cel seo &aelig;tsomne strengde mid halig w&aelig;tere.<lb>
+&amp; &thorn;icge g&yacute;f his &thorn;earf s&yacute;. &amp;
+&thorn;<expan>&aelig;t</expan> &eth;onne for neod&thorn;eafe. <hi
+rend="orange">AL<expan>IA</expan></hi><lb></p></div2>
+<div2 type="sen" n="B44.33.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">O</hi></hi></hi>n &thorn;&aelig;re fiftan cneorisse geleofe men moton
+h&yacute; ge<lb>
+samnian. &amp; on &eth;ere feor&eth;an g&yacute;f h&yacute; gemette s&yacute;n<lb>ne
+gesceade h&yacute; man. &aelig;t &thorn;am &thorn;riddan cneow
+s&yacute;n<lb>h&yacute;ge
+sceade<hi rend="N2">N</hi>e <space dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp; <hi
+rend="brown">ALIA.</hi><lb></p></div2>
+<milestone unit="fol" n="144a"> 
+<div2 type="sen" n="B44.34.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">W</hi></hi></hi>if on hire mon&eth;es adle c&yacute;ricean ne sece.
+ne to husle <add place="marginRight" hand="hand3" resp="ajf">48</add><lb>
+ne g&aacute;. na&eth;er ne nunne ne leawede w&iacute;f. &amp; gif h&yacute; hit<lb>
+don. f&aelig;ste .xx. daga. <space dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp;
+<hi
+rend="orange">A L I A.</hi> <space dim="horizontal" extent="2">&nbsp;&nbsp; <add
+place="marginRight" hand="hand3" resp="ajf">14</add><lb></p></div2>
+<div2 type="sen" n="B44.35.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e awiht &thorn;icge &eth;es &thorn;e hund.
+o&eth;&eth;e mus of &aelig;te. o&eth;&eth;e<lb>
+weosle widlige. &amp; he hit wite. singe .c. sealma. &amp; gif he<lb>hit n&yacute;te. singe .l.
+sealma.<space dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp;<hi rend="orange">A L
+I A .</hi><lb></p></div2>
+<div2 type="sen" n="B44.36.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e s&yacute;lle o&thorn;rum &thorn;one w&aelig;tan
+&thorn;e mus o&eth;&eth;e wesle bi&eth; on<lb>adruncen gif hit folces man s&yacute;.
+f&aelig;ste .iii. dagas. gif<lb>hit m&yacute;nsterman s&yacute; .ccc. sealma singe. Se &eth;e
+hit
+&aelig;r-<lb>ne wiste. &amp; eft wite singe sealtere.<space dim="horizontal"
+extent="3">&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A L I A.</hi><lb></p></div2>
+<div2 type="sen" n="B44.37.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f man awiht blodiges &thorn;icge on samsodenum
+mete<lb>
+gif he hit n&yacute;te .iii. dagas f&aelig;ste. o&eth;&eth;e sealtere singe.<lb>gif he hit wite.
+f&aelig;ste .vii. dagas.<space dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B44.38.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e his s&yacute;lfes blod on swatle on ungewisse
+forswelge.<lb>
+nis &thorn;&aelig;t nan s&yacute;nne. <space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B44.39.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwa on his gemeleaste husel forleose. f&aelig;este
+.iii. lencte-<lb>
+no &aelig;lce friged&aelig;g on hlafe. &amp; on w&aelig;tere. &amp; &thorn;a o&eth;re
+dagas <lb>
+bruce his metes buton fl&aelig;sce anum. <space dim="horizontal"
+extent="3">&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B44.40.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f seo ons&aelig;gednes on eor&eth;an befealle for
+g&yacute;meleaste.<lb>
+singe .l. sealma. <space dim="horizontal"
+extent="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B44.41.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e <add hand="hand6" place="inline"
+resp="ajf">&thorn;e</add>
+ag&yacute;meleasige gehalgod husel on &thorn;on &thorn;<expan>&aelig;t</expan> hit
+to
+lange licge.<lb>
+&thorn;<expan>&aelig;t</expan> him s&yacute; uns&yacute;fern&yacute;s on. o&eth;&eth;e
+hit
+n&aelig;bbe his hiw. f&aelig;ste .xl. daga. <lb></p></div2><div2 type="sen"
+n="B44.42.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f
+man husel aspiwe for druncennesse.
+o&thorn;&thorn;e<space dim="horizontal" extent="1"><hi rend="orange">ALIA.</hi>
+<lb>
+for oferf&yacute;lle. f&aelig;ste .xl. daga.<space dim="horizontal"
+extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B44.43.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he
+for untrumnesse his husel spiwe. f&aelig;ste
+.vii. dagas<lb>
+<milestone unit="fol" n="144b">
+o&eth;&eth;e twegen salteras singe. <space dim="horizontal"
+extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L I A . </hi> <add
+place="marginRight" hand="hand3" resp="ajf">97</add></p><lb></div2> 
+<div2 type="sen" n="B44.44.01"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">98</add> <hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f
+man husl on f&yacute;r awurpe o&eth;&eth;e on stream &thorn;onne<lb>hit molsna&eth; to
+&thorn;icganne. singe he .c. sealma. &amp; bidde<lb>him georne forgife,<add hand="hand2"
+place="inline" resp="ajf">n</add>n&yacute;sse.<space dim="horizontal"
+extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi></p><lb></div2>
+<div2 type="sen" n="B44.45.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hund frete &thorn;one spiw&eth;an. f&aelig;ste .c.
+daga. gif he hit<lb>
+n&yacute;ste. f&aelig;ste .xl. daga. &aelig;ghwilc husl &thorn;e bi&eth; on un s&yacute;<lb>
+f&aelig;rn&yacute;sse. o&eth;&eth;e on &yacute;lde forb&aelig;rne man hit. <hi
+rend="orange">ALIA.</hi><lb></p></div2> <lb>
+<div2 type="sen" n="B44.47.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f mus husl<note type="codicological">"mus husl"
+written over erasure.</note> ete for gemeleaste &eth;&aelig;s
+&thorn;e hit healdan <lb>
+sceolde. f&aelig;ste feow&aelig;rtig daga.<space dim="horizontal"
+extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L I A .</hi><space
+dim="horizontal" extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<lb></p></div2>
+<div2 type="sen" n="B44.48.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e husl &aelig;nigne d&aelig;l forleose .xx.
+daga f&aelig;ste. <hi rend="orange">ALIA.</hi><lb></p></div2><div2 type="sen"
+n="B44.49.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e
+&thorn;e on folce his <damage type="stain" extent="5">crism</damage>an
+forleose. &amp; hit &aelig;ft ne finde.<lb>
+f&aelig;ste .iii. lenctenu o&eth;&eth;e an gear.<space dim="horizontal"
+extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A L I A .</hi><lb></p></div2><div2 type="sen" n="B44.50.01"> <p><lb><hi
+rend="od"><hi rend="red"><hi rend="orncap2">S</hi></hi></hi>e &eth;e his calic ageote
+ongemang m&aelig;ssan.
+f&aelig;ste .xxx. daga. <lb></p></div2>
+<div2 type="sen" n="B44.51.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e &thorn;e ete &aelig;r he to husle g&aacute;. &amp;
+&aelig;fter &thorn;on husel<space dim="horizontal" extent="2">&nbsp;&nbsp;<hi
+rend="orange">ALIA.</hi><lb>
+&thorn;icge. f&aelig;ste .vii. dagas.<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L I
+A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B44.52.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">W</hi></hi></hi>er &amp; wif &thorn;a &eth;e heom on h&aelig;mede
+ge&eth;eodde w&aelig;ron. gif<lb>
+o&eth;er wile godes &eth;eow beon. o&eth;er n&yacute;le. o&eth;&eth;e h&yacute;ra<lb>
+untrum. o&eth;er hal. swa &thorn;eah be h&yacute;ra begra ge&eth;a<lb>funge h&yacute;g
+d&aelig;lon gif h&yacute; willen. &amp;
+&thorn;<expan>&aelig;t</expan>
+beo be bisceopes dome. <lb></p></div2>
+<div2 type="sen" n="B44.53.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e godes &thorn;eow &thorn;e on sl(e,)pe
+besmiten bi&eth;. arise <space dim="horizontal" extent="2">&nbsp;&nbsp;<hi
+rend="orange">ALIA.</hi><lb>
+&amp; singe .vii. sealmas. &amp; bige his cneowu to eor&thorn;an &aelig;t<lb>&aelig;lces
+ferses ende. &amp; f&aelig;ste &thorn;es on morgen to hlafe. &amp; to<lb>
+w&aelig;tere. o&eth;&eth;e singe &thorn;rittig &thorn;ara sealma &thorn;e him betste<lb>
+&thorn;&yacute;ncen. &amp; &aelig;t &aelig;lces ferses ende bige his cneowu to
+eor&eth;an. <lb></p></div2>
+<div2 type="sen" n="B44.54.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f
+swin. o&eth;&eth;e henna o&eth;&eth;e
+&aelig;niges k&yacute;nnes &yacute;rfe ete <hi
+rend="orange">AL<expan>IA</expan></hi><lb>
+<milestone unit="fol" n="145a">
+of mannes lichoman <expan>o&eth;&eth;e</expan> of his blode slea man &thorn;&aelig;t<lb>
+&yacute;rfe &amp; selle hundum.<space dim="horizontal"
+extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A
+L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B44.55.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwa b&aelig;rne o&eth;res mannes hus.
+f&aelig;ste .iii. gear. <add place="marginLeft" hand="hand3" resp="ajf">68</add><lb>
+a o&eth;erne d&aelig;g on hlafe. &amp; on w&aelig;tere. &amp; &thorn;a o&eth;re dagas<lb>
+f&aelig;ste to nones &amp; forga fl&aelig;sc.<space dim="horizontal"
+extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L I A
+.</hi><lb></p></div2><div2
+type="sen" n="B44.56.01"> <p><lb><hi
+rend="od"><hi rend="red"><hi rend="orncap2">G</hi></hi></hi>&yacute;f &aelig;niges
+c&yacute;nnes &yacute;rfe fealle
+on w&aelig;terp&yacute;tt. &amp; hit<lb>
+man &thorn;&aelig;r dead f&yacute;nde. feormie man &thorn;one p&yacute;tt cl&aelig;<lb>
+ne. &amp; stregd &thorn;&aelig;r on haligw&aelig;ter. &amp; gif hwa his on b&yacute;<Note
+type="codicological">Hole approximately 1.25 x 1.25 inches.</Note><lb>
+rige &aelig;&acute;r se p&yacute;tt gehalgod s&yacute; f&aelig;ste ane wucan. on hla<lb>fe.
+&amp; on w&aelig;tere gif he hit wite. &amp; gif he hit n&yacute;te<lb>
+f&aelig;ste &aelig;nne d&aelig;g on hlafe. &amp; on <damage type="stain"
+extent="4">w&aelig;te</damage>re.<space dim="horizontal" extent="2">&nbsp;&nbsp;<hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B44.57.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwa for his untrumnesse. o&eth;&eth;e
+for his nescnesse<lb>
+&thorn;<expan>&aelig;t</expan> f&aelig;sten &amp; &thorn;a sti&eth;nesse aberan ne
+m&aelig;g &thorn;e his scrift<lb>
+him t&aelig;c&eth;. him his al&yacute;fed &thorn;<expan>&aelig;t</expan> he mot mid
+anre
+m&aelig;ssan.<lb>
+al&yacute;san .iii. daga f&aelig;sten. &amp; mid .x. m&aelig;ssan. man m&aelig;g<lb>
+al&yacute;san .iiii. mon&eth;a f&aelig;sten. &amp; mid .xx. m&aelig;ssan man<lb>m&aelig;g
+al&yacute;san .viii. mon&thorn;a f&aelig;sten. &amp; mid .xxx. m&aelig;ssan<lb>
+man m&aelig;g al&yacute;san .xii. mon&thorn;a f&aelig;sten. gif he wile mid<lb>so&eth;re
+godes lufan him s&yacute;lfum &thorn;ingian. <hi rend="orange">ALIA.</hi>
+</p></div2></div1><lb>
+<div1 type="sen" n="B34.00.91"><milestone unit="B" n="34.01.91"><div2 type="sen"
+n="B34.00.91" id="oeistart">
+<p><lb><hi rend="od"><hi rend="orange"><hi rend="orncap2">A</hi></hi></hi>nd on
+halgum
+gewritum is ger&aelig;d &thorn;<expan>&aelig;t</expan> se<del type="erasure"
+hand="hand1">&nbsp;</del> &aelig;lmihtiga<lb>
+god &thorn;urh .xii. &thorn;ing s&yacute;l&eth; mannum forg&yacute;fennisse<lb>
+heora s&yacute;nna. <space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A.</hi><lb></p></div2>
+<div2 type="sen" n="B34.01.91"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>eo &aelig;reste s&yacute;nna forgifenn&yacute;ss is
+&thorn;urh fulluhtes b&aelig;&eth;. <lb></p></div2>
+<div2 type="sen" n="B34.02.91"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>eo o&eth;re forgifennesse is &thorn;urh godes lufan <hi
+rend="orange">ALIA.</hi><lb>
+&amp; manna. &thorn;<expan>&aelig;t</expan> gehwa lufige god of eallre his heortan<lb>
+<milestone unit="fol" n="145b">
+meagoln&yacute;sse. &amp; &thorn;onne his nehstan.
+&thorn;<expan>&aelig;t</expan>
+is &aelig;lc cristen<lb>
+man swa hine sylfne.<space dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="red">A L I A .</hi></p><lb></div2>
+<div2 type="sen" n="B34.03.91"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">74</add> <hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>eo
+&eth;ridde forg&yacute;fenn&yacute;s<del type="erasure" hand="hand6">se</del><note
+type="textual">A corrector has erased final -se on "forg&yacute;fenn&yacute;se throughout this
+passage.</note> is &thorn;urh &aelig;lmess&yacute;lene for<lb>
+hit is awriten &thorn;<expan>&aelig;t</expan> eallswa man mid w&aelig;tere fyr<add
+place="marginLeft" hand="hand6" resp="ajf">,
+a</add>dw&aelig;sce&eth;.<lb>
+swa adilega&eth; seo &aelig;lmesse &thorn;&aelig;s mannes synna.&nbsp;<hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B34.04.91"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>eo feor&eth;e forg&yacute;fenn&yacute;s is &thorn;urh
+sealmsang. &amp; teara<lb>
+agotenn&yacute;sse. &thorn;<expan>&aelig;t</expan> hwa for his s&yacute;nnum hreowsige.
+&amp; wepe<lb>
+swa gehwa de&eth; for his freondes dea&eth;e. &nbsp;<hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B34.05.91"> <p><damage type="hole" extent="1.25 x 
+1.25inches"></damage><lb><hi rend="orange"><hi rend="orncap2">S</hi></hi>eo fifte
+forgife,<add place="interlinear" hand="hand6" resp="ajf">n</add>nes<del type="erasure"
+hand="hand1">se</del> is &thorn;urh andetnesse. &thorn;<expan>&aelig;t</expan>
+ge<lb>
+<damage type="hole" extent="2">&nbsp;&nbsp;</damage>hwa his s&yacute;nna andette mid
+inneweardlicre<lb>
+<damage type="hole" extent="1"></damage>heortan his scrifte. &amp; him his
+digeln&yacute;sse onwreoh<lb>
+&amp; sy&eth;&eth;an bete swa he him t&aelig;ce.<space dim="horizontal"
+extent="3">&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A L I A.</hi><lb></p></div2>
+<div2 type="sen" n="B34.06.91"> <p><lb><hi
+rend="od"><hi rend="red"><hi rend="orncap2">S</hi></hi></hi>eo s&yacute;xte
+forg&yacute;fennes is &thorn;<expan>&aelig;t</expan> gehwa for godes lufon.<lb>
+&amp; for his sawle &thorn;earfe winne wi&eth; his lichoman un<lb>rihtlustas. &amp; his <del
+type="erasure" hand="hand6" resp="ajf">lichaman</del> swa
+gew<corr sic="i"><add place="interlinear"
+hand="hand6" resp="ajf">&yacute;</add></corr>lde mid f&aelig;stene.<lb>
+&amp; mid o&eth;rum m&aelig;gene. &thorn;<expan>&aelig;t</expan> se innera man
+&thorn;&aelig;t is seo<lb>
+sawul beo for gode gehealden.<space dim="horizontal" extent="2">&nbsp;&nbsp;<hi
+rend="orange">A
+L
+I A.</hi><lb></p></div2>
+<div2 type="sen" n="B34.07.91"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>eo seofo&eth;e forg&yacute;fennes is
+&thorn;<expan>&aelig;t</expan> gehwa his &aelig;hta. &amp; his bearn.<lb>&amp; his eard
+for
+godes lufon forl&aelig;te. &amp; on &aelig;l&eth;eodig<lb>nesse fare. &amp; &thorn;&aelig;r
+his lif geendige.<space dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A L I A</hi><space dim="horizontal" extent="3">&nbsp;&nbsp;
+<lb></p></div2>
+<div2 type="sen" n="B34.08.91"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>eo eahto&eth;e forgifennes is<note type="codicological">"is" 
+written over erasure.</note> &thorn;<expan>&aelig;t</expan> se<del type="erasure"
+hand="hand1">o</del> man of &thorn;&yacute;ssu<expan>m</expan> life<lb>
+gewite &amp; fare to wite. &amp; his freond &thorn;onne &thorn;e on life<lb>beo&thorn; him
+foregifnesse &aelig;t gode geearnian mid<lb>godcundum &thorn;eowdome. &amp; mid
+h&yacute;ra weoruld 
+&aelig;htu<expan>m</expan>. <hi
+rend="orange">AL<expan>IA</expan></hi><lb></p></div2>
+<div2 type="sen" n="B34.09.91"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>eo nigo&eth;a forgifnes is. mildheortn&yacute;s &amp; god
+gel&eacute;afa. <lb></p></div2>
+<milestone unit="fol" n="146a">
+<div2 type="sen" n="B34.10.91"> <p><lb><hi rend="od"><hi rend="orncap2">S</hi></hi>eo
+teo&eth;e forg&yacute;fnes<del type="erasure" hand="hand1">se</del> is
+&thorn;<expan>&aelig;t</expan> man gehw&yacute;rfe
+o&eth;erne <add place="marginRight" hand="hand3" resp="ajf">81</add><lb>fram his
+synnum.<space dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A
+L I A.</hi><space
+dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<add
+place="marginRight" hand="hand3" resp="ajf">78</add><lb></p></div2>
+<div2 type="sen" n="B34.11.91"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>eo
+&aelig;ndl&yacute;fte forg&yacute;fnes<del type="erasure" hand="hand1">se</del> is
+&thorn;&aelig;t gehwa for godes lu<lb>
+fan forg&yacute;fe &thorn;&aelig;s monnes g&yacute;ltas &thorn;e wi&eth; hine
+ag&yacute;lt<lb>
+for&eth;on se h&aelig;lend cw&aelig;&eth; on his godspelle forgifa&eth; ge.<lb>&amp; oew
+bi&eth; forgifen.<space dim="horizontal"
+extent="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L I A.</hi>
+<lb></p></div2>
+<div2 type="sen" n="B34.12.91"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>eo twelfte forgifennis is. martirhad. swa &eth;am
+scea<lb>
+&eth;an gewear&eth; &aelig;t drihtnes &thorn;rowunga &thorn;a se h&aelig;lend<lb>
+him to cw&aelig;&eth; so&eth; is &thorn;<expan>&aelig;t</expan> ic &eth;e secge nu
+tod&aelig;g &thorn;u bist mid<lb>
+me, <add hand="hand2" place="inline" resp="ajf">on</add> mines f&aelig;der rice.<space
+dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange"> A L I
+A</hi><lb>
+<hi rend="od"><hi rend="orange"><hi rend="orncap3">A</hi></hi></hi>nd
+&thorn;<expan>&aelig;t</expan> nis na to forl&aelig;tenne &thorn;<expan>&aelig;t</expan>
+se
+ap<expan>osto</expan>l cw&aelig;&eth;. Se &thorn;e &eth;urh<lb>
+his lichoman ges&yacute;ngie he ac &eth;urh his lichoman<lb>bete.
+&thorn;<expan>&aelig;t</expan> is on f&aelig;stene. on w&aelig;ccum. &amp; on
+gebedum &amp; on<lb>
+halsungum to gode mid heortan onbr&yacute;rdnesse. &amp; <lb>mid teara agotennesse.<space
+dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L
+I A .</hi></p></div2></div1><lb>
+<div1 type="sen" n="B61.01.00" id="cthstart"><milestone unit="B" n="61.01.00"> <div2
+type="sen"
+n="B61.01.01"> <p><lb><hi rend="red"><hi
+rend="orncap3">S</hi></hi><expan>AN</expan>C<expan>TU</expan>S
+GREGORIUS SE
+HALGA PAPA GEGADERODE SINO<hi rend="eth2">&eth;</hi><lb>
+on rome mid monigum haligum bisceopum. &amp; m&aelig;sse<lb>
+preost<corr><add place="interlinear" hand="hand6"
+resp="ajf"><expan>um&middot;</expan></add></corr> &thorn;a betwux o&eth;rum
+spr&aelig;cum &thorn;e h&yacute;
+cristenum<lb>
+&eth;eodum to rihte gesetton. <lb></p></div2>
+<div2 type="sen" n="B61.02.01"> <p>&thorn;a cw&aelig;&eth; <del type="erasure"
+hand="hand1">he</del> S<expan>AN</expan>C<expan>TU</expan>S
+GREGORIUS. ic geomrigende cw<corr sic="&aelig;"><add place="interlinear" hand="hand6"
+resp="ajf">e</add></corr>&eth;e. &thorn;<expan>&aelig;t</expan> &thorn;as
+cristenan gehw&aelig;r <del type="erasure"
+hand="hand1">ge</del>&eth;urh<lb>
+&eth;as italian m&aelig;g&eth;e wunigende. ic geh&yacute;rde. sw&yacute;&eth;e
+&thorn;r&yacute;st<lb>
+lice don wi&eth; &thorn;one halgan geleafan. &amp; &thorn;ara doma eallra<lb>haligra
+f&aelig;dera. &thorn;<expan>&aelig;t</expan> h&yacute; s&yacute;nt swa &eth;riste.
+&thorn;<expan>&aelig;t</expan> h&yacute; &thorn;a<add hand="hand6" place="inline"
+resp="ajf">,
+ge</add>halgedan<lb>
+nunnan on gode s&yacute;nt nimende him to gem&aelig;ccum.<lb>&amp; eac &eth;a sibban
+men
+hira agenes k&yacute;nnes.
+&thorn;<expan>&aelig;t</expan>
+&eth;on,<add hand="hand6" place="inline" resp="ajf">ne</add> us &thorn;ince&eth;<lb>
+<milestone unit="fol" n="146b">
+gerisenlice him fram tocerfanne mid &thorn;am tw&yacute; ecge<lb>sw&yacute;rde &thorn;am
+haligenan godes worde. &thorn;&yacute; l&aelig;s se &aelig;cer<note
+type="codicological">&aelig; written over erasure.</note> &eth;es<lb>
+godan landes. s&yacute; f&yacute;lled mid &thorn;am &eth;&yacute;felum &thorn;ara
+&yacute;felra<lb>
+weoda &thorn;<expan>&aelig;t</expan> h&yacute; &eth;a godes mennen on gesinscipe
+habban. </p></div2> 
+<div2 type="sen" n="B61.03.01"> <p>&eth;a<lb>
+cw&aelig;&eth; S<expan>an</expan>c<expan>tu</expan>s Gregorius s&yacute; he
+amansumod.
+&amp; him
+andw&yacute;rdan<lb>
+ealle &thorn;a bisceopas. &amp; cw&aelig;don &eth;r&yacute;wa s&yacute; he
+amansumod. <lb></p></div2>
+<div2 type="sen" n="B61.04.01"> <p>&amp; gif hwa his gastlican cumendran h&aelig;bbe
+him on ge<lb>
+sinscipe s&yacute; he amansumod. &amp; him andsweredon ealle &thorn;a<lb>halgan
+b<expan>isceopas</expan> &thorn;r&yacute;wa. &amp; cw&aelig;don s&yacute; he
+amansumod. </p></div2>
+<div2 type="sen" n="B61.05.01"> <p>&amp; gif hwa<lb>
+his agene magan h&aelig;bbe on gesinscipe. o&eth;&eth;e
+&thorn;<expan>&aelig;t</expan> wif &thorn;<expan>&aelig;t</expan> his<lb>neah
+m&aelig;g
+&aelig;r h&aelig;fde s&yacute; he amansumod. &amp; him &aelig;ft and<lb>
+w&yacute;rdan ealle &eth;a b<expan>isceopas</expan> &amp; cw&aelig;don
+&eth;r&yacute;<del type="erasure" hand="hand1">&nbsp;</del>wa. s&yacute; he amansumod.
+<lb></p></div2>
+<div2 type="sen" n="B61.06.01"> <p>&amp; g&yacute;f hwa f&aelig;mnan forstele
+unbew&aelig;ddode. nime hig<lb>
+&eth;onne to riht life. o&eth;&eth;e he s&yacute; amansumod. &amp; ealle &thorn;a
+&eth;e<lb>
+on &thorn;on fultume s&yacute;n. s&yacute;n h&yacute; amansumode. &amp; &thorn;a ealle
+&eth;a<lb>
+b<expan>isceopas</expan> andsw&aelig;redon. &amp; cw&aelig;don &eth;r&yacute;wa
+on
+ge&thorn;r&aelig;f s&yacute;n h&yacute; aman<lb>
+sumode. Am<expan>en</expan>. buton h&yacute; to rihtere bote gec&yacute;rran<lb>
+willan. &amp; him &thorn;onne forgifnesse geearnian mid so&eth;um<lb>geleafan
+untweogendum.<space dim="horizontal" extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A
+L I A .</hi> <add place="marginRight" hand="hand3"
+resp="ajf">82</add></p></div2></div1><lb>
+<div1 type="sen" n="B62.01.01"><milestone unit="B" n="62.01.00"><div2 type="sen"
+n="B62.01.01"> <p><lb><hi
+rend="od"><hi rend="red"><hi rend="orncap2">N</hi></hi></hi>e sceal se bisceop
+hims&yacute;lf n&aelig;<del type="erasure" resp="hand1">&nbsp;</del>nie
+abb<expan>ud</expan>
+geceosan &aelig;fter<lb>
+&eth;&aelig;s o&thorn;res dea&eth;e. ne be him lifigendum &thorn;eah he onweg<lb>
+gewite. &amp; ges&yacute;nsigie. ne mot he &eth;&aelig;r n&aelig;nne o&eth;erne toge<lb>
+settan butan &eth;&aelig;ra bro&thorn;ra willan.<space dim="horizontal"
+extent="3">&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B62.01.02"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">N</hi></hi></hi>is na to onfonne seo halige ons&aelig;gdnes of
+&eth;&aelig;s m&aelig;sse<lb>
+preostes handa &thorn;e ne can his orationes. &amp; his lectiones<lb><milestone unit="fol"
+n="147a">
+mid rihte gef&yacute;llan.<space dim="horizontal"
+extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A
+L I A .</hi> <add place="marginRight" hand="hand3"
+resp="ajf">84</add> <space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<lb></p></div2><div2 type="sen"
+n="B62.02.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">&ETH;</hi></hi></hi>a &eth;e n&yacute;ton hwe&eth;er hig gefullode
+beo&eth;. &amp; l&aelig;ta&eth; h&yacute; &aelig;ft <add place="marginRight"
+hand="hand3"
+resp="ajf">88</add><lb>
+fullian. &thorn;<expan>&aelig;t</expan> bi&eth; sw&yacute;lce hig &aelig;ft crist ahon.
+f&aelig;sten &thorn;onne<lb>
+&thorn;a hwile &thorn;e he libban &aelig;lce friged&aelig;g to anes m&aelig;les.<lb>
+&amp; &thorn;a &eth;reo &aelig;f&aelig;stenu.<space dim="horizontal"
+extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A L I A .</hi></p><lb></div2> <div2 type="sen" n="B62.02.02"> <p><lb>
+<hi rend="od"><hi rend="orange"><hi rend="orncap2">G</hi></hi></hi>&yacute;f
+&thorn;onne
+hwilc mon wene &thorn;<expan>&aelig;t</expan> hit s&yacute; al&yacute;fed for sumre<lb>
+cl&aelig;nnesse &thorn;<expan>&aelig;t</expan> h&yacute;,<add hand="hand1"
+place="inline"
+resp="ajf">ne</add> man tuwa fullige. &thorn;onne f&aelig;ste se .iii.<lb>
+gear on &aacute;n. &amp; s&yacute;&eth;&eth;an eac hit bete a mid f&aelig;stene. &amp;<lb>
+mid &aelig;lmessan &thorn;a hwile &thorn;e he libbe.<space dim="horizontal"
+extent="2">&nbsp;&nbsp;<hi
+rend="orange">A L I A .</hi><lb></p></div2></div1>
+<div1 type="sen"
+n="B63.01.00"><milestone unit="B" n="63.01.00"><div2 type="sen"
+n="B63.01.01"> <p><lb><hi
+rend="od"><hi rend="red"><hi
+rend="orncap2">B</hi></hi></hi>eo sunnand&aelig;ges weorce. grecas &amp; romana
+rowa&eth; &amp; ri<lb>
+da&eth; ac man ne mot na&eth;er ne hlaf bacan. ne in cr&aelig;te <lb>faran. buton hwa to
+c&yacute;rcean on fare<corr sic="e"><add place="interlinear" hand="hand1" 
+resp="ajf">a</add></corr>ne men ne moten<lb>
+ba&eth;ian sunnandagum. </p></div2> 
+<div2 type="sen" n="B63.02.01"> <p>ne eac grecas nella&eth; openlice<lb>writan on &eth;am
+dagum. ac gif hw&yacute;lc n&yacute;d&thorn;earf bi&eth; &thorn;onne<lb>
+willa&eth; h&yacute; digellice writan in heora husum. <hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B63.03.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">&ETH;</hi></hi></hi>a &eth;e w&yacute;rcea&eth; sunnand&aelig;g
+&aelig;t &thorn;am forman c&yacute;rre grecas<lb>
+h&yacute; ofercida&eth;. &aelig;t &thorn;am o&eth;rum c&yacute;rre nima&eth;
+hw&aelig;thwu<lb>
+gu on. &thorn;&aelig;s &eth;e<del type="erasure" hand="hand5">&nbsp;&nbsp;</del>
+h&yacute; w&yacute;rcea&eth;. &amp; &aelig;t &eth;am &thorn;r&yacute;ddan
+c&yacute;rre.<lb>
+&thorn;one &eth;riddan d&aelig;l &eth;&aelig;s &thorn;e hig mid gesc&yacute;ldigea&eth;.
+&amp; g&yacute;f<lb>
+hit s&yacute;nt &thorn;eowe men. &amp; hig hit h&yacute;ra willes do&eth;. s&yacute;n
+h&yacute;<lb>
+beswungene. &amp; gif hit s&yacute;n freo men. f&aelig;sten h&yacute; .vii. niht <lb>
+fl&aelig;sce. &amp; eala&eth;.<space dim="horizontal"
+extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A
+L
+I A .</hi><lb></p></div2>
+<div2 type="sen" n="B63.04.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">N</hi></hi></hi>e sceal c&yacute;rcean timber to &aelig;nigum o&eth;rum
+weorce.<lb>
+buton to o&eth;re c&yacute;rcean. o&eth;&eth;e hit man forb&aelig;rne to<lb>sumere freme
+&thorn;e &eth;am godes &thorn;eowum &thorn;earf s&yacute;. &eth;e in in
+<lb>
+<milestone unit="fol" n="147b">
+&thorn;am m&yacute;nstre s&yacute;n. &amp; hit n&aelig;fre s&yacute; gedon &thorn;am
+leawedum<lb>
+to br&yacute;ce.<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A
+L I A . </hi> <add place="marginRight" hand="hand3"
+resp="ajf">89</add><lb></p></div2>
+<div2 type="sen" n="B63.04.02"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">W</hi></hi></hi>itodlice nis
+&thorn;<expan>&aelig;t</expan>
+nan riht &thorn;<expan>&aelig;t</expan> &aelig;nig man for geflite. &amp; for<lb>
+<add place="marginLeft" hand="hand2" resp="ajf">an</add>dan wi&eth;cwe&eth;e
+godcundra hada c&yacute;re. &amp; forestihtunge. <lb></p></div2>
+<div2 type="sen" n="B63.05.01"> <p><lb><hi rend="red"><hi rend="od"><hi
+rend="orncap2">C</hi></hi></hi>&yacute;ricean man mot settan on o&thorn;re stowe. gif
+hit <space dim="horizontal" extent="1"><hi rend="orange">ALIA.</hi><lb>
+n&yacute;d&thorn;earf s&yacute;. ac h&yacute; man ne mot na eft halgian. butan<lb>
+&thorn;<expan>&aelig;t</expan> an m&aelig;ssepr<expan>eo</expan>st hig geondstregde mid
+halig w&aelig;tere.<lb></p></div2></div1>
+<div1 type="sen" n="B64.01.00"> <milestone unit="B" n="63.01.00">
+<div2 type="sen" n="B64.01.01"> <p><lb><hi rend="od"><hi
+rend="orange"><hi rend="orncap2">&ETH;</hi></hi></hi>a neat &thorn;a beo&eth; geme<del
+type="erasure" hand="hand1">&nbsp;</del>ngde to wulfum. &amp; to hundum. <hi
+rend="orange">ALIA.</hi><lb>
+ne beo&eth; &thorn;a na mannum to etanne. ac sw&yacute;num. &amp; hun<lb>dum. ne se
+heort ne se<del type="erasure" hand="hand1">&nbsp;&nbsp;</del> r&aacute; gif h&yacute;
+beo&eth; deade fi<corr><add hand="hand1" place="inline" resp="ajf">u</add>ndene.</corr>
+<hi
+rend="orange">AL<expan>IA</expan>.</hi><lb></p></div2>
+<div2 type="sen" n="B64.02.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>recas ne s&yacute;lla&eth; na h&yacute;ra sw&yacute;num
+astorfen fl&aelig;sc. ac<lb>
+h&yacute; l&yacute;fa&eth; &thorn;a fel to sceon. &amp; &thorn;a h&yacute;da. &amp;
+&thorn;a
+hornas. &amp; &thorn;a<lb>
+wulla do&eth; to n&yacute;tte. &amp; swa &thorn;eah in naht halig lices. </p></div2> 
+<div2 type="sen" n="B64.03.01"> <p>&amp;<lb>
+gif hit gelimp&eth; &thorn;<expan>&aelig;t</expan> sw&yacute;n eta&eth; astorfen
+fl&aelig;sc.
+o&eth;&eth;e hen-<lb>
+na manna blod ne gelefa&eth; we na &thorn;&aelig;t h&yacute; s&yacute;n for&eth;on<lb>
+to aweorpanne.<space dim="horizontal"
+extent="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B64.03.02"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap3">F</hi></hi></hi>ugelas &amp; o&eth;re n&yacute;tenu
+n&aelig;ron na<del type="erasure" hand="hand5">&nbsp; &nbsp;</del>l&yacute;fede to
+etanne<lb>
+gif,<add hand="hand6" place="inline" resp="ajf">hi</add> beo&eth; onnette aw&yacute;rged.
+ne
+&eth;eah se heafoc hine ab&iacute;te.<lb>
+gif,<add hand="hand6" place="inline" resp="ajf">hi</add> he bi&eth; dead funden.<space
+dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A .
+</hi><lb></p></div2>
+<div2 type="sen" n="B64.03.03"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">&ETH;</hi></hi></hi>a feower heafodcwidas in actibus
+ap<expan>osto</expan>lor<expan>um</expan> &thorn;us bebeo<lb>da&eth;.
+&thorn;<expan>&aelig;t</expan> man hine forh&aelig;bbe fram d&yacute;rnum
+geligere.<lb>
+&amp; fram aw&yacute;rgedum n&yacute;tene. &amp; fram blode. &amp; fram<lb>
+defolg&yacute;lde.<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L I
+A .</hi><lb></p></div2>
+<div2 type="sen" n="B64.03.04"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">h</hi></hi></hi>ors we ne forbeoda&eth; ac hit is ungewunelic to
+etanne. <lb></p></div2>
+<div2 type="sen" n="B64.03.05"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">H</hi></hi></hi>ara is al&yacute;fed to etanne. &amp; he his eac swi&eth;e
+g&oacute;d wi&eth; ut<lb>
+<milestone unit="fol" n="148a">
+sih&eth;e. &amp; his gealla his swi&eth;e god wi&eth; pipor gemenged<lb>wi&eth; inw<add
+place="interlinear" hand="hand6" resp="ajf">e</add>r<del type="erasure"
+hand="hand1">&nbsp;</del>ce. &amp; wi&eth; mu&eth; sar<add hand="hand6" place="inline"
+resp="ajf">e</add>. <hi rend="orange">A L I A. </hi> <space dim="horizontal"
+extent="2">&nbsp;&nbsp;<add hand="hand3"
+resp="ajf">96</add><space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<add
+hand="hand3" resp="ajf">107</add></p></div2></div1><lb>
+<div1 type="sen" n="B65.01.00"><milestone unit="B" n="65.01.00"><div2 type="sen"
+n="B65.01.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">M</hi></hi></hi>id gr&eacute;cum man mo<corr><add hand="hand6"
+place="inline" resp="ajf">ste</add></corr> wifigean &aelig;t &eth;am &eth;riddan
+cneowe<lb>
+&aelig;t &thorn;&aelig;re ealdan. &aelig;&acute;. bebode. &amp; n&oacute; n&uacute;.
+&aelig;r
+&aelig;t &thorn;am fiftan.<lb>
+&aelig;fter romana dome. ac swa &thorn;eah gif se gesinscipe<lb>wur&eth;e&eth; geworht
+&aelig;r&eth;am &thorn;r&yacute;ddan cneow. &aelig;r man<lb>
+&thorn;a sibbe wite. &eth;onne ne mot hine man <del type="erasure"
+hand="hand1">&nbsp;&nbsp;&nbsp;</del> abrecan.<lb>
+ac h&yacute; sceolan butu on &eth;e maran forh&aelig;fednesse<lb>beon. &amp; on mare
+d&aelig;dbote &thorn;onne o&eth;re men. </p></div2>
+<div2 type="sen" n="B65.01.02"> <p>ac gif<lb>
+h&yacute; &aelig;r&eth;am &thorn;riddan cneow hig gesamnian. &thorn;onne is<lb>
+&thorn;&aelig;t to breccanne. &amp; nis &thorn;<expan>&aelig;t</expan> nanum men
+men al&yacute;fed &thorn;e<lb>
+b&yacute;&eth; o&eth;rum &aelig;t &thorn;am &eth;riddan cneow o&eth;&eth;e near.
+&thorn;<expan>&aelig;t</expan><lb>
+he ni,<corr><add hand="hand2" place="inline" resp="ajf">i</add></corr>ne<note
+type="textual">nine correted to nime by the addition of a single ascender.</note>
+&thorn;<expan>&aelig;t</expan>
+wif
+&thorn;<expan>&aelig;t</expan> se o&eth;er &aelig;r h&aelig;fde.-<space dim="horizontal"
+extent="2">&nbsp;&nbsp;<hi rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B65.02.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e twige wifige. o&eth;&eth;e wif ceorlige.
+f&aelig;ste an gear. &amp;<lb>
+si&eth;&eth;an &aacute; wodnesdagum. &amp; frigedagum. &amp; &thorn;a o&eth;re<lb>
+&aelig;&acute;festenu forg&aacute; fl&aelig;sc. &amp; na &eth;(e,) <add hand="hand3"
+resp="ajf">|</add>ra&thorn;er<note type="textual">The a in ra&thorn;er is given a long tail to
+join it to the next letter and to fill the space left between the a and the &thorn;.</note>
+forl&aelig;te his wif. <lb></p></div2>
+<div2 type="sen" n="B65.02.02"><lb> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap3">&thorn;</hi></hi></hi>onne gif wer &thorn;r&yacute;wa wifa&eth;
+o&eth;&eth;e wif ceorla&eth;. <hi rend="orange">ALIA.</hi><lb>o&eth;&eth;e
+g&yacute;t m&aacute;. f&aelig;ste .iiii. gear &amp; &thorn;a hwile &thorn;e he
+l&yacute;fige.<lb>
+f&aelig;ste wodnesd&aelig;ge. &amp; friged&aelig;ge. &amp; &thorn;a o&eth;re
+&aelig;festenu<lb>
+forga fl&aelig;sc. &amp; ne s&yacute;n h&yacute; na &thorn;eah hwe&eth;&aelig;re
+ged&aelig;lde<lb>
+g&yacute;f h&yacute; <del type="erasure" hand="hand1">&nbsp;&nbsp;&nbsp;</del> on riht
+gesinscipe gegaderode s&yacute;n. <hi rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B65.03.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f h&eacute;re genime hw&yacute;lces mannes
+wif. &amp; he h(&yacute;') ne mage<lb>
+eft beg&yacute;tan. s&yacute; &eth;am w&aelig;re al&yacute;fed
+&thorn;<expan>&aelig;t</expan> he nime him o&eth;re. </p></div2>
+<div2 type="sen" n="B65.03.02"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc wif o&eth;&eth;e ceorl gehate
+&thorn;<expan>&aelig;t</expan> h&yacute; willan on <hi rend="orange">ALIA.</hi>
+<lb>
+m&aelig;g&eth;hade &thorn;urhwunian. &amp; &eth;onne se ceorl hine
+ge&eth;&yacute;&eth;e<lb>
+<add place="marginLeft" hand="hand6" resp="ajf">*benedica dom*nui?</add><Note
+type="codicological">The addition is written perpendicular to the text.</Note><lb>
+<milestone unit="fol" n="148b">
+<space dim="horizontal" extent="30">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <add place="inline" hand="hand6" resp="ajf">innnn mi
+nnns</add><lb>
+to hw&yacute;lcum wife ne mot he na &thorn;<expan>&aelig;t</expan> forl(e,)
+tan.ne heo hine<lb>
+for&eth;am gehatum. for&eth;&yacute; d&yacute;selicu<del type="erasure"
+hand="hand1">m</del> gehat. &amp; unaberend<lb>
+lice beo&eth; to abrecanne m&aacute; &eth;one tohealdene. <space dim="horizontal"
+extent="2">&nbsp; &nbsp; <hi rend="orange">A L I A
+.</hi><lb><lb></p></div2>
+<div2 type="sen" n="B65.04.01"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">106</add> <hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f
+hw&yacute;lces mannes wif bi&eth; dearnunga forlegen.
+&thorn;on<expan>ne</expan><lb>
+is him al&yacute;fed. &thorn;<expan>&aelig;t</expan> he forl&aelig;te h&yacute;. &amp;
+nime him o&eth;re. <hi rend="orange">ALIA.</hi><lb></p></div2><div2 type="sen"
+n="B65.04.02"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">N</hi></hi></hi>is
+&thorn;am wife n&aacute; &aacute;l&yacute;fed.
+&thorn;&aelig;t heo forl&aelig;te hire w&aelig;r butan<lb>
+leafe. &thorn;eah heo for<note type="textual">"For" is an error for "forligere."</note> beo.
+buton BASILIUS demde &thorn;&aelig;t<lb>
+heo moste gan on m&yacute;nster gif heo wolde. <space
+dim="horizontal" extent="2">&nbsp;&nbsp; <hi rend="orange">A L I A .</hi><space
+dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp;<lb></p></div2></div1> 
+<div1 type="sen" n="B66.01.00"><milestone unit="B" n="66.01.00">
+<div2 type="sen" n="B66.01.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e h&aelig;me on sunnand&aelig;g bidde him &aelig;t
+gode forgif<lb>nesse. &amp; f&aelig;ste .iii. dagas.<space
+dim="horizontal" extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I
+A .<lb></hi></p></div2>
+<div2 type="sen" n="B66.02.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">N</hi></hi></hi>is nanum men al&yacute;fed
+&thorn;<expan>&aelig;t</expan> he nime on his &thorn;eowe &aelig;nig<lb>feoh butan his
+willan. &amp; butan forw&yacute;rhtum gif he hit<lb>mid rihte gestr&yacute;ne&eth;.<space
+dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L
+I A .</hi><lb></p></div2>
+<div2 type="sen" n="B66.03.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">N</hi></hi></hi>is &thorn;am
+m&aelig;ssepr<expan>eost</expan> al&yacute;fed.
+&thorn;<expan>&aelig;t</expan>
+he
+&yacute;ppe &thorn;&aelig;s b<expan>isceopes</expan> s&yacute;nne
+for&eth;a<expan>m</expan><lb>
+se b<expan>isceop</expan> h&aelig;f&eth; anweald ofer hine.<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L I
+A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B66.04.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">C</hi></hi></hi>ild man mot sellan into m&yacute;nstre. &thorn;eah
+man &thorn;<expan>&aelig;t</expan> o&eth;&aelig;r<lb>
+gehate. swa &eth;eah is betere &thorn;<expan>&aelig;t</expan> man
+&thorn;<expan>&aelig;t</expan> gehat gel&aelig;ste. <hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B66.04.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">E</hi></hi></hi>ac gel&iacute;ce o&eth;re n&yacute;tenu man mot
+al&yacute;san. gif hit<lb>
+n&yacute;d&thorn;earf bi&eth;. <space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A L
+I A .</hi><lb></p></div2>
+<div2 type="sen" n="B66.05.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc wif wiccunga beg&aacute;. &amp;
+&thorn;a deofollican galdorsangas<lb>
+blinne &amp; f&aelig;ste an gear. &amp; &thorn;a .iii. &aelig;f&aelig;stenu. o&eth;&eth;e
+&thorn;onne<lb>
+g&yacute;t ma<del type="erasure" hand="hand1">&nbsp; &nbsp; &nbsp;</del> &aelig;fter
+&thorn;&aelig;ra
+geearnunga. <space dim="horizontal" extent="2">&nbsp;&nbsp; <hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B66.05.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">&ETH;</hi></hi></hi>a wif &eth;e do&eth; aworpenn&yacute;sse
+h&yacute;ra
+bearna. &thorn;a &yacute;lcan<lb>
+gemete s&yacute;n h&yacute; gedemde &aelig;r&eth;on &thorn;a bearn cwice s&yacute;n.
+&nbsp; <hi rend="orange">ALIA.</hi><lb>
+<hi rend="od"><hi rend="orange"><hi rend="orncap2">A</hi></hi></hi>nd &thorn;onne
+&aelig;fter &eth;on<expan>ne</expan> &thorn;<corr sic="i"><add place="interlinear"
+hand="hand6" resp="ajf">e</add></corr>s <del type="erasure"
+hand="hand1">is</del> &yacute;mbe .xl. nihta &eth;&aelig;s s&aelig;des<lb>
+<milestone unit="fol" n="149a">
+onfengn&yacute;sse s&yacute;n <del type="erasure" hand="hand1">hi</del><add
+hand="hand6"
+place="inline" resp="ajf">, ge</add>teald to manm&yacute;&eth;rum.
+&amp; f&aelig;ston. &thorn;on<expan>ne</expan>.<lb>
+.iii. gear. &aelig;lc wodnesd&aelig;ge. &amp; friged&aelig;ge. &amp; &thorn;a
+&eth;r&yacute;
+&aelig;f&aelig;stenu. <lb></p></div2>
+<div2 type="sen" n="B66.06.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f se leaweda man his agen cild
+of&thorn;r&yacute;cce. &amp; acwelle <hi rend="orange">ALIA.</hi> <add
+place="marginRight" hand="hand3" resp="ajf">116</add><lb>f&aelig;ste an gear on hlafe
+&amp; on w&aelig;tere. &amp; &thorn;a .ii. forga fl&aelig;sc.<lb>
+&amp; ealu. &amp; forh&aelig;bbe hine fram &aelig;lcum wife &thorn;a hwile<lb>&thorn;e
+he
+&eth;a d&aelig;dbote d&oacute;.<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I
+A .</hi><lb></p></div2></div1>
+<div1 type="sen" n="B67.01.00"><milestone unit="B"
+n="67.01.00">
+<div2 type="sen" n="B67.01.01"> <p><lb><hi
+rend="od"><hi rend="orange"><hi rend="orncap2">&ETH;</hi></hi></hi>a &eth;e beo&eth;
+gehadede fram sc&yacute;ttiscum preost<add hand="hand2"
+resp="ajf">u<expan>m</expan></add> o&eth;&eth;e bisceo<lb>
+pum <expan>o&eth;&eth;e</expan> fram br&yacute;ttiscum. &eth;a &eth;e sceare nabba&eth;
+swa o&eth;re<lb>
+circlite pr<expan>eostas</expan> ne &eth;a eastron spane healda&eth; <add hand="hand6"
+place="inline" resp="ajf">swa &thorn;e</add><note type="textual">"swa &thorn;e" written
+over
+erasure.</note> healda&eth;.<lb>&thorn;a sc&yacute;lon
+&aelig;ft fram &thorn;am riht geleaffullum bisceopum<lb>
+onten<add hand="hand6" place="inline" resp="ajf">d</add>n&yacute;sse &amp; sumere
+oratione beon getr&yacute;mede. <hi rend="orange">ALIA.</hi><add hand="hand2"
+place="inline" resp="ajf">^.</add> <lb></p></div2>
+<div2 type="sen" n="B67.01.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">E</hi></hi></hi>ac gelice &thorn;a c&yacute;rcean &thorn;a beo&eth; fram
+&thorn;am b<expan>isceopum</expan>
+gehalgode<lb>sceolan mid halig w&aelig;tere be ongeondstregde <hi
+rend="orange">ALIA</hi> <hi rend="halfboxedLeftBottom"><hi rend="orangefilled">[
+</hi></hi> lice.
+<note type="codicological">The angle-bracket is black lined with orange.</note>
+<lb></p></div2></div1>
+<div1 type="sen" n="B68.01.00"><milestone unit="B" n="68.01.00"><div2 type="sen"
+n="B68.01.01"> <p><lb><hi
+rend="od">S</hi>e
+&eth;e stele&eth; hw&aelig;t in godes c&yacute;rcean forgelde hit
+feowerfeald<lb></p></div2>
+<div2 type="sen" n="B68.02.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f beoweddod m&aelig;den nelle to &eth;am
+&thorn;eo heo bewed <hi rend="orange">ALIA.</hi><lb>dod b&yacute;&eth;. &amp;
+w&aelig;s hir&aelig; willa. forgelde &thorn;o,<add place="interlinear" hand="hand6"
+resp="ajf">n</add>ne &thorn;<expan>&aelig;t</expan> feoh
+&thorn;<expan>&aelig;t</expan>
+heo<lb>
+&aelig;r underfeng. &amp; &thorn;&aelig;rto eacan ged&oacute; swa m&yacute;cel swa
+&eth;es<lb>
+feos &eth;r&yacute;ddan <del type="erasure" hand="hand6">&nbsp;&nbsp;</del> d&aelig;l,
+<add place="interlinear" hand="hand6" resp="ajf">s&yacute;</add> &amp; &thorn;a magas
+forgeldon &thorn;<expan>&aelig;t</expan> wedd. &amp; <lb></p></div2><div2 type="sen"
+n="B68.03.01"> <p>g&yacute;f h&eacute; &thorn;on<expan>ne</expan>
+h&yacute; niman nelle h&aelig;bbe forseald &thorn;&aelig;t<lb>feoh &thorn;&aelig;t he
+sealde.<space dim="horizontal" extent="2">&nbsp;&nbsp; <hi rend="orange">A
+L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B68.04.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e storfan ete f&aelig;ste .xl. daga.<space
+dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A L
+I A .</hi><lb></p></div2>
+<div2 type="sen" n="B68.04.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hine hungor todr&yacute;f&eth;.
+&thorn;on<expan>ne</expan> ne dere&eth; hit him n&aacute;. <hi
+rend="orange">ALIA.</hi></p></div2></div1><lb>
+<div1 type="sen" n="B69.01.01"><milestone unit="B" n="69.01.00"><div2 type="sen"
+n="B71.01.01"> <p><lb><hi
+rend="od"><hi rend="orange"><hi rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc
+m&aelig;ssepr<expan>eost</expan> o&eth;&eth;e diacon bringe wif ham on<lb>folc&aelig;s
+gewitnesse. s&yacute; he amansumod. <hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B69.02.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwa h&aelig;me mid his modor f&aelig;ste
+.xv. gear. &amp; hit<lb>
+<milestone unit="fol" n="149b">
+n&aelig;fre ne wrixlie buton sunnand&aelig;ge anum. <hi rend="orange">ALIA.</hi><space
+dim="horizontal" extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <add place="marginRight"
+hand="hand3" resp="ajf">iii</add><lb></p></div2>
+<div2 type="sen" n="B69.03.01"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">&nbsp;124</add> <hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f
+wif ana forlegenn&yacute;sse d&oacute; mid h&yacute;re s&yacute;lfre. f&aelig;ste .iii.
+gear. <lb></p></div2>
+<div2 type="sen" n="B69.04.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f m&aelig;ssepreost for his ge&thorn;ohtum
+weor&eth;e&eth; <space dim="horizontal" extent="2">&nbsp;&nbsp;<hi rend="orange">A L I
+A .</hi><lb>
+besmiten. f&aelig;ste. xx. daga.<space dim="horizontal"
+extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L
+I A .</hi><lb></p></div2>
+<div2 type="sen" n="B69.04.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he gehrine &thorn;a breost mid his h&aacute;nd.
+f&aelig;ste .iii. wucan. <lb></p></div2>
+<div2 type="sen" n="B69.05.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hwilc man &thorn;urh n&yacute;dinga. his
+ge&thorn;ohtes <hi rend="orange">A L I A .</hi><lb>
+his s&aelig;d ageote. f&aelig;ste .xl. daga.<space dim="horizontal"
+extent="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi><space dim="horizontal" extent="3">&nbsp;&nbsp;
+<lb></p></div2>
+<div2 type="sen" n="B69.05.02 "> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he hit s&yacute;lf aw&aelig;cce. &aelig;t
+&thorn;am forman c&yacute;rre. f&aelig;ste<lb>
+.xx. daga. &amp; &aelig;t &eth;am o&eth;rum .xl. daga.<space dim="horizontal"
+extent="2">&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi><lb></p></div2></div1>
+<div1 type="sen" n="B70.01.01"><milestone unit="B" n="71.01.00"><div2 type="sen"
+n="B70.01.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc
+man on his ge&eth;ohtum <expan>o&eth;&eth;e</expan> of his gewitte feole.<lb>
+&amp; him gelimpe &thorn;<expan>&aelig;t</expan> he man ofslea. forgeldon
+&thorn;on<expan>ne</expan> man<lb>
+his magas. &amp; hine wi&eth; o&eth;&aelig;r sw&yacute;lc gesc&yacute;ldan. <hi
+rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B70.01.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f man hine ofslea on &eth;am ungewitte.
+&aelig;r man wite<lb>
+hw&aelig;&thorn;er his magas him fore&eth;ingian willon. forgeldon<lb>&eth;one man his
+magum &thorn;a men &eth;e hine ofslean. <hi
+rend="orange">ALIA.</hi><lb></p></div2></div1>
+<div1 type="sen" n="B71.01.01"><milestone unit="B" n="71.01.00"><div2 type="sen"
+n="B71.01.01 "> <p><lb><hi
+rend="od"><hi rend="orange"><hi rend="orncap2">G</hi></hi></hi>&yacute;f man
+&thorn;urh
+&eth;r&yacute;stl&aelig;cn&yacute;sse man fulla&eth;. &amp; ne bi&eth; him<lb>
+s&yacute;lfe se bi&eth; to aworpenne fram &aelig;lcere c&yacute;riclicre<lb>gesamnunge.
+&amp; h<corr sic="i"><add hand="hand2" resp="ajf">e</add></corr> ne s&yacute;
+n&aelig;fre
+eft gehadod. <hi rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B71.01.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e m&aelig;ssepr<expan>eost</expan> &thorn;e
+fulla&eth; men. &amp; mange ac sige &thorn;<expan>&aelig;t</expan> he bi&eth;<lb>
+s&yacute;lf unfullod. s&yacute; he &eth;on<expan>ne </expan>ne eft gehadod. &amp;
+gefullod.
+&amp; ge <lb>
+tr&yacute;mede mid b<expan>isceopes</expan> bletsunge. &amp; ealle &eth;a &eth;e
+&aelig;r gefullade.<lb>
+s&yacute;n h&yacute; &aelig;ft gefullod.<space dim="horizontal"
+extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B71.01.03"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>wa hwilc 
+swa hine s&yacute;lf ne treowe<note type="codicological">Hand 2 has written the w of treowe
+over an erasure.</note>be his fulluhte. &amp; eac<lb>
+o&eth;re men n&yacute;ton hwe&eth;er he gefullod w&aelig;s. he sceal<lb>beon eft
+gefullod.<space dim="horizontal" extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi><milestone unit="fol" n="150a"><lb></p></div2></div1>
+<div1 type="sen" n="B72.01.00"><milestone unit="B" n="72.01.00"><div2 type="sen"
+n="B72.01.01"> <p><lb><hi
+rend="od"><hi rend="orange"><hi rend="orncap2">S</hi></hi></hi>e &eth;e for
+oferf&yacute;lle spiwe. reowe .iii. dagas. <hi
+rend="brown">ALIA.</hi><add place="marginRight" hand="hand2"
+resp="ajf">126</add> <add place="marginRight" hand="hand3"
+resp="ajf">134</add><lb></p></div2></div1>
+<div1 type="sen" n="B73.01.00"><milestone unit="B" n="73.01.00"><div2 type="sen"
+n="B73.01.01"> <p><lb><hi
+rend="od"><hi rend="orange"><hi rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc
+man hine wi&eth;
+f&aelig;mnan forlicge. f&aelig;ste .iiii.<lb>
+gear. o&eth;&eth;e twa be &eth;am fullestan.<space dim="horizontal"
+extent="2">&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B73.01.02"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e &thorn;e mid o&eth;res ceorles wife h&aelig;me.
+f&aelig;ste .iiii. gear.<lb>
+twa on wean weallige. twa elles on &eth;am feowertigum.<lb>&amp; &thorn;r&yacute; dagas
+on
+wucan.<space dim="horizontal" extent="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi><space
+dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<add place="marginRight" hand="hand6"
+resp="ajf">(.</add><lb></p></div2></div1>
+<div1 type="sen" n="B74.01.00"><milestone unit="B" n="74.01.00">
+<div2 type="sen" n="B74.01.03"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f b&aelig;dling mid b&aelig;dlinge h&aelig;me .x.
+winter f&aelig;ste. <hi rend="orange">ALIA.</hi> <add place="marginRight" hand="hand6"
+resp="ajf">(.</add><lb></p></div2>
+<div2 type="sen" n="B74.01.04"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e &thorn;is werlice man de&eth; .iiii. gear
+f&aelig;ste.<space dim="horizontal" extent="2">&nbsp;&nbsp; <hi rend="orange">A L
+I A .</hi><lb></p></div2>
+<div2 type="sen" n="B74.01.05"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hit cniht s&yacute;. &aelig;t
+&aelig;restan .ii. gear. gif he hit &aelig;ft d&oacute;<lb>.iiii. gear f&aelig;ste.<space
+dim="horizontal" extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A
+L I A .</hi> <space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<add
+place="marginRight" hand="hand6">(.</add><lb></p></div2></div1>
+<div1 type="sen" n="B75.01.00"><milestone unit="B" n="75.01.00">
+<div2 type="sen" n="B75.01.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he be leo&eth;um de&eth; an gear. o&eth;&eth;
+.iii.
+&amp; xl.<space dim="horizontal" extent="2">&nbsp;&nbsp; <hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B75.01.03"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e girne&eth; hine
+s&yacute;lfne to
+forlicgeanne. &amp; ne m&aelig;g.<lb>
+.xl. daga f&aelig;ste. o&eth;&eth;e .xx. daga.<space dim="horizontal"
+extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi><lb></p></div2><div2 type="sen"
+n="B75.01.04"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he hit ged&oacute; .xx. daga f&aelig;ste.
+o&eth;&eth;e hine man sw&yacute;nge. <hi
+rend="orange">AL<expan>IA</expan></hi><lb></p></div2>
+<div2 type="sen" n="B75.01.05"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">C</hi></hi></hi>nihtas &thorn;a &eth;e
+h&aelig;ma&eth; heom
+betweonan. hit is demed <lb>
+&thorn;&aelig;t h&yacute; man swinge<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B75.04.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e s&aelig;d on mu&eth; sende&eth;. &thorn;&aelig;t
+is
+w&yacute;rreste.<space dim="horizontal" extent="2">&nbsp;&nbsp; <hi rend="orange">A L I
+A
+.</hi></p> </div2><lb>
+<div2 type="sen" n="B75.06.01"> <p><lb><hi rend="od"><add place="marginLeft"
+resp="ajf" hand="hand6">' ^</add><hi rend="orange"><hi rend="orncap2">S</hi></hi></hi>e
+&eth;e oft h&aelig;me se &aelig;resta canon deme&eth;
+&thorn;<expan>&aelig;t</expan> he .x. winter<lb>
+bete. &amp; se &aelig;ftera .vii. gear.<space dim="horizontal"
+extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B75.07.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f bro&eth;or mid
+bre&eth;er h&aelig;me.
+&thorn;urh his lichoman ge<lb>
+megn&yacute;sse .xv. winter f&aelig;ste butan fl&aelig;sce<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B75.07.02"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f modor mid hire
+littlan suna h&aelig;me&eth; on hire .iii. <add place="marginRight" hand="hand6"
+resp="ajf">(.</add><lb>
+gear fl&aelig;sces ne onb&yacute;rige. &amp; &aelig;nne d&aelig;g o<hi rend="N2">N</hi>
+wucan<lb>
+f&aelig;ste to &aelig;fen<hi rend="N2">N</hi>e.<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B75.08.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e gebismro&eth;
+s&yacute;,<corr><add place="interlinear" hand="hand1" resp="ajf">l</add></corr>fran
+geligera,<corr><add
+hand="hand6" place="interlinear" resp="ajf">on</add></corr> ge&eth;ohte. d&oacute; 
+hreowe <add place="marginRight" hand="hand6" resp="ajf">(.</add><lb>
+<milestone unit="fol" n="150b">
+o&eth; &eth;&aelig;t se ge&thorn;oht se ofer sw&yacute;&eth;&aelig;&eth;.<space
+dim="horizontal" extent="2">&nbsp;&nbsp; <hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B75.09.01"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand6" resp="ajf">149</add> <hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e 
+&eth;e lufige f&aelig;mnan on his mode bidde him &aelig;t gode<lb>forgifnesse.<space
+dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B75.09.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he secge
+&thorn;<expan>&aelig;t</expan> he hi h&aelig;bbe. &amp; he h&yacute; n&aelig;bbe
+.vii. dagas f&aelig;ste he. </p></div2></div1><lb>
+<div1 type="sen" n="B76.01.00"><milestone unit="B" n="76.01.00"><div2 type="sen"
+n="B76.01.01"> <p><lb><hi
+rend="od"><hi rend="orange"><hi rend="orncap2">G</hi></hi></hi>&yacute;f leaweda man
+munuc ut of m&yacute;nstre al&aelig;de &nbsp; <hi rend="orange">ALIA.</hi><lb><hi
+rend="od"><add place="marginLeft">(.</add></hi> forstolenne. gange he on m&yacute;nstre.
+&amp; gode &thorn;eowige.<lb>o&eth;&eth;e him under menn&yacute;ssce
+&thorn;eowdom.<space
+dim="horizontal" extent="2">&nbsp;&nbsp; <hi rend="orange">A
+L I
+A .</hi><lb></p></div2>
+<div2 type="sen" n="B76.01.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e oft stale de&eth; .vii. gear bete swa him
+his scrift t&aelig;ce.<lb>
+&amp; se &eth;e stale de&eth;. &amp; he to bote gec&yacute;rre&eth; s&yacute;mle he sceal
+<lb>
+&thorn;ingian wi&eth; &thorn;one &thorn;e he ab&yacute;lg&eth;. &amp; hit eft
+ag&yacute;f&aelig;&eth;. &thorn;onne<lb>
+<del type="erasure" hand="hand1">&nbsp; &nbsp; &nbsp;</del> l&yacute;ttla&eth; he
+&eth;&aelig;t
+f&aelig;sten.<space dim="horizontal" extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I
+A
+.</hi><lb>
+<hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he n&yacute;le.
+o&eth;&eth;e ne m&aelig;g
+&thorn;a settan tida he f&aelig;ste. <hi rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B76.01.03"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e samna&eth; ungemetligce for his
+unw&yacute;sdome.<lb>
+s&yacute;lle he &eth;one &eth;riddan d&aelig;l &thorn;eorfum.<space dim="horizontal"
+extent="3">&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B76.01.04"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he gehalgod &thorn;ing forstele&eth; .iii.
+gear f&aelig;ste<lb>
+butan fl&aelig;sce<del type="erasure"
+hand="hand1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</del><space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I
+A .</hi><lb></p></div2>
+<div2 type="sen" n="B76.02.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f leaweda man o&eth;erne ofslih&eth; for
+feo<corr><add place="interlinear" hand="hand6" resp="ajf">r</add></corr>unge. <corr><add
+place="interlinear" hand="hand6" resp="ajf">&thorn;inge</add></corr> gif he<lb>n&yacute;lle
+his
+wepn forl&aelig;tan .vii. gear f&aelig;ste .iii. butan<lb>fl&aelig;sce. &amp; eala&eth;.<space
+dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B76.02.02"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc man munuc o&eth;&eth;e cleric
+acwelle. forl(e,)te<lb>
+his wepn. &amp; gode &thorn;eowige. o&eth;&eth;e <del type="erasure"
+hand="hand1">&nbsp; &nbsp; &nbsp;</del> f&aelig;ste. &amp; &thorn;&aelig;t beo<lb>
+be bisceopes dome.<space dim="horizontal" extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<hi
+rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B76.03.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e man ofslea&eth; on folcgefeahte.
+.xl. daga. f&aelig;ste. <lb></p></div2>
+<div2 type="sen" n="B76.03.02"> <p>&amp; gif he hit &thorn;urh &yacute;rre d&oacute; .iii.
+gear. bete.<space dim="horizontal" extent="2">&nbsp;&nbsp; <hi
+rend="orange">ALIA.</hi><lb> </p></div2>
+<div2 type="sen" n="B76.03.04"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he &eth;urh druncen o&eth;&eth;e
+&thorn;urh o&eth;erne cr&aelig;ft man<lb>
+<milestone unit="fol" n="151a">
+ofslea .iii. gear f&aelig;ste. o&eth;&eth;e m&aacute;.<space dim="horizontal"
+extent="3">&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi> <add place="marginLeft" hand="hand3"
+resp="ajf">150</add><lb></p></div2>
+<div2 type="sen" n="B76.03.05"> <p><lb><hi rend="od">
+<hi rend="orange"><hi rend="orncap2">G</hi></hi></hi>&yacute;f he &eth;urh
+unn&yacute;tte
+ceaste man ofslea .x. gear bete. <hi
+rend="orange">AL<expan>IA</expan>.</hi><add place="marginLeft" hand="hand3"
+resp="ajf">160</add><lb></p></div2>
+<div2 type="sen" n="B76.04.01"> <p><lb><hi rend="od"><hi
+rend="orange"><hi rend="orncap2">S</hi></hi></hi>e man se &eth;e m&aelig;nne a&eth;
+swere&eth; on c&yacute;ricean .xi. gear f<damage type="stain"
+extent="4">&aelig;ste</damage>. <hi
+rend="orange">AL<expan>IA</expan>.</hi><lb></p></div2>
+<div2 type="sen" n="B76.04.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he hit be n&yacute;de d&oacute; .iii. feowertigo
+f&aelig;ste.<space dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B76.04.03"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e on mannes handa a&eth; swerige. nabba&eth;
+&thorn;<expan>&aelig;t</expan> grecas for riht. <lb></p></div2>
+<div2 type="sen" n="B76.04.04"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he on bisceopes handa. o&eth;&eth;e on
+m&aelig;ssepr<expan>eostes</expan> handa. <hi rend="orange">ALIA.</hi><lb>
+<expan>o&eth;&eth;e</expan> on diacones. <expan>o&eth;&eth;e</expan> on weofode.
+o&eth;&eth;e on gehalgedum cristes<lb>
+m&aelig;le. &amp; se a&eth; bi&eth; m&aelig;ne .iii. gear f&aelig;ste.<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B76.04.05"> <p><lb><hi rend="od"><hi
+rend="orange"><hi rend="orncap2">G</hi></hi></hi>&yacute;f he on
+ungehalgodum cristes m&aelig;le manswere&eth;.<lb>
+an gear f&aelig;ste.<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L
+I A .</hi><lb></p></div2>
+<div2 type="sen" n="B76.04.06"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">&ETH;</hi></hi></hi>a
+&eth;e <del type="erasure" hand="hand1">&nbsp;&nbsp;&nbsp;</del> ma <del type="erasure"
+hand="hand1">&nbsp;&nbsp;</del> ne a&eth;as
+bega&eth; .iii. gear bete.<space dim="horizontal" extent="2">&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B76.05.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e oft &amp; gelome feola heafodlicra g&yacute;lta
+gew&yacute;rce&eth;.<lb>
+&thorn;<expan>&aelig;t</expan> <damage type="stain"extent="4">is m</damage>or&eth;or.
+&amp; m&aelig;ne a&eth;as. &amp; &yacute;felra geligera mid wifu<expan>m.</expan><lb>
+&amp; mid n&yacute;tenum. forleta &eth;a &yacute;fela d&aelig;da. &amp; ga on
+m&yacute;n-<lb>
+stre. &amp; bete o&eth; his dea&eth;.<space dim="horizontal"
+extent="4">&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">AL I A.</hi><lb></p></div2>
+<div2 type="sen" n="B76.05.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">B</hi></hi></hi>eo &thorn;am feo &eth;e bi&eth; on fremdre
+m&aelig;g&eth;e. &amp; on feondum of<lb>
+genumen &thorn;<expan>&aelig;t</expan> bi&eth; on o&eth;rum kininge ofercumenum
+ge<lb>
+s&yacute;lle &eth;&aelig;s &eth;riddan d&aelig;l &thorn;earfum. &amp; godes ciricum
+ged&aelig;le.<lb>
+&amp; feowertig daga f&aelig;ste. for&eth;am hit bi&eth; k&yacute;ninges h&aelig;s. <hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B76.06.01"> <p><lb><hi
+rend="od"><hi rend="orange"><hi rend="orncap2">S</hi></hi></hi>e &eth;e mannes blod
+o&eth;&eth;e s&aelig;d drince&eth; .iii. gear f&aelig;ste. <hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B76.06.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f man o&eth;rum men &aelig;ht gestr&yacute;de.
+forgelde hit<lb>
+feowerfealdlice swa crist s&yacute;lfa cw&aelig;&eth;.<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B76.06.03"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f holinga hw&yacute;lc man mid
+uncl&aelig;nn&yacute;sse handa his<lb>
+mete o&eth;hrine&eth; o&eth;&eth;e hunde. o&eth;&eth;e catte. o&eth;&eth;e mus.
+o&eth;&eth;e<lb>
+n&yacute;tenu. &amp; uncl&aelig;ne blod on ungewis &thorn;ige&eth; ne sce&eth;e&eth; him
+&thorn;&aelig;t.<lb>
+<milestone unit="fol" n="151b"></p></div2>
+<div2 type="sen" n="B76.06.04"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">172</add> <hi rend="red"><hi rend="orncap3">A</hi></hi></hi>nd
+se &eth;e for n&yacute;d&thorn;earfe &thorn;ige&eth;
+&thorn;<expan>&aelig;t</expan> n&yacute;ten &thorn;e unclene bi&eth; ge<lb>sawen. fugel
+o&eth;&eth;e wildeor. ne sce&eth;&aelig;&eth;<del type="erasure"
+hand="hand1">&nbsp; &nbsp;</del> him
+&eth;&aelig;t. <hi rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B76.06.08"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f fugeles meox on w&aelig;tan befealla&eth;.
+s&yacute; hit of anumen.<lb>
+&amp; do halig w&aelig;ter on. &thorn;on<expan>ne</expan> bi&eth; cl&aelig;ne se
+mete.<space dim="horizontal" extent="2">&nbsp;&nbsp; <hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B76.06.09"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap3">F</hi></hi></hi>or&thorn;on se &eth;e mid blode o&eth;&eth;e mid
+&aelig;nige uncl&aelig;ne &thorn;inge.<lb>
+s&yacute; besmiten. gif he hit &eth;ige&eth; &amp; ne wat. ne dere&eth; hit him na.<lb>
+<hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he hit
+w&aacute;t. bete be &eth;&aelig;s
+widles gemete.<space dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp; <hi rend="orange">A
+L I A .</hi></p></div2></div1><lb>
+<div1 type="sen" n="B77.01.00"><milestone unit="B" n="77.01.00"><div2 type="sen"
+n="B77.01.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f bisceop.
+o&eth;&eth;e m&aelig;ssepr<expan>eost</expan> h&aelig;men. &thorn;oligean
+heora hades.<lb>
+o&eth;&eth;e hr&aelig;dlice blinnon.<space dim="horizontal"
+extent="4">&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A
+.</hi><lb><lb></p></div2>
+<div2 type="sen" n="B77.02.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f bisceop o&eth;&eth;e
+m&aelig;ssepr<expan>eost</expan> wife o&eth;r&iacute;ne &thorn;urh
+facn.<lb>o&eth;&eth;e
+&thorn;urh coss. &thorn;&aelig;t he besmiten s&yacute; .xl. daga f&aelig;ste. <hi
+rend="orange">ALIA.</hi><lb></p></div2><div2 type="sen" n="B77.02.02"> <p><lb><hi
+rend="od"><hi rend="red"><hi rend="orncap2">M</hi></hi></hi>essepr<expan>eost</expan>
+gif he f&aelig;mnan
+c&yacute;sse &eth;urh his lust .xx. daga f&aelig;ste. <lb></p></div2><div2 type="sen"
+n="B77.02.03"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc
+m&aelig;ssepr<expan>eost</expan> untrumum men spr&aelig;ce <space dim="horizontal"
+extent="2">&nbsp;&nbsp; <hi rend="orange"><damage type="stain" extent="3">A L
+I</damage> A .</hi><lb>
+forw&yacute;rne. &amp; he &thorn;onne on &eth;&aelig;re t&yacute;ddern&yacute;sse swelte.
+s&yacute; <lb>
+he on domes d&aelig;g &thorn;&aelig;re sawla sc&yacute;ldig. <hi
+rend="orangefilled">F</hi>or&eth;on &eth;e
+drihten<lb>
+s&yacute;lfa cw&aelig;&eth;. on swa hw&yacute;lcum d&aelig;ge swa se s&yacute;nfulla man
+<lb>
+gec&yacute;rred bi&eth;. life he leofa&eth;. &amp; nane sw&yacute;lte&eth;.  <hi
+rend="orangefilled">S</hi>eo so&eth;e ge<lb>
+hw&yacute;rfedn&yacute;s m&aelig;g beon on &eth;&aelig;ra &yacute;tem&aelig;stan
+t&iacute;de.
+for<lb>
+&eth;on &eth;e dr&yacute;hten ne sceawa&eth; <del type="erasure"
+hand="hand1">&nbsp; &nbsp;</del> na <del type="erasure"
+hand="hand1">&nbsp; &nbsp;</del> &thorn;<expan>&aelig;t</expan><note
+type="textual">The tail of a in "na" is extended over 2 erased spaces to join the  &thorn; of
+&thorn;<expan>&aelig;t</expan>.</note> an &eth;&aelig;ra tida<lb>
+lenge. ac &eth;a cl&aelig;nan heortan. <hi rend="orangefilled">S</hi>w&yacute;lce se
+scea&eth;a on &thorn;ara<lb>
+&yacute;tem&aelig;stan tide andetn&yacute;sse on anre beorhthw&yacute;le<lb>geearnode
+&thorn;<expan>&aelig;t</expan> he moste beon on neorxnawonges gefean.<lb>
+swa <add place="interlinear" hand="hand6" resp="ajf">to</add> &aelig;lmihtigum gode
+gel&aelig;ded.<space dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp; <hi rend="orange">A
+L I A .<lb></hi></p></div2>
+<div2 type="sen" n="B77.02.04"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">M</hi></hi></hi>unuc o&eth;&eth;e nunne. g&yacute;f heo bearn
+gestreonen .vii. gear beten.<lb></p></div2>
+<div2 type="sen" n="B77.02.05"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand6" resp="ajf">(.</add> <hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e
+&eth;e oft &thorn;urh re&eth;n&yacute;sse his ge&thorn;ances s&aelig;d ageote&eth;. <hi
+rend="orange">ALIA.</hi><lb>
+<milestone unit="fol" n="152a"> 
+.xl. daga f&aelig;ste.<space dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A
+L I A . <space dim="horizontal" extent="24"></hi><lb></p></div2> <div2 type="sen"
+n="B77.02.06"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e
+&eth;e sleapende on c&yacute;ricean his s&aelig;d
+ageote&eth; .iii. dagas f&aelig;ste. <add place="marginRight" hand="hand3"
+resp="ajf">89</add><lb></p></div2>
+<div2 type="sen" n="B77.02.07"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he betuh &eth;eoh d&oacute; an gear.
+o&eth;&eth;e
+.iii. feowertigo. <hi rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B77.02.08"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hit cn&yacute;ht s&yacute; .xx. daga f&aelig;ste.
+o&eth;&eth;e hine man sw&yacute;nge.<lb>
+<hi rend="od"><hi rend="red"><hi rend="orncap2">G</hi></hi></hi>&yacute;f he hit mid
+gehadedum men d&oacute; .iii.
+feowertigo. <hi rend="orange">ALIA.</hi><lb>
+<expan>o&eth;&eth;e</expan> eal gear f&aelig;ste.<space dim="horizontal"
+extent="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi><lb></p></div2><div2 type="sen"
+n="B77.02.09"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f munuc gew&yacute;te&eth; fram godes
+c&yacute;rcean .vii. gear f&aelig;ste. <lb></p></div2>
+<div2 type="sen" n="B77.03.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">&ETH;</hi></hi></hi>&aelig;s forlorenan hades hreow bi&eth; dea&eth; ac
+seo
+sawl leofa&eth;. <hi rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B77.04.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e gewemme&eth; his &thorn;one nehstan
+wif .iii. gear f&aelig;ste<lb>
+butan his agenum wife. &amp; on o&eth;re wucan .ii. dagas.<lb>o&eth;&eth;e &thorn;reo
+feowertigo.<space dim="horizontal" extent="4">&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">AL I A .</hi><lb></p></div2>
+<div2 type="sen" n="B77.04.02"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hit b&yacute;&eth; f&aelig;mnan an gear
+f&aelig;ste. butan
+fl&aelig;sce.<lb>
+&amp; <damage type="stain" extent="5">ealo&eth;.</damage> &amp; li&eth;e.<space
+dim="horizontal"
+extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B77.04.03"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he nunnan gewemme .iii. gear f&aelig;ste.
+swa heo cenne<lb>
+swa heo nane c&aelig;&acute;ne.<space dim="horizontal"
+extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">AL I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B77.04.04"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f hit mennen s&yacute;. six mona&eth; f&aelig;ste.
+&amp; eac al&yacute;se h&yacute;. <hi rend="orange">ALIA .</hi><lb></p></div2>
+<div2 type="sen" n="B77.04.05"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f <del type="erasure"
+hand="hand5">&nbsp; &nbsp; </del> wif
+gewite fram hire w&aelig;re. an gear f&aelig;ste. <lb>
+gif heo unbesmiten to him gec&yacute;r&eth;.<space dim="horizontal"
+extent="3">&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A .</hi><space dim="horizontal"
+extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <lb>
+<hi rend="od"><hi rend="red"><hi rend="orncap2">E</hi></hi></hi>lcora gif heo o&eth;re
+h&aacute;m l&aelig;de&eth; .iii. gear f&aelig;ste.<space dim="horizontal"
+extent="2">&nbsp;&nbsp; <hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B77.04.06"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">W</hi></hi></hi>if on geb&yacute;rdum mon&eth;a tidum ne gange
+heo on c&yacute;r<lb>
+cean. ne to husle ne gangan na&eth;er ne nunnon ne lea<lb>wede. gif hig &thorn;onne
+ge&thorn;r&yacute;stl&aelig;can .iii. wucan f&aelig;ste. <lb></p></div2>
+<div2 type="sen" n="B77.04.07"> <p>forlegene wif .vii. gear f&aelig;ste.<space
+dim="horizontal"
+extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B77.04.08"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">A</hi></hi></hi>nd sw&yacute;lce wifman hreowe d&oacute;<del
+type="erasure" hand="hand1">&nbsp;</del>. on &thorn;a ilcan wisan gif heo<lb>
+on c&yacute;rcean gange &aelig;r &thorn;&aelig;s blodes cl&aelig;nn&yacute;sse.
+&thorn;&aelig;t is.<lb>
+<milestone unit="fol" n="152b">
+feowertig daga f&aelig;ste.<space dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi> <add place="marginLeft" hand="hand3"
+resp="ajf">183</add> <lb></p></div2>
+<div2 type="sen" n="B77.04.09"> <p><lb><hi rend="od"><add place="marginLeft"
+hand="hand3" resp="ajf">196</add> <hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi><damage type="stain" extent="3">&yacute;f</damage> se
+wer mid his wife hindan h&aelig;me .xl. daga f&aelig;ste. <lb></p></div2>
+<div2 type="sen" n="B77.04.10"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">O</hi></hi></hi><damage type="stain" extent="4">n o&eth;</damage>re
+stowe hit cwi&eth;
+&thorn;e he sceole reowe d&oacute;n.<space dim="horizontal" extent="2">&nbsp;&nbsp; <hi
+rend="orange">ALIA.</hi><lb>
+<damage type="stain" extent="6">swa se</damage> &eth;e mid n&yacute;tenum
+h&aelig;m&eth;.<space dim="horizontal" extent="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B77.04.11"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f he on &eth;am mon&eth;e. &aelig;r&eth;am 
+beor&eth;re hire mid h&aelig;m&eth;.<lb>
+.xl. daga f&aelig;ste.<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A
+L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B77.04.12"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f wif hire bearn &thorn;urh mor&eth;or
+acw&aelig;lle&eth; .xv.<lb>
+winter f&aelig;ste. &amp; n&aelig;fre ne aw<corr sic="a"><add hand="hand1" place="inline"
+resp="ajf">&aelig;</add></corr>nde butan
+sunnand&aelig;ge. <lb></p></div2>
+<div2 type="sen" n="B77.04.13"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">&ETH;</hi></hi></hi>earfende wif gif heo acwelle&eth; hire cild
+.vii. gear<lb>
+is gecweden &thorn;&aelig;t heo f&aelig;ste.<space dim="horizontal"
+extent="3">&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A L I A .</hi><lb></p></div2><div2 type="sen"
+n="B77.04.14"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">W</hi></hi></hi>if seo
+&eth;e bearn onfeh&eth;. &amp; &thorn;<expan>&aelig;t</expan> acwelle&eth; on hire
+inno&eth;e.<lb>an gear f&aelig;ste.<space dim="horizontal" extent="2">&nbsp;&nbsp;<add
+resp="ajf"
+hand="hand6" place="inline">&thorn;oet</add> <hi rend="orange">A L I A .</hi><lb>
+<hi rend="od"><hi rend="orange"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f heo &aelig;fter
+.xl. dagum hit
+acwelle&eth;. swa swa <damage type="stain"
+extent="4">m&yacute;r&eth;</damage>ra<lb>
+heo sceal hreowe do<hi rend="N2">N</hi>.<space dim="horizontal"
+extent="4">&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A L I
+A .</hi><lb></p></div2>
+<div2 type="sen" n="B77.04.15"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f &thorn;<expan>&aelig;t</expan> cild
+swelte .iii. wintra eald butan
+fulluhte .iii.<lb>
+gear f&aelig;ste f&aelig;der &amp; modor.<space dim="horizontal"
+extent="3">&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A L I A .</hi><lb></p></div2>
+<div2 type="sen" n="B77.04.16"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>eo &eth;e acwelle&eth; hire cild butan fulluhte .x.
+gear f&aelig;ste. </p></div2></div1><lb>
+<div1 type="sen" n="B78.01.00"><milestone unit="B" n="78.01.00"><div2 type="sen"
+n="B78.01.01"> <p><lb><hi
+rend="od"><hi rend="red"><hi rend="orncap2">&ETH;</hi></hi></hi>a &eth;e
+ons&aelig;cgea&eth;
+deoflum &amp; &thorn;am leasestum <hi rend="orange">A L I A .</hi><lb>
+&thorn;ingum an gear f&aelig;ste.<space dim="horizontal"
+extent="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi rend="orange">A L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B78.01.02"> <p><lb><hi
+rend="od"><hi rend="orange"><hi rend="orncap2">G</hi></hi></hi>&yacute;f hw&yacute;lc
+wif sete&eth; hire bearn ofer
+r&oacute;f. o&eth;&eth;e on ofen.<lb>
+for hwilcere untr&yacute;m&eth;e h&aelig;lo .vii. gear f&aelig;ste. <hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B78.01.03"> <p><lb><hi rend="od"><hi rend="orncap2"><hi
+rend="red">S</hi></hi></hi>e
+&eth;e corn b&aelig;rne&eth; for lifigendra h&aelig;lo &eth;&aelig;r deade<lb>men beo&eth;
+beb&yacute;rgde .vii. gear f&aelig;sten. <lb></p></div2><div2 type="sen"
+n="B78.01.04"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">O</hi></hi></hi>n canone hit cwi&eth;. se &eth;e halsunga. &amp;
+galdorcreaftas.<lb>
+&amp; swe,<corr><add hand="hand2" place="inline" resp="ajf">f</add></corr>n hrace
+behealda&eth;.
+&thorn;a
+beo&eth; on
+h&aelig;&eth;enra manna<lb>
+<milestone unit="fol" n="153a">
+ger&iacute;me.<space dim="horizontal"
+extent="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hi
+rend="orange">A L I A.</hi> <add place="marginRight" hand="hand3"
+resp="ajf">196</add><lb><hi rend="od"><hi
+rend="red"><hi rend="orncap2">A</hi></hi></hi>nd ea<add place="inline" hand="hand1" 
+resp="ajf">c</add> sw&yacute;lce,, <corr><add place="inline" hand="hand6"
+resp="ajf">&thorn;a &thorn;e</add></corr> o&eth;re men <del type="erasure"
+hand="hand6">&nbsp; &nbsp;</del> on
+&eth;am dr&yacute;cr&aelig;ft gebrin <add place="marginRight" hand="hand3"
+resp="ajf">204</add><lb>
+ga&eth;. gif h&yacute; on m&yacute;nstre s&yacute;n <add place="interlinear" hand="hand6"
+resp="ajf">(.</add> h&yacute; <add place="interlinear" hand="hand6"
+resp="ajf">(.</add> s&yacute;n <del type="erasure" hand="hand6">&nbsp; </del> ut
+aworpene. gif<lb>h&yacute; on folce s&yacute;n. betan fulre bote.<space dim="horizontal"
+extent="3">&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I A.</hi><lb></p></div2>
+<div2 type="sen" n="B78.02.01"> <p><lb><hi rend="od"><hi
+rend="orange"><hi rend="orncap2">S</hi></hi></hi>w&yacute;n &thorn;a &eth;e mannes
+blod
+ete&eth;.
+&thorn;a man mot &thorn;icgean. <hi rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B78.02.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">A</hi></hi></hi>c gif h&yacute; deade men tera&eth; ne beo&eth;
+h&yacute; al&yacute;fede to etanne.<lb>
+&aelig;r &yacute;mbe geares gang. &thorn;<expan>&aelig;t</expan> him s&yacute;
+&thorn;<expan>&aelig;t</expan> fl&aelig;sc of&aacute;g&aacute;n. <hi
+rend="orange">ALIA.</hi><lb></p></div2>
+<div2 type="sen" n="B78.03.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e h&aelig;me mid his swister .xii. winter f&aelig;sten. 
+<hi rend="orange">ALIA.</hi> <add place="marginRight" hand="hand3"
+resp="ajf">200</add><lb></p></div2>
+<div2 type="sen" n="B78.04.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f wer &amp; wif hig gesamnian. &amp; heo
+&eth;onne secge. &thorn;<expan>&aelig;t</expan> he ne<lb>
+m&aelig;g h&aelig;man mid h&yacute;re. gif heo hit &thorn;onne gec&yacute;&eth;an<lb>
+m&aelig;ge &thorn;<expan>&aelig;t</expan> hit so&eth; seo nime hire o&eth;orne.
+<space dim="horizontal" extent="2">&nbsp;&nbsp; <hi rend="orange">ALIA.</hi><space
+dim="horizontal" extent="3">&nbsp;&nbsp; <lb></p></div2>
+<div2 type="sen" n="B78.05.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">S</hi></hi></hi>e
+f&aelig;der mot his sunu for m&yacute;celre n&yacute;d&thorn;earf. on<lb>
+<damage type="stain" extent="7">&thorn;eowet ge</damage>s&yacute;<damage type="stain"
+extent="4">llan.</damage> o&eth; &eth;&aelig;t he bi&eth; .vii. si&eth;on he ne mot
+<add hand="hand6" place="inline" resp="ajf">sy&eth;&eth;an</add><lb>
+bu<damage type="stain" extent="4">tan h</damage>it his agen willa
+s&yacute;.<space dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp; <hi rend="orange">A L I
+A .</hi><lb></p></div2>
+<div2 type="sen" n="B78.05.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">F</hi></hi></hi>eowert&yacute;ne w&yacute;ntre man hine s&yacute;lfne
+m&aelig;g &thorn;eowne ged&oacute;n. <lb></p></div2>
+<div2 type="sen" n="B78.05.03"> <p>ne bi&eth; &aacute;l&yacute;fed <damage type="stain"
+extent="17">&aelig;t &thorn;am &thorn;eowan hi</damage>s feoh to nimann<damage
+type="stain" extent="2">e.</damage><lb>
+&thorn;&aelig;t <damage type="stain" extent="16">he mid his sw&yacute;nce
+begite&eth;</damage>.<space dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp; <hi
+rend="orange">A L I A</hi><lb></p></div2>
+<div2 type="sen" n="B78.06.01"> <p><lb><hi rend="od"><hi rend="orange"><hi
+rend="orncap2">&ETH;</hi></hi></hi>reo &aelig;feste<damage type="stain" extent="23">nne
+beo&eth; on geare on go</damage>des folc .xl.
+daga.<lb>
+&aelig;r eastro<damage type="stain" extent="25">n. &eth;&aelig;r
+&thorn;on<expan>ne</expan> teo&eth;an d&aelig;l &thorn;&aelig;s</damage> geares
+we sceo-<lb>
+lan ageldan. <damage type="stain" extent="22"><hi rend="orange">A</hi>nd
+.xl. nihta. &aelig;r ures</damage> dr&yacute;htnes ge<lb>
+b&yacute;rdtide. <hi rend="orangefilled">A</hi>nd o<damage type="stain"
+extent="15">fer PENTECOSTEN</damage>. &thorn;&aelig;r bi&eth; .l. <lb>
+nihta. ofer ea<damage type="stain" extent="16">stron. &thorn;onne .xl</damage>.<space
+dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp;<hi rend="orange">A
+L I A
+.</hi><lb></p></div2>
+<div2 type="sen" n="B78.06.02"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">S</hi></hi></hi>e &eth;e for <damage type="stain" extent="22">deadne man
+f&aelig;ste&eth;. wel</damage> he him
+fultuma&eth;. <lb></p></div2>
+<div2 type="sen" n="B78.06.03"> <p><lb><damage type="stain" extent="27"><hi
+rend="od"><hi
+rend="orange"><hi
+rend="orncap2">C</hi></hi></hi>&yacute;ning gif he hafa&eth; o&thorn;res
+k</damage>&yacute;ninges land. he hit<lb>
+<damage type="stain" extent="26">mot s&yacute;llan for his sawle</damage>.<space
+dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp;<hi rend="orange">A L I A
+.</hi></p><milestone unit="fol" n="153b"></div2></div1><lb>
+<div1 type="sen" n="B79.01.00"><milestone unit="B" n="79.01.00"><div2 type="sen"
+n="B79.01.01"> <p><lb><hi
+rend="od"><hi rend="red"><hi rend="orncap2">S</hi></hi></hi>wa h&yacute;lce man swa
+&eth;as scrift boc tilige to abrecanne<lb>ecre fordemedn&yacute;sse he s&yacute; fordemed.
+AME <hi rend="N2">N</hi>.</p></div2></div1>
+</body>
+</text>
+</tei.2>
+

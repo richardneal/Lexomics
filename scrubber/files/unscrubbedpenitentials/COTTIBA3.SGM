@@ -1,0 +1,962 @@
+<!DOCTYPE tei.2 PUBLIC "-//SEENET//DTD seenet.dtd//EN" 
+"seenet.dtd" 
+[
+<?STYLESPEC "Frantz1" "frantz1.ssh">
+<!ENTITY header SYSTEM "header.sgm" >
+
+
+
+]>
+<?ATTLINK XREF DOC "TEI-P3">
+<tei.2 id="Shell">
+     &header;
+<text>
+     <body>
+<div1 type="sen" n="N54.38.00" id="oehstart"><milestone unit="N"
+n="54.38.00"><p><note>There are 14
+lines of text at the start of this folio. AJF: hand 5 = scribe of text who also
+made some corrections; hand 6 = corrector & annotator.</note>
+<milestone unit="fol" n="44r"></p>
+<p> <hi rend="red">Be misd&aelig;da</hi></p><lb>
+<div2 type="sen" n="N54.38.01"><p> <lb><hi rend="od"><hi rend="red">G</hi></hi>if hwa
+fu<del rend="erasure" hand="hand1">l</del>lice on ungec&yacute;ndelicum &thorn;ingum
+ongean godes gesceafte <lb>&thorn;urh  &aelig;nig &thorn;inc hine s&yacute;lfne
+besm&iacute;te. behreowsige &thorn;<expan>&aelig;t</expan> &aelig;fre &thorn;a
+hwile<lb>&thorn;e he libbe. be &eth;am
+&thorn;e seo d&aelig;d si. 
+<milestone unit="fol" n="55r"></p></div2></div1><lb>
+<div1 type="sen" n="N51.01.00"><milestone unit="N" n="51.01.00"><note
+type="codicological">The beginning of the Handbook on this folio follows 16 lines
+of a confessional prayer (edited by Logeman 1889.2, p. 518), part of which resembles the
+OE Introduction; see 31.06.01-31.08.01, ed. Spinder, p. 171, lines 16-26.</note>
+<p> <hi rend="red">incipit ordo confessionis &middot;
+s<expan>an</expan>c<expan>t</expan>i HERONIMI
+qualiter con<lb>fiteri debeat Ch<expan>r</expan>i<expan>st</expan>ianus peccata
+sua.</hi></p><lb>
+<div2 type="sen" n="N51.01.01"><lb><p> <hi rend="od"><hi rend="red"><hi
+rend="orncap2">Q</hi></hi></hi>uando<note
+type="codicological">The tail of the Q extends through the next two lines of text to "&amp;
+quia" of the fourth line of the text.</note> aliquis uol&uacute;erit
+confessionem facere peccatoru<expan>m</expan><lb>
+suorum uiriliter &aacute;gat &middot; &amp; non erubescant confiteri &amp;<lb>
+scelera &amp;
+fac&iacute;nor&aelig; se accussando quia &iacute;nde uenit indul<lb>
+gentia &amp; quia sine
+confessione nulla est uenia confessio<lb>enim sanat confessio iustificat &middot; confessio
+ueniam
+peccatis<lb>donat. </p> </div2>
+<div2 type="sen" n="N51.02.01"><p> Inprimis igitur p<expan>ro</expan>sternat se humiliter
+in
+conspectu<lb>
+d<expan>e</expan>i sup<expan>er</expan> terram adorationem &amp;
+lacrimas fundens roget<lb>
+beatam mariam cum s<expan>an</expan>c<expan>t</expan>is ang<expan>e</expan>lis
+&amp;
+s<expan>an</expan>c<expan>t</expan>is
+ap<expan>osto</expan>lis &amp; martirib<expan>us</expan><lb>&amp; confessoribus
+&amp;
+uirginibus &amp; omnibus electis d<expan>e</expan>i ut ipsi<lb>intercedant pro se ad
+d<expan>omi</expan>n<expan>u</expan>m ut d<expan>eu</expan>s
+om<expan>ni</expan>p<expan>oten</expan>s dignetur ei dare<lb>sapientiam
+p<expan>er</expan>fectam &middot; &amp; ueram intellegentiam. ad
+confidendu<expan>m</expan><lb>
+<milestone unit="fol" n="55v">
+peccata sua. </p> </div2> 
+<div2 type="sen" n="N51.02.02"><p> Chr<expan>ist</expan>e audi nos.
+S<expan>an</expan>c<expan>t</expan>a
+maria &middot; om<expan>nes</expan> s<expan>an</expan>c<expan>t</expan>i orate
+&middot; &amp;
+r<expan>e</expan>l<expan>iquum</expan>. </p> </div2><lb>
+<div2 type="sen" n="N51.02.03"><p> Post he&cedil;c cum fiducia surgens confiteatur penitens
+creduli<lb>
+tatem suam dicens </p> </div2>
+<div2 type="sen" n="N51.02.04"><p> Credo in unum d<expan>eu</expan>m &amp;
+r<expan>e</expan>l<expan>iquum</expan>. </p> </div2>
+<div2 type="sen" n="N51.02.05"><p> <hi rend="e2">e</hi>t post he&cedil;c<lb>incipiat
+confessionem suam coram d<expan>e</expan>o &amp; coram sacerdote con<lb>fitens peccata
+sua &middot; </p> </div2><lb>
+<div2 type="sen" n="N51.02.06"><p> <lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">P</hi></hi></hi>reueniat
+hunc famulum tuum q<expan>uae</expan>s<expan>o</expan> d<expan>omi</expan>ne
+mis<expan>eri</expan>c<expan>or</expan>d<expan>i</expan>a tua ut
+om<expan>ne</expan>s<lb>
+iniquitates eius celeri indulgentia deleantur p<expan>er Iesum Cristum</expan>. </p>
+</div2></div1><lb>
+<div1 type="sen" n="N52.01.00"><milestone unit="N" n="52.01.00"><div2 type="sen"
+n="N52.01.01"><p> <space dim="horizontal" extent="1">&nbsp;&nbsp;fter<Note
+type="codicological">Capital &AElig; is missing.</note> &thorn;issum arise
+eadmodlice to his scrifte &middot; &amp; cwe&eth;e &thorn;on<expan>ne</expan>
+&aelig;rest</p></div2><lb>
+<div2 type="sen" n="N52.01.02"><p> ic gel&yacute;fe on drihten heahf&aelig;der ealra
+&thorn;inga
+wealdend &middot; &amp; on &thorn;one<lb>
+sunu &middot; &amp; on &thorn;one halgan gast &middot; &amp; ic gel&yacute;fe to life
+&aelig;fter dea&eth;e &middot;
+&amp; ic ge<lb>
+l&yacute;fe to arissenne on domes d&aelig;ge &middot; &amp; eal &thorn;is ic gel&yacute;fe
+&thorn;urh
+g&ocirc;des<lb>
+m&aelig;gen &middot; &amp; his miltse to geweor&eth;onne &middot; </p> </div2>
+<div2 type="sen" n="N52.01.03"><p> &amp; cwe&thorn;e &thorn;on<expan>ne</expan> mid
+hreowsien<lb>
+dum mode &amp; eaodmodlice &middot; &amp; &thorn;us cwe&thorn;e. </p> </div2> <div2
+type="sen"
+n="N52.02.01"><p> Ic andette &aelig;lmihtigum<lb>g&ocirc;de &amp; minum scrifte
+&thorn;an gastlican l&aelig;ce ealle &thorn;a s&yacute;nna &thorn;e me<lb>
+&aelig;fre &thorn;urh aw&yacute;rgede gastas on bsmitene wurdon &middot;
+o&thorn;&thorn;e
+on
+d&aelig;de &middot;<lb>
+o&thorn;&thorn;e on ge&thorn;ohte o&thorn;&thorn;e wi&eth; w&aelig;pmen
+o&thorn;&thorn;e wi&eth; wifm&aelig;n o&eth;&eth;e wi&eth; <lb>
+&aelig;nige gesc&aelig;fte gec&yacute;ndelicra senna o&thorn;&thorn;e
+ungec&yacute;ndelicra. <add place="inline" hand="hand6">h</add><note
+type="codicological">Graphic h: small h with
+crossed ascender signals the following addition in the left margin.</note></p></div2>
+<div2 type="sen" n="N52.02.02"><p> Ic<space><lb>
+<hi rend="od"><add place="marginLeft" hand="hand6">on
+d&yacute;rnan forlige<lb>innon gehalgodan<lb>o&eth;&eth;e wi&eth; utan. eall <lb>agilt
+h&aelig;bbe si&eth;&eth;an<lb>
+nre fulluht underfe<lb>
+magen godes willan &middot;<lb>
+re andwerdan d&aelig;g<lb></add></hi><lb>andette crist &middot; &amp; &thorn;e
+g&yacute;fern&yacute;sse
+&aelig;tes &amp; drences ge &aelig;r tide ge ofer<lb>
+tide. </p> </div2> 
+<div2 type="sen" n="N52.02.03"><p> Ic andette &aelig;lce g&yacute;sunga &middot; &amp;
+&aelig;fe&cedil;st &middot; &amp; t&aelig;ln&yacute;sse &amp;
+tw&yacute;sp&aelig;cnessa.<lb>
+leasunga &middot; &amp; unriht g&yacute;lp &middot; &amp; idel word &amp; unrihte cesta
+&amp;
+&aelig;lcne &middot;<lb>
+gl&aelig;nge &thorn;e to mines lichaman unr&aelig;de &aelig;fre belumpe. </p> </div2> 
+<div2
+type="sen" n="N52.02.04"><p> Ic an<lb>
+dette &thorn;<expan>&aelig;t</expan> ic w&aelig;s to oft s&yacute;nna w&yacute;rhta
+&middot;
+&amp;
+s&yacute;nna
+ge&thorn;afa &middot; &amp; s&yacute;nna<lb>
+gew&icirc;ta &amp; s&yacute;nna lareow. </p> </div2> 
+<div2 type="sen" n="N52.02.05"><p> Ic andette mines go<add place="interlinear"
+hand="hand6">m</add>des mor&thorn;or &middot;
+&amp;
+<lb>
+m&aelig;nne a&thorn;as &middot; &amp; unsibbe &middot; &amp; ofermodign&yacute;sse
+receleasn&yacute;sse.<lb>
+godes beb&ocirc;da. </p> </div2>
+<div2 type="sen" n="N52.02.06"><p> Ic andette eal &thorn;<expan>&aelig;t</expan> ic
+&aelig;fre<add place="interlinear" hand="hand6">, mid</add> minum eagon geseah<lb>to
+g&yacute;tsunge o&thorn;&thorn;e to t&aelig;ln&yacute;sse o&thorn;&thorn;e mid earum to
+unnette &middot;<lb>
+geh&yacute;rde o&thorn;&thorn;e mid minum mu&eth;e to unn&yacute;tte
+gecw&aelig;&eth;. </p> </div2> 
+<div2 type="sen" n="N52.02.07"><p> Ic an<lb>
+dette &thorn;e ealle mines lichaman s&yacute;nna for fel &amp; for fl&aelig;sc<lb>&amp; for
+ban &amp; for sionewan &middot; &amp; for &aelig;ddran &middot; &amp; for gristlan
+&middot; &amp; 
+for<lb>
+<milestone unit="fol" n="56r">
+tungan &middot; &amp; for weleras &middot; &amp; for g&oacute;man &middot; &amp; for
+te&eth; &middot; &amp; for feax &middot; &amp; <add place="marginRight"
+hand="hand8"><hi rend="brown"> 54</hi></add><note type="codicological">This was fol. 54
+before the manuscript was rebound.</note>
+<lb>
+for mearh &middot; &amp; for &aelig;gw&aelig;t hnesces o&thorn;&thorn;e heardes &middot;
+w&aelig;tes o&thorn;&thorn;e<lb>
+dreges &middot; </p> </div2>
+<div2 type="sen" n="N52.02.08"><p> Ic andette gode &thorn;<expan>&aelig;t</expan> ic min
+fulluht g<add place="interlinear" hand="hand6">hw</add>&yacute;rs geheold
+&thorn;on<expan>ne</expan><lb>
+ic minum drihtne gehete &middot; &amp; mine hand<add place="inline"
+hand="hand6">a</add>
+&thorn;e
+ic scolde gode<lb>
+&amp; his halgum to lofe healdan &middot; &amp; me s&yacute;luu<expan>m</expan> to
+ecere
+hele.
+Ic<lb>
+hebbe me unmedumlice for<add place="interlinear" hand="hand6">ge</add>healdan. </p>
+</div2> 
+<div2 type="sen" n="N52.02.09"><p> Ic andette &thorn;<expan>&aelig;t</expan> ic mine<lb>
+t&iacute;dsangas,<add place="interlinear" hand="hand6">swy&eth;e</add> oft <add
+place="interlinear" hand="hand5" resp="ajf">forlet</add> ag&aelig;lde.
+&amp; ic<add place="interlinear"
+hand="hand6">,oft</add> sw&oacute;r m&aelig;ne <add place="interlinear"
+hand="hand6">&yacute;fele</add> a&thorn;as on mira hlaforda<lb>life &middot; &amp;
+mines
+drihtnes
+naman ic nemde on ideln&yacute;sse </p></div2> <div2 type="sen" n="N52.03.01"><p> ealles
+<del type="erasure" hand="hand6" resp="ajf">ealles</del><Note type="codicological">Erasure
+of  "ealles," which was written twice.</note>
+<add place="marginRight" hand="hand6"> to gelome</add><lb>
+ic his bidde mine drihten forgefnesse &middot; &thorn;<expan>&aelig;t</expan> me
+n&aelig;fre
+deoful<lb>
+ofst&aelig;lan ne m&aelig;ge &thorn;<expan>&aelig;t</expan> ic butan andettn&yacute;sse
+&middot;
+&amp; betn&yacute;sse seo min<lb>
+ra sinna. </p> </div2> 
+<div2 type="sen" n="N52.03.02"><p> Swa ic tod&aelig;g ealle andette mine sc&yacute;lda
+befo<lb>
+ran driht,<add place="interlinear" hand="hand5">n</add>e h&aelig;lendum criste &middot; se
+walde&eth; heofenas &middot; &amp; eor&eth;an<lb>
+&amp; beforan &thorn;isum halgum weofode &amp; &thorn;isum <add place="interlinear"
+hand="hand6">haligu<expan>m</expan></add> reliquium &middot; &amp; be<lb>foran <add
+place="interlinear" hand="hand6">&thorn;e minan</add> mine scrifte &middot; &amp;
+drihtenes
+gecorenan m&aelig;ssepre<lb>
+oste &middot; &amp; ic eom on cl&aelig;nre &middot; &amp; on so&thorn;re andetnesse
+&middot; &amp;
+on
+godu<expan>m</expan><lb>
+willan &middot; to gebetenne ealle mine s&yacute;nna &thorn;e ic &aelig;fre
+geworhte<lb>o&eth;&eth;e
+ge&thorn;ohte<add place="interlinear" hand="hand6">, d&aelig;ges o&eth;&eth;e
+nihtes wordes o&eth;&eth;e weorces. o&eth;&eth;e on &aelig;nigan &thorn;ingan
+&middot;</add>
+<space>&middot; &amp; eft swilces gesw&iacute;can<add place="interlinear" hand="hand6">,
+w&yacute;lle</add>
+&thorn;&aelig;s &thorn;e ic m&aelig;g &middot; </p> </div2> 
+<div2 type="sen" n="N52.03.03"><p> &amp; &thorn;u <lb>
+h&aelig;lenda crist seo miltsiende minre sawle &amp; forgifende<lb>&amp; adiligende mine
+s&yacute;nna &middot; &amp; mine g&yacute;ltas &thorn;e ic &aelig;r o&thorn;&thorn;e<lb>
+si&eth; &aelig;fre geworhte &middot; &amp; gel&aelig;de me to &thorn;inum uplican rice
+&thorn;<expan>&aelig;t</expan> ic mote<lb>
+&thorn;&aelig;r wunian mid &thorn;inum halgum &middot; &amp; gecorenum &aacute;
+b&uacute;tan
+ende<lb>
+on &eacute;cn&yacute;sse&middot; </p> </div2>
+<div2 type="sen" n="N52.03.04"><p> Nu bidde ic &thorn;e eadmodlice drihtnes sacerd
+&thorn;<expan>&aelig;t</expan><lb>
+&thorn;u seo me to gewitn&yacute;sse on domes d&aelig;ge &thorn;<expan>&aelig;t</expan>
+&thorn;<expan>&aelig;t</expan>
+deoful ne m&aelig;ge<lb>
+on me anweald agan &middot; &amp; &thorn;<expan>&aelig;t</expan> &thorn;u to drihtene
+beo
+min
+&thorn;ingere <lb>
+&thorn;<expan>&aelig;t</expan> ic mote mine s&yacute;nna &middot; &amp; mine
+g&yacute;ltas betan.
+&amp; o&thorn;res
+swilces<lb>
+gesw&iacute;can &middot; To &thorn;on me gefultumie se drihten se &thorn;e
+leofa&eth;<lb>&amp;
+rixa&eth; &aacute; b&uacute;tan ende on ecnesse &middot; ameN &middot; </p>
+</div2></div1><lb>
+<div1 type="sen" n="N53.01.00"><milestone unit="N" n="53.01.00"><div2
+type="sen" n="N53.01.01"><p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">&ETH;</hi></hi></hi>&aelig;t sceal ge&thorn;encan se &thorn;e bi&eth;
+manna s&aacute;wla
+l&aelig;&acute;ce &amp;
+heora<lb>
+d&aelig;da gewita &thorn;<expan>&aelig;t</expan> gedal &middot; &amp;
+&thorn;<expan>&aelig;t</expan> gescad hu he mannum heora
+d&aelig;da<lb>
+<milestone unit="fol" n="56v">
+gescrife &middot; &amp; he hi hw&aelig;&thorn;re ne fordeme ne h&yacute; ormodo ne gedo
+</p></div2>
+<div2 type="sen" n="N53.02.01"><p> &thorn;onne<lb>se m&acirc;n him his misd&aelig;da
+andettan wille geh&yacute;re him &aelig;rest &middot; <lb>ge&thorn;eldelice hu his wise
+geard
+s&yacute;</p> </div2> 
+<div2 type="sen" n="N53.03.01"><p> Gif he wille &amp; cunne eadmod<lb>lice his deda
+andetan &middot; &amp; &thorn;u ong&icirc;te &thorn;<expan>&aelig;t</expan> him his
+senna
+hreowan  &middot; <lb>
+l&aelig;r hine luflice &amp; mildheortlice &middot; </p> </div2>
+<div2 type="sen" n="N53.04.01"><p> G&yacute;f he ne cume his d&aelig;da<lb>andettan 
+&middot; &amp; his geltas gesmeagen acsa hine his wisena &middot; &amp;<lb>adr&aelig;d
+him &thorn;a
+g&yacute;ltas ut &middot; &amp; asec his d&aelig;da &middot; &amp; ge&thorn;enc &thorn;u
+&thorn;<expan>&aelig;t</expan> &thorn;u<lb>
+ne scealt n&aelig;fre gelice deman &thorn;am rican &middot;&amp; &thorn;am heanan
+&thorn;am<lb>freon &middot;&amp; &thorn;am &thorn;eowan &thorn;am ealdan &middot;
+&amp; &thorn;am
+unhalan &thorn;am eadmo<lb>
+dan &middot; &amp; &thorn;am ofermodan &middot; &thorn;am stragan &middot; &amp;
+&thorn;am
+unm&acirc;gan<lb>
+&thorn;am gehadedon &middot; &amp; &thorn;am l&aelig;wedon &middot; </p> </div2>  
+<div2 type="sen" n="N53.05.01"><p> <hi rend="&aelig;2">&aelig;</hi>lce d&aelig;de sceal
+gescead<lb>wis
+dema
+wislice
+tosceadan hu heo gedon s&yacute; &middot; &amp; hw&aelig;r
+o&thorn;&thorn;e<lb>hwenne &middot; </p> </div2> 
+<div2 type="sen" n="N53.06.01"><p> Nis on &aelig;nigne timan unriht al&yacute;fed
+&middot;
+&amp;
+&thorn;eh man<lb>sceal freolstidan &middot; &amp; f&aelig;stentidan &middot; &amp; on
+freolstowan eac
+swa<lb>georlicost beorgan &middot;</p></div2>
+<div2 type="sen" n="N53.07.01"><p> &amp; &aacute; swa m&acirc;n bi&eth; mihtigra
+o&thorn;&thorn;e ma<lb>
+ran hades swa sceal he deoppor for g&ocirc;de &middot; &amp; for
+wurulde<lb>unriht gebetan </p></div2>
+<div2 type="sen" n="N53.07.02"><p> for&thorn;am &thorn;e se m&acirc;ga &middot; &amp;
+unm&acirc;ga ne ma<lb>g&acirc;n na gelice ber&thorn;ene ahebban ne se unhala &thorn;am
+halan<lb>
+gelice &middot; </p> </div2> 
+<div2 type="sen" n="N53.08.01"><p> &amp; &thorn;&yacute; man sceal medmian &middot;
+&amp;
+sceadelice tosceadan </p></div2>
+<div2 type="sen" n="N53.08.02"> <p>&middot; &yacute;lde<lb>&amp; geogo&thorn;e welan
+&amp; wedle
+h&aelig;le &amp; unh&aelig;le &amp; hada gewilcne &middot; </p> </div2> 
+<div2 type="sen" n="N53.08.02"><p> And<lb>gif hwa hw&aelig;t ungewealdes misde&eth; ne
+bi&eth; &thorn;<expan>&aelig;t</expan> na gelic &thorn;am<lb>&thorn;e willes &middot;
+&amp;
+gewealdes
+s&yacute;lfwilles misde&eth; se bi&eth; gebeorges &middot; &amp;<lb>&thorn;e beteran
+domes
+s&yacute;mle
+w&yacute;r&eth;e &thorn;e he n&yacute;dw&yacute;rhta w&aelig;s
+&thorn;&aelig;s<lb>&thorn;e he
+worhte &middot; </p> </div2>
+<div2 type="sen" n="N53.09.01"><p> &AElig;lce d&aelig;de tosceade man w&aelig;rlice for
+gode<lb>
+&amp; for warulde &middot;<Note type="codicological">Four blank lines follow the end of the
+text of Handbook 53.09.01; a
+different text of 53.01 begins on fol &middot; 94v below.</note>
+<milestone unit="fol" n="57r">
+<milestone unit="fol" n="94v"></p></div2></div1>
+<div1 type="sen" n="N53.09.00"><milestone unit="N" n="53.09.00"> 
+<div2 type="sen" n="N53.01.09"><Note type="codicological">The text begins on line 23 of the
+folio; the first 22 lines are Latin: "Incipit ordo vel examinatio in ordinatione
+epi<expan>scopi</expan>,
+begnning fol. 93v. There is a handshift: old="hand4"; new="hand3." But the handshifts have to
+be
+regularized in the manuscript.</note>
+<p> <lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">&ETH;</hi></hi></hi>&aelig;t
+sceal ge&thorn;encan se &thorn;e bi&thorn; manna sawla l&aelig;ce &middot; &amp; heora
+d&aelig;da
+gewita.<lb>
+&thorn;<expan>&aelig;t</expan> gedal &middot; &amp; &thorn;<expan>&aelig;t</expan>
+scad.
+hu he
+mannum heora d&aelig;da gescrife.
+&amp; he hi <add place="interlinear" hand="hand6">&thorn;eh</add> hw&aelig;&thorn;ere ne
+for<lb>
+deme &middot; ne hi ormode ne gedo &middot; </p> </div2> 
+<div2 type="sen" n="N53.02.09"><p> &thorn;onne se mann him his misd&aelig;da andettan
+wille.<lb>
+gehire him &aelig;rest ge&thorn;&yacute;ldelice hu his wise gerad s&yacute; &middot; </p>
+</div2>  
+<div2
+type="sen" n="N53.03.09"><p> G&yacute;f he wille &amp; cunne<lb>
+eadmodlice his d&aelig;da andettan &middot; &amp; &thorn;u ongite
+&thorn;<expan>&aelig;t</expan> him his
+s&yacute;nna hreowan &middot; l&aelig;r <lb>
+hine luflice &amp; mildheortlice &middot; </p> </div2> 
+<div2 type="sen" n="N53.04.09"><p> G&yacute;f he cunne his d&aelig;da andettan &middot;
+&amp; his
+giltas<lb>
+gesmeagen acsa hine his wisena &middot; &amp; adred him &thorn;a g&yacute;ltas ut
+&middot;
+&amp; asec his
+d&aelig;da<lb>
+&amp; ge&thorn;enc &thorn;<expan>&aelig;t</expan> u &thorn;<expan>&aelig;t</expan>
+&thorn;u ne scealt n&aelig;fre gelice
+deman &middot; &thorn;am rican &middot; &amp; &thorn;am heanan &middot; <lb>
+&thorn;am freon &middot; &amp; &thorn;am &thorn;eowan &middot; &thorn;am ealdan
+&middot; &amp;
+&thorn;am
+geongan &middot; &thorn;am halan &middot; &amp; &thorn;am<lb>
+unhalan &middot; &thorn;am eadmodan &amp; &thorn;am ofermodan &middot; &thorn;am
+strangan &middot;
+&amp;
+&thorn;am un<lb>
+magan &middot; &thorn;am gehadedan &amp; &thorn;am l&aelig;wedan &middot; </p>
+</div2>
+<div2 type="sen"
+n="N53.05.09"><p> &AElig;lce d&aelig;de sceal gesceadwis<lb>dema wislice tosceadan hu
+heo
+gedon s&yacute; &middot; &amp; hw&aelig;r &middot; o&thorn;&thorn;e hwenne &middot;
+</p>
+</div2> 
+<div2 type="sen" n="N53.06.09"><p> nis on<lb>
+&aelig;nigne timan unriht al&yacute;fed &middot; &amp; &thorn;eah man sceal
+freolstidan &middot; &amp;
+f&aelig;sten<lb>
+<milestone unit="fol" n="95r">
+tidan &middot; &amp; on freolstowan &middot; eac swa geornlicost beorgan &middot; 
+</p></div2> <div2
+type="sen"
+n="N53.07.09"><p> &amp; a swa man b&yacute;&thorn; mihti
+<space><space><space><space><space><space><add
+place="marginRight" hand="hand8" resp="ajf">93</add><lb>
+gra o&thorn;&thorn;e maran hades <space dim="horizontal" extent="2"><space><space><note
+type="textual">2-space erasure.</note> swa sceal
+he deoppor for gode
+ &middot;&amp; for
+worulde &middot;<lb>unriht gebetan &middot; for&thorn;am
+&thorn;e se maga &middot; &amp; se unmaga &middot; ne magon na gelice
+ber<lb>&thorn;ene
+ah&aelig;bban &middot; ne
+se unhala &thorn;am halum gelice &middot; </p> </div2>  <div2 type="sen"
+n="N53.08.09"><p> &thorn;&yacute; mann sceal medmian<lb>&amp; gesceadlice tosceadan.
+&yacute;lde &amp; geogo&thorn;e welan &middot; &amp; w&aelig;dle h&aelig;le
+&amp; unh&aelig;le &middot; &amp; hada <add place="marginRight" hand="hand8"
+resp="ajf">91</add><note type="codicological">91 has been lined through.</note><lb>
+gehw&yacute;lcne &middot;  And gif hwa hw&aelig;t ungewealdes misde&thorn; &middot; ne
+bi&thorn; na gelic
+&thorn;am &thorn;e<lb>
+willes &middot; &amp; gewealdes s&yacute;lfwilles misde&eth; &middot;&amp; eac se
+&thorn;e
+n&yacute;dw&yacute;rhta &middot; bi&thorn; &thorn;&aelig;s &thorn;e he
+misde&thorn;<lb>se
+b&yacute;&thorn; gebeorhges &middot; &amp; &thorn;e beteran domes s&yacute;mle
+w&yacute;r&thorn;e
+&thorn;e he nidw&yacute;h<add place="interlinear" hand="hand6">r</add>ta<note
+type="codicological">r originally written, corrected to h, and r inserted after h.</note>
+w&aelig;s.
+&thorn;&aelig;s &thorn;e<lb>
+he worhte &middot; </p> </div2>
+<div2 type="sen" n="N53.09.09"><p> &AElig;lce d&aelig;de tosceade man w&aelig;rlice for
+gode
+&amp; for worulde &middot;<note type="codicological">The tail of the e extends the space of
+4
+characters.</note></p></div2></div1><lb>
+<div1 type="sen" n="N54.42.00"><milestone unit="N" n="54.42.00"> <div2 type="sen"
+n="N54.42.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">G</hi></hi></hi>&yacute;f
+hwa hine s&yacute;lfne sw&yacute;&eth;e forwurce on m&aelig;nigfea,<add hand="hand7"
+place="interlinear">l</add>dan s&yacute;nnan &middot; &amp; he &aelig;fter<lb>&thorn;am
+wille
+geswican &middot;&amp; geornlice betan gebuge to m&yacute;nstre &amp; &thorn;eowige
+&thorn;&aelig;r
+&aelig;fre<lb>
+gode &amp; mannum swa swa him man t&aelig;ce &middot; o&thorn;&thorn;e of earde
+weallige
+wide &middot; &amp; d&aelig;dbote<lb>
+&aelig;fre &thorn;a hwile &thorn;e he libbe &middot; &amp; helpe his sawle &middot;
+o&thorn;&thorn;e
+huru on
+earde &middot; be &thorn;am<lb>
+deopestan bete &middot; &thorn;e he &aelig;fre acuman m&aelig;ge swa swa him man
+t&aelig;ce &middot; </p> </div2></div1><lb>
+<div1 type="sen" n="N55.01.00"><milestone unit="N" n="55.01.00"> <div2 type="sen"
+n="N55.01.01"> <p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">O</hi></hi></hi>n wisum
+scrifte bi&thorn; sw&yacute;&thorn;e for&thorn;gelang fors&yacute;ngodes mannes
+n&yacute;dhelp &middot;<lb>
+ealswa on godan l&aelig;ce b&yacute;&thorn; seoces mannes lacnung &middot; </p> </div2> 
+<div2
+type="sen" n="N55.02.01"><p> mistlice &middot; men ag&yacute;lta&thorn;.<lb>oft
+&middot;
+&amp; unseldan &thorn;urh deofles sc&yacute;fe &middot; &amp;
+&thorn;<expan>&aelig;t</expan>
+b&yacute;&thorn; egeslic &thorn;<expan>&aelig;t</expan> gehadode men
+swa<lb>swi&thorn;e wi&thorn; god 
+ag&yacute;lta&thorn; &thorn;<expan>&aelig;t</expan> hi had forwircan &middot; </p>
+</div2>
+<div2 type="sen" n="N55.03.01"><p> &amp; &thorn;&aelig;r mot to bote sti&thorn;lic<lb>
+d&aelig;dbot &middot; a &thorn;eh be hades &middot; &amp; be g&yacute;ltas
+m&aelig;&thorn;e. &aelig;fter canon dome &middot; &amp; eac hit<lb>
+man mot secean be &thorn;&aelig;s mannes mihtum &amp; be his m&aelig;&thorn;e
+ &middot; &amp; be his s&yacute;lfes<lb>
+heortan hreowsunge &middot; <hi rend="redfilled">S</hi>umum gearbote &middot; <hi
+rend="redfilled">S</hi>umum
+ma geare &amp; eft<lb>be g&yacute;ltes
+m&aelig;&thorn;e &middot;  <hi rend="redfilled">S</hi>umum mon&thorn;bote &middot; <hi
+rend="redfilled">S</hi>umum
+ma mon&thorn;a &middot; <hi rend="redfilled">S</hi>umum<lb>wucbote &middot; <hi
+rend="redfilled">S</hi>umum ma
+wucena &middot;  <hi rend="redfilled">S</hi>umum d&aelig;gbote.
+<hi rend="redfilled">S</hi>umum ma<lb>
+daga &middot; <hi rend="redfilled">S</hi>umum ealle lifdagas &middot; </p> </div2>
+<div2 type="sen" n="N50.04.00"><p> <hi rend="red">Be s&yacute;nna
+lacnunga.</hi></p><lb>
+</div2>
+<div2 type="sen" n="N55.04.01"><lb>
+<p> <lb><hi rend="od"><hi rend="red"><hi rend="orncap2">S</hi></hi></hi>e
+l&aelig;ce
+&thorn;e sceal sare wunda wel geh&aelig;len he mot habban gode sealfe to.<lb><hi
+rend="n2">n</hi>e s&yacute;ndon nane swa &yacute;fele wunda &middot; swa s&yacute;ndon
+s&yacute;n wunda &middot; for&thorn;am &thorn;urh<lb>
+&thorn;a  forw&yacute;r&thorn; man &edot;cean dea&eth;e &middot;  butan he &thorn;urh
+andetnesse &amp;
+&thorn;urh<lb>
+geswicenesse &middot; &amp; &thorn;urh d&aelig;dbote geh&aelig;led
+w&yacute;r&thorn;e &middot; </p> </div2> 
+<div2 type="sen" n="N55.05.01"><p> <hi rend="&ETH;2">&ETH;</hi>onne mot se l&aelig;ce
+<space dim="horizontal" extent="2">&nbsp;&nbsp; beon<lb>wis &middot; &amp;
+w&aelig;r &thorn;e &thorn;a wunda geh&aelig;len sceal &thorn;urh gode lare man sceal
+&aelig;rest<lb>
+hi lacnian &middot; &amp; mid &thorn;am gedon &middot; &thorn;<expan>&aelig;t</expan>
+man
+aswi&gdot;e
+&thorn;<expan>&aelig;t</expan> attor
+&thorn;<expan>&aelig;t</expan> him  <space dim="horizontal"
+extent="2"><space><space><note type="textual">2-space erasure</note> innon<lb>on
+bi&thorn; &middot; &thorn;<expan>&aelig;t</expan> is &thorn;<expan>&aelig;t</expan> he
+gecl&aelig;nsige hine s&yacute;lfne &aelig;rest
+&thorn;urh <space dim="horizontal" extent="3">&nbsp;&nbsp;&nbsp;
+andetnesse.<lb></p></div2>  
+<div2 type="sen"
+n="N55.06.01"><p> <hi rend="e2">e</hi>all man sceal aspiwan s&yacute;nna
+&thorn;<expan>u</expan>rh gode lare
+mid andetnesse<lb>
+ealswa man unlibban de&thorn; &thorn;urh godne drenc &middot; </p> </div2>  <div2
+type="sen"
+n="N55.07.01"><p> <hi rend="n2">n</hi>e meg &aelig;nig<lb>l&aelig;ce wel lacnian
+&aelig;r &thorn;<expan>&aelig;t</expan> attor ute s&yacute; &middot; ne me&aelig;g man
+eac
+d&aelig;dbote<lb>
+wel t&aelig;can &thorn;am &thorn;e andettan nele &middot; <hi rend="n2">n</hi>e &aelig;nig
+man ne
+m&aelig;g
+s&yacute;nna<lb>
+<milestone unit="fol" n="95v">
+butan andetnesse wel gebetan &middot; &thorn;e ma &thorn;e se m&aelig;g wel hal
+weor&eth;an
+&thorn;e
+un<lb>
+libban gedruncen h&aelig;f&thorn; butan he &thorn;<expan>&aelig;t</expan> attor
+aspiwe &middot; </p> </div2> 
+<div2 type="sen" n="N55.08.01"><p> &aelig;ft<expan>er</expan> andetne
+man<lb>m&aelig;g
+mid d&aelig;dbote &middot; godes mildheotnesse hra&thorn;e geearnian &middot; gif he
+mid<lb>inweardre heortan
+heofe &thorn;<expan>&aelig;t</expan> behreowsa&eth; &middot;
+&thorn;<expan>&aelig;t</expan> he
+&thorn;urh deofles
+sc&yacute;fe &aelig;r<lb>
+gefremode to unrihte &middot; </p> </div2> 
+<div2 type="sen" n="N55.09.01"><p> On wisum scrifte bi&thorn; swi&thorn;e
+for&thorn;gelang
+wislic<lb>
+d&aelig;dbote &middot; ealswa on godum l&aelig;ce bi&thorn; &thorn;earflic broces bot
+&middot; &amp;
+be
+mannes<lb>
+gew&yacute;rhtum &middot; hit man mot secean &aelig;fter canon dome &middot; &amp; eac
+medmian<lb>be
+mihtum &middot; &amp; be m&aelig;&thorn;e &middot; &amp; be &thorn;am &thorn;e man
+ong&yacute;t his heortan
+hreowsunge<lb>
+&amp; his s&yacute;lfes geornfulnesse &middot; </p> </div2>
+<div2 type="sen" n="N50.05.10"><p> <hi rend="red">Be l&aelig;wdra manna
+d&aelig;dbote.</hi><lb>
+<hi rend="od"><hi rend="red"><hi rend="orncap2">D</hi></hi></hi>eoplic d&aelig;dbot
+b&yacute;&thorn;
+&thorn;<expan>&aelig;t</expan> l&aelig;wede man &middot; his w&aelig;pna &middot;
+lecge
+&middot;
+&amp;
+weallige
+b&aelig;rfot<lb>
+w&iacute;de &middot; &amp; ne beo niht &thorn;&aelig;r o&thorn;re &middot; &amp;
+f&aelig;ste swi&thorn;e.
+&amp; wacige &middot; &amp; gebidde georne<lb>
+d&aelig;ges &middot; &amp; n&yacute;htes &middot; &amp; w&yacute;llen werige &amp;
+swa
+&aelig;sc&aelig;re
+s&yacute; &thorn;<expan>&aelig;t</expan> iren ne cume on h&aelig;re<lb>ne on n&aelig;gle.
+ne he on wearmum ne on seftum bedde ne cume ne<lb>fl&aelig;sces ne onbite &middot; ne
+&aelig;niges
+&thorn;inges &thorn;e druncen of cume &middot;  ne he in on<lb>
+c&yacute;rcean ne cume &middot; </p> </div2>
+<div2 type="sen" n="N55.11.01"><p> ac &thorn;eh halige stowa geornlice sece &middot;
+&amp;
+his
+g&yacute;ltas c&yacute;&thorn;e.<lb>
+&amp; him &thorn;ingr&aelig;dene bidde &middot; &amp; he n&aelig;nigne man ne
+c&yacute;sse &middot; ac s&yacute;mle s&yacute; his<lb>
+synna hreowsigenne swi&thorn;e </p></div2>
+<div2 type="sen" n="N55.12.01"><p> hreowlice gef&aelig;r&thorn; se &thorn;e hine
+s&yacute;lfne &middot;
+&thorn;us for&thorn;<lb>
+forsc&yacute;ldiga&thorn; &middot; &amp; ges&aelig;lig b&yacute;&thorn; he &thorn;eh gif
+he na ne awaca&thorn; &thorn;<expan>&aelig;t</expan> he ful bete
+&middot;<lb>for&thorn;am ne
+w&yacute;r&thorn; &aelig;nig man on worulde swa swi&thorn;e forsingad
+&thorn;<expan>&aelig;t</expan> he wi&eth;<lb>
+god betan ne m&aelig;ge aginne he hit georne &middot; </p> </div2>
+<div2 type="sen" n="N55.13.00"><p> <hi rend="red">Be
+d&aelig;dbotum</hi></p></div2><lb>
+<div2 type="sen" n="N55.13.01"><p> <lb><hi rend="red"><hi rend="od"><hi
+rend="d2">d</hi></hi></hi>&aelig;dbota
+s&yacute;n gedihte on mislice wisan &middot;  M&yacute;cel
+man m&aelig;g eac mid<lb>
+&aelig;lmessan al&yacute;san &middot; se &thorn;e &thorn;&aelig;re mihte h&aelig;bbe
+r&aelig;re
+circean
+gode to lofe &middot;<lb>
+&amp; gif hine to onhagie s&yacute;lle &thorn;&aelig;r land to &middot; &amp; l&aelig;ten
+&thorn;&aelig;r
+t&yacute;n geonge men<lb>
+to &thorn;<expan>&aelig;t</expan> for hine magon &thorn;eowian &middot; &amp;
+&thorn;&aelig;r
+d&aelig;ghwamlice
+gode magon &thorn;enian &middot;<lb>
+And godige eac godes c&yacute;rcean gehw&aelig;r be &thorn;am &thorn;e hine onhagie.
+&amp;<lb>
+godige folces f&aelig;r mid brincgum &middot; ofer deopu w&aelig;teru &middot; &amp; ofer
+fule<lb>wegas &middot;
+&amp; d&aelig;le godes &thorn;ances georne &thorn;<expan>&aelig;t</expan> he
+h&aelig;bbe.
+swa
+for&thorn; swa him f&yacute;r<lb>
+mest <space dim="horizontal" extent="3"><space><space><space><note type="textual">Gap
+of 4 spaces.</note> onhagie &middot; &amp;
+helpe
+earmra manna georne
+w&yacute;dewena &middot; &amp; steop<lb>
+cilda &amp; &aelig;l <space dim="horizontal" extent="2"><note
+type="textual"><space><space>Gap of 4 spaces.</note> &thorn;eodigra
+manna 
+</p></div2>
+<div2 type="sen" n="N55.14.02"><p> freoge his agene &thorn;eowan to freote
+&middot;<lb>&amp;
+huru
+earme geheregode men &middot; &amp; fede &thorn;earfan &middot; &amp; scr&yacute;de
+husige.<lb>
+&amp; ferige ba&thorn;ige &middot; &amp; beddige &middot; &amp; him s&yacute;lfum
+&middot; to
+&thorn;earfe.
+&aelig;ghw&aelig;r georne<lb>
+gebedr&aelig;dene begite on m&aelig;ssesangum &middot; &amp; on sealmsangum &middot;
+&amp; hine<lb>
+s&yacute;lfne gelome on his drihtenes est &thorn;reage swipe &thorn;earle &middot; mid
+for<lb>
+h&aelig;fednesse &aelig;tes &middot; &amp; w&aelig;tes &middot; &amp;
+gewelhw&yacute;lces
+lichamlices
+lustes &middot; </p> </div2>
+<div2 type="sen" n="N55.15.01"><p> &amp; se &thorn;e<lb>
+git l&aelig;ssan spede h&aelig;bbe &middot; do he,<add place="interlinear"
+hand="hand3">be</add> his
+m&aelig;&eth;e<add place="inline" hand="hand8" resp="ajf">.</add><note
+type="codicological">Period after m&aelig;&eth;e added in black ink, probably over original
+point; appears to be the same ink dropped on the page one inch below the next word.</note>
+georne &thorn;<expan>&aelig;t</expan> he don m&aelig;ge &middot; 
+<milestone unit="fol" n="96r">
+<handshift old="hand3" new="hand4">
+Teo&thorn;ige on godes est eal &thorn;<expan>&aelig;t</expan> he age &middot; &amp;
+wege
+hine
+s&yacute;lfne swa <space><space><space><space><space><add place="marginRight"
+hand="hand8" resp="ajf">94</add><lb>
+hine oftost onagie &middot; &amp; s&eacute;ce mid his &aelig;lmessan c&yacute;rcean
+gelome<lb>
+&amp; halige stowa mid his leohte gegrete &middot; &amp; gife his hushleow<lb>&amp;
+mete &middot; &amp;
+munde &thorn;am &thorn;e &thorn;&aelig;s be&thorn;urfe &middot; &amp; f&yacute;r
+&amp;
+fodder.
+&amp;<lb>
+bed &amp; b&aelig;&eth; &middot; &amp; to scurd f&yacute;lste earmum gif he
+m&aelig;ge &middot; </p> </div2> 
+<div2 type="sen" n="N55.16.01"><p> geneosige<lb>
+mid gode sarimode &middot; &amp; seoce &middot; &amp; deade beb&yacute;rge on godes
+est.<lb>Silf he on
+diglum cneowlie gelome &middot; &amp; hine on eor&eth;an swi&eth;e<lb>a&thorn;enie.
+f&aelig;ste &middot;
+&amp; wacige &middot; &amp; gebidde georne &middot; oft &amp; gelome &middot;
+</p>
+</div2>
+<div2 type="sen" n="N55.16.02"><p> And<lb>
+se &thorn;e git l&aelig;ssan mihta h&aelig;bbe do be is m&aelig;&eth;e georne
+&thorn;<expan>&aelig;t</expan>
+he don<lb>
+m&aelig;ge &middot;  huru swence his lichaman ongean lust &middot; g&yacute;f
+&aelig;r<lb>&thorn;urh
+l&yacute;&thorn;erne lust deoflu gecwemde &middot; f&aelig;ste nu ongean<lb>
+&thorn;<expan>&aelig;t</expan> &thorn;e he &aelig;r &thorn;urh f&yacute;lle unriht.
+gefremede &middot;
+&amp; wacie &middot;
+&amp;<lb>
+swince ongean &thorn;<expan>&aelig;t</expan> he oft &aelig;r slew &middot; &amp;
+slawode
+&thorn;onne he nane<lb>
+sceolde &middot; o&thorn;&thorn;on on unn&yacute;t wacode to swi&eth;e &middot;
+&ETH;olige c&yacute;le &middot;
+&amp;<lb>
+ceald b&aelig;&eth; &middot; ongean &thorn;a hl&yacute;w&thorn;e &thorn;e he &thorn;urh
+s&yacute;nlust
+ahw&aelig;r<lb>
+gefremede &middot; &amp; g&yacute;f he &aelig;bel&gdot;&thorn;e ahwam on unriht
+ahw&aelig;r.<lb>
+geweolde gebete hit georne &middot; &amp; gif him abulge &aelig;nig m&acirc;n
+sw&yacute;&thorn;e<lb>
+forgife &thorn;<expan>&aelig;t</expan> on g&ocirc;des est &middot; &amp;
+&aacute;&aacute;
+&thorn;&aelig;s
+&thorn;e he m&aelig;ge &thorn;ence sw&yacute;&eth;e<lb>
+georne &middot; hw&aelig;t to b&oacute;te m&aelig;ge ongean &aelig;lcne
+s&yacute;nr&aelig;s<note type="codicological">dotted y with c accent</note> &thorn;e
+&thorn;urh<lb>
+deofles s&aelig;d &aelig;r wear&eth; aweax&aelig;n &middot; &amp; gif he of w&ecirc;ge.
+toeacan &middot;<lb>
+him s&yacute;lfum &middot; &aelig;nigne gebrohte gebringe hine georne &aelig;ft<lb>on his
+riht w&ecirc;ge &middot; <hi rend="black"><hi rend="orncap2">&thorn;</hi></hi>&aelig;t is
+&thorn;<expan>&aelig;t</expan> ic
+m&aelig;ne gif he on s&yacute;nne &aelig;nigne<lb>
+m&acirc;n besp&eacute;onne do swa him &thorn;earf is gebringe hine of
+&thorn;am<lb>
+&middot; & l&aelig;de hine on his riht w&ecirc;g &middot;
+&amp;
+&aelig;lcne m&acirc;n georne sp&aacute;nne he<lb>
+of s&yacute;nnum &middot; &thorn;on<expan>ne</expan> beo&eth; his s&yacute;nna sona
+&thorn;e
+leohtran &middot; </p> </div2><lb>
+<div2 type="sen" n="N55.17.00"><p> <note type="codicological">&AElig; missing, one-space
+erasure.</note>nne
+dom mid
+scriftes ge&thorn;ehte se m&acirc;n m&aelig;g him s&yacute;lfu<expan>m</expan><lb>
+gedeman &thorn;e anr&aelig;dlice wile his s&yacute;nna geswican &middot; &amp; his
+s&yacute;n<lb>na
+geb&eacute;tan &middot; D&aelig;le on godes est eal<note type="textual">&aelig; partially
+erased to form e of eal.</note> &thorn;<expan>&aelig;t</expan> he
+age &middot;
+&amp;
+forl&aelig;te
+mid<lb>
+ealle eard &middot; &amp; e&thorn;el &middot; &amp; ealle &thorn;as worldlufe &amp;
+&thorn;eowie his<lb>
+drihtne d&aelig;ges &middot; &amp; nihttes sw&aelig;nce hine s&yacute;lfne swa
+he<lb>swi&thorn;ost
+m&aelig;ge on his s&yacute;lfes lust ealle his lifd&acirc;gas &middot;
+Hw&aelig;t<lb>m&aelig;g
+he
+mare b&ucirc;ton &thorn;<expan>&aelig;t</expan> he tihte toeacan him s&yacute;lfum
+&aelig;lcne<lb>
+m&acirc;n to rihte swa he geornost m&aelig;ge.
+<milestone unit="fol" n="96v"></p></div2><lb>
+<div2 type="sen"
+n="N55.18.01"><p> <hi rend="red"><hi rend="h2">h</hi></hi>er<Note
+type="codicological">The top margin is trimmed very close; the top of the ascender of the h is
+lost.</note> c&yacute;&eth;on hu seoc man mot his f&aelig;sten al&yacute;san &middot; Mon
+m&aelig;g<lb>anes d&aelig;ges f&aelig;sten
+al&yacute;san mid anan penig<expan>e</expan> &middot;  Eac man m&aelig;g<lb>
+al&yacute;san anes d&aelig;ges f&aelig;sten mid twam hund sealma &middot; &amp;
+xx.<lb>sealma &middot; <hi
+rend="e2">e</hi>ac man m&aelig;g twelf mon&thorn;a f&aelig;sten al&yacute;san mid<lb>
+&middot; xxx &middot; scealma o&thorn;&thorn;e &thorn;onne man gefreoge &thorn;e
+&thorn;&aelig;s
+feos
+w&yacute;r&eth;e<lb>
+s&yacute; &middot; &amp; for anes d&aelig;ges f&aelig;stene
+&thorn;<expan>&aelig;t</expan>
+mon
+singe
+&middot; vi &middot; si&thorn;um &middot;
+Beati &middot;<lb>
+&amp; &middot; vi &middot; si&thorn;um &middot; pater n<expan>oste</expan>r &middot;
+And for
+anes
+d&aelig;ges f&aelig;stene
+&thorn;<expan>&aelig;t</expan><lb>
+mon his cneowa gebige s&yacute;xtigum si&eth;um to ear&thorn;an mid<lb>pater
+n<expan>oste</expan>r &middot;  Eac mon m&aelig;g anes d&aelig;ges f&aelig;sten
+al&yacute;san
+gif<lb>
+he hine a&thorn;ena&eth; eallum l&icirc;mum to g&ocirc;de &aelig;t his gebede &middot; 
+&amp;<lb>
+mid so&thorn;re hreowe &amp; mid rihtan geleafan &middot; xv &middot; si&thorn;um
+singe<lb>
+miserere mei d<expan>eu</expan>s &middot; &amp; xv &middot; pater
+n<expan>oste</expan>r
+&middot;
+&amp;
+&thorn;onne him b&yacute;&eth; ealne<lb>
+d&aelig;g geseald his s&yacute;nna lihtinga &middot;</p></div2>
+<div2 type="sen" n="N55.19.01"><p> Seofan wintra f&aelig;sten<lb>mon mag on twelf
+mon&thorn;um gebetan gif he &aelig;lce d&aelig;ge<lb>asinge&eth; sealtere sealma
+o&thorn;erne
+on niht &middot; &amp; fiftig on &aelig;fen<lb><hi rend="e2">e</hi>ac mid anre
+m&aelig;ssan
+mon
+m&aelig;g alysan &middot; xx &middot; daga f&aelig;sten &middot; &amp;<lb>
+mid &middot; x &middot; m&aelig;ssan mon m&aelig;g &middot; iiii &middot;
+m&oacute;&eth;a
+f&aelig;sten al&yacute;san &middot;
+&amp;
+mid<lb>
+xxx &middot; m&aelig;ssan mon m&aelig;g &middot; xii &middot; mo&eth;a f&aelig;sten
+al&yacute;san
+gif <lb>he
+wile mid
+so&thorn;re godes lufan him s&yacute;lfum &thorn;ingian &middot; &amp; his
+s&yacute;nna<lb>
+his scrifte andetten &middot; &amp; <add place="interlinear" hand="hand4">hi</add>
+sw&aacute;
+geb&eacute;tan sw&aacute; he him t&aelig;c&eth; &middot; &amp; georne &aelig;re<lb>
+gesw&iacute;can</p></div2></div1>
+<div1 type="sen" n="N31.01.00" id="oeistart"><milestone unit="N" n="31.01.00"> 
+<milestone unit="fol" n="96v">
+<div2 type="sen" n="N31.01.01"><p><lb><hi rend="od"><hi rend="red"><hi
+rend="orncap2">&thorn;</hi></hi></hi>onne
+m&acirc;n to his scrifte gange &thorn;&aelig;nne sceal he mid swi&eth;e micelan<lb>
+g&ocirc;des &ecirc;ge &middot; &amp; mid micelre eadmodnysse &middot; 
+bef&ocirc;ran
+him
+hine
+selfne<lb>
+a&thorn;&eacute;nian &middot; &amp; hine biddan wependre stefne &middot; 
+&thorn;<expan>&aelig;t</expan> he
+him dedbote
+t&aelig;ce<lb>
+ealra &thorn;ara g&yacute;lta &thorn;e he ongean g&ocirc;des willan gedon
+h&aelig;bbe &middot;</p></div2> 
+<div2 type="sen" n="N31.02.01"><p>&amp; he<lb>
+sceal him &aacute;ndette his misd&aelig;da &thorn;<expan>&aelig;t</expan> se s&aacute;cerd
+w&icirc;te hwilce
+d&aelig;dbote<lb>
+he him t&aelig;cean sceale.</p></div2> 
+<div2 type="sen" n="N31.03.01"><p>&thorn;&aelig;nne sceal se s&aacute;cerd hine acsian
+hwilcne<lb>
+gelefan he to gode h&aelig;bbe &middot; &amp; hine<Note type="codicological">Insert a
+handshift tag here to mark "new ink."</note> m&aelig;nigfealdelice to his sa,<add
+place="interlinear" hand="hand7">w</add>le<lb>
+&thorn;earfe tihtan &middot; &amp;
+mengian &middot; &amp; &thorn;us cw&aelig;&eth;an.</p></div2> 
+<div2 type="sen" n="N31.04.01"><p>Gel&yacute;fst &thorn;u on god &aelig;lmihtigne<lb>
+&amp; on &thorn;one sunu &middot; &amp; on &thorn;one haligan gast.
+R<expan>esp</expan>.</p></div2>
+<div2 type="sen" n="N31.04.02"><p>Gel&yacute;fst &thorn;u
+&thorn;<expan>&aelig;t</expan>
+ealle<lb>
+men sculon arisan on domes d&aelig;g of dea&eth;e R<expan>esp</expan>.</p></div2> 
+<div2 type="sen"
+n="N31.05.01"><p>Of&thorn;ince&eth; &thorn;e ealles<lb>&thorn;&aelig;s &thorn;e
+&thorn;u
+to &yacute;fele h&aelig;fst gedon <add place="interlinear" hand="hand7">&thorn;oht</add>
+&middot; &amp; gecw&aelig;den &middot; &amp; geworht
+R<expan>esp</expan>.</p></div2>
+<div2 type="sen" n="N31.06.01"><p>G&oacute;d<lb>
+hit &thorn;e forgife &middot; &amp; ic mote.</p></div2>
+<div2 type="sen" n="N31.06.02"><p>F&aelig;st &aelig;lcen d&aelig;g to nones &middot;
+&amp; forgag hwit.<lb>
+<milestone unit="fol" n="97r">
+&amp; bebeorh &thorn;e wi&eth; &thorn;a ehta heahs&yacute;nna
+&thorn;<expan>&aelig;t</expan> &thorn;u
+&thorn;a ne fremme.</p></div2>
+<div2 type="sen" n="N31.06.03"><p> &thorn;<expan>&aelig;t</expan> sint
+<space><space><space><space><space><space><add
+place="marginRight" hand="hand8" resp="ajf">9[5]</add><lb>
+mor&eth;or.
+&amp; stala &middot; &amp; m&aelig;ne a&thorn;as &middot; &amp; unriht gitsung
+&middot; 
+&amp; unriht h&aelig;<lb>
+medu &middot; &amp; g&yacute;fernesse &middot; &amp; t&aelig;lnesse &middot; &amp;
+leas
+gewitnesse.</p></div2>
+<div2 type="sen" n="N31.06.04"><p>&amp; eald &thorn;a &middot;
+xii &middot;<lb>&yacute;mbrendagas
+&thorn;e on &middot; xii &middot; mo&thorn;um beo&eth; &middot; &amp; bebeorh
+&thorn;e
+wi&eth;
+liblacas.<lb>
+&amp; att&oacute;rgr&aelig;ftas &middot; &amp; d&yacute;orne leira &middot; &amp;
+twisprecen&yacute;sse &middot; &amp; ofermo<lb>
+diginesse &middot; &amp; gifern&yacute;sse &middot; o&thorn;ra manna eahta &middot;</p>
+</div2>
+<div2 type="sen" n="N31.06.05"><p> &thorn;u &thorn;e beorh
+wi&eth;<lb>
+ealle &thorn;as.</p></div2>  
+<div2 type="sen" n="N31.07.01"><p>&amp; lufa &thorn;inne drihten mid eallum mode
+&middot; &amp; mid
+eallu<expan>m</expan><lb>
+m&aelig;gene &middot; &amp; eallum mihtum &middot; &amp; <add place="inline"
+hand="hand1">i</add>n ealre inweardre heortan
+f&aelig;stlice.<lb>
+&amp; beo earmum manum milde &middot; &amp; man&thorn;w&aelig;re &middot; &amp;
+&aelig;lmesgeorn &middot;
+&amp;<lb>
+c&yacute;ric georn &middot; &amp; teo&thorn;ung georn to godes c&yacute;rcean &middot; 
+&amp; earmum
+man<lb>
+num </p></div2>
+<div2 type="sen" n="N31.08.01"><p>&thorn;onne bi&eth; &middot; god &thorn;e milde
+&middot; &amp;
+bli&eth;e.
+&amp; &thorn;u mid him most &thorn;on<expan>ne</expan><lb>
+rixian on ealra <del rend="erasure" hand="hand1">r</del>wurulda worul &aacute;
+b&uacute;tan
+ende &middot;</p></div2><lb>
+<div2 type="sen" n="N31.09.01"><p><lb><hi rend="od"><hi rend="orncap2">A</hi></hi>nd
+git ic bidde
+&thorn;e &thorn;<expan>&aelig;t</expan> &thorn;u me secge eall
+&thorn;<expan>&aelig;t</expan> &thorn;u to &yacute;fele
+h&aelig;fst geworht<lb>
+for&thorn;am betere &thorn;e is &thorn;<expan>&aelig;t</expan> &thorn;e
+scamige nu
+beforan me anum &middot; &thorn;onne<lb>
+eft on domes <del type="erasure" hand="hand4"><space><space></del><note
+type="textual">2-space erasure</note> d&aelig;ge beforan <del
+type="erasure"
+hand="hand4"><space><space></del><note type="textual">2-space erasure</note> gode
+&middot; &amp; beforan eallum heofen<lb>
+w&acirc;ran &middot; &amp;
+eor&eth;waran &middot; &amp; eac
+helwaran.</p></div2></div1><div1 type="sen" n="N32.01.00"><milestone unit="N"
+n="32.01.00"> <div2 type="sen" n="N32.01.01"><p>&ETH;&aelig;t gedafena&eth;
+&aelig;gwilcu<expan>m</expan><lb>
+s&aacute;cerde &thorn;onne, <add place="interlinear" hand="hand4">&middot; he</add><note
+type="codicological">Written over erasure, possibly of "l".</note> mannum
+f&aelig;sten scrife&eth; &middot; &thorn;<expan>&aelig;t</expan> he w&icirc;te wilc se
+man<lb>sie
+trum &thorn;e untrum welig &thorn;e &thorn;earfa &middot; hu iung he sio o&thorn;&thorn;e
+hu &middot;<lb>
+eald &middot; hw&aelig;&eth;er he sie gehadod &middot; &thorn;e l&aelig;wede &middot;
+&amp; wilce hreowe he
+h&aelig;bbe &middot;<lb>
+&amp; we&thorn;er he sie hegstealdman &middot; &thorn;e h&aelig;medceorl</p></div2>
+<div2
+type="sen"
+n="N32.02.01"><p>on eallum mannu<expan>m</expan> &middot;<lb>behofa&eth;
+gescadwisnesse.
+&thorn;eah &thorn;e h<add place="interlinear" hand="hand4">,i</add>e<note type="textual">2
+dots mark the correction under e; i first written over e.</note> gel&iacute;ce
+s&yacute;nne fremman &middot;</p></div2><lb><div2 type="sen"
+n="N32.03.01"><p>r&iacute;cum
+mannum mon sceal strangor deman &thorn;onne heanu<expan>m</expan> &middot;<lb>
+&aelig;fter canones dome. <space dim="horizontal"
+extent="1"><space><space><space></p></div2></div1> 
+<div1 type="sen" n="N34.01.00"><milestone unit="N" n="34.01.00"> <div2 type="sen"
+n="N34.01.01"><p><hi rend="red"><hi rend="orncap2">S</hi></hi>eo &aelig;reste forletnysse
+is s&yacute;nna.<lb>
+fulwiht.</p></div2>
+<div2 type="sen" n="N34.02.01"><p>Seo &aelig;ftere is godes lufu.</p></div2> <div2
+type="sen" n="N34.03.01"><p>Seo &thorn;ridda is &aelig;lmessan
+w&aelig;stm.</p></div2><lb>
+<div2 type="sen" n="N34.04.01"><p>Seo fi<add place="interlinear"
+hand="hand4">,o</add>r&eth;a is agotennys teara on g&oacute;dre hreowe.</p></div2> <div2
+type="sen" n="N34.05.01"><p>Seo fifta is an<lb>
+detn&yacute;s s&yacute;nna.</p></div2>
+<div2 type="sen" n="N34.06.01"><p>seo s&yacute;xta is geswencedn&yacute;s
+heortan &middot; &amp;
+lichaman.<lb>
+on gewinnum &middot; &amp; on f&aelig;stenum.</p></div2>
+<div2 type="sen" n="N34.07.01"><p>Seo seofo&thorn;e is &thorn;<expan>&aelig;t</expan>
+mon
+his
+&thorn;eawas<lb>
+b&eacute;te for gode.</p></div2>
+<div2 type="sen" n="N34.08.01"><p>Seo eahto&thorn;e  is haligra gebedu for &thorn;one
+s&yacute;nful<lb>
+lan.</p></div2>
+<div2 type="sen" n="N34.09.01"><p>Seo nigo&thorn;e is mildheortn&yacute;s &middot;
+&amp;
+g&oacute;d
+gelefa.</p></div2>
+<div2 type="sen" n="N34.10.01"><p>Seo tio&thorn;e is &thorn;<expan>&aelig;t</expan><lb>
+mon o&thorn;erne hwirfe fram s&yacute;nnum to godes willan.</p></div2> <div2 type="sen"
+n="N34.11.01"><p>Seo &aelig;nd<lb>
+l&yacute;fte &middot; is g&oacute;d forgif&yacute;n&yacute;s &middot;
+&thorn;<expan>&aelig;t</expan>
+&thorn;urh
+&thorn;<expan>&aelig;t</expan> god
+his s&yacute;nna him for<lb>
+g&yacute;fe.</p></div2>
+<div2 type="sen" n="N34.12.01"><p>Seo twelfte is martirhad swa &thorn;am scea&eth;am
+wear&eth; &aelig;t<lb>
+cristes &thorn;rowunga.</p></div2></div1>
+</body>
+</text>
+</tei.2>
+
