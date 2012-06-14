@@ -38,12 +38,14 @@ if (is_null($_SESSION["POST"])) {
     //-->
 </script>
 </head>
-<body>
+<body style="display: inline">
     <div id="container">
 <div id="sidebar">
-    <fieldset>
+    <div class="titles">
+    <legend><b>Tools </b></legend>
+    </div>
+    <fieldset class="sidebar_field">
         <div id="buttons">
-        <legend><b>Tools </b></font></legend>
         <div id="download">
             <?php if(isset($_SESSION["scrubbed"])) : ?>
             <form action='downloader.php' method="post">
@@ -64,8 +66,11 @@ if (is_null($_SESSION["POST"])) {
         </div>
         </fieldset>
         <br />
-        <fieldset>
+        <div class="titles">
             <legend><b>Scrubbing Options </b></font></legend>
+            </div>
+        <fieldset class="sidebar_field">
+            
             <input type="checkbox" name="punctuationbox" <?php if(isset($_SESSION["POST"]["punctuationbox"])) echo "checked" ?>/> Remove Punctuation
             <br /><input type="checkbox" name="digitsbox" <?php if(isset($_SESSION["POST"]["digitsbox"])) echo "checked" ?>/> Remove Digits
             <?php if(preg_match("'<[^>]+>'U", $file) > 0): ?>
@@ -93,9 +98,11 @@ if (is_null($_SESSION["POST"])) {
         </fieldset>
     </form>
     <br />
-
-    <fieldset>
+    <div class="titles">
         <legend><b>Upload </b></font></legend>
+    </div>
+    <fieldset class="sidebar_field">
+        
         <form action="uploader.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="type" value="stopwords" /> 
             <label for="file">Stop Words:</label><br />
@@ -118,12 +125,12 @@ if (is_null($_SESSION["POST"])) {
             <input type="submit" name="consolidations" value="Upload Consolidations" />
         </form>
     </fieldset><br>
-    <div id="info">
-        <a href="http://wheatoncollege.edu/lexomics/"> Lexomics @ Wheaton College</a>
     </div>
 </div>
-
+<span id="main">
+<div class="titles">
 <b>Unscrubbed: </b>
+</div>
 <div id="unscrubbedtext">
 <?php 
     echo htmlspecialchars($file);
@@ -131,7 +138,9 @@ if (is_null($_SESSION["POST"])) {
 </div>
 
 <?php if(isset($_SESSION["scrubbed"])) : ?>
+<div class="titles">
 <b>Scrubbed: </b>
+</div>
 <div id="scrubbedtext">
 <?php 
 	echo $_SESSION["scrubbed"];
@@ -167,9 +176,12 @@ if(isset($_SESSION["consolidations"]))
 ?>
 
 
+</span>
 </div>
 </body>
-
+<div id="info">
+    <a href="http://wheatoncollege.edu/lexomics/"> Lexomics @ Wheaton College</a>
+</div>
 <script type="text/javascript">
     tagSelect(document.getElementById());
 </script>

@@ -1,3 +1,30 @@
+body
+{
+    background-color:#DFE8F6;
+}
+.sidebar_field
+{
+    border-color:#99BBE8;
+    border-style: solid;
+    background-color:#FFFFFF;
+}
+.titles
+{
+    color:#15428b;
+    font-weight:bold; 
+    font-size: 11px;
+    font-family: tahoma,arial,verdana,sans-serif;
+    background: url(white-top-bottom.gif) 0 0 repeat-x;
+    height:15px;
+    line-height: 15px;
+    padding: 5px 3px 4px 5px;
+    border: 1px solid;
+    border-color: #99BBE8;
+}
+#main
+{
+    width:99%;
+}
 #container
 {
     min-width: 810px;
@@ -6,8 +33,8 @@
     height:expression(document.body.clientHeight < 650? "650px": "auto" );
 }
 #sidebar {
-    border-top: 1px solid #000000;
-    border-left: 1px solid #000000;
+    border-top: 1px solid #99BBE8;
+    border-left: 1px solid #99BBE8;
     height: 100%;
     width: 275px;
     float: right;
@@ -15,33 +42,38 @@
     padding: 5px 0 0 5px;
 }
 #buttons {
+    
     position: relative;
 }
 #scrub { 
     position: absolute;
-    top: 25px;
+    top: 8px;
     left: 10px;
     width: 30px;
 }
 #clear { 
     position: absolute;
-    top: 25px;
+    top: 8px;
     left: 80px;
     width: 30px;
 }
 #download { 
     position: absolute;
-    top: 25px;
+    top: 8px;
     left: 148px;
     width: 30px;
 }
 #unscrubbedtext { 
+    border: 1px solid #99BBE8;
+    background-color:#FFFFFF;
     height: 30%;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-bottom: 3%;
+    margin-bottom: 5px;
 }
 #scrubbedtext { 
+    border: 1px solid #99BBE8;
+    background-color:#FFFFFF;
     height: 30%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -80,6 +112,6 @@
     display: inline;
 }
 #info {
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
