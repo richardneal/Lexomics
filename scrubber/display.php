@@ -39,9 +39,11 @@ if (is_null($_SESSION["POST"])) {
 </script>
 </head>
 <body style="display: inline">
-    <div id="container">
+    <div id="header">
+        &nbsp;<b>Scrubber → <a href="http://cs.wheatoncollege.edu/divitext"> diviText</a> → <a href="http://cs.wheatoncollege.edu/treeview"> TreeView</a></b>
+    </div>
 <div id="sidebar">
-    <div class="titles">
+    <div class="sidetitles">
     <legend><b>Tools </b></legend>
     </div>
     <fieldset class="sidebar_field">
@@ -66,7 +68,7 @@ if (is_null($_SESSION["POST"])) {
         </div>
         </fieldset>
         <br />
-        <div class="titles">
+        <div class="sidetitles">
             <legend><b>Scrubbing Options </b></font></legend>
             </div>
         <fieldset class="sidebar_field">
@@ -94,15 +96,13 @@ if (is_null($_SESSION["POST"])) {
                 <br /><input type="checkbox" name="consolidationbox" <?php if(isset($_SESSION["POST"]["consolidationbox"])) echo "checked" ?>/> Consolidate
             <?php endif; ?>
             <br />
-            
+            </form>
         </fieldset>
-    </form>
     <br />
-    <div class="titles">
-        <legend><b>Upload </b></font></legend>
+    <div class="sidetitles">
+        <legend><b>Upload </b></legend>
     </div>
     <fieldset class="sidebar_field">
-        
         <form action="uploader.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="type" value="stopwords" /> 
             <label for="file">Stop Words:</label><br />
@@ -124,10 +124,10 @@ if (is_null($_SESSION["POST"])) {
             <br />
             <input type="submit" name="consolidations" value="Upload Consolidations" />
         </form>
-    </fieldset><br>
+    </fieldset><br />
     </div>
 </div>
-<span id="main">
+<div id="main">
 <div class="titles">
 <b>Unscrubbed: </b>
 </div>
@@ -149,39 +149,63 @@ if (is_null($_SESSION["POST"])) {
 <?php endif; ?>
 
 <div id="buffer">
-
 </div>
 
-<?php 
-if(isset($_SESSION["stopwords"])) {
+
+<?php if(isset($_SESSION["stopwords"])) : ?>
+<div class="bottomtitles">
+    Stop Words:
+</div>
+<?php endif; ?>
+<?php if(isset($_SESSION["lemmas"])) : ?>
+<div class="bottomtitles">
+    Lemmas:
+</div>
+<?php endif; ?>
+<?php if(isset($_SESSION["consolidations"])) : ?>
+<div class="bottomtitles">
+    Consolidations:
+</div>
+<?php endif; ?>
+
+<div id="buffer">
+</div>
+
+<?php if(isset($_SESSION["stopwords"])) : ?>
+    <div id='stopwordtext'>
+    <?php
     $explodedsw = explode(", ", file_get_contents($_SESSION["stopwords"]));
     sort($explodedsw);
     $resultarr = array();
-    echo "<div id='stopwordtext'><b>Stop Words: </b>" . "<br />";
     foreach(array_values($explodedsw) as $swvalue)
         $resultarr[] = $swvalue;
     $result = implode(", ",$resultarr);
-    echo $result . "</div>";
-}
-?>
-
-<?php 
-if(isset($_SESSION["lemmas"]))
-    echo "<div id='lemmatext'><b>Lemmas: </b>" . "<br />" . preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["lemmas"]))) . "<p></div>";
-?>
-
-<?php 
-if(isset($_SESSION["consolidations"]))
-    echo "<div id='consolidationtext'> <b>Consolidations: </b>" . "<br />" . preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["consolidations"]))) . "<p> </div>";
-?>
+    echo $result;
+    ?>
+    </div>
+<?php endif; ?>
 
 
-</span>
+<?php if(isset($_SESSION["lemmas"])) : ?>
+<div id='lemmatext'>
+    <?php echo preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["lemmas"]))) ?>
+</div>
+<?php endif; ?>
+
+<?php if(isset($_SESSION["consolidations"])) : ?>
+<div id='consolidationtext'>
+    <?php echo preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["consolidations"]))) ?>
+</div>
+<?php endif; ?>
+
+</div>
+
+
+<div id="info">
+    &nbsp;<a href="http://wheatoncollege.edu/lexomics/"> Lexomics @ Wheaton College</a>
 </div>
 </body>
-<div id="info">
-    <a href="http://wheatoncollege.edu/lexomics/"> Lexomics @ Wheaton College</a>
-</div>
+
 <script type="text/javascript">
     tagSelect(document.getElementById());
 </script>
