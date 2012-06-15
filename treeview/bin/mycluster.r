@@ -1,3 +1,6 @@
+# THIS FILE HAS BEEN REPLACED BY clustr1.r
+
+
 #This section of the code runs the actual cluster analysis.
 
 #8-3-11  (dbass) Merged Donald and Amos's comments and code
@@ -40,7 +43,7 @@
 myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
                       metric = "euclidean" , method = "average" ,
                       output.type = "pdf", output.file = "" , main = "",
-                      input.transposed = TRUE )
+                      input.transposed = TRUE, p=2)
 {
 
         ## List of possible distance metrics
@@ -63,7 +66,7 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
     library(stats)
      #change this for the text you'd like to input
     input.data <- read.table(as.character(input.file), header=T,
-        comment.char="", row.names=1, sep="\t",quote="")
+        comment.char="", row.names=1, sep="\t", quote="")
 
     #tTable <- ifelse( input.transposed, input.data, t( input.data ) )
     if ( input.transposed )
@@ -93,7 +96,7 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
     }
     # else 0
 
-    dist.tTable <- dist(relFreq , method = metric)
+    dist.tTable <- dist(relFreq , method = metric, p=p)
 
     hCluster <- hclust(dist.tTable, method = method)
 

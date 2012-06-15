@@ -78,7 +78,7 @@ addAnnotationBranch <- function(indent, id)
 	IDstring <- paste(IDstring, openXMLElement("annotation", indent), sep = "")
 	indent <- indent + 1
 	IDstring <- paste(IDstring, oneLineXMLElement("desc", "___", indent), sep = "")
-	IDstring <- paste(IDstring, oneLineXMLElement("uri", "", indent), sep = "")
+	#IDstring <- paste(IDstring, oneLineXMLElement("uri", "", indent), sep = "")
 	indent <- indent - 1
 	IDstring <- paste(IDstring, closeXMLElement("annotation", indent), sep = "")
 }
@@ -99,7 +99,7 @@ addAnnotationLeaf <- function(indent)
 	IDstring <- openXMLElement("annotation", indent)
 	indent <- indent + 1
 	IDstring <- paste(IDstring, oneLineXMLElement("desc", "___", indent), sep = "")
-	IDstring <- paste(IDstring, oneLineXMLElement("uri", "", indent), sep = "")
+	#IDstring <- paste(IDstring, oneLineXMLElement("uri", "", indent), sep = "")
 	indent <- indent - 1
 	IDstring <- paste(IDstring, closeXMLElement("annotation", indent), sep = "")
 }
