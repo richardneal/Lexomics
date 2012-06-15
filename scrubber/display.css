@@ -38,6 +38,7 @@ body
     border: 1px solid;
     border-color: #99BBE8;
     margin-right: 2px;
+    margin-left: 2px;
 }
 .bottomtitles
 {
@@ -145,8 +146,6 @@ body
 #info {
     color:#15428b;
     font-weight:bold; 
-    font-size: 11px;
-    font-family: tahoma,arial,verdana,sans-serif;
     background: url(white-top-bottom.gif) 0 0 repeat-x;
     height:15px;
     width:100%;
