@@ -1,6 +1,8 @@
 <html> 
 <head> 
-<title>Treeview 1.1</title>
+<title>Treeview</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+</script>
 <link rel="stylesheet" type="text/css" href="ext/resources/css/ext-all-notheme.css" /> 
 <link rel="stylesheet" type="text/css" href="ext/resources/css/yourtheme.css"/>
 <script type="text/javascript" src="ext/adapter/ext/ext-base.js"></script>
@@ -33,7 +35,30 @@ url, 'popUpWindow', 'height = 200, width = 400, left = 10, top = 10, resizable =
 		min-width: 500px;
 		padding: 0px;
 		padding-bottom:20px;
+		!height: 100%;
 		padding-top: 20px;
+	}
+
+
+	table{
+		font-size: 12px;
+		font-family: tahoma,arial,helvetica;
+	}
+
+	input{
+		border-style: solid;
+		border-width:1px;
+		border-color: #B5B8C8;
+		padding: 2px;
+	}
+
+	#labelTable{
+		text-indent: 10px;
+		padding-left: 20px;
+	}
+
+	#x-btn-mc{
+		text-align: center;
 	}
 
 	#dendro{
@@ -47,6 +72,9 @@ url, 'popUpWindow', 'height = 200, width = 400, left = 10, top = 10, resizable =
 		margin-right: auto;
 		height: 100%;
     }
+
+	svg{}
+
 	#info {
     	color:#15428b;
     	font-weight:bold; 
@@ -79,7 +107,7 @@ url, 'popUpWindow', 'height = 200, width = 400, left = 10, top = 10, resizable =
 <div id="dendro"></div>
 
 <div id="info">
-	<a href="JavaScript:window.open('http://www.wheatoncollege.edu/lexomics');">Lexomic @ Wheaton College</a>
+	<a href="JavaScript:window.open('http://www.wheatoncollege.edu/lexomics');">Lexomics @ Wheaton College</a>
 </div>
 </body> 
 </html> 

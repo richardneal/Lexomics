@@ -8,7 +8,7 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
                       metric = "euclidean" , method = "average" ,
                       output.type = "pdf", outputfile = "Dendogram" , 
 		      main = "Dendogram",header=T, comment.char="", 
-		      row.names=1, p=2, type='tsv', addLabels=FALSE,
+		      row.names=1, p=2, type='tsv',
 		      labelFile=NULL){
 
 	
@@ -61,10 +61,6 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
 
     # change the names of the labels
     #row.names(relFreq) <- c("a","b","c","d","e","f","g","h","i","j"...)
-    if (addLabels==1)
-    {
-	# read in csv labels file (labelFile)
-	# check to be sure that there are the correct number of labels
 	if (file.info(labelFile)$size!=0)
 	{
 	    tempLABELS <- read.csv(as.character(labelFile), sep=",", as.is=TRUE, header=FALSE);
@@ -72,7 +68,6 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
 	    {
 	        row.names(relFreq) <- tempLABELS;
 	    }	
-	}
     }
 
 
@@ -103,8 +98,17 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
     else if (output.type=="phyloxml"){
 	outfilename <- paste(outputfile,sep="");
 	hClustToXML(hCluster, outfilename, TRUE, metric, method)
-    }
-
+   
+	}
     else{}
+
+	# return the row labels as a string 
+	str<-"<r>";
+	for (i in row.names(relFreq)) {
+		str<-paste(str,i,sep=",");
+	}	
+
+	return (str);
+
 
 }

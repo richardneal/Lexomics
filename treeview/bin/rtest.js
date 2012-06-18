@@ -79,12 +79,29 @@ Ext.onReady( function() {
 
     // hidden textfield that hold the input file type
     hiddentype=new Ext.form.Hidden({
-	xtype: 'hidden',
-	name:'type',     // used by $_POST['type']
-	value: ''        // this is set when a file is chosen to be uploaded
+		xtype: 'hidden',
+		name:'type',     // used by $_POST['type']
+		value: ''        // this is set when a file is chosen to be uploaded
 		         // which is under the 'fileselected' listener in the 
 			 // declaration of filefield
     });
+
+	// make labels collapsible
+	labelsField=new Ext.form.Checkbox({
+		xtype: 'checkbox',
+		checked: false,
+		boxLabel: 'Customize Labels',
+		hidden: true,
+		listeners: {
+			check: function(){
+				if (labelsField.getValue() == true)
+				{
+					labels.show();	
+				}
+				else labels.hide();
+			}
+		}
+	});
 
 
     // field that will be added to the form for uploading the file
@@ -99,19 +116,43 @@ Ext.onReady( function() {
 	value: '',
 	listeners:{
 	    'fileselected': function(){ // when the file is changed
+			labelsField.hide();
+			labelsField.setValue(false);
+			labels.hide();	
 		    var form = Ext.getCmp('form'); // get the form
-		    var ftype = this.value.split("."); // get the extension
-		    switch (ftype[ftype.length-1]){
-		    // In the future this should also allow other file types...
-		    //  eg.) .csv or .txt that are delimited by whitespace
-			case 'tsv': // change form to deal with .tsv input
-				hiddentype.setValue('tsv'); // sets value fo POST
+		    var ftype = this.value.split("."); // get the extension	
+			hiddentype.setValue(ftype[ftype.length-1]); // sets value for POST
+		    if (ftype[ftype.length-1]=='xml'){
+                        	// when anything else is selected, hide them
+                dendrotitle   .hide();
+                methodcombo   .hide();
+				labels.hide();
+				labelsField.setValue(false);
+				labelsField.hide();
+                metriccombo   .hide();
+				minpow	      .hide();
+                typecombo     .hide();
+				if(typecombo.getValue() == 'pdf') 
+				//the sliders are hidden when pdf is the output type,
+				// and switching to using a phyloxml input type stops
+                        	// pdf from being the output, so it the output is pdf 
+				//when the input type changes the sliders need to be
+				// shown
+				{
+					phyloType     .show();
+					xSlider.show();
+					ySlider.show();	
+				}
+				downloadButton.hide();
+			}
+			else { // change form to deal with .tsv input
 				// show the relevent R clustering options
 				// when tsv is selected
                	// methodcombo, etc. are in scope via the closure
+				labels.hide();
+				labelsField.hide();
+				labelsField.setValue(false);
 				dendrotitle   .show();
-			 	labelsQ	      .show();
-				if (labelsQ.getValue()) {labels.show();}
 				methodcombo   .show();
 				metriccombo   .show();
 				if (metriccombo.getValue()=='minkowski')
@@ -132,78 +173,7 @@ Ext.onReady( function() {
 					ySlider.hide();	
 				}
 				downloadButton.hide();
-        		break;
-			case 'xml': // change form to deal with .xml input
-				hiddentype.setValue('xml'); // sets value for POST
-                        	// when anything else is selected, hide them
-                dendrotitle   .hide();
-			 	labelsQ	      .hide();
-				labels	      .hide();	
-                methodcombo   .hide();
-                metriccombo   .hide();
-				minpow	      .hide();
-                typecombo     .hide();
-				if(typecombo.getValue() == 'pdf') 
-				//the sliders are hidden when pdf is the output type,
-				// and switching to using a phyloxml input type stops
-                        	// pdf from being the output, so it the output is pdf 
-				//when the input type changes the sliders need to be
-				// shown
-				{
-					phyloType     .show();
-					xSlider.show();
-					ySlider.show();	
-				}
-				downloadButton.hide();
-                break;
-			case 'csv': // change form to deal with .tsv input
-				// same as .tsv with comma delimeter
-				hiddentype.setValue('csv'); 
-			 	labelsQ	      .show();
-				if (labelsQ.getValue()) {labels.show();}
-                dendrotitle   .show();
-                methodcombo   .show();
-                metriccombo   .show();
-				if (metriccombo.getValue()=='minkowski')
-				{	
-					minpow.show();
-				}
-				else minpow.hide();
-				typecombo     .show();
-				if(typecombo.getValue() == 'pdf')
-				{
-					phyloType     .hide();
-					xSlider.hide();
-					ySlider.hide();	
-				}
-				downloadButton.hide();
-        		break;
-			case 'txt': // change form to deal with .txt input
-				// same as .tsv with white space delimeter
-				hiddentype.setValue('txt'); 
-			 	labelsQ	      .show();
-				if (labelsQ.getValue()) {labels.show();}
-                dendrotitle   .show();
-                methodcombo   .show();
-                metriccombo   .show();
-				if (metriccombo.getValue()=='minkowski')
-				{	
-					minpow.show();
-				}
-				else minpow.hide();
-				typecombo     .show();
-				if(typecombo.getValue() == 'pdf')
-				{
-					phyloType	  .hide();
-					xSlider.hide();
-					ySlider.hide();	
-				}
-				downloadButton.hide();
- 				break;
-			default: // incorrect file type
-				alert(" File type must be .tsv, .csv, or .xml ");
-				break;
-		}
+			}
 		form.doLayout();
 	    }
 	}
@@ -294,7 +264,10 @@ Ext.onReady( function() {
 						xSlider.hide();
 						phyloType.hide();
 						ySlider.hide();	
-						downloadButton.hide()
+						downloadButton.hide();
+						labels.hide();
+						labelsField.hide();
+						labelsField.setValue(false);
         				break;
 					default :
                         // when anything else is selected show the sliders and download XML button
@@ -310,116 +283,30 @@ Ext.onReady( function() {
         }
     });
 
-/*
-    // radio button group that allows only one selection at a time
-    typeradio = new Ext.form.RadioGroup({
-	hidden:false,
-        fieldLabel: "File type",
-    
-        // each item is a radio button (Ext.form.Radio)
-        items: [
-            // boxLabel is the shown name
-            // name is the id to the server accesed by $_POST['type']
-            // inputValue is the value of $_POST['type']
-            {boxLabel:'Merged TSV',name:'type',inputValue:'tsv',checked:true},
-            {boxLabel:'PhyloXML',name:'type',inputValue:'xml'}
-        ],
-        listeners: {
-            // listeners are fire when events happen
-            change: function( g,r ) {
-                // g: the radio button group, ie 'this'
-                // r: the clicked radio button
-                // when a different radio button is selected the 
-                // change event is fired
-
-                // get the form component, could ignore this line
-                // and the variable 'form' would still be in closure
-                // of this function, this form is local however,
-                // this line literally adds nothing of value to the code
-                var form = Ext.getCmp( 'form' );
-
-                // r.inputValue corresponds to the inputValue of
-                // each radio button defined above in items
-                switch( r.inputValue )
-                {
-                    case 'tsv' :
-                        // show the relevent R clustering options
-                        // when tsv is selected
-                        // methodcombo, etc. are in scope via the closure
-                        dendrotitle   .show();
-                        methodcombo   .show();
-                        metriccombo   .show();
-			minpow.hide();
-			typecombo     .show();
-			if(typecombo.getValue() == 'pdf')
-			//the sliders are hidden when pdf is the output type, 
-			//and switching to using a phyloxml input type stops pdf
-			// from being the output, so it the output is pdf when
-			// the input type changes back to tsv the sliders need 
-			//to be rehidden
-			{
-				xSlider.hide();
-				ySlider.hide();	
-			}
-			downloadButton.show();
-        		break;
-                    default :
-                        // when anything else is selected, hide them
-                        dendrotitle   .hide();
-                        methodcombo   .hide();
-                        metriccombo   .hide();
-			minpow	      .hide();
-                        typecombo     .hide();
-			if(typecombo.getValue() == 'pdf') 
-			//the sliders are hidden when pdf is the output type,
-			// and switching to using a phyloxml input type stops
-                        // pdf from being the output, so it the output is pdf 
-			//when the input type changes the sliders need to be
-			// shown
-			{
-				xSlider.show();
-				ySlider.show();	
-			}
-			downloadButton.hide();
-                        break;
-                }
-                // tell the form to rerender
-                form.doLayout();
-            }
-        }
-    }); 
-*/
 
     // field for name of dendrogram
     dendrotitle = new Ext.form.TextField({
         name: 'title',
         fieldLabel: "Dendrogram Title",
         anchor: '100%',
-        value: "Dendrogram"
+        value: "Dendrogram",
     });
 
-    labelsQ = new Ext.form.Checkbox({
-	name: 'addLabels',
-	boxLabel: "Change Leaf Labels?",
-	checked: false,
-	value: false,
-	handler: function() { 
-		if (labels.hidden && labelsQ.getValue()) 
-		{
-			labels.show();
-		}
-		else labels.hide();
-	}
-	
-    });
-
+	// this is the dive where the table will be places... 
     labels = new Ext.form.TextArea({
-	name:'labels',
-	hidden: true,
-	fieldLabel: "Labels (separated by commas)",
-	anchor: '100%',
-
+		name:'labels',
+		hidden: true,
+		fieldLabel: "Labels (separated by commas)",
+		anchor: '100%',
+		value:'',
     });
+
+	
+	// This is what the php will refer to
+	labels2 = new Ext.form.TextArea({
+		name:'labels2',
+		hidden: true,
+	});
 
     // Field for Minkowski power
     minpow = new Ext.form.NumberField({
@@ -463,7 +350,29 @@ Ext.onReady( function() {
             // remove contents of the dendro div
 			//alert(document.getElementById('dendro').innerHTML);
 			document.getElementById('dendro').innerHTML="";
-
+			var idstr="";
+			var labelstr="";
+			var i;
+			if(document.getElementById("id_0"))
+			{
+				for (i=0; i<rowlabels.length; i++){
+					idstr="id_";
+					idstr=idstr.concat(i);
+					if (document.getElementById(idstr).value)
+					{
+						labelstr=labelstr.concat(document.getElementById(idstr).value);
+					}
+					else 
+					{
+						labelstr=labelstr.concat(rowlabels[i]);
+					}
+					if (i!=(rowlabels.length-1))
+					{
+						labelstr=labelstr.concat(",");
+					}
+				}
+				labels2.setValue(labelstr);
+			}
             // create an Ajax request
             Ext.Ajax.request({
                 url: 'runcluster.php',  // url with script
@@ -503,6 +412,9 @@ Ext.onReady( function() {
                     if ( json.type == 'phyloxml' )
                     {
 						document.getElementById('container').style.height="auto";
+						labels.setValue(json.rowlabels);
+						labelsField.show();
+						
                         // use JSPhyloSvg to render the raw XML into
                         // an SVG object in the 'dendro' div on the page
 						
@@ -513,14 +425,36 @@ Ext.onReady( function() {
 							svgcanvas = new Smits.PhyloCanvas({
                             	phyloxml: json.output,
                         	},'dendro',xSlider.getValue(),ySlider.getValue());
+							var bufHeight=ySlider.getValue();
+							bufHeight=bufHeight+(0.15*bufHeight);
+							$('svg').css("height",bufHeight);
+							$('#dendro').css("height",bufHeight);
 						}
 						else
 						{
 						// IF CIRCULAR
-						svgcanvas = new Smits.PhyloCanvas({
-                        	phyloxml: json.output,
-                        },'dendro',xSlider.getValue(),ySlider.getValue(),'circular');
+							svgcanvas = new Smits.PhyloCanvas({
+                        		phyloxml: json.output,
+                        	},'dendro',xSlider.getValue(),ySlider.getValue(),'circular');
 						}
+						rowlabels=json.rowlabels.split(",");
+						var i=0;
+						var stri = "<table id=\"labelTable\">";
+						for (i=0;i<(rowlabels).length;i++)
+						{
+							stri=stri.concat("<tr>");
+							stri=stri.concat("<td>");
+							stri=stri.concat(rowlabels[i]);
+							stri=stri.concat("</td>");	
+							stri=stri.concat("<td><input type=text ");
+							stri=stri.concat("id=\"id_");
+							stri=stri.concat(i);
+							stri=stri.concat("\"/></td>");
+							stri=stri.concat("</tr>");
+						}
+						document.getElementById("x-form-el-ext-comp-1009").innerHTML = stri;
+
+
                     }
 
                     // if the type was svg, just update the 'dendro' div
@@ -573,14 +507,14 @@ Ext.onReady( function() {
     form = new Ext.form.FormPanel({ 
         id: 'form', // Ext id to identify the form internally
 		frame: true,// gives blueish hue
-		title: 'TreeView 1.1', // puts title at top
+		title: 'TreeView 1.2', // puts title at top
         width: 500, // width of panel
         padding: 5, // internal padding of the elements in the form,
                     // things are less squished to the edges
         // items puts form components (comboboxes,radiogroups,checkboxes,
         // ...) into the form and in the order they appear in the array
         items:
-        [hiddentype,filefield,dendrotitle,methodcombo,metriccombo,minpow,typecombo,xSlider,ySlider,phyloType,labelsQ,labels],
+        [hiddentype,filefield,dendrotitle,methodcombo,metriccombo,minpow,typecombo,xSlider,ySlider,phyloType,labelsField,labels,labels2],
         fbar: [getButton, downloadButton], // add the Get Dendro button and download XML button onto the bottom of
                         // the form in the footer bar
         layout: 'form', // 'form' layout type allows elements to be 

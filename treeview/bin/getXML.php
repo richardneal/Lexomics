@@ -33,18 +33,12 @@ $infile = "{$_FILES['file']['tmp_name']}";
 
 // if the user elected to add new leaf labels, create file
 // containing the user input values
-if ($_POST['addLabels'])
-{
    $addLabels=TRUE;
    $labelFile="/tmp/labelFile" . rand(0,10000);
+error_log($labelFile);
    $fp = fopen($labelFile,'w');
-   fwrite($fp,$_POST['labels']);
+   fwrite($fp,$_POST['labels2']);
    fclose($fp);
-}
-else {
-    $labelFile = NULL;
-    $addLabels = FALSE;
-}
 
 
 // if uploading a tsv indicated by the POST['type']
@@ -64,10 +58,15 @@ if ( $_POST['type']=='tsv' or $_POST['type']=='csv' or $_POST['type']=='txt')
     // flags do nothing,
     // future: make flags work, right now, R script assumes current order
     $rArgs = "-f $infile -m $method -d $metric -o $output -t \"$title\" 
-	-p $p -s $type -b $addLabels -l $labelFile";
+	-p $p -s $type -l $labelFile";
 
     // the file name is the expected output of clustr.r
-    $file = callR( "clustr.r", "$rArgs" );
+    $stdout = callR( "clustr.r", "$rArgs" );
+	
+	$stdout=explode(",<r>,",$stdout);
+
+	$file = $stdout[0];
+	$rowlabels = $stdout[1];
 
 
 

@@ -23,6 +23,7 @@ function openfile( $f = "", $m = "" )
     return $contents;
 }
 
+
 // init array to return to the browser
 $json = Array();
 
@@ -31,18 +32,12 @@ $infile = "{$_FILES['file']['tmp_name']}";
 
 // if the user elected to add new leaf labels, create file
 // containing the user input values
-if ($_POST['addLabels'])
-{
    $addLabels=TRUE;
    $labelFile="/tmp/labelFile" . rand(0,10000);
+error_log($labelFile);
    $fp = fopen($labelFile,'w');
-   fwrite($fp,$_POST['labels']);
+   fwrite($fp,$_POST['labels2']);
    fclose($fp);
-}
-else {
-    $labelFile = NULL;
-    $addLabels = FALSE;
-}
 
 // if uploading a tsv or csv indicated by the POST['type']
 if ( $_POST['type']=='tsv' or $_POST['type']=='csv' or $_POST['type']=='txt')
@@ -61,11 +56,17 @@ if ( $_POST['type']=='tsv' or $_POST['type']=='csv' or $_POST['type']=='txt')
     // flags do nothing,
     // future: make flags work, right now, R script assumes current order
     $rArgs = "-f $infile -m $method -d $metric -o $output -t \"$title\"
-	-p $p -s $type -b $addLabels -l $labelFile";
+	-p $p -s $type -l $labelFile";
 #    $rArgs = "-f $infile -m $method -d $metric -o $output -t \"$title\"";
 
-    // the file name is the expected output of clustr.r
-    $file = callR( "clustr.r", "$rArgs" );
+	// stdout = <filename>,<r>,<rowlabel>,<rowlabel2> ...
+    $stdout= callR( "clustr.r", "$rArgs" );
+
+	$stdout=explode(",<r>,",$stdout);
+	
+	// $file: name of the file on the server
+	$file = $stdout[0];
+	$rowlabels = $stdout[1];
 
     // if the output is not pdf, open the file and dump contents to
     // json object
@@ -75,6 +76,7 @@ if ( $_POST['type']=='tsv' or $_POST['type']=='csv' or $_POST['type']=='txt')
 
         $json['type'] = $output;
         $json['output'] = $out;
+		$json['rowlabels'] = $rowlabels;
     }
     // if the output file is a pdf, we need to open the file and 
     // download the string as an application/pdf
