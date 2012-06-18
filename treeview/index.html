@@ -1,0 +1,113 @@
+<html> 
+<head> 
+<title>Treeview</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+</script>
+<link rel="stylesheet" type="text/css" href="ext/resources/css/ext-all-notheme.css" /> 
+<link rel="stylesheet" type="text/css" href="ext/resources/css/yourtheme.css"/>
+<script type="text/javascript" src="ext/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="ext/ext-all-debug.js"></script> 
+<script type="text/javascript" src="jsphylo/jsphylosvg.js"></script> 
+<script type="text/javascript" src="jsphylo/raphael-min.js"></script> 
+
+<script type="text/javascript" src="rtest.js"></script> 
+<script type="text/javascript" src="./ext/examples/ux/fileuploadfield/FileUploadField.js"></script>
+
+<script type="text/javascript">
+function newPopup(url){
+	popupWindow = window.open(
+url, 'popUpWindow', 'height = 200, width = 400, left = 10, top = 10, resizable = yes, scrollbars = yes, toolbar = no, menubar = no, location = no, directories = no, status = no')
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="./ext/examples/ux/fileuploadfield/css/fileuploadfield.css">
+<link rel="stylesheet" type="text/css" href="ext/examples/shared/examples.css" /> 
+
+    <style type="text/css"> 
+	html{
+		height: 100%;
+		position: absolute;
+		width: 100%;
+		padding: 0px;
+	}
+	body{
+		min-height:300px;
+		min-width: 500px;
+		padding: 0px;
+		padding-bottom:20px;
+		!height: 100%;
+		padding-top: 20px;
+	}
+
+
+	table{
+		font-size: 12px;
+		font-family: tahoma,arial,helvetica;
+	}
+
+	input{
+		border-style: solid;
+		border-width:1px;
+		border-color: #B5B8C8;
+		padding: 2px;
+	}
+
+	#labelTable{
+		text-indent: 10px;
+		padding-left: 20px;
+	}
+
+	#x-btn-mc{
+		text-align: center;
+	}
+
+	#dendro{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+    #container {
+		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100%;
+    }
+
+	svg{}
+
+	#info {
+    	color:#15428b;
+    	font-weight:bold; 
+    	font-size: 11px;
+    	font-family: tahoma,arial,verdana,sans-serif;
+    	background: url(white-top-bottom.gif) 0 0 repeat-x;
+    	height:15px;
+    	width:100%;
+    	line-height: 15px;
+    	padding: 5px 0px 4px 0px;
+    	border: 0px solid;
+    	border-color: #99BBE8;
+    	!position: absolute;
+    	bottom: 0;
+	}
+	.header {
+		background-color: #cde;	
+		margin-top: 0px;
+		font-size: 30px;
+	}
+    </style> 
+
+
+</head> 
+
+<body> 
+<div id="container">
+    <div id="filediv"></div>
+</div>
+<div id="dendro"></div>
+
+<div id="info">
+	<a href="JavaScript:window.open('http://www.wheatoncollege.edu/lexomics');">Lexomics @ Wheaton College</a>
+</div>
+</body> 
+</html> 
