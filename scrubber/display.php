@@ -40,7 +40,7 @@ if (is_null($_SESSION["POST"])) {
 </head>
 <body style="display: inline">
     <div id="header">
-        &nbsp;<b>Scrubber → <a href="http://cs.wheatoncollege.edu/divitext"> diviText</a> → <a href="http://cs.wheatoncollege.edu/treeview"> TreeView</a></b>
+        &nbsp;<b>Scrubber</b>
     </div>
 <div id="sidebar">
     <div class="sidetitles">
