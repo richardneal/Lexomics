@@ -91,11 +91,13 @@ body
 #unscrubbedtext { 
     border: 1px solid #99BBE8;
     background-color:#FFFFFF;
+    min-height:20%;
     height: 30%;
     overflow-y: auto;
     overflow-x: hidden;
     margin-bottom: 5px;
     padding-left: 3px;
+    resize:vertical;
 }
 #scrubbedtext { 
     border: 1px solid #99BBE8;
@@ -105,6 +107,7 @@ body
     overflow-x: hidden;
     margin-bottom: 5px;
     padding-left: 3px;
+    resize:vertical;
 }
 #buffer
 {
