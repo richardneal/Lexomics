@@ -13,7 +13,6 @@ Open Source License
 
 Sitewide:
 	Icon and .ico
-	Theme like divitext
 
 Other:
 	Talk to Tom about Ra

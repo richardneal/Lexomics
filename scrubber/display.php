@@ -14,9 +14,6 @@ if (is_null($_SESSION["POST"])) {
     $_SESSION["POST"]["lowercasebox"] = "on";
     if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;"))
         $_SESSION["POST"]["specialbox"] = "on";
-    $_SESSION["POST"]["stopwordbox"] = "off";
-    $_SESSION["POST"]["lemmabox"] = "off";
-    $_SESSION["POST"]["consolidationbox"] = "off";
     $_SESSION["POST"]["tags"] = "keep";
 }
 ?>
@@ -30,7 +27,7 @@ if (is_null($_SESSION["POST"])) {
         function hideDiv(ischecked, tohide) {
             //var formatting = document.getElementById("formattingbox");
             //var tags = document.getElementById("tagBox");
-            if(ischecked.checked == 1) 
+            if(ischecked && ischecked.checked == 1) 
                tohide.style.display = 'inline'; 
             else
                 tohide.style.display = 'none';
@@ -209,8 +206,8 @@ if (is_null($_SESSION["POST"])) {
 
 <script type="text/javascript">
     hideDiv(document.getElementById("formattingbox"), document.getElementById("tagBox"));
-    hideDiv(document.getElementById("stopwordbox"), document.getElementById("stopwordsupload"));
-    hideDiv(document.getElementById("lemmabox"), document.getElementById("lemmaupload"));
-    hideDiv(document.getElementById("consolidationbox"), document.getElementById("consolidationupload"));
+    hideDiv(document.getElementsByName("stopwordbox")[0], document.getElementsByName("stopwordsupload")[0]);
+    hideDiv(document.getElementsByName("lemmabox")[0], document.getElementsByName("lemmaupload")[0]);
+    hideDiv(document.getElementsByName("consolidationbox")[0], document.getElementsByName("consolidationupload")[0]);
 </script>
 </html>
