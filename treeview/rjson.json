@@ -1,0 +1,9 @@
+{
+    metrics: [ "euclidean", "maximum", "manhattan", "canberra", "binary",
+    "minkowski" ],
+
+    methods: [ "ward", "single", "complete", "average", "mcquitty", "median",
+    "centroid" ],
+
+    filetypes: [ "pdf", "svg", "phyloxml" ]
+}
