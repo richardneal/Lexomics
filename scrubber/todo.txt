@@ -28,3 +28,8 @@ Demo:
 	Resize scrubber windows
 	Hide l/sw/c on uncheck
 	Alert box for big files
+
+
+grep for &.?;
+
+readmes for github pages

@@ -42,7 +42,7 @@ if ( !is_dir( SCRUB_DIR ) )
 
 if ((($_FILES["file"]["type"] == "text/plain")
 || ($_FILES["file"]["type"] == "text/html")
-&& ($_FILES["file"]["type"] == "text/xml")))
+|| ($_FILES["file"]["type"] == "text/xml")))
   {
   if ($_FILES["file"]["error"] > 0)
     {
@@ -90,8 +90,8 @@ elseif ($_FILES["file"]["type"] == "application/vnd.openxmlformats-officedocumen
 else
   {
     echo $_FILES["file"]["type"];
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
-    die();
+    //header('Location: ' . $_SERVER['HTTP_REFERER']);
+    //die();
   }
 ob_flush();
 ?>

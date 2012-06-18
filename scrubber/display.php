@@ -14,9 +14,9 @@ if (is_null($_SESSION["POST"])) {
     $_SESSION["POST"]["lowercasebox"] = "on";
     if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;"))
         $_SESSION["POST"]["specialbox"] = "on";
-    $_SESSION["POST"]["stopwordbox"] = "on";
-    $_SESSION["POST"]["lemmabox"] = "on";
-    $_SESSION["POST"]["consolidationbox"] = "on";
+    $_SESSION["POST"]["stopwordbox"] = "off";
+    $_SESSION["POST"]["lemmabox"] = "off";
+    $_SESSION["POST"]["consolidationbox"] = "off";
     $_SESSION["POST"]["tags"] = "keep";
 }
 ?>
@@ -27,13 +27,13 @@ if (is_null($_SESSION["POST"])) {
 <link rel="stylesheet" type="text/css" href="display.css"/>
 <script type="text/javascript">
     <!--
-        function tagSelect() {
-            var formatting = document.getElementById("formattingbox");
-            var tags = document.getElementById("tagBox");
-            if(formatting.checked == 1) 
-               tags.style.display = 'inline'; 
+        function hideDiv(ischecked, tohide) {
+            //var formatting = document.getElementById("formattingbox");
+            //var tags = document.getElementById("tagBox");
+            if(ischecked.checked == 1) 
+               tohide.style.display = 'inline'; 
             else
-                tags.style.display = 'none';
+                tohide.style.display = 'none';
         }
     //-->
 </script>
@@ -69,57 +69,58 @@ if (is_null($_SESSION["POST"])) {
         </fieldset>
         <br />
         <div class="sidetitles">
-            <legend><b>Scrubbing Options </b></font></legend>
+            <legend><b>Scrubbing Options </b></legend>
             </div>
         <fieldset class="sidebar_field">
             
             <input type="checkbox" name="punctuationbox" <?php if(isset($_SESSION["POST"]["punctuationbox"])) echo "checked" ?>/> Remove Punctuation
             <br /><input type="checkbox" name="digitsbox" <?php if(isset($_SESSION["POST"]["digitsbox"])) echo "checked" ?>/> Remove Digits
             <?php if(preg_match("'<[^>]+>'U", $file) > 0): ?>
-            <br /><input type="checkbox" name="formattingbox" id="formattingbox" <?php if(isset($_SESSION["POST"]["formattingbox"])) echo "checked" ?> onClick="tagSelect()"/> Strip Tags
+            <br /><input type="checkbox" name="formattingbox" id="formattingbox" <?php if(isset($_SESSION["POST"]["formattingbox"])) echo "checked" ?> onClick="hideDiv(this, tagBox)"/> Strip Tags
             <div id="tagBox" style=<?php if(is_null($_SESSION["POST"]["formattingbox"])) echo "display: none;" ?>/>
                 <br /><input type="radio" name="tags" value="keep" <?php if($_SESSION["POST"]["tags"] == "keep") echo "checked" ?> /> Keep Words Inside Tags<br />
                 <input type="radio" name="tags" value="discard" <?php if($_SESSION["POST"]["tags"] == "discard") echo "checked" ?> /> Discard Words Inside Tags
             </div>
             <?php endif; ?>
             <br /><input type="checkbox" name="lowercasebox" <?php if(isset($_SESSION["POST"]["lowercasebox"])) echo "checked" ?>/> Make Lowercase
-            <?php if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;")) : ?>
+            <?php if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;") or strpos($file, "&amp;")) : ?>
                 <br /><input type="checkbox" name="specialbox" <?php if(isset($_SESSION["POST"]["specialbox"])) echo "checked" ?>/> Format Special Characters
-            <?php endif; ?>
-            <?php if(isset($_SESSION["stopwords"])) : ?>
-                <br /><input type="checkbox" name="stopwordbox" <?php if(isset($_SESSION["POST"]["stopwordbox"])) echo "checked" ?>/> Remove Stopwords
-            <?php endif; ?>
-            <?php if(isset($_SESSION["lemmas"])) : ?>
-                <br /><input type="checkbox" name="lemmabox" <?php if(isset($_SESSION["POST"]["lemmabox"])) echo "checked" ?>/> Lemmatize
-            <?php endif; ?>
-            <?php if(isset($_SESSION["consolidations"])) : ?>
-                <br /><input type="checkbox" name="consolidationbox" <?php if(isset($_SESSION["POST"]["consolidationbox"])) echo "checked" ?>/> Consolidate
             <?php endif; ?>
             <br />
             </form>
         </fieldset>
     <br />
     <div class="sidetitles">
-        <legend><b>Upload </b></legend>
+        <legend><b>Stop Words </b></legend>
     </div>
     <fieldset class="sidebar_field">
-        <form action="uploader.php" method="post" enctype="multipart/form-data">
+        <input type="checkbox" name="stopwordbox" <?php if(isset($_SESSION["POST"]["stopwordbox"])) echo "checked" ?> onClick="hideDiv(this, stopwordsupload)"/> Remove Stopwords
+        <form action="uploader.php" method="post" enctype="multipart/form-data" name="stopwordsupload">
             <input type="hidden" name="type" value="stopwords" /> 
-            <label for="file">Stop Words:</label><br />
             <input type="file" name="file" id="file" required="required"/> 
             <br />
             <input type="submit" name="stopwords" value="Upload Stop Words" />
         </form>
-        <form action="uploader.php" method="post" enctype="multipart/form-data">
+    </fieldset><br />
+    <div class="sidetitles">
+        <legend><b>Lemmas </b></legend>
+    </div>
+    <fieldset class="sidebar_field">
+        <input type="checkbox" name="lemmabox" <?php if(isset($_SESSION["POST"]["lemmabox"])) echo "checked" ?> onClick="hideDiv(this, lemmaupload)" /> Lemmatize
+        <form action="uploader.php" method="post" enctype="multipart/form-data" name="lemmaupload">
             <input type="hidden" name="type" value="lemmas" /> 
-            <label for="file">Lemmas:</label><br />
             <input type="file" name="file" id="file" required="required"/> 
             <br />
             <input type="submit" name="lemmas" value="Upload Lemmas" />
         </form>
-        <form action="uploader.php" method="post" enctype="multipart/form-data">
+    </fieldset><br />
+    <div class="sidetitles">
+        <legend><b>Consolidations </b></legend>
+    </div>
+    <fieldset class="sidebar_field">
+        <input type="checkbox" name="consolidationbox" <?php if(isset($_SESSION["POST"]["consolidationbox"])) echo "checked" ?> onClick="hideDiv(this, consolidationupload)"/> Consolidate
+        <form action="uploader.php" method="post" enctype="multipart/form-data" name="consolidationupload">
             <input type="hidden" name="type" value="consolidations" /> 
-            <label for="file">Consolidations:</label><br />
             <input type="file" name="file" id="file" required="required"/> 
             <br />
             <input type="submit" name="consolidations" value="Upload Consolidations" />
@@ -207,6 +208,9 @@ if (is_null($_SESSION["POST"])) {
 </body>
 
 <script type="text/javascript">
-    tagSelect(document.getElementById());
+    hideDiv(document.getElementById("formattingbox"), document.getElementById("tagBox"));
+    hideDiv(document.getElementById("stopwordbox"), document.getElementById("stopwordsupload"));
+    hideDiv(document.getElementById("lemmabox"), document.getElementById("lemmaupload"));
+    hideDiv(document.getElementById("consolidationbox"), document.getElementById("consolidationupload"));
 </script>
 </html>

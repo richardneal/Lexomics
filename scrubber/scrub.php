@@ -125,8 +125,8 @@ function formatSpecial($text, $lowercase) {
 		return $text;
 	}
 	else {
-		$chararray = array("&ae;", "&d;", "&t;", "&e;", "&amp;", "&AE;", "&D;", "&T;");
-		$uniarray = array("æ", "ð", "þ", "e", "&", "Æ", "Ð", "Þ");
+		$chararray = array("&ae;", "&d;", "&t;", "&e;", "&AE;", "&D;", "&T;");
+		$uniarray = array("æ", "ð", "þ", "e", "Æ", "Ð", "Þ");
 		$text = str_replace($chararray, $uniarray, $text);
 		return $text;
 	}
