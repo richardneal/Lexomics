@@ -1,10 +1,6 @@
 Display:
 	General:
 		Radio buttons for filetype
-	Bottom Items (Stopwords, Lemmas, Consolidations):
-		Put header above scrolling text
-	Options:
-		Check stopwords, lemmas, consololidations after upload
 SGML/XML
 	Search for tei file (.xml)
 

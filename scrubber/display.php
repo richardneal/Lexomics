@@ -12,7 +12,7 @@ if (is_null($_SESSION["POST"])) {
     if(preg_match("'<[^>]+>'U", $file) > 0)
         $_SESSION["POST"]["formattingbox"] = "on";
     $_SESSION["POST"]["lowercasebox"] = "on";
-    if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;"))
+    if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;") or strpos($file, "&amp;"))
         $_SESSION["POST"]["specialbox"] = "on";
     $_SESSION["POST"]["tags"] = "keep";
 }
