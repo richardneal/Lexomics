@@ -99,7 +99,9 @@ elseif ($_FILES["file"]["type"] == "application/vnd.openxmlformats-officedocumen
 }
 else
   {
-    echo $_FILES["file"]["type"];
+    echo "Upload: " . $_FILES["file"]["name"] . "<br />";
+    echo "Type: " . $_FILES["file"]["type"] . "<br />";
+    echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
     header('Location: ' . $_SERVER['HTTP_REFERER']);
     die();
   }

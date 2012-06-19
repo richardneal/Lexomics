@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once("uploader.php");
+define( "SCRUB_DIR", '/tmp/scrubber/' );
 
 $file = SCRUB_DIR . "temp.txt";
 
