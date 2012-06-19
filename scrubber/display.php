@@ -25,12 +25,30 @@ if (is_null($_SESSION["POST"])) {
 <script type="text/javascript">
     <!--
         function hideDiv(ischecked, tohide) {
-            //var formatting = document.getElementById("formattingbox");
-            //var tags = document.getElementById("tagBox");
             if(ischecked && ischecked.checked == 1) 
                tohide.style.display = 'inline'; 
             else
                 tohide.style.display = 'none';
+        }
+        function readValue(didcheck) {
+            if (didcheck.name == 'removestopwords') {
+                if(didcheck && didcheck.checked == 1) 
+                    document.getElementsByName("stopwordbox")[0].value = "on";
+                else
+                    document.getElementsByName("stopwordbox")[0].value = "";
+            }
+            else if (didcheck.name == 'lemmatize') {
+                if(didcheck && didcheck.checked == 1) 
+                    document.getElementsByName("lemmabox")[0].value = "on";
+                else
+                    document.getElementsByName("lemmabox")[0].value = "";
+            }
+            else if (didcheck.name == 'consolidate') {
+                if(didcheck && didcheck.checked == 1) 
+                    document.getElementsByName("consolidationbox")[0].value = "on";
+                else
+                    document.getElementsByName("consolidationbox")[0].value = "";
+            } 
         }
     //-->
 </script>
@@ -84,6 +102,9 @@ if (is_null($_SESSION["POST"])) {
                 <br /><input type="checkbox" name="specialbox" <?php if(isset($_SESSION["POST"]["specialbox"])) echo "checked" ?>/> Format Special Characters
             <?php endif; ?>
             <br />
+            <input type="hidden" name="stopwordbox" />
+            <input type="hidden" name="lemmabox" />
+            <input type="hidden" name="consolidationbox" />
             </form>
         </fieldset>
     <br />
@@ -91,7 +112,7 @@ if (is_null($_SESSION["POST"])) {
         <legend><b>Stop Words </b></legend>
     </div>
     <fieldset class="sidebar_field">
-        <input type="checkbox" name="stopwordbox" <?php if(isset($_SESSION["POST"]["stopwordbox"])) echo "checked" ?> onClick="hideDiv(this, stopwordsupload)"/> Remove Stopwords
+        <input type="checkbox" name="removestopwords" <?php if($_SESSION["POST"]["stopwordbox"] == "on") echo "checked" ?> onClick="hideDiv(this, stopwordsupload); hideDiv(this, stopwordtext); hideDiv(this, stopwordtitle); readValue(this)"/> Remove Stopwords
         <form action="uploader.php" method="post" enctype="multipart/form-data" name="stopwordsupload">
             <input type="hidden" name="type" value="stopwords" /> 
             <input type="file" name="file" id="file" required="required"/> 
@@ -103,7 +124,7 @@ if (is_null($_SESSION["POST"])) {
         <legend><b>Lemmas </b></legend>
     </div>
     <fieldset class="sidebar_field">
-        <input type="checkbox" name="lemmabox" <?php if(isset($_SESSION["POST"]["lemmabox"])) echo "checked" ?> onClick="hideDiv(this, lemmaupload)" /> Lemmatize
+        <input type="checkbox" name="lemmatize" <?php if($_SESSION["POST"]["lemmabox"] == "on") echo "checked" ?> onClick="hideDiv(this, lemmaupload); hideDiv(this, lemmatext); hideDiv(this, lemmatitle); readValue(this)" /> Lemmatize
         <form action="uploader.php" method="post" enctype="multipart/form-data" name="lemmaupload">
             <input type="hidden" name="type" value="lemmas" /> 
             <input type="file" name="file" id="file" required="required"/> 
@@ -115,7 +136,7 @@ if (is_null($_SESSION["POST"])) {
         <legend><b>Consolidations </b></legend>
     </div>
     <fieldset class="sidebar_field">
-        <input type="checkbox" name="consolidationbox" <?php if(isset($_SESSION["POST"]["consolidationbox"])) echo "checked" ?> onClick="hideDiv(this, consolidationupload)"/> Consolidate
+        <input type="checkbox" name="consolidate" <?php if($_SESSION["POST"]["consolidationbox"] == "on") echo "checked" ?> onClick="hideDiv(this, consolidationupload); hideDiv(this, consolidationtext); hideDiv(this, consolidationtitle); readValue(this)"/> Consolidate
         <form action="uploader.php" method="post" enctype="multipart/form-data" name="consolidationupload">
             <input type="hidden" name="type" value="consolidations" /> 
             <input type="file" name="file" id="file" required="required"/> 
@@ -150,27 +171,24 @@ if (is_null($_SESSION["POST"])) {
 </div>
 
 
-<?php if(isset($_SESSION["stopwords"])) : ?>
-<div class="bottomtitles">
+
+<div class="bottomtitles" id="stopwordtitle">
     Stop Words:
 </div>
-<?php endif; ?>
-<?php if(isset($_SESSION["lemmas"])) : ?>
-<div class="bottomtitles">
+
+<div class="bottomtitles" id="lemmatitle">
     Lemmas:
 </div>
-<?php endif; ?>
-<?php if(isset($_SESSION["consolidations"])) : ?>
-<div class="bottomtitles">
+
+<div class="bottomtitles" id="consolidationtitle">
     Consolidations:
 </div>
-<?php endif; ?>
 
 <div id="buffer">
 </div>
 
-<?php if(isset($_SESSION["stopwords"])) : ?>
-    <div id='stopwordtext'>
+
+<div id='stopwordtext'>
     <?php
     $explodedsw = explode(", ", file_get_contents($_SESSION["stopwords"]));
     sort($explodedsw);
@@ -180,24 +198,17 @@ if (is_null($_SESSION["POST"])) {
     $result = implode(", ",$resultarr);
     echo $result;
     ?>
-    </div>
-<?php endif; ?>
+</div>
 
-
-<?php if(isset($_SESSION["lemmas"])) : ?>
 <div id='lemmatext'>
     <?php echo preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["lemmas"]))) ?>
 </div>
-<?php endif; ?>
 
-<?php if(isset($_SESSION["consolidations"])) : ?>
 <div id='consolidationtext'>
     <?php echo preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["consolidations"]))) ?>
 </div>
-<?php endif; ?>
 
 </div>
-
 
 <div id="info">
     &nbsp;<a href="http://wheatoncollege.edu/lexomics/"> Lexomics @ Wheaton College</a>
@@ -205,9 +216,19 @@ if (is_null($_SESSION["POST"])) {
 </body>
 
 <script type="text/javascript">
+    readValue(document.getElementsByName("removestopwords")[0]);
+    readValue(document.getElementsByName("lemmatize")[0]);
+    readValue(document.getElementsByName("consolidate")[0]);
     hideDiv(document.getElementById("formattingbox"), document.getElementById("tagBox"));
-    hideDiv(document.getElementsByName("stopwordbox")[0], document.getElementsByName("stopwordsupload")[0]);
-    hideDiv(document.getElementsByName("lemmabox")[0], document.getElementsByName("lemmaupload")[0]);
-    hideDiv(document.getElementsByName("consolidationbox")[0], document.getElementsByName("consolidationupload")[0]);
+    hideDiv(document.getElementsByName("removestopwords")[0], document.getElementsByName("stopwordsupload")[0]);
+    hideDiv(document.getElementsByName("removestopwords")[0], document.getElementById("stopwordtext"));
+    hideDiv(document.getElementsByName("removestopwords")[0], document.getElementById("stopwordtitle"));
+    hideDiv(document.getElementsByName("lemmatize")[0], document.getElementsByName("lemmaupload")[0]);
+    hideDiv(document.getElementsByName("lemmatize")[0], document.getElementById("lemmatext"));
+    hideDiv(document.getElementsByName("lemmatize")[0], document.getElementById("lemmatitle"));
+    hideDiv(document.getElementsByName("consolidate")[0], document.getElementsByName("consolidationupload")[0]);
+    hideDiv(document.getElementsByName("consolidate")[0], document.getElementById("consolidationtext"));
+    hideDiv(document.getElementsByName("consolidate")[0], document.getElementById("consolidationtitle"));
 </script>
+
 </html>

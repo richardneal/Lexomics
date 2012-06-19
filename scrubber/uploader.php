@@ -58,6 +58,15 @@ if ((($_FILES["file"]["type"] == "text/plain")
     move_uploaded_file($_FILES["file"]["tmp_name"], SCRUB_DIR . $_FILES["file"]["name"]);
     echo "Stored in: " . SCRUB_DIR . $_FILES["file"]["name"];
     $_SESSION[$_POST['type']] = SCRUB_DIR . $_FILES["file"]["name"];
+    if ($_POST['type'] == "consolidations") {
+        $_SESSION["POST"]['consolidationbox'] = "on";
+    }
+    else if ($_POST['type'] == "lemmas") {
+        $_SESSION["POST"]['lemmabox'] = "on";
+    }
+    else if ($_POST['type'] == "stopwords") {
+        $_SESSION["POST"]['stopwordbox'] = "on";
+    }
     header('Location: ' . "display.php");
     die();
     }
@@ -83,6 +92,7 @@ elseif ($_FILES["file"]["type"] == "application/vnd.openxmlformats-officedocumen
 
     echo "Stored in: " . $file;
     $_SESSION[$_POST['type']] = $file;
+    
     header('Location: ' . "display.php");
     die();
     }
@@ -90,8 +100,8 @@ elseif ($_FILES["file"]["type"] == "application/vnd.openxmlformats-officedocumen
 else
   {
     echo $_FILES["file"]["type"];
-    //header('Location: ' . $_SERVER['HTTP_REFERER']);
-    //die();
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+    die();
   }
 ob_flush();
 ?>
