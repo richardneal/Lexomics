@@ -219,7 +219,9 @@ if (is_null($_SESSION["POST"])) {
     readValue(document.getElementsByName("removestopwords")[0]);
     readValue(document.getElementsByName("lemmatize")[0]);
     readValue(document.getElementsByName("consolidate")[0]);
+    if (document.getElementById("formattingbox")) {
     hideDiv(document.getElementById("formattingbox"), document.getElementById("tagBox"));
+    };
     hideDiv(document.getElementsByName("removestopwords")[0], document.getElementsByName("stopwordsupload")[0]);
     hideDiv(document.getElementsByName("removestopwords")[0], document.getElementById("stopwordtext"));
     hideDiv(document.getElementsByName("removestopwords")[0], document.getElementById("stopwordtitle"));
