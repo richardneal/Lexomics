@@ -190,11 +190,14 @@ if (is_null($_SESSION["POST"])) {
 
 <div id='stopwordtext'>
     <?php
-    $explodedsw = explode(", ", file_get_contents($_SESSION["stopwords"]));
+    $sw = preg_replace("/(\r?\n)/", ", ", file_get_contents($_SESSION["stopwords"]));
+    $explodedsw = explode(", ", $sw);
     sort($explodedsw);
     $resultarr = array();
     foreach(array_values($explodedsw) as $swvalue)
-        $resultarr[] = $swvalue;
+        if ($swvalue) {
+            $resultarr[] = $swvalue;
+        }
     $result = implode(", ",$resultarr);
     echo $result;
     ?>

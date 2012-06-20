@@ -37,11 +37,13 @@ function remove_stopWords($text, $stopWords) {
 		return $text;
 	}
 	else {
-		$allStopWords = explode(", ", $stopWords);
-		foreach($allStopWords as &$stopword){
-			$stopword = "/\b" . $stopword . "\b/iu";
+		$allStopWords = array();
+		foreach(preg_split("/(\r?\n)/", $stopWords) as $line){
+			$eachStopWord = explode(", ", $line);
+			foreach($eachStopWord as $stopword){
+				array_push($allStopWords, "/\b" . $stopword . "\b/iu");
+			}
 		}
-
 	$removedString = preg_replace($allStopWords, "", $text);
 
 	return $removedString;
@@ -64,7 +66,7 @@ function lemmatize($text, $lemmas) {
 	$allLemmaKEYS = array();
 
 	foreach(preg_split("/(\r?\n)/", $lemmas) as $line){
-		$lemmaLine = explode(", ", $line);
+		$lemmaLine = explode("\t", $line);
 		array_push($allLemmaKEYS, $lemmaLine[0]);
 		array_push($allLemmas, $lemmaLine[1]);
 	}
