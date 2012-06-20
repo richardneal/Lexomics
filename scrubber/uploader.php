@@ -16,7 +16,7 @@ function extracttext($filename) {
        
     //Create a new ZIP archive object
     $zip = new ZipArchive;
-    echo "2.5";
+
     // Open the archive file
     if (true === $zip->open($filename)) {
         // If successful, search for the data file in the archive
@@ -83,13 +83,9 @@ elseif ($_FILES["file"]["type"] == "application/vnd.openxmlformats-officedocumen
     echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
     echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br />";
     $file = SCRUB_DIR . basename($_FILES["file"]["name"], ".docx") . ".txt";
-    echo "1";
     $writefile = fopen($file, 'w') or die("can't open file");
-    echo "2";
     fwrite($writefile, extracttext($_FILES["file"]["tmp_name"]));
-    echo "3";
     fclose($writefile);
-    echo "4";
     echo "Stored in: " . $file;
     $_SESSION[$_POST['type']] = $file;
     
