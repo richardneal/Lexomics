@@ -14,8 +14,6 @@ Other:
 	Talk to Tom about Ra
 	Look at meandre
 
-Delta
-
 
 Demo:
 	Format characters under Advanced
