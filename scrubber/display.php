@@ -12,8 +12,6 @@ if (is_null($_SESSION["POST"])) {
     if(preg_match("'<[^>]+>'U", $file) > 0)
         $_SESSION["POST"]["formattingbox"] = "on";
     $_SESSION["POST"]["lowercasebox"] = "on";
-    if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;") or strpos($file, "&amp;"))
-        $_SESSION["POST"]["specialbox"] = "on";
     $_SESSION["POST"]["tags"] = "keep";
 }
 ?>
@@ -48,6 +46,18 @@ if (is_null($_SESSION["POST"])) {
                     document.getElementsByName("consolidationbox")[0].value = "on";
                 else
                     document.getElementsByName("consolidationbox")[0].value = "";
+            } 
+            else if (didcheck.name == 'special') {
+                if(didcheck && didcheck.checked == 1) 
+                    document.getElementsByName("specialbox")[0].value = "on";
+                else
+                    document.getElementsByName("specialbox")[0].value = "";
+            } 
+            else if (didcheck.name == 'commons') {
+                if(didcheck && didcheck.checked == 1) 
+                    document.getElementsByName("commonbox")[0].value = "on";
+                else
+                    document.getElementsByName("commonbox")[0].value = "";
             } 
         }
     //-->
@@ -98,18 +108,17 @@ if (is_null($_SESSION["POST"])) {
             </div>
             <?php endif; ?>
             <br /><input type="checkbox" name="lowercasebox" <?php if(isset($_SESSION["POST"]["lowercasebox"])) echo "checked" ?>/> Make Lowercase
-            <?php if(strpos($file, "&ae;") or strpos($file, "&d;") or strpos($file, "&t;") or strpos($file, "&amp;")) : ?>
-                <br /><input type="checkbox" name="specialbox" <?php if(isset($_SESSION["POST"]["specialbox"])) echo "checked" ?>/> Format Special Characters
-            <?php endif; ?>
-            <br />
+
             <input type="hidden" name="stopwordbox" />
             <input type="hidden" name="lemmabox" />
             <input type="hidden" name="consolidationbox" />
+            <input type="hidden" name="specialbox" />
+            <input type="hidden" name="commonbox" />
             </form>
         </fieldset>
     <br />
     <div class="sidetitles">
-        <legend><b>Stop Words </b></legend>
+        <legend><b>Stop Words</b></legend>
     </div>
     <fieldset class="sidebar_field">
         <input type="checkbox" name="removestopwords" <?php if($_SESSION["POST"]["stopwordbox"] == "on") echo "checked" ?> onClick="hideDiv(this, stopwordsupload); hideDiv(this, stopwordtext); hideDiv(this, stopwordtitle); readValue(this)"/> Remove Stopwords
@@ -121,7 +130,7 @@ if (is_null($_SESSION["POST"])) {
         </form>
     </fieldset><br />
     <div class="sidetitles">
-        <legend><b>Lemmas </b></legend>
+        <legend><b>Lemmas</b></legend>
     </div>
     <fieldset class="sidebar_field">
         <input type="checkbox" name="lemmatize" <?php if($_SESSION["POST"]["lemmabox"] == "on") echo "checked" ?> onClick="hideDiv(this, lemmaupload); hideDiv(this, lemmatext); hideDiv(this, lemmatitle); readValue(this)" /> Lemmatize
@@ -133,7 +142,7 @@ if (is_null($_SESSION["POST"])) {
         </form>
     </fieldset><br />
     <div class="sidetitles">
-        <legend><b>Consolidations </b></legend>
+        <legend><b>Consolidations</b></legend>
     </div>
     <fieldset class="sidebar_field">
         <input type="checkbox" name="consolidate" <?php if($_SESSION["POST"]["consolidationbox"] == "on") echo "checked" ?> onClick="hideDiv(this, consolidationupload); hideDiv(this, consolidationtext); hideDiv(this, consolidationtitle); readValue(this)"/> Consolidate
@@ -143,6 +152,22 @@ if (is_null($_SESSION["POST"])) {
             <br />
             <input type="submit" name="consolidations" value="Upload Consolidations" />
         </form>
+    </fieldset><br />
+    <div class="sidetitles">
+        <legend><b>Special Characters</b></legend>
+    </div>
+    <fieldset class="sidebar_field">
+        <input type="checkbox" name="special" <?php if($_SESSION["POST"]["specialbox"] == "on") echo "checked" ?> onClick="hideDiv(this, specialupload); hideDiv(this, specialtext); hideDiv(this, specialtitle); hideDiv(this, commons); readValue(this)"/> Format Special Characters
+        <form action="uploader.php" method="post" enctype="multipart/form-data" name="specialupload">
+            <input type="hidden" name="type" value="specials" /> 
+            <input type="file" name="file" id="file" required="required"/> 
+            <br />
+            <input type="submit" name="consolidations" value="Upload Special Characters" />
+        </form>
+        <br />
+        <div id="commons">
+        <input type="checkbox" name="commons" <?php if($_SESSION["POST"]["commonbox"] == "on") echo "checked" ?> onClick="readValue(this)"/> Use Common Characters
+    </div>
     </fieldset><br />
     </div>
 </div>
@@ -184,11 +209,15 @@ if (is_null($_SESSION["POST"])) {
     Consolidations:
 </div>
 
+<div class="bottomtitles" id="specialtitle">
+    Special Characters:
+</div>
+
 <div id="buffer">
 </div>
 
 
-<div id='stopwordtext'>
+<div class="bottomtext" id='stopwordtext'>
     <?php
     $sw = preg_replace("/(\r?\n)/", ", ", file_get_contents($_SESSION["stopwords"]));
     $explodedsw = explode(", ", $sw);
@@ -203,12 +232,16 @@ if (is_null($_SESSION["POST"])) {
     ?>
 </div>
 
-<div id='lemmatext'>
+<div class="bottomtext" id='lemmatext'>
     <?php echo preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["lemmas"]))) ?>
 </div>
 
-<div id='consolidationtext'>
+<div class="bottomtext" id='consolidationtext'>
     <?php echo preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["consolidations"]))) ?>
+</div>
+
+<div class="bottomtext" id='specialtext'>
+    <?php echo file_get_contents($_SESSION["specials"]) ?>
 </div>
 
 </div>
@@ -234,6 +267,10 @@ if (is_null($_SESSION["POST"])) {
     hideDiv(document.getElementsByName("consolidate")[0], document.getElementsByName("consolidationupload")[0]);
     hideDiv(document.getElementsByName("consolidate")[0], document.getElementById("consolidationtext"));
     hideDiv(document.getElementsByName("consolidate")[0], document.getElementById("consolidationtitle"));
+    hideDiv(document.getElementsByName("special")[0], document.getElementsByName("specialupload")[0]);
+    hideDiv(document.getElementsByName("special")[0], document.getElementById("specialtext"));
+    hideDiv(document.getElementsByName("special")[0], document.getElementById("specialtitle"));
+    hideDiv(document.getElementsByName("special")[0], document.getElementById("commons"));
 </script>
 
 </html>

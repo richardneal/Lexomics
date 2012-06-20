@@ -109,7 +109,7 @@ function consolidate($text, $consolidations) {
 		$consolidationKeys = array();
 		$consolidationValues = array();
 		foreach(preg_split("/(\r?\n)/", $consolidations) as $line){
-			$consolidationLine = explode(", ", $line);
+			$consolidationLine = explode(" \t", $line);
 			array_push($consolidationKeys, $consolidationLine[0]);
 			array_push($consolidationValues, $consolidationLine[1]);
 		}
@@ -121,16 +121,34 @@ function consolidate($text, $consolidations) {
 
 }
 
-function formatSpecial($text, $lowercase) {
+function formatSpecial($text, $specials, $common, $lowercase) {
 	if (empty($text)) {
 		print("You must include some text from which to have the text removed.");
 		return $text;
 	}
 	else {
-		$chararray = array("&ae;", "&d;", "&t;", "&e;", "&AE;", "&D;", "&T;");
-		$uniarray = array("æ", "ð", "þ", "e", "Æ", "Ð", "Þ");
-		$text = str_replace($chararray, $uniarray, $text);
-		return $text;
+		$allSpecials = array();
+		$allSpecialKEYS = array();
+
+		foreach(preg_split("/(\r?\n)/", $specials) as $line){
+			$specialline = explode("\t", $line);
+			array_push($allSpecialKEYS, $specialline[0]);
+			array_push($allSpecials, $specialline[1]);
+		}
+
+		foreach($allSpecialKEYS as &$nextKEY){
+			$nextKEY = "/\b" . $nextKEY . "\b/i";
+		}
+
+		$specializedstring = preg_replace($allSpecialKEYS, $allSpecials, $text);
+		if ($common == "on") {
+
+			$commonchararray = array("&ae;", "&d;", "&t;", "&e;", "&AE;", "&D;", "&T;");
+			$commonuniarray = array("æ", "ð", "þ", "e", "Æ", "Ð", "Þ");
+			$specializedstring = str_replace($commonchararray, $commonuniarray, $specializedstring);
+		}
+		
+		return $specializedstring;
 	}
 }
 
@@ -154,7 +172,7 @@ function formatSpecial($text, $lowercase) {
  * @see remove_elements()
  *
  */
-function scrub_text($string, $formatting, $tags, $punctuation, $digits, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopWords = "", $lemmas = "", $consolidations = "", $type = 'default') {
+function scrub_text($string, $formatting, $tags, $punctuation, $digits, $removeStopWords, $lemmatize, $consolidate, $formatspecial, $lowercase, $common, $stopWords = "", $lemmas = "", $consolidations = "", $specials = "", $type = 'default') {
 	switch ($type) {
 		case 'default':
 			// Make the string variable a string with the requested elements removed.
@@ -168,8 +186,8 @@ function scrub_text($string, $formatting, $tags, $punctuation, $digits, $removeS
 				$string = str_replace($caparray, $lowarray, $string);
 			}
 			print("<br /> After lowercase, before special characters <br />" . substr($string, 0, 1000) . "<br />");
-			if ($special == "on") {
-				$string = formatSpecial($string, $lowercase);
+			if ($formatspecial == "on") {
+				$string = formatSpecial($string, $specials, $common, $lowercase);
 			}
 			print("<br /> After special characters, before strip tags <br />" . substr($string, 0, 1000) . "<br />");
 			if ($formatting == "on") {
@@ -188,11 +206,11 @@ function scrub_text($string, $formatting, $tags, $punctuation, $digits, $removeS
 			if ($digits == "on") {
 				$string = str_replace(range(0, 9), '', $string);
 			} 
-			print("<br /> After remove digits, before remove stopwords <br />" . substr($string, 0, 10000) . "<br />");
+			print("<br /> After remove digits, before remove stopwords <br />" . substr($string, 0, 1000) . "<br />");
 			if ($removeStopWords == "on") {
 				$string = remove_stopWords($string, $stopWords);
 			}
-			print("<br /> After remove stopwords, before lemmatize <br />" . substr($string, 0, 10000) . "<br />");
+			print("<br /> After remove stopwords, before lemmatize <br />" . substr($string, 0, 1000) . "<br />");
 			if ($lemmatize == "on") {
 				$string = lemmatize($string, $lemmas);
 			}
@@ -227,7 +245,8 @@ $removeStopWords = "";
 $lemmatize = "";
 $consolidate = "";
 $lowercase = "";
-$special = "";
+$formatspecial = "";
+$common = "";
 
 
 if(isset($_POST["formattingbox"]))
@@ -246,13 +265,16 @@ if(isset($_POST["consolidationbox"]))
 if(isset($_POST["lowercasebox"]))
 	$lowercase = $_POST["lowercasebox"];
 if(isset($_POST["specialbox"]))
-	$special = $_POST["specialbox"];
+	$formatspecial = $_POST["specialbox"];
+if(isset($_POST["commonbox"]))
+	$common = $_POST["commonbox"];
 
 $file = file_get_contents($_SESSION["file"]);
 $stopwords = file_get_contents($_SESSION["stopwords"]);
 $lemmas = file_get_contents($_SESSION["lemmas"]);
 $consolidations = file_get_contents($_SESSION["consolidations"]);
-$_SESSION["scrubbed"] = scrub_text($file, $formatting, $tags, $punctuation, $digits, $removeStopWords, $lemmatize, $consolidate, $lowercase, $special, $stopwords, $lemmas, $consolidations);
+$specials = file_get_contents($_SESSION["specials"]);
+$_SESSION["scrubbed"] = scrub_text($file, $formatting, $tags, $punctuation, $digits, $removeStopWords, $lemmatize, $consolidate, $formatspecial, $lowercase, $common, $stopwords, $lemmas, $consolidations, $specials);
 
 header('Location: ' . "display.php");
 die();
