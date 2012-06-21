@@ -43,10 +43,7 @@ Ext.onReady( function() {
         height: 400,
         resizeChild: true,
         handles: 's e se',
-        wrap: true,
-        pinned: true
-    });
-    resizable.on( 'resize', function( t,w,h,e ) {
+        wrap: true, pinned: true }); resizable.on( 'resize', function( t,w,h,e ) {
         dend.setXY( [ w,h ] );
     });*/
     dend = Ext.get('dendro');   // div that is updated with the dendro
@@ -413,7 +410,10 @@ Ext.onReady( function() {
                     {
 						document.getElementById('container').style.height="auto";
 						labels.setValue(json.rowlabels);
-						labelsField.show();
+						if (hiddentype.getValue()!='xml')
+						{
+							labelsField.show();
+						}
 						
                         // use JSPhyloSvg to render the raw XML into
                         // an SVG object in the 'dendro' div on the page
@@ -436,7 +436,9 @@ Ext.onReady( function() {
 							svgcanvas = new Smits.PhyloCanvas({
                         		phyloxml: json.output,
                         	},'dendro',xSlider.getValue(),ySlider.getValue(),'circular');
+							$('#dendro').css("height",ySlider.getValue());
 						}
+
 						rowlabels=json.rowlabels.split(",");
 						var i=0;
 						var stri = "<table id=\"labelTable\">";
