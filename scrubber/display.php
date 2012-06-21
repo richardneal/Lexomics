@@ -18,6 +18,8 @@ if (is_null($_SESSION["POST"])) {
 ?>
 <html>
 <head>
+<link rel="shortcut icon"
+ href="http://cs.wheatoncollege.edu/favicon.ico" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Scrubber</title>
 <link rel="stylesheet" type="text/css" href="display.css"/>
