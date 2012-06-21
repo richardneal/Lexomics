@@ -11,6 +11,8 @@ body
     border-color:#99BBE8;
     border-style: solid;
     background-color:#FFFFFF;
+    font-family: tahoma,arial,verdana,sans-serif;
+    font-size: 12px;
 }
 .titles
 {
@@ -72,20 +74,20 @@ body
 }
 #scrub { 
     position: absolute;
-    top: 8px;
-    left: 10px;
+    top: 3px;
+    left: 20px;
     width: 30px;
 }
 #clear { 
     position: absolute;
-    top: 8px;
-    left: 80px;
+    top: 3px;
+    left: 100px;
     width: 30px;
 }
 #download { 
     position: absolute;
-    top: 8px;
-    left: 148px;
+    top: 3px;
+    left: 178px;
     width: 30px;
 }
 #unscrubbedtext { 
