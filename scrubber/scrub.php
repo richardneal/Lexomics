@@ -121,34 +121,37 @@ function consolidate($text, $consolidations) {
 
 }
 
-function formatSpecial($text, $specials, $common, $lowercase) {
+function formatSpecial($text, $formatspecial, $specials, $common, $lowercase) {
 	if (empty($text)) {
 		print("You must include some text from which to have the text removed.");
 		return $text;
 	}
 	else {
-		$allSpecials = array();
-		$allSpecialKEYS = array();
+		if ($formatspecial == "on") {
+			$allSpecials = array();
+			$allSpecialKEYS = array();
 
-		foreach(preg_split("/(\r?\n)/", $specials) as $line){
-			$specialline = explode("\t", $line);
-			array_push($allSpecialKEYS, $specialline[0]);
-			array_push($allSpecials, $specialline[1]);
+			foreach(preg_split("/(\r?\n)/", $specials) as $line){
+				$specialline = explode("\t", $line);
+				array_push($allSpecialKEYS, $specialline[0]);
+				array_push($allSpecials, $specialline[1]);
+			}
+
+			foreach($allSpecialKEYS as &$nextKEY){
+				$nextKEY = "/\b" . $nextKEY . "\b/i";
+			}
+
+			$text = preg_replace($allSpecialKEYS, $allSpecials, $text);
 		}
-
-		foreach($allSpecialKEYS as &$nextKEY){
-			$nextKEY = "/\b" . $nextKEY . "\b/i";
-		}
-
-		$specializedstring = preg_replace($allSpecialKEYS, $allSpecials, $text);
+		
 		if ($common == "on") {
 
 			$commonchararray = array("&ae;", "&d;", "&t;", "&e;", "&AE;", "&D;", "&T;");
 			$commonuniarray = array("æ", "ð", "þ", "e", "Æ", "Ð", "Þ");
-			$specializedstring = str_replace($commonchararray, $commonuniarray, $specializedstring);
+			$text = str_replace($commonchararray, $commonuniarray, $text);
 		}
 		
-		return $specializedstring;
+		return $text;
 	}
 }
 
@@ -186,8 +189,8 @@ function scrub_text($string, $formatting, $tags, $punctuation, $digits, $removeS
 				$string = str_replace($caparray, $lowarray, $string);
 			}
 			print("<br /> After lowercase, before special characters <br />" . substr($string, 0, 1000) . "<br />");
-			if ($formatspecial == "on") {
-				$string = formatSpecial($string, $specials, $common, $lowercase);
+			if ($formatspecial == "on" or $common == "on") {
+				$string = formatSpecial($string, $formatspecial, $specials, $common, $lowercase);
 			}
 			print("<br /> After special characters, before strip tags <br />" . substr($string, 0, 1000) . "<br />");
 			if ($formatting == "on") {

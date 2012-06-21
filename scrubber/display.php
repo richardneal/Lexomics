@@ -13,6 +13,7 @@ if (is_null($_SESSION["POST"])) {
         $_SESSION["POST"]["formattingbox"] = "on";
     $_SESSION["POST"]["lowercasebox"] = "on";
     $_SESSION["POST"]["tags"] = "keep";
+    $_SESSION["POST"]["commonbox"] = "on";
 }
 ?>
 <html>
@@ -157,7 +158,7 @@ if (is_null($_SESSION["POST"])) {
         <legend><b>Special Characters</b></legend>
     </div>
     <fieldset class="sidebar_field">
-        <input type="checkbox" name="special" <?php if($_SESSION["POST"]["specialbox"] == "on") echo "checked" ?> onClick="hideDiv(this, specialupload); hideDiv(this, specialtext); hideDiv(this, specialtitle); hideDiv(this, commons); readValue(this)"/> Format Special Characters
+        <input type="checkbox" name="special" <?php if($_SESSION["POST"]["specialbox"] == "on") echo "checked" ?> onClick="hideDiv(this, specialupload); hideDiv(this, specialtext); hideDiv(this, specialtitle); readValue(this)"/> Format Special Characters
         <form action="uploader.php" method="post" enctype="multipart/form-data" name="specialupload">
             <input type="hidden" name="type" value="specials" /> 
             <input type="file" name="file" id="file" required="required"/> 
@@ -168,7 +169,7 @@ if (is_null($_SESSION["POST"])) {
         <div id="commons">
         <input type="checkbox" name="commons" <?php if($_SESSION["POST"]["commonbox"] == "on") echo "checked" ?> onClick="readValue(this)"/> Use Common Characters
     </div>
-    </fieldset><br />
+    </fieldset>
     </div>
 </div>
 <div id="main">
@@ -255,9 +256,11 @@ if (is_null($_SESSION["POST"])) {
     readValue(document.getElementsByName("removestopwords")[0]);
     readValue(document.getElementsByName("lemmatize")[0]);
     readValue(document.getElementsByName("consolidate")[0]);
+    readValue(document.getElementsByName("special")[0]);
+    readValue(document.getElementsByName("commons")[0]);
     if (document.getElementById("formattingbox")) {
-    hideDiv(document.getElementById("formattingbox"), document.getElementById("tagBox"));
-    };
+        hideDiv(document.getElementById("formattingbox"), document.getElementById("tagBox"));
+    }
     hideDiv(document.getElementsByName("removestopwords")[0], document.getElementsByName("stopwordsupload")[0]);
     hideDiv(document.getElementsByName("removestopwords")[0], document.getElementById("stopwordtext"));
     hideDiv(document.getElementsByName("removestopwords")[0], document.getElementById("stopwordtitle"));
@@ -270,7 +273,6 @@ if (is_null($_SESSION["POST"])) {
     hideDiv(document.getElementsByName("special")[0], document.getElementsByName("specialupload")[0]);
     hideDiv(document.getElementsByName("special")[0], document.getElementById("specialtext"));
     hideDiv(document.getElementsByName("special")[0], document.getElementById("specialtitle"));
-    hideDiv(document.getElementsByName("special")[0], document.getElementById("commons"));
 </script>
 
 </html>
