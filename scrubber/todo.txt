@@ -27,5 +27,3 @@ grep for &.?;
 readmes for github pages
 
 Browser testing
-
-Add option for user encoding
