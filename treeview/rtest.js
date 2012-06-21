@@ -69,8 +69,38 @@ Ext.onReady( function() {
 		fieldLabel: 'Layout',
 		cls: 'x-check-group-alt',
 		hidden: true,
-		items: [{boxLabel:'Tree', name:'phyloType', inputValue: 1, checked: true},
-				{boxLabel:'Circular',name:'phyloType',inputValue: 2}]
+		items: 
+		[
+			{
+				boxLabel:'Tree', 
+				name:'phyloType', 
+				inputValue: 1, 
+				checked: true,
+				listeners: 
+				{
+					check: function(ctl,val) 
+					{
+						if (val==1)
+						{
+							xSlider.show();
+							ySlider.show();
+							rSlider.hide();
+						}
+						else
+						{
+							xSlider.hide();
+							ySlider.hide();
+							rSlider.show();
+						}
+					}
+				}	
+			},
+			{
+				boxLabel:'Circular',
+				name:'phyloType',
+				inputValue: 2
+			}
+		]
 	});
 
 
@@ -137,8 +167,14 @@ Ext.onReady( function() {
 				// shown
 				{
 					phyloType     .show();
-					xSlider.show();
-					ySlider.show();	
+					type=form.getForm().getValues()['phyloType'];
+					if (type==1)
+					{
+						xSlider.show();
+						ySlider.show();	
+					}
+					else
+						rSlider.show();
 				}
 				downloadButton.hide();
 			}
@@ -168,6 +204,7 @@ Ext.onReady( function() {
 					phyloType     .hide();
 					xSlider.hide();
 					ySlider.hide();	
+					rSlider.hide();
 				}
 				downloadButton.hide();
 			}
@@ -259,6 +296,7 @@ Ext.onReady( function() {
                     case 'pdf' :
                         // hide the slider and download xml button when pdf is selected
 						xSlider.hide();
+						rSlider.hide();
 						phyloType.hide();
 						ySlider.hide();	
 						downloadButton.hide();
@@ -269,6 +307,7 @@ Ext.onReady( function() {
 					default :
                         // when anything else is selected show the sliders and download XML button
 						xSlider.show();
+						rSlider.hide();
 						phyloType.show();
 						ySlider.show();	
 						downloadButton.show();
@@ -336,6 +375,16 @@ Ext.onReady( function() {
 	plugins: new Ext.slider.Tip()
    }); 
 	
+
+	rSlider=new Ext.Slider({
+		width: 200,
+		value: 800,
+		minValue: 400,
+		maxValue: 4000,
+		fieldLabel: 'Size',
+		hidden: true,
+		plugins: new Ext.slider.Tip()
+	});
 
     // the Get Dendro button
     // when clicked, sends an "Ajax" request to the server,
@@ -435,8 +484,8 @@ Ext.onReady( function() {
 						// IF CIRCULAR
 							svgcanvas = new Smits.PhyloCanvas({
                         		phyloxml: json.output,
-                        	},'dendro',xSlider.getValue(),ySlider.getValue(),'circular');
-							$('#dendro').css("height",ySlider.getValue());
+                        	},'dendro',rSlider.getValue(),rSlider.getValue(),'circular');
+							$('#dendro').css("height",rSlider.getValue());
 						}
 
 						rowlabels=json.rowlabels.split(",");
@@ -516,7 +565,7 @@ Ext.onReady( function() {
         // items puts form components (comboboxes,radiogroups,checkboxes,
         // ...) into the form and in the order they appear in the array
         items:
-        [hiddentype,filefield,dendrotitle,methodcombo,metriccombo,minpow,typecombo,xSlider,ySlider,phyloType,labelsField,labels,labels2],
+        [hiddentype,filefield,dendrotitle,methodcombo,metriccombo,minpow,typecombo,xSlider,ySlider,rSlider,phyloType,labelsField,labels,labels2],
         fbar: [getButton, downloadButton], // add the Get Dendro button and download XML button onto the bottom of
                         // the form in the footer bar
         layout: 'form', // 'form' layout type allows elements to be 
