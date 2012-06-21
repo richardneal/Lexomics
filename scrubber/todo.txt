@@ -1,10 +1,6 @@
 Display:
 	General:
 		Radio buttons for filetype
-	Bottom Items (Stopwords, Lemmas, Consolidations):
-		Put header above scrolling text
-	Options:
-		Check stopwords, lemmas, consololidations after upload
 SGML/XML
 	Search for tei file (.xml)
 
@@ -13,18 +9,23 @@ Open Source License
 
 Sitewide:
 	Icon and .ico
-	Theme like divitext
 
 Other:
 	Talk to Tom about Ra
 	Look at meandre
-
-Delta
 
 
 Demo:
 	Format characters under Advanced
 	Popover for descriptions of options
 	Resize scrubber windows
-	Hide l/sw/c on uncheck
 	Alert box for big files
+
+
+grep for &.?;
+
+readmes for github pages
+
+Browser testing
+
+Add option for user encoding

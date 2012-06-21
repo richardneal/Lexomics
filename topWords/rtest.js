@@ -63,9 +63,9 @@ Ext.onReady( function() {
 		value: '1'					// 1 by default
     });
 
-	outfile = new Ext.form.TextField({
-		name: 'outfile',			// $_POST['outfile'] in php
-		fieldLabel: "Output File Name",	//label in GUI
+	dataset = new Ext.form.TextField({
+		name: 'dataset',			// $_POST['outfile'] in php
+		fieldLabel: "Data Set Name",	//label in GUI
 		anchor: '100%',				// relative size of field in GUI
 		value: ''					// if left empty, this becomes
 									//  dist-output in PHP
@@ -178,7 +178,7 @@ Ext.onReady( function() {
         // items puts form components (comboboxes,radiogroups,checkboxes,
         // ...) into the form and in the order they appear in the array
         items:
-        [filefield,distancecombo,methodcombo,metriccombo,minpow,clades,levels,outfile],
+        [filefield,distancecombo,methodcombo,metriccombo,minpow,clades,levels,dataset],
         fbar: [getButton], 	// add the getButton onto the bottom of
                         	// the form in the footer bar
         layout: 'anchor', 	// 'anchor' layout type allows elements to be 

@@ -16,7 +16,7 @@ function extracttext($filename) {
        
     //Create a new ZIP archive object
     $zip = new ZipArchive;
- 
+
     // Open the archive file
     if (true === $zip->open($filename)) {
         // If successful, search for the data file in the archive
@@ -42,7 +42,7 @@ if ( !is_dir( SCRUB_DIR ) )
 
 if ((($_FILES["file"]["type"] == "text/plain")
 || ($_FILES["file"]["type"] == "text/html")
-&& ($_FILES["file"]["type"] == "text/xml")))
+|| ($_FILES["file"]["type"] == "text/xml")))
   {
   if ($_FILES["file"]["error"] > 0)
     {
@@ -58,6 +58,15 @@ if ((($_FILES["file"]["type"] == "text/plain")
     move_uploaded_file($_FILES["file"]["tmp_name"], SCRUB_DIR . $_FILES["file"]["name"]);
     echo "Stored in: " . SCRUB_DIR . $_FILES["file"]["name"];
     $_SESSION[$_POST['type']] = SCRUB_DIR . $_FILES["file"]["name"];
+    if ($_POST['type'] == "consolidations") {
+        $_SESSION["POST"]['consolidationbox'] = "on";
+    }
+    else if ($_POST['type'] == "lemmas") {
+        $_SESSION["POST"]['lemmabox'] = "on";
+    }
+    else if ($_POST['type'] == "stopwords") {
+        $_SESSION["POST"]['stopwordbox'] = "on";
+    }
     header('Location: ' . "display.php");
     die();
     }
@@ -74,22 +83,21 @@ elseif ($_FILES["file"]["type"] == "application/vnd.openxmlformats-officedocumen
     echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
     echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br />";
     $file = SCRUB_DIR . basename($_FILES["file"]["name"], ".docx") . ".txt";
-
     $writefile = fopen($file, 'w') or die("can't open file");
-
     fwrite($writefile, extracttext($_FILES["file"]["tmp_name"]));
-
     fclose($writefile);
-
     echo "Stored in: " . $file;
     $_SESSION[$_POST['type']] = $file;
+    
     header('Location: ' . "display.php");
     die();
     }
 }
 else
   {
-    echo $_FILES["file"]["type"];
+    echo "Upload: " . $_FILES["file"]["name"] . "<br />";
+    echo "Type: " . $_FILES["file"]["type"] . "<br />";
+    echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
     header('Location: ' . $_SERVER['HTTP_REFERER']);
     die();
   }

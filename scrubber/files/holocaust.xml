@@ -1,0 +1,833 @@
+﻿<TEI>
+	<teiHeader>
+		<!-- Publication information goes here. -->
+	</teiHeader>
+	<text>
+		<body>
+			<div n="1" xml:id="questions">
+				<head>Questions</head>
+				<question n="1" xml:id="q1">
+				<question n="3" xml:id="q1a">Do you define yourself as a member of a particular racial or ethnic group, and if so, what?</question>
+				<question n="4" xml:id="q1b">Would you say that you are a member of a religious group? If so, what?</question>
+				<question n="5" xml:id="q1c">Is there any other way that you think of yourself that you think influences your perspective on life?</question>
+				<question n="5" xml:id="q2">Before you went on the trip, had you learned about the Holocaust? Where or which sources?</question>
+				<question n="6" xml:id="q3">How did this trip add to your information? To your knowledge on a non-cognitive or emotional level?</question>
+				<question n="7" xml:id="q4">What do you know now that you did not know then?</question>
+				<question n="8" xml:id="q5">Did the visit to Lututow change your understanding of the genocide? If so, how?</question>
+				<question n="9" xml:id="q5a">Was the ceremony important in changing your understanding? If so, how?</question>
+				<question n="10" xml:id="q5b">Did you find the interview with the elderly Polish villager important to changing your understanding? If so, how?</question>
+				<question n="11" xml:id="q6">Did the visit to the Lodz cemetery and the memorial change your unders3tanding of the genocide? If so, how?</question>
+				<question n="12" xml:id="q7">Did the visit to Auschwitz change your understanding of the genocide? If so, how? Include references to Schindler's Factory, Lublin. Itinerary not complete? Include any additional sites.</question>
+				<question n="13" xml:id="q8">Can you think of other experiences that influenced your understanding of the Holocaust?</question>
+				<question n="14" xml:id="q9">I never expected to see________.</question>
+				<question n="15" xml:id="q10">Before you went on the trip, did you have any images/impressions of contemporary Polish people? if so, what were they?
+				<question n="1" xml:id="q10a">Were these impressions changed on the trip? if so, how?</question>
+				<question n="16" xml:id="q11">[Is there a]nything in your family experience that you can connect to this experience?</question>
+				<question n="17" xml:id="q12">Before you went on the trip, did you have particular images/impressions of Jews during the Holocaust? If so, what? Have you ever had personal experience of anti-Semitism (as a victim of it, or seeing others engage in anti-Semitic acts)? What kind? Or, did you then (or now) have trouble grasping what exactly people mean when they use the term "anti-Semitic"?</question>
+				<question n="18" xml:id="q13">If you are not Jewish—what was your experience before this with Jewish people?</question>
+				<question n="19" xml:id="q14">Is there anything in your own background that can help you connect with this experience? This could be in regards to culture, ethnicity, religion.</question>
+				<question n="20" xml:id="q15">Were you a person of faith before this trip? Did this trip affect your faith (or not) in any way?</question>
+				<question n="21" xml:id="q16">Did this trip make you think about human evil in a new way?</question>
+				<question n="22" xml:id="q17">Did anything about the experiences on the trip (with other participants, with the Poles we met and the sites we saw) affect your understanding of inter-religious or inter-ethnic or inter-racial relations?</question>
+				<question n="23" xml:id="q18">Has the trip changed you? If yes, how so?</question>
+				<question n="24" xml:id="q19">Although it happened a year ago, do you find that you talk about the Poland trip? if you do, in what way? If you don't, why do you think not?</question>
+				<question n="25" xml:id="q20">Do you have anything to add? Were there questions you thought I would ask that I didn't?</question>
+				<question n="26" xml:id="q21">Would you consider yourself more or less interested in Poland than before you went on this trip? Would you consider yourself more or less sympathetic to the Poles during WWII?</question>
+			</div>
+			<div n="2" xml:id="responses">
+				<head>Responses</head>
+				<response xml:id="r1">
+					<name>Daisy</name>
+					<answers>
+							<answer xml:id="r1-1" corresp="#q1a">
+								<p>Mexican—ethnically see myself and catholic</p>
+							</answer>
+							<answer xml:id="r1-2" corresp="#q1c">
+								<p>I think that if I want something I can achieve it—it has affected how I live and choices I make—like the Poland trip; I've never been out of the country; was so appreciative—I try to initiate things for myself. I was very appreciative for the help I got to go.</p>
+							</answer>
+							<answer xml:id="r1-3" corresp="#q2">
+								<p>Thru readings in high school; we read Night so we talked about the Holocaust A LOT.—and thru schindler's list.</p>
+							</answer>
+							<answer xml:id="r1-4" corresp="#q3">
+								<p>Definitely you can read about it and can see it, but when you're there, it's completely different when you're there we were walking thru the Warsaw ghetto just seeing how it was, how many lived there—it just changes everything. Cuz you feel bad when you read the stories, but when you're there you think that it could have been my mom—even though I'm not Jewish, it touches me as a human being.</p>
+							</answer>
+							<answer xml:id="r1-5" corresp="#q4">
+								<p>I also learned about the people who helped—you hear about those who don't--I think wow I wonder if I were in that situation if I would have done the same thing.</p>
+							</answer>
+							<answer xml:id="r1-6" corresp="#q6">
+								<p>In Warsaw ghetto, Lodz cemetery, memorial in Lodz—"we saw the scratches on the boards of the cattle cars—and it was so hard." At Posnos cemetery—I learned about putting rocks on grave; it was so big—and like a forest</p>
+							</answer>
+							<answer xml:id="r1-7" corresp="#q7">
+								<p>Auschwitz: that was probably one of the hardest things—cuz one thinks of it when one thinks of Auschwitz—seeing the rooms of shoes, we all fell apart.</p>
+								<p>It altered my understanding of the holocaust—to see all the little kids stuff, all the shoes—understood the innocence more-when we walked to the Birkenau part—the bathrooms—it was shocking; they had a better sense of surviving there cuz no one wanted to go near them.</p>
+							</answer>
+							<answer xml:id="r1-8" corresp="#q8">
+								<p>OTHER PLACES: I REMEMBER we went to a cemetery and met the old man who was 80 years old—Jewish guy—showed me how strong people are-he told me how he escaped twice and how he is still there keeping up the cemetery—selflessly—(was almost killed twice—and came back after war—only Jew in village—and takes care of cemetery)</p>
+								<p>The schindler factory was amazing how it was put together—to see the papers of the restrictions Jews couldn't do; the place where they had to leave in a panic—everytime I think about it—things are no longer the same—hearing now about the holocaust—seeing the reality—has changed my understanding completely—I imagine the German soldiers coming close to me—I became more identified with the people there—you watch a movie—you think that is horrible, but it goes away—this doesn't go away. I imagined as I saw the different uniforms and the guns they used –me and my friends imagined how it would feel to have them coming to you. It stays with you—(trauma?) you get the two extremes how humans can be so horrible and so good too. You watch a movie like schindler's list but gradually it leaves you—this doesn't leave you.</p>
+							</answer>
+							<answer xml:id="r1-9" corresp="#q9">
+								<p>i had no expectations—I was clueless—I had never been out of the country—I was just open;</p>
+							</answer>
+							<answer xml:id="r1-10" corresp="#q10">
+								<p>ABOUT POLES—NOT REALLY A SENSE OF THE POLES—WE HAD THE TOUR GUIDE, BUT NOT REALLY INTERACT. Cultural festival—very fun—we interacted but not really in a close way—they only tried out their English with us.</p>
+							</answer>
+							<answer xml:id="r1-11" corresp="#q11">
+								<p>Being looked at by other people, discriminated against—to some extent—not being wanted—just the immigrant situation—not to the extreme, but similar.</p>
+							</answer>
+							<answer xml:id="r1-12" corresp="#q12">
+								<p>No witnessing of anti-Semitism. DID THIS MAKE YOU MORE CONSCIOUS OF PERSECTUON: YES, you just see how it was and like you see all the hatred against a certain group of people for no valid reason and you can connect it and can see how it happens not just to one group of people but to a bunch of groups of people. You can see that connection, and having experienced going to Auschwitz you experience how powerful that was and you can only imagine how powerful it was for other people being that same thing so it makes everything more powerful. Of that destructive energy. ANY CONTEMPORARY ASSOCIATION? Maybe anti-Muslim and people who are against them without knowing anything about them or the religion.</p>
+							</answer>
+							<answer xml:id="r1-13" corresp="#q13">
+								<p>The Jewish people on the trip explained things to us—especially when we went to the synagogues—</p><p>Meeting with Chief Rabbi: "it was amazing. He pretty much welcomed us, he told us about his synagogue, his experience. It was really cool because he is like an influential person yet he talked to us as an equal—no sense about how important he was. At dinner we sat with the people at the services. (these were Poles—and Europe). I met a French man and he spoke to me in Spanish.</p>
+							</answer>
+							<answer xml:id="r1-14" corresp="#q15">
+								<p>My parents are really catholic, so I'm a really strong catholic and it was interesting that there were so many Catholics. One of the things I remember the most—one temple and two churches—a catholic church and synagogue and were both burned out –and had (she talks about Lublin story)—the connection between the two—(she retells the story)—</p>
+							</answer>
+							<answer xml:id="r1-15" corresp="#q16">
+								<p>YOUR FAITH—how could this happen—it just really hard—why didn't someone the church intervene but then you think about those that did help--. There's a lot of negative things going on and sometimes you think, how could this happen.</p>
+							</answer>
+							<answer xml:id="r1-16" corresp="#q17">
+								<p>There was one story when we went to the cemetery, the really big one, at Lodz-there were tombstones with clothes on them and it was the teenagers who survived the holocaust and then they were killed afterwards for being Jewish. It just—that it made us all angry—because they went through so much and then they were killed just for being Jewish. So that kind of shows the resentment, that was still left after, the kind of conflict even after the holocaust—they had escaped that and were still hated, I guess.</p>
+							</answer>
+							<answer xml:id="r1-17" corresp="#q18">
+								<p>Yes—I don't think you can go somewhere like that and not be affected in any way. It just makes you think how you connect and relate to other people. I mean like going to csun—there are so many people here that you don't even think about like their experiences. It makes you think about human beings in whole different way—cuz during the holocaust-I guess it's just a lot of negative stuff—but you think about people who did help—you see the courage—you the negative and the courage too—especially when they didn't have to help; they didn't have to do anything—so now I think about going out of the way to help others without being asked.</p>
+								<p>I appreciate the good in a way—I think about how people can be good person without being asked.</p>
+							</answer>
+							<answer xml:id="r1-15" corresp="#q16">
+								<p>YOUR FAITH—how could this happen—it just really hard—why didn't someone the church intervene but then you think about those that did help--. There's a lot of negative things going on and sometimes you think, how could this happen.</p>
+							</answer>
+							<answer xml:id="r1-16" corresp="#q17">
+								<p>There was one story when we went to the cemetery, the really big one, at Lodz-there were tombstones with clothes on them and it was the teenagers who survived the holocaust and then they were killed afterwards for being Jewish. It just—that it made us all angry—because they went through so much and then they were killed just for being Jewish. So that kind of shows the resentment, that was still left after, the kind of conflict even after the holocaust—they had escaped that and were still hated, I guess.</p>
+							</answer>
+							<answer xml:id="r1-18" corresp="#q19">
+								<p>I told all my uncles and aunts because no one has ever been out of the country so they wanted me to tell them all—I showed them everything and told them stories.</p>
+							</answer>
+							<answer xml:id="r1-19" corresp="#q20">
+								<p>(I say she saw black hole of evil—but she saw this white light around it too—a voluntary light)</p>
+								<p>The entire event was "over the line"—it happened and to that extreme.</p>
+								<p>(By going there, it deepened your visceral connection to the humanity of what happened—it continues to grow, hasn't shattered you, but rather made you more sensitive to the pain of others and the goodness of others too.)</p>
+								<p>You hear a lot about the holocaust Here in California you are exposed to it (holocaust)—you hear about it, read about, but you don't live it—like some people did—and I think that's really important—and I know it's really hard—but to make it real—we think about it happening then—but it is happening for people today—and it's important to know that. That it is real.</p>
+							</answer>
+					</answers>
+				</response>
+				<response xml:id="r2">
+					<name>Danielle</name>
+					<answers>
+							<answer xml:id="r2-1" corresp="#q1c">
+								<p>I call myself Jew-<hi>ish</hi>. I have had a Bat Mitzvah ceremony, was confirmed, belong to a temple and still celebrate certain holidays, but to me, those practices are more part of a cultural background than because of faith.</p>
+							</answer>
+							<answer xml:id="r2-2" corresp="#q2">
+								<p>Yes. A large portion of my family was killed and/or displaced during the Holocaust and I have stories from the survivors (mainly through my maternal grandmother). Hebrew school as well as secular school also discussed the subject at least once each year (1st grade-college).</p>
+							</answer>
+							<answer xml:id="r2-3" corresp="#q7">
+								<p>When reading about the subject in a book and maybe seeing a few pictures or visiting the local Holocaust museums, it is easy to detach. To physically visit the location where such horrors took place is not as easy. To have the privilege of actually seeing these places made what I have learned previously seem more concrete. They're not just names and pictures in books and museums.</p>
+							</answer>
+							<answer xml:id="r2-4" corresp="#q8">
+								<p>As mentioned before, stories from my grandmother, other family members, and through school.</p>
+							</answer>
+							<answer xml:id="r2-5" corresp="#q10a">
+								<p>I really had no expectations or images before going.</p>
+							</answer>
+							<answer xml:id="r2-6" corresp="#q12">
+								<p>My best friend as a kid once said I was going to hell. And I had a classmate in high school who was surprised I didn't have horns. That's about the extent of my experience.</p>
+							</answer>
+							<answer xml:id="r2-7" corresp="#q15">
+								<p>No.</p>
+							</answer>
+							<answer xml:id="r2-8" corresp="#q16">
+								<p>Not really, it just made it easier to picture the evil.</p>
+							</answer>
+							<answer xml:id="r2-9" corresp="#q19">
+								<p>Only if the subject comes up.</p>
+							</answer>
+					</answers>
+				</response>
+				<response xml:id="r3">
+					<name>Arthur</name>
+					<answers>
+						<answer xml:id="r3-6" corresp="#q4">
+							<p>We kind of started at #5—if you want to fill in that above—quite briefly…</p>
+						</answer>
+						<answer xml:id="r3-7" corresp="#q5">
+							<p>I had thought of the Holocaust as a great big thing—associated with massive killing on a big scale. I was never conscious of it on a local level. Just as when you watch a film that focuses on one family or character, so too this experience focused on a particular place, which made things more concrete.</p>
+						</answer>
+						<answer xml:id="r3-8" corresp="#q5a">
+							<p>Yes—the ceremony made me aware of the Poles' attitude—I had never thought about the Poles' perception; I am aware of how the Poles have many layers--</p>
+						</answer>
+						<answer xml:id="r3-9" corresp="#q5b">
+							<p>Talking to the Polish survivors made me think about individual Polish families. It brought the Holocaust to a local level--</p>
+						</answer>
+						<answer xml:id="r3-10" corresp="#q6">
+							<p>I was aware of the unfinished memorials and how they captured the interruption into daily life caused by the war—I can still picture the corpse preparation space in the chapel—it is vivid. And I was made aware by the plaques along the cemetery walls of how many people were trying to keep memory alive.</p>
+						</answer>
+						<answer xml:id="r3-11" corresp="#q7">
+							<p>I found Auschwitz to be not as compelling as other experiences because it was so mediated—so much the museum. However, the gas chambers were powerful—these couldn't be mediated, couldn't be compromised.</p>
+						</answer>
+						<answer xml:id="r3-12" corresp="#q8">
+							<p>The meeting with the university students in Krakow was important. It inspired me to know more about Poland; meeting Polish citizens and just being in the country invested me in Poland in ways I couldn't imagine before this visit.</p>
+						</answer>
+						<answer xml:id="r3-13" corresp="#q9">
+							<list>
+								<item>An actual train car from the camps at the memorial in Lodz</item>
+								<item>The small town experience in Lututow—talking to people who witnessed what I didn't know</item>
+								<item>Graffiti in Lodz and Krakow</item>
+								<item>The intensity of urban life in Krakow</item>
+								<item>Majdanek—its almost untouched nature—a more authentic experience than Auschwitz—as well as seeing its closeness to Lublin</item>
+								<item>Jewish "kitsch"—Jewish figurines being sold at marketplaces</item>
+							</list>
+						</answer>
+						<answer xml:id="r3-15" corresp="#q10a">
+							<p>I had no thought about the Poles before this trip—I have an understanding now of how different contemporary Poles are from those who lives during the war years. I am aware now of how Poles are interested in global capitalization—it is a completely unexpected perception.</p>
+							<p>This trip gave me the awareness of how concerned and sad the common people are—I see behind the "facades"—the layers—to the human aspect.</p>
+						</answer>
+						<answer xml:id="r3-17" corresp="#q12">
+							<p>The trip made me want to be interested in my own past and look at the anti-Semitism in my life. Here Arthur was your vivid description of the Nazi graffiti and name calling you experienced in Greenfield. I think here—with this remembrance—maybe we can talk a bit more—I'm wondering how these memories of your own experiences with anti-Semitism have informed your work and thinking?</p>
+						</answer>
+						<answer xml:id="r3-20" corresp="#q15">
+							<p>Casually Jewish/Reformed</p>
+						</answer>
+						<answer xml:id="r3-21" corresp="#q16">
+							<p>It brought more fully into consciousness the position of the "bystander"—those who watch atrocities, are there by accident—and what their responsibility may be.</p>
+						</answer>
+						<answer xml:id="r3-22" corresp="#q17">
+							<p>I tried to imagine the situation of the Poles. Can we blame these people? I began to empathize with people I had considered as the enemy—I had grown up hearing that the Poles were as bad as the Germans. My experience is growing on an ethical plane.</p>
+							<p>I compare it to other kinds of "field trips"—like the "Birth Right" and "March of the Living" trips. They are similar in structure, but this trip was more valuable. I found myself attaching to a land that has been seen as evil. Unlike the other trips which focus on the evil, on this trip, we focused on the experiences that occurred here—both those that were "normal" and those that were "evil."  I think of a line "What is it that love asks of the self but to forget the self." One must leave the self behind to grow and learn. This experience resulted in my "stretching" my self.</p>
+						</answer>
+						<answer xml:id="r3-23" corresp="#q18">
+							<p>Yes. I am committed to understanding more what happened during that period. I have also changed my career focus. This experience is going to inform all I do—including my relationship to my family—how I experience and "hear" the stories of my grandfather.</p>
+						</answer>
+						<answer xml:id="r3-24" corresp="#q19">
+							<p>The trip had the effect of making me/us feel special—it is a unique experience. I will mention the trip in an off-handed way as indicative of something that I have experienced that is special, interesting. I am proud of the trip—it provides a deepening of character and "color."</p>
+						</answer>
+					</answers>
+					</name>
+				</response>
+				<response xml:id="r4">
+					<name>Cherie</name>
+					<answers>
+						<answer xml:id="r4-1" corresp="#q1a">
+							<p>African-American</p>
+						</answer>
+						<answer xml:id="r4-2" corresp="#q1b">
+							<p>Christian</p>
+						</answer>
+						<answer xml:id="r4-3" corresp="#q1c">
+							<p>As a woman mentally older than my age 27—I'm a 27 year old woman, but I feel I'm a little bit older than 27—because I'm a mom.</p>
+						</answer>
+						<answer xml:id="r4-4" corresp="#q2">
+							<p>I knew about holocaust cuz of our class—and before I knew very little—I pushed it away cuz it was about people dying and the way they died, hitting a soft spot—I avoided it and felt it was important to take a class—and I signed up and I learned a lot more.</p>
+						</answer>
+						<answer xml:id="r4-5" corresp="#q3">
+							<p>I was able to express myself more—all the anger that I had not only about what happened but the historical event & my own personal issues in experiencing the camps—it all came out—it allowed me to release my own feelings—I'm a person who likes to hold things in, and this experience helped me to release some of that; I found myself expressing more than I usually do—especially around people. (lots of emotion in saying this)</p>
+						</answer>
+						<answer xml:id="r4-6" corresp="#q4">
+							<p>I actually experienced by asking others as well—a lot people thought only Jews died there and they didn't know about the other groups—about the gypsies—and I learned about the other groups who learned; detail about how they died—the experimentation, the other ways they died.</p>
+						</answer>
+						<answer xml:id="r4-7" corresp="#q5">
+							<p>I felt uncomfortable being in a small village—felt weird being there—I noticed we were outsiders—and everyone was starring at us—I actually didn't feel comfortable being here so I didn't interview anywhere—I left with Kevin and we walked around and looked at the church. The ceremony affected me when the mayor spoke and apologized—and when you were talking.</p>
+						</answer>
+						<answer xml:id="r4-8" corresp="#q6">
+							<p>It did because I have never been in a cemetery that made me feel like that—the whole environment—the way it wasn't kept up—the different ages—knowing the Germans took the stones from cemeteries to make street—made me get angrier about what happened—saw Nazis as devils –made me see them as really evil.</p>
+						</answer>
+						<answer xml:id="r4-9" corresp="#q7">
+							<p>It had the biggest impact on me. Because I am a mother and particular things I don't like to watch like on TV—like talking about the end of the world or people killing other people—so-when I went to where people died and how it died—it hit a soft spot that is hard to handle, and hit me hard—I worry and I know something like this won't happen-but it is happening in other countries—and made me think about my kids and touched me. What if I died and they were on their own—because I know that kids were left by their parents—so I can't imagine.</p>
+						</answer>
+						<answer xml:id="r4-10" corresp="#q8">
+							<p>Mostly Auschwitz—I wasn't feeling good; I got sick after that—I had a back pain--the stress really affected my immune system—it was very hard for me to handle—it made me very depressed—so much evidence there—I didn't know that I'd see so much evidence—I didn't know that at all—and seeing all of that--anyone can see all that evidence and that it did happen—and to say it didn't happen is a lie. It affirmed my sense of what happened.</p>
+						</answer>
+						<answer xml:id="r4-11" corresp="#q9">
+							<p>Evidence at Auschwitz—the hair, the prosthetic limbs, cities with names, the actual cells where they were kept—a room without window—I could hardly breathe in there.</p>
+						</answer>
+						<answer xml:id="r4-12" corresp="#q10">
+							<p>No</p>
+						</answer>
+						<answer xml:id="r4-13" corresp="#q10a">
+							<p>After the trip, I guess it was the controversy about Poles being blamed or having responsibility for the Jews dying—I don't recall where we were when we discussed this—at one of the university settings--I learned about that.</p>
+						</answer>
+						<answer xml:id="r4-14" corresp="#q11">
+							<p>I believe I have an idea; I don't have much information about it, but on my dad's family they were slaves and were killed as well—one of my great great grandmas was married to a slave owner—lots of my family died; they were hung and shot.</p>
+						</answer>
+						<answer xml:id="r4-15" corresp="#q12">
+							<p>I grew emotional connection with the Jews cuz I'm a black female who is Christian—I knew nothing about the Jews or anything about them and now I have a sense about it and care more about it and relate my life and other school work and books—a book I'm reading right now about to the holocaust—when I read about testimony and trauma—and I link my ideas now to it.</p>
+						</answer>
+						<answer xml:id="r4-16" corresp="#q13">
+							<p>I had no experiences with Jewish people—I knew very little about them and I knew very few Jews.</p>
+						</answer>
+						<answer xml:id="r4-18" corresp="#q15">
+							<p>It made me question my faith—and even my grandmother thought the same thing--how could god allow this happen to people.</p>
+						</answer>
+						<answer xml:id="r4-19" corresp="#q16">
+							<p>Yes—how could a human kill another human for no good reason.</p>
+						</answer>
+						<answer xml:id="r4-20" corresp="#q17">
+							<p>I kind of did not want to contribute to discussion cuz I didn't know as much as others—I knew little about religions—Catholics, etc. It made me feel more open to other religions and cultures than mine which I know is a problem for me—to open up to other types of people</p>
+						</answer>
+						<answer xml:id="r4-21" corresp="#q18">
+							<p>Yes—it might sound crazy, but I care more and more about spending time with my kids—I appreciate this more—and love them more. More relating what happened the holocaust to others. I ask people now if they know about the Holocaust—and I don't think I would have done that before.</p>
+						</answer>
+						<answer xml:id="r4-22" corresp="#q19">
+							<p>Yes—People talk about where they travel, and I tell them I've been to Poland. I talk about it as travel experience—and I ask them if they know about the Holocaust —I educate others now—and about Hitler—One 17 year old student from Kazastan and he didn't know anything about the Holocaust. His reason was we don't study "Jewish Culture"—I started telling him about it—I told how many people died there, how it happened; he didn't seem very interested—but he knows now!</p>
+						</answer>
+						<answer xml:id="r4-23" corresp="#q20">
+							<p>I had lots of obstacle to going—so I felt tested—yet, I benefitted so much though it was a real trial. Now I care more about the issue.</p>
+						</answer>
+					</answers>
+				</response>
+				<response xml:id="r5">
+					<name>Cynthia</name>
+					<answers>
+						<answer xml:id="r5-1" corresp="#q1">
+							<p>Before I didn't know—but I've done my research and I am Polish and Russian—though my last name is Indian from India; I was a Mormon for 10 years! That's how I did my genealogy—I was raised as a conservative Jew--/I'm also lesbian and mom and a grandmother—and these influence me.
+							</p>
+						</answer>
+						<answer xml:id="r5-2" corresp="#q2">
+							<p>Learned about Holocaust thru classes and first Hebrew teacher was a survivor—had tattoo on his arm; —my instructor for my Bat Mitzvah—not just the cantor—but Mr. Weisman who taught me the entire service was also a survivor.
+							</p>
+						</answer>
+						<answer xml:id="r5-3" corresp="#q3">
+							<p>Emotionally I have always been touched by the Holocaust through people I knew. But to actually have been there was an eye opener. Birkeneau made more of an impression on me than Auschwitz; and maybe because we went there so quickly—and even though the tour guide was very informative, but Kirteneau when we walked into the barracks where they had the bathrooms—you could smell stench in barracks and open pit toilets and it has been half a century—you could still smell the stench, it was very visceral—so although I work in a hospital, all those things they talk about when you read accounts—like when they have diarrhea –it became so much more real to me than just a story. Especially when we were there—it was raining and it was cold—you could feel it. That's why I had to draw the picture cuz I couldn't put into words everything I was feeling. But we were standing there, and there was the smoke from the chimneys, and here we were—so that's why I had to draw.
+							</p>
+						</answer>
+						<answer xml:id="r5-4" corresp="#q4">
+							<p>I hadn't known, had grasped the number of Poles killed and the choices they didn't to have make. They really didn't have a choice; self-preserveance kicks in. Preserving the lives of your children—I don't know what choices I would have made. I couldn't even begin to understand.
+							</p>
+						</answer>
+						<answer xml:id="r5-5" corresp="#q5">
+							<p>Lututow: I was affected because your family came from here—it made it a concrete experience—the fact there was no cemetery—it reflected what happened all over where the Nazis were—on a small scale I multiplied this to other villages; it was just amazing. It was meaningful to speak to the older Poles: he was six years old and although the person who he knew who now lives in NY, doesn't validate his concerns, they were children—and, the views of children aren't the same—scary for them to be that young. He was a child, scary for them—and he still remembers the choices his older brothers had made in order to survive.—didn't have a choice to save Jews that were that and besides the fact the village was mostly Jews and so there were so few Poles—they couldn't intervene—didn't realize before how helpless Poles were. Like I didn't realize about Auschwitz—like that book I read about music—but she talks about walking thru Auschwitz and they were ignored; wasn't until I was there that I realized the Poles weren't there—it was made of by Germans. My outlook has changed—you read that the Poles didn't care—and it is more complex because you realize we've been blaming the Poles and it may not necessarily be so. It was a big change in me; it made a huge difference.
+							</p>
+							<p>Being there concretized all my knowledge of the Holocaust and of Poland. See how more complex history is—to blame Poles—changed?
+							</p>
+						</answer>
+						<answer xml:id="r5-6" corresp="#q5a">
+							<p>Ceremony: I was struck by the very important people there—govt. officials and all the children, and the mayor apologizing—the kids had a tough time—very human and normal behavior—–it was what kids do—the teenage boys were throwing pebbles at the girls—kind of very human—you'd see this any place—very normal—transcending all language, all politics, all religion. It may not have been respectful, it was what kids do. I just felt here we are in this village and hearing about the Holocaust—and these kids made me think "life goes on."
+							</p>
+						</answer>
+						<answer xml:id="r5-7" corresp="#q6">
+							<p>Lodz Cemetery: my gosh: to see trees growing out of gravesites, burial plots, unkempt cemetery—with 10000s of Jews—to show how long we were there—and they were elaborate gravesites—so if you didn't have money, you couldn't build these—so you saw their wealth and then the pits—with horse radish growing---I thought you couldn't get more appropriate—spring –bitter herbs growing—throws new light on what I did know. I hadn't been able to write poetry about this trip at all. It gets more complicated the more I read, but the trip throws a light on what is factual and not factual—especially when it comes to people who are survivors.
+							</p>
+						</answer>
+						<answer xml:id="r5-8" corresp="#q7">
+							<p>I broke down when I saw the tiny Baby shoes at Auschwitz: because my granddaughter was new—and I thought about my baby granddaughter—and this is where we lost it—and the other reason cuz there is a Iost a two year old who would have been a family member and when I saw that, my imagination went rampant. What if those had been her shoes? My family didn't die in Krakow—they were moved around the countryside.
+							</p>
+						</answer>
+						<answer xml:id="r5-9" corresp="#q8">
+							<p>Doing my genealogy but it was made more real being there—especially seeing no Jews in town of my family. I saw a picture of the synagogue in the Galicia Museum.
+							</p>
+						</answer>
+						<answer xml:id="r5-10" corresp="#q9">
+							<p>Poland as beautiful as it is—and why Poles ended in Chicago area—cuz it looks like that..also didn't expect them to be so conscious of recycling---but it makes sense to me cuz they recycle everything like our grandparents did during the war—see generational division—newer kids wear bright colors; older poles more conservatively dressed.
+							</p>
+						</answer>
+						<answer xml:id="r5-11" corresp="#q14">
+							<p>I had family in Krakow: cuz of Polish Jokes—it made me realize being here how intelligence Poles were and how Nazis needed to get rid of intelligentsia—our families must have had lots of equality there in some places to be able to maneuver that way we did; I understand why younger ones left to U.S. cuz they didn't inherit—it changed my perspective of how my great grandparents came here.
+							</p>
+						</answer>
+						<answer xml:id="r5-12" corresp="#q11">
+							<p>I can relate to that where I grew up in south San Gabriel valley—I was born in Chicago and originally lived behind Cantor's on Fairfax—which was very Jewish. Then my dad remarried (my mom died) and they bought their first house in south San Gabriel. I felt anti-Semitism—we were the only Jews on the block—until 4th grade—and other family came—and Linda and Jimmy came in. I was a girl scout—and then I started Hebrew school and I would wait for the bus to get us—and I had to change my troop to different days—there were two troops and wouldn't let me switch and I was the only Jew in the troop and they wouldn't let me switch, so I had to leave girl scouts—and then in 4th grade I also got into fight with someone who was supposed to me my really good friend—she called me a "dirty Jew" and we got into on the playground. I beat her up. They left me alone after that—but I got pulled into the principal's office; I didn't get into trouble—she did—but that was the kind of thing—and I knew I was Jewish. I ended up in junior high—there were more Jews—but I still had to put up with a lot of stuff. I went to Granada Hills high and a lot of Jews—and I wasn't the only one—and I wasn't the only one. I had been part of USY—and then Jim's mom—my mother-in-law—she was Polish and had to check to see if I had horns.—She was from Detroit/Chicago area. Then my dad had an Exxon station in Pico Rivera cuz it was the only company that would let a Jew buy! So I had a lot of experiences.
+							</p>
+						</answer>
+						<answer xml:id="r5-13" corresp="#q15">
+							<p>Faith—didn't affect my faith—I already knew it was a Nazi initiative.
+							</p>
+						</answer>
+						<answer xml:id="r5-14" corresp="#q16">
+							<p>Evil: It was more poignant, more visceral, no other way to talk about it—cuz we read about stuff living in America--getting away with genocide/ethnic cleansing when you read about it and the world looks on—it really hits---and reading about it—what do you do???
+							</p>
+						</answer>
+						<answer xml:id="r5-15" corresp="#q17">
+							<p>Yes—I don't hate Poles—I had conversations with survivors at work about war they get so agitated, they can't talk about it. And I realized our education about the way we teach other Jews about Poles and what actually occurred is very different than the actuality—so this continued hatred is someway a lot unwarranted—not that I haven't experienced Polish hatred in a personal way, I realized it is not everybody. That these are individual people.
+							</p>
+						</answer>
+						<answer xml:id="r5-16" corresp="#q18">
+							<p>Yes—I've been changed. I never thought I'd be saying that I want to go back—when I was there I kept saying I want to spend more time here. I'm not spending enough time. I really want to go back. It feels like a part of me is there—if it weren't for the reality that I have kids here, I probably could go back there and live. I would try to recapture what Judaism could be or was—it's idealistic maybe–it's not exactly like going to Israel where you don't have to say you're Jewish—kind of the same idea here I have to walk around and say I'm a lesbian-cuz until I have the same equality I have to mention it—I did feel a connection/and no matter you were you could see that our people were there. And the Poles aren't trying to hide that fact. If you figure on a small percentage intermarriage in a place where Jews had been for almost 1000 years, there must be a certain percentage of non-Jewish who have Jewish blood and so we must have had a large influence. They're starting to realize their history is tied with ours and not just the regular history but their intellectual history—when you think about scientists, artists—if you think about it some of these people weren't even Jewish but managed to influence the world from Poland—it's a learning curve for them and we need to make it a learning curve for us. Their intellectual history is woven with Jews.
+							</p>
+						</answer>
+						<answer xml:id="r5-17" corresp="#q19">We talk about the trip all the time—I'd love to bike through there.
+							</p>
+						</answer>
+						<answer xml:id="r5-18" corresp="#q20">
+							<p>Food should be a part of this process—askanzsy Jews knew the food: food almost made it like home! They were selling bagels on every single corner!!
+							</p>
+						</answer>
+					</answers>
+				</response>
+				<response xml:id="r6">
+					<name>Sarah</name>
+						<answer xml:id="r6-1" corresp="#q2">
+							<p>I knew something about the Holocaust before going. I learned a lot about it in school and my dad loves watching documentaries on WWII, and they usually talk about the Holocaust. Being at the sites was a real eye opening experience. I've only seen films, documentaries, and photos; these things can only go so far compared to the real thing.</p>
+						</answer>
+						<answer xml:id="r6-2" corresp="#q4">
+							<p>When studying the Holocaust they only can cover so much. I knew some of the horrific things and I had no idea how much they did. I heard about the ghetto and I had no idea that people were starving to death there. I didn't know about the term "muselman" was when a person was dying they would fall to their knees and waver like a Muslim man praying.</p>
+						</answer>
+					<answer xml:id="r6-3" corresp="#q13">
+							<p>What I think that affect me the most was the gravesites because I didn't know that the Nazis destroyed them. I think now I have a better understanding of the Holocaust than before and how people view it.</p>
+							<p>I would tell some people about the trip and they would be interested while others wouldn't want to hear because it's so depressing.</p>
+							<p>I think I am more willing to hear people's life stories and try to understand them better. I think every place and person has a story to tell.</p>
+						</answer>
+						<answer xml:id="r6-4" corresp="#q11">
+							<p>There were some members in my group that could related to everything because they had family that survived or perished during the Holocaust. However, I couldn't really relate only really empathize or image my relatives that I know of who fought in the Pacific; and I have only a small fraction of myself that is European.</p>
+							<p>I would like to say that my relative joined the U.S. Army because of the horrific things that the Nazis were doing, but that's not true. My grandfather joined because he wanted to defend his country (Philippines) from the Japanese. However, it was still terrible to hear what happened to all those people. I found it fascinating to hear about what happened to the Catholic priests. I'm not Catholic, but my parents grew up Catholic. I was raised to have respect for the Catholic Church. I do think it was sad to what happened to them. However, some of them did do some horrible things that cost them their life and saved others.</p>
+						</answer>
+					</answers>
+				</response>				
+				<response xml:id="r7">
+					<name>Stacy</name>
+					<answers>
+						<answer xml:id="r7-1" corresp="#q1">
+							<p>Defines self as Jewish, Lesbian—I tend to see things from a Jewish perspective first.</p>
+						</answer>
+						<answer xml:id="r7-2" corresp="#q2">
+							<p>Learned about Holocaust thru films and listening to survivors speak, in religious school—first experience at 11 or 12 years old was my first exposure about Holocaust?</p>
+						</answer>
+						<answer xml:id="r7-3" corresp="#q3">
+							<p>Trip for me: added to my emotional knowledge—I definitely experienced intense emotion on a deep level on the trip—the other stuff I knew or heard about—but the emotional knowledge was new. Different things during the trip touched me on a very deep emotional level.</p>
+						</answer>
+						<answer xml:id="r7-4" corresp="#q4">
+							<p>Learned about Poland is a very beautiful country—rich history and because of invasions—diverse make-up. People in Poland are workers, farmers, agricultural--poor in a way we aren't in U.S. There's poverty in the U.S., but it felt different there—they aren't used to having a lot of $--they use what they have. Other thing I learned was from my experience with Poles—very friendly, generous, warm—and that was in contrast to what I had heard about them that they were very anti-Semitic. My experience was that when they found out I was Jewish they weren't anti-Semitic, but wanted to learn more, were curious, wanted to know why I was there.</p>
+						</answer>
+						<answer xml:id="r7-5" corresp="#q5">
+							<p>Lututow: On the cemetery and elderly survivors: one thing that struck out for me was mayor did apologize—I didn't expect that—I also was surprised by how everyone came out to the ceremony and were so serious about it; I thought they'd poo poo it off; but that's not what they did; they were very much aware this was the history of their town—and that there town was not what it was 50 years ago. Elderly Poles: I wasn't in on that.</p>
+						</answer>
+						<answer xml:id="r7-6" corresp="#q6">
+							<p>Lodz Cemetery: that was a very emotional day— just seeing the extent of the Shoah—I knew that the Lodz ghetto was there and that they had died in the ghetto and that ghetto dead was in the Lodz ceremony. What affected me was how much a Jewish community presence was there—how many centuries of Jews had lived there, made their life there, had thrived there, and then the size of the cemetery—I had no idea how large it was. And it was now just gone.</p>
+						</answer>
+						<answer xml:id="r7-7" corresp="#q7">
+							<p>Auschwitz: I think how it changed my understanding is that I thought the camps were 100% Jewish and not 80% Jewish—and that there was this other 20%. In seeing how many others died there—so many Poles killed there too. That things were brutal for Poles and Poles were singled out. The fact that they would arrest a person's family and bring them to the camps. That sort of changed it for me—that it was just as brutal for the Poles under the Nazi regime as for the Jews.</p>
+						</answer>
+						<answer xml:id="r7-8" corresp="#q8">
+							<p>The Lublin experience—I realized that the Poles need for history—what life was like for people—see how he had created the town, etc. I think that Poland wants to do this in general—they don't have a history, they've been denied their history. It is hopeful-Poland wants to do that.</p>
+						</answer>
+						<answer xml:id="r7-9" corresp="#q9">
+							<p>Beauty of Poland—It is beautiful in a way that Israel is like. I imagine the garden of Eden-like—its greenness, the smell of air-blueness of sky—it's a very earthy, sentiment type of place—and the other thing was that there are Jews there now—that they are trying to grow and thrive. Trying to establish themselves and move forward from now on, in spite of everything that happened—that was very hopeful.</p>
+						</answer>
+						<answer xml:id="r7-10" corresp="#q10">
+							<p>My mother's father was from Odessa, Russia and I kept thinking I probably had relatives that were in Poland during and after the Holocaust or before the Holocaust who then came to the U.S. Because I know that the boundaries of Poland kept on changing—so I would like to do more research and find out what happened to them.</p>
+						</answer>
+						<answer xml:id="r7-11" corresp="#q11">
+							<p>I grew up in LA and then San Diego as a child, I didn't have any specific instances of anti Semitism or being singled out for being Jewish. But I was in Midwest during many summers; and the Midwest may as well be a different planet than Calif.—my father converted—because we were Jewish, his family had never met any Jews before—you know—with horns on our head--was restrained about us---the Midwest is that way-everything is black and white, literally—blacks lived in one side of town and the whites in the other—and the Jews usually lived in the white section. they saw us as "other"—I never had a personal experiences. I remember that my family was frum and we were reformed and that was more of an issue.</p>
+						</answer>
+						<answer xml:id="r7-12" corresp="#q15-16">
+							<p>On faith: I walked away with this feeling more strongly about my Judaism than before because I realized the blame was with Nazis—they did what they did. For me, God was not in the equation—my faith wasn't tested that way—more I realized human cruelty. It's one thing to read about it, but to actually be at those places, in Auschwitz/Birkeneau or the monument of tombstones—certain things were really hard to grasp. Not only did the Nazis pillage all the cemeteries and take out all stones and then had the evilness to actually use them to line the streets. That really made me aware of the extent of how much evil there was.</p>
+						</answer>
+						<answer xml:id="r7-13" corresp="#q17">
+							<p>It brought it out in sharp relief—that these things are still here; not that any of that has gone away—the strife between Jews and others, of other races--Made me aware of how conflict still exists everywhere. Made me sensitive to the suffering that continues to exist.</p>
+						</answer>
+						<answer xml:id="r7-14" corresp="#q18">
+							<p>It changed me on an emotional level—it's something I won't ever forget for the rest of my life.—and it will still come in waves and hit me. I actually want to go back to Poland—not sure when. Like to do more family searching.</p>
+						</answer>
+						<answer xml:id="r7-15" corresp="#q19">
+							<p>I talk about things I remember; something will arise and I'll talk about it; feeling and dreams come up—my emotions still strong. I still have dreams about it—being on the trip. It comes and goes in waves. It was so intense that years ago I would have thought my trip to Israel was very intense. That was a totally different thing. But this was so intense—for me, going to Poland was way more intense than going to Israel. There is so much of a presence of Jews historically in Poland.</p>
+						</answer>
+						<answer xml:id="r7-16" corresp="#q20">
+							<p>About trip: at varying points more debriefings.</p>
+						</answer>
+					</answers>
+				</response>
+				<response xml:id="r8">
+					<name>Tiara Jackson</name>
+					<answers>
+						<answer xml:id="r8-1" corresp="#q1a">
+							<p>Yes, I am African American.</p>
+						</answer>
+						<answer xml:id="r8-2" corresp="#q1b">
+							<p>Christianity</p>
+						</answer>
+						<answer xml:id="r8-3" corresp="#q1c">
+							<p>Yes, my nurturing that provided morals and values, as well as religious beliefs.</p>
+						</answer>
+						<answer xml:id="r8-4" corresp="#q2">
+							<p>Yes, all through high school and through current American Jewish Literature at CSUN.</p>
+						</answer>
+						<answer xml:id="r8-5" corresp="#q3">
+							<p>This trip particularly gave me an emotional scare about war in response to the notion of being evil.</p>
+						</answer>
+						<answer xml:id="r8-6" corresp="#q4">
+							<p>I do know that the world really can be evil seeing the aftermath. I always had the notion that maybe it can be fake or this is made up.</p>
+						</answer>
+						<answer xml:id="r8-7" corresp="#q5">
+							<p>It did not change my perspective it is still wrong and still evil.</p>
+						</answer>
+It's one thing to see pictures and move on with your life; it's like how we watch the news with all the tragedy going on in the world it's hard to fathom it longer than a few minutes because we have become desensitized. But the fact I got to walk on the same ground that someone from the Holocaust just made me have a different perspective. I still can't get over it that I walked on those grounds, sat in the grass they died in were shot in.</p>
+						</answer>
+						<answer xml:id="r8-8" corresp="#q8">
+							<p>Yes, we went to the Katyn Massacre convention held at the Radogoszcz Prison and they had many books and articles about the Katyn Massacre. It showed just pure genocide within the prison systems. It let me know that even in prison no one was safe not just at the camps.</p>
+						</answer>
+						<answer xml:id="r8-9" corresp="#q9">
+							<p>Lodz cemetery the holes in the ground that were intentionally dug buy the people who later occupy them. I could not imagine digging my own grave.</p>
+						</answer>
+						<answer xml:id="r8-10" corresp="#q10">
+							<p>Honestly, I just knew the place would be so beautiful. How could beauty be so evil? Something I will never understood the most beautiful people and places have such dark secrets, dark past that are full of stains.</p>
+						</answer>
+						<answer xml:id="r8-11" corresp="#q10a">
+							<p>Yes, I will never look at war the same. I feel all war is someone else's genocide.</p>
+						</answer>
+						<answer xml:id="r8-12" corresp="#q11">
+							<p>I am African American slavery is a serious connection to this.</p>
+						</answer>
+						<answer xml:id="r8-13" corresp="#q12">
+							<p>I am not a Jew, but I have had the notion of discrimination when I was in Poland. Some of the Polish people, well the older generation didn't take to me well. I got cursed in Polish, looked at in such devious manner by the elders, but the younger the generation was infatuated with me.</p>
+						</answer>
+						<answer xml:id="r8-14" corresp="#q13">
+							<p>I really did not have any experience with the Jewish community.</p>
+						</answer>
+						<answer xml:id="r8-15" corresp="#q14">
+							<p>My culture being African American, I have learned about slavery all my life and sensitized me to be able to cope with what I learned and saw.</p>
+						</answer>
+						<answer xml:id="r8-16" corresp="#q15">
+							<p>Yes, I was a person of faith before. It made me closer to God in the sense of praying that something like the Holocaust would never happen again… but it is.</p>
+						</answer>
+						<answer xml:id="r8-17" corresp="#q16">
+							<p>Yes, I did as I have stated all acts of war are an evil deity that spreads like an epidemic. I do not understand what can make someone go to that extreme.</p>
+						</answer>
+						<answer xml:id="r8-18" corresp="#q17">
+							<p>Yes, it let me know that Polish elders still view life in a binary; it's black and white or one or the other. So, I had to be nice to the bad looks and frowns I got for being black and possibly overweight.</p>
+						</answer>
+						<answer xml:id="r8-19" corresp="#q18">
+							<p>No, I'm still the same me just a bit more educated.</p>
+						</answer>
+						<answer xml:id="r8-20" corresp="#q19">
+							<p>I talk about it usually in world politics conversations that I frequently have. It just seems pertinent to bring it up.</p>
+						</answer>
+					</answers>
+				</response>
+				<response xml:id="r9">
+					<name>Krystal Brooks</name>
+					<answers>
+						<answer xml:id="r9-1" corresp="#q1a">
+							<p>Black and/or African American. prefer black, given civil rights connotations...</p>
+						</answer>
+						<answer xml:id="r9-2" corresp="#q1b">
+							<p>not any particular group.... more educated you become, the more religious you become. I identify Raised Baptist.... (Jehovah's Witness family history).</p>
+						</answer>
+						<answer xml:id="r9-3" corresp="#q1c">
+							<p>rare open-mindedness. (epitome of history major.) not as objective with historical periods relating to your life or are personal to me.</p>
+						</answer>
+						<answer xml:id="r9-4" corresp="#q2">
+							<p>Yes. elementary school, standard history curriculum. My family would compare the African-American plight with Jewish suffering as well as that of other groups. AP History on WWII. Literary perspective from 495 (Dr. Clark's class.) Didn't become real to me until I saw the personalized stories and dramatizations in English class....</p>
+						</answer>
+						<answer xml:id="r9-5" corresp="#q3">
+							<p>face-to-face confrontation, participation with real-events. It made me more culturally informed / sound, becoming more sensitive, aware, and empathetic.</p>
+						</answer>
+						<answer xml:id="r9-6" corresp="#q4">
+							<p>the atrocities of War, what the landscape looked like. Grounds new learning.</p>
+						</answer>
+						<answer xml:id="r9-7" corresp="#q5">
+							<p>Yes, it showed a modern consequence of what we were studying. once there were 85% Jews to none today.</p>
+						</answer>
+						<answer xml:id="r9-8" corresp="#q5a">
+							<p>Not so much in understanding the history, but it was in understanding the personal feelings and victims. Less developed or less industrialized than many small towns in the US.</p>
+						</answer>
+						<answer xml:id="r9-9" corresp="#q5b">
+							<p>My understanding of the events was clear. The interviews helped actualized the events in concrete details and living history. First-hand experience was more moving than a textbook. (How strange and foreign it was to see a polish man live with a lot of Jews and Jewish friends and then live without them. it took the man years to process that sudden change.)</p>
+						</answer>
+						<answer xml:id="r9-10" corresp="#q6">
+							<p>I understood the annihilation of the Jews as more mechanical and industrialized. To compare to slavery, it was conducted over a long period of time and conducted for labor purposes primarily. The cemetery drove him for me this distinction. This forced me to put myself in the shoes of these victims; to finish their story or recall it for the first time.</p>
+							<p>The memorial wasn't as surreal or intense as Auschwitz or other sites of the Holocaust. Though the books of all the names of victims.</p>
+						</answer>
+						<answer xml:id="r9-11" corresp="#q7">
+							<p>Made me see the Holocaust as more dehumanizing than I thought. The jail within the camps, the sheer size, and the emphasis on children and their belongings were all shocking to me. To make the distinction between concentration camp/labor camp/death camp was invaluable. One of the punishments was for prisoners to stand all night in a tiny cell and work all day, until dying of exhaustion. The gas chamber was particularly powerful, as the tour guide told us stories about throwing babies into that chamber. For an aspiring mother or for anyone else, this was terrible to hear.</p>
+						</answer>
+						<answer xml:id="r9-12" corresp="#q8">
+							<p>The way society had commercialized the Holocaust. Learning about it from American education was a revelation compared to Polish understanding. Carts advertising Salt Mines, Auschwitz as if they were on the same level. It was sold as an attraction rather than a historical landmark. Mainstream society is careful to question that commercialization. This was very interesting to witness in the Jewish quarter, and elsewhere.</p>
+						</answer>
+						<answer xml:id="r9-13" corresp="#q9">
+							<list>
+								<item>a room with 6-8 kilotons of human hair. Shocking! This was a whole other level of dehumanization and (commercial) exploitation. Using body parts to sell.</item>
+								<item>Africans.</item>
+								<item>so much rain.</item>
+								<item>The land was impossibly green (I have lived in the city my whole life).</item>
+								<item>All small businesses, lack of department stores.</item>
+								<item>the condition and planning and lack of infrastructure in the town of Lodz.</item>
+							</list>
+						</answer>
+						<answer xml:id="r9-14" corresp="#q10">
+							<p>Didn't hear anything about them. They had pale skin, I knew that before I went. Didn't realize the Holocaust was so integral to Poland, that so many of the Jews came from there.</p>
+						</answer>
+						<answer xml:id="r9-15" corresp="#q10a">
+							<p>How diverse it was was surprising. They were often hospitable, traditional and used to their way of life.</p>
+						</answer>
+						<answer xml:id="r9-16" corresp="#q11">
+							<p>I'm the only one in my family to travel abroad. Distant oppression and slavery way way back.</p>
+						</answer>
+						<answer xml:id="r9-17" corresp="#q12">
+							<p>My impression was that Jews were average middle-class citizens. There are always exceptions. I just assumed they would fit in and be assimilated.</p>
+							<p>I've heard of racial epithets, but that's my only experience with anti-Semitism.</p>
+							<p>(anti-Semitic, for me, aligns with hateful.)</p>
+						</answer>
+						<answer xml:id="r9-18" corresp="#q13">
+							<p>Is Judaism a religion or race? This is always a big question, so I've had no religious experiences with Jews, but I have with racial Jews.</p>
+						</answer>
+						<answer xml:id="r9-19" corresp="#q15">
+							<p>I was not a particular person of faith, and the trip didn't change my faith really.</p>
+						</answer>
+						<answer xml:id="r9-20" corresp="#q16">
+							<p>I had already seen a lynching museum, which already made me feel people could be that cruel.</p>
+						</answer>
+						<answer xml:id="r9-21" corresp="#q17">
+							<p>I had already been exposed to these kind of inter-faith, inter-racial situations.</p>
+						</answer>
+						<answer xml:id="r9-22" corresp="#q18">
+							<p>Yes, it changed the way I look at the world, at history, and humankind. It also changed the way I approach travelling, as a form of education and comprehensive life-event rather than as tourism or vacation.</p>
+						</answer>
+						<answer xml:id="r9-23" corresp="#q19">
+							<p>I talk about it all the time, it really opened my eyes.</p>
+						</answer>
+					</answers>
+				</response>
+				<response xml:id="r10">
+					<name>Liz Helton</name>
+					<answers>
+						<answer xml:id="r10-1" corresp="#q1a">
+							<p>No I don't.</p>
+						</answer>
+						<answer xml:id="r10-2" corresp="#q1b">
+							<p>Yes, Christian.</p>
+						</answer>
+						<answer xml:id="r10-3" corresp="#q1c">
+							<p>I come from a slightly privileged generation, and maybe even racial/religious background (at least according to my Mom.)</p>
+						</answer>
+						<answer xml:id="r10-4" corresp="#q2">
+							<p>Yes, I learned about it in generic ways from different books I read, from movies, and from my research paper for Dr. Clark's 495 class on American Culture and the Holocaust.<p>
+							<p>Specifically, I had known that when Stalin came into Poland, he treated Polish war heroes differently than average citizens.</p>
+							<p>I researched a female Catholic social worker who saved a lot of Polish Jews from persecution.</p>
+							<p>Before going to Poland, I felt that the Holocaust was one of the darkest periods in human history. And that America likely should have stepped in before Pearl Harbor.</p>
+						</answer>
+						<answer xml:id="r10-5" corresp="#q3">
+							<p>My visit to Auschwitz added an immediate emotional level. It felt like an outside Haunted House. You could really feel the horror that hapenned there.</p>
+						</answer>
+						<answer xml:id="r10-6" corresp="#q4">
+							<p>Just how far Poland has come since the war. How much of the history was preserved was surprising. The preservation of the architecture in Krakow stood out especially. I was glad we spent more time in Krakow than in Warsaw, which felt pristine and new. You couldn't tell that anything happened.</p>
+						</answer>
+						<answer xml:id="r10-7" corresp="#q5">
+							<p>Hearing a first hand experience was important, and made me know more about what actually happened rather than anything based on books I had read or movies I had seen. Understanding smaller, immediate, and local details added a new dimension for me. I had only heard about Polish people who didn't like Jews. Here in Lututow, I learned that the Poles' treatment of Jews in the war was more complicated and varying than I thought. They were also more victimized than I realized. This town definitely changed my perspective of the Holocaust.</p>
+						</answer>
+						<answer xml:id="r10-8" corresp="#q5a">
+							<p>This was an important experience, groundbreaking. What was most surprising was all of the schoolchildren not paying attention. Whether they were distracted or didn't realize what was really going on, it was sort of heartbreaking to see them out of touch with their heritage. Part of the reason, I realized, was that teachers, parents, institutions might not be doing their job to teach these children about the history of their town. Perhaps... In other places the Holocaust was more recognized and appreciated, but in this town the lack of understanding stood out.</p>
+						</answer>
+						<answer xml:id="r10-9" corresp="#q5b">
+							<p>This conversation definitely changed my respect for the Polish experience. It made me realize that there were also a lot more people out there against the Jews than most people are aware of.</p>
+						</answer>
+						<answer xml:id="r10-10" corresp="#q6">
+							<p>It makes things a little more real and authentic when you see half-open graves ready to throw human bodies into. The fallen apart the cemetery and the cordoned off areas of the cemetery felt closer to the devastation than a museum, for instance. This visit made me feel like something is in the process of happening rather than a finished result.</p>
+						</answer>
+						<answer xml:id="r10-11" corresp="#q7">
+							<p>This visit also made this period more real to me. I could still feel the death and the pain and agony in the building and on the grounds of the camp.</p>
+						</answer>
+						<answer xml:id="r10-12" corresp="#q8">
+							<p>Museums and artifacts (in Krakow and Warsaw esp.) from that era really drove home a broader perspective of the genocide.</p>
+						</answer>
+						<answer xml:id="r10-13" corresp="#q9">
+							<p>The luggage, shoes, hair, and individual belongings at Auschwitz. All of the things that you realize have lost their owners and will never be returned.</p> <p>So many of the buildings that were still standing and in good condition, including the buildings that withstood bombings and fires, etc.</p>
+						</answer>
+						<answer xml:id="r10-14" corresp="#q10">
+							<p>None at all. I had no resources or reason to have an impression.</p>
+						</answer>
+						<answer xml:id="r10-15" corresp="#q10a">
+							<p>A lot of them were very friendly and nice and helpful.</p>
+						</answer>
+						<answer xml:id="r10-16" corresp="#q11">
+							<p>I had a relative in WWI, a nurse who helped injured polish soldiers from France (I believe?) back to Poland. She was a martyr who was killed for heroic actions.</p>
+						</answer>
+						<answer xml:id="r10-17" corresp="#q12">
+							<p>I knew about the historic impression/propaganda manufactured by the Nazis, that Jews are "stupid, deserve to be killed, cheap, etc." I've had no experience of anti-Semitism.</p>
+						</answer>
+						<answer xml:id="r10-18" corresp="#q13">
+							<p>I knew one Jewish girl in High School. We always got along really well and became friends.</p>
+						</answer>
+						<answer xml:id="r10-19" corresp="#q14">
+							<p>Historically, my religion was persecuted as well as the Jews during the Spanish inquisition, for instance.</p>
+						</answer>
+						<answer xml:id="r10-20" corresp="#q15">
+							<p>It was heartbreaking to know that all these people died. It may have grounded me more in my faith. It did not make me question my spirituality or faith.</p>
+							<p>My faith is human, that people have fundamental good within them, yet they are able to be turned another way entirely.</p>
+						</answer>
+						<answer xml:id="r10-21" corresp="#q16">
+							<p>Mainly that this is still going on today.</p>
+						</answer>
+						<answer xml:id="r10-22" corresp="#q17">
+							<p>Poles have moved on fairly successfully since the war. The country seems to make the Holocaust a part of it. And they are not bogged down by their past.</p>
+						</answer>
+						<answer xml:id="r10-23" corresp="#q18">
+							<p>I now question the media portrayals of the Holocaust a lot more.</p>
+						</answer>
+						<answer xml:id="r10-24" corresp="#q19">
+							<p>I have not really talked to my family about the trip, but I talk about it most with people who I travelled with. Whenever we get together, new memories come back to me and surprise me. This is a unique experience that we shared and continue to process.</p>
+						</answer>
+						<answer xml:id="r10-25" corresp="#q21">
+							<p>I am more interested in Poland today than I was before I went. Also, I am more sympathetic to the Poles during the War than I was before I left.</p>
+						</answer>
+					</answers>
+				</response>
+				<response xml:id="r11">
+					<name>Rachel Silverman</name>
+					<answers>
+						<answer xml:id="r11-1" corresp="#q1a">
+							<p>American white Jewish female.</p>
+						</answer>
+						<answer xml:id="r11-2" corresp="#q1c">
+							<p>Being a student—affects my views---I am exposed to younger generations and exposed to different and experiences and generations—as compared to those who are working and in the world and learning about different people and cultures and views makes my perspective different from those who may already be in the world and thus maybe more close minded</p>
+						</answer>
+						<answer xml:id="r11-3" corresp="#q2">
+							<p>I learned a lot about the Holocaust during the period of my confirmation (after my Bat Mitzvah). We had to go thru a 3 year confirmation class—and one of the years was about the Holocaust so the entire year was spent watching Holocaust movies, reading Holocaust books, discussion the Holocaust, going to the Museum of Tolerance. So that entire year on Thursdays we would talk about the Holocaust and discuss it, so I have that prior knowledge. And then also I had taken some classes in college before I went on the trip; although it was not an extensive study, there were sections about it so that I had studied it academically as well. Going to Poland had a bigger affect on me because being there was different than reading about it, or seeing it in movies, or whatever. And seeing that firsthand experience by walking thru the camps, specifically Auschwitz; one of the parts that really got me was walking in the room that had all the cut hair in the glass case; and inside of it was little girls' braids that really got to me and made the Holocaust not necessarily more real but had a more deep connection to me than before.</p>
+						</answer>
+						<answer xml:id="r11-4" corresp="#q4">
+							<p>I think that when you study the Holocaust generally it is always about what happened to the Jews, what happened to the Jews, but going there you realize that it is a lot more than just what happened to the Jews, but it happened to other people as well. And you kind of skim over that because all discussion of the Holocaust is fixed on the 6 million Jews but you learn that it wasn't just the Jewish people who were ostracized and affected by this.</p>
+							<p>Also, learning about that after the war that the Nazis blew up a bunch of gas chambers. ..I had not really learned about that—because we really don't study about what happened at the end except about the liberation and then everyone is happy (cynically said), but at the end you really don't know what happened, so going thru Auschwitz and seeing all the gas chambers and barracks and where people slept and then were destroyed really showed that they wanted to hide what they were actually doing and that was really interesting to me. They knew it was wrong.</p>
+						</answer> 
+						<answer xml:id="r11-5" corresp="#q7">
+							<p>The Schindler's Factory was interesting cuz it was interactive and had an impact—you had to take things in but the interactive feeling was really nice cuz you learn in a way that is emotional but allows you to learn and take in more cuz more user friendly. Another camp with separate buildings and one with one barn space filled with children's shoes—it really got to us. And then there was a wall with lights going on and off with names on it—sort of interactive and it really got to us. Lodz cemetery: we were walking around and it was nice because although we were being guided it was nice because we also had the opportunity to roam around. Although I didn't know anyone, walking around and looking at the names and seeing certain tombstone, feeling nature and god and life and death in one. Because all the Jewish cemeteries are covered by growth and although it is sad it is also reassuring that life returns and there is going to be growth and is that sort of life after death kind of thing. And also there was the ghetto field—and we walked thru that path and one of the most touching things was that we all collected there and three of us said the Mourning Kaddish—just reciting the Kaddish for those people was a really touching moment in that field.</p>
+						</answer>
+						<answer xml:id="r11-6" corresp="#q9">
+							<p>to see: we were in the bus and Helen decided to detour and we stopped in front a Yeshiva that was being rebuilt and there were gates around it like construction don't enter and we were kind of roaming around the fence and found an entrance and the head of the construction workers was there and allowed us to come in and for some reason the guy who was heading the rebuilding was there and was going to give us a tour. We went in there and it was like a two or three story yeshiva that was being rebuilt inside. In the middle of the second floor there was like when you go to orthodox temples, there is instead of a bema a table in the middle and the arc in front of it. And standing in front of the table and knowing that great jewish scholars had been there and the sidderim on the walls and just touching them and the people that were mentioned were all these great rabbis. And being there and being able to connect with that, it was really touching. And also we went to another one in Krakow where there was a non-Jewish man who was rebuilding a very small synagogue that had the old parchments and the yods. It was so touching that a non-Jewish man was putting so much effort into rebuilding this—repainting, doing all these things by himself. And when we were in there, standing there at that moment in the center of that room with that table in the middle and knowing that great scholars had been here. This was something I had not expected to see when going to Poland—I expected to see young poles, how they live, how they eat, the cemeteries, concentration camps—but I never expected to have that connection with great rabbinic scholars in this way. It is concrete—touching the wood, feeling the sidderim, knowing these great scholars had touched these same books really brings to life traditional Judaism. People before you had really done this. It is a tradition and has been passed down from family to family—everyone—whether from Poland or not—has these things in common. A connection to something. From the other side of the world, something I had not expected.</p>
+						</answer>
+						<answer xml:id="r11-7" corresp="#q10">
+							<p>I didn't really have impressions of Polish people beforehand except they didn't speak English—but I found that most of them did speak English! I really didn't have a thought about how they looked at or how they were. Because I was a Jewish studies major and not a history major like many of the other students, I hadn't done much research about Poland. And in all honesty when they were talking about the history of Poland other than about the Jews and the holocaust I was clueless. But regarding the non-Jews/poles/Jews recovering their Judaism—she recounts being with rabbi shuddrich and hearing his story about the skinhead who discovers he is Jewish and become very orthodox, pious, devout. "Even within Poland finding out Jewish heritage even changes the poles and changes the image of what Poland is. When we saw a memorial statue and behind it is the building of a new museum and yet they were taking away something that had been there before—and it was an kind of up and down experience—you're doing something great and yet you're also taking away something that was special in itself." {me: she sees colliding of historical moments, complexity of history}</p>
+						</answer>
+						<answer xml:id="r11-8" corresp="#q11">
+							<p>My grandparents were from Russia—but all were here before the war.</p>
+						</answer>
+						<answer xml:id="r11-9" corresp="#q12">
+							<p>My images of Jews in the holocaust—I had those images that we all have seen of the piles of bodies and the Jew with the yellow star—the images that are shown to you were preset in my life. Anti-Semiticism: I felt really—where I grew up there was only one private high school and it was catholic—she recounts feeling different because she couldn't go to that school and she recounts being told terrible "jokes" about Jews and then in the dorm, she has an experience with a "friend" who gets drunk, sees her star of David necklace and says he wants Hitler to come back and kill the Jews. So today there is still anti-Semitism whether people think so or not.</p>
+						</answer>
+						<answer xml:id="r11-10" corresp="#q15">
+							<p>It's kind of interesting for me because I had thought of myself as a reformed Jew but as time progressed, I considered myself to be more conservative. I began going to Chabad more, and I really like that kind of Judaism but also reformed Judaism. And then I went to Poland and although I consider myself a religious Jew, I didn't keep kosher or the Sabbath—just being there, feeling those feelings—I'm not sure it absolutely changed me, but it could have changed me, now I look at myself now, I'm different. I'm not sure if my current state is part of a progression of change, or if it was ignited by the trip, but I have become more observant. Before college I didn't have a kosher home---during the trip, I found myself wanting to keep kosher and wanting to keep the Sabbath and on Saturday morning I almost walked in the rain in Warsaw to go a mile to the temple, and before in America I would have said no I'm not doing that; now I walk 3 miles to go to shul and that is something before I wouldn't have done. And I don't know if it was the trip—but it was part of my observance change. Touching those texts and feeling the scholars had a touching effect on me.</p>
+						</answer>
+						<answer xml:id="r11-11" corresp="#q16">
+							<p>Yes—obviously. I think though that after studying the holocaust and human nature, I think people do what they have to do to survive; and sometimes people think they have to do whatever to survive. I also think of people who have survived—and she recounts story of father and son where one dies and other keeps the bread—it is so hard to imagine being in that situation. People had to do what they had to do to survive. So although there were evil men, I don't believe that all Germans were evil; they were doing what they had to do to survive. It is complicated—she sees blurring of good and evil—similar to idea of grey zone.</p>
+							<p>"Hitler was obviously an evil person—taking advantage of the world—but not all the people who were under his command were evil—they may have been trying to protect their family, etc. there really is no clear cut answer of what is good or evil, but there is a real sense of what good and evil too.</p>
+						</answer>
+						<answer xml:id="r11-12" corresp="#q17">
+							<p>I think it was interesting I saw more nuns than I had ever seen. That Poland is 95 % catholic and that the Jewish community and cultural center is not run by Jews—and that brotherhood amongst all the people helping each other out is really touching. And seeing that happen really moved me—loving thy neighbor as myself—really is the truth.</p>
+						</answer>
+						<answer xml:id="r11-13" corresp="#q18">
+							<p>I now question the media portrayals of the Holocaust a lot more.</p>
+						</answer>
+						<answer xml:id="r11-14" corresp="#q19">
+							<p>I do share it with people. It is also part of my resume—and I speak about the greater knowledge—the feeling—that I have. And I share my experience with those students who will be going this coming summer too. It comes up a lot in conversations. Going to Poland was a really special experience—I exposed myself to the dark, tragic part of our past as well as the future and the future of the Jewish community in Poland. And I also want to mention the Krakow festival and how big a part of the trip that touche4d me. I really felt that it was amazing it was happening in Poland and that it was run by people who were not Jewish. And that the JCC in Poland connected to the JCC in America and I met a couple there with whom I had email connection. It was a touching part of my story. How people are trying to rebuild the Jewish community.</p>
+						</answer>
+					</answers>
+				</response>
+				<response xml:id="r12">
+					<name>Michael</name>
+					<answers>
+						<answer xml:id="r12-1" corresp="#q1a">
+							<p>No.</p>
+						</answer>
+						<answer xml:id="r12-2" corresp="#q1b">
+							<p>I would define myself as Jewish.</p>
+						</answer>
+						<answer xml:id="r12-3" corresp="#q1c">
+							<p>No--</p>
+						</answer>
+						<answer xml:id="r12-4" corresp="#q2">
+							<p>Yes I first had encountered studying the Holocaust in middle school, in class. I believe we read Night. That was my first real encounter of learning about the Holocaust but besides that occasionally I read through high school and in college being an historian—it was definitely something of interest to me, given my heritage. I did encounter before the trip.</p>
+						</answer>
+						<answer xml:id="r12-5" corresp="#q3">
+							<p>The trip for me did have a big impact. I didn't have as much an emotional reaction as many of the students. Many of them were brought to tears. For me, it was something I processed more on a cognitive level. But on an emotional level, it definitely did hit me and touched me, but very privately. I feel it is kind of hard to talk about this.</p>
+						</answer>
+						<answer xml:id="r12-6" corresp="#q4">
+							<p>That the history as it is told is somewhat lopsided and that there is a lot of blame attributed to the Polish people, and what I learned is that there was a lot of balance that was able to come out in the process of exploring the history which I really appreciated trying to be objective. It was learning that there were people who were complacent, there were people who actually helped the Nazis carry out their mission, and there were a lot of people who didn't fit into either of these categories, didn't want them there, stood up for what was right, and resisted.</p>
+						</answer> 
+						<answer xml:id="r12-7corresp="#q5">
+							<p>It did. I can't think of a specific way it changed. It brought into perspective how the Holocaust is interpreted in a contemporary sense.</p>
+						</answer>
+						<answer xml:id="r12-8" corresp="#q5a">
+							<p>The ceremony—it was. I guess, as I remember it—it's hard for me to think about the children with the rocks—which is sad—I can't help thinking about how they were. The ceremony was interesting because of the Mayor's recognition of what happened—his apology—that was something that sticks with you. It is easy enough to think that even today that there may be some polish people who don't want to take responsibility—you can't blame them. It's a hard thing to do. It shows that at some level they want to take responsibility at any level.</p>
+						</answer>
+						<answer xml:id="r12-9" corresp="#q5b">
+							<p>It did. Speaking with him what stood out was the inconsistencies in his story. Hard to say why. He was very young. Couldn't necessarily define the age that certain events occurred—it was hard for him to recollect that—but that doesn't diminish what he told us and the importance of it; and it definitely impacted us because we had interviewed someone who had survived the Holocaust in America but we hadn't interviewed someone in Poland who kind of survived it too-but in a different context.</p>
+						</answer>
+						<answer xml:id="r12-10" corresp="#q6">
+							<p>Yes. What I recall about the cemetery was it was very serene, peaceful, beautiful. There were the monuments and engravings; and everything we saw was great artisan—and it put into perspective how large the Jewish population was.</p>
+						</answer>
+						<answer xml:id="r12-11" corresp="#q7">
+							<p>What I remember about Auschwitz—it was raining, set the mood for what was a very solemn encounter with the devastation of the Holocaust. I appreciate that why we had the tour and also we encountered different ethnic groups that also had a large part of their population perish. I chose to see Gypsies and obviously you can't compare groups—it's all a communal shared suffering, but it was good to see the sheer toll of it.</p>
+						</answer>
+						<answer xml:id="r12-12" corresp="#q8">
+							<p>I would say I am very visual person. I would say that it is hard to think of particulars; in general, the trip instilled a level of increasing understanding of what we all had. We all were changed by what we experienced. Everyone came out different. If I went back, I know I would change yet again. I like to take a broad understanding of it and know it will reach me on a different level—it is a kind of process –an overall trajectory of learning.</p>
+						</answer>
+						<answer xml:id="r12-13" corresp="#q9">
+							<p>So many swastikas. The graffiti. I expected to see some. I knew that the Polish people aren't bad people and harbor old world views. But the abundance surprised me—that those views were there—and they were so free to express them—as opposed to France and Germany.</p>
+						</answer>
+						<answer xml:id="r12-14" corresp="#q10">
+							<p>No not particularly. I expected them to be traditional and hospital—good honest people—cuz it's my lineage—they were in sync with things—but the anti-Semitism surprised me.</p>
+						</answer>
+						<answer xml:id="r12-15" corresp="#q11">
+							<p>I did have family members who we believe perished. An MIA status –we had family in Europe at the beginning of the Holocaust—and we have no word from them, so we assume they are dead.</p>
+						</answer>
+						<answer xml:id="r12-16" corresp="#q12">
+							<p>I knew about the Warsaw rebellion so I did go there knowing that although the Jews are perceived as having accepted their fate, I knew there was some efforts at resistance. Having actually seen it represented in museum format brought to life what I knew –but that was actually the Warsaw uprising—I guess you can say I have encountered some level of mild anti-Semitism cuz I don't have Jewish features, so people are carefree with me about using anti-Semitism ideas—e.g., Jews are cheap—I've encountered it and accepted it cuz you can't change people's minds. I think it's unfortunate. But what can one do. Only time and new ideas that prevail can do that.</p>
+							<p>This is what was important about what we did—we were trying to create a new narrative so that people could see this event in a broader context so that hopefully changes generations and not individual people.</p>
+						</answer>
+						<answer xml:id="r12-17" corresp="#q15">
+							<p>No.</p>
+						</answer>
+						<answer xml:id="r12-18" corresp="#q16">
+							<p>The thing is having studied very vicious, tyrannical leaders of the past, studied people's actions whether it be the conquistadors marching into south America, the inquisition, the crusades, I've read a lot about encounters that led to amazingly catastrophic effect on death toll in gripping detail—seeing it in the format we did—was more telling; it's not about reading or hearing about it—but you actually experience it yourself—you have to put yourself in their situation to really understand it; so in that sense it did give me a new level of understanding in so much as I was able to put myself in that situation in a way that even a descriptive book can't do. It can give you vivid stats and details, but it can't put you where all that stuff occurred. It was very profound and something you can't substitute for anything.</p>
+						</answer>
+						<answer xml:id="r12-19" corresp="#q17">
+							<p>The highly diverse population of our group enhanced the flavor of the trip. Some of us were more visually viewed as different,; I myself have dark features and there were African Americans so for ourselves on the trip—it was interesting to see us in contrast to the polish population which is a very homogenous population. But as how I look at here, I studied the paperclip project about southerners coming to grips with the holocaust and drawing relations to their own racial experiences—all this stuff kind of compiles together. And simply without tolerance of other cultures, such divisions can easily arise again. I recognize that it is so important to see how we are similar rather than segregate ourselves in ethnic, religious or racial groups—cuz that's what will allow atrocities to arise again.</p>
+						</answer>
+						<answer xml:id="r12-20" corresp="#q18">
+							<p>Yes. It brought to light so much: so much history, so much about people, what it means to be human. In countless ways it changed me—so many of our experiences were actually non-holocaust related. So it is hard to look at the trip as solely holocaust related—we were vacationing to some extent and enjoying the surroundings—it was both joyous and sorrowful experience—so I guess it's hard for me to articulate it—I tend to see things more general than specifics.</p>
+						</answer>
+						<answer xml:id="r12-21" corresp="#q19">
+							<p>Since it's been a year, I don't talk about it quite as much as I did—cuz it was then fresh in my memory. It was hard not to think about it cuz it was so impactful; the impactful hasn't dissipated, but it isn't in the forefront as it was. I look at my experience of Poland also in a contemporary sense and compare it to other trips.</p>
+						</answer>
+					</answers>
+				</response>
+				<response xml:id="r13">
+					<name>Dmitry</name>
+					<answers>
+						<answer xml:id="r13-1" corresp="#q1a">
+							<p>Jewish, white, male—proud of being a Jew.</p>
+						</answer>
+						<answer xml:id="r13-2" corresp="#q1c">
+							<p>I was born and raised in Russia—but I don't associate with it—it affected me because I was called kike all the time—and I had to fight anti-Semitism. I was in upakisthan-wasn't as bad as in Ukraine—but I still had to fight it every day. It changed after the collapse after the Soviet Union. An interesting incident—both funny and sad—a guy in my class—we were together through high school; he called me a kike in 2nd grade—and I punched him in the face-but when we reached the 10th grade, things had changed—because at that time being a Jew became very popular. It was interesting cuz we could leave the country—cuz of Reagan and Gorbachav—so if you were a Jew and persecuted, you could leave—and everybody else envied you and wanted to become a Jew! And started looking to see if they had 12% Jewish blood. This same guy who called me a kike then later called himself a Jew—and I punched him in the nose a second time.</p>
+						</answer>
+						<answer xml:id="r13-3" corresp="#q2">
+							<p>Well I have a giant personal library at home about this subject and I read all the documentaries about this and rented movies and documentaries. No one talked about it when I was a kid—in Soviet Union no one spoke about; I knew I was Jewish cuz I was called kike. I knew about 6 million Jews killed in WWII—but it wasn't called Holocaust in Soviet Union. I knew about the atrocities but I learned and am still learning once I got here. In Poland I took notes and completed 4 notebooks about this.</p>
+						</answer>
+						<answer xml:id="r13-4" corresp="#q3">
+							<p>Absolutely—this question is complex and I could talk to hours about this. At one level this trip overlapped with my hatred of soviet union and how they treated the polish and I spoke to the poles about this. I am convinced the Russians are still trying to harm Poland. Most of the people I spoke with agreed about this. I gained different understanding of the Holocaust—the very first days in Warsaw and we were walking in the ghetto area—some people didn't want to walk cuz it was far—but you see the buildings, the brick walls—and I even chipped a few bricks and dust to keep—and then you see this one amazing building—that had crumbled—with bricks here and there and the pictures of Jewish people who had lived there—and that was the first time I realized these people had died. I knew a lot of facts—but these photos at that place really hit me.</p>
+						</answer>
+						<answer xml:id="r13-5" corresp="#q4">
+							<p>Ah…certain aspects like people in Poland after the soviet union took power after the war—many Jews didn't know they were Jewish—one of the Chasid's before the trip said she hadn't known she was Jewish—her parents told her and she had no idea she was Jewish—and this was amazing. Then I came to Poland and the guides confirmed this and I saw a couple of interesting monuments—one in Warsaw was a monument of Moses taking Jews to exodus—but it was about the ghetto and Nazi Germany. At Lodz at the railroad station,--didn't touch me there. I didn't know about the monument—the one of Moses. I knew about the railroads—but the monument was different. When I went into the train, I kissed the floor—cuz I thought of the people who had been here, suffered and died.</p>
+						<answer xml:id="r13-6" corresp="#q5">
+							<p>The Lodz cemetery—was large—heartbreaking—so many years people had no idea who was in the ghetto field—the tour guides did a good job of explaining and explained the way people were buried—men and women separate, for example. Saw other cemeteries—and some had been vandalized.</p>
+						</answer>
+						<answer xml:id="r13-7" corresp="#q5b">
+							<p>Dmitry speaks about 88 year old Jewish man who survived holocaust—"he was liberated and he is the one who in this city taking care of the Jewish cemetery. He is the only Jew in the city and he is taking care of it. He was amazing. There was one ancient synagogue that old men were trying to care for.</p>
+						</answer>						
+						<answer xml:id="r13-8" corresp="#q7">
+							<p>It was amazing that as much as you hate the Nazis how they were this incredible machine—this thoughtful machine.</p>
+							<p>Auschwitz: I have to be honest with you I expected a more devastating experience—for some reason it wasn't as devastating. At the orientation, one girl asked the guide how you feel when you go there—a stupid question. It is devastating—yes—but I thought for some reason I would almost faint—not be myself for that day—but I didn't feel that way. I saw the remains of people—the shoes, the hair, the luggage—it's amazing how systematic the Nazis were—and yet at the same time you see all those clothes –but I didn't feel devastated. It was raining that day and I was wearing a short sleeved shirt with no umbrella—but I didn't care what others think—I just wanted to feel a little bit what the inmates felt—so I didn't care that I was inconvenienced—and tried to feel some discomfort.</p>
+						</answer>
+						<answer xml:id="r13-9" corresp="#8">
+							<p>At the other camps, also raining—majdanek was not on the same scale as Auschwitz. There were other groups there too—it was sort of international camp—still mostly Jews—it was devastating too—some of the monuments hit me—quite the experience.</p>
+							<p>(I say it takes a while for these experiences to filter through) Dmitry: I think these trips should be organized differently—cuz for a lot of folks it was just a trip—souvenirs,--they may have been devastated—but as soon as they left the camp, they said where do we eat—I think you have to be a Jew to feel this—</p>
+						</answer>						
+						<answer xml:id="r13-10" corresp="#q9">
+							<p>So many blond girls! Hahaha! I don't know—I'm a soccer camp and they are going to have the cup next summer and I saw the area in progress of being built. I had read about the historical stuff—but it was different being there. As an history major, if you go to Rome or Israel and touch the stone was touched by Herod or Moses—it brings it to you in a deep way—you touch the hay, the barracks—you feel it—you have the connection; I need to touch stuff—the physical touching and presence and physically being there—you are there in the same place as the Jews were killed—the very place they were. All this connects at a deep level.</p>
+						</answer>
+						<answer xml:id="r13-11" corresp="#q11">
+							<p>FAMILY EXPERIENCE: MY grandfather is a Polish Jew and so I am deeply connected. He came from a wealthy family, but he passed away and all the information was lost in a city near the Ukraine. My grandparents are buried in ubakisthan—and I want to get the soil from my grandfather's town and bring my parents to America and bury them with some of the soil here. He escaped the Holocaust. My grandfather's mother kicked him and his brother and had them to escape on bikes and then on trains—and after war, they came back but all were killed. His last days he couldn't forgive himself—but he had that terrible feeling of guilt. He was only 69 when he died and I was 13, but although I remember his death, I was too young to ask him smart questions. I've asked my mom but she said he didn't talk about things from the war.</p>
+						</answer>
+						<answer xml:id="r13-12" corresp="#q15">
+							<p>Sometimes I question God because probably like many Jews did during the war-why are getting butchered—I question god why are so many jerks still alive and good people dead—like my grandmother who was so sweet. I have this argument with religious people—where was God and even now—terrible things happen and where is God. One of the theology pts of view that god created and now we are on our own.</p>
+						</answer>
+						<answer xml:id="r13-13" corresp="#q16">
+							<p>I have been touched—I had a great experience—but it didn't change my point of view—I believe there is so much evil and we have to fight it to the death. I have nothing against the German people—just the group of Nazis who did the atrocities—they are the ones I hate. (he goes on about how evil the Muslims and Palestinians are).</p>
+						</answer>
+						<answer xml:id="r13-14" corresp="#q17">
+							<p>The highly diverse population of our group enhanced the flavor of the trip. Some of us were more visually viewed as different,; I myself have dark features and there were African Americans so for ourselves on the trip—it was interesting to see us in contrast to the polish population which is a very homogenous population. But as how I look at here, I studied the paperclip project about southerners coming to grips with the holocaust and drawing relations to their own racial experiences—all this stuff kind of compiles together. And simply without tolerance of other cultures, such divisions can easily arise again. I recognize that it is so important to see how we are similar rather than segregate ourselves in ethnic, religious or racial groups—cuz that's what will allow atrocities to arise again.</p>
+						</answer>
+						<answer xml:id="r13-15" corresp="#q18">
+							<p>Yes, it changed me. It didn't change me in the way that I learned about the Jewish people—it filled in many gaps in my knowledge—I learned more and I learned I have more gaps and I have to learn more. I knew so much already, but still—it is an open ended process and here there are so many gaps I have to fill. I want to come back and help, to combine research and help. And after the trip I also wanted to go to Israel too—and back to Poland. Poland is a kind of home, an ancestral site—but I'm going to be bold—the Slavic people are notoriously anti-Semitic—especially Russians and Ukrainians—so I can't say Poland is my home is not accurate—but I feel some connection because my grandfather was from there.</p>
+						</answer>
+					</answers>
+				</response>
+			</div>
+		</body>
+	</text>
+</TEI>
