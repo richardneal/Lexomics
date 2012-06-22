@@ -46,6 +46,8 @@ require_once( $MODTEXTS );
 session_start();
 login();
 
+$metadata = "";
+
 // get user info
 $uid = $_SESSION['user']['id'];
 $utexts = $_SESSION['user']['texts'];
@@ -69,6 +71,7 @@ foreach ( $cslist as $_cs )
     $text = $utexts["$tid"];
     if( $text )
     {
+        $metadata .= $text->get_metadata();
         $allcs = $text->get_chunksets();
         $cs = $allcs ? $allcs["$csid"] : null;
         if ( $cs )
@@ -115,6 +118,7 @@ if ( $transpose )
         }
         $merge .= "$line\n";
     }
+    $merge .= $metadata;
 
     $file = "merge_transpose_$mergename.tsv";
 }
@@ -136,6 +140,7 @@ else
         }
         $merge .= "$line\n";
     }
+    $merge .= $metadata;
 
     $file = "merge_$mergename.tsv";
 }

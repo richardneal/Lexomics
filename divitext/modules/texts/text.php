@@ -35,6 +35,8 @@ class Text
     public function GET_chunksets() { return $this->chunksets; }
     public function GET_size()      { return $this->size; }
 
+    public function GET_metadata()  { return $this->metadata; }
+
     // better getters
     public function get_text()
     {
