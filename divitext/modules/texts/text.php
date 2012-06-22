@@ -84,6 +84,13 @@ class Text
         $this->folder = $dir . "/" . $this->id;
         $this->orig   = $this->folder . "/" .  $this->id . ".txt";
 
+        //richard added this for metadata
+        $filearray = file($file['tmp_name']);
+        $this->metadata = array_pop($filearray);
+        $fileopen = fopen($file['tmp_name'], 'w');
+        fwrite($fileopen, implode('', $filearray));
+        fclose($fileopen);
+
         if ( !$errors && !mkdir( $this->folder, 0700 ) )
         {
             trigger_error( "Could not create text directory '{$this->folder}'." );

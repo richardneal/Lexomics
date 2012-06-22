@@ -9,6 +9,10 @@ $file = SCRUB_DIR . "temp.txt";
 $writefile = fopen($file, 'w') or die("can't open file");
 
 fwrite($writefile, $_SESSION["scrubbed"]);
+if ($_SESSION["POST"]["lowercasebox"] == "on") {
+	fwrite($writefile, "\nLowercase Removed");
+}
+
 
 fclose($writefile);
 
