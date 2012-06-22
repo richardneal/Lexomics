@@ -25,3 +25,5 @@ grep for &.?;
 readmes for github pages
 
 Browser testing
+
+Replace lemmas with regex
