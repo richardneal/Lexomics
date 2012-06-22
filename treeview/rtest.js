@@ -140,13 +140,15 @@ Ext.onReady( function() {
 							stri=stri.concat("</tr>");
 						}
 						document.getElementById("x-form-el-labels").innerHTML = stri;
-						document.getElementById('container').style.height="auto";
+						//document.getElementById('container').style.height="auto";
+						//document.getElementById('container').style.minHeight="100%";
 					labels.show();	
 				}
 				else 
 				{
 					labels.hide();
-					document.getElementById('container').style.height="100%";
+					//document.getElementById('container').style.minHeight="auto";
+					//document.getElementById('container').style.height="100%";
 				}
 			}
 		}
@@ -451,7 +453,7 @@ Ext.onReady( function() {
 			var labelstr="";
 			var i;
 			rowlabels=labels2.getValue().split(",");
-			if(document.getElementById("id_0") && hiddenType.getValue()!='xml')
+			if(document.getElementById("id_0") && hiddentype.getValue()!='xml')
 			{
 				for (i=0; i<rowlabels.length; i++){
 					idstr="id_";
@@ -509,6 +511,8 @@ Ext.onReady( function() {
                     // raw PhyloXML
                     if ( json.type == 'phyloxml' )
                     {
+						//document.getElementById("container").style.minHeight="auto";
+						//document.getElementById("container").style.height="auto";
 						labels.setValue(json.rowlabels);
 						
                         // use JSPhyloSvg to render the raw XML into
