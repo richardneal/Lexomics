@@ -86,15 +86,17 @@ class Text
         $this->folder = $dir . "/" . $this->id;
         $this->orig   = $this->folder . "/" .  $this->id . ".txt";
 
-        $this->metadata = "";
+
         //richard added this for metadata
+        $this->metadata = "";
         $filearray = file($file['tmp_name']);
-        if (strpos($filearray, "Scrubber Options")) {
+        if (strpos(end($filearray), "Scrubber Options:") !== false) {
             $this->metadata = array_pop($filearray);
             $fileopen = fopen($file['tmp_name'], 'w');
             fwrite($fileopen, implode('', $filearray));
             fclose($fileopen);
         }
+
         
         if ( !$errors && !mkdir( $this->folder, 0700 ) )
         {

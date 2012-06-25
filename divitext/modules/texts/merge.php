@@ -47,6 +47,7 @@ session_start();
 login();
 
 $metadata = "";
+$divimeta = "";
 
 // get user info
 $uid = $_SESSION['user']['id'];
@@ -110,6 +111,11 @@ if ( $transpose )
     foreach ( $chunknames as $chunk )
     {
         $line = "$chunk";
+
+        if($divimeta == ""){
+            $divimeta = "DiviText Options: " . substr($chunk, 0, strpos($chunk, "_")) . " Word Chunks, " . substr($chunk, strpos($chunk, "_", 6)+1, 1) . "." . substr($chunk, strpos($chunk, "_", 6)+2, 1) . " Last Proportion";
+        }
+
         foreach ( $uniquewords as $word )
         {
             $count = @$quickhash[$chunk]["$word"];
@@ -118,7 +124,7 @@ if ( $transpose )
         }
         $merge .= "$line\n";
     }
-    $merge .= $metadata;
+    $merge .= $metadata . "\n" . $divimeta;
 
     $file = "merge_transpose_$mergename.tsv";
 }
