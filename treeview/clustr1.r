@@ -90,7 +90,7 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
     	#plot(hCluster, hang = -1, main = main)
 
 		# create bottom lines of tags from scrubber an divitext
-		t.subtitle <- paste("TreeView Options: Metric: ",metric,", Linkage: ",method)
+		t.subtitle <- paste("TreeView Options: Distance Metric: ",metric,", Linkage Method: ",method)
     		s.subtitle <- gsub("_"," ",scrubtags,fixed=T)
 		s.subtitle <- paste(s.subtitle,sep="")
     		d.subtitle <- gsub("_"," ",divitags,fixed=T)

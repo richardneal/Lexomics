@@ -20,6 +20,9 @@
 //	- $_SESSION['filename'] : name of the uploaded file on the server
 
 	session_start();
+	$_SESSION['filename']="";
+	$_SESSION['scrubtags']="";
+	$_SESSION['divitags']="";
 
 if ($_POST['type']=='xml')
 {
@@ -64,7 +67,7 @@ else
 		$line=fgets($fp);
 		$scrub=strpos($line,"Scrubber Options");
 		$divi=strpos($line,"DiviText Options");
-		if ($line!="" && !($scrub===0) && !($divi===0))
+		if ($line!="" && $line!="\n" && !($scrub===0) && !($divi===0))
 		{
 			if ($ftype=='txt')
 				$line=preg_replace('/\s/'," ",$line);
