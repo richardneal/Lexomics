@@ -35,6 +35,8 @@ class Text
     public function GET_chunksets() { return $this->chunksets; }
     public function GET_size()      { return $this->size; }
 
+    public function GET_metadata()  { return $this->metadata; }
+
     // better getters
     public function get_text()
     {
@@ -84,6 +86,18 @@ class Text
         $this->folder = $dir . "/" . $this->id;
         $this->orig   = $this->folder . "/" .  $this->id . ".txt";
 
+
+        //richard added this for metadata
+        $this->metadata = "";
+        $filearray = file($file['tmp_name']);
+        if (strpos(end($filearray), "Scrubber Options:") !== false) {
+            $this->metadata = array_pop($filearray);
+            $fileopen = fopen($file['tmp_name'], 'w');
+            fwrite($fileopen, implode('', $filearray));
+            fclose($fileopen);
+        }
+
+        
         if ( !$errors && !mkdir( $this->folder, 0700 ) )
         {
             trigger_error( "Could not create text directory '{$this->folder}'." );

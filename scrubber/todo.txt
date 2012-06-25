@@ -25,3 +25,9 @@ grep for &.?;
 readmes for github pages
 
 Browser testing
+
+Replace lemmas with regex
+
+Metadata:
+	Add names for multiple texts
+	Get divitext options
