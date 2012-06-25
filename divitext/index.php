@@ -34,7 +34,7 @@ require( $HEADER );
 
 <!-- BEGIN CONTENT -->
 <link rel="shortcut icon"
- href="http://cs.wheatoncollege.edu/favicon.ico" />
+ href="http://cs.wheatoncollege.edu/divitext/favicon.ico" />
 
 <script type="text/javascript" src="divitext.js"></script>
 
