@@ -21,7 +21,7 @@ $INDEXWD = getcwd();
 
 $HOME  = ".";           // home of index is at root of diviText app
 $TITLE = "diviText";    // title of page
-$DTVERSION = "1.2.1";   // current version of diviText
+$DTVERSION = "1.3";   // current version of diviText
 
 // require nav page for quick navigation of important files
 require( "$HOME/includes/nav.php" );
