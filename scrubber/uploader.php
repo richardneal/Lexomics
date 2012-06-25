@@ -42,6 +42,7 @@ if ( !is_dir( SCRUB_DIR ) )
 
 if ((($_FILES["file"]["type"] == "text/plain")
 || ($_FILES["file"]["type"] == "text/html")
+|| ($_FILES["file"]["type"] == "text/sgml")
 || ($_FILES["file"]["type"] == "text/xml")))
   {
   if ($_FILES["file"]["error"] > 0)
@@ -66,6 +67,9 @@ if ((($_FILES["file"]["type"] == "text/plain")
     }
     else if ($_POST['type'] == "stopwords") {
         $_SESSION["POST"]['stopwordbox'] = "on";
+    }
+    else if ($_POST['type'] == "specials") {
+        $_SESSION["POST"]['specialbox'] = "on";
     }
     header('Location: ' . "display.php");
     die();
