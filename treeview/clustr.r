@@ -6,14 +6,16 @@ source('hclusttophylo.r');
 
 # hacky way for now
 args <- commandArgs(trailingOnly=TRUE);
-ifile <-  args[2];
-method <- args[4];
-metric <- args[6];
-output <- args[8];
-title <- args[10];
-p <- args[12];
-type <- args[14];
-labelFile <- args[16];
+ifile <-  args[1];
+method <- args[2];
+metric <- args[3];
+output <- args[4];
+title <- args[5];
+p <- args[6];
+type <- args[7];
+labelFile <- args[8];
+scrubtags <- args[9];
+divitags <- args[10];
 
 filename <- paste("/tmp/rcluster",runif(1), sep="" );
 
@@ -23,8 +25,8 @@ if(output == "phyloxml")
 }
 
 rownames<-myCluster( ifile, method=method, metric=metric, output.type=output,
-        outputfile=filename, main=title, p=p, type=type, labelFile=labelFile);
+        outputfile=filename, main=title, p=p, type=type, labelFile=labelFile,
+	scrubtags=scrubtags, divitags=divitags);
 
-#stop(filename,rownames);
 cat(filename,rownames,sep=",");
 

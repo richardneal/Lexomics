@@ -9,7 +9,7 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
                       output.type = "pdf", outputfile = "Dendogram" , 
 		      main = "Dendogram",header=T, comment.char="", 
 		      row.names=1, p=2, type='tsv',
-		      labelFile=NULL){
+		      labelFile=NULL,scrubtags="",divitags=""){
 
 
 	
@@ -88,8 +88,16 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
 		max <- max( nchar( hCluster$labels ) ) # be sure there's room for the labels
 		par( mar=c( 6.1, 2.1, 4.1, ( max / 2.0 ) ) ) # margins
     	#plot(hCluster, hang = -1, main = main)
-    	subtitle <- paste( "Linkage Method:",method,", Distance Metric:",metric)
-		plot( as.dendrogram(hCluster), main=main, horiz=TRUE, cex=2, axes=FALSE, xlab="", sub=subtitle);
+
+		# create bottom lines of tags from scrubber an divitext
+		t.subtitle <- paste("TreeView Options: Metric: ",metric,", Linkage: ",method)
+    		s.subtitle <- gsub("_"," ",scrubtags,fixed=T)
+		s.subtitle <- paste(s.subtitle,sep="")
+    		d.subtitle <- gsub("_"," ",divitags,fixed=T)
+		d.subtitle <- paste(d.subtitle,sep="")
+		subtitle <- paste(s.subtitle,"\n",d.subtitle,"\n",t.subtitle)
+
+		plot( as.dendrogram(hCluster), main=main, horiz=TRUE, cex=2, axes=FALSE, xlab="", sub=subtitle, cex.sub=.5);
 		# to put the title on top:
 			# change ylab=main to main=main
 			# change font.lab=2 to font.main=2
