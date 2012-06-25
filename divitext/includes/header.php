@@ -36,7 +36,7 @@ login();
 <html>
 
 <head>
-    <title>diviText - diviText <?=$DTVERSION?></title>
+    <title>diviText</title>
     <!-- EXTJS INCLUDES -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="<?=$EXTCSS?>" />
