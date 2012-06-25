@@ -34,7 +34,6 @@ $infile = "{$_FILES['file']['tmp_name']}";
 // containing the user input values
    $addLabels=TRUE;
    $labelFile="/tmp/labelFile" . rand(0,10000);
-error_log($labelFile);
    $fp = fopen($labelFile,'w');
    fwrite($fp,$_POST['labels2']);
    fclose($fp);

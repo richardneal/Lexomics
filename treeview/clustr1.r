@@ -11,6 +11,7 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
 		      row.names=1, p=2, type='tsv',
 		      labelFile=NULL){
 
+
 	
 
         ## List of possible distance metrics
@@ -28,7 +29,7 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
     	input.data <- read.table(as.character(input.file), header=header, comment.char=comment.char, row.names=row.names, sep=",")
     }
     else if (type == 'txt') {
-	input.data <- read.table(as.character(input.file), header=header, comment.char=comment.char, row.names=row.names, sep="")
+		input.data <- read.table(as.character(input.file), header=header, comment.char=comment.char, row.names=row.names, sep="")
     }
     else {
     	input.data <- read.table(as.character(input.file), header=header, comment.char=comment.char, row.names=row.names, sep="\t")
@@ -45,19 +46,19 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
     relFreq <- tTable/denoms #  the original data divides denoms piece-wise. This gives the proportion of each word in a chunk 
 
     if( !is.null(textlabs) && !is.null(chunksize)) { # if use textlabs and chunksize, the data must be order with one text followed by the next
-        if(length(textlabs) != length(chunksize)) stop("number of texts and corresponding chunk numbers must match")
-        else {# check that sum(chunksize) == dim(relFreq)[1] , total number of chunks equals number of rows in relFreq
-                 L <- length(chunksize)
-                 temp <- NULL
-                 for(i in 1:L) {
-                     for(k in 1:chunksize[i]){
-                         temp <- c(temp,paste(textlabs[i],as.character(k),sep=""))
-			   }
-                 }
-        row.names(relFreq) <- temp
-	   }
-    }
-    # else 0
+		if(length(textlabs) != length(chunksize)) stop("number of texts and corresponding chunk numbers must match")
+		else {# check that sum(chunksize) == dim(relFreq)[1] , total number of chunks equals number of rows in relFreq
+			L <- length(chunksize)
+			temp <- NULL
+			for(i in 1:L) {
+				for(k in 1:chunksize[i]){
+				temp <- c(temp,paste(textlabs[i],as.character(k),sep=""))
+				}
+			}
+			row.names(relFreq) <- temp
+		}
+	}
+	# else 0
 
     # change the names of the labels
     #row.names(relFreq) <- c("a","b","c","d","e","f","g","h","i","j"...)
@@ -81,14 +82,14 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
 
     if(output.type=="pdf"){
     	# dev.control()
-	#outfilename <- paste(outputfile,".pdf",sep="")
-	outfilename<-paste(outputfile,sep="")
+		#outfilename <- paste(outputfile,".pdf",sep="")
+		outfilename<-paste(outputfile,sep="")
     	pdf(outfilename , onefile = TRUE, width=7.25, height=10)
-	max <- max( nchar( hCluster$labels ) ) # be sure there's room for the labels
-	par( mar=c( 6.1, 2.1, 4.1, ( max / 2.0 ) ) ) # margins
+		max <- max( nchar( hCluster$labels ) ) # be sure there's room for the labels
+		par( mar=c( 6.1, 2.1, 4.1, ( max / 2.0 ) ) ) # margins
     	#plot(hCluster, hang = -1, main = main)
-    subtitle <- paste( "Linkage Method:",method,", Distance Metric:",metric)
-	plot( as.dendrogram(hCluster), main=main, horiz=TRUE, cex=2, axes=FALSE, xlab="", sub=subtitle);
+    	subtitle <- paste( "Linkage Method:",method,", Distance Metric:",metric)
+		plot( as.dendrogram(hCluster), main=main, horiz=TRUE, cex=2, axes=FALSE, xlab="", sub=subtitle);
 		# to put the title on top:
 			# change ylab=main to main=main
 			# change font.lab=2 to font.main=2

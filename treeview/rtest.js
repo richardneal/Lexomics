@@ -123,9 +123,33 @@ Ext.onReady( function() {
 			check: function(){
 				if (labelsField.getValue() == true)
 				{
+					document.getElementById("x-form-el-labels").innerHTML = "";
+					rowlabels=labels2.getValue().split(",");
+						var i=0;
+						var stri = "<table id=\"labelTable\">";
+						for (i=0;i<(rowlabels).length;i++)
+						{
+							stri=stri.concat("<tr>");
+							stri=stri.concat("<td>");
+							stri=stri.concat(rowlabels[i]);
+							stri=stri.concat("</td>");	
+							stri=stri.concat("<td><input type=text ");
+							stri=stri.concat("id=\"id_");
+							stri=stri.concat(i);
+							stri=stri.concat("\"/></td>");
+							stri=stri.concat("</tr>");
+						}
+						document.getElementById("x-form-el-labels").innerHTML = stri;
+						//document.getElementById('container').style.height="auto";
+						//document.getElementById('container').style.minHeight="100%";
 					labels.show();	
 				}
-				else labels.hide();
+				else 
+				{
+					labels.hide();
+					//document.getElementById('container').style.minHeight="auto";
+					//document.getElementById('container').style.height="100%";
+				}
 			}
 		}
 	});
@@ -140,22 +164,40 @@ Ext.onReady( function() {
         name: 'file',               // identifier for the server, access
                                     // the file with $_FILES['file']
         anchor: '100%',              // use 100% width availible 
-	value: '',
-	listeners:{
+		value: '',
+		listeners:{
 	    'fileselected': function(){ // when the file is changed
+			//  ajax upload file (without session) and find chunck names (mind you,
+			//  consiousness of separater values is necessary
 			labelsField.hide();
 			labelsField.setValue(false);
 			labels.hide();	
 		    var form = Ext.getCmp('form'); // get the form
 		    var ftype = this.value.split("."); // get the extension	
 			hiddentype.setValue(ftype[ftype.length-1]); // sets value for POST
+
+			Ext.Ajax.request({
+				method: 'POST',
+				url:'getLabels.php',
+        		form: form.getForm().getEl(),   // get the HTML form 
+				isUpload: true,
+				success: function(r,o){
+                    str = r.responseXML.firstChild.innerText || 
+                          r.responseXML.firstChild.textContent;
+                    json = Ext.decode( str );
+					labels2.setValue(json.rowlabels);
+					}
+				});
+
+	
+
 		    if (ftype[ftype.length-1]=='xml'){
                         	// when anything else is selected, hide them
                 dendrotitle   .hide();
+				labelsField.hide();
                 methodcombo   .hide();
 				labels.hide();
 				labelsField.setValue(false);
-				labelsField.hide();
                 metriccombo   .hide();
 				minpow	      .hide();
                 typecombo     .hide();
@@ -182,8 +224,8 @@ Ext.onReady( function() {
 				// show the relevent R clustering options
 				// when tsv is selected
                	// methodcombo, etc. are in scope via the closure
+				labelsField.show();
 				labels.hide();
-				labelsField.hide();
 				labelsField.setValue(false);
 				dendrotitle   .show();
 				methodcombo   .show();
@@ -228,7 +270,14 @@ Ext.onReady( function() {
         triggerAction: 'all',   // nobody know what this does
         forceSelection: true,   // force value typed into box to be
                                 // a value in the array
-        value: rjson.methods[0]
+        value: rjson.methods[0],
+		
+		listeners:{
+			select: function(g,r,i){
+				labelsField.setValue(false);
+				labels.hide();
+			}
+		}
     });
 
     // ditto
@@ -248,6 +297,8 @@ Ext.onReady( function() {
 			// g: this
 			// r: data record
 			// i: index
+			labelsField.setValue(false);
+			labels.hide();
 			var form = Ext.getCmp('form');
 			switch(rjson.metrics[i])
 			{
@@ -301,7 +352,6 @@ Ext.onReady( function() {
 						ySlider.hide();	
 						downloadButton.hide();
 						labels.hide();
-						labelsField.hide();
 						labelsField.setValue(false);
         				break;
 					default :
@@ -311,6 +361,8 @@ Ext.onReady( function() {
 						phyloType.show();
 						ySlider.show();	
 						downloadButton.show();
+						labels.hide();
+						labelsField.setValue(false);
                         break;
                 }
                 // tell the form to rerender
@@ -334,6 +386,7 @@ Ext.onReady( function() {
 		hidden: true,
 		fieldLabel: "Labels (separated by commas)",
 		anchor: '100%',
+		id: 'labels',
 		value:'',
     });
 
@@ -399,7 +452,8 @@ Ext.onReady( function() {
 			var idstr="";
 			var labelstr="";
 			var i;
-			if(document.getElementById("id_0"))
+			rowlabels=labels2.getValue().split(",");
+			if(document.getElementById("id_0") && hiddentype.getValue()!='xml')
 			{
 				for (i=0; i<rowlabels.length; i++){
 					idstr="id_";
@@ -457,12 +511,9 @@ Ext.onReady( function() {
                     // raw PhyloXML
                     if ( json.type == 'phyloxml' )
                     {
-						document.getElementById('container').style.height="auto";
+						//document.getElementById("container").style.minHeight="auto";
+						//document.getElementById("container").style.height="auto";
 						labels.setValue(json.rowlabels);
-						if (hiddentype.getValue()!='xml')
-						{
-							labelsField.show();
-						}
 						
                         // use JSPhyloSvg to render the raw XML into
                         // an SVG object in the 'dendro' div on the page
@@ -488,22 +539,6 @@ Ext.onReady( function() {
 							$('#dendro').css("height",rSlider.getValue());
 						}
 
-						rowlabels=json.rowlabels.split(",");
-						var i=0;
-						var stri = "<table id=\"labelTable\">";
-						for (i=0;i<(rowlabels).length;i++)
-						{
-							stri=stri.concat("<tr>");
-							stri=stri.concat("<td>");
-							stri=stri.concat(rowlabels[i]);
-							stri=stri.concat("</td>");	
-							stri=stri.concat("<td><input type=text ");
-							stri=stri.concat("id=\"id_");
-							stri=stri.concat(i);
-							stri=stri.concat("\"/></td>");
-							stri=stri.concat("</tr>");
-						}
-						document.getElementById("x-form-el-ext-comp-1009").innerHTML = stri;
 
 
                     }
@@ -559,7 +594,7 @@ Ext.onReady( function() {
         id: 'form', // Ext id to identify the form internally
 		frame: true,// gives blueish hue
 		title: 'TreeView 1.2', // puts title at top
-        width: 500, // width of panel
+        width: 550, // width of panel
         padding: 5, // internal padding of the elements in the form,
                     // things are less squished to the edges
         // items puts form components (comboboxes,radiogroups,checkboxes,
