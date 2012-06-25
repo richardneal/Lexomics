@@ -54,7 +54,7 @@ login();
 </head>
 
 <body>
-    <div id="header">diviText <?=$DTVERSION?></div>
+    <div id="header"> &nbsp;<b>diviText <?=$DTVERSION?> </b></div>
 	<div id="content">
 
 <!-- END OF HEADER -->

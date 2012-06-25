@@ -113,7 +113,12 @@ if ( $transpose )
         $line = "$chunk";
 
         if($divimeta == ""){
-            $divimeta = "DiviText Options: " . substr($chunk, 0, strpos($chunk, "_")) . " Word Chunks, " . substr($chunk, strpos($chunk, "_", 6)+1, 1) . "." . substr($chunk, strpos($chunk, "_", 6)+2, 1) . " Last Proportion";
+            $divimeta = "DiviText Options: " . substr($chunk, 0, strpos($chunk, "_")) . " Word Chunks, " . substr($chunk, strpos($chunk, "_", 6)+1, 1);
+            if (substr($chunk, strpos($chunk, "_", 6)+2, 1) != "_") {
+                $divimeta .= "." . substr($chunk, strpos($chunk, "_", 6)+2, 1) . " Last Proportion";
+             } else {
+                $divimeta .= ".0 Last Proportion";
+             }
         }
 
         foreach ( $uniquewords as $word )
