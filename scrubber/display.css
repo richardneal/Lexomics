@@ -11,6 +11,8 @@ body
     border-color:#99BBE8;
     border-style: solid;
     background-color:#FFFFFF;
+    font-family: tahoma,arial,verdana,sans-serif;
+    font-size: 12px;
 }
 .titles
 {
@@ -48,7 +50,7 @@ body
     font-family: tahoma,arial,verdana,sans-serif;
     background: url(white-top-bottom.gif) 0 0 repeat-x;
     height:15px;
-    width:32%;
+    width:24%;
     float: left;
     line-height: 15px;
     padding: 5px 3px 4px 5px;
@@ -58,11 +60,11 @@ body
 #main
 {
     margin-left: 2px;
-    margin-right: 291px;
+    margin-right: 365px;
 }
 #sidebar {
     height: 95%;
-    width: 275px;
+    width: 350px;
     float: right;
     margin: 0px 0px 0px 10px;
     padding: 0px 0 0 5px;
@@ -72,26 +74,25 @@ body
 }
 #scrub { 
     position: absolute;
-    top: 8px;
-    left: 10px;
+    top: 3px;
+    left: 20px;
     width: 30px;
 }
 #clear { 
     position: absolute;
-    top: 8px;
-    left: 80px;
+    top: 3px;
+    left: 100px;
     width: 30px;
 }
 #download { 
     position: absolute;
-    top: 8px;
-    left: 148px;
+    top: 3px;
+    left: 178px;
     width: 30px;
 }
 #unscrubbedtext { 
     border: 1px solid #99BBE8;
     background-color:#FFFFFF;
-    min-height:20%;
     height: 30%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -113,31 +114,11 @@ body
 {
     clear:left;
 }
-#stopwordtext {
+.bottomtext {
     border: 1px solid #99BBE8;
     background-color:#FFFFFF;
     height: 20%;
-    width: 32%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    float: left;
-    padding: 5px 3px 4px 5px;
-}
-#lemmatext {
-    border: 1px solid #99BBE8;
-    background-color:#FFFFFF;
-    height: 20%;
-    width: 32%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    float: left;
-    padding: 5px 3px 4px 5px;
-}
-#consolidationtext {
-    border: 1px solid #99BBE8;
-    background-color:#FFFFFF;
-    height: 20%;
-    width: 32%;
+    width: 24%;
     overflow-y: auto;
     overflow-x: hidden;
     float: left;

@@ -1,5 +1,7 @@
 <html> 
 <head> 
+<link rel="shortcut icon"
+ href="http://cs.wheatoncollege.edu/favicon.ico" />
 <title>Treeview</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
 </script>
@@ -32,6 +34,7 @@ url, 'popUpWindow', 'height = 200, width = 400, left = 10, top = 10, resizable =
 	}
 	body{
 		min-height:300px;
+		!min-height: 100%
 		min-width: 500px;
 		padding: 0px;
 		padding-bottom:20px;
@@ -54,26 +57,24 @@ url, 'popUpWindow', 'height = 200, width = 400, left = 10, top = 10, resizable =
 
 	#labelTable{
 		text-indent: 10px;
-		padding-left: 20px;
-	}
-
-	#x-btn-mc{
-		text-align: center;
 	}
 
 	#dendro{
 		margin-left: auto;
+		width: auto;
 		margin-right: auto;
 	}
 
     #container {
-		width: 500px;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
-		height: 100%;
+		min-height:100%;
+		height:100%;
     }
 
-	svg{}
+	svg{
+	}
 
 	#info {
     	color:#15428b;
@@ -84,12 +85,20 @@ url, 'popUpWindow', 'height = 200, width = 400, left = 10, top = 10, resizable =
     	height:15px;
     	width:100%;
     	line-height: 15px;
-    	padding: 5px 0px 4px 0px;
+    	padding: 5px 5px 4px 5px;
     	border: 0px solid;
     	border-color: #99BBE8;
-    	!position: absolute;
     	bottom: 0;
+		position: fixed;
 	}
+
+	#filediv {
+		padding-bottom: 20px;
+		width: 550px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.header {
 		background-color: #cde;	
 		margin-top: 0px;
@@ -101,10 +110,11 @@ url, 'popUpWindow', 'height = 200, width = 400, left = 10, top = 10, resizable =
 </head> 
 
 <body> 
+
 <div id="container">
     <div id="filediv"></div>
-</div>
 <div id="dendro"></div>
+</div>
 
 <div id="info">
 	<a href="JavaScript:window.open('http://www.wheatoncollege.edu/lexomics');">Lexomics @ Wheaton College</a>

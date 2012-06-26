@@ -36,7 +36,7 @@ login();
 <html>
 
 <head>
-    <title>diviText - diviText <?=$DTVERSION?></title>
+    <title>diviText</title>
     <!-- EXTJS INCLUDES -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="<?=$EXTCSS?>" />
@@ -54,7 +54,7 @@ login();
 </head>
 
 <body>
-    <div id="header">diviText <?=$DTVERSION?></div>
+    <div id="header"> &nbsp;<b>diviText <?=$DTVERSION?> </b></div>
 	<div id="content">
 
 <!-- END OF HEADER -->

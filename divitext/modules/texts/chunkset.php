@@ -219,7 +219,7 @@ class Chunkset
 		$hashes = null;
 		foreach ( $allnums as $i => $n )
 		{
-			$chunkname = $this->id . " $n";
+			$chunkname = $this->id . "_$n";
 			$hashes["$chunkname"] = self::csv_to_hash( $allcsv[$i] );
 		}
 

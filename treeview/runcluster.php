@@ -8,6 +8,7 @@ function callR( $r, $a = "" )
     return `$cmd`;
 }
 
+
 // open any file $f with mode $m added to 'r' fopen flag 
 // and return the contents of the file
 function openfile( $f = "", $m = "" )
@@ -25,16 +26,17 @@ function openfile( $f = "", $m = "" )
 
 
 // init array to return to the browser
+session_start();
 $json = Array();
 
 // get the /tmp/php..... file uploaded to the server
-$infile = "{$_FILES['file']['tmp_name']}";
+//$infile = "{$_FILES['file']['tmp_name']}";
+$infile=$_SESSION['filename'];
 
 // if the user elected to add new leaf labels, create file
 // containing the user input values
    $addLabels=TRUE;
    $labelFile="/tmp/labelFile" . rand(0,10000);
-error_log($labelFile);
    $fp = fopen($labelFile,'w');
    fwrite($fp,$_POST['labels2']);
    fclose($fp);
@@ -52,14 +54,19 @@ if ( $_POST['type']=='tsv' or $_POST['type']=='csv' or $_POST['type']=='txt')
     # $addLabels = $addLabels;
     # $labelFile = $labelFile;
 
+	$scrubtags = $_SESSION['scrubtags'];
+	$divitags  = $_SESSION['divitags'];
+
+
+
     // build the argument string for Rscript
     // flags do nothing,
     // future: make flags work, right now, R script assumes current order
-    $rArgs = "-f $infile -m $method -d $metric -o $output -t \"$title\"
-	-p $p -s $type -l $labelFile";
-#    $rArgs = "-f $infile -m $method -d $metric -o $output -t \"$title\"";
+    $rArgs = "$infile $method $metric $output \"$title\"
+	$p $type $labelFile $scrubtags $divitags";
 
 	// stdout = <filename>,<r>,<rowlabel>,<rowlabel2> ...
+
     $stdout= callR( "clustr.r", "$rArgs" );
 
 	$stdout=explode(",<r>,",$stdout);

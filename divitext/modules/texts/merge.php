@@ -46,6 +46,9 @@ require_once( $MODTEXTS );
 session_start();
 login();
 
+$metadata = "";
+$divimeta = "";
+
 // get user info
 $uid = $_SESSION['user']['id'];
 $utexts = $_SESSION['user']['texts'];
@@ -69,6 +72,7 @@ foreach ( $cslist as $_cs )
     $text = $utexts["$tid"];
     if( $text )
     {
+        $metadata .= $text->get_metadata();
         $allcs = $text->get_chunksets();
         $cs = $allcs ? $allcs["$csid"] : null;
         if ( $cs )
@@ -107,6 +111,16 @@ if ( $transpose )
     foreach ( $chunknames as $chunk )
     {
         $line = "$chunk";
+
+        if($divimeta == ""){
+            $divimeta = "DiviText Options: " . substr($chunk, 0, strpos($chunk, "_")) . " Word Chunks, " . substr($chunk, strpos($chunk, "_", 6)+1, 1);
+            if (substr($chunk, strpos($chunk, "_", 6)+2, 1) != "_") {
+                $divimeta .= "." . substr($chunk, strpos($chunk, "_", 6)+2, 1) . " Last Proportion";
+             } else {
+                $divimeta .= ".0 Last Proportion";
+             }
+        }
+
         foreach ( $uniquewords as $word )
         {
             $count = @$quickhash[$chunk]["$word"];
@@ -115,6 +129,7 @@ if ( $transpose )
         }
         $merge .= "$line\n";
     }
+    $merge .= $metadata . "\n" . $divimeta;
 
     $file = "merge_transpose_$mergename.tsv";
 }
@@ -136,6 +151,7 @@ else
         }
         $merge .= "$line\n";
     }
+    $merge .= $metadata;
 
     $file = "merge_$mergename.tsv";
 }

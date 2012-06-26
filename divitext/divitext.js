@@ -550,8 +550,19 @@ AutoCutter = Ext.extend( Ext.Container, {
             // items are Ext.Panel by default
             // accordion layout provides nifty open/close layout 
             items: [
-                {   // Simple CUtter
-                    title: 'Simple (by # of Chunks)',
+                { 
+                    // Advanced Cutter
+                    // ditto
+                    title: 'Cut by Chunk Size',
+                    border: false,
+                    items: [ new AdvancedCutter({
+                        cutterPanel: cp
+                    }),{
+                        contentEl: 'help-advanced',
+                        border: false
+                    }]
+                },{   // Simple CUtter
+                    title: 'Cut by # of Chunks',
                     border: false,
                     
                     // items are Ext.Container by default
@@ -564,17 +575,6 @@ AutoCutter = Ext.extend( Ext.Container, {
                         contentEl: 'help-simple',   // DIV in index.php
                                                     // with id 
                                                     // 'help-simple'
-                        border: false
-                    }]
-                },{ 
-                    // Advanced Cutter
-                    // ditto
-                    title: 'Advanced (by Chunk Size)',
-                    border: false,
-                    items: [ new AdvancedCutter({
-                        cutterPanel: cp
-                    }),{
-                        contentEl: 'help-advanced',
                         border: false
                     }]
                 },{
