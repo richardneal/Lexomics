@@ -63,7 +63,7 @@ runDist <- function(input.file, n.clades, n.dist.values = 1, metric = "euclidean
     if(is.tab.sep == TRUE){
       test.data <- read.table(input.file,
                               header=T,comment.char="",sep="\t",
-                              row.names=1, check.names=FALSE)
+                              row.names=1, check.names=FALSE, fill = TRUE)
     }
     else{
       test.data <- read.table(input.file, header=T,comment.char="",row.names=1, check.names=FALSE)
@@ -80,10 +80,26 @@ runDist <- function(input.file, n.clades, n.dist.values = 1, metric = "euclidean
     }
 
 
-    ####Normalize gen.data by converting word counts to relative frequencies
+
     # get the row sums for the gen.data
     rsums <- apply(gen.data,1,sum)
 
+
+    ######test to see if scrubber & divitext options are included in
+    ##first column of bottom two rows of .tsv (added at divitext
+    ##through php) to facilitate subtitle on dendro listing all
+    ##options used when generating data
+    ##find number of rows
+    n.rows <- dim(gen.data)[1]
+    ##if the last two rows have NA values for word counts, recreate gen.data without
+    ##those rows
+    if(sum(is.na(rsums)[(n.rows-1):n.rows]) == 2){
+        gen.data <- gen.data[-c(n.rows-1,n.rows),]
+        rsums <- rsums[-c(n.rows-1,n.rows)]
+    }
+
+
+    ####Normalize gen.data by converting word counts to relative frequencies
     # create a matrix that gives the row sums as denominators at each element of the data matrix
     # to allow conversion to relative frequencies
     denoms <- matrix(rep(rsums,dim(gen.data)[2]),
