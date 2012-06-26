@@ -61,7 +61,7 @@ runDist <- function(input.file, n.clades, n.dist.values = 1, metric = "euclidean
                               row.names=1, check.names=FALSE)
     }
     else{
-      test.data <- read.table(input.file, header=T,comment.char="",row.names=1)
+      test.data <- read.table(input.file, header=T,comment.char="",row.names=1, check.names=FALSE)
     }
 
 
@@ -210,6 +210,7 @@ runDist <- function(input.file, n.clades, n.dist.values = 1, metric = "euclidean
     #through at every level and convert to UTF-8, word by word.
     #Because R says "fuck you."
     topwords.UTF <- topwords.dist
+    #Encoding(topwords.UTF[[1:n.dist.values]]) <- "UTF-8"
     for(i in 1:n.dist.values){
         for(j in 1:length(topwords.UTF[[i]])){
             Encoding(topwords.UTF[[i]][j]) <- "UTF-8"
