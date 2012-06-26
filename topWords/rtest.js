@@ -21,8 +21,7 @@ rjson = {
     ],
 	distances: [
 		"Kruskal-Wallis",
-		"Anova-F",
-		"Custom"
+		"Absolute-Distance"
 	]
 };
 
