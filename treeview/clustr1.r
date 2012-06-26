@@ -9,7 +9,7 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
                       output.type = "pdf", outputfile = "Dendogram" , 
 		      main = "Dendogram",header=T, comment.char="", 
 		      row.names=1, p=2, type='tsv',
-		      labelFile=NULL,scrubtags="",divitags=""){
+		      labelFile=NULL,scrubtags=" ",divitags=" "){
 
 
 	
@@ -95,6 +95,7 @@ myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
 		s.subtitle <- paste(s.subtitle,sep="")
     		d.subtitle <- gsub("_"," ",divitags,fixed=T)
 		d.subtitle <- paste(d.subtitle,sep="")
+		
 		subtitle <- paste(s.subtitle,"\n",d.subtitle,"\n",t.subtitle)
 
 		plot( as.dendrogram(hCluster), main=main, horiz=TRUE, cex=2, axes=FALSE, xlab="", sub=subtitle, cex.sub=.5);

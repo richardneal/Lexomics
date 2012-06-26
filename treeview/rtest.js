@@ -117,7 +117,7 @@ Ext.onReady( function() {
 	labelsField=new Ext.form.Checkbox({
 		xtype: 'checkbox',
 		checked: false,
-		boxLabel: 'Customize Labels',
+		boxLabel: 'Edit Labels',
 		hidden: true,
 		listeners: {
 			check: function(){
@@ -128,9 +128,7 @@ Ext.onReady( function() {
 						var i=0;
 						var stri = "<table id=\"labelTable\">";
 						for (i=0;i<(rowlabels).length;i++)
-						{
-							stri=stri.concat("<tr>");
-							stri=stri.concat("<td>");
+						{ stri=stri.concat("<tr>"); stri=stri.concat("<td>");
 							stri=stri.concat(rowlabels[i]);
 							stri=stri.concat("</td>");	
 							stri=stri.concat("<td><input type=text ");
@@ -171,22 +169,24 @@ Ext.onReady( function() {
 		    var form = Ext.getCmp('form'); // get the form
 		    var ftype = this.value.split("."); // get the extension	
 			hiddentype.setValue(ftype[ftype.length-1]); // sets value for POST
-
+			dendrotitle.setValue("Dendrogram");
 
 
 			if (this.value!="")
 			{
-			Ext.Ajax.request({
+				Ext.Ajax.request({
 				method: 'POST',
 				url:'getLabels.php',
         		form: form.getForm().getEl(),   // get the HTML form 
 				isUpload: true,
 				success: function(r,o){
-                    str = r.responseXML.firstChild.innerText || 
-                          r.responseXML.firstChild.textContent;
+                	str = r.responseXML.firstChild.innerText || 
+                	r.responseXML.firstChild.textContent;
                     json = Ext.decode( str );
+					if (json.error!=false)
+						alert("Error Opening File");
 					labels2.setValue(json.rowlabels);
-					}
+				}
 				});
 			}
 
