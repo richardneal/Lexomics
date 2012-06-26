@@ -49,8 +49,8 @@ if ($dataset=='') $dataset="dist-output";
 
 //dist.function.R takes number as argument for distance metric
 if ($distance=='Kruskal-Wallis') $distance = 1;
-elseif ($distance=='Anova-F') $distance = 2;
-else $distance = 3;
+//elseif ($distance=='Absolute-Distance') $distance = 2;
+else $distance = 2;
 
 
 // string of arguments used by the RSCRIPT

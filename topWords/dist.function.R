@@ -28,6 +28,11 @@
 
 ## runDist(input.file  ="/home/raffle/work/forPeople/Rose/merge_transpose_olafs_saga_3000.tsv", n.clades = "2", n.dist.values ="1", dataset.name="olaf-kw-manual", metric = "euclidean", p = "2", linkage = "ave", is.tab.sep=TRUE,  d.metric = "1")
 
+currentNode = 1 #global variable to keep track of position while
+                #recursively travelling dendrogram during the plotting
+                #code
+
+
 runDist <- function(input.file, n.clades, n.dist.values = 1, metric = "euclidean",
                   p = 2, linkage = "ave", is.tab.sep=TRUE, dataset.name = "dist-output", d.metric = 1)
   {
@@ -58,7 +63,7 @@ runDist <- function(input.file, n.clades, n.dist.values = 1, metric = "euclidean
     if(is.tab.sep == TRUE){
       test.data <- read.table(input.file,
                               header=T,comment.char="",sep="\t",
-                              row.names=1, check.names=FALSE)
+                              row.names=1, check.names=FALSE, fill = TRUE)
     }
     else{
       test.data <- read.table(input.file, header=T,comment.char="",row.names=1, check.names=FALSE)
@@ -75,10 +80,26 @@ runDist <- function(input.file, n.clades, n.dist.values = 1, metric = "euclidean
     }
 
 
-    ####Normalize gen.data by converting word counts to relative frequencies
+
     # get the row sums for the gen.data
     rsums <- apply(gen.data,1,sum)
 
+
+    ######test to see if scrubber & divitext options are included in
+    ##first column of bottom two rows of .tsv (added at divitext
+    ##through php) to facilitate subtitle on dendro listing all
+    ##options used when generating data
+    ##find number of rows
+    n.rows <- dim(gen.data)[1]
+    ##if the last two rows have NA values for word counts, recreate gen.data without
+    ##those rows
+    if(sum(is.na(rsums)[(n.rows-1):n.rows]) == 2){
+        gen.data <- gen.data[-c(n.rows-1,n.rows),]
+        rsums <- rsums[-c(n.rows-1,n.rows)]
+    }
+
+
+    ####Normalize gen.data by converting word counts to relative frequencies
     # create a matrix that gives the row sums as denominators at each element of the data matrix
     # to allow conversion to relative frequencies
     denoms <- matrix(rep(rsums,dim(gen.data)[2]),
@@ -134,21 +155,26 @@ runDist <- function(input.file, n.clades, n.dist.values = 1, metric = "euclidean
     fdoc.collection <- factor(cut, levels=1:n.clades)
     levels(fdoc.collection) <- paste("clade",1:n.clades,sep="")
 
+    ##Plot the dendros with color-coded clades
+    #create filename for dendro
+    dendro.name <- paste(dataset.name, "_dendro.pdf", sep="")
+    plot.trueTree(hc, outputFilename = dendro.name,
+                  dataset.name=dataset.name, fdoc.collection=fdoc.collection)
+
+
     #create an array to store distance stat for all of the words
-    compare.dist <- array(number.words <- dim(gen.data)[2])
+    compare.dist <- vector(length = number.words <- dim(gen.data)[2])
+
     #switch on d.metric to decide which distance metric to use to fill
     #compare.dist
     switch(d.metric,
            compare.dist <- getKW(number.words, fdoc.collection,
                                  gen.data, compare.dist),
-           compare.dist <- getAnova(number.words, fdoc.collection,
-                                    gen.data, compare.dist),
-           compare.dist <- getSydScore(gen.data,fdoc.collection, n.clades)
+           compare.dist <- getAbsoluteDistance(gen.data,fdoc.collection, n.clades)
           )
     switch(d.metric,
            d.metric.name <- "KRUSKAL-WALLIS",
-           d.metric.name <- "ANOVA-F",
-           d.metric.name <- "SYDNEY-SCORE"
+           d.metric.name <- "ABSOLUTE-DISTANCE"
       )
 
     #let's order the results (distance values) from the biggest to the smallest
@@ -257,6 +283,7 @@ runDist <- function(input.file, n.clades, n.dist.values = 1, metric = "euclidean
     #get rid of uncompressed data including output txt files & graphs directory
     file.remove("clade-listing.txt")
     file.remove("words-list.txt")
+    file.remove(dendro.name)
     unlink("./graphs/", recursive=TRUE)
 
     #return output file name & path
@@ -295,19 +322,9 @@ getKW <- function(number.words, fdoc.collection, gen.data, compare.dist){
     return(compare.dist)
 }
 
-## This function takes gen.data and fdoc.collection to find the
-## Anova-F scores for gen.data.  The function returns compare.dist
-getAnova <- function(number.words, fdoc.collection, gen.data, compare.dist){
-  ##tell the user if anova is a stupid choice.
-  for(j in 1:number.words)
-    {
-      compare.dist[j] <- as.numeric(anova(lm(gen.data[,j]~as.factor(fdoc.collection)))$F[1])
-    }
-  return(compare.dist)
-}
 
-##Revamped version of Sydney's function to analyze nclade > 2
-getSydScore <- function(gen.data, fdoc.collection, n.clades){
+##Function to calculate absolute distance values
+getAbsoluteDistance <- function(gen.data, fdoc.collection, n.clades){
 
   #find number of words based on number of cols in gen.data
   n.words <- dim(gen.data)[2]
@@ -321,6 +338,7 @@ getSydScore <- function(gen.data, fdoc.collection, n.clades){
 
   #create an array of length number.words to store distances for each word
   syd.dist <- array(dim=n.words)
+
 
 
   #loop for each word in gen.data
@@ -343,13 +361,188 @@ getSydScore <- function(gen.data, fdoc.collection, n.clades){
     sum.error <- sum(abs(gen.data.resids))
     #check to see if error is close to 0 (since it's a denom)
     if(sum.error < .0000000001){
-      stop(paste("Not enough variation in data set within clades for word", names(gen.data)[i]))
+      syd.dist[i] <- -10.1
+      warning(paste("Not enough variation in data set within clades for word", names(gen.data)[i],
+                 "to calculate ABSOLUTE DISTANCE"))
     }
     else{
       #store the distance score for the word
-      syd.dist[i] <- sum.trt/sum.error
+      syd.dist[i] <- (sum.trt/sum.error)*((length(fdoc.collection)-n.clades)/(n.clades-1))
     }
   }
+
+  syd.dist[syd.dist==-10.1] <- max(syd.dist)+1
+
   #return matrix of all distance scores to calling function
   return(syd.dist)
+}
+
+
+lineColor <- function(x, colorOfNodes)
+{
+	attr(x, "nodePar") <- list("pch"  = NA, "lab.col"  = colorOfNodes[[currentNode]])
+	attr(x, "edgePar") <- list("col"  = colorOfNodes[[currentNode]])
+	assign("currentNode",  currentNode + 1, envir = .GlobalEnv)
+
+	x #this line is necessary for some reason for the dendrapply function that calls this to work
+}
+
+#get the color for a given leaf based on it's label
+getColor <- function(label, specialLabels, metaTable = NULL, colors)
+{
+
+    return(colors[label])
+}
+
+#generates an list containing the color for every node in the tree
+#rules are a node is red if it only contains Archeia, green if it only contains Bacteria, Gold if it was specially selected for highlighting, and blue if it contains mulitple of the previous categories'
+#The list is ordered in the order that nodes are visited by dendrapply.
+generateLineColorList <- function(x, mergeTableRow, specialLabels,
+                                  metaTable = NULL, colors)
+{
+	colorlist <- list()
+
+	#color the left half of the clade
+	if(x$merge[mergeTableRow,1] < 0) #if the left node is a chunk determine the chunk's color
+	{
+		leftColor <-
+	getColor(x$labels[-x$merge[mergeTableRow,1]],
+	specialLabels=specialLabels, metaTable = metaTable, colors) #the color of the chunk
+		leftList <- list(leftColor) #list of the colors of all the nodes to the left
+	}
+
+	else #if the left node is a clade recursively run the function on that clade
+	{
+		result <- generateLineColorList(x,
+	x$merge[mergeTableRow,1], specialLabels=specialLabels,
+	metaTable = metaTable, colors)
+		leftColor <- result$color #the overall color of the subclade
+		leftList <- result$colorList #list of the colors of all the nodes to the left
+	}
+
+	#color the right half of the clade
+	if(x$merge[mergeTableRow,2] < 0) #if the right node is a chunk determine the chunk's color
+	{
+		rightColor <-
+	getColor(x$labels[-x$merge[mergeTableRow,2]],
+	specialLabels=specialLabels, metaTable = metaTable, colors) #the color of the chunk
+		rightList <- list(rightColor) #list of the colors of all the nodes to the right
+	}
+
+	else #if the right node is a clade recursively run the function on that clade
+	{
+		result <- generateLineColorList(x,
+	x$merge[mergeTableRow,2], specialLabels=specialLabels,
+	metaTable = metaTable, colors)
+		rightColor <- result$color #the overall color of the subclade
+		rightList <- result$colorList #list of the colors of all the nodes to the right
+	}
+
+	if(leftColor == rightColor) #check if the colors of the two subclades of the current clade are the same
+	{
+		color <- leftColor #if so use the color they share
+	}
+
+	else #if the colors are different the subclades have different contents
+	{
+		color <- "black" #set the clade to blue to mark it's mixed contents
+	}
+
+	#the colors found need to be put together in the proper order. The current clade has one node for each of it's childern which contains a clade instead of just a chunk.
+	#Those nodes need to be given the color of the current clade, but only if they exist. These nodes will appear in the list of colors before all the colors for the nodes in the respective
+	#subclades
+
+	if(x$merge[mergeTableRow,1] > 0  && x$merge[mergeTableRow,2] > 0) #if both childern are subclades
+	{
+		colorList <- c(color, leftList, color, rightList) #both nodes in the current clade exist so add them into the color list
+	}
+
+	else if(x$merge[mergeTableRow,1] > 0) #if the right child is a chunk
+	{
+		colorList <- c(color, leftList, rightList) #there is only a node for the left clade so add that to the color list
+	}
+
+	else if(x$merge[mergeTableRow,2] > 0) #if the left child is a chunk
+	{
+		colorList <- c(leftList, color, rightList) #there is only a node for the right clade so add that to the color list
+	}
+
+	else #both children are individual chunks
+	{
+	colorList <- append(leftColor, rightColor)
+	}
+
+	result <- list(colorList=colorList, color=color)
+	return(result)
+}
+
+#plots a pvclust object
+plot.trueTree <- function(x, outputFilename = NULL, print.pv=TRUE, print.num=TRUE, float=0.01,
+                         col.pv=c(2,3,8), cex.pv=0.8, font.pv=NULL,
+                         col=NULL, cex=NULL, font=NULL, lty=NULL, lwd=NULL,
+                         main=NULL, sub=NULL, xlab=NULL, height=800,
+                          width=800, specialLabels=NULL, showBP=FALSE,
+                          dataset.name, fdoc.collection, ...)
+{
+    gets.color <- length(levels(fdoc.collection)) <= 6
+    if(gets.color){
+        colors.vector <- c("red4", "dark green", "navy blue", "mediumpurple", "orange red", "darkgoldenrod4")
+        colors <- ifelse(fdoc.collection=="clade1","red4",fdoc.collection)
+        colors <- ifelse(fdoc.collection=="clade2","dark green", colors)
+        colors <- ifelse(fdoc.collection=="clade3","navy blue",  colors)
+        colors <- ifelse(fdoc.collection=="clade4","mediumpurple",colors)
+        colors <- ifelse(fdoc.collection=="clade5","orange red",  colors)
+        colors <- ifelse(fdoc.collection=="clade6","darkgoldenrod4",  colors)
+    }
+    else{
+        colors <- rep("black", length=length(fdoc.collection))
+    }
+    names(colors) <- names(fdoc.collection)
+
+
+    pdf(file=outputFilename, paper="a4r", width=11, height=8.5)
+
+    metaTable <- x$metaTable[[1]] #get metadata out of pvclust object
+
+    main <- paste(dataset.name,  paste("Cluster method: ", x$method, sep=""), paste("Distance: ", x$dist.method), sep = "\n")
+
+
+  if(is.null(sub))
+    #sub=paste("Cluster method: ", x$hclust$method, sep="")
+
+  if(is.null(xlab))
+    #xlab=paste("Distance: ", x$hclust$dist.method)
+
+  dend <- as.dendrogram(x) #convert the hclust object into a dendrogram object
+  colorList <- generateLineColorList(x, dim(x$merge)[1],
+  specialLabels=specialLabels, metaTable = metaTable, colors) #figure out what color each node should be
+  colorList <- c(0, colorList$colorList) #the first node checked be dendrapply doesn't seem to be part of the dendrogram so add a dummy value at the start of the list
+
+  assign("currentNode",  1, envir = .GlobalEnv) #currentNode is a global variable to keep track of where in the tree we are
+  dend <- dendrapply(dend, lineColor, colorList) #add color to all the nodes in the tree
+
+  #find length of longest chunk name
+  maxL <- max( nchar( x$labels ))
+
+  # set margins so there is just enough room for the labels
+  # The numbers measure margin size in line units
+  # The paramets are the size of the bottom,left,top,right margins
+  # On average a margin one line wide seems to have room for about 2.5 characters)
+  # so the margin on the bottom is set to the number of lines necessary to display
+  # the longest label if there was only 2 characters per line which leave's a decent buffer
+  par( mar=c((maxL / 2.0), 2.1, 4.1, 2.1), xpd=TRUE)
+
+  plot(dend, main=main, sub=sub, xlab="", col=col, cex=cex,
+       font=font, lty=lty, lwd=lwd, ...)
+
+   if(gets.color){
+        legend("topright", inset=c(0, -.1),
+               legend = unique(levels(fdoc.collection)),
+               fill = colors.vector
+               )
+    }
+  if(!is.null(outputFilename)) #if writing to a file close the connection
+  {
+	dev.off()
+  }
 }
