@@ -1,0 +1,72 @@
+README -- Virtual Manuscript v2
+	/tools/virtualmanuscript/
+
+OVERVIEW:
+	Allows the user to choose texts and get word frequencies for
+	their selection
+
+FILES:
+	index.php
+		Builds the page. Includes necessary header and footer.
+		The page operates in two modes, "intro" and "results".
+		Intro mode is set when any or all of the URL GET variables are
+		not present. In this mode, the directions to the user are 
+		displayed. Results mode grabs the selected text and dipslays
+		it. In both modes, the menu is necessarily displayed.
+
+	directions.html
+		Directions to use the tool. Is included by ./index.php when
+		operating in intro mode.
+
+	built_manu/
+		Directory to temporarily store the user's folder with individual
+		CSVs and overall CSV.
+
+	built_manu_zips/
+		Directory of zips created by users. No auto delete here.
+
+	../modules/manuscript.php
+		Module that contains all necessary functions to running both this
+		tool and Word Frequencies. See the file for	more complete 
+		documentation.
+
+	../menu/
+		Folder contains the files needed to build the dropdown menu 
+		system and options menu. Documentation for it can be found there.
+		Prior to including ../menu/menu.php, the variable $menujs must be
+		set to "../menu/menubvmjs.js". This runs the menu to allow as many
+		texts as the user wants selected.
+
+	../data/
+		The data directory. Flat files containing CSVs of text stats.
+
+USE:
+	When in results mode, each text name needs to parsed out
+	of the URL and converted to a path to the appropriate CSV. 
+	A directory is created for the user and the CSV is copied there.
+	Each CSV is parsed into a hash table, and added to an overall hash.
+
+	The array of hashes is merged into one and sorted and printed 
+	to the page and then to a CSV file.
+
+	The user's folder is zipped and deleted.
+
+GET ARGS:
+	file
+		Multiple names of the texts concatenated with a space (this is seen 
+		as a '+' in the URL but is a space really).
+	sort
+		[count|word] depending on the sort method chosen
+	tags
+		[keep|discard] tagged word
+	consolidation
+		[none|all|eth|and] choose what consolidations are desired
+	top
+		# of words user wants displayed
+	
+Revision History
+	2010.06.24 :: v2 (acj)
+		- rewrote the tool entierly in PHP
+
+	2010.07.01 :: v1 (acj)
+		- wrote the tool

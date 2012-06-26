@@ -1,0 +1,25 @@
+Using the Demo
+=======================
+
+Puzzle with Default Image
+=========================
+1. Copy this folder to your web server and excute the puzzle.php file on your server and fix the puzzle.
+
+
+Puzzle with Custom Image
+=========================
+1. Copy the image to this folder and make the changes in the split.php file as mentioned in the
+   tutorial.
+
+2. Exceute the split.php file on the browser and keep Winning String and Load String
+
+3. Open puzzle.php and put the Winning String and Load String in the correct places as mentioned
+   in the tutorial.
+
+4. Make the neccessary configuration on puzzle.php file according to the size and number of parts
+   in your puzzle.
+
+5. Execute puzzle.php file and fix the puzzle.
+
+
+*** If you dont have a local webserver to run php files, you can use the puzzle.html file to see the demo

@@ -1,0 +1,89 @@
+<html lang='en'>
+    <head>
+        <title>Jquery Drag and Drop Puzzle</title>
+        <script src="jquery-1.7.2.js" type="text/javascript"></script>
+        <script src="ui/jquery.ui.core.js" type="text/javascript"></script>
+        <script src="ui/jquery.ui.widget.js" type="text/javascript"></script>
+        <script src="ui/jquery.ui.mouse.js" type="text/javascript"></script>
+        <script src="ui/jquery.ui.sortable.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="demos.css">
+        <style>
+            #sortable { list-style-type: none; margin: 10px auto; padding: 0; }
+            #sortable li { float: left;}       
+            .msg_text{text-align: center; padding: 20px; font-size: 30px; text-shadow: 1px 1px 1px rgb(21, 23, 28);} 
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#sortable").sortable({
+                    opacity: 0.6,
+                    cursor: 'move',
+                    update: function() {
+                        var winningString = "oezh,rfwb,lsea,vkxl,ihrx,ilsc,eyen,mwgc,derv,logi,bwdk,scmz";
+                        var currentString = '';
+                        
+                        $('#sortable li').each(function(){
+                            var imageId = $(this).attr("id");
+                            currentString += imageId.replace("recordArr_", "")+",";
+                        });
+                        
+                        currentString = currentString.substr(0,(currentString.length) -1);
+                        
+                        if(currentString == winningString){
+                            alert("You  Won");
+                        }
+                        console.log(currentString);
+                    }
+                });
+
+            });
+        </script>
+    </head>
+
+    <body>
+	<div class="msg_text">Drag and Drop Images and Solve the Puzzle</div>
+<ul id='sortable' style='width:900px;height:300px;'>
+            
+	<li class='ui-state-default' id='recordArr_ilsc' style='border:none;width:150px;height:150px'>
+        	<img src='images/ilsc.jpg' />
+	</li>
+	<li class='ui-state-default' id='recordArr_scmz' style='border:none;width:150px;height:150px'>
+        	<img src='images/scmz.jpg' />
+	</li>
+	<li class='ui-state-default' id='recordArr_lsea' style='border:none;width:150px;height:150px'>
+        	<img src='images/lsea.jpg' />
+	</li>
+	<li class='ui-state-default' id='recordArr_derv' style='border:none;width:150px;height:150px'>
+        	<img src='images/derv.jpg' />
+	</li>
+	<li class='ui-state-default' id='recordArr_logi' style='border:none;width:150px;height:150px'>
+        	<img src='images/logi.jpg' />
+	</li>
+	<li class='ui-state-default' id='recordArr_eyen' style='border:none;width:150px;height:150px'>
+        	<img src='images/eyen.jpg' />
+	</li>
+	<li class='ui-state-default' id='recordArr_vkxl' style='border:none;width:150px;height:150px'>
+        	<img src='images/vkxl.jpg' />
+	</li>
+	<li class='ui-state-default' id='recordArr_ihrx' style='border:none;width:150px;height:150px'>
+        	<img src='images/ihrx.jpg' />
+	</li>
+	<li class='ui-state-default' id='recordArr_mwgc' style='border:none;width:150px;height:150px'>
+        	<img src='images/mwgc.jpg' />
+	</li>
+	<li class='ui-state-default' id='recordArr_bwdk' style='border:none;width:150px;height:150px'>
+        	<img src='images/bwdk.jpg' />
+	</li>
+	<li class='ui-state-default' id='recordArr_rfwb' style='border:none;width:150px;height:150px'>
+        	<img src='images/rfwb.jpg' />
+	</li>
+	<li class='ui-state-default' id='recordArr_oezh' style='border:none;width:150px;height:150px'>
+        	<img src='images/oezh.jpg' />
+	</li>
+
+            
+</ul>
+
+
+    </body>
+</html>
+
