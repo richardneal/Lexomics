@@ -89,6 +89,7 @@ class Text
 
         //richard added this for metadata
         $this->metadata = "";
+        $errors[] = xattr_list($file['tmp_name']);
         $filearray = file($file['tmp_name']);
         if (strpos(end($filearray), "Scrubber Options:") !== false) {
             $this->metadata = array_pop($filearray);

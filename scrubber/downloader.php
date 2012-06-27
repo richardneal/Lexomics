@@ -33,6 +33,8 @@ fwrite($writefile, substr($options, 0, -1));
 
 fclose($writefile);
 
+xattr_set($file, 'Scrubber Options', substr($options, 0, -1));
+
 header('Content-type: text/plain');
 //open/save dialog box
 header('Content-Disposition: attachment; filename=' . pathinfo($_SESSION["file"], PATHINFO_FILENAME) . '_scrubbed.txt');
