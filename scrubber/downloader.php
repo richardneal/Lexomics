@@ -33,7 +33,7 @@ fwrite($writefile, substr($options, 0, -1));
 
 fclose($writefile);
 
-xattr_set($file, 'Scrubber Options', substr($options, 0, -1));
+xattr_set($file, 'Scrubber Options', "test");
 
 header('Content-type: text/plain');
 //open/save dialog box
