@@ -96,6 +96,9 @@ runDist <- function(input.file, n.clades, n.dist.values = 1, metric = "euclidean
     if(sum(is.na(rsums)[(n.rows-1):n.rows]) == 2){
         gen.data <- gen.data[-c(n.rows-1,n.rows),]
         rsums <- rsums[-c(n.rows-1,n.rows)]
+    }else if(sum(is.na(rsums)[(n.rows-1):n.rows]) == 1){
+        gen.data <- gen.data[-c(n.rows),]
+        rsums <- rsums[-c(n.rows)]
     }
 
 
