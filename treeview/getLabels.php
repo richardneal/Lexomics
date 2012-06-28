@@ -130,7 +130,6 @@ else
 				$arr=explode($delim,$line);
 
 			$rowlabels=$rowlabels.','.$arr[0];
-			error_log($line);
 			fwrite($fout,$line);
 			
 		}
@@ -162,7 +161,6 @@ else
 	
 	// save the name of the file to the session
 	$_SESSION['filename']=$tmpfile;
-	error_log($tmpfile);
 
 	// pass the row names back to javascript
 	header("Content-type: text/javascript");	
