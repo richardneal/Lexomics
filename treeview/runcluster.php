@@ -38,6 +38,8 @@ $infile=$_SESSION['filename'];
    $addLabels=TRUE;
    $labelFile="/tmp/labelFile" . rand(0,10000);
    $fp = fopen($labelFile,'w');
+	error_log($_POST['labels2']);
+	error_log($_POST['labels']);
    fwrite($fp,$_POST['labels2']);
    fclose($fp);
 

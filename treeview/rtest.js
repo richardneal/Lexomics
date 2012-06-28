@@ -33,19 +33,6 @@ rjson = {
 
 Ext.onReady( function() {
 
-    // Ext.get returns the Ext.Element object of the corresponding
-    // HTMLElement with the id in the parameter
-    //dend = Ext.get('dendro');   // div that is updated with the dendro
-    /*resizable = new Ext.Resizable( 'dendro', {
-        minWidth: 400,
-        minHeight: 400,
-        width: 400,
-        height: 400,
-        resizeChild: true,
-        handles: 's e se',
-        wrap: true, pinned: true }); resizable.on( 'resize', function( t,w,h,e ) {
-        dend.setXY( [ w,h ] );
-    });*/
     dend = Ext.get('dendro');   // div that is updated with the dendro
 
     dend.on( 'DOMSubtreeModified', function( e,t,o ) {
@@ -380,7 +367,7 @@ Ext.onReady( function() {
         value: "Dendrogram",
     });
 
-	// this is the dive where the table will be places... 
+	// this is the div where the table will be placed... 
     labels = new Ext.form.TextArea({
 		name:'labels',
 		hidden: true,

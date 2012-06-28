@@ -7,9 +7,9 @@
 myCluster <- function(input.file , textlabs = NULL , chunksize = NULL ,
                       metric = "euclidean" , method = "average" ,
                       output.type = "pdf", outputfile = "Dendogram" , 
-		      main = "Dendogram",header=T, comment.char="", 
-		      row.names=1, p=2, type='tsv',
-		      labelFile=NULL,scrubtags=" ",divitags=" "){
+					  main = "Dendogram",header=T, comment.char="", 
+					  row.names=1, p=2, type='tsv',
+					  labelFile=NULL,scrubtags=" ",divitags=" "){
 
 
 	
