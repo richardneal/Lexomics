@@ -92,7 +92,9 @@ function removePunctuation($text) {
 		return $text;
 	}
 	$text = str_replace("-", "", $text);
-	$text = trim(preg_replace('#[^\p{L}\p{N}]+#u', ' ', $text));
+	//$text = preg_replace("\w+'\w", "ι", $text);
+	//$text = trim(preg_replace('#[^\p{L}\p{N}]+#u', ' ', $text));
+	$text = trim(preg_replace("#((?!')\pP)+#", ' ', $text));
 	return $text;
 }
 
