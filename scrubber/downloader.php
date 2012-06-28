@@ -25,11 +25,10 @@ if ($_SESSION["POST"]["lowercasebox"] == "on") {
 	$options .= " Tags Stripped,";
 }
 if ($_SESSION["POST"]["lowercasebox"] == "on") {
-	$options .= " Common Words Replaced,";
+	$options .= " Common Characters Replaced,";
 }
 
 fwrite($writefile, substr($options, 0, -1));
-
 
 fclose($writefile);
 
