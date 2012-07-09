@@ -66,7 +66,7 @@ function lemmatize($text, $lemmas) {
 	$allLemmaKEYS = array();
 
 	foreach(preg_split("/(\r?\n)/", $lemmas) as $line){
-		$lemmaLine = explode("\t", $line);
+		$lemmaLine = explode(", ", $line);
 		array_push($allLemmaKEYS, $lemmaLine[0]);
 		array_push($allLemmas, $lemmaLine[1]);
 	}
@@ -93,8 +93,8 @@ function removePunctuation($text) {
 	}
 	$text = str_replace("-", "", $text);
 	//$text = preg_replace("\w+'\w", "ι", $text);
-	//$text = trim(preg_replace('#[^\p{L}\p{N}]+#u', ' ', $text));
-	$text = trim(preg_replace("#((?!')\pP)+#", ' ', $text));
+	$text = trim(preg_replace('#[^\p{L}\p{N}]+#u', ' ', $text));
+	//$text = trim(preg_replace("#((?!')\pP)+#", ' ', $text));
 	return $text;
 }
 
@@ -111,7 +111,7 @@ function consolidate($text, $consolidations) {
 		$consolidationKeys = array();
 		$consolidationValues = array();
 		foreach(preg_split("/(\r?\n)/", $consolidations) as $line){
-			$consolidationLine = explode(" \t", $line);
+			$consolidationLine = explode(", ", $line);
 			array_push($consolidationKeys, $consolidationLine[0]);
 			array_push($consolidationValues, $consolidationLine[1]);
 		}

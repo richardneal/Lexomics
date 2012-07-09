@@ -236,7 +236,7 @@ if (is_null($_SESSION["POST"])) {
 </div>
 
 <div class="bottomtext" id='lemmatext'>
-    <?php echo utf8_encode(preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["lemmas"])))) ?>
+    <?php echo preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["lemmas"]))) ?>
 </div>
 
 <div class="bottomtext" id='consolidationtext'>

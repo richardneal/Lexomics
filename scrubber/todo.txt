@@ -30,4 +30,3 @@ Replace lemmas with regex
 
 Metadata:
 	Add names for multiple texts
-	Get divitext options
