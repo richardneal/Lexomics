@@ -1,6 +1,8 @@
 <?php
 //This script runs a cluster analysis on the user's data, converts the dendrogram into an xml file and then has the user download said file
 
+//start the session
+session_start();
 
 // call Rscript using the file $r with arguments $a
 // and return the STDOUT output of the script
@@ -29,7 +31,8 @@ function openfile( $f = "", $m = "" )
 $json = Array();
 
 // get the /tmp/php..... file uploaded to the server
-$infile = "{$_FILES['file']['tmp_name']}";
+//$infile = "{$_FILES['file']['tmp_name']}";
+$infile = $_SESSION['filename'];
 
 // if the user elected to add new leaf labels, create file
 // containing the user input values
@@ -54,15 +57,20 @@ if ( $_POST['type']=='tsv' or $_POST['type']=='csv' or $_POST['type']=='txt')
     # $addLabels = $addLabels;
     # $labelFile = $labelFile;
 
+	$scrubtags = $_SESSION['scrubtags'];
+	$divitags  = $_SESSION['divitags'];
+
     // build the argument string for Rscript
     // flags do nothing,
     // future: make flags work, right now, R script assumes current order
-    $rArgs = "-f $infile -m $method -d $metric -o $output -t \"$title\" 
-	-p $p -s $type -l $labelFile";
+
+    $rArgs = "$infile $method $metric $output \"$title\"
+	$p $type $labelFile $scrubtags $divitags";
 
     // the file name is the expected output of clustr.r
     $stdout = callR( "clustr.r", "$rArgs" );
 	
+
 	$stdout=explode(",<r>,",$stdout);
 
 	$file = $stdout[0];
