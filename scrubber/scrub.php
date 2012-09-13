@@ -86,14 +86,29 @@ function lemmatize($text, $lemmas) {
 	}
 }
 
-function removePunctuation($text) {
+function removePunctuation($text, $apos, $hyphens) {
 	if (empty($text)) {
 		print("You must include some text from which to have the punctuation removed.");
 		return $text;
 	}
-	$text = str_replace("-", "", $text);
-	//$text = preg_replace("\w+'\w", "ι", $text);
-	$text = trim(preg_replace('#[^\p{L}\p{N}]+#u', ' ', $text));
+
+	switch(true) {
+	case $apos == "on" && $hyphens == "on":
+		$text = trim(preg_replace("#((?!['-])\pP)+#", ' ', $text));
+	break;
+	case $apos == "on" && $hyphens != "on":
+		$text = trim(preg_replace("#((?!['])\pP)+#", ' ', $text));
+	break;
+	case $apos != "on" && $hyphens == "on":
+		$text = trim(preg_replace("#((?![-])\pP)+#", ' ', $text));
+	break; 
+	default:
+		$text = trim(preg_replace('#[^\p{L}\p{N}]+#u', ' ', $text));
+	} 
+
+	//$text = str_replace("-", "", $text);
+	//$text = preg_replace("\w+'\w", "?", $text);
+	//$text = trim(preg_replace('#[^\p{L}\p{N}]+#u', ' ', $text));
 	//$text = trim(preg_replace("#((?!')\pP)+#", ' ', $text));
 	return $text;
 }
@@ -177,7 +192,7 @@ function formatSpecial($text, $formatspecial, $specials, $common, $lowercase) {
  * @see remove_elements()
  *
  */
-function scrub_text($string, $formatting, $tags, $punctuation, $digits, $removeStopWords, $lemmatize, $consolidate, $formatspecial, $lowercase, $common, $stopWords = "", $lemmas = "", $consolidations = "", $specials = "", $type = 'default') {
+function scrub_text($string, $formatting, $tags, $punctuation, $apos, $hyphens, $digits, $removeStopWords, $lemmatize, $consolidate, $formatspecial, $lowercase, $common, $stopWords = "", $lemmas = "", $consolidations = "", $specials = "", $type = 'default') {
 	switch ($type) {
 		case 'default':
 			// Make the string variable a string with the requested elements removed.
@@ -205,7 +220,7 @@ function scrub_text($string, $formatting, $tags, $punctuation, $digits, $removeS
 			}
 			print("<br /> After strip tags, before remove punctuation <br />" . substr($string, 0, 1000) . "<br />");
 			if ($punctuation == "on") {
-				$string = removePunctuation($string);
+				$string = removePunctuation($string, $apos, $hyphens);
 			} 
 			print("<br /> After remove punctuation, before remove digits <br />" . substr($string, 0, 1000) . "<br />");
 			if ($digits == "on") {
@@ -245,6 +260,8 @@ function scrub_text($string, $formatting, $tags, $punctuation, $digits, $removeS
 
 $formatting = "";
 $punctuation = "";
+$apos = "";
+$hyphens = "";
 $digits = "";
 $removeStopWords = "";
 $lemmatize = "";
@@ -253,12 +270,18 @@ $lowercase = "";
 $formatspecial = "";
 $common = "";
 
-
 if(isset($_POST["formattingbox"]))
 	$formatting = $_POST["formattingbox"];
 	$tags = $_POST["tags"];
-if(isset($_POST["punctuationbox"]))
+if(isset($_POST["punctuationbox"])) {
 	$punctuation = $_POST["punctuationbox"];
+	if(isset($_POST["aposbox"])) {
+		$apos = $_POST["aposbox"];
+	}
+	if(isset($_POST["hyphensbox"])) {
+		$hyphens = $_POST["hyphensbox"];
+	}
+}
 if(isset($_POST["digitsbox"]))
 	$digits = $_POST["digitsbox"];
 if(isset($_POST["stopwordbox"]))
@@ -279,7 +302,7 @@ $stopwords = file_get_contents($_SESSION["stopwords"]);
 $lemmas = file_get_contents($_SESSION["lemmas"]);
 $consolidations = file_get_contents($_SESSION["consolidations"]);
 $specials = file_get_contents($_SESSION["specials"]);
-$_SESSION["scrubbed"] = scrub_text($file, $formatting, $tags, $punctuation, $digits, $removeStopWords, $lemmatize, $consolidate, $formatspecial, $lowercase, $common, $stopwords, $lemmas, $consolidations, $specials);
+$_SESSION["scrubbed"] = scrub_text($file, $formatting, $tags, $punctuation, $apos, $hyphens, $digits, $removeStopWords, $lemmatize, $consolidate, $formatspecial, $lowercase, $common, $stopwords, $lemmas, $consolidations, $specials);
 
 header('Location: ' . "display.php");
 die();

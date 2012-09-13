@@ -3,11 +3,13 @@ error_reporting (E_ALL ^ E_NOTICE);
 session_start(); 
 $file = file_get_contents($_SESSION["file"]);
 if(is_null($_SESSION["file"])) {
-    header('Location: ' . "index.html");
+   header('Location: ' . "index.html");
     die();
 }
 if (is_null($_SESSION["POST"])) {
     $_SESSION["POST"]["punctuationbox"] = "on";
+    $_SESSION["POST"]["aposbox"] = "off";
+    $_SESSION["POST"]["hyphensbox"] = "off";
     $_SESSION["POST"]["digitsbox"] = "on";
     if(preg_match("'<[^>]+>'U", $file) > 0)
         $_SESSION["POST"]["formattingbox"] = "on";
@@ -15,6 +17,7 @@ if (is_null($_SESSION["POST"])) {
     $_SESSION["POST"]["tags"] = "keep";
     $_SESSION["POST"]["commonbox"] = "on";
 }
+
 ?>
 <html>
 <head>
@@ -102,6 +105,8 @@ if (is_null($_SESSION["POST"])) {
         <fieldset class="sidebar_field">
             
             <input type="checkbox" name="punctuationbox" <?php if(isset($_SESSION["POST"]["punctuationbox"])) echo "checked" ?>/> Remove Punctuation
+			<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="aposbox" <?php if($_SESSION["POST"]["aposbox"]=="on") echo "checked" ?>/> Keep Apostrophes
+			<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="hyphensbox" <?php if($_SESSION["POST"]["hyphensbox"]=="on") echo "checked" ?>/> Keep Hyphens
             <br /><input type="checkbox" name="digitsbox" <?php if(isset($_SESSION["POST"]["digitsbox"])) echo "checked" ?>/> Remove Digits
             <?php if(preg_match("'<[^>]+>'U", $file) > 0): ?>
             <br /><input type="checkbox" name="formattingbox" id="formattingbox" <?php if(isset($_SESSION["POST"]["formattingbox"])) echo "checked" ?> onClick="hideDiv(this, tagBox)"/> Strip Tags
@@ -236,11 +241,11 @@ if (is_null($_SESSION["POST"])) {
 </div>
 
 <div class="bottomtext" id='lemmatext'>
-    <?php echo preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["lemmas"]))) ?>
+    <?php echo preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " ? ", file_get_contents($_SESSION["lemmas"]))) ?>
 </div>
 
 <div class="bottomtext" id='consolidationtext'>
-    <?php echo preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " → ", file_get_contents($_SESSION["consolidations"]))) ?>
+    <?php echo preg_replace("/(\r?\n)/", "<br />", str_replace(", ", " ? ", file_get_contents($_SESSION["consolidations"]))) ?>
 </div>
 
 <div class="bottomtext" id='specialtext'>
@@ -248,7 +253,6 @@ if (is_null($_SESSION["POST"])) {
 </div>
 
 </div>
-
 <div id="info">
     &nbsp;<a href="http://wheatoncollege.edu/lexomics/"> Lexomics @ Wheaton College</a>
 </div>

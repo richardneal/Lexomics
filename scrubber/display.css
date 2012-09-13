@@ -93,17 +93,17 @@ body
 #unscrubbedtext { 
     border: 1px solid #99BBE8;
     background-color:#FFFFFF;
-    height: 30%;
+    height: 32%;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding-left: 3px;
     resize:vertical;
 }
 #scrubbedtext { 
     border: 1px solid #99BBE8;
     background-color:#FFFFFF;
-    height: 30%;
+    height: 32%;
     overflow-y: auto;
     overflow-x: hidden;
     margin-bottom: 5px;

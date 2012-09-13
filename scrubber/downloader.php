@@ -18,6 +18,12 @@ if ($_SESSION["POST"]["lowercasebox"] == "on") {
 if ($_SESSION["POST"]["punctuationbox"] == "on") {
 	$options .= " Punctuation Removed,";
 }
+if ($_SESSION["POST"]["aposbox"] == "on") {
+	$options .= " Apostrophes Kept,";
+}
+if ($_SESSION["POST"]["hyphensbox"] == "on") {
+	$options .= " Hyphens Kept,";
+}
 if ($_SESSION["POST"]["digitsbox"] == "on") {
 	$options .= " Digits Removed,";
 }
