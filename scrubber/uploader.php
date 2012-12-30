@@ -97,6 +97,16 @@ elseif ($_FILES["file"]["type"] == "application/vnd.openxmlformats-officedocumen
     die();
     }
 }
+elseif (is_array($_FILES["file"]["type"])) {
+    $batchfile = fopen(SCRUB_DIR . "batch.txt", 'w');
+    foreach ($_FILES['file']["tmp_name"] as $file) {
+        $thisfile = file_get_contents($file);
+        fwrite($batchfile, $thisfile);
+    }
+    $_SESSION[$_POST['type']] = SCRUB_DIR . "batch.txt";
+    header('Location: ' . "display.php");
+    die();
+}
 else
   {
     echo "Upload: " . $_FILES["file"]["name"] . "<br />";

@@ -1,21 +1,30 @@
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="display.css"/>
 <title>Scrubber</title>
 </head>
-<body>
+<body style="display: inline">
 
+<div id="header">
+        &nbsp;<b>Scrubber</b>
+    </div>
+    <div id="upload">
 <link rel="shortcut icon"
  href="http://cs.wheatoncollege.edu/scrubber/favicon.ico" />
-
+<div class="sidetitles">
+    <legend><b>Tools </b></legend>
+    </div>
+    <fieldset class="sidebar_field">
 <form action="uploader.php" method="post"
 enctype="multipart/form-data">
 <label for="file">Filename:</label>
-<input type="file" name="file" id="file" required="required"/> 
+<input type="file" name="file[]" id="file" required="required" multiple="multiple"/> 
 <br/>
 <input type="hidden" name="type" value="file" /> 
 <input type="submit" name="submit" value="Submit" />
 </form>
 You can upload .txt, .xml, .html, or .docx files.
-
+</div>
+</fieldset>
 </body>
 </html>

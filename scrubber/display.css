@@ -69,6 +69,13 @@ body
     margin: 0px 0px 0px 10px;
     padding: 0px 0 0 5px;
 }
+#upload {
+    height: 95%;
+    width: 350px;
+    float: left;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0 0 5px;
+}
 #buttons {
     position: relative;
 }
